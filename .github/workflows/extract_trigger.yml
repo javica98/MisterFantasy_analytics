@@ -10,12 +10,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # 1️⃣ Checkout del repositorio
+      # 1️⃣ Checkout del repositorio SIN credenciales del bot
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          persist-credentials: true
+          persist-credentials: false  # Muy importante para usar PAT
 
       # 2️⃣ Configurar Python
       - name: Set up Python
@@ -37,34 +37,19 @@ jobs:
           MISTER_BASE_URL: ${{ secrets.MISTER_BASE_URL }}
         run: python scripts/run_extraction.py
 
-      # 5️⃣ Subir CSV como artifact para revisión
-      - name: Upload processed CSVs as artifacts
-        uses: actions/upload-artifact@v4
-        with:
-          name: processed-csvs
-          path: data/processed/*.csv
-
-      # 6️⃣ Verificar que PAT_TOKEN está disponible
-      - name: Check PAT_TOKEN
-        run: echo "${{ secrets.PAT_TOKEN }}" | head -c 4
-
-      # 7️⃣ (Opcional) Ver debug del remote
-      - name: Show git remote
-        run: git remote -v
-
-      # 8️⃣ Commit y push de CSV solo si hay cambios
-      - name: Commit and push updated CSVs
+      # 5️⃣ Commit y push de CSV automáticamente usando PAT
+      - name: Commit and push CSVs
         env:
           PAT_TOKEN: ${{ secrets.PAT_TOKEN }}
         run: |
           git config --global user.email "github-actions@github.com"
           git config --global user.name "GitHub Actions"
-          
+
           # Cambiar remote para usar PAT
           git remote set-url origin https://x-access-token:${PAT_TOKEN}@github.com/${{ github.repository }}.git
-          
+
           git add data/processed/*.csv
-          
+
           # Solo commit si hay cambios
           if ! git diff --cached --quiet; then
             git commit -m "Auto-update CSV data [skip ci]"
