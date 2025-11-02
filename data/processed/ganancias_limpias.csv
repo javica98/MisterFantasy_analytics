@@ -1,0 +1,717 @@
+id,type,subtype,equipo,jugador,compra-venta,ganancias
+0,transfer,mercado,Libre,Álex Moreno,venta,3176750
+0,transfer,mercado,Libre,Antoine Griezmann,venta,10445820
+0,transfer,mercado,Jotabetrbb,Valentín Gómez,venta,1754400
+0,transfer,mercado,De la Guettir FC,Jon Pacheco,venta,1650360
+0,marks,start_mercado,Mercado diario,,,0
+0,transfer,mercado,Libre,Marcus Rashford,compra,-13256330
+0,transfer,mercado,Libre,Mathew Ryan,compra,-6671319
+0,transfer,mercado,Libre,Filip Ugrinic,compra,-206040
+0,transfer,mercado,Libre,Víctor Parada,compra,-184000
+0,transfer,mercado,MuchaSalsa,Vitor Reis,compra,-2235000
+1,transfer,mercado,Libre,Kike Barja,venta,169050
+1,transfer,mercado,Jotabetrbb,Arnau Tenas,venta,1892100
+1,bonificacion,quiniela,Maldinillo 💥,,,600000
+1,bonificacion,quiniela,Dani,,,500000
+1,bonificacion,quiniela,Libre,,,400000
+1,bonificacion,quiniela,Los marinero,,,400000
+1,bonificacion,quiniela,MuchaSalsa,,,400000
+1,bonificacion,quiniela,Chamacónicos,,,300000
+1,bonificacion,quiniela,De la Guettir FC,,,300000
+1,bonificacion,quiniela,Jotabetrbb,,,200000
+1,bonificacion,quiniela,Juanba,,,200000
+1,bonificacion,clasificacion,Maldinillo 💥,,,1860000
+1,bonificacion,clasificacion,Los marinero,,,1420000
+1,bonificacion,clasificacion,Chamacónicos,,,1750000
+1,bonificacion,clasificacion,Libre,,,1990000
+1,bonificacion,clasificacion,De la Guettir FC,,,1990000
+1,bonificacion,clasificacion,MuchaSalsa,,,2170000
+1,bonificacion,clasificacion,Dani,,,2100000
+1,bonificacion,clasificacion,Juanba,,,2120000
+1,bonificacion,clasificacion,Jotabetrbb,,,2240000
+1,transfer,mercado,Maldinillo 💥,Alexis Sánchez,venta,5878950
+1,marks,start_mercado,Mercado diario,,,0
+1,transfer,mercado,Libre,Yuri Berchiche,compra,-6099000
+1,transfer,mercado,Maldinillo 💥,Beñat Turrientes,compra,-252310
+2,transfer,mercado,Libre,Hugo Rincón,venta,1049360
+2,transfer,mercado,De la Guettir FC,Andreas Christensen,venta,3739840
+2,transfer,mercado,Libre,Igor Zubeldia,venta,4773000
+2,transfer,mercado,Maldinillo 💥,Oihan Sancet,venta,10486350
+2,transfer,mercado,De la Guettir FC,Franco Mastantuono,venta,9978000
+2,marks,start_mercado,Mercado diario,,,0
+2,transfer,mercado,De la Guettir FC,Germán Valera,compra,-10699999
+2,transfer,mercado,De la Guettir FC,Calebe Gonçalves,compra,-344050
+2,transfer,mercado,Dani,Marc Bartra,compra,-8000390
+2,transfer,mercado,Maldinillo 💥,Robert Lewandowski,compra,-17151870
+3,transfer,acuerdo,Los marinero,Álex Moreno,venta,3400000
+3,transfer,acuerdo,Libre,Álex Moreno,compra,-3400000
+3,marks,start_mercado,Mercado diario,,,0
+3,transfer,mercado,Los marinero,Daniel Vivian,compra,-6839000
+4,transfer,mercado,Libre,Gabriel Suazo,venta,5934240
+4,transfer,mercado,Libre,Logan Costa,venta,208000
+4,transfer,mercado,Dani,Omar Falah,venta,153600
+4,transfer,mercado,Dani,David López,venta,205800
+4,transfer,mercado,Dani,Aritz Elustondo,venta,176400
+4,marks,start_mercado,Mercado diario,,,0
+4,transfer,mercado,Jotabetrbb,Jan Oblak,compra,-9040000
+4,transfer,mercado,Chamacónicos,Sergio Carreira,compra,-700000
+4,transfer,mercado,Dani,Iván Martín,compra,-1645460
+5,marks,start_jornada,10.0,,,0
+5,transfer,acuerdo,Chamacónicos,Marc Roca,venta,2700000
+5,transfer,acuerdo,Jotabetrbb,Marc Roca,compra,-2700000
+5,transfer,acuerdo,Chamacónicos,Eduardo Camavinga,venta,6000000
+5,transfer,acuerdo,Jotabetrbb,Eduardo Camavinga,compra,-6000000
+5,transfer,mercado,MuchaSalsa,Sergi Altimira,venta,8751650
+5,transfer,mercado,Maldinillo 💥,Iago Aspas,venta,9644000
+5,marks,start_mercado,Mercado diario,,,0
+5,transfer,mercado,Libre,Igor Zubeldia,compra,-5037060
+5,transfer,mercado,MuchaSalsa,Pedro Bigas,compra,-7302000
+5,transfer,mercado,Dani,Aritz Elustondo,compra,-372530
+5,transfer,mercado,Dani,Omar Falah,compra,-237470
+5,transfer,mercado,Dani,David López,compra,-214890
+5,transfer,mercado,Maldinillo 💥,Oihan Sancet,compra,-10132070
+6,transfer,clausula,Jotabetrbb,Marc Roca,venta,2127000
+6,transfer,clausula,Chamacónicos,Marc Roca,compra,-2127000
+6,transfer,clausula,Dani,José Copete,venta,1226565
+6,transfer,clausula,Los marinero,José Copete,compra,-1226565
+6,transfer,clausula,MuchaSalsa,Cristian Portu,venta,1371000
+6,transfer,clausula,Dani,Cristian Portu,compra,-1371000
+6,marks,start_mercado,Mercado diario,,,0
+6,transfer,mercado,Chamacónicos,Viktor Tsygankov,compra,-3434343
+6,transfer,mercado,Chamacónicos,Nobel Mendy,compra,-888000
+6,transfer,mercado,Dani,Antonio Raíllo,compra,-6301520
+7,transfer,mercado,Maldinillo 💥,Unai López,venta,5330850
+7,transfer,mercado,Maldinillo 💥,Tyrhys Dolan,venta,7455000
+7,transfer,mercado,Libre,Iker Losada,venta,191360
+7,marks,start_mercado,Mercado diario,,,0
+7,transfer,mercado,Libre,Pol Lozano,compra,-3850558
+7,transfer,mercado,Maldinillo 💥,Nico Williams,compra,-15278590
+8,transfer,clausula,Chamacónicos,Koke,venta,6499999
+8,transfer,clausula,MuchaSalsa,Koke,compra,-6499999
+8,bonificacion,quiniela,Dani,,,700000
+8,bonificacion,quiniela,De la Guettir FC,,,700000
+8,bonificacion,quiniela,Juanba,,,500000
+8,bonificacion,quiniela,Libre,,,500000
+8,bonificacion,quiniela,Los marinero,,,500000
+8,bonificacion,quiniela,Maldinillo 💥,,,500000
+8,bonificacion,quiniela,Chamacónicos,,,300000
+8,bonificacion,quiniela,Jotabetrbb,,,0
+8,bonificacion,quiniela,MuchaSalsa,,,0
+8,bonificacion,clasificacion,Dani,,,1650000
+8,bonificacion,clasificacion,Maldinillo 💥,,,1780000
+8,bonificacion,clasificacion,Juanba,,,1580000
+8,bonificacion,clasificacion,De la Guettir FC,,,1990000
+8,bonificacion,clasificacion,Jotabetrbb,,,1820000
+8,bonificacion,clasificacion,Chamacónicos,,,1900000
+8,bonificacion,clasificacion,Libre,,,2190000
+8,bonificacion,clasificacion,Los marinero,,,2200000
+8,bonificacion,clasificacion,MuchaSalsa,,,2320000
+8,transfer,mercado,Maldinillo 💥,Gorka Guruzeta,venta,2364880
+8,transfer,mercado,Jotabetrbb,César Azpilicueta,venta,3465960
+8,transfer,mercado,Maldinillo 💥,Carlos Álvarez,venta,7551440
+8,transfer,mercado,De la Guettir FC,Marc Bernal,venta,907000
+8,transfer,mercado,De la Guettir FC,David Costas,venta,183600
+8,transfer,mercado,Los marinero,Batista Mendy,venta,4275440
+8,marks,start_mercado,Mercado diario,,,0
+8,transfer,mercado,Libre,Logan Costa,compra,-203050
+8,transfer,mercado,Libre,Iker Losada,compra,-189060
+8,transfer,mercado,De la Guettir FC,Adrián de la Fuente,compra,-3411120
+8,transfer,mercado,Los marinero,Carlos Soler,compra,-5885000
+8,transfer,mercado,Maldinillo 💥,Iago Aspas,compra,-9856900
+9,transfer,mercado,Libre,Luis Rioja,venta,7247100
+9,transfer,mercado,Los marinero,Ricardo Rodríguez,venta,1096920
+9,transfer,mercado,Dani,Roger Brugué,venta,885770
+9,transfer,mercado,Dani,Manu Sánchez,venta,5165450
+9,transfer,mercado,Libre,Dani Ceballos,venta,4769440
+9,bajadaclausula,,Libre,Youssef Enríquez,,0
+9,marks,start_jornada,9.0,,,0
+9,transfer,mercado,Libre,Johan Mojica,venta,5875750
+9,transfer,mercado,Libre,Matías Moreno,venta,1143660
+9,transfer,mercado,Libre,Adrián de la Fuente,venta,3188850
+9,transfer,mercado,Libre,Igor Zubeldia,venta,4621610
+9,transfer,mercado,Dani,Jeremy Toljan,venta,5241670
+9,bajadaclausula,,MuchaSalsa,Álvaro Núñez,,0
+9,marks,start_mercado,Mercado diario,,,0
+9,transfer,mercado,Libre,Dani Ceballos,compra,-4950000
+9,transfer,mercado,Maldinillo 💥,Alexis Sánchez,compra,-6666669
+10,transfer,acuerdo,Maldinillo 💥,Samuel Costa,venta,4000000
+10,transfer,acuerdo,Libre,Samuel Costa,compra,-4000000
+10,transfer,acuerdo,Maldinillo 💥,Jon Gorrotxategi,venta,3400000
+10,transfer,acuerdo,Libre,Jon Gorrotxategi,compra,-3400000
+10,transfer,mercado,Dani,Omar El Hilali,venta,7543920
+10,transfer,mercado,Libre,David López,venta,167580
+10,marks,start_mercado,Mercado diario,,,0
+10,transfer,mercado,Libre,Alejandro Rego,compra,-576040
+10,transfer,mercado,Dani,Manu Sánchez,compra,-5536750
+11,transfer,mercado,Dani,Aitor Paredes,venta,7359350
+11,transfer,mercado,Chamacónicos,Pere Milla,venta,6121610
+11,transfer,mercado,Chamacónicos,Haissem Hassan,venta,6274320
+11,marks,start_mercado,Mercado diario,,,0
+11,transfer,mercado,Libre,Roony Bardghji,compra,-2141080
+11,transfer,mercado,Dani,Edu Expósito,compra,-11721280
+11,transfer,mercado,Dani,José Copete,compra,-817710
+11,transfer,mercado,Maldinillo 💥,Federico Viñas,compra,-162000
+12,transfer,mercado,Libre,Manu Morlanes,venta,862050
+12,transfer,mercado,Libre,Toni Lato,venta,176800
+12,transfer,mercado,Jotabetrbb,Jorge Cabello,venta,163000
+12,transfer,clausula,Jotabetrbb,Thierry Correia,venta,1000000
+12,transfer,clausula,Los marinero,Thierry Correia,compra,-1000000
+12,transfer,acuerdo,Los marinero,Tyrhys Dolan,venta,8000000
+12,transfer,acuerdo,Maldinillo 💥,Tyrhys Dolan,compra,-8000000
+12,transfer,mercado,Maldinillo 💥,Alberto Moleiro,venta,7028700
+12,marks,start_mercado,Mercado diario,,,0
+12,transfer,mercado,Libre,Igor Zubeldia,compra,-4516850
+12,transfer,mercado,Los marinero,Óscar Valentín,compra,-1456000
+12,transfer,mercado,Dani,Roger Brugué,compra,-988900
+13,transfer,mercado,Chamacónicos,Antonio Blanco,venta,6415000
+13,transfer,mercado,Los marinero,Jorge de Frutos,venta,10035800
+13,transfer,mercado,Libre,Álex Moreno,venta,3176750
+13,transfer,mercado,Libre,Antoine Griezmann,venta,10445820
+13,transfer,mercado,Jotabetrbb,Valentín Gómez,venta,1754400
+13,transfer,mercado,De la Guettir FC,Jon Pacheco,venta,1650360
+13,marks,start_mercado,Mercado diario,,,0
+13,transfer,mercado,Libre,Marcus Rashford,compra,-13256330
+13,transfer,mercado,Libre,Mathew Ryan,compra,-6671319
+13,transfer,mercado,Libre,Filip Ugrinic,compra,-206040
+13,transfer,mercado,Libre,Víctor Parada,compra,-184000
+13,transfer,mercado,MuchaSalsa,Vitor Reis,compra,-2235000
+14,transfer,mercado,Libre,Kike Barja,venta,169050
+14,transfer,mercado,Jotabetrbb,Arnau Tenas,venta,1892100
+14,bonificacion,quiniela,Maldinillo 💥,,,600000
+14,bonificacion,quiniela,Dani,,,500000
+14,bonificacion,quiniela,Libre,,,400000
+14,bonificacion,quiniela,Los marinero,,,400000
+14,bonificacion,quiniela,MuchaSalsa,,,400000
+14,bonificacion,quiniela,Chamacónicos,,,300000
+14,bonificacion,quiniela,De la Guettir FC,,,300000
+14,bonificacion,quiniela,Jotabetrbb,,,200000
+14,bonificacion,quiniela,Juanba,,,200000
+14,bonificacion,clasificacion,Maldinillo 💥,,,1860000
+14,bonificacion,clasificacion,Los marinero,,,1420000
+14,bonificacion,clasificacion,Chamacónicos,,,1750000
+14,bonificacion,clasificacion,Libre,,,1990000
+14,bonificacion,clasificacion,De la Guettir FC,,,1990000
+14,bonificacion,clasificacion,MuchaSalsa,,,2170000
+14,bonificacion,clasificacion,Dani,,,2100000
+14,bonificacion,clasificacion,Juanba,,,2120000
+14,bonificacion,clasificacion,Jotabetrbb,,,2240000
+14,transfer,mercado,Maldinillo 💥,Alexis Sánchez,venta,5878950
+14,marks,start_mercado,Mercado diario,,,0
+14,transfer,mercado,Libre,Yuri Berchiche,compra,-6099000
+14,transfer,mercado,Maldinillo 💥,Beñat Turrientes,compra,-252310
+15,transfer,mercado,Libre,Hugo Rincón,venta,1049360
+15,transfer,mercado,De la Guettir FC,Andreas Christensen,venta,3739840
+15,transfer,mercado,Libre,Igor Zubeldia,venta,4773000
+15,transfer,mercado,Maldinillo 💥,Oihan Sancet,venta,10486350
+15,transfer,mercado,De la Guettir FC,Franco Mastantuono,venta,9978000
+15,marks,start_mercado,Mercado diario,,,0
+15,transfer,mercado,De la Guettir FC,Germán Valera,compra,-10699999
+15,transfer,mercado,De la Guettir FC,Calebe Gonçalves,compra,-344050
+15,transfer,mercado,Dani,Marc Bartra,compra,-8000390
+15,transfer,mercado,Maldinillo 💥,Robert Lewandowski,compra,-17151870
+16,transfer,acuerdo,Los marinero,Álex Moreno,venta,3400000
+16,transfer,acuerdo,Libre,Álex Moreno,compra,-3400000
+16,marks,start_mercado,Mercado diario,,,0
+16,transfer,mercado,Los marinero,Daniel Vivian,compra,-6839000
+17,transfer,mercado,Libre,Gabriel Suazo,venta,5934240
+17,transfer,mercado,Libre,Logan Costa,venta,208000
+17,transfer,mercado,Dani,Omar Falah,venta,153600
+17,transfer,mercado,Dani,David López,venta,205800
+17,transfer,mercado,Dani,Aritz Elustondo,venta,176400
+17,marks,start_mercado,Mercado diario,,,0
+17,transfer,mercado,Jotabetrbb,Jan Oblak,compra,-9040000
+17,transfer,mercado,Chamacónicos,Sergio Carreira,compra,-700000
+17,transfer,mercado,Dani,Iván Martín,compra,-1645460
+18,marks,start_jornada,10.0,,,0
+18,transfer,acuerdo,Chamacónicos,Marc Roca,venta,2700000
+18,transfer,acuerdo,Jotabetrbb,Marc Roca,compra,-2700000
+18,transfer,acuerdo,Chamacónicos,Eduardo Camavinga,venta,6000000
+18,transfer,acuerdo,Jotabetrbb,Eduardo Camavinga,compra,-6000000
+18,transfer,mercado,MuchaSalsa,Sergi Altimira,venta,8751650
+18,transfer,mercado,Maldinillo 💥,Iago Aspas,venta,9644000
+18,marks,start_mercado,Mercado diario,,,0
+18,transfer,mercado,Libre,Igor Zubeldia,compra,-5037060
+18,transfer,mercado,MuchaSalsa,Pedro Bigas,compra,-7302000
+18,transfer,mercado,Dani,Aritz Elustondo,compra,-372530
+18,transfer,mercado,Dani,Omar Falah,compra,-237470
+18,transfer,mercado,Dani,David López,compra,-214890
+18,transfer,mercado,Maldinillo 💥,Oihan Sancet,compra,-10132070
+19,transfer,clausula,Jotabetrbb,Marc Roca,venta,2127000
+19,transfer,clausula,Chamacónicos,Marc Roca,compra,-2127000
+19,transfer,clausula,Dani,José Copete,venta,1226565
+19,transfer,clausula,Los marinero,José Copete,compra,-1226565
+19,transfer,clausula,MuchaSalsa,Cristian Portu,venta,1371000
+19,transfer,clausula,Dani,Cristian Portu,compra,-1371000
+19,marks,start_mercado,Mercado diario,,,0
+19,transfer,mercado,Chamacónicos,Viktor Tsygankov,compra,-3434343
+19,transfer,mercado,Chamacónicos,Nobel Mendy,compra,-888000
+19,transfer,mercado,Dani,Antonio Raíllo,compra,-6301520
+20,transfer,mercado,Maldinillo 💥,Unai López,venta,5330850
+20,transfer,mercado,Maldinillo 💥,Tyrhys Dolan,venta,7455000
+20,transfer,mercado,Libre,Iker Losada,venta,191360
+20,marks,start_mercado,Mercado diario,,,0
+20,transfer,mercado,Libre,Pol Lozano,compra,-3850558
+20,transfer,mercado,Maldinillo 💥,Nico Williams,compra,-15278590
+21,transfer,clausula,Chamacónicos,Koke,venta,6499999
+21,transfer,clausula,MuchaSalsa,Koke,compra,-6499999
+21,bonificacion,quiniela,Dani,,,700000
+21,bonificacion,quiniela,De la Guettir FC,,,700000
+21,bonificacion,quiniela,Juanba,,,500000
+21,bonificacion,quiniela,Libre,,,500000
+21,bonificacion,quiniela,Los marinero,,,500000
+21,bonificacion,quiniela,Maldinillo 💥,,,500000
+21,bonificacion,quiniela,Chamacónicos,,,300000
+21,bonificacion,quiniela,Jotabetrbb,,,0
+21,bonificacion,quiniela,MuchaSalsa,,,0
+21,bonificacion,clasificacion,Dani,,,1650000
+21,bonificacion,clasificacion,Maldinillo 💥,,,1780000
+21,bonificacion,clasificacion,Juanba,,,1580000
+21,bonificacion,clasificacion,De la Guettir FC,,,1990000
+21,bonificacion,clasificacion,Jotabetrbb,,,1820000
+21,bonificacion,clasificacion,Chamacónicos,,,1900000
+21,bonificacion,clasificacion,Libre,,,2190000
+21,bonificacion,clasificacion,Los marinero,,,2200000
+21,bonificacion,clasificacion,MuchaSalsa,,,2320000
+21,transfer,mercado,Maldinillo 💥,Gorka Guruzeta,venta,2364880
+21,transfer,mercado,Jotabetrbb,César Azpilicueta,venta,3465960
+21,transfer,mercado,Maldinillo 💥,Carlos Álvarez,venta,7551440
+21,transfer,mercado,De la Guettir FC,Marc Bernal,venta,907000
+21,transfer,mercado,De la Guettir FC,David Costas,venta,183600
+21,transfer,mercado,Los marinero,Batista Mendy,venta,4275440
+21,marks,start_mercado,Mercado diario,,,0
+21,transfer,mercado,Libre,Logan Costa,compra,-203050
+21,transfer,mercado,Libre,Iker Losada,compra,-189060
+21,transfer,mercado,De la Guettir FC,Adrián de la Fuente,compra,-3411120
+21,transfer,mercado,Los marinero,Carlos Soler,compra,-5885000
+21,transfer,mercado,Maldinillo 💥,Iago Aspas,compra,-9856900
+22,transfer,mercado,Libre,Luis Rioja,venta,7247100
+22,transfer,mercado,Los marinero,Ricardo Rodríguez,venta,1096920
+22,transfer,mercado,Dani,Roger Brugué,venta,885770
+22,transfer,mercado,Dani,Manu Sánchez,venta,5165450
+22,transfer,mercado,Libre,Dani Ceballos,venta,4769440
+22,bajadaclausula,,Libre,Youssef Enríquez,,0
+22,marks,start_jornada,9.0,,,0
+22,transfer,mercado,Libre,Johan Mojica,venta,5875750
+22,transfer,mercado,Libre,Matías Moreno,venta,1143660
+22,transfer,mercado,Libre,Adrián de la Fuente,venta,3188850
+22,transfer,mercado,Libre,Igor Zubeldia,venta,4621610
+22,transfer,mercado,Dani,Jeremy Toljan,venta,5241670
+22,bajadaclausula,,MuchaSalsa,Álvaro Núñez,,0
+22,marks,start_mercado,Mercado diario,,,0
+22,transfer,mercado,Libre,Dani Ceballos,compra,-4950000
+22,transfer,mercado,Maldinillo 💥,Alexis Sánchez,compra,-6666669
+23,transfer,acuerdo,Maldinillo 💥,Samuel Costa,venta,4000000
+23,transfer,acuerdo,Libre,Samuel Costa,compra,-4000000
+23,transfer,acuerdo,Maldinillo 💥,Jon Gorrotxategi,venta,3400000
+23,transfer,acuerdo,Libre,Jon Gorrotxategi,compra,-3400000
+23,transfer,mercado,Dani,Omar El Hilali,venta,7543920
+23,transfer,mercado,Libre,David López,venta,167580
+23,marks,start_mercado,Mercado diario,,,0
+23,transfer,mercado,Libre,Alejandro Rego,compra,-576040
+23,transfer,mercado,Dani,Manu Sánchez,compra,-5536750
+24,transfer,mercado,Dani,Aitor Paredes,venta,7359350
+24,transfer,mercado,Chamacónicos,Pere Milla,venta,6121610
+24,transfer,mercado,Chamacónicos,Haissem Hassan,venta,6274320
+24,marks,start_mercado,Mercado diario,,,0
+24,transfer,mercado,Libre,Roony Bardghji,compra,-2141080
+24,transfer,mercado,Dani,Edu Expósito,compra,-11721280
+24,transfer,mercado,Dani,José Copete,compra,-817710
+24,transfer,mercado,Maldinillo 💥,Federico Viñas,compra,-162000
+25,transfer,mercado,Libre,Manu Morlanes,venta,862050
+25,transfer,mercado,Libre,Toni Lato,venta,176800
+25,transfer,mercado,Jotabetrbb,Jorge Cabello,venta,163000
+25,transfer,clausula,Jotabetrbb,Thierry Correia,venta,1000000
+25,transfer,clausula,Los marinero,Thierry Correia,compra,-1000000
+25,transfer,acuerdo,Los marinero,Tyrhys Dolan,venta,8000000
+25,transfer,acuerdo,Maldinillo 💥,Tyrhys Dolan,compra,-8000000
+25,transfer,mercado,Maldinillo 💥,Alberto Moleiro,venta,7028700
+25,marks,start_mercado,Mercado diario,,,0
+25,transfer,mercado,Libre,Igor Zubeldia,compra,-4516850
+25,transfer,mercado,Los marinero,Óscar Valentín,compra,-1456000
+25,transfer,mercado,Dani,Roger Brugué,compra,-988900
+26,transfer,mercado,Chamacónicos,Antonio Blanco,venta,6415000
+26,transfer,mercado,Los marinero,Jorge de Frutos,venta,10035800
+26,transfer,mercado,Libre,Manu Morlanes,venta,862050
+26,transfer,mercado,Libre,Toni Lato,venta,176800
+26,transfer,mercado,Jotabetrbb,Jorge Cabello,venta,163000
+26,transfer,clausula,Jotabetrbb,Thierry Correia,venta,1000000
+26,transfer,clausula,Los marinero,Thierry Correia,compra,-1000000
+26,transfer,acuerdo,Los marinero,Tyrhys Dolan,venta,8000000
+26,transfer,acuerdo,Maldinillo 💥,Tyrhys Dolan,compra,-8000000
+26,transfer,mercado,Maldinillo 💥,Alberto Moleiro,venta,7028700
+26,transfer,mercado,Libre,Igor Zubeldia,compra,-4516850
+26,transfer,mercado,Los marinero,Óscar Valentín,compra,-1456000
+26,transfer,mercado,Dani,Roger Brugué,compra,-988900
+26,transfer,mercado,Chamacónicos,Antonio Blanco,venta,6415000
+26,transfer,mercado,Los marinero,Jorge de Frutos,venta,10035800
+26,marks,start_mercado,Mercado diario,,,0
+26,transfer,mercado,Maldinillo 💥,Ander Barrenetxea,compra,-10885830
+26,transfer,mercado,Maldinillo 💥,Unai López,compra,-4957550
+27,marks,start_mercado,Mercado diario,,,0
+27,transfer,mercado,Chamacónicos,Eduardo Camavinga,compra,-5432000
+27,transfer,mercado,Dani,Aitor Paredes,compra,-7203820
+28,transfer,mercado,Libre,Alexander Sørloth,venta,9319860
+28,transfer,mercado,Jotabetrbb,Hugo Sotelo,venta,6408480
+28,marks,start_mercado,Mercado diario,,,0
+28,transfer,mercado,Chamacónicos,Sergio Herrera,compra,-9696969
+29,transfer,mercado,Jotabetrbb,Jon Moncayola,venta,7501200
+29,marks,start_mercado,Mercado diario,,,0
+29,transfer,mercado,Libre,Mikel Oyarzabal,compra,-12219490
+29,transfer,mercado,MuchaSalsa,Cristian Portu,compra,-914000
+29,transfer,mercado,Chamacónicos,Giovani Lo Celso,compra,-16666666
+29,transfer,mercado,Chamacónicos,Koke,compra,-4333333
+29,transfer,mercado,Maldinillo 💥,Pablo Maffeo,compra,-2091000
+30,transfer,clausula,Jotabetrbb,Clemens Riedel,venta,1676250
+30,transfer,clausula,Dani,Clemens Riedel,compra,-1676250
+30,marks,start_mercado,Mercado diario,,,0
+30,transfer,mercado,Libre,Johan Mojica,compra,-6400000
+30,transfer,mercado,Libre,Matías Moreno,compra,-1200000
+30,transfer,mercado,Libre,Hugo Rincón,compra,-738970
+30,transfer,mercado,Jotabetrbb,Arnau Tenas,compra,-3955000
+30,transfer,mercado,Los marinero,Luka Sučić,compra,-232000
+30,transfer,mercado,Maldinillo 💥,Carlos Romero,compra,-10868490
+30,transfer,mercado,Maldinillo 💥,Alberto Moleiro,compra,-6707760
+31,transfer,mercado,Chamacónicos,Antonio Sivera,venta,10435950
+31,transfer,mercado,Juanba,Rodrygo,venta,6313230
+31,transfer,mercado,Libre,Aurélien Tchouaméni,venta,12637800
+31,transfer,mercado,Dani,David Affengruber,venta,9248720
+31,marks,start_mercado,Mercado diario,,,0
+31,transfer,mercado,De la Guettir FC,Franco Mastantuono,compra,-10731400
+31,transfer,mercado,Dani,Cucho Hernández,compra,-15128510
+32,transfer,mercado,Maldinillo 💥,Ante Budimir,venta,14133600
+32,transfer,mercado,Chamacónicos,Pathé Ciss,venta,10463770
+32,bajadaclausula,,Los marinero,Etta Eyong,,0
+32,marks,start_mercado,Mercado diario,,,0
+32,transfer,mercado,Libre,Luis Rioja,compra,-6568860
+32,transfer,mercado,Los marinero,Lamine Yamal,compra,-31033710
+33,transfer,mercado,Maldinillo 💥,Carlos Romero,venta,10630200
+33,transfer,mercado,Chamacónicos,Iván Balliu,venta,474050
+33,transfer,mercado,Chamacónicos,Mario Martín,venta,3122430
+33,transfer,acuerdo,Los marinero,Haissem Hassan,venta,5409000
+33,transfer,acuerdo,Chamacónicos,Haissem Hassan,compra,-5409000
+33,bonificacion,quiniela,Jotabetrbb,,,500000
+33,bonificacion,quiniela,Juanba,,,500000
+33,bonificacion,quiniela,Chamacónicos,,,400000
+33,bonificacion,quiniela,Dani,,,400000
+33,bonificacion,quiniela,Libre,,,400000
+33,bonificacion,quiniela,Maldinillo 💥,,,400000
+33,bonificacion,quiniela,De la Guettir FC,,,300000
+33,bonificacion,quiniela,Los marinero,,,300000
+33,bonificacion,quiniela,MuchaSalsa,,,200000
+33,bonificacion,clasificacion,Jotabetrbb,,,1760000
+33,bonificacion,clasificacion,Maldinillo 💥,,,1700000
+33,bonificacion,clasificacion,Dani,,,1650000
+33,bonificacion,clasificacion,Los marinero,,,1660000
+33,bonificacion,clasificacion,Chamacónicos,,,1840000
+33,bonificacion,clasificacion,De la Guettir FC,,,2120000
+33,bonificacion,clasificacion,Juanba,,,2370000
+33,bonificacion,clasificacion,Libre,,,2260000
+33,bonificacion,clasificacion,MuchaSalsa,,,2480000
+33,transfer,mercado,Jotabetrbb,Léo Pétrot,venta,377400
+33,transfer,mercado,Maldinillo 💥,Pedro Bigas,venta,6642300
+33,marks,start_mercado,Mercado diario,,,0
+33,transfer,mercado,Libre,Adrián San Miguel,compra,-188000
+33,transfer,mercado,Jotabetrbb,Rubén Vargas,compra,-9000000
+33,transfer,mercado,Los marinero,Haissem Hassan,compra,-5884000
+33,transfer,mercado,Chamacónicos,Yangel Herrera,compra,-1801000
+34,transfer,clausula,Maldinillo 💥,Clemens Riedel,venta,1117500
+34,transfer,clausula,Jotabetrbb,Clemens Riedel,compra,-1117500
+34,transfer,mercado,Libre,Matías Dituro,venta,6182800
+34,transfer,mercado,Maldinillo 💥,César Tárrega,venta,6127670
+34,transfer,mercado,Dani,Abel Ruiz,venta,171600
+34,transfer,mercado,Chamacónicos,Mateu Morey,venta,2251140
+34,marks,start_mercado,Mercado diario,,,0
+34,transfer,mercado,Maldinillo 💥,Pedri,compra,-30147510
+35,transfer,mercado,Dani,Aitor Paredes,venta,6435950
+35,transfer,mercado,Maldinillo 💥,Sergi Darder,venta,10106060
+35,transfer,mercado,Chamacónicos,Franco Cervi,venta,205020
+35,transfer,mercado,Dani,Pablo Martínez,venta,2472080
+35,transfer,mercado,Los marinero,Javi Guerra,venta,6653760
+35,transfer,mercado,Los marinero,Diego Rico,venta,3818880
+35,transfer,mercado,Dani,Beñat Prados,venta,171150
+35,bajadaclausula,,Libre,Marcos Llorente,,0
+35,transfer,mercado,De la Guettir FC,Lucas Torró,venta,5604560
+35,marks,start_mercado,Mercado diario,,,0
+35,transfer,mercado,Jotabetrbb,Nico González,compra,-10000000
+35,transfer,mercado,Maldinillo 💥,Carlos Álvarez,compra,-5849520
+35,transfer,mercado,Maldinillo 💥,Gorka Guruzeta,compra,-1938070
+36,transfer,clausula,Dani,Abel Bretones,venta,3829800
+36,transfer,clausula,Chamacónicos,Abel Bretones,compra,-3829800
+36,transfer,mercado,Maldinillo 💥,Flavien Boyomo,venta,10224230
+36,marks,start_jornada,8.0,,,0
+36,transfer,mercado,Libre,Andrés Castrín,venta,1468700
+36,transfer,mercado,Libre,Dani Parejo,venta,4697550
+36,transfer,acuerdo,Dani,Abdel Abqar,venta,1907000
+36,transfer,acuerdo,Jotabetrbb,Abdel Abqar,compra,-1907000
+36,transfer,acuerdo,Dani,Samuel Costa,venta,2492000
+36,transfer,acuerdo,Maldinillo 💥,Samuel Costa,compra,-2492000
+36,transfer,mercado,Los marinero,Oihan Sancet,venta,12515530
+36,marks,start_mercado,Mercado diario,,,0
+36,transfer,mercado,Jotabetrbb,Léo Pétrot,compra,-460000
+36,transfer,mercado,Dani,Pablo Fornals,compra,-13519820
+36,transfer,mercado,Dani,Jeremy Toljan,compra,-4511740
+36,transfer,mercado,Dani,Pablo Martínez,compra,-2523370
+36,transfer,mercado,Dani,Beñat Prados,compra,-232980
+36,transfer,mercado,Dani,Abel Ruiz,compra,-181630
+37,transfer,mercado,MuchaSalsa,Luis Milla,venta,12640950
+37,transfer,clausula,Dani,Tyrhys Dolan,venta,9612000
+37,transfer,clausula,Los marinero,Tyrhys Dolan,compra,-9612000
+37,transfer,mercado,Maldinillo 💥,Marcos Alonso,venta,4935280
+37,transfer,mercado,Maldinillo 💥,Isaac Romero,venta,5996660
+37,transfer,clausula,Los marinero,Marc Roca,venta,1003500
+37,transfer,clausula,Jotabetrbb,Marc Roca,compra,-1003500
+37,marks,start_mercado,Mercado diario,,,0
+37,transfer,mercado,MuchaSalsa,Borja Iglesias,compra,-11253000
+37,transfer,mercado,Jotabetrbb,José Ángel Carmona,compra,-4315000
+37,transfer,mercado,Los marinero,Javi Guerra,compra,-7085000
+37,transfer,mercado,Maldinillo 💥,Jon Gorrotxategi,compra,-2636000
+37,transfer,mercado,Maldinillo 💥,Clemens Riedel,compra,-645450
+38,transfer,mercado,De la Guettir FC,Hector Fort,venta,1050700
+38,transfer,clausula,Jotabetrbb,Pablo Ibáñez,venta,3844500
+38,transfer,clausula,Juanba,Pablo Ibáñez,compra,-3844500
+38,transfer,mercado,Juanba,José Luis Morales,venta,4411800
+38,bonificacion,quiniela,De la Guettir FC,,,500000
+38,bonificacion,quiniela,Maldinillo 💥,,,500000
+38,bonificacion,quiniela,Chamacónicos,,,400000
+38,bonificacion,quiniela,Dani,,,400000
+38,bonificacion,quiniela,Los marinero,,,300000
+38,bonificacion,quiniela,MuchaSalsa,,,300000
+38,bonificacion,quiniela,Jotabetrbb,,,0
+38,bonificacion,quiniela,Juanba,,,0
+38,bonificacion,quiniela,Libre,,,0
+38,bonificacion,clasificacion,Dani,,,1460000
+38,bonificacion,clasificacion,Chamacónicos,,,2140000
+38,bonificacion,clasificacion,Maldinillo 💥,,,1600000
+38,bonificacion,clasificacion,Libre,,,1850000
+38,bonificacion,clasificacion,Juanba,,,1840000
+38,bonificacion,clasificacion,MuchaSalsa,,,2020000
+38,bonificacion,clasificacion,De la Guettir FC,,,2300000
+38,bonificacion,clasificacion,Jotabetrbb,,,2280000
+38,bonificacion,clasificacion,Los marinero,,,2360000
+38,transfer,mercado,Libre,Jonny Otto,venta,5068800
+38,marks,start_mercado,Mercado diario,,,0
+38,transfer,mercado,MuchaSalsa,Iñigo Ruiz De Galarreta,compra,-7479000
+38,transfer,mercado,Maldinillo 💥,Pedro Bigas,compra,-6315400
+38,transfer,mercado,Maldinillo 💥,César Tárrega,compra,-5940000
+39,transfer,mercado,Chamacónicos,Lucas Boyé,venta,1211700
+39,transfer,clausula,Maldinillo 💥,Abde Ezzalzouli,venta,7804908
+39,transfer,clausula,Juanba,Abde Ezzalzouli,compra,-7804908
+39,transfer,mercado,Libre,Takuma Asano,venta,595900
+39,transfer,mercado,Maldinillo 💥,Dani Carvajal,venta,7160000
+39,transfer,mercado,Dani,Denis Suárez,venta,1471600
+39,marks,start_mercado,Mercado diario,,,0
+39,transfer,mercado,Libre,Alexander Sørloth,compra,-11355990
+39,transfer,mercado,Libre,Youssef Enríquez,compra,-296660
+39,transfer,mercado,Maldinillo 💥,Marcos Alonso,compra,-5052350
+40,transfer,mercado,Libre,Isi Palazón,venta,9808000
+40,transfer,mercado,Los marinero,Leandro Cabrera,venta,8204230
+40,marks,start_mercado,Mercado diario,,,0
+40,transfer,mercado,De la Guettir FC,Álvaro García,compra,-11111133
+40,transfer,mercado,Chamacónicos,Azzedine Ounahi,compra,-6622000
+40,transfer,mercado,Maldinillo 💥,Coba da Costa,compra,-370120
+41,transfer,mercado,De la Guettir FC,Pablo Torre,venta,5265360
+41,transfer,mercado,Maldinillo 💥,Mikel Vesga,venta,987840
+41,transfer,mercado,Los marinero,Mariano Díaz,venta,1253340
+41,marks,start_mercado,Mercado diario,,,0
+41,transfer,mercado,Libre,Antoine Griezmann,compra,-11050000
+41,transfer,mercado,Los marinero,Ricardo Rodríguez,compra,-209000
+42,transfer,mercado,Maldinillo 💥,Luka Ilic,venta,1361220
+42,transfer,mercado,Chamacónicos,Adrián Liso,venta,4250080
+42,transfer,mercado,Libre,Pichu Cuéllar,venta,185850
+42,marks,start_mercado,Mercado diario,,,0
+42,transfer,mercado,Los marinero,Leandro Cabrera,compra,-8253000
+42,transfer,mercado,Los marinero,Marc Roca,compra,-556000
+42,transfer,mercado,Chamacónicos,Iván Balliu,compra,-609000
+43,marks,start_jornada,7.0,,,0
+43,transfer,mercado,Jotabetrbb,Thibaut Courtois,venta,10716160
+43,transfer,mercado,Libre,Kelechi Iheanacho,venta,185270
+43,transfer,mercado,Libre,Kike Salas,venta,7081000
+43,bonificacion,quiniela,De la Guettir FC,,,800000
+43,bonificacion,quiniela,Dani,,,700000
+43,bonificacion,quiniela,Jotabetrbb,,,700000
+43,bonificacion,quiniela,Juanba,,,600000
+43,bonificacion,quiniela,Maldinillo 💥,,,600000
+43,bonificacion,quiniela,MuchaSalsa,,,400000
+43,bonificacion,quiniela,Chamacónicos,,,0
+43,bonificacion,quiniela,Libre,,,0
+43,bonificacion,quiniela,Los marinero,,,0
+43,bonificacion,clasificacion,De la Guettir FC,,,1570000
+43,bonificacion,clasificacion,Jotabetrbb,,,1310000
+43,bonificacion,clasificacion,Dani,,,1160000
+43,bonificacion,clasificacion,Maldinillo 💥,,,1440000
+43,bonificacion,clasificacion,Los marinero,,,1580000
+43,bonificacion,clasificacion,Chamacónicos,,,1660000
+43,bonificacion,clasificacion,MuchaSalsa,,,1780000
+43,bonificacion,clasificacion,Libre,,,1980000
+43,bonificacion,clasificacion,Juanba,,,2060000
+43,transfer,acuerdo,Jotabetrbb,Isaac Romero,venta,6000000
+43,transfer,acuerdo,Maldinillo 💥,Isaac Romero,compra,-6000000
+43,marks,start_mercado,Mercado diario,,,0
+43,transfer,mercado,Libre,Gabriel Suazo,compra,-4173796
+43,transfer,mercado,Libre,Pichu Cuéllar,compra,-189010
+43,transfer,mercado,Jotabetrbb,Horațiu Moldovan,compra,-193000
+43,transfer,mercado,Maldinillo 💥,Luka Ilic,compra,-1436030
+44,transfer,mercado,Dani,Carlos Soler,venta,6325020
+44,transfer,mercado,Los marinero,Domingos Duarte,venta,1237850
+44,transfer,clausula,Maldinillo 💥,Rafa Mir,venta,8271165
+44,transfer,clausula,Dani,Rafa Mir,compra,-8271165
+44,transfer,mercado,Chamacónicos,Alejandro Catena,venta,6977360
+44,transfer,mercado,De la Guettir FC,Rodrigo Mendoza,venta,4730250
+44,marks,start_mercado,Mercado diario,,,0
+44,transfer,mercado,Jotabetrbb,Ferran Torres,compra,-14738000
+44,transfer,mercado,Los marinero,Diego Rico,compra,-4269000
+44,transfer,mercado,Chamacónicos,Djibril Sow,compra,-888000
+44,transfer,mercado,Dani,Abdel Abqar,compra,-1700550
+45,transfer,mercado,Jotabetrbb,Sergio Carreira,venta,1185240
+45,transfer,clausula,Chamacónicos,Valentín Gómez,venta,2000000
+45,transfer,clausula,Jotabetrbb,Valentín Gómez,compra,-2000000
+45,transfer,mercado,Chamacónicos,Marko Dmitrović,venta,10377250
+45,transfer,mercado,Libre,Unai López,venta,5134550
+45,marks,start_mercado,Mercado diario,,,0
+45,transfer,mercado,Libre,Aurélien Tchouaméni,compra,-12003710
+45,transfer,mercado,Libre,Marcos Llorente,compra,-8833400
+45,transfer,mercado,Libre,Dani Parejo,compra,-5235230
+45,transfer,mercado,Chamacónicos,Lucas Boyé,compra,-1207000
+46,transfer,clausula,Libre,Valentín Gómez,venta,1000000
+46,transfer,clausula,Chamacónicos,Valentín Gómez,compra,-1000000
+46,transfer,mercado,Libre,Gerard Moreno,venta,4406490
+46,transfer,mercado,Jotabetrbb,Joel Roca,venta,2447550
+46,marks,start_mercado,Mercado diario,,,0
+46,transfer,mercado,Los marinero,Batista Mendy,compra,-4124000
+46,transfer,mercado,Chamacónicos,Marko Dmitrović,compra,-10155000
+46,transfer,mercado,Dani,Omar El Hilali,compra,-6244880
+47,transfer,mercado,Maldinillo 💥,Hugo Duro,venta,8680350
+47,bonificacion,quiniela,Chamacónicos,,,700000
+47,bonificacion,quiniela,Jotabetrbb,,,700000
+47,bonificacion,quiniela,MuchaSalsa,,,700000
+47,bonificacion,quiniela,Dani,,,600000
+47,bonificacion,quiniela,De la Guettir FC,,,600000
+47,bonificacion,quiniela,Juanba,,,500000
+47,bonificacion,quiniela,Libre,,,500000
+47,bonificacion,quiniela,Los marinero,,,400000
+47,bonificacion,quiniela,Maldinillo 💥,,,400000
+47,bonificacion,clasificacion,Los marinero,,,2270000
+47,bonificacion,clasificacion,Maldinillo 💥,,,1690000
+47,bonificacion,clasificacion,Dani,,,1580000
+47,bonificacion,clasificacion,De la Guettir FC,,,1830000
+47,bonificacion,clasificacion,Jotabetrbb,,,1740000
+47,bonificacion,clasificacion,Chamacónicos,,,1700000
+47,bonificacion,clasificacion,Juanba,,,1860000
+47,bonificacion,clasificacion,MuchaSalsa,,,2040000
+47,bonificacion,clasificacion,Libre,,,2040000
+47,transfer,clausula,Los marinero,Tanguy Nianzou,venta,1029000
+47,transfer,clausula,Jotabetrbb,Tanguy Nianzou,compra,-1029000
+47,transfer,mercado,Dani,Lucas Ahijado,venta,197000
+47,transfer,mercado,Dani,Takefusa Kubo,venta,13449000
+47,marks,start_mercado,Mercado diario,,,0
+47,transfer,mercado,De la Guettir FC,Andreas Christensen,compra,-2898989
+47,transfer,mercado,Chamacónicos,Alejandro Catena,compra,-6448000
+47,transfer,mercado,Dani,David Affengruber,compra,-7536410
+47,transfer,mercado,Dani,Denis Suárez,compra,-1512030
+47,transfer,mercado,Maldinillo 💥,Rafa Mir,compra,-5514110
+47,transfer,mercado,Maldinillo 💥,Mikel Vesga,compra,-890860
+48,transfer,mercado,Maldinillo 💥,Carles Aleñá,venta,5145000
+48,marks,start_mercado,Mercado diario,,,0
+49,transfer,mercado,Chamacónicos,Axel Witsel,venta,1703520
+49,transfer,mercado,Los marinero,Gorka Guruzeta,venta,2332440
+49,transfer,mercado,Los marinero,Natan Souza,venta,4574850
+49,marks,start_mercado,Mercado diario,,,0
+49,transfer,mercado,Los marinero,Tanguy Nianzou,compra,-686000
+49,transfer,mercado,Maldinillo 💥,Hugo Duro,compra,-8298150
+49,transfer,mercado,Maldinillo 💥,Abde Ezzalzouli,compra,-5203272
+49,transfer,mercado,Maldinillo 💥,Paulo Gazzaniga,compra,-4463450
+50,transfer,mercado,Dani,Manor Solomon,venta,2697900
+50,transfer,mercado,Maldinillo 💥,Yago Santiago,venta,177600
+50,transfer,clausula,Maldinillo 💥,Georges Mikautadze,venta,9923400
+50,transfer,clausula,Chamacónicos,Georges Mikautadze,compra,-9923400
+50,transfer,mercado,Libre,Gavi,venta,7612500
+50,transfer,mercado,Chamacónicos,Rodrigo Riquelme,venta,5669120
+50,transfer,mercado,Chamacónicos,Pablo Campos,venta,4246320
+50,transfer,mercado,Los marinero,Thomas Lemar,venta,2398750
+50,marks,start_mercado,Mercado diario,,,0
+50,transfer,mercado,De la Guettir FC,Marc Bernal,compra,-3111111
+50,transfer,mercado,Los marinero,Gorka Guruzeta,compra,-2426000
+50,transfer,mercado,Chamacónicos,Antonio Sivera,compra,-10155000
+51,transfer,mercado,Maldinillo 💥,José Copete,venta,1535200
+51,marks,start_jornada,5.0,,,0
+51,transfer,mercado,Libre,Pacha Espino,venta,942760
+51,transfer,mercado,Maldinillo 💥,Jeremy Toljan,venta,2844450
+51,marks,start_mercado,Mercado diario,,,0
+51,transfer,mercado,Libre,Kike Salas,compra,-7406650
+51,transfer,mercado,Libre,Matías Dituro,compra,-7200000
+51,transfer,mercado,Libre,Andrés Castrín,compra,-1673040
+51,transfer,mercado,Libre,Valentín Gómez,compra,-444030
+51,transfer,mercado,De la Guettir FC,Jon Pacheco,compra,-233333
+52,transfer,clausula,Chamacónicos,Carlos Dominguez,venta,1658250
+52,transfer,clausula,Juanba,Carlos Dominguez,compra,-1658250
+52,transfer,clausula,Libre,Mariano Díaz,venta,2299500
+52,transfer,clausula,Los marinero,Mariano Díaz,compra,-2299500
+52,transfer,clausula,Libre,Dani Carvajal,venta,8896861
+52,transfer,clausula,Maldinillo 💥,Dani Carvajal,compra,-8896861
+52,transfer,acuerdo,Chamacónicos,Aitor Fernández,venta,27750
+52,transfer,acuerdo,Maldinillo 💥,Aitor Fernández,compra,-27750
+52,transfer,mercado,Maldinillo 💥,Borja Sánchez,venta,168000
+52,marks,start_mercado,Mercado diario,,,0
+52,transfer,mercado,Jotabetrbb,Sergio Carreira,compra,-1225528
+52,transfer,mercado,Maldinillo 💥,Sergi Darder,compra,-9692530
+52,transfer,mercado,Maldinillo 💥,Víctor García,compra,-167000
+53,transfer,clausula,Maldinillo 💥,Bryan Gil,venta,3391020
+53,transfer,clausula,Los marinero,Bryan Gil,compra,-3391020
+53,transfer,mercado,MuchaSalsa,Aitor Ruibal,venta,1803230
+53,transfer,mercado,MuchaSalsa,Luiz Júnior,venta,7436100
+53,transfer,mercado,Jotabetrbb,Moi Gómez,venta,1472000
+53,transfer,mercado,Maldinillo 💥,Javi Puado,venta,10275280
+53,marks,start_mercado,Mercado diario,,,0
+53,transfer,mercado,Maldinillo 💥,José Copete,compra,-1581120
+54,transfer,mercado,Maldinillo 💥,Ángel Ortiz,venta,755040
+54,transfer,mercado,Maldinillo 💥,Yuri Berchiche,venta,5133440
+54,bonificacion,quiniela,Juanba,,,700000
+54,bonificacion,quiniela,Maldinillo 💥,,,600000
+54,bonificacion,quiniela,De la Guettir FC,,,500000
+54,bonificacion,quiniela,Chamacónicos,,,400000
+54,bonificacion,quiniela,Jotabetrbb,,,400000
+54,bonificacion,quiniela,Los marinero,,,400000
+54,bonificacion,quiniela,MuchaSalsa,,,400000
+54,bonificacion,quiniela,Dani,,,300000
+54,bonificacion,quiniela,Libre,,,0
+54,bonificacion,clasificacion,Dani,,,1690000
+54,bonificacion,clasificacion,De la Guettir FC,,,1570000
+54,bonificacion,clasificacion,Chamacónicos,,,1460000
+54,bonificacion,clasificacion,Los marinero,,,1660000
+54,bonificacion,clasificacion,Jotabetrbb,,,1900000
+54,bonificacion,clasificacion,MuchaSalsa,,,2210000
+54,bonificacion,clasificacion,Juanba,,,2040000
+54,bonificacion,clasificacion,Maldinillo 💥,,,2270000
+54,bonificacion,clasificacion,Libre,,,2180000
+54,transfer,mercado,Chamacónicos,Rafa Marín,venta,7894800
+54,transfer,mercado,Los marinero,Beñat Prados,venta,549000
+54,marks,start_mercado,Mercado diario,,,0
+54,transfer,mercado,MuchaSalsa,Luis Milla,compra,-11831000
+54,transfer,mercado,Jotabetrbb,Pablo Ibáñez,compra,-2431000
+54,transfer,mercado,Maldinillo 💥,Unai Gómez,compra,-160000
+55,transfer,clausula,Los marinero,Victor Muñoz,venta,6942000
+55,transfer,clausula,Jotabetrbb,Victor Muñoz,compra,-6942000
+55,transfer,clausula,Jotabetrbb,Pere Milla,venta,4872000
+55,transfer,clausula,Chamacónicos,Pere Milla,compra,-4872000
+55,marks,start_mercado,Mercado diario,,,0
+55,transfer,mercado,Chamacónicos,Antonio Blanco,compra,-5360000
+55,transfer,mercado,Chamacónicos,Héctor Bellerín,compra,-4231000
+55,transfer,mercado,Chamacónicos,Aitor Fernández,compra,-160010
+55,transfer,mercado,Maldinillo 💥,Javi Puado,compra,-10385650
+55,transfer,mercado,Maldinillo 💥,Carles Aleñá,compra,-5027470
+56,transfer,mercado,Maldinillo 💥,Julen Agirrezabala,venta,5508000
+56,transfer,mercado,Maldinillo 💥,Junior Firpo,venta,5281120
+56,transfer,clausula,Maldinillo 💥,Carlos Dominguez,venta,1105500
+56,transfer,clausula,Chamacónicos,Carlos Dominguez,compra,-1105500
+56,transfer,mercado,Jotabetrbb,Juan Iglesias,venta,2843760
+56,transfer,mercado,Dani,Diego Pampín,venta,201400
+56,transfer,mercado,Maldinillo 💥,Franco Mastantuono,venta,10386600
+56,marks,start_mercado,Mercado diario,,,0
+56,transfer,mercado,Los marinero,Beñat Prados,compra,-665000
+56,transfer,mercado,Maldinillo 💥,Flavien Boyomo,compra,-9758310
+57,transfer,mercado,Chamacónicos,Brais Méndez,venta,5144000
+57,marks,start_mercado,Mercado diario,,,0
+57,transfer,mercado,Libre,Kike Barja,compra,-256020
+57,transfer,mercado,Libre,Asier Osambela,compra,-166070
+57,transfer,mercado,Dani,Abel Bretones,compra,-1914900
+57,transfer,mercado,Maldinillo 💥,Bryan Gil,compra,-2260680

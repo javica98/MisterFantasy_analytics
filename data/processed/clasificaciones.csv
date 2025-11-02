@@ -1,0 +1,100 @@
+jornada,nombre,posicion,puntos,valor_equipo
+1,Los marinero,1,57,39237000
+1,Dani,2,43,52600000
+1,MuchaSalsa,3,36,45487000
+1,De la Guettir FC,4,25,38277000
+1,Maldinillo ,5,22,44622000
+1,Chamaconicos,6,17,44857000
+1,Libre,7,17,22243000
+1,Juanba,8,16,42095000
+1,Jotabetrbb,9,12,43647000
+2,Chamaconicos,1,60,30534000
+2,Dani,2,35,55589000
+2,Jotabetrbb,3,33,44604000
+2,Los marinero,4,31,46106000
+2,MuchaSalsa,5,30,42468000
+2,Maldinillo ,6,29,55296000
+2,Juanba,7,26,44377000
+2,De la Guettir FC,8,18,42002000
+2,Libre,9,18,22595000
+3,Dani,1,49,57166000
+3,Los marinero,2,34,52198000
+3,De la Guettir FC,3,31,54551000
+3,Juanba,4,31,43449000
+3,Jotabetrbb,5,29,50994000
+3,Chamaconicos,6,25,39216000
+3,Maldinillo ,7,23,52345000
+3,MuchaSalsa,8,23,46425000
+3,Libre,9,9,25799000
+4,Dani,1,52,65499000
+4,De la Guettir FC,2,41,62934000
+4,Chamaconicos,3,38,67698000
+4,Los marinero,4,38,57637000
+4,Jotabetrbb,5,35,50731000
+4,MuchaSalsa,6,33,57788000
+4,Juanba,7,32,47572000
+4,Maldinillo ,8,26,65581000
+4,Libre,9,19,33572000
+5,Los marinero,1,66,54051000
+5,Maldinillo ,2,47,71952000
+5,Dani,3,44,70213000
+5,De la Guettir FC,4,39,63643000
+5,Jotabetrbb,5,37,56395000
+5,Chamaconicos,6,25,68199000
+5,Juanba,7,23,49226000
+5,MuchaSalsa,8,22,62083000
+5,Libre,9,12,41320000
+6,De la Guettir FC,1,51,54186000
+6,Jotabetrbb,2,33,43720000
+6,Dani,3,28,64163000
+6,Maldinillo ,4,27,48532000
+6,Los marinero,5,24,54807000
+6,Chamaconicos,6,23,49736000
+6,MuchaSalsa,7,19,50505000
+6,Libre,8,19,24149000
+6,Juanba,9,13,45229000
+7,Dani,1,58,69375000
+7,Chamaconicos,2,57,80915000
+7,Maldinillo ,3,40,78439000
+7,Libre,4,40,55377000
+7,Juanba,5,37,47165000
+7,MuchaSalsa,6,36,64936000
+7,De la Guettir FC,7,35,64553000
+7,Jotabetrbb,8,34,55756000
+7,Los marinero,9,28,66682000
+8,Jotabetrbb,1,48,62421000
+8,Maldinillo ,2,45,77679000
+8,Dani,3,40,86785000
+8,Los marinero,4,38,67025000
+8,Chamaconicos,5,37,83683000
+8,De la Guettir FC,6,36,70431000
+8,Juanba,7,36,49566000
+8,Libre,8,33,57298000
+8,MuchaSalsa,9,29,50363000
+9,Dani,1,60,90390000
+9,Maldinillo ,2,49,90890000
+9,Juanba,3,44,46294000
+9,De la Guettir FC,4,42,78192000
+9,Jotabetrbb,5,36,77834000
+9,Chamaconicos,6,35,89207000
+9,Libre,7,32,60183000
+9,Los marinero,8,30,73338000
+9,MuchaSalsa,9,26,51276000
+10,Maldinillo ,1,53,96959000
+10,Los marinero,2,46,79983000
+10,Chamaconicos,3,45,85637000
+10,Libre,4,42,56109000
+10,De la Guettir FC,5,37,80278000
+10,MuchaSalsa,6,36,75426000
+10,Dani,7,35,95575000
+10,Juanba,8,26,49236000
+10,Jotabetrbb,9,22,83131000
+11,Chamaconicos,1,7,0
+11,MuchaSalsa,2,7,0
+11,Maldinillo ,3,6,0
+11,Jotabetrbb,4,4,0
+11,Los marinero,5,2,0
+11,De la Guettir FC,6,2,0
+11,Dani,7,0,0
+11,Juanba,8,0,0
+11,Libre,9,0,0
