@@ -10,5 +10,4 @@ data/raw/
 *.html
 
 # Config y logs locales
-config/config.yaml
 *.log

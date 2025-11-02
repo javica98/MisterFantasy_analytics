@@ -1,10 +1,32 @@
-import os
 import sys
 import pandas as pd
 import logging
 
-# Añadir la carpeta raíz (MisterProyect) al sys.path
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+from pathlib import Path
+import os, sys
+
+# --- 🔧 Ajuste de ruta raíz del proyecto ---
+import sys
+import os
+from pathlib import Path
+
+# --- 🔧 Ajuste del entorno de ejecución ---
+# Detectar raíz del proyecto automáticamente
+CURRENT_FILE = Path(__file__).resolve()
+ROOT_DIR = CURRENT_FILE.parent.parent  # sube desde /scripts hasta la raíz
+SRC_DIR = ROOT_DIR / "src"
+
+# Asegurar que la raíz y src están en el sys.path
+for p in (ROOT_DIR, SRC_DIR):
+    if str(p) not in sys.path:
+        sys.path.insert(0, str(p))
+
+# Cambiar el directorio de trabajo a la raíz del proyecto
+os.chdir(ROOT_DIR)
+
+print("📂 Directorio raíz:", ROOT_DIR)
+print("📁 SRC añadido:", SRC_DIR)
+print("📁 sys.path[0]:", sys.path[0])
 
 from src.data.merge_notifications import merge_feed_cards_until_match
 from src.data.merge_clasification import merge_clasifications
@@ -48,9 +70,7 @@ DATA_RAW = cfg["data"]["raw_dir"]
 DATA_PROCESSED = cfg["data"]["processed_dir"]
 
 # Archivos HTML
-HTML_MAIN = cfg["paths"]["html"]["main"]
 HTML_AUX = cfg["paths"]["html"]["aux"]
-HTML_CLAS_MAIN = cfg["paths"]["html"]["clas_main"]
 HTML_CLAS_AUX = cfg["paths"]["html"]["clas_aux"]
 HTML_MERCADO_AUX = cfg["paths"]["html"]["mercado"]
 HTML_JORNADAS_AUX = cfg["paths"]["html"]["jornadas"]

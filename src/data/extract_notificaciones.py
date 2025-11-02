@@ -34,56 +34,65 @@ def extraer_notificaciones(html: str) -> pd.DataFrame:
     feed = soup.find("div", class_="feed-cards")
     if not feed:
         logger.warning("No se encontró el contenedor principal 'feed-cards'. Devolviendo DataFrame vacío.")
-        # devolver df con las columnas esperadas
         return _empty_notifications_df()
 
-    # Recorremos nodos de primer nivel dentro del feed para reducir ruido
-    for element in feed.find_all(recursive=False):
-        classes = element.get("class", []) or []
+    # --- NUEVO: recorrer cada card-wrapper ---
+    wrappers = feed.find_all("div", class_="card-wrapper", recursive=False)
+    if not wrappers:
+        logger.warning("No se encontraron 'card-wrapper' en el feed.")
+        return _empty_notifications_df()
 
-        # --- Transferencias: li.item (estructura observada) ---
+    for wrapper in wrappers:
         try:
-            if element.name == "li" and element.select_one(".item"):
-                item = element.select_one(".item")
+            # ==========================
+            #   INICIO DEL MERCADO
+            # ==========================
+            head_div = wrapper.find("div", class_="head")
+            if head_div:
+                title_div = head_div.find("div", class_="title")
+                if title_div and title_div.get_text(strip=True) == "Nuevas transacciones en el mercado":
+                    notificaciones.append({
+                        "type": "marks",
+                        "subtype": "start_mercado",
+                        "mensaje": "Nuevas transacciones en el mercado"
+                    })
+                    # seguimos, puede haber una card-transfer justo debajo
+                    # no hacemos continue
+
+            # ==========================
+            #   TRANSFERENCIAS
+            # ==========================
+            transfer_card = wrapper.find("div", class_="card-transfer")
+            if transfer_card:
+                item = transfer_card.find("div", class_="item")
+                if not item:
+                    continue
+
                 title_div = item.find("div", class_="title")
                 price_div = item.find("div", class_="price")
                 team_div = item.find("div", class_="icons")
                 pos_div = item.find("div", class_="player-position")
                 points_div = item.find("div", class_="points")
-
-                # seguridad: comprobar elementos básicos
                 if title_div and price_div:
-                    # jugador
-                    strong = title_div.find("strong")
-                    jugador = _text_of(strong)
-
-                    # equipos (em)
+                    jugador = _text_of(title_div.find("strong"))
                     equipos = title_div.find_all("em")
                     de_equipo = _text_of(equipos[0]) if len(equipos) > 0 else ""
                     a_equipo = _text_of(equipos[1]) if len(equipos) > 1 else ""
 
-                    # clausula
                     clausula = "cláusula" in title_div.get_text(strip=True, separator=" ").lower()
-
-                    # precio raw (podemos normalizar si hace falta)
                     precio = price_div.get_text(strip=True)
-
-                    # posicion y puntos
                     pos = pos_div["data-position"] if (pos_div and pos_div.has_attr("data-position")) else ""
                     points = _text_of(points_div)
 
-                    # equipo liga (extraer id del src si existe)
+                    # ID de equipo
                     team = None
-                    img_tag = None
-                    if team_div:
-                        img_tag = team_div.find("img", class_="team-logo")
+                    img_tag = team_div.find("img", class_="team-logo") if team_div else None
                     if img_tag and img_tag.has_attr("src"):
-                        src = img_tag["src"]
-                        m = re.search(r"/teams/(\d+)\.png", src)
+                        m = re.search(r"/teams/(\d+)\.png", img_tag["src"])
                         if m:
                             team = m.group(1)
 
-                    # subtype
+                    # Subtipo de transferencia
                     if clausula:
                         subtype = "clausula"
                     elif de_equipo == "Mister" or a_equipo == "Mister":
@@ -106,17 +115,16 @@ def extraer_notificaciones(html: str) -> pd.DataFrame:
                         "idTransfer": id_transfer_principal
                     })
 
-                    # Otras pujas (lista de pujas), si existen
-                    other_bids_ul = element.find("ul", class_="other-bids")
+                    # Pujas adicionales
+                    other_bids_ul = transfer_card.find("ul", class_="other-bids")
                     if other_bids_ul:
                         li_bids = other_bids_ul.find_all("li")[1:]  # saltar título
                         for li in li_bids:
                             nombre_tag = li.find("strong")
-                            nombre = _text_of(nombre_tag) or None
+                            nombre = _text_of(nombre_tag)
                             texto = li.get_text(" ", strip=True)
                             partes = texto.split("›")
                             dinero = partes[-1].strip() if len(partes) > 1 else None
-
                             id_puja = generar_id_transfer(jugador, de_equipo, nombre, dinero)
 
                             notificaciones.append({
@@ -131,70 +139,63 @@ def extraer_notificaciones(html: str) -> pd.DataFrame:
                                 "equipoLiga": team,
                                 "idTransfer": id_puja
                             })
-                # fin if title_div and price_div
-                continue  # pasar al siguiente element
-        except Exception as e:
-            logger.exception("Error procesando elemento transfer: %s", e)
-            # continuar con el resto de elementos
 
-        # --- Gameweek (resumen de jornada) ---
-        try:
-            if "card-gameweek_end" in classes:
-                ul = element.find("ul", class_="player-list--secondary")
-                if not ul:
-                    continue
-                for li in ul.find_all("li", recursive=False):
-                    player_row = li.find("div", class_="player-row")
-                    if not player_row:
-                        continue
-                    name = player_row.find("div", class_="name")
-                    money = player_row.find("div", class_="green")
-                    position = player_row.find("div", class_="position")
-                    points = player_row.select_one("div.points > div.value")
+            # ==========================
+            #   FIN DE JORNADA
+            # ==========================
+            gameweek_card = wrapper.find("div", class_="card-gameweek_end")
+            if gameweek_card:
+                ul = gameweek_card.find("ul", class_="player-list--secondary")
+                if ul:
+                    for li in ul.find_all("li", recursive=False):
+                        player_row = li.find("div", class_="player-row")
+                        if not player_row:
+                            continue
+                        name = player_row.find("div", class_="name")
+                        money = player_row.find("div", class_="green")
+                        position = player_row.find("div", class_="position")
+                        points = player_row.select_one("div.points > div.value")
 
-                    notificaciones.append({
-                        "type": "bonificacion",
-                        "subtype": "clasificacion",
-                        "name": _text_of(name),
-                        "money": _text_of(money).replace("+", ""),
-                        "position": _text_of(position),
-                        "points": _text_of(points)
-                    })
-                continue
-        except Exception as e:
-            logger.exception("Error procesando card-gameweek_end: %s", e)
+                        notificaciones.append({
+                            "type": "bonificacion",
+                            "subtype": "clasificacion",
+                            "name": _text_of(name),
+                            "money": _text_of(money).replace("+", ""),
+                            "position": _text_of(position),
+                            "points": _text_of(points)
+                        })
 
-        # --- Quiniela ---
-        try:
-            if "card-gameweek_end_pools" in classes:
-                ul = element.find("ul", class_="player-list--secondary")
-                if not ul:
-                    continue
-                for li in ul.find_all("li", recursive=False):
-                    player_row = li.find("div", class_="player-row")
-                    if not player_row:
-                        continue
-                    name = player_row.find("div", class_="name")
-                    money = player_row.find("div", class_="green")
-                    position = player_row.find("div", class_="position")
-                    aciertos = player_row.select_one("div.points > div.value")
+            # ==========================
+            #   QUINIELA
+            # ==========================
+            quiniela_card = wrapper.find("div", class_="card-gameweek_end_pools")
+            if quiniela_card:
+                ul = quiniela_card.find("ul", class_="player-list--secondary")
+                if ul:
+                    for li in ul.find_all("li", recursive=False):
+                        player_row = li.find("div", class_="player-row")
+                        if not player_row:
+                            continue
+                        name = player_row.find("div", class_="name")
+                        money = player_row.find("div", class_="green")
+                        position = player_row.find("div", class_="position")
+                        aciertos = player_row.select_one("div.points > div.value")
 
-                    notificaciones.append({
-                        "type": "bonificacion",
-                        "subtype": "quiniela",
-                        "name": _text_of(name),
-                        "money": _text_of(money),
-                        "position": _text_of(position),
-                        "aciertos": _text_of(aciertos)
-                    })
-                continue
-        except Exception as e:
-            logger.exception("Error procesando card-gameweek_end_pools: %s", e)
+                        notificaciones.append({
+                            "type": "bonificacion",
+                            "subtype": "quiniela",
+                            "name": _text_of(name),
+                            "money": _text_of(money),
+                            "position": _text_of(position),
+                            "aciertos": _text_of(aciertos)
+                        })
 
-        # --- Inicio de jornada ---
-        try:
-            if "card-gameweek_start" in classes:
-                title = element.find("h1", class_="title")
+            # ==========================
+            #   INICIO DE JORNADA
+            # ==========================
+            start_jornada = wrapper.find("div", class_="card-gameweek_start")
+            if start_jornada:
+                title = start_jornada.find("h1", class_="title")
                 if title:
                     m = re.search(r'Jornada\s+(\d+)', title.get_text())
                     if m:
@@ -204,36 +205,19 @@ def extraer_notificaciones(html: str) -> pd.DataFrame:
                             "subtype": "start_jornada",
                             "jornada": numero_jornada
                         })
-                continue
-        except Exception as e:
-            logger.exception("Error procesando card-gameweek_start: %s", e)
 
-        # --- Inicio del mercado ---
-        try:
-            # Detección por div.left y texto título
-            if element.name == "div" and "left" in classes:
-                title_div = element.find("div", class_="title")
-                if title_div and title_div.get_text(strip=True) == "Nuevas transacciones en el mercado":
-                    notificaciones.append({
-                        "type": "marks",
-                        "subtype": "start_mercado",
-                        "mensaje": "Nuevas transacciones en el mercado"
-                    })
-                continue
         except Exception as e:
-            logger.exception("Error procesando inicio de mercado: %s", e)
+            logger.exception("Error procesando wrapper: %s", e)
 
-    # Final: construir DataFrame con columnas estables
+    # --- construir el DataFrame final ---
     df = pd.DataFrame(notificaciones)
     today = pd.Timestamp.today().date()
     if not df.empty:
-        df['date'] = today
+        df["date"] = today
     else:
-        # crear DF vacío con columnas obligatorias
         df = _empty_notifications_df()
-        df['date'] = today
+        df["date"] = today
 
-    # Asegurar columnas
     all_columns = [
         "type","subtype","mensaje","jugador","de_equipo","a_equipo","precio",
         "posicionJugador","puntosJugador","equipoLiga","name","money","position",

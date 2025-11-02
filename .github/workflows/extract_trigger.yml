@@ -32,3 +32,9 @@ jobs:
           MISTER_PASSWORD: ${{ secrets.MISTER_PASSWORD }}
           MISTER_BASE_URL: ${{ secrets.MISTER_BASE_URL }}
         run: python scripts/run_extraction.py
+
+      - name: Upload processed CSVs
+        uses: actions/upload-artifact@v4
+        with:
+          name: processed-csvs
+          path: data/processed/*.csv
