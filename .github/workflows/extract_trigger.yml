@@ -28,5 +28,7 @@ jobs:
 
       - name: Run scraper
         env:
-          SECRET_KEY: ${{ secrets.SECRET_KEY }}
+          MISTER_USERNAME: ${{ secrets.MISTER_USERNAME }}
+          MISTER_PASSWORD: ${{ secrets.MISTER_PASSWORD }}
+          MISTER_BASE_URL: ${{ secrets.MISTER_BASE_URL }}
         run: python scripts/run_extraction.py
