@@ -2,7 +2,7 @@ name: Daily Data Extraction
 
 on:
   schedule:
-    - cron: '0 9 * * *'   # cada día a las 9:00 UTC
+    - cron: '0 7 * * *'   # cada día a las 7:00 UTC
   workflow_dispatch:       # permite ejecutar manualmente
 
 jobs:
@@ -10,22 +10,26 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      # 1️⃣ Checkout del repositorio
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          persist-credentials: true
+          persist-credentials: true   # necesario para push seguro
 
+      # 2️⃣ Configurar Python
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.11'
 
+      # 3️⃣ Instalar dependencias
       - name: Install dependencies
         run: |
           pip install -r requirements.txt
           playwright install --with-deps
 
+      # 4️⃣ Ejecutar scraper
       - name: Run scraper
         env:
           MISTER_USERNAME: ${{ secrets.MISTER_USERNAME }}
@@ -33,12 +37,14 @@ jobs:
           MISTER_BASE_URL: ${{ secrets.MISTER_BASE_URL }}
         run: python scripts/run_extraction.py
 
+      # 5️⃣ Subir CSV generados como artifact para revisión
       - name: Upload processed CSVs as artifacts
         uses: actions/upload-artifact@v4
         with:
           name: processed-csvs
           path: data/processed/*.csv
 
+      # 6️⃣ Commit y push de CSV al repo usando PAT
       - name: Commit and push updated CSVs
         env:
           PAT_TOKEN: ${{ secrets.PAT_TOKEN }}
