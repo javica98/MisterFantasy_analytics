@@ -2,7 +2,7 @@ name: Daily Data Extraction
 
 on:
   schedule:
-    - cron: '0 7 * * *'   # cada día a las 7:00 UTC
+    - cron: '0 7 * * *'   # cada día a las 9:00 UTC
   workflow_dispatch:       # permite ejecutar manualmente
 
 jobs:
@@ -43,7 +43,9 @@ jobs:
         with:
           name: processed-csvs
           path: data/processed/*.csv
-
+      # 6️⃣ Check PAT_TOKEN
+      - name: Check PAT_TOKEN
+        run: echo "${{ secrets.PAT_TOKEN }}" | head -c 4
       # 6️⃣ Commit y push de CSV al repo usando PAT
       - name: Commit and push updated CSVs
         env:
