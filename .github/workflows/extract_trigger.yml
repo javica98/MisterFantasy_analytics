@@ -33,8 +33,11 @@ jobs:
           MISTER_BASE_URL: ${{ secrets.MISTER_BASE_URL }}
         run: python scripts/run_extraction.py
 
-      - name: Upload processed CSVs
-        uses: actions/upload-artifact@v4
-        with:
-          name: processed-csvs
-          path: data/processed/*.csv
+       # 🔄 COMMIT AUTOMÁTICO DE LOS CSV ACTUALIZADOS
+      - name: Commit and push updated CSVs
+        run: |
+          git config --global user.email "github-actions@github.com"
+          git config --global user.name "GitHub Actions"
+          git add data/processed/*.csv
+          git commit -m "Auto-update CSV data [skip ci]" || echo "No changes to commit"
+          git push
