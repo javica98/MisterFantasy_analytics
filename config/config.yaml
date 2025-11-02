@@ -1,0 +1,26 @@
+paths:
+  html:
+    main: "data/raw/dataMister.html"
+    aux: "data/raw/dashboard.html"
+    clas_main: "data/raw/ClassificationMister.html"
+    clas_aux: "data/raw/clasificacion.html"
+    mercado: "data/raw/mercado.html"
+    jornadas: "data/raw/mi_equipo.html"
+    subidas_bajadas: "data/raw/MarketSubidasBajadas.html"
+
+  csv:
+    notificaciones: "data/processed/ganancias.csv"
+    clasificaciones: "data/processed/clasificaciones.csv"
+    mercado: "data/processed/mercado.csv"
+    jornada: "data/processed/jornadas.csv"
+    subidas_bajadas: "data/processed/subidasBajadas.csv"
+
+scraper:
+  delay: 2
+  scroll_pause: 2
+  max_scrolls: 60
+  headless: true
+
+logging:
+  level: "INFO"
+  file: "logs/app.log"
