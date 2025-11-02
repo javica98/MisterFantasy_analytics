@@ -2,8 +2,8 @@ name: Daily Data Extraction
 
 on:
   schedule:
-    - cron: '0 6 * * *'  # Ejecuta cada día a las 6:00 UTC
-  workflow_dispatch:      # Permite ejecución manual
+    - cron: '0 9 * * *'   # cada día a las 9:00 UTC
+  workflow_dispatch:       # permite ejecutar manualmente
 
 jobs:
   run-scraper:
@@ -13,7 +13,6 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          persist-credentials: true
           fetch-depth: 0
 
       - name: Set up Python
@@ -33,10 +32,19 @@ jobs:
           MISTER_BASE_URL: ${{ secrets.MISTER_BASE_URL }}
         run: python scripts/run_extraction.py
 
+      - name: Upload processed CSVs as artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: processed-csvs
+          path: data/processed/*.csv
+
       - name: Commit and push updated CSVs
+        env:
+          PAT_TOKEN: ${{ secrets.PAT_TOKEN }}
         run: |
           git config --global user.email "github-actions@github.com"
           git config --global user.name "GitHub Actions"
+          git remote set-url origin https://x-access-token:${PAT_TOKEN}@github.com/${{ github.repository }}.git
           git add data/processed/*.csv
           git commit -m "Auto-update CSV data [skip ci]" || echo "No changes to commit"
-          git push
+          git push origin main
