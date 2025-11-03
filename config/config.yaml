@@ -17,6 +17,9 @@ paths:
     mercado: "data/processed/mercado.csv"
     jornada: "data/processed/jornadas.csv"
     subidas_bajadas: "data/processed/subidasBajadas.csv"
+    notificaciones_clean: "data/processed/ganancias_clean.csv"
+    test: "data/processed/test.csv"
+
 
 scraper:
   delay: 2

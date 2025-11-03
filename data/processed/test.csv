@@ -1,834 +1,550 @@
-type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
-marks,start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,2025-11-01,
-transfer,mercado,,Rafa Mir,Dani,Mister,6.407.750,4,47,23,,,,,,,2025-11-01,eb4f8b2f665ce5a2c5627327515b7ff3
-marks,start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,2025-11-01,
-transfer,mercado,,Antonio Raíllo,Dani,Mister,6.875.440,2,34,408,,,,,,,2025-11-01,2c361f3dee9ba62a233bcaccb103f60b
-marks,start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,2025-11-01,
-transfer,mercado,,Thiago Almada,Maldinillo 💥,Mister,6.472.350,3,26,2,,,,,,,2025-11-01,21fa2ec0c474af4646fc583467e21483
-marks,start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,2025-11-01,
-transfer,mercado,,Eduardo Camavinga,Jotabetrbb,Mister,6.379.820,3,19,15,,,,,,,2025-11-01,3ae87eb41336d09decf039648731ad46
-transfer,acuerdo,,Éder Militão,Los marinero,,"↓ 6,01M",2,55,15,,,,,,,2025-11-01,7e2a5891c1a691e21af394fda8fc31a4
-marks,start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,2025-11-01,
-transfer,mercado,,Pau Navarro,Mister,Libre,210.000,2,7,20,,,,,,,2025-11-01,ed1453cabe562a7860764a8a298dbec0
-transfer,Puja,,Pau Navarro,Mister,Jotabetrbb,210.000 (realizada más tarde),2,7,20,,,,,,,2025-11-01,ed1453cabe562a7860764a8a298dbec0
-transfer,mercado,,Javi Galán,Mister,De la Guettir FC,389.500,2,12,2,,,,,,,2025-11-01,3028d8b237a5b2a25f511809ea829ff7
-transfer,Puja,,Javi Galán,Mister,Jotabetrbb,269.000,2,12,2,,,,,,,2025-11-01,3028d8b237a5b2a25f511809ea829ff7
-transfer,mercado,,André Silva,Mister,Dani,8.208.860,4,47,23,,,,,,,2025-11-01,e7b6a71c87e50705f601d68edfe4d65f
-transfer,Puja,,André Silva,Mister,Libre,7.660.720,4,47,23,,,,,,,2025-11-01,e7b6a71c87e50705f601d68edfe4d65f
-marks,start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,2025-11-01,
-transfer,clausula,,Iván Martín,Dani,Jotabetrbb,3.290.920,3,27,222,,,,,,,2025-11-01,a4547923b6dfc2776ace0880f674fdc9
-marks,start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,2025-11-01,
-transfer,mercado,,Yangel Herrera,Chamacónicos,Mister,2.682.160,3,6,16,,,,,,,2025-11-01,19b82a915ce6664c999a8cfa8dc26e08
-marks,start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,2025-11-01,
-transfer,mercado,,Fernando Calero,MuchaSalsa,Mister,2.636.460,2.0,31.0,8,,,,,,,2025-10-30,373683da65e4fdc0641a8a8840c4b5cd
-marks,start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,2025-10-30,
-transfer,mercado,,Arsen Zakharyan,Libre,Mister,196.800,3.0,7.0,16,,,,,,,2025-10-30,587d10dfc5bb1265ccf6de6954bbd5f3
-marks,start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,2025-10-30,
-transfer,mercado,,Alejandro Iturbe,Libre,Mister,194.040,1.0,0.0,23,,,,,,,2025-10-30,388a30ae1829a6bd0b25e86f31a29224
-marks,start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,2025-10-30,
-transfer,mercado,,Adrián San Miguel,Libre,Mister,190.080,1.0,0.0,4,,,,,,,2025-10-30,ef9d8d1e7ba9a8ddb27701d81c8348a1
-marks,start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,2025-10-30,
-transfer,mercado,,David Soria,Mister,MuchaSalsa,6.865.000,1.0,41.0,9,,,,,,,2025-10-30,6d30605ae2dda200d7041d15ace9f6c7
-transfer,Puja,,David Soria,Mister,Libre,6.794.655,1.0,41.0,9,,,,,,,2025-10-30,5683dd629bb696fa71a28d4e192f5fd1
-transfer,mercado,,Trent Alexander-Arnold,Mister,Chamacónicos,7.000.000,2.0,10.0,15,,,,,,,2025-10-30,b9a4bbea413ecb323b5ca7d2eb12b100
-transfer,Puja,,Trent Alexander-Arnold,Mister,MuchaSalsa,6.800.000,2.0,10.0,15,,,,,,,2025-10-30,943a9d7ebcf232ffb15ebed71beec934
-transfer,Puja,,Trent Alexander-Arnold,Mister,Maldinillo 💥,5.940.050,2.0,10.0,15,,,,,,,2025-10-30,b330b95b0861172936b37b97e2c6e53f
-transfer,mercado,,Nikola Maraš,Mister,Dani,160.000,2.0,0.0,48,,,,,,,2025-10-30,4b54ced366f27a2e3c08101bf8526248
-transfer,mercado,,Thiago Almada,Mister,Maldinillo 💥,6.773.430,3.0,26.0,2,,,,,,,2025-10-30,b4f7801e7726e0e6809d9cffea293bce
-transfer,Puja,,Thiago Almada,Mister,Libre,6.749.010,3.0,26.0,2,,,,,,,2025-10-30,ca828bcdafdfd0653c4621cb892bf03b
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Álex Moreno,Libre,Mister,3.176.750,2.0,24.0,222.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Antoine Griezmann,Libre,Mister,10.445.820,4.0,37.0,2.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Valentín Gómez,Jotabetrbb,Mister,1.754.400,2.0,21.0,4.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Jon Pacheco,De la Guettir FC,Mister,1.650.360,2.0,22.0,48.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Marcus Rashford,Mister,Libre,13.256.330,4.0,47.0,3.0,,,,,,,,,
-Puja,,Marcus Rashford,Mister,MuchaSalsa,13.255.000,4.0,47.0,3.0,,,,,,,,,
-Puja,,Marcus Rashford,Mister,Dani,13.056.010,4.0,47.0,3.0,,,,,,,,,
-Puja,,Marcus Rashford,Mister,Chamacónicos,13.050.505,4.0,47.0,3.0,,,,,,,,,
-mercado,,Mathew Ryan,Mister,Libre,6.671.319,1.0,35.0,12.0,,,,,,,,,
-Puja,,Mathew Ryan,Mister,MuchaSalsa,5.540.000,1.0,35.0,12.0,,,,,,,,,
-Puja,,Mathew Ryan,Mister,Jotabetrbb,5.240.000,1.0,35.0,12.0,,,,,,,,,
-mercado,,Filip Ugrinic,Mister,Libre,206.040,3.0,8.0,19.0,,,,,,,,,
-mercado,,Víctor Parada,Mister,Libre,184.000,2.0,15.0,48.0,,,,,,,,,
-mercado,,Vitor Reis,Mister,MuchaSalsa,2.235.000,2.0,20.0,222.0,,,,,,,,,
-Puja,,Vitor Reis,Mister,De la Guettir FC,2.222.223,2.0,20.0,222.0,,,,,,,,,
-Puja,,Vitor Reis,Mister,Dani,2.212.720,2.0,20.0,222.0,,,,,,,,,
-Puja,,Vitor Reis,Mister,Libre,2.111.560,2.0,20.0,222.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Kike Barja,Libre,Mister,169.050,3.0,9.0,50.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Arnau Tenas,Jotabetrbb,Mister,1.892.100,1.0,14.0,20.0,,,,,,,,,
-quiniela,,,,,,,,,Maldinillo 💥,+600.000,1º,6.0,,,,,
-quiniela,,,,,,,,,Dani,+500.000,2º,5.0,,,,,
-quiniela,,,,,,,,,Libre,+400.000,3º,4.0,,,,,
-quiniela,,,,,,,,,Los marinero,+400.000,4º,4.0,,,,,
-quiniela,,,,,,,,,MuchaSalsa,+400.000,5º,4.0,,,,,
-quiniela,,,,,,,,,Chamacónicos,+300.000,6º,3.0,,,,,
-quiniela,,,,,,,,,De la Guettir FC,+300.000,7º,3.0,,,,,
-quiniela,,,,,,,,,Jotabetrbb,+200.000,8º,2.0,,,,,
-quiniela,,,,,,,,,Juanba,+200.000,9º,2.0,,,,,
-clasificacion,,,,,,,,,Maldinillo 💥,1.860.000,1,,53.0,,,,
-clasificacion,,,,,,,,,Los marinero,1.420.000,2,,46.0,,,,
-clasificacion,,,,,,,,,Chamacónicos,1.750.000,3,,45.0,,,,
-clasificacion,,,,,,,,,Libre,1.990.000,4,,42.0,,,,
-clasificacion,,,,,,,,,De la Guettir FC,1.990.000,5,,37.0,,,,
-clasificacion,,,,,,,,,MuchaSalsa,2.170.000,6,,36.0,,,,
-clasificacion,,,,,,,,,Dani,2.100.000,7,,35.0,,,,
-clasificacion,,,,,,,,,Juanba,2.120.000,8,,26.0,,,,
-clasificacion,,,,,,,,,Jotabetrbb,2.240.000,9,,22.0,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Alexis Sánchez,Maldinillo 💥,Mister,5.878.950,4.0,33.0,17.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Yuri Berchiche,Mister,Libre,6.099.000,2.0,32.0,1.0,,,,,,,,,
-mercado,,Beñat Turrientes,Mister,Maldinillo 💥,252.310,3.0,20.0,16.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Hugo Rincón,Libre,Mister,1.049.360,2.0,20.0,222.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Andreas Christensen,De la Guettir FC,Mister,3.739.840,2.0,24.0,3.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Igor Zubeldia,Libre,Mister,4.773.000,2.0,30.0,16.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Oihan Sancet,Maldinillo 💥,Mister,10.486.350,3.0,22.0,1.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Franco Mastantuono,De la Guettir FC,Mister,9.978.000,3.0,31.0,15.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Germán Valera,Mister,De la Guettir FC,10.699.999,3.0,51.0,23.0,,,,,,,,,
-Puja,,Germán Valera,Mister,Dani,10.202.730,3.0,51.0,23.0,,,,,,,,,
-Puja,,Germán Valera,Mister,Libre,9.839.060,3.0,51.0,23.0,,,,,,,,,
-mercado,,Calebe Gonçalves,Mister,De la Guettir FC,344.050,3.0,14.0,48.0,,,,,,,,,
-Puja,,Calebe Gonçalves,Mister,Maldinillo 💥,321.080,3.0,14.0,48.0,,,,,,,,,
-Puja,,Calebe Gonçalves,Mister,Libre,321.010,3.0,14.0,48.0,,,,,,,,,
-mercado,,Marc Bartra,Mister,Dani,8.000.390,2.0,32.0,4.0,,,,,,,,,
-Puja,,Marc Bartra,Mister,Libre,7.795.850,2.0,32.0,4.0,,,,,,,,,
-mercado,,Robert Lewandowski,Mister,Maldinillo 💥,17.151.870,4.0,42.0,3.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-acuerdo,,Álex Moreno,Los marinero,Libre,3.400.000,2.0,24.0,222.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Daniel Vivian,Mister,Los marinero,6.839.000,2.0,28.0,1.0,,,,,,,,,
-Puja,,Daniel Vivian,Mister,Libre,6.777.210,2.0,28.0,1.0,,,,,,,,,
-Puja,,Daniel Vivian,Mister,Chamacónicos,6.719.000,2.0,28.0,1.0,,,,,,,,,
-Puja,,Daniel Vivian,Mister,Dani,6.625.340,2.0,28.0,1.0,,,,,,,,,
-Puja,,Daniel Vivian,Mister,Maldinillo 💥,6.519.550,2.0,28.0,1.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Gabriel Suazo,Libre,Mister,5.934.240,2.0,30.0,17.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Logan Costa,Libre,Mister,208.000,2.0,0.0,20.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Omar Falah,Dani,Mister,153.600,2.0,1.0,1370.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,David López,Dani,Mister,205.800,2.0,2.0,408.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Aritz Elustondo,Dani,Mister,176.400,2.0,4.0,16.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Jan Oblak,Mister,Jotabetrbb,9.040.000,1.0,48.0,2.0,,,,,,,,,
-Puja,,Jan Oblak,Mister,Libre,8.890.910,1.0,48.0,2.0,,,,,,,,,
-mercado,,Sergio Carreira,Mister,Chamacónicos,700.000,2.0,20.0,5.0,,,,,,,,,
-Puja,,Sergio Carreira,Mister,Libre,496.090,2.0,20.0,5.0,,,,,,,,,
-mercado,,Iván Martín,Mister,Dani,1.645.460,3.0,27.0,222.0,,,,,,,,,
-Puja,,Iván Martín,Mister,Chamacónicos,1.579.000,3.0,27.0,222.0,,,,,,,,,
-Puja,,Iván Martín,Mister,Libre,1.381.760,3.0,27.0,222.0,,,,,,,,,
-start_jornada,,,,,,,,,,,,,,10.0,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-acuerdo,,Marc Roca,Chamacónicos,Jotabetrbb,2.700.000,3.0,12.0,4.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-acuerdo,,Eduardo Camavinga,Chamacónicos,Jotabetrbb,6.000.000,3.0,19.0,15.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Sergi Altimira,MuchaSalsa,Mister,8.751.650,3.0,31.0,4.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Iago Aspas,Maldinillo 💥,Mister,9.644.000,4.0,34.0,5.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Igor Zubeldia,Mister,Libre,5.037.060,2.0,30.0,16.0,,,,,,,,,
-mercado,,Pedro Bigas,Mister,MuchaSalsa,7.302.000,2.0,41.0,23.0,,,,,,,,,
-Puja,,Pedro Bigas,Mister,Libre,6.786.410,2.0,41.0,23.0,,,,,,,,,
-mercado,,Aritz Elustondo,Mister,Dani,372.530,2.0,4.0,16.0,,,,,,,,,
-mercado,,Omar Falah,Mister,Dani,237.470,2.0,1.0,1370.0,,,,,,,,,
-mercado,,David López,Mister,Dani,214.890,2.0,2.0,408.0,,,,,,,,,
-mercado,,Oihan Sancet,Mister,Maldinillo 💥,10.132.070,3.0,22.0,1.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-clausula,,Marc Roca,Jotabetrbb,Chamacónicos,2.127.000,3.0,12.0,4.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-clausula,,José Copete,Dani,Los marinero,1.226.565,2.0,13.0,19.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-clausula,,Cristian Portu,MuchaSalsa,Dani,1.371.000,3.0,26.0,222.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Viktor Tsygankov,Mister,Chamacónicos,3.434.343,3.0,10.0,222.0,,,,,,,,,
-Puja,,Viktor Tsygankov,Mister,Libre,2.819.510,3.0,10.0,222.0,,,,,,,,,
-mercado,,Nobel Mendy,Mister,Chamacónicos,888.000,2.0,12.0,14.0,,,,,,,,,
-Puja,,Nobel Mendy,Mister,Dani,803.960,2.0,12.0,14.0,,,,,,,,,
-Puja,,Nobel Mendy,Mister,Jotabetrbb,710.000,2.0,12.0,14.0,,,,,,,,,
-Puja,,Nobel Mendy,Mister,Maldinillo 💥,553.450,2.0,12.0,14.0,,,,,,,,,
-Puja,,Nobel Mendy,Mister,Libre,407.010,2.0,12.0,14.0,,,,,,,,,
-mercado,,Antonio Raíllo,Mister,Dani,6.301.520,2.0,34.0,408.0,,,,,,,,,
-Puja,,Antonio Raíllo,Mister,Libre,6.170.010,2.0,34.0,408.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Unai López,Maldinillo 💥,Mister,5.330.850,3.0,31.0,14.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Tyrhys Dolan,Maldinillo 💥,Mister,7.455.000,3.0,45.0,8.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Iker Losada,Libre,Mister,191.360,4.0,4.0,12.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Pol Lozano,Mister,Libre,3.850.558,3.0,41.0,8.0,,,,,,,,,
-Puja,,Pol Lozano,Mister,Dani,3.427.720,3.0,41.0,8.0,,,,,,,,,
-Puja,,Pol Lozano,Mister,Chamacónicos,3.207.000,3.0,41.0,8.0,,,,,,,,,
-Puja,,Pol Lozano,Mister,MuchaSalsa,3.206.000,3.0,41.0,8.0,,,,,,,,,
-mercado,,Nico Williams,Mister,Maldinillo 💥,15.278.590,4.0,28.0,1.0,,,,,,,,,
-Puja,,Nico Williams,Mister,Chamacónicos,15.127.000,4.0,28.0,1.0,,,,,,,,,
-Puja,,Nico Williams,Mister,Libre,15.026.000,4.0,28.0,1.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-clausula,,Koke,Chamacónicos,MuchaSalsa,6.499.999,3.0,47.0,2.0,,,,,,,,,
-quiniela,,,,,,,,,Dani,+700.000,1º,7.0,,,,,
-quiniela,,,,,,,,,De la Guettir FC,+700.000,2º,7.0,,,,,
-quiniela,,,,,,,,,Juanba,+500.000,3º,5.0,,,,,
-quiniela,,,,,,,,,Libre,+500.000,4º,5.0,,,,,
-quiniela,,,,,,,,,Los marinero,+500.000,5º,5.0,,,,,
-quiniela,,,,,,,,,Maldinillo 💥,+500.000,6º,5.0,,,,,
-quiniela,,,,,,,,,Chamacónicos,+300.000,7º,3.0,,,,,
-quiniela,,,,,,,,,Jotabetrbb,,8º,0.0,,,,,
-quiniela,,,,,,,,,MuchaSalsa,,9º,0.0,,,,,
-clasificacion,,,,,,,,,Dani,1.650.000,1,,60.0,,,,
-clasificacion,,,,,,,,,Maldinillo 💥,1.780.000,2,,49.0,,,,
-clasificacion,,,,,,,,,Juanba,1.580.000,3,,44.0,,,,
-clasificacion,,,,,,,,,De la Guettir FC,1.990.000,4,,42.0,,,,
-clasificacion,,,,,,,,,Jotabetrbb,1.820.000,5,,36.0,,,,
-clasificacion,,,,,,,,,Chamacónicos,1.900.000,6,,35.0,,,,
-clasificacion,,,,,,,,,Libre,2.190.000,7,,32.0,,,,
-clasificacion,,,,,,,,,Los marinero,2.200.000,8,,30.0,,,,
-clasificacion,,,,,,,,,MuchaSalsa,2.320.000,9,,26.0,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Gorka Guruzeta,Maldinillo 💥,Mister,2.364.880,4.0,15.0,1.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,César Azpilicueta,Jotabetrbb,Mister,3.465.960,2.0,21.0,17.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Carlos Álvarez,Maldinillo 💥,Mister,7.551.440,3.0,47.0,12.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Marc Bernal,De la Guettir FC,Mister,907.000,3.0,6.0,3.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,David Costas,De la Guettir FC,Mister,183.600,2.0,16.0,1370.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Batista Mendy,Los marinero,Mister,4.275.440,3.0,24.0,17.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Logan Costa,Mister,Libre,203.050,2.0,0.0,20.0,,,,,,,,,
-mercado,,Iker Losada,Mister,Libre,189.060,4.0,4.0,12.0,,,,,,,,,
-mercado,,Adrián de la Fuente,Mister,De la Guettir FC,3.411.120,2.0,26.0,12.0,,,,,,,,,
-Puja,,Adrián de la Fuente,Mister,Dani,3.302.160,2.0,26.0,12.0,,,,,,,,,
-Puja,,Adrián de la Fuente,Mister,Libre,3.241.080,2.0,26.0,12.0,,,,,,,,,
-mercado,,Carlos Soler,Mister,Los marinero,5.885.000,3.0,26.0,16.0,,,,,,,,,
-Puja,,Carlos Soler,Mister,Libre,5.359.400,3.0,26.0,16.0,,,,,,,,,
-Puja,,Carlos Soler,Mister,Dani,5.311.430,3.0,26.0,16.0,,,,,,,,,
-Puja,,Carlos Soler,Mister,Maldinillo 💥,4.995.160,3.0,26.0,16.0,,,,,,,,,
-mercado,,Iago Aspas,Mister,Maldinillo 💥,9.856.900,4.0,34.0,5.0,,,,,,,,,
-Puja,,Iago Aspas,Mister,Libre,9.758.670,4.0,34.0,5.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Luis Rioja,Libre,Mister,7.247.100,3.0,35.0,19.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Ricardo Rodríguez,Los marinero,Mister,1.096.920,2.0,15.0,4.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Roger Brugué,Dani,Mister,885.770,3.0,21.0,12.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Manu Sánchez,Dani,Mister,5.165.450,2.0,37.0,12.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Dani Ceballos,Libre,Mister,4.769.440,3.0,24.0,15.0,,,,,,,,,
-acuerdo,,Youssef Enríquez,Libre,,"↓ 0,73M",2.0,23.0,48.0,,,,,,,,,
-start_jornada,,,,,,,,,,,,,,9.0,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Johan Mojica,Libre,Mister,5.875.750,2.0,40.0,408.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Matías Moreno,Libre,Mister,1.143.660,2.0,21.0,12.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Adrián de la Fuente,Libre,Mister,3.188.850,2.0,26.0,12.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Igor Zubeldia,Libre,Mister,4.621.610,2.0,30.0,16.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Jeremy Toljan,Dani,Mister,5.241.670,2.0,41.0,12.0,,,,,,,,,
-acuerdo,,Álvaro Núñez,MuchaSalsa,,"↓ 2,04M",2.0,33.0,23.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Dani Ceballos,Mister,Libre,4.950.000,3.0,24.0,15.0,,,,,,,,,
-mercado,,Alexis Sánchez,Mister,Maldinillo 💥,6.666.669,4.0,33.0,17.0,,,,,,,,,
-Puja,,Alexis Sánchez,Mister,MuchaSalsa,6.035.000,4.0,33.0,17.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-acuerdo,,Samuel Costa,Maldinillo 💥,Libre,4.000.000,3.0,31.0,408.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-acuerdo,,Jon Gorrotxategi,Maldinillo 💥,Libre,3.400.000,3.0,31.0,16.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Omar El Hilali,Dani,Mister,7.543.920,2.0,40.0,8.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,David López,Libre,Mister,167.580,2.0,2.0,408.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Alejandro Rego,Mister,Libre,576.040,3.0,20.0,1.0,,,,,,,,,
-mercado,,Manu Sánchez,Mister,Dani,5.536.750,2.0,37.0,12.0,,,,,,,,,
-Puja,,Manu Sánchez,Mister,Maldinillo 💥,5.168.910,2.0,37.0,12.0,,,,,,,,,
-Puja,,Manu Sánchez,Mister,Libre,5.127.030,2.0,37.0,12.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Aitor Paredes,Dani,Mister,7.359.350,2.0,35.0,1.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Pere Milla,Chamacónicos,Mister,6.121.610,4.0,50.0,8.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Haissem Hassan,Chamacónicos,Mister,6.274.320,4.0,41.0,1370.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Roony Bardghji,Mister,Libre,2.141.080,4.0,22.0,3.0,,,,,,,,,
-Puja,,Roony Bardghji,Mister,Maldinillo 💥,2.141.070,4.0,22.0,3.0,,,,,,,,,
-mercado,,Edu Expósito,Mister,Dani,11.721.280,3.0,54.0,8.0,,,,,,,,,
-mercado,,José Copete,Mister,Dani,817.710,2.0,13.0,19.0,,,,,,,,,
-mercado,,Federico Viñas,Mister,Maldinillo 💥,162.000,4.0,16.0,1370.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Manu Morlanes,Libre,Mister,862.050,3.0,19.0,408.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Toni Lato,Libre,Mister,176.800,2.0,7.0,408.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Jorge Cabello,Jotabetrbb,Mister,163.000,2.0,5.0,12.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-clausula,,Thierry Correia,Jotabetrbb,Los marinero,1.000.000,2.0,9.0,19.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-acuerdo,,Tyrhys Dolan,Los marinero,Maldinillo 💥,8.000.000,3.0,45.0,8.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Alberto Moleiro,Maldinillo 💥,Mister,7.028.700,3.0,43.0,20.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Igor Zubeldia,Mister,Libre,4.516.850,2.0,30.0,16.0,,,,,,,,,
-Puja,,Igor Zubeldia,Mister,Dani,4.402.140,2.0,30.0,16.0,,,,,,,,,
-Puja,,Igor Zubeldia,Mister,MuchaSalsa,4.293.000,2.0,30.0,16.0,,,,,,,,,
-Puja,,Igor Zubeldia,Mister,Maldinillo 💥,4.260.860,2.0,30.0,16.0,,,,,,,,,
-mercado,,Óscar Valentín,Mister,Los marinero,1.456.000,3.0,26.0,14.0,,,,,,,,,
-Puja,,Óscar Valentín,Mister,Libre,1.234.380,3.0,26.0,14.0,,,,,,,,,
-mercado,,Roger Brugué,Mister,Dani,988.900,3.0,21.0,12.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Antonio Blanco,Chamacónicos,Mister,6.415.000,3.0,37.0,48.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Jorge de Frutos,Los marinero,Mister,10.035.800,3.0,62.0,14.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Ander Barrenetxea,Mister,Maldinillo 💥,10.885.830,3.0,54.0,16.0,,,,,,,,,
-Puja,,Ander Barrenetxea,Mister,Libre,10.500.000,3.0,54.0,16.0,,,,,,,,,
-Puja,,Ander Barrenetxea,Mister,Dani,10.022.660,3.0,54.0,16.0,,,,,,,,,
-mercado,,Unai López,Mister,Maldinillo 💥,4.957.550,3.0,31.0,14.0,,,,,,,,,
-Puja,,Unai López,Mister,Libre,4.199.760,3.0,31.0,14.0,,,,,,,,,
-Puja,,Unai López,Mister,Los marinero,4.199.000,3.0,31.0,14.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Eduardo Camavinga,Mister,Chamacónicos,5.432.000,3.0,19.0,15.0,,,,,,,,,
-Puja,,Eduardo Camavinga,Mister,Dani,5.409.790,3.0,19.0,15.0,,,,,,,,,
-Puja,,Eduardo Camavinga,Mister,Maldinillo 💥,5.398.260,3.0,19.0,15.0,,,,,,,,,
-Puja,,Eduardo Camavinga,Mister,Libre,5.348.312,3.0,19.0,15.0,,,,,,,,,
-mercado,,Aitor Paredes,Mister,Dani,7.203.820,2.0,35.0,1.0,,,,,,,,,
-Puja,,Aitor Paredes,Mister,Maldinillo 💥,7.172.500,2.0,35.0,1.0,,,,,,,,,
-Puja,,Aitor Paredes,Mister,Libre,7.122.000,2.0,35.0,1.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Alexander Sørloth,Libre,Mister,9.319.860,4.0,16.0,2.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Hugo Sotelo,Jotabetrbb,Mister,6.408.480,3.0,38.0,5.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Sergio Herrera,Mister,Chamacónicos,9.696.969,1.0,43.0,50.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Jon Moncayola,Jotabetrbb,Mister,7.501.200,3.0,44.0,50.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Mikel Oyarzabal,Mister,Libre,12.219.490,4.0,59.0,16.0,,,,,,,,,
-Puja,,Mikel Oyarzabal,Mister,Maldinillo 💥,10.809.910,4.0,59.0,16.0,,,,,,,,,
-Puja,,Mikel Oyarzabal,Mister,Dani,10.603.500,4.0,59.0,16.0,,,,,,,,,
-Puja,,Mikel Oyarzabal,Mister,Chamacónicos,10.568.000,4.0,59.0,16.0,,,,,,,,,
-mercado,,Cristian Portu,Mister,MuchaSalsa,914.000,3.0,26.0,222.0,,,,,,,,,
-mercado,,Giovani Lo Celso,Mister,Chamacónicos,16.666.666,3.0,49.0,4.0,,,,,,,,,
-Puja,,Giovani Lo Celso,Mister,Maldinillo 💥,15.035.710,3.0,49.0,4.0,,,,,,,,,
-mercado,,Koke,Mister,Chamacónicos,4.333.333,3.0,47.0,2.0,,,,,,,,,
-Puja,,Koke,Mister,Libre,4.000.069,3.0,47.0,2.0,,,,,,,,,
-Puja,,Koke,Mister,De la Guettir FC,3.112.233,3.0,47.0,2.0,,,,,,,,,
-Puja,,Koke,Mister,MuchaSalsa,3.080.000,3.0,47.0,2.0,,,,,,,,,
-Puja,,Koke,Mister,Dani,3.073.450,3.0,47.0,2.0,,,,,,,,,
-Puja,,Koke,Mister,Jotabetrbb,2.934.000,3.0,47.0,2.0,,,,,,,,,
-Puja,,Koke,Mister,Los marinero,2.735.000,3.0,47.0,2.0,,,,,,,,,
-Puja,,Koke,Mister,Maldinillo 💥,2.535.000,3.0,47.0,2.0,,,,,,,,,
-mercado,,Pablo Maffeo,Mister,Maldinillo 💥,2.091.000,2.0,29.0,408.0,,,,,,,,,
-Puja,,Pablo Maffeo,Mister,MuchaSalsa,2.000.999,2.0,29.0,408.0,,,,,,,,,
-Puja,,Pablo Maffeo,Mister,Dani,1.576.600,2.0,29.0,408.0,,,,,,,,,
-Puja,,Pablo Maffeo,Mister,Chamacónicos,1.530.000,2.0,29.0,408.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-clausula,,Clemens Riedel,Jotabetrbb,Dani,1.676.250,2.0,25.0,8.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Johan Mojica,Mister,Libre,6.400.000,2.0,40.0,408.0,,,,,,,,,
-Puja,,Johan Mojica,Mister,Chamacónicos,5.930.000,2.0,40.0,408.0,,,,,,,,,
-Puja,,Johan Mojica,Mister,Maldinillo 💥,5.836.960,2.0,40.0,408.0,,,,,,,,,
-mercado,,Matías Moreno,Mister,Libre,1.200.000,2.0,21.0,12.0,,,,,,,,,
-Puja,,Matías Moreno,Mister,Maldinillo 💥,908.950,2.0,21.0,12.0,,,,,,,,,
-mercado,,Hugo Rincón,Mister,Libre,738.970,2.0,20.0,222.0,,,,,,,,,
-mercado,,Arnau Tenas,Mister,Jotabetrbb,3.955.000,1.0,14.0,20.0,,,,,,,,,
-Puja,,Arnau Tenas,Mister,Libre,1.310.000,1.0,14.0,20.0,,,,,,,,,
-Puja,,Arnau Tenas,Mister,Maldinillo 💥,1.216.560,1.0,14.0,20.0,,,,,,,,,
-Puja,,Arnau Tenas,Mister,Los marinero,1.165.000,1.0,14.0,20.0,,,,,,,,,
-mercado,,Luka Sučić,Mister,Los marinero,232.000,3.0,1.0,16.0,,,,,,,,,
-mercado,,Carlos Romero,Mister,Maldinillo 💥,10.868.490,2.0,70.0,8.0,,,,,,,,,
-Puja,,Carlos Romero,Mister,Dani,10.804.520,2.0,70.0,8.0,,,,,,,,,
-Puja,,Carlos Romero,Mister,Chamacónicos,10.474.000,2.0,70.0,8.0,,,,,,,,,
-Puja,,Carlos Romero,Mister,Libre,10.313.250,2.0,70.0,8.0,,,,,,,,,
-mercado,,Alberto Moleiro,Mister,Maldinillo 💥,6.707.760,3.0,43.0,20.0,,,,,,,,,
-Puja,,Alberto Moleiro,Mister,Libre,6.705.000,3.0,43.0,20.0,,,,,,,,,
-Puja,,Alberto Moleiro,Mister,Dani,6.415.940,3.0,43.0,20.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Antonio Sivera,Chamacónicos,Mister,10.435.950,1.0,47.0,48.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Rodrygo,Juanba,Mister,6.313.230,4.0,21.0,15.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Aurélien Tchouaméni,Libre,Mister,12.637.800,3.0,51.0,15.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,David Affengruber,Dani,Mister,9.248.720,2.0,30.0,23.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Franco Mastantuono,Mister,De la Guettir FC,10.731.400,3.0,31.0,15.0,,,,,,,,,
-Puja,,Franco Mastantuono,Mister,Chamacónicos,10.631.000,3.0,31.0,15.0,,,,,,,,,
-Puja,,Franco Mastantuono,Mister,Maldinillo 💥,10.531.360,3.0,31.0,15.0,,,,,,,,,
-mercado,,Cucho Hernández,Mister,Dani,15.128.510,4.0,58.0,4.0,,,,,,,,,
-Puja,,Cucho Hernández,Mister,Chamacónicos,13.673.000,4.0,58.0,4.0,,,,,,,,,
-Puja,,Cucho Hernández,Mister,Libre,12.569.600,4.0,58.0,4.0,,,,,,,,,
-Puja,,Cucho Hernández,Mister,Maldinillo 💥,12.089.530,4.0,58.0,4.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Ante Budimir,Maldinillo 💥,Mister,14.133.600,4.0,48.0,50.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Pathé Ciss,Chamacónicos,Mister,10.463.770,3.0,40.0,14.0,,,,,,,,,
-acuerdo,,Etta Eyong,Los marinero,,"↓ 6,30M",4.0,73.0,12.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Luis Rioja,Mister,Libre,6.568.860,3.0,35.0,19.0,,,,,,,,,
-mercado,,Lamine Yamal,Mister,Los marinero,31.033.710,4.0,44.0,3.0,,,,,,,,,
-Puja,,Lamine Yamal,Mister,Maldinillo 💥,30.400.277,4.0,44.0,3.0,,,,,,,,,
-Puja,,Lamine Yamal,Mister,Dani,28.202.000,4.0,44.0,3.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Carlos Romero,Maldinillo 💥,Mister,10.630.200,2.0,70.0,8.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Iván Balliu,Chamacónicos,Mister,474.050,2.0,10.0,14.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Mario Martín,Chamacónicos,Mister,3.122.430,3.0,33.0,9.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-acuerdo,,Haissem Hassan,Los marinero,Chamacónicos,5.409.000,4.0,41.0,1370.0,,,,,,,,,
-quiniela,,,,,,,,,Jotabetrbb,+500.000,1º,5.0,,,,,
-quiniela,,,,,,,,,Juanba,+500.000,2º,5.0,,,,,
-quiniela,,,,,,,,,Chamacónicos,+400.000,3º,4.0,,,,,
-quiniela,,,,,,,,,Dani,+400.000,4º,4.0,,,,,
-quiniela,,,,,,,,,Libre,+400.000,5º,4.0,,,,,
-quiniela,,,,,,,,,Maldinillo 💥,+400.000,6º,4.0,,,,,
-quiniela,,,,,,,,,De la Guettir FC,+300.000,7º,3.0,,,,,
-quiniela,,,,,,,,,Los marinero,+300.000,8º,3.0,,,,,
-quiniela,,,,,,,,,MuchaSalsa,+200.000,9º,2.0,,,,,
-clasificacion,,,,,,,,,Jotabetrbb,1.760.000,1,,48.0,,,,
-clasificacion,,,,,,,,,Maldinillo 💥,1.700.000,2,,45.0,,,,
-clasificacion,,,,,,,,,Dani,1.650.000,3,,40.0,,,,
-clasificacion,,,,,,,,,Los marinero,1.660.000,4,,38.0,,,,
-clasificacion,,,,,,,,,Chamacónicos,1.840.000,5,,37.0,,,,
-clasificacion,,,,,,,,,De la Guettir FC,2.120.000,6,,36.0,,,,
-clasificacion,,,,,,,,,Juanba,2.370.000,7,,36.0,,,,
-clasificacion,,,,,,,,,Libre,2.260.000,8,,33.0,,,,
-clasificacion,,,,,,,,,MuchaSalsa,2.480.000,9,,29.0,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Léo Pétrot,Jotabetrbb,Mister,377.400,2.0,17.0,23.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Pedro Bigas,Maldinillo 💥,Mister,6.642.300,2.0,41.0,23.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Adrián San Miguel,Mister,Libre,188.000,1.0,0.0,4.0,,,,,,,,,
-mercado,,Rubén Vargas,Mister,Jotabetrbb,9.000.000,3.0,50.0,17.0,,,,,,,,,
-Puja,,Rubén Vargas,Mister,De la Guettir FC,8.155.551,3.0,50.0,17.0,,,,,,,,,
-Puja,,Rubén Vargas,Mister,Dani,7.755.620,3.0,50.0,17.0,,,,,,,,,
-Puja,,Rubén Vargas,Mister,Los marinero,7.669.000,3.0,50.0,17.0,,,,,,,,,
-Puja,,Rubén Vargas,Mister,Chamacónicos,7.375.000,3.0,50.0,17.0,,,,,,,,,
-Puja,,Rubén Vargas,Mister,Maldinillo 💥,7.119.250,3.0,50.0,17.0,,,,,,,,,
-Puja,,Rubén Vargas,Mister,Libre,7.040.510,3.0,50.0,17.0,,,,,,,,,
-mercado,,Haissem Hassan,Mister,Los marinero,5.884.000,4.0,41.0,1370.0,,,,,,,,,
-Puja,,Haissem Hassan,Mister,Chamacónicos,5.684.000,4.0,41.0,1370.0,,,,,,,,,
-Puja,,Haissem Hassan,Mister,Dani,5.509.300,4.0,41.0,1370.0,,,,,,,,,
-Puja,,Haissem Hassan,Mister,Maldinillo 💥,5.314.030,4.0,41.0,1370.0,,,,,,,,,
-Puja,,Haissem Hassan,Mister,Libre,5.285.780,4.0,41.0,1370.0,,,,,,,,,
-mercado,,Yangel Herrera,Mister,Chamacónicos,1.801.000,3.0,6.0,16.0,,,,,,,,,
-Puja,,Yangel Herrera,Mister,Maldinillo 💥,1.501.080,3.0,6.0,16.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-clausula,,Clemens Riedel,Maldinillo 💥,Jotabetrbb,1.117.500,2.0,25.0,8.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Matías Dituro,Libre,Mister,6.182.800,1.0,19.0,23.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,César Tárrega,Maldinillo 💥,Mister,6.127.670,2.0,38.0,19.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Abel Ruiz,Dani,Mister,171.600,4.0,0.0,222.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Mateu Morey,Chamacónicos,Mister,2.251.140,2.0,30.0,408.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Pedri,Mister,Maldinillo 💥,30.147.510,3.0,83.0,3.0,,,,,,,,,
-Puja,,Pedri,Mister,Dani,28.717.430,3.0,83.0,3.0,,,,,,,,,
-Puja,,Pedri,Mister,Los marinero,25.689.000,3.0,83.0,3.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Aitor Paredes,Dani,Mister,6.435.950,2.0,35.0,1.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Sergi Darder,Maldinillo 💥,Mister,10.106.060,3.0,38.0,408.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Franco Cervi,Chamacónicos,Mister,205.020,3.0,0.0,5.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Pablo Martínez,Dani,Mister,2.472.080,3.0,26.0,12.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Javi Guerra,Los marinero,Mister,6.653.760,3.0,32.0,19.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Diego Rico,Los marinero,Mister,3.818.880,2.0,27.0,9.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Beñat Prados,Dani,Mister,171.150,3.0,4.0,1.0,,,,,,,,,
-acuerdo,,Marcos Llorente,Libre,,"↓ 5,76M",2.0,50.0,2.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Lucas Torró,De la Guettir FC,Mister,5.604.560,3.0,37.0,50.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Nico González,Mister,Jotabetrbb,10.000.000,3.0,37.0,2.0,,,,,,,,,
-Puja,,Nico González,Mister,Los marinero,9.453.000,3.0,37.0,2.0,,,,,,,,,
-Puja,,Nico González,Mister,De la Guettir FC,8.898.450,3.0,37.0,2.0,,,,,,,,,
-Puja,,Nico González,Mister,Chamacónicos,8.843.000,3.0,37.0,2.0,,,,,,,,,
-Puja,,Nico González,Mister,Dani,8.742.520,3.0,37.0,2.0,,,,,,,,,
-Puja,,Nico González,Mister,Libre,8.500.000,3.0,37.0,2.0,,,,,,,,,
-Puja,,Nico González,Mister,Maldinillo 💥,8.372.380,3.0,37.0,2.0,,,,,,,,,
-mercado,,Carlos Álvarez,Mister,Maldinillo 💥,5.849.520,3.0,47.0,12.0,,,,,,,,,
-Puja,,Carlos Álvarez,Mister,Chamacónicos,5.655.000,3.0,47.0,12.0,,,,,,,,,
-Puja,,Carlos Álvarez,Mister,Dani,5.503.200,3.0,47.0,12.0,,,,,,,,,
-mercado,,Gorka Guruzeta,Mister,Maldinillo 💥,1.938.070,4.0,15.0,1.0,,,,,,,,,
-Puja,,Gorka Guruzeta,Mister,Los marinero,1.765.000,4.0,15.0,1.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-clausula,,Abel Bretones,Dani,Chamacónicos,3.829.800,2.0,29.0,50.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Flavien Boyomo,Maldinillo 💥,Mister,10.224.230,2.0,38.0,50.0,,,,,,,,,
-start_jornada,,,,,,,,,,,,,,8.0,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Andrés Castrín,Libre,Mister,1.468.700,2.0,16.0,17.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Dani Parejo,Libre,Mister,4.697.550,3.0,27.0,20.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-acuerdo,,Abdel Abqar,Dani,Jotabetrbb,1.907.000,2.0,15.0,9.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-acuerdo,,Samuel Costa,Dani,Maldinillo 💥,2.492.000,3.0,31.0,408.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Oihan Sancet,Los marinero,Mister,12.515.530,3.0,22.0,1.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Léo Pétrot,Mister,Jotabetrbb,460.000,2.0,17.0,23.0,,,,,,,,,
-Puja,,Léo Pétrot,Mister,Dani,427.850,2.0,17.0,23.0,,,,,,,,,
-mercado,,Pablo Fornals,Mister,Dani,13.519.820,3.0,65.0,4.0,,,,,,,,,
-Puja,,Pablo Fornals,Mister,Maldinillo 💥,12.972.955,3.0,65.0,4.0,,,,,,,,,
-Puja,,Pablo Fornals,Mister,MuchaSalsa,12.331.000,3.0,65.0,4.0,,,,,,,,,
-Puja,,Pablo Fornals,Mister,Chamacónicos,12.131.000,3.0,65.0,4.0,,,,,,,,,
-mercado,,Jeremy Toljan,Mister,Dani,4.511.740,2.0,41.0,12.0,,,,,,,,,
-Puja,,Jeremy Toljan,Mister,Libre,4.224.970,2.0,41.0,12.0,,,,,,,,,
-mercado,,Pablo Martínez,Mister,Dani,2.523.370,3.0,26.0,12.0,,,,,,,,,
-mercado,,Beñat Prados,Mister,Dani,232.980,3.0,4.0,1.0,,,,,,,,,
-mercado,,Abel Ruiz,Mister,Dani,181.630,4.0,0.0,222.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Luis Milla,MuchaSalsa,Mister,12.640.950,3.0,56.0,9.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-clausula,,Tyrhys Dolan,Dani,Los marinero,9.612.000,3.0,45.0,8.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Marcos Alonso,Maldinillo 💥,Mister,4.935.280,2.0,27.0,5.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Isaac Romero,Maldinillo 💥,Mister,5.996.660,4.0,41.0,17.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-clausula,,Marc Roca,Los marinero,Jotabetrbb,1.003.500,3.0,12.0,4.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Borja Iglesias,Mister,MuchaSalsa,11.253.000,4.0,57.0,5.0,,,,,,,,,
-Puja,,Borja Iglesias,Mister,Maldinillo 💥,10.742.490,4.0,57.0,5.0,,,,,,,,,
-mercado,,José Ángel Carmona,Mister,Jotabetrbb,4.315.000,2.0,42.0,17.0,,,,,,,,,
-Puja,,José Ángel Carmona,Mister,Libre,4.000.068,2.0,42.0,17.0,,,,,,,,,
-Puja,,José Ángel Carmona,Mister,Maldinillo 💥,3.953.990,2.0,42.0,17.0,,,,,,,,,
-mercado,,Javi Guerra,Mister,Los marinero,7.085.000,3.0,32.0,19.0,,,,,,,,,
-mercado,,Jon Gorrotxategi,Mister,Maldinillo 💥,2.636.000,3.0,31.0,16.0,,,,,,,,,
-Puja,,Jon Gorrotxategi,Mister,Libre,2.137.530,3.0,31.0,16.0,,,,,,,,,
-mercado,,Clemens Riedel,Mister,Maldinillo 💥,645.450,2.0,25.0,8.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Hector Fort,De la Guettir FC,Mister,1.050.700,2.0,7.0,23.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-clausula,,Pablo Ibáñez,Jotabetrbb,Juanba,3.844.500,3.0,33.0,48.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,José Luis Morales,Juanba,Mister,4.411.800,4.0,28.0,12.0,,,,,,,,,
-quiniela,,,,,,,,,De la Guettir FC,+500.000,1º,5.0,,,,,
-quiniela,,,,,,,,,Maldinillo 💥,+500.000,2º,5.0,,,,,
-quiniela,,,,,,,,,Chamacónicos,+400.000,3º,4.0,,,,,
-quiniela,,,,,,,,,Dani,+400.000,4º,4.0,,,,,
-quiniela,,,,,,,,,Los marinero,+300.000,5º,3.0,,,,,
-quiniela,,,,,,,,,MuchaSalsa,+300.000,6º,3.0,,,,,
-quiniela,,,,,,,,,Jotabetrbb,,7º,0.0,,,,,
-quiniela,,,,,,,,,Juanba,,8º,0.0,,,,,
-quiniela,,,,,,,,,Libre,,9º,0.0,,,,,
-clasificacion,,,,,,,,,Dani,1.460.000,1,,58.0,,,,
-clasificacion,,,,,,,,,Chamacónicos,2.140.000,2,,57.0,,,,
-clasificacion,,,,,,,,,Maldinillo 💥,1.600.000,3,,40.0,,,,
-clasificacion,,,,,,,,,Libre,1.850.000,4,,40.0,,,,
-clasificacion,,,,,,,,,Juanba,1.840.000,5,,37.0,,,,
-clasificacion,,,,,,,,,MuchaSalsa,2.020.000,6,,36.0,,,,
-clasificacion,,,,,,,,,De la Guettir FC,2.300.000,7,,35.0,,,,
-clasificacion,,,,,,,,,Jotabetrbb,2.280.000,8,,34.0,,,,
-clasificacion,,,,,,,,,Los marinero,2.360.000,9,,28.0,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Jonny Otto,Libre,Mister,5.068.800,2.0,41.0,48.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Iñigo Ruiz De Galarreta,Mister,MuchaSalsa,7.479.000,3.0,37.0,1.0,,,,,,,,,
-mercado,,Pedro Bigas,Mister,Maldinillo 💥,6.315.400,2.0,41.0,23.0,,,,,,,,,
-mercado,,César Tárrega,Mister,Maldinillo 💥,5.940.000,2.0,38.0,19.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Lucas Boyé,Chamacónicos,Mister,1.211.700,4.0,29.0,48.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-clausula,,Abde Ezzalzouli,Maldinillo 💥,Juanba,7.804.908,4.0,45.0,4.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Takuma Asano,Libre,Mister,595.900,4.0,19.0,408.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Dani Carvajal,Maldinillo 💥,Mister,7.160.000,2.0,24.0,15.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Denis Suárez,Dani,Mister,1.471.600,3.0,25.0,48.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Alexander Sørloth,Mister,Libre,11.355.990,4.0,16.0,2.0,,,,,,,,,
-mercado,,Youssef Enríquez,Mister,Libre,296.660,2.0,23.0,48.0,,,,,,,,,
-mercado,,Marcos Alonso,Mister,Maldinillo 💥,5.052.350,2.0,27.0,5.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Isi Palazón,Libre,Mister,9.808.000,3.0,33.0,14.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Leandro Cabrera,Los marinero,Mister,8.204.230,2.0,41.0,8.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Álvaro García,Mister,De la Guettir FC,11.111.133,3.0,44.0,14.0,,,,,,,,,
-mercado,,Azzedine Ounahi,Mister,Chamacónicos,6.622.000,3.0,25.0,222.0,,,,,,,,,
-mercado,,Coba da Costa,Mister,Maldinillo 💥,370.120,3.0,17.0,9.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Pablo Torre,De la Guettir FC,Mister,5.265.360,3.0,22.0,408.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Mikel Vesga,Maldinillo 💥,Mister,987.840,3.0,14.0,1.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Mariano Díaz,Los marinero,Mister,1.253.340,4.0,14.0,48.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Antoine Griezmann,Mister,Libre,11.050.000,4.0,32.0,2.0,,,,,,,,,
-mercado,,Ricardo Rodríguez,Mister,Los marinero,209.000,2.0,13.0,4.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Luka Ilic,Maldinillo 💥,Mister,1.361.220,3.0,12.0,1370.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Adrián Liso,Chamacónicos,Mister,4.250.080,3.0,35.0,9.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Pichu Cuéllar,Libre,Mister,185.850,1.0,0.0,408.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Leandro Cabrera,Mister,Los marinero,8.253.000,2.0,41.0,8.0,,,,,,,,,
-mercado,,Marc Roca,Mister,Los marinero,556.000,3.0,9.0,4.0,,,,,,,,,
-mercado,,Iván Balliu,Mister,Chamacónicos,609.000,2.0,8.0,14.0,,,,,,,,,
-start_jornada,,,,,,,,,,,,,,7.0,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Thibaut Courtois,Jotabetrbb,Mister,10.716.160,1.0,28.0,15.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Kelechi Iheanacho,Libre,Mister,185.270,4.0,0.0,0.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Kike Salas,Libre,Mister,7.081.000,2.0,17.0,17.0,,,,,,,,,
-quiniela,,,,,,,,,De la Guettir FC,+800.000,1º,8.0,,,,,
-quiniela,,,,,,,,,Dani,+700.000,2º,7.0,,,,,
-quiniela,,,,,,,,,Jotabetrbb,+700.000,3º,7.0,,,,,
-quiniela,,,,,,,,,Juanba,+600.000,4º,6.0,,,,,
-quiniela,,,,,,,,,Maldinillo 💥,+600.000,5º,6.0,,,,,
-quiniela,,,,,,,,,MuchaSalsa,+400.000,6º,4.0,,,,,
-quiniela,,,,,,,,,Chamacónicos,,7º,0.0,,,,,
-quiniela,,,,,,,,,Libre,,8º,0.0,,,,,
-quiniela,,,,,,,,,Los marinero,,9º,0.0,,,,,
-clasificacion,,,,,,,,,De la Guettir FC,1.570.000,1,,51.0,,,,
-clasificacion,,,,,,,,,Jotabetrbb,1.310.000,2,,33.0,,,,
-clasificacion,,,,,,,,,Dani,1.160.000,3,,28.0,,,,
-clasificacion,,,,,,,,,Maldinillo 💥,1.440.000,4,,27.0,,,,
-clasificacion,,,,,,,,,Los marinero,1.580.000,5,,24.0,,,,
-clasificacion,,,,,,,,,Chamacónicos,1.660.000,6,,23.0,,,,
-clasificacion,,,,,,,,,MuchaSalsa,1.780.000,7,,19.0,,,,
-clasificacion,,,,,,,,,Libre,1.980.000,8,,19.0,,,,
-clasificacion,,,,,,,,,Juanba,2.060.000,9,,13.0,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-acuerdo,,Isaac Romero,Jotabetrbb,Maldinillo 💥,6.000.000,4.0,38.0,17.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Gabriel Suazo,Mister,Libre,4.173.796,2.0,25.0,17.0,,,,,,,,,
-mercado,,Pichu Cuéllar,Mister,Libre,189.010,1.0,0.0,408.0,,,,,,,,,
-mercado,,Horațiu Moldovan,Mister,Jotabetrbb,193.000,1.0,0.0,1370.0,,,,,,,,,
-mercado,,Luka Ilic,Mister,Maldinillo 💥,1.436.030,3.0,12.0,1370.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Carlos Soler,Dani,Mister,6.325.020,3.0,14.0,16.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Domingos Duarte,Los marinero,Mister,1.237.850,2.0,16.0,9.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-clausula,,Rafa Mir,Maldinillo 💥,Dani,8.271.165,4.0,42.0,23.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Alejandro Catena,Chamacónicos,Mister,6.977.360,2.0,38.0,50.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Rodrigo Mendoza,De la Guettir FC,Mister,4.730.250,3.0,29.0,23.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Ferran Torres,Mister,Jotabetrbb,14.738.000,4.0,54.0,3.0,,,,,,,,,
-mercado,,Diego Rico,Mister,Los marinero,4.269.000,2.0,21.0,9.0,,,,,,,,,
-mercado,,Djibril Sow,Mister,Chamacónicos,888.000,3.0,20.0,17.0,,,,,,,,,
-mercado,,Abdel Abqar,Mister,Dani,1.700.550,2.0,15.0,9.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Sergio Carreira,Jotabetrbb,Mister,1.185.240,2.0,15.0,5.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-clausula,,Valentín Gómez,Chamacónicos,Jotabetrbb,2.000.000,2.0,18.0,4.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Marko Dmitrović,Chamacónicos,Mister,10.377.250,1.0,36.0,8.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Unai López,Libre,Mister,5.134.550,3.0,25.0,14.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Aurélien Tchouaméni,Mister,Libre,12.003.710,3.0,35.0,15.0,,,,,,,,,
-mercado,,Marcos Llorente,Mister,Libre,8.833.400,2.0,37.0,2.0,,,,,,,,,
-mercado,,Dani Parejo,Mister,Libre,5.235.230,3.0,21.0,20.0,,,,,,,,,
-mercado,,Lucas Boyé,Mister,Chamacónicos,1.207.000,4.0,18.0,48.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-clausula,,Valentín Gómez,Libre,Chamacónicos,1.000.000,2.0,18.0,4.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Gerard Moreno,Libre,Mister,4.406.490,4.0,5.0,20.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Joel Roca,Jotabetrbb,Mister,2.447.550,3.0,19.0,222.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Batista Mendy,Mister,Los marinero,4.124.000,3.0,21.0,17.0,,,,,,,,,
-mercado,,Marko Dmitrović,Mister,Chamacónicos,10.155.000,1.0,36.0,8.0,,,,,,,,,
-mercado,,Omar El Hilali,Mister,Dani,6.244.880,2.0,33.0,8.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Hugo Duro,Maldinillo 💥,Mister,8.680.350,4.0,33.0,19.0,,,,,,,,,
-quiniela,,,,,,,,,Chamacónicos,+700.000,1º,7.0,,,,,
-quiniela,,,,,,,,,Jotabetrbb,+700.000,2º,7.0,,,,,
-quiniela,,,,,,,,,MuchaSalsa,+700.000,3º,7.0,,,,,
-quiniela,,,,,,,,,Dani,+600.000,4º,6.0,,,,,
-quiniela,,,,,,,,,De la Guettir FC,+600.000,5º,6.0,,,,,
-quiniela,,,,,,,,,Juanba,+500.000,6º,5.0,,,,,
-quiniela,,,,,,,,,Libre,+500.000,7º,5.0,,,,,
-quiniela,,,,,,,,,Los marinero,+400.000,8º,4.0,,,,,
-quiniela,,,,,,,,,Maldinillo 💥,+400.000,9º,4.0,,,,,
-clasificacion,,,,,,,,,Los marinero,2.270.000,1,,66.0,,,,
-clasificacion,,,,,,,,,Maldinillo 💥,1.690.000,2,,47.0,,,,
-clasificacion,,,,,,,,,Dani,1.580.000,3,,44.0,,,,
-clasificacion,,,,,,,,,De la Guettir FC,1.830.000,4,,39.0,,,,
-clasificacion,,,,,,,,,Jotabetrbb,1.740.000,5,,37.0,,,,
-clasificacion,,,,,,,,,Chamacónicos,1.700.000,6,,25.0,,,,
-clasificacion,,,,,,,,,Juanba,1.860.000,7,,23.0,,,,
-clasificacion,,,,,,,,,MuchaSalsa,2.040.000,8,,22.0,,,,
-clasificacion,,,,,,,,,Libre,2.040.000,9,,12.0,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-clausula,,Tanguy Nianzou,Los marinero,Jotabetrbb,1.029.000,2.0,10.0,17.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Lucas Ahijado,Dani,Mister,197.000,2.0,16.0,1370.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Takefusa Kubo,Dani,Mister,13.449.000,3.0,30.0,16.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Andreas Christensen,Mister,De la Guettir FC,2.898.989,2.0,22.0,3.0,,,,,,,,,
-mercado,,Alejandro Catena,Mister,Chamacónicos,6.448.000,2.0,38.0,50.0,,,,,,,,,
-mercado,,David Affengruber,Mister,Dani,7.536.410,2.0,28.0,23.0,,,,,,,,,
-mercado,,Denis Suárez,Mister,Dani,1.512.030,3.0,18.0,48.0,,,,,,,,,
-mercado,,Rafa Mir,Mister,Maldinillo 💥,5.514.110,4.0,42.0,23.0,,,,,,,,,
-mercado,,Mikel Vesga,Mister,Maldinillo 💥,890.860,3.0,14.0,1.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Carles Aleñá,Maldinillo 💥,Mister,5.145.000,3.0,27.0,48.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Axel Witsel,Chamacónicos,Mister,1.703.520,3.0,9.0,222.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Gorka Guruzeta,Los marinero,Mister,2.332.440,4.0,14.0,1.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Natan Souza,Los marinero,Mister,4.574.850,2.0,27.0,4.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Tanguy Nianzou,Mister,Los marinero,686.000,2.0,10.0,17.0,,,,,,,,,
-mercado,,Hugo Duro,Mister,Maldinillo 💥,8.298.150,4.0,33.0,19.0,,,,,,,,,
-mercado,,Abde Ezzalzouli,Mister,Maldinillo 💥,5.203.272,4.0,37.0,4.0,,,,,,,,,
-mercado,,Paulo Gazzaniga,Mister,Maldinillo 💥,4.463.450,1.0,23.0,222.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Manor Solomon,Dani,Mister,2.697.900,3.0,18.0,20.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Yago Santiago,Maldinillo 💥,Mister,177.600,3.0,0.0,23.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-clausula,,Georges Mikautadze,Maldinillo 💥,Chamacónicos,9.923.400,4.0,27.0,20.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Gavi,Libre,Mister,7.612.500,3.0,11.0,3.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Rodrigo Riquelme,Chamacónicos,Mister,5.669.120,3.0,20.0,4.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Pablo Campos,Chamacónicos,Mister,4.246.320,1.0,11.0,12.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Thomas Lemar,Los marinero,Mister,2.398.750,3.0,7.0,222.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Marc Bernal,Mister,De la Guettir FC,3.111.111,3.0,6.0,3.0,,,,,,,,,
-mercado,,Gorka Guruzeta,Mister,Los marinero,2.426.000,4.0,14.0,1.0,,,,,,,,,
-mercado,,Antonio Sivera,Mister,Chamacónicos,10.155.000,1.0,35.0,48.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,José Copete,Maldinillo 💥,Mister,1.535.200,2.0,8.0,19.0,,,,,,,,,
-start_jornada,,,,,,,,,,,,,,5.0,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Pacha Espino,Libre,Mister,942.760,2.0,18.0,14.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Jeremy Toljan,Maldinillo 💥,Mister,2.844.450,2.0,36.0,12.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Kike Salas,Mister,Libre,7.406.650,2.0,17.0,17.0,,,,,,,,,
-mercado,,Matías Dituro,Mister,Libre,7.200.000,1.0,19.0,23.0,,,,,,,,,
-mercado,,Andrés Castrín,Mister,Libre,1.673.040,2.0,16.0,17.0,,,,,,,,,
-mercado,,Valentín Gómez,Mister,Libre,444.030,2.0,18.0,4.0,,,,,,,,,
-mercado,,Jon Pacheco,Mister,De la Guettir FC,233.333,2.0,15.0,48.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-clausula,,Carlos Dominguez,Chamacónicos,Juanba,1.658.250,2.0,11.0,5.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-clausula,,Mariano Díaz,Libre,Los marinero,2.299.500,4.0,14.0,48.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-clausula,,Dani Carvajal,Libre,Maldinillo 💥,8.896.861,2.0,19.0,15.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-acuerdo,,Aitor Fernández,Chamacónicos,Maldinillo 💥,27.750,1.0,0.0,50.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Borja Sánchez,Maldinillo 💥,Mister,168.000,3.0,1.0,0.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Sergio Carreira,Mister,Jotabetrbb,1.225.528,2.0,15.0,5.0,,,,,,,,,
-mercado,,Sergi Darder,Mister,Maldinillo 💥,9.692.530,3.0,32.0,408.0,,,,,,,,,
-mercado,,Víctor García,Mister,Maldinillo 💥,167.000,3.0,6.0,12.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-clausula,,Bryan Gil,Maldinillo 💥,Los marinero,3.391.020,3.0,9.0,222.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Aitor Ruibal,MuchaSalsa,Mister,1.803.230,2.0,24.0,4.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Luiz Júnior,MuchaSalsa,Mister,7.436.100,1.0,25.0,20.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Moi Gómez,Jotabetrbb,Mister,1.472.000,3.0,20.0,50.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Javi Puado,Maldinillo 💥,Mister,10.275.280,4.0,35.0,8.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,José Copete,Mister,Maldinillo 💥,1.581.120,2.0,8.0,19.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Ángel Ortiz,Maldinillo 💥,Mister,755.040,2.0,8.0,4.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Yuri Berchiche,Maldinillo 💥,Mister,5.133.440,2.0,25.0,1.0,,,,,,,,,
-quiniela,,,,,,,,,Juanba,+700.000,1º,7.0,,,,,
-quiniela,,,,,,,,,Maldinillo 💥,+600.000,2º,6.0,,,,,
-quiniela,,,,,,,,,De la Guettir FC,+500.000,3º,5.0,,,,,
-quiniela,,,,,,,,,Chamacónicos,+400.000,4º,4.0,,,,,
-quiniela,,,,,,,,,Jotabetrbb,+400.000,5º,4.0,,,,,
-quiniela,,,,,,,,,Los marinero,+400.000,6º,4.0,,,,,
-quiniela,,,,,,,,,MuchaSalsa,+400.000,7º,4.0,,,,,
-quiniela,,,,,,,,,Dani,+300.000,8º,3.0,,,,,
-quiniela,,,,,,,,,Libre,,9º,0.0,,,,,
-clasificacion,,,,,,,,,Dani,1.690.000,1,,52.0,,,,
-clasificacion,,,,,,,,,De la Guettir FC,1.570.000,2,,41.0,,,,
-clasificacion,,,,,,,,,Chamacónicos,1.460.000,3,,38.0,,,,
-clasificacion,,,,,,,,,Los marinero,1.660.000,4,,38.0,,,,
-clasificacion,,,,,,,,,Jotabetrbb,1.900.000,5,,35.0,,,,
-clasificacion,,,,,,,,,MuchaSalsa,2.210.000,6,,33.0,,,,
-clasificacion,,,,,,,,,Juanba,2.040.000,7,,32.0,,,,
-clasificacion,,,,,,,,,Maldinillo 💥,2.270.000,8,,26.0,,,,
-clasificacion,,,,,,,,,Libre,2.180.000,9,,19.0,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Rafa Marín,Chamacónicos,Mister,7.894.800,2.0,38.0,20.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Beñat Prados,Los marinero,Mister,549.000,3.0,4.0,1.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Luis Milla,Mister,MuchaSalsa,11.831.000,3.0,44.0,9.0,,,,,,,,,
-mercado,,Pablo Ibáñez,Mister,Jotabetrbb,2.431.000,3.0,27.0,48.0,,,,,,,,,
-mercado,,Unai Gómez,Mister,Maldinillo 💥,160.000,3.0,8.0,1.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-clausula,,Victor Muñoz,Los marinero,Jotabetrbb,6.942.000,4.0,47.0,50.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-clausula,,Pere Milla,Jotabetrbb,Chamacónicos,4.872.000,4.0,33.0,8.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Antonio Blanco,Mister,Chamacónicos,5.360.000,3.0,30.0,48.0,,,,,,,,,
-mercado,,Héctor Bellerín,Mister,Chamacónicos,4.231.000,2.0,36.0,4.0,,,,,,,,,
-mercado,,Aitor Fernández,Mister,Chamacónicos,160.010,1.0,0.0,50.0,,,,,,,,,
-mercado,,Javi Puado,Mister,Maldinillo 💥,10.385.650,4.0,35.0,8.0,,,,,,,,,
-mercado,,Carles Aleñá,Mister,Maldinillo 💥,5.027.470,3.0,27.0,48.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Julen Agirrezabala,Maldinillo 💥,Mister,5.508.000,1.0,29.0,19.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Junior Firpo,Maldinillo 💥,Mister,5.281.120,2.0,9.0,4.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-clausula,,Carlos Dominguez,Maldinillo 💥,Chamacónicos,1.105.500,2.0,11.0,5.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Juan Iglesias,Jotabetrbb,Mister,2.843.760,2.0,31.0,9.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Diego Pampín,Dani,Mister,201.400,2.0,6.0,12.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Franco Mastantuono,Maldinillo 💥,Mister,10.386.600,3.0,29.0,15.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Beñat Prados,Mister,Los marinero,665.000,3.0,4.0,1.0,,,,,,,,,
-mercado,,Flavien Boyomo,Mister,Maldinillo 💥,9.758.310,2.0,32.0,50.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Brais Méndez,Chamacónicos,Mister,5.144.000,3.0,30.0,16.0,,,,,,,,,
-start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,,,
-mercado,,Kike Barja,Mister,Libre,256.020,3.0,6.0,50.0,,,,,,,,,
-mercado,,Asier Osambela,Mister,Libre,166.070,3.0,6.0,50.0,,,,,,,,,
-mercado,,Abel Bretones,Mister,Dani,1.914.900,2.0,24.0,50.0,,,,,,,,,
-mercado,,Bryan Gil,Mister,Maldinillo 💥,2.260.680,3.0,9.0,222.0,,,,,,,,,
+type,subtype,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,José Copete,Los marinero,Mister,682.890,2,12,19,,,,,,,2025-11-03,3d380e716a789b2c90dc28d93f13e349
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,Pablo García,Mister,Los marinero,580.000,4,18,4,,,,,,,2025-11-03,3c860fc213f4656c4bf7962ad48716cb
+transfer,mercado,Aymeric Laporte,Mister,Maldinillo 💥,9.072.000,2,27,1,,,,,,,2025-11-03,75ef264acb6f2a3ead77731d6025eba1
+transfer,mercado,Juan Foyth,Mister,Maldinillo 💥,7.572.000,2,35,20,,,,,,,2025-11-03,4e37929a54498238f3960ef748d81ae3
+transfer,Puja,Juan Foyth,Mister,Dani,7.543.830,2,35,20,,,,,,,2025-11-03,2328d8c926e65a293b62c41c01665c48
+transfer,Puja,Juan Foyth,Mister,MuchaSalsa,7.372.000,2,35,20,,,,,,,2025-11-03,51d3dd41411e7a7de1bdf6ea9db2e363
+transfer,Puja,Juan Foyth,Mister,Libre,7.214.950,2,35,20,,,,,,,2025-11-03,18109f9978799af0225b209bfaef97d5
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,Pau Navarro,Libre,Mister,186.430,2,7,20,,,,,,,2025-11-03,32fe3bf0ffeb410b4b1827776a001e54
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,Filip Ugrinic,Libre,Mister,164.800,3,8,19,,,,,,,2025-11-03,86d85bbaa823aa34628bcd8beade6273
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,Cristian Portu,Dani,Mister,912.000,3,26,222,,,,,,,2025-11-03,f95807e5dc32f5ad9bc914d40514e96d
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,Leo Román,Los marinero,Mister,9.095.840,1,50,408,,,,,,,2025-11-03,e505a699053e2c208628b355b65fa382
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,Jon Moncayola,Mister,Libre,7.210.780,3,44,50,,,,,,,2025-11-03,f90e9ec1c2d4285eed12c26dd280c72c
+transfer,Puja,Jon Moncayola,Mister,Chamacónicos,7.162.000,3,44,50,,,,,,,2025-11-03,a08be66dff1880153705185b4d062d74
+transfer,mercado,Pau López,Mister,Los marinero,5.684.000,1,33,4,,,,,,,2025-11-03,ef6b5c2151a453a2725dc3fec0e085b4
+transfer,Puja,Pau López,Mister,Chamacónicos,5.144.000,1,33,4,,,,,,,2025-11-03,f776f3b894b9570c8b23ed6a041eefbc
+transfer,mercado,Pablo Torre,Mister,Los marinero,1.898.000,3,27,408,,,,,,,2025-11-03,09a8ae7b0700eab62662fba12a90818a
+transfer,mercado,Nemanja Gudelj,Mister,Los marinero,1.737.000,3,33,17,,,,,,,2025-11-03,950f516ebea434af28215181f9bb78cb
+transfer,Puja,Nemanja Gudelj,Mister,Dani,1.682.660,3,33,17,,,,,,,2025-11-03,0dc243a9d893521a55c80cd2a4e71f1f
+transfer,Puja,Nemanja Gudelj,Mister,Chamacónicos,1.637.020,3,33,17,,,,,,,2025-11-03,5c09854f2460e2481b833e306ecbe9dd
+transfer,Puja,Nemanja Gudelj,Mister,Libre,1.637.000,3,33,17,,,,,,,2025-11-03,0f7bc3d805c8faea4bf28fa699ba9701
+transfer,mercado,Íñigo Lekue,Mister,Chamacónicos,206.010,2,2,1,,,,,,,2025-11-03,274267513568ef420ac9a1bf2e2bfd03
+transfer,mercado,Dávid Hancko,Mister,Dani,7.588.830,2,45,2,,,,,,,2025-11-03,000428f1f791c05c0bfe7a8c899e4a33
+transfer,Puja,Dávid Hancko,Mister,Libre,7.434.260,2,45,2,,,,,,,2025-11-03,3c976d065e5946db0652c1966d10a9a6
+transfer,Puja,Dávid Hancko,Mister,Chamacónicos,7.368.000,2,45,2,,,,,,,2025-11-03,51835014c816c88c383881236b7e7e10
+marks,start_jornada,,,,,,,,,,,,,11.0,2025-11-03,
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,Rafa Mir,Dani,Mister,6.407.750,4,47,23,,,,,,,2025-11-03,eb4f8b2f665ce5a2c5627327515b7ff3
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,Antonio Raíllo,Dani,Mister,6.875.440,2,34,408,,,,,,,2025-11-03,2c361f3dee9ba62a233bcaccb103f60b
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,Thiago Almada,Maldinillo 💥,Mister,6.472.350,3,37,2,,,,,,,2025-11-03,21fa2ec0c474af4646fc583467e21483
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,Eduardo Camavinga,Jotabetrbb,Mister,6.379.820,3,23,15,,,,,,,2025-11-03,3ae87eb41336d09decf039648731ad46
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,Pau Navarro,Mister,Libre,210.000,2,7,20,,,,,,,2025-11-03,ed1453cabe562a7860764a8a298dbec0
+transfer,Puja,Pau Navarro,Mister,Jotabetrbb,210.000 (realizada más tarde),2,7,20,,,,,,,2025-11-03,25f7b272b0d41b75e11bf35d19c8326e
+transfer,mercado,Javi Galán,Mister,De la Guettir FC,389.500,2,12,2,,,,,,,2025-11-03,3028d8b237a5b2a25f511809ea829ff7
+transfer,Puja,Javi Galán,Mister,Jotabetrbb,269.000,2,12,2,,,,,,,2025-11-03,136c1fa9052d45d6bec8e512d1f8241d
+transfer,mercado,André Silva,Mister,Dani,8.208.860,4,47,23,,,,,,,2025-11-03,e7b6a71c87e50705f601d68edfe4d65f
+transfer,Puja,André Silva,Mister,Libre,7.660.720,4,47,23,,,,,,,2025-11-03,1ed30c961b3b48f19ad8a01e9c2c21db
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,clausula,Iván Martín,Dani,Jotabetrbb,3.290.920,3,29,222,,,,,,,2025-11-03,a4547923b6dfc2776ace0880f674fdc9
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,Yangel Herrera,Chamacónicos,Mister,2.682.160,3,6,16,,,,,,,2025-11-03,19b82a915ce6664c999a8cfa8dc26e08
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,Fernando Calero,MuchaSalsa,Mister,2.636.460,2,31,8,,,,,,,2025-11-03,373683da65e4fdc0641a8a8840c4b5cd
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,Arsen Zakharyan,Libre,Mister,196.800,3,10,16,,,,,,,2025-11-03,587d10dfc5bb1265ccf6de6954bbd5f3
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,Alejandro Iturbe,Libre,Mister,194.040,1,0,23,,,,,,,2025-11-03,388a30ae1829a6bd0b25e86f31a29224
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,Adrián San Miguel,Libre,Mister,190.080,1,0,4,,,,,,,2025-11-03,ef9d8d1e7ba9a8ddb27701d81c8348a1
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,David Soria,Mister,MuchaSalsa,6.865.000,1,46,9,,,,,,,2025-11-03,6d30605ae2dda200d7041d15ace9f6c7
+transfer,Puja,David Soria,Mister,Libre,6.794.655,1,46,9,,,,,,,2025-11-03,5683dd629bb696fa71a28d4e192f5fd1
+transfer,mercado,Trent Alexander-Arnold,Mister,Chamacónicos,7.000.000,2,10,15,,,,,,,2025-11-03,b9a4bbea413ecb323b5ca7d2eb12b100
+transfer,Puja,Trent Alexander-Arnold,Mister,MuchaSalsa,6.800.000,2,10,15,,,,,,,2025-11-03,943a9d7ebcf232ffb15ebed71beec934
+transfer,Puja,Trent Alexander-Arnold,Mister,Maldinillo 💥,5.940.050,2,10,15,,,,,,,2025-11-03,b330b95b0861172936b37b97e2c6e53f
+transfer,mercado,Nikola Maraš,Mister,Dani,160.000,2,0,48,,,,,,,2025-11-03,4b54ced366f27a2e3c08101bf8526248
+transfer,mercado,Thiago Almada,Mister,Maldinillo 💥,6.773.430,3,37,2,,,,,,,2025-11-03,b4f7801e7726e0e6809d9cffea293bce
+transfer,Puja,Thiago Almada,Mister,Libre,6.749.010,3,37,2,,,,,,,2025-11-03,ca828bcdafdfd0653c4621cb892bf03b
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,Álex Moreno,Libre,Mister,3.176.750,2,24,222,,,,,,,2025-11-03,813548d09830337ddb4a1f9c374efa82
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,Antoine Griezmann,Libre,Mister,10.445.820,4,45,2,,,,,,,2025-11-03,4fb18edd05b924377db31adf73688a43
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,Valentín Gómez,Jotabetrbb,Mister,1.754.400,2,21,4,,,,,,,2025-11-03,8bac794812b9fce75f3257226ffa3b22
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,Jon Pacheco,De la Guettir FC,Mister,1.650.360,2,22,48,,,,,,,2025-11-03,03000984133eced298ad1c4ebb5f694f
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,Marcus Rashford,Mister,Libre,13.256.330,4,47,3,,,,,,,2025-11-03,eddca7c150b5ae5bc646cc010ee89c3c
+transfer,Puja,Marcus Rashford,Mister,MuchaSalsa,13.255.000,4,47,3,,,,,,,2025-11-03,9ad4cd4d8f4b936e245d16db2b4a23c7
+transfer,Puja,Marcus Rashford,Mister,Dani,13.056.010,4,47,3,,,,,,,2025-11-03,5a93d9fd14e8b5b9c4c7c77914d1c6b2
+transfer,Puja,Marcus Rashford,Mister,Chamacónicos,13.050.505,4,47,3,,,,,,,2025-11-03,8fd4b423188f7e64a9688ee30a718ca3
+transfer,mercado,Mathew Ryan,Mister,Libre,6.671.319,1,35,12,,,,,,,2025-11-03,f09021714d0470421c3d1c445025ab71
+transfer,Puja,Mathew Ryan,Mister,MuchaSalsa,5.540.000,1,35,12,,,,,,,2025-11-03,0dcdd0e4add4f66a093698aedbaa875a
+transfer,Puja,Mathew Ryan,Mister,Jotabetrbb,5.240.000,1,35,12,,,,,,,2025-11-03,931348a04947a984ddc3c99cecc8e437
+transfer,mercado,Filip Ugrinic,Mister,Libre,206.040,3,8,19,,,,,,,2025-11-03,bcd117d2ba3ceaa58ea742ddaad32b23
+transfer,mercado,Víctor Parada,Mister,Libre,184.000,2,15,48,,,,,,,2025-11-03,ab80bbf8ff65228c17a16e51ede7cd13
+transfer,mercado,Vitor Reis,Mister,MuchaSalsa,2.235.000,2,22,222,,,,,,,2025-11-03,4d458cbd87b7261aad62289460a43082
+transfer,Puja,Vitor Reis,Mister,De la Guettir FC,2.222.223,2,22,222,,,,,,,2025-11-03,9ecbf343c5fbb05b2495ed7bd560f827
+transfer,Puja,Vitor Reis,Mister,Dani,2.212.720,2,22,222,,,,,,,2025-11-03,06d2a5413aa132520dd4be9641ad4bbc
+transfer,Puja,Vitor Reis,Mister,Libre,2.111.560,2,22,222,,,,,,,2025-11-03,4fef861bd6e7c8cae5f14ba7fd025de9
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,Kike Barja,Libre,Mister,169.050,3,9,50,,,,,,,2025-11-03,ab0bd9eba52ec5632229a63cc68670a1
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,Arnau Tenas,Jotabetrbb,Mister,1.892.100,1,14,20,,,,,,,2025-11-03,10d7a1142780c2beed6768e2ff092089
+bonificacion,quiniela,,,,,,,,Maldinillo 💥,+600.000,1º,6,,,2025-11-03,
+bonificacion,quiniela,,,,,,,,Dani,+500.000,2º,5,,,2025-11-03,
+bonificacion,quiniela,,,,,,,,Libre,+400.000,3º,4,,,2025-11-03,
+bonificacion,quiniela,,,,,,,,Los marinero,+400.000,4º,4,,,2025-11-03,
+bonificacion,quiniela,,,,,,,,MuchaSalsa,+400.000,5º,4,,,2025-11-03,
+bonificacion,quiniela,,,,,,,,Chamacónicos,+300.000,6º,3,,,2025-11-03,
+bonificacion,quiniela,,,,,,,,De la Guettir FC,+300.000,7º,3,,,2025-11-03,
+bonificacion,quiniela,,,,,,,,Jotabetrbb,+200.000,8º,2,,,2025-11-03,
+bonificacion,quiniela,,,,,,,,Juanba,+200.000,9º,2,,,2025-11-03,
+bonificacion,clasificacion,,,,,,,,Maldinillo 💥,1.860.000,1,,53,,2025-11-03,
+bonificacion,clasificacion,,,,,,,,Los marinero,1.420.000,2,,46,,2025-11-03,
+bonificacion,clasificacion,,,,,,,,Chamacónicos,1.750.000,3,,45,,2025-11-03,
+bonificacion,clasificacion,,,,,,,,Libre,1.990.000,4,,42,,2025-11-03,
+bonificacion,clasificacion,,,,,,,,De la Guettir FC,1.990.000,5,,37,,2025-11-03,
+bonificacion,clasificacion,,,,,,,,MuchaSalsa,2.170.000,6,,36,,2025-11-03,
+bonificacion,clasificacion,,,,,,,,Dani,2.100.000,7,,35,,2025-11-03,
+bonificacion,clasificacion,,,,,,,,Juanba,2.120.000,8,,26,,2025-11-03,
+bonificacion,clasificacion,,,,,,,,Jotabetrbb,2.240.000,9,,22,,2025-11-03,
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,Alexis Sánchez,Maldinillo 💥,Mister,5.878.950,4,33,17,,,,,,,2025-11-03,c6bb4a85d4a7601a583747168a24144c
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,Yuri Berchiche,Mister,Libre,6.099.000,2,35,1,,,,,,,2025-11-03,3abbfdb3feedc2f89508513e78cc3a90
+transfer,mercado,Beñat Turrientes,Mister,Maldinillo 💥,252.310,3,20,16,,,,,,,2025-11-03,626c6dc8889f921b6c5dbf9f1fa9e7ad
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,Hugo Rincón,Libre,Mister,1.049.360,2,22,222,,,,,,,2025-11-03,30813f712e222bb38ebba50003f532d4
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,Andreas Christensen,De la Guettir FC,Mister,3.739.840,2,24,3,,,,,,,2025-11-03,9a08b5dc3135be99baf901f8f48fcb67
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,Igor Zubeldia,Libre,Mister,4.773.000,2,33,16,,,,,,,2025-11-03,e9d002db701275ff72d1c53dddb52ceb
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,Oihan Sancet,Maldinillo 💥,Mister,10.486.350,3,22,1,,,,,,,2025-11-03,82f05dea05ca5a374554ddcbb740aa45
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,Franco Mastantuono,De la Guettir FC,Mister,9.978.000,3,34,15,,,,,,,2025-11-03,86cc033968612b75bdd85bf55d907859
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,Germán Valera,Mister,De la Guettir FC,10.699.999,3,51,23,,,,,,,2025-11-03,4634abd170b54ea837bf743f1c807bd5
+transfer,Puja,Germán Valera,Mister,Dani,10.202.730,3,51,23,,,,,,,2025-11-03,984b127fd7c7ec7ebda3fb8db581b6be
+transfer,Puja,Germán Valera,Mister,Libre,9.839.060,3,51,23,,,,,,,2025-11-03,bc5fd9018955c8895ae0fa26cc34800f
+transfer,mercado,Calebe Gonçalves,Mister,De la Guettir FC,344.050,3,14,48,,,,,,,2025-11-03,f7fe9d2d12fa0493a618a1acbfc397ec
+transfer,Puja,Calebe Gonçalves,Mister,Maldinillo 💥,321.080,3,14,48,,,,,,,2025-11-03,87a0cffd5b0f1fc7341a2ab7452055cb
+transfer,Puja,Calebe Gonçalves,Mister,Libre,321.010,3,14,48,,,,,,,2025-11-03,cd96f30a829bc2bdf10c8f0a41f15b24
+transfer,mercado,Marc Bartra,Mister,Dani,8.000.390,2,32,4,,,,,,,2025-11-03,d74b773b9efe3a6ed48cae99088f6099
+transfer,Puja,Marc Bartra,Mister,Libre,7.795.850,2,32,4,,,,,,,2025-11-03,e66939d5199dba09c296f67e872a1986
+transfer,mercado,Robert Lewandowski,Mister,Maldinillo 💥,17.151.870,4,42,3,,,,,,,2025-11-03,a3ccb97b07f9da258dd152b38fc912ef
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,acuerdo,Álex Moreno,Los marinero,Libre,3.400.000,2,24,222,,,,,,,2025-11-03,e45b62435a1ae94a4c26a1634367e543
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,Daniel Vivian,Mister,Los marinero,6.839.000,2,31,1,,,,,,,2025-11-03,a16d66e8ac10f734907e7990c04063df
+transfer,Puja,Daniel Vivian,Mister,Libre,6.777.210,2,31,1,,,,,,,2025-11-03,3de01aa79b0d75aa535e99fcd8192ec9
+transfer,Puja,Daniel Vivian,Mister,Chamacónicos,6.719.000,2,31,1,,,,,,,2025-11-03,db34e6b2deb509be769e9d3c477b808f
+transfer,Puja,Daniel Vivian,Mister,Dani,6.625.340,2,31,1,,,,,,,2025-11-03,259c0ee20d962f0f6407f1f46bfe892e
+transfer,Puja,Daniel Vivian,Mister,Maldinillo 💥,6.519.550,2,31,1,,,,,,,2025-11-03,492abd27a21196444c154c3016d7724b
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,Gabriel Suazo,Libre,Mister,5.934.240,2,34,17,,,,,,,2025-11-03,c798f8d04f875aa8f2f0bf0bb7a1266f
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,Logan Costa,Libre,Mister,208.000,2,0,20,,,,,,,2025-11-03,c7ca9c2b8cd4f7adab042cd0f85a624e
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,Omar Falah,Dani,Mister,153.600,2,1,1370,,,,,,,2025-11-03,75c4fc36ad3662a6e717d9d3b5073e9f
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,David López,Dani,Mister,205.800,2,2,408,,,,,,,2025-11-03,1a264413a1a48b7c2e114f3378460b9a
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,Aritz Elustondo,Dani,Mister,176.400,2,4,16,,,,,,,2025-11-03,64c41ffa7a09b465034d43a21b9434f7
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,Jan Oblak,Mister,Jotabetrbb,9.040.000,1,53,2,,,,,,,2025-11-03,b23dd9344d090750e09b006d5432ba06
+transfer,Puja,Jan Oblak,Mister,Libre,8.890.910,1,53,2,,,,,,,2025-11-03,c20f60dd119290bd4768292c54ffaf77
+transfer,mercado,Sergio Carreira,Mister,Chamacónicos,700.000,2,20,5,,,,,,,2025-11-03,5189ff8dc872492ae0168e9edb49897e
+transfer,Puja,Sergio Carreira,Mister,Libre,496.090,2,20,5,,,,,,,2025-11-03,6c7c6018fee1b77765a82b1bc3b33100
+transfer,mercado,Iván Martín,Mister,Dani,1.645.460,3,29,222,,,,,,,2025-11-03,273f886b1208cc7fe84d9754a1e37f88
+transfer,Puja,Iván Martín,Mister,Chamacónicos,1.579.000,3,29,222,,,,,,,2025-11-03,4fd6cdffc92bd298ac3f86f7208afbf8
+transfer,Puja,Iván Martín,Mister,Libre,1.381.760,3,29,222,,,,,,,2025-11-03,a5b3a145a80dbb7d7738fc3542eeccaa
+marks,start_jornada,,,,,,,,,,,,,10.0,2025-11-03,
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,acuerdo,Marc Roca,Chamacónicos,Jotabetrbb,2.700.000,3,12,4,,,,,,,2025-11-03,a0ce8e7326fd97fae2ddab4203948164
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,acuerdo,Eduardo Camavinga,Chamacónicos,Jotabetrbb,6.000.000,3,23,15,,,,,,,2025-11-03,634938e480411ee7359fb21cd50a455b
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,Sergi Altimira,MuchaSalsa,Mister,8.751.650,3,31,4,,,,,,,2025-11-03,c3d0539752aca2a8a357a8208015727f
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,Iago Aspas,Maldinillo 💥,Mister,9.644.000,4,34,5,,,,,,,2025-11-03,3d0b77e46e934491bf4de8f82f1e05cb
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,Igor Zubeldia,Mister,Libre,5.037.060,2,33,16,,,,,,,2025-11-03,bc8ead42f57086c772297d74b1d50c4e
+transfer,mercado,Pedro Bigas,Mister,MuchaSalsa,7.302.000,2,41,23,,,,,,,2025-11-03,4c2a825dead8046b3eac801f55903a40
+transfer,Puja,Pedro Bigas,Mister,Libre,6.786.410,2,41,23,,,,,,,2025-11-03,f0e80232a58e3d5c3a9f9b3a27e10e8e
+transfer,mercado,Aritz Elustondo,Mister,Dani,372.530,2,4,16,,,,,,,2025-11-03,07afbefe20caed4afb39d5ad9bf6c286
+transfer,mercado,Omar Falah,Mister,Dani,237.470,2,1,1370,,,,,,,2025-11-03,fe1e3812fbd7fa9fe6e2f9e912d1ea73
+transfer,mercado,David López,Mister,Dani,214.890,2,2,408,,,,,,,2025-11-03,e173fd0662063687f3a83e7f121d2461
+transfer,mercado,Oihan Sancet,Mister,Maldinillo 💥,10.132.070,3,22,1,,,,,,,2025-11-03,ec3a352b177702e51d0d9948a0af7267
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,clausula,Marc Roca,Jotabetrbb,Chamacónicos,2.127.000,3,12,4,,,,,,,2025-11-03,23e91c6312416ecba576b8d96ff256c4
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,clausula,José Copete,Dani,Los marinero,1.226.565,2,12,19,,,,,,,2025-11-03,bb085129907195e2b6401a98a4ba41fd
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,clausula,Cristian Portu,MuchaSalsa,Dani,1.371.000,3,26,222,,,,,,,2025-11-03,84ed66bb2b7f9dbd627ad3640d8ba17b
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,Viktor Tsygankov,Mister,Chamacónicos,3.434.343,3,12,222,,,,,,,2025-11-03,f10510d9f42e74ff70515484d145f80c
+transfer,Puja,Viktor Tsygankov,Mister,Libre,2.819.510,3,12,222,,,,,,,2025-11-03,79405f60c83cd3faedddd157215a3654
+transfer,mercado,Nobel Mendy,Mister,Chamacónicos,888.000,2,14,14,,,,,,,2025-11-03,ee012f11f7b90300cc9b28fb010285e9
+transfer,Puja,Nobel Mendy,Mister,Dani,803.960,2,14,14,,,,,,,2025-11-03,1a455d5e5116141ad92fecc5fa637d12
+transfer,Puja,Nobel Mendy,Mister,Jotabetrbb,710.000,2,14,14,,,,,,,2025-11-03,3cf20f0d1414a8ddbb0cf94b198a0490
+transfer,Puja,Nobel Mendy,Mister,Maldinillo 💥,553.450,2,14,14,,,,,,,2025-11-03,726aa45448379dab1737fbebc26c3835
+transfer,Puja,Nobel Mendy,Mister,Libre,407.010,2,14,14,,,,,,,2025-11-03,4725aca073c8377743006fcffb6951e8
+transfer,mercado,Antonio Raíllo,Mister,Dani,6.301.520,2,34,408,,,,,,,2025-11-03,8d09ddc2fa569de092510516854e69be
+transfer,Puja,Antonio Raíllo,Mister,Libre,6.170.010,2,34,408,,,,,,,2025-11-03,87713687f21ed81080f98a12e3d399a8
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,Unai López,Maldinillo 💥,Mister,5.330.850,3,31,14,,,,,,,2025-11-03,63dc466d4206a07086359f9f775bfeff
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,Tyrhys Dolan,Maldinillo 💥,Mister,7.455.000,3,45,8,,,,,,,2025-11-03,72c5b2c0f2a7a07e64cb4c84d469afc4
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,Iker Losada,Libre,Mister,191.360,4,4,12,,,,,,,2025-11-03,cb17c29b6947be2ca08ad0dfda19e30b
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,Pol Lozano,Mister,Libre,3.850.558,3,41,8,,,,,,,2025-11-03,118ba27008404922507adde32b9acf42
+transfer,Puja,Pol Lozano,Mister,Dani,3.427.720,3,41,8,,,,,,,2025-11-03,38968e798ae7ff6cd886f6130eae872c
+transfer,Puja,Pol Lozano,Mister,Chamacónicos,3.207.000,3,41,8,,,,,,,2025-11-03,1650b8a2cb1d5a1882494205d02058af
+transfer,Puja,Pol Lozano,Mister,MuchaSalsa,3.206.000,3,41,8,,,,,,,2025-11-03,4d313abb7b2c017e4ffd28eccce437f2
+transfer,mercado,Nico Williams,Mister,Maldinillo 💥,15.278.590,4,29,1,,,,,,,2025-11-03,969ff321c926d9317bd1064df9c4824d
+transfer,Puja,Nico Williams,Mister,Chamacónicos,15.127.000,4,29,1,,,,,,,2025-11-03,0fc97d8af74e3db460e2f1403ea43b9e
+transfer,Puja,Nico Williams,Mister,Libre,15.026.000,4,29,1,,,,,,,2025-11-03,b603deedde0b6934eae66ebc82b331eb
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,clausula,Koke,Chamacónicos,MuchaSalsa,6.499.999,3,52,2,,,,,,,2025-11-03,0268e1da7f3e43c95698557e60569f5e
+bonificacion,quiniela,,,,,,,,Dani,+700.000,1º,7,,,2025-11-03,
+bonificacion,quiniela,,,,,,,,De la Guettir FC,+700.000,2º,7,,,2025-11-03,
+bonificacion,quiniela,,,,,,,,Juanba,+500.000,3º,5,,,2025-11-03,
+bonificacion,quiniela,,,,,,,,Libre,+500.000,4º,5,,,2025-11-03,
+bonificacion,quiniela,,,,,,,,Los marinero,+500.000,5º,5,,,2025-11-03,
+bonificacion,quiniela,,,,,,,,Maldinillo 💥,+500.000,6º,5,,,2025-11-03,
+bonificacion,quiniela,,,,,,,,Chamacónicos,+300.000,7º,3,,,2025-11-03,
+bonificacion,quiniela,,,,,,,,Jotabetrbb,,8º,0,,,2025-11-03,
+bonificacion,quiniela,,,,,,,,MuchaSalsa,,9º,0,,,2025-11-03,
+bonificacion,clasificacion,,,,,,,,Dani,1.650.000,1,,60,,2025-11-03,
+bonificacion,clasificacion,,,,,,,,Maldinillo 💥,1.780.000,2,,49,,2025-11-03,
+bonificacion,clasificacion,,,,,,,,Juanba,1.580.000,3,,44,,2025-11-03,
+bonificacion,clasificacion,,,,,,,,De la Guettir FC,1.990.000,4,,42,,2025-11-03,
+bonificacion,clasificacion,,,,,,,,Jotabetrbb,1.820.000,5,,36,,2025-11-03,
+bonificacion,clasificacion,,,,,,,,Chamacónicos,1.900.000,6,,35,,2025-11-03,
+bonificacion,clasificacion,,,,,,,,Libre,2.190.000,7,,32,,2025-11-03,
+bonificacion,clasificacion,,,,,,,,Los marinero,2.200.000,8,,30,,2025-11-03,
+bonificacion,clasificacion,,,,,,,,MuchaSalsa,2.320.000,9,,26,,2025-11-03,
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,Gorka Guruzeta,Maldinillo 💥,Mister,2.364.880,4,21,1,,,,,,,2025-11-03,5866ffd5f8009f6932bde5e5ee8f8d3a
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,César Azpilicueta,Jotabetrbb,Mister,3.465.960,2,26,17,,,,,,,2025-11-03,6bb7461091c5caaba9517e749e0c8d79
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,Carlos Álvarez,Maldinillo 💥,Mister,7.551.440,3,47,12,,,,,,,2025-11-03,32babfba9bf271806e981d4f0fbebff7
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,Marc Bernal,De la Guettir FC,Mister,907.000,3,6,3,,,,,,,2025-11-03,5b4a7b0c5d862d3ba171eb16d2854a9c
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,David Costas,De la Guettir FC,Mister,183.600,2,16,1370,,,,,,,2025-11-03,16dfda87623c41c3b3917ebfe6f88624
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,Batista Mendy,Los marinero,Mister,4.275.440,3,27,17,,,,,,,2025-11-03,aace8963227d1612f5de310619d8daee
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,Logan Costa,Mister,Libre,203.050,2,0,20,,,,,,,2025-11-03,d207eed2fe6999d514f075f717cc96a4
+transfer,mercado,Iker Losada,Mister,Libre,189.060,4,4,12,,,,,,,2025-11-03,668722c38e0b36575750c7b22b840e37
+transfer,mercado,Adrián de la Fuente,Mister,De la Guettir FC,3.411.120,2,26,12,,,,,,,2025-11-03,010cb1c33dfbb923ccf29eccb90137d6
+transfer,Puja,Adrián de la Fuente,Mister,Dani,3.302.160,2,26,12,,,,,,,2025-11-03,87200a7f3b36cffe4bc5fa181f7e7fb9
+transfer,Puja,Adrián de la Fuente,Mister,Libre,3.241.080,2,26,12,,,,,,,2025-11-03,6af99803cc62f8baf10353e71accf478
+transfer,mercado,Carlos Soler,Mister,Los marinero,5.885.000,3,31,16,,,,,,,2025-11-03,11ada48a6cc33b4aab38980c053c044d
+transfer,Puja,Carlos Soler,Mister,Libre,5.359.400,3,31,16,,,,,,,2025-11-03,372e47881cd5758abf1ae685beb6f284
+transfer,Puja,Carlos Soler,Mister,Dani,5.311.430,3,31,16,,,,,,,2025-11-03,3f9de478f8505f4a5d31d878a19999ed
+transfer,Puja,Carlos Soler,Mister,Maldinillo 💥,4.995.160,3,31,16,,,,,,,2025-11-03,b89f0fa7fcf5e1490c77b7a84eedbb70
+transfer,mercado,Iago Aspas,Mister,Maldinillo 💥,9.856.900,4,34,5,,,,,,,2025-11-03,6e797ac109c76df5681cbabc045b2ab3
+transfer,Puja,Iago Aspas,Mister,Libre,9.758.670,4,34,5,,,,,,,2025-11-03,77a3eb3baae5df974326dd577d66d775
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,Luis Rioja,Libre,Mister,7.247.100,3,35,19,,,,,,,2025-11-03,759a4ba36e7eda41013138c0e62aaa36
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,Ricardo Rodríguez,Los marinero,Mister,1.096.920,2,15,4,,,,,,,2025-11-03,d346e0e9e9b93ab941cbbb967416a540
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,Roger Brugué,Dani,Mister,885.770,3,21,12,,,,,,,2025-11-03,1b7f00ff12e38af726d4269a1acf6d2f
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,Manu Sánchez,Dani,Mister,5.165.450,2,37,12,,,,,,,2025-11-03,eee5521b5b4f4114f5af17e1b4c1f9c4
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,Dani Ceballos,Libre,Mister,4.769.440,3,26,15,,,,,,,2025-11-03,25bf12211022c05e5fa5e93258e6ae39
+marks,start_jornada,,,,,,,,,,,,,9.0,2025-11-03,
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,Johan Mojica,Libre,Mister,5.875.750,2,40,408,,,,,,,2025-11-03,3a010e78632c9b50cacf83a987d9d06d
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,Matías Moreno,Libre,Mister,1.143.660,2,21,12,,,,,,,2025-11-03,ae30bcd164e0142dee60a9eb1f8a39c2
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,Adrián de la Fuente,Libre,Mister,3.188.850,2,26,12,,,,,,,2025-11-03,0fa863b9d18354cdc61ec9c89de33cc1
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,Igor Zubeldia,Libre,Mister,4.621.610,2,33,16,,,,,,,2025-11-03,cd1865cfd677750ebe2775e3283e802a
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,Jeremy Toljan,Dani,Mister,5.241.670,2,41,12,,,,,,,2025-11-03,12dc46cfe820bc267b017c5ba5772dc5
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,Dani Ceballos,Mister,Libre,4.950.000,3,26,15,,,,,,,2025-11-03,7355de99f128f75994ac33cb24a4f015
+transfer,mercado,Alexis Sánchez,Mister,Maldinillo 💥,6.666.669,4,33,17,,,,,,,2025-11-03,b507b4ab77ed2a77c655ac45c556cb3a
+transfer,Puja,Alexis Sánchez,Mister,MuchaSalsa,6.035.000,4,33,17,,,,,,,2025-11-03,fb84cd2a25ab655f330f0bf4862469a7
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,acuerdo,Samuel Costa,Maldinillo 💥,Libre,4.000.000,3,31,408,,,,,,,2025-11-03,94a0f239469a97e09dead1f39d27ecb4
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,acuerdo,Jon Gorrotxategi,Maldinillo 💥,Libre,3.400.000,3,43,16,,,,,,,2025-11-03,b1dabf5c6266a156db858e891f20da31
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,Omar El Hilali,Dani,Mister,7.543.920,2,40,8,,,,,,,2025-11-03,7d3b3e71916b4819236a3f5b77a0640a
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,David López,Libre,Mister,167.580,2,2,408,,,,,,,2025-11-03,3546c9d8d6d30010d9b35d88c1100c05
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,Alejandro Rego,Mister,Libre,576.040,3,23,1,,,,,,,2025-11-03,1cf33e43ca9996a35c96312b2b608f46
+transfer,mercado,Manu Sánchez,Mister,Dani,5.536.750,2,37,12,,,,,,,2025-11-03,51f65e45efbac9f8ab82e980b26f3500
+transfer,Puja,Manu Sánchez,Mister,Maldinillo 💥,5.168.910,2,37,12,,,,,,,2025-11-03,0c24f43373c775bf8ad41da4c9fe3515
+transfer,Puja,Manu Sánchez,Mister,Libre,5.127.030,2,37,12,,,,,,,2025-11-03,525297d020d9ba47cbd7746f5293c0eb
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,Aitor Paredes,Dani,Mister,7.359.350,2,35,1,,,,,,,2025-11-03,89d534112772c4fe5974731657ca6709
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,Pere Milla,Chamacónicos,Mister,6.121.610,4,50,8,,,,,,,2025-11-03,d707ca8566a28793f160592518b33a6d
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,Haissem Hassan,Chamacónicos,Mister,6.274.320,4,41,1370,,,,,,,2025-11-03,5ad96950318e02b6e1b21957a3878d42
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,Roony Bardghji,Mister,Libre,2.141.080,4,22,3,,,,,,,2025-11-03,61fa2e7936771e3c57cc55f35a1ba8b2
+transfer,Puja,Roony Bardghji,Mister,Maldinillo 💥,2.141.070,4,22,3,,,,,,,2025-11-03,cec149b040bad3832e72fb5af00d7d3e
+transfer,mercado,Edu Expósito,Mister,Dani,11.721.280,3,54,8,,,,,,,2025-11-03,e5a06903f409753fb2d192ef648247ed
+transfer,mercado,José Copete,Mister,Dani,817.710,2,12,19,,,,,,,2025-11-03,97ef3bc9ad24308d0f555df9fe8e38ce
+transfer,mercado,Federico Viñas,Mister,Maldinillo 💥,162.000,4,16,1370,,,,,,,2025-11-03,bc5ce09ee952d590189cd1c4c4f6e7d1
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,Manu Morlanes,Libre,Mister,862.050,3,19,408,,,,,,,2025-11-03,b2a09df51d188356b695c488389378e7
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,Toni Lato,Libre,Mister,176.800,2,7,408,,,,,,,2025-11-03,28d44ec138c0c2130e13f6c09ef6357d
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,Jorge Cabello,Jotabetrbb,Mister,163.000,2,5,12,,,,,,,2025-11-03,e5680cdb39e7f864f37ae207b428ecc4
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,clausula,Thierry Correia,Jotabetrbb,Los marinero,1.000.000,2,8,19,,,,,,,2025-11-03,fca2ab9f8d3c549d1deb805c07071a75
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,acuerdo,Tyrhys Dolan,Los marinero,Maldinillo 💥,8.000.000,3,45,8,,,,,,,2025-11-03,393cffca8a3708c8fc48de577e6ffb7a
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,Alberto Moleiro,Maldinillo 💥,Mister,7.028.700,3,57,20,,,,,,,2025-11-03,a3c96acc350186d3bfe3d263fe9062d6
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,Igor Zubeldia,Mister,Libre,4.516.850,2,33,16,,,,,,,2025-11-03,a553633b6093ff517b1f4949cbb5a296
+transfer,Puja,Igor Zubeldia,Mister,Dani,4.402.140,2,33,16,,,,,,,2025-11-03,a253caf60b2a7f8d02c8c7435b41f1d0
+transfer,Puja,Igor Zubeldia,Mister,MuchaSalsa,4.293.000,2,33,16,,,,,,,2025-11-03,efe7b77853f0726a6200d6030ef3817d
+transfer,Puja,Igor Zubeldia,Mister,Maldinillo 💥,4.260.860,2,33,16,,,,,,,2025-11-03,554ad3a6ff5514d9d00efcd9673bf9f2
+transfer,mercado,Óscar Valentín,Mister,Los marinero,1.456.000,3,28,14,,,,,,,2025-11-03,00b93fb618b45bf301062e731d5b79e6
+transfer,Puja,Óscar Valentín,Mister,Libre,1.234.380,3,28,14,,,,,,,2025-11-03,14e448eb0741bc1c8f0715a59e0f0ae9
+transfer,mercado,Roger Brugué,Mister,Dani,988.900,3,21,12,,,,,,,2025-11-03,b0460adfea9481f74cb4eee1a79ca2fa
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,Antonio Blanco,Chamacónicos,Mister,6.415.000,3,37,48,,,,,,,2025-11-03,cc11f9a7d60896eea1a62b0ebfc171e8
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,Jorge de Frutos,Los marinero,Mister,10.035.800,3,64,14,,,,,,,2025-11-03,365f5da9e6bd4781f22a1eb88c661cc8
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,Ander Barrenetxea,Mister,Maldinillo 💥,10.885.830,3,57,16,,,,,,,2025-11-03,d8ba89d292784707054f074b982e140f
+transfer,Puja,Ander Barrenetxea,Mister,Libre,10.500.000,3,57,16,,,,,,,2025-11-03,af1bc0148153adfee65c69868f43355d
+transfer,Puja,Ander Barrenetxea,Mister,Dani,10.022.660,3,57,16,,,,,,,2025-11-03,30bd327a8518750f1fa3fbbccc11b0bc
+transfer,mercado,Unai López,Mister,Maldinillo 💥,4.957.550,3,31,14,,,,,,,2025-11-03,16cccfef246a324a05a89ef4c8911721
+transfer,Puja,Unai López,Mister,Libre,4.199.760,3,31,14,,,,,,,2025-11-03,62748c3fff7c260c2c1faee141ddfd8e
+transfer,Puja,Unai López,Mister,Los marinero,4.199.000,3,31,14,,,,,,,2025-11-03,a54c3fcc5d256171f0bbb30d3889e6a8
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,Eduardo Camavinga,Mister,Chamacónicos,5.432.000,3,23,15,,,,,,,2025-11-03,14eee840fbded6562f5009832e49115f
+transfer,Puja,Eduardo Camavinga,Mister,Dani,5.409.790,3,23,15,,,,,,,2025-11-03,5d7cbc0bb9fccde7530eecceeddfacb2
+transfer,Puja,Eduardo Camavinga,Mister,Maldinillo 💥,5.398.260,3,23,15,,,,,,,2025-11-03,152beb48f7e2c4683b9691c6152ee378
+transfer,Puja,Eduardo Camavinga,Mister,Libre,5.348.312,3,23,15,,,,,,,2025-11-03,62c2c3fa6eec3149984981c053fa4089
+transfer,mercado,Aitor Paredes,Mister,Dani,7.203.820,2,35,1,,,,,,,2025-11-03,c9603fac411cdcdbf6aa64a2e2e2898d
+transfer,Puja,Aitor Paredes,Mister,Maldinillo 💥,7.172.500,2,35,1,,,,,,,2025-11-03,9fab93780c9eb0a5e4cba4523bb36571
+transfer,Puja,Aitor Paredes,Mister,Libre,7.122.000,2,35,1,,,,,,,2025-11-03,05275fefb7a4be0cc6147bf9cce294c2
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,Alexander Sørloth,Libre,Mister,9.319.860,4,20,2,,,,,,,2025-11-03,fc732ddf5ae363f476af95c5cbe9ad28
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,Hugo Sotelo,Jotabetrbb,Mister,6.408.480,3,38,5,,,,,,,2025-11-03,d586af303659f0f4234231acb834ba6b
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,Sergio Herrera,Mister,Chamacónicos,9.696.969,1,43,50,,,,,,,2025-11-03,bc43678fac311fadd52842d46c05dbb6
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,Jon Moncayola,Jotabetrbb,Mister,7.501.200,3,44,50,,,,,,,2025-11-03,42bd8ed7f9838b878a3751f247d65847
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,Mikel Oyarzabal,Mister,Libre,12.219.490,4,65,16,,,,,,,2025-11-03,c2a26967ad3d86244037ca38513a89a9
+transfer,Puja,Mikel Oyarzabal,Mister,Maldinillo 💥,10.809.910,4,65,16,,,,,,,2025-11-03,c6eef4cdb125f0a03fbf3fe36846789e
+transfer,Puja,Mikel Oyarzabal,Mister,Dani,10.603.500,4,65,16,,,,,,,2025-11-03,7a6a112c530adb0ee9f77d890f381a24
+transfer,Puja,Mikel Oyarzabal,Mister,Chamacónicos,10.568.000,4,65,16,,,,,,,2025-11-03,39b86725a70e725616760d040a00bba8
+transfer,mercado,Cristian Portu,Mister,MuchaSalsa,914.000,3,26,222,,,,,,,2025-11-03,b6cc33d0917ef8b494def1aaa4a89b85
+transfer,mercado,Giovani Lo Celso,Mister,Chamacónicos,16.666.666,3,49,4,,,,,,,2025-11-03,817af460ad35943cc2ee52c7a5906d4a
+transfer,Puja,Giovani Lo Celso,Mister,Maldinillo 💥,15.035.710,3,49,4,,,,,,,2025-11-03,3e960249fc95e85fe659624c189dd330
+transfer,mercado,Koke,Mister,Chamacónicos,4.333.333,3,52,2,,,,,,,2025-11-03,898b61d0eb60b3b1034f7a75c1e0786b
+transfer,Puja,Koke,Mister,Libre,4.000.069,3,52,2,,,,,,,2025-11-03,c8ec8a23e88ce3e30c956cc69bf92979
+transfer,Puja,Koke,Mister,De la Guettir FC,3.112.233,3,52,2,,,,,,,2025-11-03,501e3985ad10ff326db3986681fdcf0d
+transfer,Puja,Koke,Mister,MuchaSalsa,3.080.000,3,52,2,,,,,,,2025-11-03,f5c3fd92558c5d0e4b67b9d893fa93bd
+transfer,Puja,Koke,Mister,Dani,3.073.450,3,52,2,,,,,,,2025-11-03,6329d38d0c925d267ab0258fd29abcc8
+transfer,Puja,Koke,Mister,Jotabetrbb,2.934.000,3,52,2,,,,,,,2025-11-03,25b9c94591c077e68665886f8495670a
+transfer,Puja,Koke,Mister,Los marinero,2.735.000,3,52,2,,,,,,,2025-11-03,c4d17468a02e7a40aef3a1753beeee5b
+transfer,Puja,Koke,Mister,Maldinillo 💥,2.535.000,3,52,2,,,,,,,2025-11-03,c83af21fdce38fb6069a4116e7d2c336
+transfer,mercado,Pablo Maffeo,Mister,Maldinillo 💥,2.091.000,2,29,408,,,,,,,2025-11-03,75e84c936b443d8f7f915aacc5214664
+transfer,Puja,Pablo Maffeo,Mister,MuchaSalsa,2.000.999,2,29,408,,,,,,,2025-11-03,43d75c48cb4a9f931265a750d22171fd
+transfer,Puja,Pablo Maffeo,Mister,Dani,1.576.600,2,29,408,,,,,,,2025-11-03,caad88b377a26ba87641f06f72425cc7
+transfer,Puja,Pablo Maffeo,Mister,Chamacónicos,1.530.000,2,29,408,,,,,,,2025-11-03,7a411136c61a4638ae10fbf3af08a8c2
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,clausula,Clemens Riedel,Jotabetrbb,Dani,1.676.250,2,25,8,,,,,,,2025-11-03,12090bce24715c4a86fb12b6d2aeb1a7
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,Johan Mojica,Mister,Libre,6.400.000,2,40,408,,,,,,,2025-11-03,946353d8b683939fc28d1d400a9674ac
+transfer,Puja,Johan Mojica,Mister,Chamacónicos,5.930.000,2,40,408,,,,,,,2025-11-03,465f085358f618ad77424fbac902b70a
+transfer,Puja,Johan Mojica,Mister,Maldinillo 💥,5.836.960,2,40,408,,,,,,,2025-11-03,613f3c6ccc88017347738a3f2cdfcc7b
+transfer,mercado,Matías Moreno,Mister,Libre,1.200.000,2,21,12,,,,,,,2025-11-03,0c474ef526550c96622d562fc9af4677
+transfer,Puja,Matías Moreno,Mister,Maldinillo 💥,908.950,2,21,12,,,,,,,2025-11-03,e8909cce6d741c96cb497ded72e1fd62
+transfer,mercado,Hugo Rincón,Mister,Libre,738.970,2,22,222,,,,,,,2025-11-03,484842acd39f460a94d7dcf8b18ee0a7
+transfer,mercado,Arnau Tenas,Mister,Jotabetrbb,3.955.000,1,14,20,,,,,,,2025-11-03,35d72f3748fce2391ff229fee1cd1d86
+transfer,Puja,Arnau Tenas,Mister,Libre,1.310.000,1,14,20,,,,,,,2025-11-03,070528a45e636ece41a18738ca8e5dae
+transfer,Puja,Arnau Tenas,Mister,Maldinillo 💥,1.216.560,1,14,20,,,,,,,2025-11-03,a875ed93499b30a7291577fedca08191
+transfer,Puja,Arnau Tenas,Mister,Los marinero,1.165.000,1,14,20,,,,,,,2025-11-03,deb7db3474c37aa74fbc2307e9088a68
+transfer,mercado,Luka Sučić,Mister,Los marinero,232.000,3,1,16,,,,,,,2025-11-03,e9bf03ff4ba57233f6aaaa9505752a01
+transfer,mercado,Carlos Romero,Mister,Maldinillo 💥,10.868.490,2,70,8,,,,,,,2025-11-03,6e1d9cac9dd61ce4a79de79669427c67
+transfer,Puja,Carlos Romero,Mister,Dani,10.804.520,2,70,8,,,,,,,2025-11-03,bd3fc7207566a6aebe8c78b5315495a8
+transfer,Puja,Carlos Romero,Mister,Chamacónicos,10.474.000,2,70,8,,,,,,,2025-11-03,c428ef82de227949aa13ff95088fb450
+transfer,Puja,Carlos Romero,Mister,Libre,10.313.250,2,70,8,,,,,,,2025-11-03,e51bc6ddd7123f43d11a36e301f1860d
+transfer,mercado,Alberto Moleiro,Mister,Maldinillo 💥,6.707.760,3,57,20,,,,,,,2025-11-03,a075b435f90a10a559a140dc6bf1d2c0
+transfer,Puja,Alberto Moleiro,Mister,Libre,6.705.000,3,57,20,,,,,,,2025-11-03,bc0f3563a9b01f26453ab7a3b5ef1233
+transfer,Puja,Alberto Moleiro,Mister,Dani,6.415.940,3,57,20,,,,,,,2025-11-03,643979e81e8a12a35a0dc526ccd8ddbc
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,Antonio Sivera,Chamacónicos,Mister,10.435.950,1,47,48,,,,,,,2025-11-03,61d721b92d721027a5a48c99000e5db8
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,Rodrygo,Juanba,Mister,6.313.230,4,23,15,,,,,,,2025-11-03,6bfab002d397209dcd38515f1a3b4496
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,Aurélien Tchouaméni,Libre,Mister,12.637.800,3,56,15,,,,,,,2025-11-03,46b10d00d6bddd3a97c1a1bed4ae3aa5
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,David Affengruber,Dani,Mister,9.248.720,2,30,23,,,,,,,2025-11-03,1f129122914e1a1b6d56ae3e2385fb47
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,Franco Mastantuono,Mister,De la Guettir FC,10.731.400,3,34,15,,,,,,,2025-11-03,f74a01e32babf5129aa6ebd350498c50
+transfer,Puja,Franco Mastantuono,Mister,Chamacónicos,10.631.000,3,34,15,,,,,,,2025-11-03,58852f8e8688ebdb74a7251ee88ca839
+transfer,Puja,Franco Mastantuono,Mister,Maldinillo 💥,10.531.360,3,34,15,,,,,,,2025-11-03,d09791153064b6d37de1e816f60fb6f1
+transfer,mercado,Cucho Hernández,Mister,Dani,15.128.510,4,58,4,,,,,,,2025-11-03,6bba512597a248bc16a0b2a7ddb110d7
+transfer,Puja,Cucho Hernández,Mister,Chamacónicos,13.673.000,4,58,4,,,,,,,2025-11-03,05b695ba3283a7e13e78528a73c5f2f9
+transfer,Puja,Cucho Hernández,Mister,Libre,12.569.600,4,58,4,,,,,,,2025-11-03,95fd406dcb74d990504027a74e5769bf
+transfer,Puja,Cucho Hernández,Mister,Maldinillo 💥,12.089.530,4,58,4,,,,,,,2025-11-03,001e05718427d28f980afee2692d723d
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,Ante Budimir,Maldinillo 💥,Mister,14.133.600,4,48,50,,,,,,,2025-11-03,5f649d0738b5aaa6cb53fb34d31ec9c4
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,Pathé Ciss,Chamacónicos,Mister,10.463.770,3,42,14,,,,,,,2025-11-03,452106a1cfc0c13b43e610004c957697
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,Luis Rioja,Mister,Libre,6.568.860,3,35,19,,,,,,,2025-11-03,a8d799b49eb0855bc675550a65ee5294
+transfer,mercado,Lamine Yamal,Mister,Los marinero,31.033.710,4,44,3,,,,,,,2025-11-03,b5c3dfe91b88797b045f6170da9c70f8
+transfer,Puja,Lamine Yamal,Mister,Maldinillo 💥,30.400.277,4,44,3,,,,,,,2025-11-03,f81891360ab5d23b7d8ca3b6e817ce6c
+transfer,Puja,Lamine Yamal,Mister,Dani,28.202.000,4,44,3,,,,,,,2025-11-03,79577dcdb85e79de6e719209d718eae6
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,Carlos Romero,Maldinillo 💥,Mister,10.630.200,2,70,8,,,,,,,2025-11-03,ef75d653015233ba13faae601fd089ca
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,Iván Balliu,Chamacónicos,Mister,474.050,2,12,14,,,,,,,2025-11-03,612b42cf088e578df3d50f2fbb60126a
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,Mario Martín,Chamacónicos,Mister,3.122.430,3,44,9,,,,,,,2025-11-03,cdd74f81cad98a10f924ec90c05735e0
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,acuerdo,Haissem Hassan,Los marinero,Chamacónicos,5.409.000,4,41,1370,,,,,,,2025-11-03,0b07cbdde3574f6aff8b28048b70b265
+bonificacion,quiniela,,,,,,,,Jotabetrbb,+500.000,1º,5,,,2025-11-03,
+bonificacion,quiniela,,,,,,,,Juanba,+500.000,2º,5,,,2025-11-03,
+bonificacion,quiniela,,,,,,,,Chamacónicos,+400.000,3º,4,,,2025-11-03,
+bonificacion,quiniela,,,,,,,,Dani,+400.000,4º,4,,,2025-11-03,
+bonificacion,quiniela,,,,,,,,Libre,+400.000,5º,4,,,2025-11-03,
+bonificacion,quiniela,,,,,,,,Maldinillo 💥,+400.000,6º,4,,,2025-11-03,
+bonificacion,quiniela,,,,,,,,De la Guettir FC,+300.000,7º,3,,,2025-11-03,
+bonificacion,quiniela,,,,,,,,Los marinero,+300.000,8º,3,,,2025-11-03,
+bonificacion,quiniela,,,,,,,,MuchaSalsa,+200.000,9º,2,,,2025-11-03,
+bonificacion,clasificacion,,,,,,,,Jotabetrbb,1.760.000,1,,48,,2025-11-03,
+bonificacion,clasificacion,,,,,,,,Maldinillo 💥,1.700.000,2,,45,,2025-11-03,
+bonificacion,clasificacion,,,,,,,,Dani,1.650.000,3,,40,,2025-11-03,
+bonificacion,clasificacion,,,,,,,,Los marinero,1.660.000,4,,38,,2025-11-03,
+bonificacion,clasificacion,,,,,,,,Chamacónicos,1.840.000,5,,37,,2025-11-03,
+bonificacion,clasificacion,,,,,,,,De la Guettir FC,2.120.000,6,,36,,2025-11-03,
+bonificacion,clasificacion,,,,,,,,Juanba,2.370.000,7,,36,,2025-11-03,
+bonificacion,clasificacion,,,,,,,,Libre,2.260.000,8,,33,,2025-11-03,
+bonificacion,clasificacion,,,,,,,,MuchaSalsa,2.480.000,9,,29,,2025-11-03,
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,Léo Pétrot,Jotabetrbb,Mister,377.400,2,17,23,,,,,,,2025-11-03,4a164499ab6e42a226cbb75db5cf7069
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,Pedro Bigas,Maldinillo 💥,Mister,6.642.300,2,41,23,,,,,,,2025-11-03,34f742d9d4af4f417566c464a3cb1e6e
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,Adrián San Miguel,Mister,Libre,188.000,1,0,4,,,,,,,2025-11-03,bd87716f6777a3fa80bec9008a87229f
+transfer,mercado,Rubén Vargas,Mister,Jotabetrbb,9.000.000,3,53,17,,,,,,,2025-11-03,293a73cb5edaa9f89630e147b6e5d4e0
+transfer,Puja,Rubén Vargas,Mister,De la Guettir FC,8.155.551,3,53,17,,,,,,,2025-11-03,3238265b63f9f302d8037e7bb2de7c56
+transfer,Puja,Rubén Vargas,Mister,Dani,7.755.620,3,53,17,,,,,,,2025-11-03,0ef1c38d840f56b8271121af6fc2949b
+transfer,Puja,Rubén Vargas,Mister,Los marinero,7.669.000,3,53,17,,,,,,,2025-11-03,b0ab4c82f4a36e12e4961939ce157a26
+transfer,Puja,Rubén Vargas,Mister,Chamacónicos,7.375.000,3,53,17,,,,,,,2025-11-03,f2cf39d0e0563516579290a90e876bac
+transfer,Puja,Rubén Vargas,Mister,Maldinillo 💥,7.119.250,3,53,17,,,,,,,2025-11-03,1198e6b62b4b97093727f06fa6e01162
+transfer,Puja,Rubén Vargas,Mister,Libre,7.040.510,3,53,17,,,,,,,2025-11-03,04c80c6cea7750930d1f4bd95dbf71a6
+transfer,mercado,Haissem Hassan,Mister,Los marinero,5.884.000,4,41,1370,,,,,,,2025-11-03,8a6b79d6e1ea7ad30a9d9b20d281ceba
+transfer,Puja,Haissem Hassan,Mister,Chamacónicos,5.684.000,4,41,1370,,,,,,,2025-11-03,3e2704528082dd342d198a09847b8e35
+transfer,Puja,Haissem Hassan,Mister,Dani,5.509.300,4,41,1370,,,,,,,2025-11-03,2f4c891abda1f082c5a21a0ddeb02e50
+transfer,Puja,Haissem Hassan,Mister,Maldinillo 💥,5.314.030,4,41,1370,,,,,,,2025-11-03,c2a3872b8b454d3f438e63284c134b27
+transfer,Puja,Haissem Hassan,Mister,Libre,5.285.780,4,41,1370,,,,,,,2025-11-03,090954674d0c71c8def7b73f60bea7b8
+transfer,mercado,Yangel Herrera,Mister,Chamacónicos,1.801.000,3,6,16,,,,,,,2025-11-03,8d5318b52907f556881ed81463795626
+transfer,Puja,Yangel Herrera,Mister,Maldinillo 💥,1.501.080,3,6,16,,,,,,,2025-11-03,981dc63d5f051e2789d5d55647d62c70
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,clausula,Clemens Riedel,Maldinillo 💥,Jotabetrbb,1.117.500,2,25,8,,,,,,,2025-11-03,8e5a0d2dab893ed2ee55456e3c51e7f0
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,Matías Dituro,Libre,Mister,6.182.800,1,19,23,,,,,,,2025-11-03,00253f5ffc75c5051f7984272fee579e
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,César Tárrega,Maldinillo 💥,Mister,6.127.670,2,39,19,,,,,,,2025-11-03,82c483fabbad7b84e848a3effd3f87df
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,Abel Ruiz,Dani,Mister,171.600,4,0,222,,,,,,,2025-11-03,337bc9038ce941b488237fe6c670917e
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,Mateu Morey,Chamacónicos,Mister,2.251.140,2,30,408,,,,,,,2025-11-03,403ddab1af174279ccec3c04b94e572e
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,Pedri,Mister,Maldinillo 💥,30.147.510,3,83,3,,,,,,,2025-11-03,21f89a435b6654d329fbbe13657945f6
+transfer,Puja,Pedri,Mister,Dani,28.717.430,3,83,3,,,,,,,2025-11-03,8cd81aceb15031b3301d725d25e61c5a
+transfer,Puja,Pedri,Mister,Los marinero,25.689.000,3,83,3,,,,,,,2025-11-03,b151530850f1404a4de4b0d0c0852c25
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,Aitor Paredes,Dani,Mister,6.435.950,2,35,1,,,,,,,2025-11-03,a1edc135079e3cebd19d35308355a265
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,Sergi Darder,Maldinillo 💥,Mister,10.106.060,3,38,408,,,,,,,2025-11-03,769bad21cc786111911c1725dbfe11b3
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,Franco Cervi,Chamacónicos,Mister,205.020,3,0,5,,,,,,,2025-11-03,d0145953839478a8eb80f2f8a231da73
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,Pablo Martínez,Dani,Mister,2.472.080,3,26,12,,,,,,,2025-11-03,1aa3f3f81dde92ddc877ae1d626f43ad
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,Javi Guerra,Los marinero,Mister,6.653.760,3,33,19,,,,,,,2025-11-03,e0a2bbc6bac7b36d1e1a0b1a4d372f53
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,Diego Rico,Los marinero,Mister,3.818.880,2,31,9,,,,,,,2025-11-03,54db2f5af653e451ff27166f7708c432
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,Beñat Prados,Dani,Mister,171.150,3,4,1,,,,,,,2025-11-03,42870a3d18602c13f4fd46dc889a8ba5
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,Lucas Torró,De la Guettir FC,Mister,5.604.560,3,37,50,,,,,,,2025-11-03,dcb388a4053b0f257a0600b669b23306
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,Nico González,Mister,Jotabetrbb,10.000.000,3,42,2,,,,,,,2025-11-03,d947efd3483703b5cc75ad3f6ea525b8
+transfer,Puja,Nico González,Mister,Los marinero,9.453.000,3,42,2,,,,,,,2025-11-03,322db506df8f711078c209faa28f3f6f
+transfer,Puja,Nico González,Mister,De la Guettir FC,8.898.450,3,42,2,,,,,,,2025-11-03,a86af10688b914c995f9e2b60503e7b2
+transfer,Puja,Nico González,Mister,Chamacónicos,8.843.000,3,42,2,,,,,,,2025-11-03,ead56d922ac4b6ca5746f27b67e8129f
+transfer,Puja,Nico González,Mister,Dani,8.742.520,3,42,2,,,,,,,2025-11-03,2fc99f18a1f1bd662c1c7a089c6e2c17
+transfer,Puja,Nico González,Mister,Libre,8.500.000,3,42,2,,,,,,,2025-11-03,c62eac588505790a4a327209bd2a4d9c
+transfer,Puja,Nico González,Mister,Maldinillo 💥,8.372.380,3,42,2,,,,,,,2025-11-03,b1c5ca00a1fb591bf48777fe43f26ee5
+transfer,mercado,Carlos Álvarez,Mister,Maldinillo 💥,5.849.520,3,47,12,,,,,,,2025-11-03,14125a5944b5acf1d256bddcd95d0a9c
+transfer,Puja,Carlos Álvarez,Mister,Chamacónicos,5.655.000,3,47,12,,,,,,,2025-11-03,96c5f485b25cd5bc0bc2577f7f82fc47
+transfer,Puja,Carlos Álvarez,Mister,Dani,5.503.200,3,47,12,,,,,,,2025-11-03,922e1a0aafa1a67efc4cb087b3ed6977
+transfer,mercado,Gorka Guruzeta,Mister,Maldinillo 💥,1.938.070,4,21,1,,,,,,,2025-11-03,cf3505efe2563910b8d7d56bd6a50a82
+transfer,Puja,Gorka Guruzeta,Mister,Los marinero,1.765.000,4,21,1,,,,,,,2025-11-03,59249519f13d0e1475904fe2c0b7ec17
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,clausula,Abel Bretones,Dani,Chamacónicos,3.829.800,2,29,50,,,,,,,2025-11-03,c819f2672151f286180d2235833c034a
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,Flavien Boyomo,Maldinillo 💥,Mister,10.224.230,2,38,50,,,,,,,2025-11-03,3870b0f4f3111a899230d44ac5911d08
+marks,start_jornada,,,,,,,,,,,,,8.0,2025-11-03,
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,Andrés Castrín,Libre,Mister,1.468.700,2,16,17,,,,,,,2025-11-03,28b72bd88191261c7395502b533d6748
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,Dani Parejo,Libre,Mister,4.697.550,3,29,20,,,,,,,2025-11-03,034308911e308bb29e95b80d6e25be2a
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,acuerdo,Abdel Abqar,Dani,Jotabetrbb,1.907.000,2,17,9,,,,,,,2025-11-03,0a2ea8cd593b96b48f7d0e707a8787c1
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,acuerdo,Samuel Costa,Dani,Maldinillo 💥,2.492.000,3,31,408,,,,,,,2025-11-03,c6b00f42960dda8d4d11fa3af4237e90
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,Oihan Sancet,Los marinero,Mister,12.515.530,3,22,1,,,,,,,2025-11-03,939165ffff2b58ea36b4c937f7e873a8
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,Léo Pétrot,Mister,Jotabetrbb,460.000,2,17,23,,,,,,,2025-11-03,856a87fab3a0f044f0bffdd61d9d9675
+transfer,Puja,Léo Pétrot,Mister,Dani,427.850,2,17,23,,,,,,,2025-11-03,d12583c57c0d2c16c5995b022a6dfce9
+transfer,mercado,Pablo Fornals,Mister,Dani,13.519.820,3,65,4,,,,,,,2025-11-03,6933c548d37ab247a4c8ed0e98ea0da9
+transfer,Puja,Pablo Fornals,Mister,Maldinillo 💥,12.972.955,3,65,4,,,,,,,2025-11-03,b54dee3092cc32e220fa01f3b1df24fe
+transfer,Puja,Pablo Fornals,Mister,MuchaSalsa,12.331.000,3,65,4,,,,,,,2025-11-03,798b0d20265ff4575ec6e604224010d4
+transfer,Puja,Pablo Fornals,Mister,Chamacónicos,12.131.000,3,65,4,,,,,,,2025-11-03,794a2966e16ab504a2155411ded0a1bf
+transfer,mercado,Jeremy Toljan,Mister,Dani,4.511.740,2,41,12,,,,,,,2025-11-03,6e82381e4a62bf8bfaa9336f313d48cf
+transfer,Puja,Jeremy Toljan,Mister,Libre,4.224.970,2,41,12,,,,,,,2025-11-03,8818b852d063f2665e31848ccf80dfe3
+transfer,mercado,Pablo Martínez,Mister,Dani,2.523.370,3,26,12,,,,,,,2025-11-03,bcfe338999a1090c394a48b530d8cfce
+transfer,mercado,Beñat Prados,Mister,Dani,232.980,3,4,1,,,,,,,2025-11-03,04b2cff487c429e67c2fbe480d135a67
+transfer,mercado,Abel Ruiz,Mister,Dani,181.630,4,0,222,,,,,,,2025-11-03,f7a0d0e9272298d7d7886e87c3ea45be
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,Luis Milla,MuchaSalsa,Mister,12.640.950,3,63,9,,,,,,,2025-11-03,9869ae4043ac49ed460c056d29480d26
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,clausula,Tyrhys Dolan,Dani,Los marinero,9.612.000,3,45,8,,,,,,,2025-11-03,25fca3da689b955767de052ac6ecd622
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,Marcos Alonso,Maldinillo 💥,Mister,4.935.280,2,27,5,,,,,,,2025-11-03,d8530b076efbb1afd9e6f206ff532ec7
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,Isaac Romero,Maldinillo 💥,Mister,5.996.660,4,44,17,,,,,,,2025-11-03,949a7081779c1318628fd71d501049e3
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,clausula,Marc Roca,Los marinero,Jotabetrbb,1.003.500,3,12,4,,,,,,,2025-11-03,662d64766a1b20710e2f9f9bd5175520
+marks,start_mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,Borja Iglesias,Mister,MuchaSalsa,11.253.000,4,57,5,,,,,,,2025-11-03,e4b7499f879f019bcb62cfd11d7edbf8
+transfer,mercado,José Ángel Carmona,Mister,Jotabetrbb,4.315.000,2,45,17,,,,,,,2025-11-03,4f920574e0f8eab4290100e56ad8c3a8
+transfer,mercado,Javi Guerra,Mister,Los marinero,7.085.000,3,33,19,,,,,,,2025-11-03,439f5afdd1f8d88606568a056e218f0d
+transfer,mercado,Jon Gorrotxategi,Mister,Maldinillo 💥,2.636.000,3,43,16,,,,,,,2025-11-03,93c5b5e09e191772eec1930505a9d08d
+transfer,mercado,Clemens Riedel,Mister,Maldinillo 💥,645.450,2,25,8,,,,,,,2025-11-03,11f17c28551da6d7fec1314714990744

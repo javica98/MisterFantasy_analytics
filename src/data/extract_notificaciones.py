@@ -53,8 +53,7 @@ def extraer_notificaciones(html: str) -> pd.DataFrame:
                 if title_div and title_div.get_text(strip=True) == "Nuevas transacciones en el mercado":
                     notificaciones.append({
                         "type": "marks",
-                        "subtype": "start_mercado",
-                        "mensaje": "Nuevas transacciones en el mercado"
+                        "subtype": "start_mercado"
                     })
                     # seguimos, puede haber una card-transfer justo debajo
                     # no hacemos continue
@@ -64,81 +63,82 @@ def extraer_notificaciones(html: str) -> pd.DataFrame:
             # ==========================
             transfer_card = wrapper.find("div", class_="card-transfer")
             if transfer_card:
-                item = transfer_card.find("div", class_="item")
-                if not item:
+                ul = transfer_card.find("ul", class_=["player-list", "player-list--secondary"])
+                items = ul.find_all("li")
+                if not items:
                     continue
+                for item in items:    
+                    title_div = item.find("div", class_="title")
+                    price_div = item.find("div", class_="price")
+                    team_div = item.find("div", class_="icons")
+                    pos_div = item.find("div", class_="player-position")
+                    points_div = item.find("div", class_="points")
+                    if title_div and price_div:
+                        jugador = _text_of(title_div.find("strong"))
+                        equipos = title_div.find_all("em")
+                        de_equipo = _text_of(equipos[0]) if len(equipos) > 0 else ""
+                        a_equipo = _text_of(equipos[1]) if len(equipos) > 1 else ""
 
-                title_div = item.find("div", class_="title")
-                price_div = item.find("div", class_="price")
-                team_div = item.find("div", class_="icons")
-                pos_div = item.find("div", class_="player-position")
-                points_div = item.find("div", class_="points")
-                if title_div and price_div:
-                    jugador = _text_of(title_div.find("strong"))
-                    equipos = title_div.find_all("em")
-                    de_equipo = _text_of(equipos[0]) if len(equipos) > 0 else ""
-                    a_equipo = _text_of(equipos[1]) if len(equipos) > 1 else ""
+                        clausula = "cláusula" in title_div.get_text(strip=True, separator=" ").lower()
+                        precio = price_div.get_text(strip=True)
+                        pos = pos_div["data-position"] if (pos_div and pos_div.has_attr("data-position")) else ""
+                        points = _text_of(points_div)
 
-                    clausula = "cláusula" in title_div.get_text(strip=True, separator=" ").lower()
-                    precio = price_div.get_text(strip=True)
-                    pos = pos_div["data-position"] if (pos_div and pos_div.has_attr("data-position")) else ""
-                    points = _text_of(points_div)
+                        # ID de equipo
+                        team = None
+                        img_tag = team_div.find("img", class_="team-logo") if team_div else None
+                        if img_tag and img_tag.has_attr("src"):
+                            m = re.search(r"/teams/(\d+)\.png", img_tag["src"])
+                            if m:
+                                team = m.group(1)
 
-                    # ID de equipo
-                    team = None
-                    img_tag = team_div.find("img", class_="team-logo") if team_div else None
-                    if img_tag and img_tag.has_attr("src"):
-                        m = re.search(r"/teams/(\d+)\.png", img_tag["src"])
-                        if m:
-                            team = m.group(1)
+                        # Subtipo de transferencia
+                        if clausula:
+                            subtype = "clausula"
+                        elif de_equipo == "Mister" or a_equipo == "Mister":
+                            subtype = "mercado"
+                        else:
+                            subtype = "acuerdo"
 
-                    # Subtipo de transferencia
-                    if clausula:
-                        subtype = "clausula"
-                    elif de_equipo == "Mister" or a_equipo == "Mister":
-                        subtype = "mercado"
-                    else:
-                        subtype = "acuerdo"
+                        id_transfer_principal = generar_id_transfer(jugador, de_equipo, a_equipo, precio)
 
-                    id_transfer_principal = generar_id_transfer(jugador, de_equipo, a_equipo, precio)
+                        notificaciones.append({
+                            "type": "transfer",
+                            "subtype": subtype,
+                            "jugador": jugador,
+                            "de_equipo": de_equipo,
+                            "a_equipo": a_equipo,
+                            "precio": precio,
+                            "posicionJugador": pos,
+                            "puntosJugador": points,
+                            "equipoLiga": team,
+                            "idTransfer": id_transfer_principal
+                        })
 
-                    notificaciones.append({
-                        "type": "transfer",
-                        "subtype": subtype,
-                        "jugador": jugador,
-                        "de_equipo": de_equipo,
-                        "a_equipo": a_equipo,
-                        "precio": precio,
-                        "posicionJugador": pos,
-                        "puntosJugador": points,
-                        "equipoLiga": team,
-                        "idTransfer": id_transfer_principal
-                    })
-
-                    # Pujas adicionales
-                    other_bids_ul = transfer_card.find("ul", class_="other-bids")
-                    if other_bids_ul:
-                        li_bids = other_bids_ul.find_all("li")[1:]  # saltar título
-                        for li in li_bids:
-                            nombre_tag = li.find("strong")
-                            nombre = _text_of(nombre_tag)
-                            texto = li.get_text(" ", strip=True)
-                            partes = texto.split("›")
-                            dinero = partes[-1].strip() if len(partes) > 1 else None
-                            id_puja = generar_id_transfer(jugador, de_equipo, nombre, dinero)
-
-                            notificaciones.append({
-                                "type": "transfer",
-                                "subtype": "Puja",
-                                "jugador": jugador,
-                                "de_equipo": de_equipo,
-                                "a_equipo": nombre,
-                                "precio": dinero,
-                                "posicionJugador": pos,
-                                "puntosJugador": points,
-                                "equipoLiga": team,
-                                "idTransfer": id_puja
-                            })
+                        # Pujas adicionales
+                        other_bids_ul = item.find("ul", class_="other-bids")
+                        if other_bids_ul:
+                            li_bids = other_bids_ul.find_all("li")[1:]  # saltar título
+                            for li in li_bids:
+                                nombre_tag = li.find("strong")
+                                nombre = _text_of(nombre_tag)
+                                texto = li.get_text(" ", strip=True)
+                                partes = texto.split("›")
+                                dinero = partes[-1].strip() if len(partes) > 1 else None
+                                id_puja = generar_id_transfer(jugador, de_equipo, nombre, dinero)
+                                
+                                notificaciones.append({
+                                    "type": "transfer",
+                                    "subtype": "Puja",
+                                    "jugador": jugador,
+                                    "de_equipo": de_equipo,
+                                    "a_equipo": nombre,
+                                    "precio": dinero,
+                                    "posicionJugador": pos,
+                                    "puntosJugador": points,
+                                    "equipoLiga": team,
+                                    "idTransfer": id_puja
+                                })
 
             # ==========================
             #   FIN DE JORNADA
@@ -219,7 +219,7 @@ def extraer_notificaciones(html: str) -> pd.DataFrame:
         df["date"] = today
 
     all_columns = [
-        "type","subtype","mensaje","jugador","de_equipo","a_equipo","precio",
+        "type","subtype","jugador","de_equipo","a_equipo","precio",
         "posicionJugador","puntosJugador","equipoLiga","name","money","position",
         "aciertos","points","jornada","date","idTransfer"
     ]
@@ -234,7 +234,7 @@ def extraer_notificaciones(html: str) -> pd.DataFrame:
 def _empty_notifications_df() -> pd.DataFrame:
     """Devuelve un DataFrame vacío con las columnas esperadas."""
     cols = [
-        "type","subtype","mensaje","jugador","de_equipo","a_equipo","precio",
+        "type","subtype","jugador","de_equipo","a_equipo","precio",
         "posicionJugador","puntosJugador","equipoLiga","name","money","position",
         "aciertos","points","jornada","date","idTransfer"
     ]
