@@ -1,15 +1,22 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
+marks,start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,,Ander Barrenetxea,Maldinillo 💥,Mister,11.220.820,3,57,16,,,,,,,2025-11-03,abf3ed35cafb822802510a840a0ea657
+marks,start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,,Odysseas Vlachodimos,Mister,Chamacónicos,6.500.000,1,38,17,,,,,,,2025-11-03,6455abf2e554d8f11bfcddbd4433f648
+transfer,Puja,,Odysseas Vlachodimos,Mister,Los marinero,5.759.000,1,38,17,,,,,,,2025-11-03,9c39ebbbc6692bdbb50951c1233ec1a4
+transfer,Puja,,Odysseas Vlachodimos,Mister,De la Guettir FC,5.688.898,1,38,17,,,,,,,2025-11-03,8f927f16df657ccd6e1f8480e5ad592a
+transfer,Puja,,Odysseas Vlachodimos,Mister,Dani,5.307.830,1,38,17,,,,,,,2025-11-03,d2cf1a5a9022a42a0ca767785ee441ed
+marks,start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,2025-11-03,
+transfer,mercado,,José Copete,Los marinero,Mister,682.890,2.0,12.0,19,,,,,,,2025-11-02,3d380e716a789b2c90dc28d93f13e349
 marks,start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,2025-11-02,
-transfer,mercado,,José Copete,Los marinero,Mister,682.890,2,12,19,,,,,,,2025-11-02,3d380e716a789b2c90dc28d93f13e349
+transfer,mercado,,Pablo García,Mister,Los marinero,580.000,4.0,18.0,4,,,,,,,2025-11-02,3c860fc213f4656c4bf7962ad48716cb
+transfer,Puja,,Pablo García,Mister,Dani,7.543.830,4.0,18.0,4,,,,,,,2025-11-02,0219a9496f2c722f7ac1ea8679e02c55
+transfer,Puja,,Pablo García,Mister,MuchaSalsa,7.372.000,4.0,18.0,4,,,,,,,2025-11-02,a6b4b7ba40486754de4fc8895bf1113a
+transfer,Puja,,Pablo García,Mister,Libre,7.214.950,4.0,18.0,4,,,,,,,2025-11-02,7800eafd7ae898dba0ac3421ba224bf4
 marks,start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,2025-11-02,
-transfer,mercado,,Pablo García,Mister,Los marinero,580.000,4,18,4,,,,,,,2025-11-02,3c860fc213f4656c4bf7962ad48716cb
-transfer,Puja,,Pablo García,Mister,Dani,7.543.830,4,18,4,,,,,,,2025-11-02,0219a9496f2c722f7ac1ea8679e02c55
-transfer,Puja,,Pablo García,Mister,MuchaSalsa,7.372.000,4,18,4,,,,,,,2025-11-02,a6b4b7ba40486754de4fc8895bf1113a
-transfer,Puja,,Pablo García,Mister,Libre,7.214.950,4,18,4,,,,,,,2025-11-02,7800eafd7ae898dba0ac3421ba224bf4
+transfer,mercado,,Pau Navarro,Libre,Mister,186.430,2.0,7.0,20,,,,,,,2025-11-02,32fe3bf0ffeb410b4b1827776a001e54
 marks,start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,2025-11-02,
-transfer,mercado,,Pau Navarro,Libre,Mister,186.430,2,7,20,,,,,,,2025-11-02,32fe3bf0ffeb410b4b1827776a001e54
-marks,start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,2025-11-02,
-transfer,mercado,,Filip Ugrinic,Libre,Mister,164.800,3,8,19,,,,,,,2025-11-02,86d85bbaa823aa34628bcd8beade6273
+transfer,mercado,,Filip Ugrinic,Libre,Mister,164.800,3.0,8.0,19,,,,,,,2025-11-02,86d85bbaa823aa34628bcd8beade6273
 marks,start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,2025-11-02,
 transfer,mercado,,Cristian Portu,Dani,Mister,912.000,3.0,26.0,222,,,,,,,2025-11-01,f95807e5dc32f5ad9bc914d40514e96d
 marks,start_mercado,Nuevas transacciones en el mercado,,,,,,,,,,,,,,2025-11-01,
