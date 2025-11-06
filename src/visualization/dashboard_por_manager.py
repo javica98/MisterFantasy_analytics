@@ -1,69 +1,128 @@
 import pandas as pd
-from dash import Dash, dcc, html, Input, Output
+from dash import Dash, dcc, html, Input, Output, dash_table
 import plotly.graph_objects as go
 
 
-def dashboard_por_manager(df: pd.DataFrame) -> Dash:
+def dashboard_por_manager(df: pd.DataFrame,df_clas: pd.DataFrame) -> Dash:
     """
     Dashboard interactivo con KPIs por equipo y un gráfico de balance acumulado.
     """
 
     # --- Limpieza base ---
     df.columns = df.columns.str.strip().str.lower()
+    df_equipos = df[df["type"].isin(["transfer", "bonificacion"])]
     df = df[df["type"].isin(["transfer", "bonificacion", "marks"])]
 
     # --- Inicializar app ---
     app = Dash(__name__)
     app.title = "Dashboard por equipo"
 
-    equipos = sorted(df["equipo"].dropna().unique())
+    equipos = sorted(df_equipos["equipo"].dropna().unique())
 
-    # --- Layout ---
+    # --- Layout principal con pestañas ---
     app.layout = html.Div(
         style={"font-family": "Arial, sans-serif", "padding": "20px"},
         children=[
-            html.H1("📊 Estadísticas por equipo"),
-            html.Label("Selecciona equipo:"),
-            dcc.Dropdown(
-                id="equipo-selector",
-                options=[{"label": e, "value": e} for e in equipos],
-                value=equipos[0] if equipos else None,
-                clearable=False,
-                style={"width": "300px"}
+            html.H1("📊 Dashboard de Manager"),
+            dcc.Tabs(
+                id="tabs",
+                value="por_equipo",
+                children=[
+                    dcc.Tab(label="📈 Por equipo", value="por_equipo"),
+                    dcc.Tab(label="📊 Totales y Rankings", value="totales"),
+                ]
             ),
-            html.H2("📈 Estadísticas de mercado"),
-            html.Div(id="kpi-container-mercado", style={
-                "display": "flex", "flex-wrap": "wrap", "margin-top": "10px"
-            }),
-            html.H2("🎯 Estadísticas de bonificación"),
-            html.Div(id="kpi-container-bonos", style={
-                "display": "flex", "flex-wrap": "wrap", "margin-top": "10px"
-            }),
-            html.H2("💰 Balance total + Bonos"),
-            html.Div(id="kpi-container-total", style={
-                "display": "flex", "flex-wrap": "wrap", "margin-top": "10px"
-            }),
-            html.Hr(),
-            html.H2("📉 Evolución del balance acumulado"),
-            dcc.Graph(id="grafico-balance"),
-            html.Hr(),
-            html.H2("Desglose por tipo de operación"),
-            html.Div(id="tabla-desglose")
+            html.Div(id="tabs-content")  # Aquí se mostrará el contenido dinámico
         ]
     )
 
-    # --- Callbacks ---
+    @app.callback(Output("tabs-content", "children"), Input("tabs", "value"))
+    def render_tab_content(tab):
+        if tab == "por_equipo":
+            # Aquí devolvemos TODO tu layout actual de estadísticas por equipo
+            return html.Div([
+                html.Label("Selecciona equipo:"),
+                dcc.Dropdown(
+                    id="equipo-selector",
+                    options=[{"label": e, "value": e} for e in equipos],
+                    value=equipos[0] if equipos else None,
+                    clearable=False,
+                    style={"width": "300px"}
+                ),
+                html.H2("📈 Estadísticas de mercado"),
+                html.Div(id="kpi-container-mercado", style={"display": "flex", "flex-wrap": "wrap", "margin-top": "10px"}),
+                html.H2("🎯 Estadísticas de bonificación"),
+                html.Div(id="kpi-container-bonos", style={"display": "flex", "flex-wrap": "wrap", "margin-top": "10px"}),
+                html.H2("💰 Balance total + Bonos"),
+                html.Div(id="kpi-container-total", style={"display": "flex", "flex-wrap": "wrap", "margin-top": "10px"}),
+                html.Hr(),
+                html.H2("📉 Evolución del balance acumulado"),
+                dcc.Graph(id="grafico-balance"),
+                html.Hr(),
+                html.H2("💹 Evolución del valor del equipo"),
+                dcc.Graph(id="grafico-valor-equipo"),
+                html.Hr(),
+                html.H2("Desglose por tipo de operación"),
+                html.Div(id="tabla-desglose")
+            ])
+
+        elif tab == "totales":
+            # Nueva pestaña: Totales globales
+            df_totales = df[df["type"] == "transfer"].copy()
+
+            # Filtramos solo subtipos de interés
+            df_totales = df_totales[df_totales["subtype"].isin(["mercado", "trato", "clausula"])]
+
+            # Pivot table: por equipo, tipo de operación y compra/venta
+            tabla = df_totales.pivot_table(
+                index="equipo",
+                columns=["subtype", "compra-venta"],
+                values="ganancias",
+                aggfunc="sum",
+                fill_value=0
+            )
+
+            # Calcular diferencia compra-venta
+            for tipo in ["mercado", "trato", "clausula"]:
+                tabla[(tipo, "dif")] = tabla.get((tipo, "venta"), 0) + tabla.get((tipo, "compra"), 0)
+
+            # Aplanar columnas
+            tabla.columns = [f"{c[0].capitalize()} {c[1].capitalize()}" for c in tabla.columns]
+            tabla = tabla.reset_index()
+
+            # Mostrar como tabla ordenable
+            return html.Div([
+                html.H2("🏆 Ranking de operaciones por tipo"),
+                dash_table.DataTable(
+                    columns=[{"name": c, "id": c} for c in tabla.columns],
+                    data=tabla.to_dict("records"),
+                    sort_action="native",
+                    filter_action="native",
+                    style_table={"overflowX": "auto"},
+                    style_cell={"textAlign": "center", "padding": "6px"},
+                    style_header={
+                        "backgroundColor": "#1976d2",
+                        "color": "white",
+                        "fontWeight": "bold"
+                    }
+                )
+            ])
+    
+   # === CALLBACK PRINCIPAL PARA ACTUALIZAR TODO EL DASHBOARD POR EQUIPO ===
     @app.callback(
-        [Output("kpi-container-mercado", "children"),
-         Output("kpi-container-bonos", "children"),
-         Output("kpi-container-total", "children"),
-         Output("grafico-balance", "figure"),
-         Output("tabla-desglose", "children")],
-        Input("equipo-selector", "value")
+        [
+            Output("kpi-container-mercado", "children"),
+            Output("kpi-container-bonos", "children"),
+            Output("kpi-container-total", "children"),
+            Output("grafico-balance", "figure"),
+            Output("grafico-valor-equipo", "figure"),
+            Output("tabla-desglose", "children"),
+        ],
+        [Input("equipo-selector", "value")]
     )
     def update_dashboard(equipo):
         if not equipo:
-            return [], [], [], go.Figure(), html.Div("No hay datos disponibles.")
+            return [], [], [], go.Figure(), go.Figure(), html.Div("No hay datos disponibles.")
 
         d_equipo = df[df["equipo"] == equipo]
         d_mercado = d_equipo[d_equipo["type"] == "transfer"]
@@ -84,28 +143,23 @@ def dashboard_por_manager(df: pd.DataFrame) -> Dash:
 
         # === 🎯 ESTADÍSTICAS DE BONIFICACIÓN ===
         total_bono_clasificacion = d_bonos.loc[d_bonos["subtype"] == "clasificacion", "ganancias"].sum()
-        media_bono_clasificacion = d_bonos.loc[d_bonos["subtype"] == "clasificacion", "ganancias"].mean()
         total_bono_quiniela = d_bonos.loc[d_bonos["subtype"] == "quiniela", "ganancias"].sum()
-        media_bono_quiniela = d_bonos.loc[d_bonos["subtype"] == "quiniela", "ganancias"].mean()
 
         kpis_bonos = [
             crear_kpi("Total bono clasificación", f"{total_bono_clasificacion:,.0f} €", "#00897b"),
-            crear_kpi("Media bono clasificación", f"{media_bono_clasificacion:,.0f} €", "#26a69a"),
             crear_kpi("Total bono quiniela", f"{total_bono_quiniela:,.0f} €", "#00796b"),
-            crear_kpi("Media bono quiniela", f"{media_bono_quiniela:,.0f} €", "#004d40"),
         ]
 
         # === 💰 KPI FINAL COMBINADO ===
         balance_global = balance_total + total_bono_clasificacion + total_bono_quiniela
         kpis_totales = [crear_kpi("Balance total + Bonos", f"{balance_global:,.0f} €", "#ff9800")]
 
-       # === 📉 GRÁFICO DE BALANCE ACUMULADO ===
-        # Ordenar cronológicamente por ID (mayor → más antiguo)
+        # === 📉 GRÁFICO DE BALANCE ACUMULADO ===
         d_sorted = d_equipo.sort_values(by="id", ascending=False)
         d_sorted["balance_acumulado"] = d_sorted["ganancias"].cumsum()
 
-        fig = go.Figure()
-        fig.add_trace(go.Scatter(
+        fig_balance = go.Figure()
+        fig_balance.add_trace(go.Scatter(
             x=d_sorted["id"],
             y=d_sorted["balance_acumulado"],
             mode="lines+markers",
@@ -113,24 +167,28 @@ def dashboard_por_manager(df: pd.DataFrame) -> Dash:
             name="Balance acumulado"
         ))
 
-        # Líneas verticales: inicio jornada / mercado
         marks_jornada = df[(df["type"] == "marks") & (df["subtype"] == "start_jornada")]["id"].unique()
         marks_mercado = df[(df["type"] == "marks") & (df["subtype"] == "start_mercado")]["id"].unique()
-
         for mark in marks_jornada:
-            fig.add_vline(x=mark, line=dict(color="red", dash="dash", width=1), opacity=0.4)
+            fig_balance.add_vline(x=mark, line=dict(color="red", dash="dash"), opacity=0.4)
         for mark in marks_mercado:
-            fig.add_vline(x=mark, line=dict(color="gray", dash="dot", width=1), opacity=0.3)
+            fig_balance.add_vline(x=mark, line=dict(color="gray", dash="dot"), opacity=0.3)
+        fig_balance.update_layout(template="plotly_white", title=f"Evolución balance - {equipo}")
 
-        # Invertir eje X para que termine en ID 0
-        fig.update_layout(
-            title=f"Evolución del balance acumulado - {equipo}",
-            xaxis_title="ID (tiempo)",
-            yaxis_title="Balance (€)",
-            template="plotly_white",
-            height=400,
-            xaxis=dict(autorange="reversed")  # 👈 ESTA LÍNEA INVIERTE EL EJE
-        )
+        # === 💹 GRÁFICO DE VALOR DEL EQUIPO ===
+        df_manager = df_clas[df_clas["nombre"] == equipo].copy()
+        df_manager["jornada"] = pd.to_numeric(df_manager["jornada"], errors="coerce")
+        df_manager = df_manager.sort_values("jornada")
+
+        fig_valor = go.Figure()
+        fig_valor.add_trace(go.Scatter(
+            x=df_manager["jornada"],
+            y=df_manager["valor_equipo"],
+            mode="lines+markers",
+            line=dict(color="#4caf50"),
+            name="Valor del equipo"
+        ))
+        fig_valor.update_layout(template="plotly_white", title=f"Valor del equipo - {equipo}")
 
         # === 📊 DESGLOSE TABULAR ===
         if not d_mercado.empty:
@@ -141,30 +199,20 @@ def dashboard_por_manager(df: pd.DataFrame) -> Dash:
         else:
             resumen = pd.DataFrame(columns=["subtype", "compra-venta", "n_op", "total_ganancias"])
 
-        tabla = go.Figure(data=[
-            go.Table(
-                header=dict(
-                    values=["Tipo", "Compra/Venta", "Nº Operaciones", "Total (€)"],
-                    fill_color="#1976d2",
-                    font=dict(color="white", size=14),
-                    align="center"
-                ),
-                cells=dict(
-                    values=[
-                        resumen["subtype"],
-                        resumen["compra-venta"],
-                        resumen["n_op"],
-                        resumen["total_ganancias"].round(0)
-                    ],
-                    fill_color=[["#f5f5f5", "white"] * (len(resumen)//2 + 1)],
-                    align="center"
-                )
-            )
-        ])
-        tabla.update_layout(margin=dict(t=10, b=10))
+        tabla = dash_table.DataTable(
+            columns=[
+                {"name": "Tipo", "id": "subtype"},
+                {"name": "Compra/Venta", "id": "compra-venta"},
+                {"name": "Nº Operaciones", "id": "n_op"},
+                {"name": "Total (€)", "id": "total_ganancias"},
+            ],
+            data=resumen.to_dict("records"),
+            sort_action="native",
+            style_table={"overflowX": "auto"},
+            style_cell={"textAlign": "center"},
+        )
 
-        return kpis_mercado, kpis_bonos, kpis_totales, fig, dcc.Graph(figure=tabla)
-
+        return kpis_mercado, kpis_bonos, kpis_totales, fig_balance, fig_valor, tabla
     return app
 
 

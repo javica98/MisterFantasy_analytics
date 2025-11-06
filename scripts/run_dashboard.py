@@ -71,10 +71,11 @@ CSV_NOTIFICACIONES_CLEAN = cfg["paths"]["csv"]["notificaciones_clean"]
 # --- 1. Notificaciones ---
 logger.info("Creando Dashboard")
 csv_notificaciones_clean = safe_read_csv(CSV_NOTIFICACIONES_CLEAN)
-if csv_notificaciones_clean is None:
-    logger.warning("⏭️ Saltando sección de notificaciones (no hay CSV disponible).")
+csv_clasificaciones = safe_read_csv(CSV_CLASIFICACIONES)
+if (csv_notificaciones_clean is None) or (csv_notificaciones_clean is None):
+    logger.warning("⏭️ Saltando sección de notificaciones y clasificaciones (no hay CSV disponible).")
 else:
-    app = dashboard_por_manager(csv_notificaciones_clean)
+    app = dashboard_por_manager(csv_notificaciones_clean,csv_clasificaciones)
     app.run(debug=False, port=8050)
     logger.info("✅ Dashboard creado")
 

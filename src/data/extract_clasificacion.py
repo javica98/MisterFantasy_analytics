@@ -5,6 +5,9 @@ import pandas as pd
 import logging
 
 logger = logging.getLogger(__name__)
+def _text_of(tag):
+    """Helper seguro para extraer texto o '' si tag es None."""
+    return tag.get_text(strip=True) if tag else ""
 
 def extraer_clasificaciones(html: str) -> pd.DataFrame:
     """
@@ -48,7 +51,7 @@ def extraer_clasificaciones(html: str) -> pd.DataFrame:
                 puntos_raw = player_row.find("div", class_="points")
                 valor_raw = player_row.find("div", class_="played")
 
-                nombre = limpiar_nombre(nombre_raw.text) if nombre_raw else ""
+                nombre = _text_of(nombre_raw) if nombre_raw else ""
                 posicion = limpiar_entero(posicion_raw.text) if posicion_raw else None
                 puntos = limpiar_entero(puntos_raw.text) if puntos_raw else None
                 valor_equipo = limpiar_dinero(valor_raw.text) if valor_raw else 0
