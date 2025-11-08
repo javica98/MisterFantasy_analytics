@@ -1,26 +1,44 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
+marks,start_mercado,,,,,,,,,,,,,,,2025-11-08,
+transfer,mercado,,Chidera Ejuke,Mister,Libre,550.000,3,18,17,,,,,,,2025-11-08,02806e7616b8b72fb1782cecc3e8a80a
+transfer,mercado,,Pedro Díaz,Mister,Chamacónicos,1.219.000,3,31,14,,,,,,,2025-11-08,ae9c5452db1e1cd04c00e48399b4f3bb
+transfer,mercado,,David Alaba,Mister,Chamacónicos,160.001,2,6,15,,,,,,,2025-11-08,6984b2b5951b48c80f9e05f11ac4cdca
+transfer,mercado,,Pepelu,Mister,Dani,5.269.820,3,22,19,,,,,,,2025-11-08,dd3ccfc720b5278c28fe22906c54accc
+transfer,Puja,,Pepelu,Mister,Libre,5.246.070,3,22,19,,,,,,,2025-11-08,6a5612bce25cc881175781e1d5062610
+transfer,mercado,,Adrián Liso,Mister,Maldinillo 💥,6.144.110,3,49,9,,,,,,,2025-11-08,6b6ac91d1b0b08b32160c2712e39f4f6
+transfer,Puja,,Adrián Liso,Mister,Dani,6.082.290,3,49,9,,,,,,,2025-11-08,ae6d95fdb074a9e8550214787bc269d6
+transfer,Puja,,Adrián Liso,Mister,Libre,5.803.130,3,49,9,,,,,,,2025-11-08,2d3c293e22fcdf05963123d65b15ce6a
+marks,start_mercado,,,,,,,,,,,,,,,2025-11-08,
+transfer,mercado,,Victor Chust,Dani,Mister,3.628.800,2,34,23,,,,,,,2025-11-08,80cd3b17f82ca24e08a8f5a3dae7c7cc
+marks,start_jornada,,,,,,,,,,,,,,12.0,2025-11-08,
+marks,start_mercado,,,,,,,,,,,,,,,2025-11-08,
+transfer,mercado,,Trent Alexander-Arnold,Chamacónicos,Mister,6.702.420,2,10,15,,,,,,,2025-11-08,1db367dc1ac86dbfa54750a659189b63
+marks,start_mercado,,,,,,,,,,,,,,,2025-11-08,
+transfer,mercado,,Adrián de la Fuente,De la Guettir FC,Mister,2.115.360,2,28,12,,,,,,,2025-11-08,a5005bad2152e9b3babaeedc311e1b4f
+marks,start_mercado,,,,,,,,,,,,,,,2025-11-08,
+transfer,mercado,,Goduine Koyalipou,Libre,Mister,478.800,4,22,12,,,,,,,2025-11-08,e51e53724016b3814a6976000e4a669e
+marks,start_mercado,,,,,,,,,,,,,,,2025-11-08,
+transfer,mercado,,Paulo Gazzaniga,Maldinillo 💥,Mister,7.564.850,1.0,38.0,222.0,,,,,,,2025-11-07,073e4ca8aff4b46cbfe44830e59eed4e
 marks,start_mercado,,,,,,,,,,,,,,,2025-11-07,
-transfer,mercado,,Paulo Gazzaniga,Maldinillo 💥,Mister,7.564.850,1,38,222,,,,,,,2025-11-07,073e4ca8aff4b46cbfe44830e59eed4e
+transfer,mercado,,Eric García,Maldinillo 💥,Mister,12.257.890,2.0,65.0,3.0,,,,,,,2025-11-07,4ed0f0caf5ccd731c2c1dbaf03b8471b
 marks,start_mercado,,,,,,,,,,,,,,,2025-11-07,
-transfer,mercado,,Eric García,Maldinillo 💥,Mister,12.257.890,2,65,3,,,,,,,2025-11-07,4ed0f0caf5ccd731c2c1dbaf03b8471b
+transfer,mercado,,Iván Balliu,Mister,Libre,179.000,2.0,12.0,14.0,,,,,,,2025-11-07,043e7ab3f8d755f6f5a9f87e0c7fbb4a
+transfer,mercado,,Nacho Vidal,Mister,De la Guettir FC,1.175.557,2.0,21.0,1370.0,,,,,,,2025-11-07,36f61e07e50445a096185af4552870bb
+transfer,Puja,,Nacho Vidal,Mister,Dani,828.380,2.0,21.0,1370.0,,,,,,,2025-11-07,9228a64243a8446f60786651f0c91f82
+transfer,Puja,,Nacho Vidal,Mister,Libre,778.020,2.0,21.0,1370.0,,,,,,,2025-11-07,e7e66d5febdb67f3229a395a49379ff6
+transfer,mercado,,Aleix Febas,Mister,Maldinillo 💥,10.010.000,3.0,49.0,23.0,,,,,,,2025-11-07,3fc772780a1cae7429e2e4c7137f4078
+transfer,Puja,,Aleix Febas,Mister,De la Guettir FC,9.688.825,3.0,49.0,23.0,,,,,,,2025-11-07,a37857cfcb0b7b996501d296eed6a121
+transfer,mercado,,Thiago Almada,Mister,Maldinillo 💥,8.360.000,3.0,37.0,2.0,,,,,,,2025-11-07,aef4e9b7359d3dbb45316683b1a95c50
+transfer,Puja,,Thiago Almada,Mister,Dani,8.201.630,3.0,37.0,2.0,,,,,,,2025-11-07,6e8d3b6a5ac374d529cdee6006697af3
+transfer,Puja,,Thiago Almada,Mister,Libre,7.839.450,3.0,37.0,2.0,,,,,,,2025-11-07,886caaa00d1c9d0677e51e1770229756
+transfer,mercado,,Luiz Júnior,Mister,Maldinillo 💥,5.170.000,1.0,35.0,20.0,,,,,,,2025-11-07,793268652883d180f5de6e948035c0c7
+transfer,Puja,,Luiz Júnior,Mister,Libre,4.789.000,1.0,35.0,20.0,,,,,,,2025-11-07,89b7227fb61fe64b663e6f6bf556ec9e
 marks,start_mercado,,,,,,,,,,,,,,,2025-11-07,
-transfer,mercado,,Iván Balliu,Mister,Libre,179.000,2,12,14,,,,,,,2025-11-07,043e7ab3f8d755f6f5a9f87e0c7fbb4a
-transfer,mercado,,Nacho Vidal,Mister,De la Guettir FC,1.175.557,2,21,1370,,,,,,,2025-11-07,36f61e07e50445a096185af4552870bb
-transfer,Puja,,Nacho Vidal,Mister,Dani,828.380,2,21,1370,,,,,,,2025-11-07,9228a64243a8446f60786651f0c91f82
-transfer,Puja,,Nacho Vidal,Mister,Libre,778.020,2,21,1370,,,,,,,2025-11-07,e7e66d5febdb67f3229a395a49379ff6
-transfer,mercado,,Aleix Febas,Mister,Maldinillo 💥,10.010.000,3,49,23,,,,,,,2025-11-07,3fc772780a1cae7429e2e4c7137f4078
-transfer,Puja,,Aleix Febas,Mister,De la Guettir FC,9.688.825,3,49,23,,,,,,,2025-11-07,a37857cfcb0b7b996501d296eed6a121
-transfer,mercado,,Thiago Almada,Mister,Maldinillo 💥,8.360.000,3,37,2,,,,,,,2025-11-07,aef4e9b7359d3dbb45316683b1a95c50
-transfer,Puja,,Thiago Almada,Mister,Dani,8.201.630,3,37,2,,,,,,,2025-11-07,6e8d3b6a5ac374d529cdee6006697af3
-transfer,Puja,,Thiago Almada,Mister,Libre,7.839.450,3,37,2,,,,,,,2025-11-07,886caaa00d1c9d0677e51e1770229756
-transfer,mercado,,Luiz Júnior,Mister,Maldinillo 💥,5.170.000,1,35,20,,,,,,,2025-11-07,793268652883d180f5de6e948035c0c7
-transfer,Puja,,Luiz Júnior,Mister,Libre,4.789.000,1,35,20,,,,,,,2025-11-07,89b7227fb61fe64b663e6f6bf556ec9e
+transfer,clausula,,André Silva,Dani,Juanba,12.511.500,4.0,50.0,23.0,,,,,,,2025-11-07,a8c6290e652e12ec76977847c5f1c7a6
 marks,start_mercado,,,,,,,,,,,,,,,2025-11-07,
-transfer,clausula,,André Silva,Dani,Juanba,12.511.500,4,50,23,,,,,,,2025-11-07,a8c6290e652e12ec76977847c5f1c7a6
+transfer,mercado,,Borja Iglesias,MuchaSalsa,Mister,12.318.970,4.0,59.0,5.0,,,,,,,2025-11-07,fcc7ed94d678224e3c7be8f9be274cc1
 marks,start_mercado,,,,,,,,,,,,,,,2025-11-07,
-transfer,mercado,,Borja Iglesias,MuchaSalsa,Mister,12.318.970,4,59,5,,,,,,,2025-11-07,fcc7ed94d678224e3c7be8f9be274cc1
-marks,start_mercado,,,,,,,,,,,,,,,2025-11-07,
-transfer,mercado,,Marc Roca,Jotabetrbb,Mister,1.452.480,3,14,4,,,,,,,2025-11-07,40e7e7344b9e76b7c9cb08ca2b5232e7
+transfer,mercado,,Marc Roca,Jotabetrbb,Mister,1.452.480,3.0,14.0,4.0,,,,,,,2025-11-07,40e7e7344b9e76b7c9cb08ca2b5232e7
 marks,start_mercado,,,,,,,,,,,,,,,2025-11-07,
 transfer,mercado,,Adrián San Miguel,Mister,Libre,174.020,1.0,0.0,4.0,,,,,,,2025-11-06,e0eda0fb3746b14a43440cad35753a26
 transfer,mercado,,Luis Milla,Mister,MuchaSalsa,16.409.000,3.0,63.0,9.0,,,,,,,2025-11-06,4b80d3caae33440eb8248feef792b889
