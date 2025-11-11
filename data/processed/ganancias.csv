@@ -1,8 +1,41 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
+marks,start_mercado,,,,,,,,,,,,,,,2025-11-11,
+transfer,mercado,,Sergi Cardona,De la Guettir FC,Mister,5.432.640,2,37,20,,,,,,,2025-11-11,defb7dbffd88588aae1ce64ec68439fb
+marks,start_mercado,,,,,,,,,,,,,,,2025-11-11,
+transfer,mercado,,Juan Iglesias,Mister,Libre,5.642.000,2,49,9,,,,,,,2025-11-11,64706383a058cd6c4f2df28cfea06c6b
+transfer,mercado,,Pep Chavarría,Mister,De la Guettir FC,11.411.211,2,63,14,,,,,,,2025-11-11,2bbb3783428611bf2e6bf513309938b3
+transfer,Puja,,Pep Chavarría,Mister,Dani,10.914.180,2,63,14,,,,,,,2025-11-11,6a0370a21ccf5a3a70078b132637e85c
+transfer,Puja,,Pep Chavarría,Mister,Libre,10.686.920,2,63,14,,,,,,,2025-11-11,acb24354661dd65a98531cf62dd19554
+transfer,Puja,,Pep Chavarría,Mister,Maldinillo 💥,10.653.160,2,63,14,,,,,,,2025-11-11,2e727131801b204d1c0e1a0f62efb0da
+transfer,mercado,,Moi Gómez,Mister,Chamacónicos,5.219.000,3,37,50,,,,,,,2025-11-11,0c1df8bb8c2dc559151580fd2cebeaca
+transfer,Puja,,Moi Gómez,Mister,Maldinillo 💥,5.100.000,3,37,50,,,,,,,2025-11-11,b4fd1be1e58008b849065f637da633c4
+transfer,Puja,,Moi Gómez,Mister,Libre,4.920.410,3,37,50,,,,,,,2025-11-11,95a141803bb02ab60d5f03737f1e598f
+transfer,Puja,,Moi Gómez,Mister,Los marinero,4.919.000,3,37,50,,,,,,,2025-11-11,eaa66dfbfb574682f933ee2fac06dec3
+transfer,mercado,,Andrei Rațiu,Mister,Dani,7.154.240,2,48,14,,,,,,,2025-11-11,e101554c52058c95a5a8664507c57db1
+transfer,Puja,,Andrei Rațiu,Mister,Libre,6.926.600,2,48,14,,,,,,,2025-11-11,b505cf420e5488a340e12184b7ee5188
+transfer,Puja,,Andrei Rațiu,Mister,Chamacónicos,6.888.000,2,48,14,,,,,,,2025-11-11,d64673750a4f1fb3a3fbd110f6bd19a7
+bonificacion,quiniela,,,,,,,,,Jotabetrbb,+700.000,1º,7,,,2025-11-11,
+bonificacion,quiniela,,,,,,,,,Maldinillo 💥,+700.000,2º,7,,,2025-11-11,
+bonificacion,quiniela,,,,,,,,,Juanba,+600.000,3º,6,,,2025-11-11,
+bonificacion,quiniela,,,,,,,,,Los marinero,+600.000,4º,6,,,2025-11-11,
+bonificacion,quiniela,,,,,,,,,MuchaSalsa,+600.000,5º,6,,,2025-11-11,
+bonificacion,quiniela,,,,,,,,,De la Guettir FC,+500.000,6º,5,,,2025-11-11,
+bonificacion,quiniela,,,,,,,,,Libre,+500.000,7º,5,,,2025-11-11,
+bonificacion,quiniela,,,,,,,,,Chamacónicos,+300.000,8º,3,,,2025-11-11,
+bonificacion,quiniela,,,,,,,,,Dani,+300.000,9º,3,,,2025-11-11,
+bonificacion,clasificacion,,,,,,,,,Maldinillo 💥,1.770.000,1,,56,,2025-11-11,
+bonificacion,clasificacion,,,,,,,,,Dani,1.700.000,2,,55,,2025-11-11,
+bonificacion,clasificacion,,,,,,,,,Chamacónicos,1.830.000,3,,49,,2025-11-11,
+bonificacion,clasificacion,,,,,,,,,Jotabetrbb,1.800.000,4,,45,,2025-11-11,
+bonificacion,clasificacion,,,,,,,,,Los marinero,2.150.000,5,,45,,2025-11-11,
+bonificacion,clasificacion,,,,,,,,,Libre,2.330.000,6,,44,,2025-11-11,
+bonificacion,clasificacion,,,,,,,,,MuchaSalsa,2.240.000,7,,42,,2025-11-11,
+bonificacion,clasificacion,,,,,,,,,De la Guettir FC,2.140.000,8,,27,,2025-11-11,
+bonificacion,clasificacion,,,,,,,,,Juanba,2.300.000,9,,25,,2025-11-11,
+marks,start_mercado,,,,,,,,,,,,,,,2025-11-11,
+transfer,mercado,,Ronald Araújo,Mister,Dani,9.540.200,2.0,53.0,3.0,,,,,,,2025-11-10,394b481cc7d3171a2fbdf1a5f3247475
 marks,start_mercado,,,,,,,,,,,,,,,2025-11-10,
-transfer,mercado,,Ronald Araújo,Mister,Dani,9.540.200,2,53,3,,,,,,,2025-11-10,394b481cc7d3171a2fbdf1a5f3247475
-marks,start_mercado,,,,,,,,,,,,,,,2025-11-10,
-transfer,mercado,,Óscar Valentín,Los marinero,Mister,2.044.550,3,30,14,,,,,,,2025-11-10,4ad9e46cf997e64b58eb57eb28a6ec01
+transfer,mercado,,Óscar Valentín,Los marinero,Mister,2.044.550,3.0,30.0,14.0,,,,,,,2025-11-10,4ad9e46cf997e64b58eb57eb28a6ec01
 marks,start_mercado,,,,,,,,,,,,,,,2025-11-10,
 transfer,mercado,,Alex Baena,Mister,De la Guettir FC,16.899.899,3.0,40.0,2.0,,,,,,,2025-11-09,472bec8d45dc85f5d8392772f0cfa087
 transfer,Puja,,Alex Baena,Mister,MuchaSalsa,16.191.000,3.0,40.0,2.0,,,,,,,2025-11-09,806ea8b07f4215b1c919d4030233f771
