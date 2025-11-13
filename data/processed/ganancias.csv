@@ -1,14 +1,24 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
+marks,start_mercado,,,,,,,,,,,,,,,2025-11-13,
+transfer,mercado,,Álvaro Carreras,Mister,Libre,12.736.140,2,61,15,,,,,,,2025-11-13,cde91d39faa64c595a9273d9fb1da9b7
+transfer,Puja,,Álvaro Carreras,Mister,Dani,12.387.670,2,61,15,,,,,,,2025-11-13,bb1ef05365e78c4e9acd768a03c44e82
+transfer,mercado,,Jon Aramburu,Mister,Libre,2.281.940,2,31,16,,,,,,,2025-11-13,1c1bb313cee0a85a6fc19ed6b69bc897
+transfer,Puja,,Jon Aramburu,Mister,Chamacónicos,2.277.020,2,31,16,,,,,,,2025-11-13,9daf53ac0ba8cceab05d94c94f78020d
+transfer,mercado,,Viktor Tsygankov,Mister,Chamacónicos,4.893.000,3,24,222,,,,,,,2025-11-13,127b04d3c29086aaff1c728c53d25bfa
+transfer,Puja,,Viktor Tsygankov,Mister,Libre,4.850.000,3,24,222,,,,,,,2025-11-13,b10b053e7ad4249a02e7321f2d630e1c
+transfer,Puja,,Viktor Tsygankov,Mister,Dani,4.837.830,3,24,222,,,,,,,2025-11-13,fc18267c43127ef2a5a2dead39ffa525
+marks,start_mercado,,,,,,,,,,,,,,,2025-11-13,
+transfer,mercado,,Javi Galán,De la Guettir FC,Mister,164.800,2,12,2,,,,,,,2025-11-13,2eeeefc840c86de72327642899aeece3
+marks,start_mercado,,,,,,,,,,,,,,,2025-11-13,
+transfer,mercado,,Luis Rioja,Mister,Los marinero,5.325.000,3.0,46.0,19.0,,,,,,,2025-11-12,556d6b156458570309dcc6b4e59acb25
 marks,start_mercado,,,,,,,,,,,,,,,2025-11-12,
-transfer,mercado,,Luis Rioja,Mister,Los marinero,5.325.000,3,46,19,,,,,,,2025-11-12,556d6b156458570309dcc6b4e59acb25
+transfer,mercado,,Pol Lozano,Libre,Mister,5.364.320,3.0,46.0,8.0,,,,,,,2025-11-12,d7e5aacb399b6c8da0fcc959fcccbc82
 marks,start_mercado,,,,,,,,,,,,,,,2025-11-12,
-transfer,mercado,,Pol Lozano,Libre,Mister,5.364.320,3,46,8,,,,,,,2025-11-12,d7e5aacb399b6c8da0fcc959fcccbc82
+transfer,mercado,,Roony Bardghji,Libre,Mister,2.954.640,4.0,22.0,3.0,,,,,,,2025-11-12,3321b98afeeac4fd626e47fdb9adfd92
 marks,start_mercado,,,,,,,,,,,,,,,2025-11-12,
-transfer,mercado,,Roony Bardghji,Libre,Mister,2.954.640,4,22,3,,,,,,,2025-11-12,3321b98afeeac4fd626e47fdb9adfd92
+transfer,mercado,,Pedro Díaz,Chamacónicos,Mister,872.000,3.0,33.0,14.0,,,,,,,2025-11-12,d7273b9ea16a6cd66bf2e26069d7773a
 marks,start_mercado,,,,,,,,,,,,,,,2025-11-12,
-transfer,mercado,,Pedro Díaz,Chamacónicos,Mister,872.000,3,33,14,,,,,,,2025-11-12,d7273b9ea16a6cd66bf2e26069d7773a
-marks,start_mercado,,,,,,,,,,,,,,,2025-11-12,
-transfer,clausula,,Matteo Ruggeri,Dani,Jotabetrbb,1.117.500,2,26,2,,,,,,,2025-11-12,6720a28b8532383e7ece40a4b0f223fd
+transfer,clausula,,Matteo Ruggeri,Dani,Jotabetrbb,1.117.500,2.0,26.0,2.0,,,,,,,2025-11-12,6720a28b8532383e7ece40a4b0f223fd
 marks,start_mercado,,,,,,,,,,,,,,,2025-11-12,
 transfer,mercado,,Sergi Cardona,De la Guettir FC,Mister,5.432.640,2.0,37.0,20.0,,,,,,,2025-11-11,defb7dbffd88588aae1ce64ec68439fb
 marks,start_mercado,,,,,,,,,,,,,,,2025-11-11,
