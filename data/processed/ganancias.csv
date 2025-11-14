@@ -1,14 +1,20 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
+marks,start_mercado,,,,,,,,,,,,,,,2025-11-14,
+transfer,mercado,,Fermín López,Mister,Maldinillo 💥,13.860.000,3,57,3,,,,,,,2025-11-14,8594fe303ad307c6bf9e509545d1a6d2
+transfer,Puja,,Fermín López,Mister,Dani,13.179.890,3,57,3,,,,,,,2025-11-14,7d6efd7976d9adb9dc8eb4818e023eef
+transfer,Puja,,Fermín López,Mister,Los marinero,12.990.090,3,57,3,,,,,,,2025-11-14,916d5cb5181ffc3993311ff4811d1f93
+marks,start_mercado,,,,,,,,,,,,,,,2025-11-14,
+transfer,mercado,,Chidera Ejuke,Libre,Mister,435.840,3,19,17,,,,,,,2025-11-14,29631bc71991271d5994308751acb5c6
+marks,start_mercado,,,,,,,,,,,,,,,2025-11-14,
+transfer,mercado,,Álvaro Carreras,Mister,Libre,12.736.140,2.0,61.0,15.0,,,,,,,2025-11-13,cde91d39faa64c595a9273d9fb1da9b7
+transfer,Puja,,Álvaro Carreras,Mister,Dani,12.387.670,2.0,61.0,15.0,,,,,,,2025-11-13,bb1ef05365e78c4e9acd768a03c44e82
+transfer,mercado,,Jon Aramburu,Mister,Libre,2.281.940,2.0,31.0,16.0,,,,,,,2025-11-13,1c1bb313cee0a85a6fc19ed6b69bc897
+transfer,Puja,,Jon Aramburu,Mister,Chamacónicos,2.277.020,2.0,31.0,16.0,,,,,,,2025-11-13,9daf53ac0ba8cceab05d94c94f78020d
+transfer,mercado,,Viktor Tsygankov,Mister,Chamacónicos,4.893.000,3.0,24.0,222.0,,,,,,,2025-11-13,127b04d3c29086aaff1c728c53d25bfa
+transfer,Puja,,Viktor Tsygankov,Mister,Libre,4.850.000,3.0,24.0,222.0,,,,,,,2025-11-13,b10b053e7ad4249a02e7321f2d630e1c
+transfer,Puja,,Viktor Tsygankov,Mister,Dani,4.837.830,3.0,24.0,222.0,,,,,,,2025-11-13,fc18267c43127ef2a5a2dead39ffa525
 marks,start_mercado,,,,,,,,,,,,,,,2025-11-13,
-transfer,mercado,,Álvaro Carreras,Mister,Libre,12.736.140,2,61,15,,,,,,,2025-11-13,cde91d39faa64c595a9273d9fb1da9b7
-transfer,Puja,,Álvaro Carreras,Mister,Dani,12.387.670,2,61,15,,,,,,,2025-11-13,bb1ef05365e78c4e9acd768a03c44e82
-transfer,mercado,,Jon Aramburu,Mister,Libre,2.281.940,2,31,16,,,,,,,2025-11-13,1c1bb313cee0a85a6fc19ed6b69bc897
-transfer,Puja,,Jon Aramburu,Mister,Chamacónicos,2.277.020,2,31,16,,,,,,,2025-11-13,9daf53ac0ba8cceab05d94c94f78020d
-transfer,mercado,,Viktor Tsygankov,Mister,Chamacónicos,4.893.000,3,24,222,,,,,,,2025-11-13,127b04d3c29086aaff1c728c53d25bfa
-transfer,Puja,,Viktor Tsygankov,Mister,Libre,4.850.000,3,24,222,,,,,,,2025-11-13,b10b053e7ad4249a02e7321f2d630e1c
-transfer,Puja,,Viktor Tsygankov,Mister,Dani,4.837.830,3,24,222,,,,,,,2025-11-13,fc18267c43127ef2a5a2dead39ffa525
-marks,start_mercado,,,,,,,,,,,,,,,2025-11-13,
-transfer,mercado,,Javi Galán,De la Guettir FC,Mister,164.800,2,12,2,,,,,,,2025-11-13,2eeeefc840c86de72327642899aeece3
+transfer,mercado,,Javi Galán,De la Guettir FC,Mister,164.800,2.0,12.0,2.0,,,,,,,2025-11-13,2eeeefc840c86de72327642899aeece3
 marks,start_mercado,,,,,,,,,,,,,,,2025-11-13,
 transfer,mercado,,Luis Rioja,Mister,Los marinero,5.325.000,3.0,46.0,19.0,,,,,,,2025-11-12,556d6b156458570309dcc6b4e59acb25
 marks,start_mercado,,,,,,,,,,,,,,,2025-11-12,
