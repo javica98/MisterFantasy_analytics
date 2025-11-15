@@ -1,10 +1,14 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
+marks,start_mercado,,,,,,,,,,,,,,,2025-11-15,
+transfer,mercado,,Antonio Blanco,Mister,Libre,5.524.390,3,46,48,,,,,,,2025-11-15,51ff3996e7dcdd40549481de5649acfb
+transfer,Puja,,Antonio Blanco,Mister,Dani,5.498.810,3,46,48,,,,,,,2025-11-15,869dc1eba773f282a4ee6f057f953565
+transfer,mercado,,Santiago Colombatto,Mister,Libre,1.710.000,3,27,1370,,,,,,,2025-11-15,4d8f0725e54fae445ffcfa797e098ecd
+marks,start_mercado,,,,,,,,,,,,,,,2025-11-15,
+transfer,mercado,,Fermín López,Mister,Maldinillo 💥,13.860.000,3.0,57.0,3.0,,,,,,,2025-11-14,8594fe303ad307c6bf9e509545d1a6d2
+transfer,Puja,,Fermín López,Mister,Dani,13.179.890,3.0,57.0,3.0,,,,,,,2025-11-14,7d6efd7976d9adb9dc8eb4818e023eef
+transfer,Puja,,Fermín López,Mister,Los marinero,12.990.090,3.0,57.0,3.0,,,,,,,2025-11-14,916d5cb5181ffc3993311ff4811d1f93
 marks,start_mercado,,,,,,,,,,,,,,,2025-11-14,
-transfer,mercado,,Fermín López,Mister,Maldinillo 💥,13.860.000,3,57,3,,,,,,,2025-11-14,8594fe303ad307c6bf9e509545d1a6d2
-transfer,Puja,,Fermín López,Mister,Dani,13.179.890,3,57,3,,,,,,,2025-11-14,7d6efd7976d9adb9dc8eb4818e023eef
-transfer,Puja,,Fermín López,Mister,Los marinero,12.990.090,3,57,3,,,,,,,2025-11-14,916d5cb5181ffc3993311ff4811d1f93
-marks,start_mercado,,,,,,,,,,,,,,,2025-11-14,
-transfer,mercado,,Chidera Ejuke,Libre,Mister,435.840,3,19,17,,,,,,,2025-11-14,29631bc71991271d5994308751acb5c6
+transfer,mercado,,Chidera Ejuke,Libre,Mister,435.840,3.0,19.0,17.0,,,,,,,2025-11-14,29631bc71991271d5994308751acb5c6
 marks,start_mercado,,,,,,,,,,,,,,,2025-11-14,
 transfer,mercado,,Álvaro Carreras,Mister,Libre,12.736.140,2.0,61.0,15.0,,,,,,,2025-11-13,cde91d39faa64c595a9273d9fb1da9b7
 transfer,Puja,,Álvaro Carreras,Mister,Dani,12.387.670,2.0,61.0,15.0,,,,,,,2025-11-13,bb1ef05365e78c4e9acd768a03c44e82
