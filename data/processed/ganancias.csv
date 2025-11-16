@@ -1,8 +1,13 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
-marks,start_mercado,,,,,,,,,,,,,,,2025-11-15,
-transfer,mercado,,Antonio Blanco,Mister,Libre,5.524.390,3,46,48,,,,,,,2025-11-15,51ff3996e7dcdd40549481de5649acfb
-transfer,Puja,,Antonio Blanco,Mister,Dani,5.498.810,3,46,48,,,,,,,2025-11-15,869dc1eba773f282a4ee6f057f953565
-transfer,mercado,,Santiago Colombatto,Mister,Libre,1.710.000,3,27,1370,,,,,,,2025-11-15,4d8f0725e54fae445ffcfa797e098ecd
+marks,start_mercado,,,,,,,,,,,,,,,2025-11-16,
+transfer,mercado,,Borja Mayoral,Mister,Dani,9.707.080,4,42,9,,,,,,,2025-11-16,26ee89ed2c3331cd80454e039c53e096
+transfer,Puja,,Borja Mayoral,Mister,Libre,9.551.010,4,42,9,,,,,,,2025-11-16,4ef20d6b86e24740b31092411e15cba9
+marks,start_mercado,,,,,,,,,,,,,,,2025-11-16,
+transfer,mercado,,Aymeric Laporte,Maldinillo 💥,Mister,10.764.000,2,33,1,,,,,,,2025-11-16,938b970f53d289cea7944867f54868d9
+marks,start_mercado,,,,,,,,,,,,,,,2025-11-16,
+transfer,mercado,,Antonio Blanco,Mister,Libre,5.524.390,3.0,46.0,48.0,,,,,,,2025-11-15,51ff3996e7dcdd40549481de5649acfb
+transfer,Puja,,Antonio Blanco,Mister,Dani,5.498.810,3.0,46.0,48.0,,,,,,,2025-11-15,869dc1eba773f282a4ee6f057f953565
+transfer,mercado,,Santiago Colombatto,Mister,Libre,1.710.000,3.0,27.0,1370.0,,,,,,,2025-11-15,4d8f0725e54fae445ffcfa797e098ecd
 marks,start_mercado,,,,,,,,,,,,,,,2025-11-15,
 transfer,mercado,,Fermín López,Mister,Maldinillo 💥,13.860.000,3.0,57.0,3.0,,,,,,,2025-11-14,8594fe303ad307c6bf9e509545d1a6d2
 transfer,Puja,,Fermín López,Mister,Dani,13.179.890,3.0,57.0,3.0,,,,,,,2025-11-14,7d6efd7976d9adb9dc8eb4818e023eef
