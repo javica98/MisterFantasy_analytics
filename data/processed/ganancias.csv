@@ -1,12 +1,21 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
+marks,start_mercado,,,,,,,,,,,,,,,2025-11-18,
+transfer,mercado,,André Almeida,Mister,Jotabetrbb,634.000,3,13,19,,,,,,,2025-11-18,973d2d9496706ed8ce43f539dddc7474
+transfer,Puja,,André Almeida,Mister,Libre,534.000,3,13,19,,,,,,,2025-11-18,6594faa9de5b98261cdfb2453046c615
+transfer,mercado,,Borja Iglesias,Mister,Dani,13.331.840,4,69,5,,,,,,,2025-11-18,833ee916959f9cf8325f5606a97fd28e
+transfer,Puja,,Borja Iglesias,Mister,Libre,12.637.010,4,69,5,,,,,,,2025-11-18,7b284b8dc482414ad79019a24daa1699
+marks,start_mercado,,,,,,,,,,,,,,,2025-11-18,
+transfer,mercado,,Ronald Araújo,Dani,Mister,10.671.150,2,53,3,,,,,,,2025-11-18,9206cd25a3d6b6c8911e1bd84eb9af23
+marks,start_mercado,,,,,,,,,,,,,,,2025-11-18,
+transfer,mercado,,Alejandro Balde,Los marinero,Mister,10.062.070,2,31,3,,,,,,,2025-11-18,abca7d4070949403270a47298a21cf73
+marks,start_mercado,,,,,,,,,,,,,,,2025-11-18,
+transfer,mercado,,Sofyan Amrabat,Mister,Los marinero,9.994.909,3.0,39.0,4.0,,,,,,,2025-11-17,67b8036511de85e10e366d382376e8c6
+transfer,Puja,,Sofyan Amrabat,Mister,Dani,9.355.360,3.0,39.0,4.0,,,,,,,2025-11-17,490d746f5f98bb3be5a0ca898f184943
+transfer,Puja,,Sofyan Amrabat,Mister,Chamacónicos,9.034.000,3.0,39.0,4.0,,,,,,,2025-11-17,50cdfb4e47dae4553da5a3f3ed634871
 marks,start_mercado,,,,,,,,,,,,,,,2025-11-17,
-transfer,mercado,,Sofyan Amrabat,Mister,Los marinero,9.994.909,3,39,4,,,,,,,2025-11-17,67b8036511de85e10e366d382376e8c6
-transfer,Puja,,Sofyan Amrabat,Mister,Dani,9.355.360,3,39,4,,,,,,,2025-11-17,490d746f5f98bb3be5a0ca898f184943
-transfer,Puja,,Sofyan Amrabat,Mister,Chamacónicos,9.034.000,3,39,4,,,,,,,2025-11-17,50cdfb4e47dae4553da5a3f3ed634871
+transfer,mercado,,Moi Gómez,Chamacónicos,Mister,5.572.350,3.0,37.0,50.0,,,,,,,2025-11-17,de37257303380d79eb813ea660610476
 marks,start_mercado,,,,,,,,,,,,,,,2025-11-17,
-transfer,mercado,,Moi Gómez,Chamacónicos,Mister,5.572.350,3,37,50,,,,,,,2025-11-17,de37257303380d79eb813ea660610476
-marks,start_mercado,,,,,,,,,,,,,,,2025-11-17,
-transfer,mercado,,Adrián Liso,Maldinillo 💥,Mister,6.481.650,3,51,9,,,,,,,2025-11-17,5c0cb49ce5922fc46d8efb721cdb67f8
+transfer,mercado,,Adrián Liso,Maldinillo 💥,Mister,6.481.650,3.0,51.0,9.0,,,,,,,2025-11-17,5c0cb49ce5922fc46d8efb721cdb67f8
 marks,start_mercado,,,,,,,,,,,,,,,2025-11-17,
 transfer,mercado,,Borja Mayoral,Mister,Dani,9.707.080,4.0,42.0,9.0,,,,,,,2025-11-16,26ee89ed2c3331cd80454e039c53e096
 transfer,Puja,,Borja Mayoral,Mister,Libre,9.551.010,4.0,42.0,9.0,,,,,,,2025-11-16,4ef20d6b86e24740b31092411e15cba9
