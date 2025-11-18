@@ -67,15 +67,19 @@ CSV_SUBIDASBAJADAS = cfg["paths"]["csv"]["subidas_bajadas"]
 
 # Archivos CSV CLEAN
 CSV_NOTIFICACIONES_CLEAN = cfg["paths"]["csv"]["notificaciones_clean"]
+CSV_NOTIFICACIONES_JUGADOR = cfg["paths"]["csv"]["notificaciones_jugador"]
+CSV_NOTIFICACIONES_CLAUSULA_ACUERDO = cfg["paths"]["csv"]["clausulas_acuerdos"]
 
-# --- 1. Notificaciones ---
 logger.info("Creando Dashboard")
 csv_notificaciones_clean = safe_read_csv(CSV_NOTIFICACIONES_CLEAN)
 csv_clasificaciones = safe_read_csv(CSV_CLASIFICACIONES)
+csv_jugadores = safe_read_csv(CSV_NOTIFICACIONES_JUGADOR)
+csv_clausulas = safe_read_csv(CSV_NOTIFICACIONES_CLAUSULA_ACUERDO)
+
 if (csv_notificaciones_clean is None) or (csv_notificaciones_clean is None):
     logger.warning("⏭️ Saltando sección de notificaciones y clasificaciones (no hay CSV disponible).")
 else:
-    app = dashboard_por_manager(csv_notificaciones_clean,csv_clasificaciones)
+    app = dashboard_por_manager(csv_notificaciones_clean,csv_clasificaciones,csv_jugadores,csv_clausulas)
     app.run(debug=False, port=8050)
     logger.info("✅ Dashboard creado")
 

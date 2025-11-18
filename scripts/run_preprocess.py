@@ -29,6 +29,8 @@ print("📁 SRC añadido:", SRC_DIR)
 print("📁 sys.path[0]:", sys.path[0])
 
 from src.preprocessing.process_ganancias import procesar_ganancias
+from src.preprocessing.process_ganancias_jugador import procesar_ganancias_jugador
+from src.preprocessing.process_clausulas_acuerdos import procesar_clausulas_acuerdos
 
 # --- Cargar configuración ---
 from src.utils.config_loader import load_config
@@ -68,8 +70,9 @@ CSV_SUBIDASBAJADAS = cfg["paths"]["csv"]["subidas_bajadas"]
 
 # Archivos CSV
 CSV_NOTIFICACIONES_CLEAN = cfg["paths"]["csv"]["notificaciones_clean"]
-
-# --- 1. Notificaciones ---
+CSV_NOTIFICACIONES_JUGADOR = cfg["paths"]["csv"]["notificaciones_jugador"]
+CSV_NOTIFICACIONES_CLAUSULA_ACUERDO = cfg["paths"]["csv"]["clausulas_acuerdos"]
+# --- 1. CLEAN ---
 logger.info("Limpiando Notificaciones")
 csv_notificaciones = safe_read_csv(CSV_NOTIFICACIONES)
 if csv_notificaciones is None:
@@ -79,5 +82,27 @@ else:
     logger.info("✅ Notificaciones limpias.")
     safe_save_csv(csv_notificaciones_clean, CSV_NOTIFICACIONES_CLEAN)
     logger.info("✅ Notificaciones limpias guardadas.")
+
+# --- 2. JUGADOR ---
+logger.info("Creando _jugador")
+csv_notificaciones = safe_read_csv(CSV_NOTIFICACIONES_CLEAN)
+if csv_notificaciones is None:
+    logger.warning("⏭️ Saltando sección de notificaciones (no hay CSV disponible).")
+else:
+    csv_clean = procesar_ganancias_jugador(csv_notificaciones)
+    logger.info("✅ Notificaciones limpias.")
+    safe_save_csv(csv_clean, CSV_NOTIFICACIONES_JUGADOR)
+    logger.info("✅ Notificaciones limpias guardadas.")  
+
+# --- 3. CLAUSULAS ---
+logger.info("Creando clausulas")
+csv_notificaciones = safe_read_csv(CSV_NOTIFICACIONES)
+if csv_notificaciones is None:
+    logger.warning("⏭️ Saltando sección de notificaciones (no hay CSV disponible).")
+else:
+    csv_clean = procesar_clausulas_acuerdos(csv_notificaciones)
+    logger.info("✅ Notificaciones limpias.")
+    safe_save_csv(csv_clean, CSV_NOTIFICACIONES_CLAUSULA_ACUERDO)
+    logger.info("✅ Notificaciones limpias guardadas.")        
 
 

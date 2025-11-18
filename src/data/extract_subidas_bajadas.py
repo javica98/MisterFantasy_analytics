@@ -9,8 +9,7 @@ def extraer_subidas_bajadas(html: str) -> pd.DataFrame:
     Parsea una tabla HTML con clase 'thin-scrollbar' y extrae:
       - Nombre del jugador
       - Variación de valor
-      - Signo (subida/bajada)
-    Devuelve un DataFrame con columnas ['date', 'nombre', 'variacion', 'signo'].
+    Devuelve un DataFrame con columnas ['date', 'nombre', 'variacion'].
     """
     try:
         soup = BeautifulSoup(html, "html.parser")
@@ -18,7 +17,7 @@ def extraer_subidas_bajadas(html: str) -> pd.DataFrame:
 
         if not tables:
             logger.warning("No se encontraron tablas 'thin-scrollbar' en el HTML.")
-            return pd.DataFrame(columns=["date", "nombre", "variacion", "signo"])
+            return pd.DataFrame(columns=["date", "nombre", "variacion"])
 
         jugadores = []
         today = pd.Timestamp.today().normalize()
@@ -39,22 +38,21 @@ def extraer_subidas_bajadas(html: str) -> pd.DataFrame:
 
                     variacion = td_valor.get_text(strip=True)
                     clase = td_valor.get("class", [])
-                    signo = "sube" if "green" in clase else "baja" if "red" in clase else None
 
                     jugadores.append({
                         "date": today,
                         "nombre": nombre,
-                        "variacion": variacion,
-                        "signo": signo
+                        "variacion": variacion
                     })
 
                 except Exception as row_e:
                     logger.debug(f"Error procesando fila de tabla: {row_e}")
 
         df = pd.DataFrame(jugadores)
+        df['variacion'] = df['variacion'] / 1_000
         logger.info(f"✅ Extraídos {len(df)} jugadores en subidas/bajadas.")
         return df
 
     except Exception as e:
         logger.exception(f"❌ Error general en extraer_subidas_bajadas: {e}")
-        return pd.DataFrame(columns=["date", "nombre", "variacion", "signo"])
+        return pd.DataFrame(columns=["date", "nombre", "variacion"])

@@ -18,6 +18,8 @@ paths:
     jornada: "data/processed/jornadas.csv"
     subidas_bajadas: "data/processed/subidasBajadas.csv"
     notificaciones_clean: "data/processed/ganancias_clean.csv"
+    notificaciones_jugador: "data/processed/ganancias_jugador.csv"
+    clausulas_acuerdos: "data/processed/clausulas_acuerdos.csv"
     test: "data/processed/test.csv"
 
 

@@ -43,6 +43,7 @@ from src.utils.config_loader import load_config
 from src.utils.data_utils import normalize_date_column
 from src.utils.file_utils import safe_read_html, safe_read_csv, safe_save_csv
 
+from src.preprocessing.process_ganancias_jugador import procesar_ganancias_jugador
 
 cfg = load_config()
 
@@ -83,17 +84,17 @@ CSV_MERCADO = cfg["paths"]["csv"]["mercado"]
 CSV_JORNADA = cfg["paths"]["csv"]["jornada"]
 CSV_SUBIDASBAJADAS = cfg["paths"]["csv"]["subidas_bajadas"]
 CSV_TEST = cfg["paths"]["csv"]["test"]
-
+CSV_NOTIFICACIONES_JUGADOR = cfg["paths"]["csv"]["notificaciones_jugador"]
 # Variables de entorno (login)
 MISTER_USERNAME = cfg["env"]["MISTER_USERNAME"]
 MISTER_PASSWORD = cfg["env"]["MISTER_PASSWORD"]
 MISTER_BASE_URL = cfg["env"]["MISTER_BASE_URL"]
+# Archivos CSV
+CSV_NOTIFICACIONES_CLEAN = cfg["paths"]["csv"]["notificaciones_clean"]
+CSV_NOTIFICACIONES_JUGADOR = cfg["paths"]["csv"]["notificaciones_jugador"]
 
-new_html = safe_read_html(HTML_AUX)
-if new_html is None:
-    logger.warning("⏭️ Saltando sección de notificaciones (no hay HTML disponible).")
-else:
-    new_notificaciones = extraer_notificaciones(new_html)
-    logger.info("✅ Nuevas notificaciones extraídas.")
-    safe_save_csv(new_notificaciones, CSV_TEST)
-    logger.info("✅ Nuevas notificaciones añadidas y guardadas.")
+csv = safe_read_csv(CSV_SUBIDASBAJADAS)
+csv['variacion'] = csv['variacion'] / 1_000
+
+csv_clean = safe_save_csv(csv,CSV_SUBIDASBAJADAS)
+print(csv.head())

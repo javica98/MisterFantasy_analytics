@@ -1,109 +1,109 @@
 jornada,nombre,posicion,puntos,valor_equipo
-1,Los marinero,1,57,39237000
-1,Dani,2,43,52600000
-1,MuchaSalsa,3,36,45487000
-1,De la Guettir FC,4,25,38277000
-1,Maldinillo 💥,5,22,44622000
-1,Chamacónicos,6,17,44857000
-1,Libre,7,17,22243000
-1,Juanba,8,16,42095000
-1,Jotabetrbb,9,12,43647000
-2,Chamacónicos,1,60,30534000
-2,Dani,2,35,55589000
-2,Jotabetrbb,3,33,44604000
-2,Los marinero,4,31,46106000
-2,MuchaSalsa,5,30,42468000
-2,Maldinillo 💥,6,29,55296000
-2,Juanba,7,26,44377000
-2,De la Guettir FC,8,18,42002000
-2,Libre,9,18,22595000
-3,Dani,1,49,57166000
-3,Los marinero,2,34,52198000
-3,De la Guettir FC,3,31,54551000
-3,Juanba,4,31,43449000
-3,Jotabetrbb,5,29,50994000
-3,Chamacónicos,6,25,39216000
-3,Maldinillo 💥,7,23,52345000
-3,MuchaSalsa,8,23,46425000
-3,Libre,9,9,25799000
-4,Dani,1,52,65499000
-4,De la Guettir FC,2,41,62934000
-4,Chamacónicos,3,38,67698000
-4,Los marinero,4,38,57637000
-4,Jotabetrbb,5,35,50731000
-4,MuchaSalsa,6,33,57788000
-4,Juanba,7,32,47572000
-4,Maldinillo 💥,8,26,65581000
-4,Libre,9,19,33572000
-5,Los marinero,1,66,54051000
-5,Maldinillo 💥,2,47,71952000
-5,Dani,3,44,70213000
-5,De la Guettir FC,4,39,63643000
-5,Jotabetrbb,5,37,56395000
-5,Chamacónicos,6,25,68199000
-5,Juanba,7,23,49226000
-5,MuchaSalsa,8,22,62083000
-5,Libre,9,12,41320000
-6,De la Guettir FC,1,51,54186000
-6,Jotabetrbb,2,33,43720000
-6,Dani,3,28,64163000
-6,Maldinillo 💥,4,27,48532000
-6,Los marinero,5,24,54807000
-6,Chamacónicos,6,23,49736000
-6,MuchaSalsa,7,19,50505000
-6,Libre,8,19,24149000
-6,Juanba,9,13,45229000
-7,Dani,1,58,69375000
-7,Chamacónicos,2,57,80915000
-7,Maldinillo 💥,3,40,78439000
-7,Libre,4,40,55377000
-7,Juanba,5,37,47165000
-7,MuchaSalsa,6,36,64936000
-7,De la Guettir FC,7,35,64553000
-7,Jotabetrbb,8,34,55756000
-7,Los marinero,9,28,66682000
-8,Jotabetrbb,1,48,62421000
-8,Maldinillo 💥,2,45,77679000
-8,Dani,3,40,86785000
-8,Los marinero,4,38,67025000
-8,Chamacónicos,5,37,83683000
-8,De la Guettir FC,6,36,70431000
-8,Juanba,7,36,49566000
-8,Libre,8,33,57298000
-8,MuchaSalsa,9,29,50363000
-9,Dani,1,60,90390000
-9,Maldinillo 💥,2,49,90890000
-9,Juanba,3,44,46294000
-9,De la Guettir FC,4,42,78192000
-9,Jotabetrbb,5,36,77834000
-9,Chamacónicos,6,35,89207000
-9,Libre,7,32,60183000
-9,Los marinero,8,30,73338000
-9,MuchaSalsa,9,26,51276000
-10,Maldinillo 💥,1,53,96959000
-10,Los marinero,2,46,79983000
-10,Chamacónicos,3,45,85637000
-10,Libre,4,42,56109000
-10,De la Guettir FC,5,37,80278000
-10,MuchaSalsa,6,36,75426000
-10,Dani,7,35,95575000
-10,Juanba,8,26,49236000
-10,Jotabetrbb,9,22,83131000
-11,Libre,1,54,69805000
-11,Chamacónicos,2,46,87611000
-11,Juanba,3,42,52529000
-11,Dani,4,40,102457000
-11,Jotabetrbb,5,39,86696000
-11,MuchaSalsa,6,36,82904000
-11,De la Guettir FC,7,36,74985000
-11,Los marinero,8,34,85346000
-11,Maldinillo ,9,29,78788000
-12,Maldinillo ,1,56,73423000
-12,Dani,2,55,110035000
-12,Chamaconicos,3,49,92584000
-12,Jotabetrbb,4,45,89499000
-12,Los marinero,5,45,86138000
-12,Libre,6,44,69818000
-12,MuchaSalsa,7,42,64874000
-12,De la Guettir FC,8,27,66210000
-12,Juanba,9,25,63211000
+1,Los marinero,1,57,39.237
+1,Dani,2,43,52.6
+1,MuchaSalsa,3,36,45.487
+1,De la Guettir FC,4,25,38.277
+1,Maldinillo 💥,5,22,44.622
+1,Chamacónicos,6,17,44.857
+1,Libre,7,17,22.243
+1,Juanba,8,16,42.095
+1,Jotabetrbb,9,12,43.647
+2,Chamacónicos,1,60,30.534
+2,Dani,2,35,55.589
+2,Jotabetrbb,3,33,44.604
+2,Los marinero,4,31,46.106
+2,MuchaSalsa,5,30,42.468
+2,Maldinillo 💥,6,29,55.296
+2,Juanba,7,26,44.377
+2,De la Guettir FC,8,18,42.002
+2,Libre,9,18,22.595
+3,Dani,1,49,57.166
+3,Los marinero,2,34,52.198
+3,De la Guettir FC,3,31,54.551
+3,Juanba,4,31,43.449
+3,Jotabetrbb,5,29,50.994
+3,Chamacónicos,6,25,39.216
+3,Maldinillo 💥,7,23,52.345
+3,MuchaSalsa,8,23,46.425
+3,Libre,9,9,25.799
+4,Dani,1,52,65.499
+4,De la Guettir FC,2,41,62.934
+4,Chamacónicos,3,38,67.698
+4,Los marinero,4,38,57.637
+4,Jotabetrbb,5,35,50.731
+4,MuchaSalsa,6,33,57.788
+4,Juanba,7,32,47.572
+4,Maldinillo 💥,8,26,65.581
+4,Libre,9,19,33.572
+5,Los marinero,1,66,54.051
+5,Maldinillo 💥,2,47,71.952
+5,Dani,3,44,70.213
+5,De la Guettir FC,4,39,63.643
+5,Jotabetrbb,5,37,56.395
+5,Chamacónicos,6,25,68.199
+5,Juanba,7,23,49.226
+5,MuchaSalsa,8,22,62.083
+5,Libre,9,12,41.32
+6,De la Guettir FC,1,51,54.186
+6,Jotabetrbb,2,33,43.72
+6,Dani,3,28,64.163
+6,Maldinillo 💥,4,27,48.532
+6,Los marinero,5,24,54.807
+6,Chamacónicos,6,23,49.736
+6,MuchaSalsa,7,19,50.505
+6,Libre,8,19,24.149
+6,Juanba,9,13,45.229
+7,Dani,1,58,69.375
+7,Chamacónicos,2,57,80.915
+7,Maldinillo 💥,3,40,78.439
+7,Libre,4,40,55.377
+7,Juanba,5,37,47.165
+7,MuchaSalsa,6,36,64.936
+7,De la Guettir FC,7,35,64.553
+7,Jotabetrbb,8,34,55.756
+7,Los marinero,9,28,66.682
+8,Jotabetrbb,1,48,62.421
+8,Maldinillo 💥,2,45,77.679
+8,Dani,3,40,86.785
+8,Los marinero,4,38,67.025
+8,Chamacónicos,5,37,83.683
+8,De la Guettir FC,6,36,70.431
+8,Juanba,7,36,49.566
+8,Libre,8,33,57.298
+8,MuchaSalsa,9,29,50.363
+9,Dani,1,60,90.39
+9,Maldinillo 💥,2,49,90.89
+9,Juanba,3,44,46.294
+9,De la Guettir FC,4,42,78.192
+9,Jotabetrbb,5,36,77.834
+9,Chamacónicos,6,35,89.207
+9,Libre,7,32,60.183
+9,Los marinero,8,30,73.338
+9,MuchaSalsa,9,26,51.276
+10,Maldinillo 💥,1,53,96.959
+10,Los marinero,2,46,79.983
+10,Chamacónicos,3,45,85.637
+10,Libre,4,42,56.109
+10,De la Guettir FC,5,37,80.278
+10,MuchaSalsa,6,36,75.426
+10,Dani,7,35,95.575
+10,Juanba,8,26,49.236
+10,Jotabetrbb,9,22,83.131
+11,Libre,1,54,69.805
+11,Chamacónicos,2,46,87.611
+11,Juanba,3,42,52.529
+11,Dani,4,40,102.457
+11,Jotabetrbb,5,39,86.696
+11,MuchaSalsa,6,36,82.904
+11,De la Guettir FC,7,36,74.985
+11,Los marinero,8,34,85.346
+11,Maldinillo 💥,9,29,78.788
+12,Maldinillo 💥,1,56,73.423
+12,Dani,2,55,110.035
+12,Chamacónicos,3,49,92.584
+12,Jotabetrbb,4,45,89.499
+12,Los marinero,5,45,86.138
+12,Libre,6,44,69.818
+12,MuchaSalsa,7,42,64.874
+12,De la Guettir FC,8,27,66.21
+12,Juanba,9,25,63.211

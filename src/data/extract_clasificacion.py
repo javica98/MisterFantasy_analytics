@@ -1,5 +1,5 @@
 from bs4 import BeautifulSoup
-from src.utils.text_cleaning import limpiar_nombre, limpiar_entero, limpiar_dinero
+from src.utils.text_cleaning import  limpiar_entero, limpiar_dinero
 import re
 import pandas as pd
 import logging
@@ -65,6 +65,7 @@ def extraer_clasificaciones(html: str) -> pd.DataFrame:
                 })
 
         df = pd.DataFrame(clasificaciones)
+        df['valor_equipo'] = df['valor_equipo'] / 1_000_000
         logger.info(f"Clasificaciones extraídas correctamente ({len(df)} registros).")
         return df
 

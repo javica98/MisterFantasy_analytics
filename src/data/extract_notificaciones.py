@@ -228,6 +228,13 @@ def extraer_notificaciones(html: str) -> pd.DataFrame:
             df[col] = None
 
     df = df[all_columns]
+    # Convertir strings numéricos a número, dejar vacíos como NaN
+    df['precio'] = pd.to_numeric(df['precio'].str.replace('.', '', regex=False), errors='coerce')
+    df['money'] = pd.to_numeric(df['money'].str.replace('.', '', regex=False), errors='coerce')
+
+    # Dividir solo los valores numéricos
+    df['precio'] = df['precio'].apply(lambda x: x / 1_000_000 if pd.notna(x) else None)
+    df['money'] = df['money'].apply(lambda x: x / 1_000_000 if pd.notna(x) else None)
     return df
 
 

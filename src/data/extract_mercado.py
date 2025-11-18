@@ -111,6 +111,7 @@ def extraer_mercado(html: str) -> pd.DataFrame:
             except Exception as inner_e:
                 logger.debug(f"Error procesando jugador: {inner_e}")
 
+        mercado['precio'] = mercado['precio'] / 1_000_000
         logger.info(f"✅ Extraídos {len(mercado)} jugadores del mercado.")
         return pd.DataFrame(mercado)
 

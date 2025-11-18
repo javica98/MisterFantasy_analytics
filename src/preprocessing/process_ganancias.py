@@ -53,8 +53,7 @@ def procesar_ganancias(df: pd.DataFrame) -> pd.DataFrame:
             })
         elif tipo in ["bonificacion"]:
             if pd.notna(row.get("money")):
-                ganancia_str = str(row["money"])
-                ganancia = int(ganancia_str.replace('.', '').replace(',', ''))
+                ganancia = row["money"]
             else:
                 ganancia = 0
             registros.append({
@@ -79,7 +78,7 @@ def procesar_ganancias(df: pd.DataFrame) -> pd.DataFrame:
                         "ganancias": 0
                     })
                 else:
-                    precio = int(row["precio"].replace('.', '').replace(',', ''))
+                    precio = row["precio"]
                     if subtipo == "Puja":
                         precio = 0
                     registros.append({
