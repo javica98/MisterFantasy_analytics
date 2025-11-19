@@ -1,5 +1,25 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
-marks,start_mercado,,,,,,,,,,,,,,,2025-11-18,
+marks,start_mercado,,,,,,,,,,,,,,,2025-11-19,
+transfer,mercado,,Thiago Almada,Maldinillo 💥,Mister,9.5634,3,39,2,,,,,,,2025-11-19,bf5ea325b63bfcaa98b4ca85fd643392
+marks,start_mercado,,,,,,,,,,,,,,,2025-11-19,
+transfer,mercado,,Juan Iglesias,Libre,Mister,6.1353,2,49,9,,,,,,,2025-11-19,69dd094e067bc4c4b564f20b2a42109e
+marks,start_mercado,,,,,,,,,,,,,,,2025-11-19,
+transfer,mercado,,Mauro Arambarri,Mister,Libre,8.26278,3,53,9,,,,,,,2025-11-19,30b9f223efc72eecd7bba80a34ac8a20
+transfer,mercado,,Marash Kumbulla,Mister,Chamacónicos,0.199999,2,10,408,,,,,,,2025-11-19,6d1a9172214da1f55ffafaed9b37205a
+transfer,mercado,,José Luis Gayà,Mister,Dani,2.6011,2,15,19,,,,,,,2025-11-19,2f83b385ed1e8fa340b73919c0f07226
+transfer,Puja,,José Luis Gayà,Mister,Jotabetrbb,2.358,2,15,19,,,,,,,2025-11-19,4b87801dbfe192433de3421510151b0d
+transfer,Puja,,José Luis Gayà,Mister,Chamacónicos,2.328,2,15,19,,,,,,,2025-11-19,dfc2d85b8652a2d064361425d19ada55
+transfer,mercado,,Isco,Mister,Maldinillo 💥,17.6498,3,0,4,,,,,,,2025-11-19,04283a614bcef112502a628b145582cf
+transfer,Puja,,Isco,Mister,Dani,16.383859,3,0,4,,,,,,,2025-11-19,a57ef866351be8bf21409601008de974
+transfer,Puja,,Isco,Mister,Chamacónicos,15.555,3,0,4,,,,,,,2025-11-19,56ca3dedb64bf3b0865a971cc4956965
+transfer,Puja,,Isco,Mister,MuchaSalsa,11.971,3,0,4,,,,,,,2025-11-19,e7384f861292c5790d9d17cf1932f567
+transfer,Puja,,Isco,Mister,Libre,11.69504,3,0,4,,,,,,,2025-11-19,ca63226bc00d16d7333bc6326d58281a
+marks,start_mercado,,,,,,,,,,,,,,,2025-11-19,
+transfer,clausula,,Akor Adams,MuchaSalsa,Chamacónicos,5.313,4,37,17,,,,,,,2025-11-19,11c4d8ad1b770d95dd2ce8f823137f91
+transfer,mercado,,Jon Moncayola,Libre,Mister,8.90925,3,51,50,,,,,,,2025-11-19,78869befd72e9e3d85aa31c2dc9061e6
+marks,start_mercado,,,,,,,,,,,,,,,2025-11-19,
+transfer,mercado,,Marc Bartra,Dani,Mister,10.25814,2,39,4,,,,,,,2025-11-19,d526396fbd65ae1b4100f8373cd84532
+marks,start_mercado,,,,,,,,,,,,,,,2025-11-19,
 transfer,mercado,,André Almeida,Mister,Jotabetrbb,0.634,3.0,13.0,19.0,,,,,,,2025-11-18,973d2d9496706ed8ce43f539dddc7474
 transfer,Puja,,André Almeida,Mister,Libre,0.534,3.0,13.0,19.0,,,,,,,2025-11-18,6594faa9de5b98261cdfb2453046c615
 transfer,mercado,,Borja Iglesias,Mister,Dani,13.33184,4.0,69.0,5.0,,,,,,,2025-11-18,833ee916959f9cf8325f5606a97fd28e
