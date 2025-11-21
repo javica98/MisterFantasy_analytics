@@ -1,14 +1,30 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
+marks,start_mercado,,,,,,,,,,,,,,,2025-11-21,
+transfer,mercado,,Vedat Muriqi,Dani,Mister,12.62151,4,59,408,,,,,,,2025-11-21,f824bc810a87e4035d31eeb10d5ddae1
+marks,start_mercado,,,,,,,,,,,,,,,2025-11-21,
+transfer,mercado,,Borja Mayoral,Dani,Mister,10.27956,4,42,9,,,,,,,2025-11-21,e1f63c72f74381ac110ffcb564cfe6ca
+marks,start_mercado,,,,,,,,,,,,,,,2025-11-21,
+transfer,mercado,,Rafa Mir,Maldinillo 💥,Mister,8.20017,4,61,23,,,,,,,2025-11-21,7e8462166743c3213a4cc910059bb7fa
+marks,start_mercado,,,,,,,,,,,,,,,2025-11-21,
+transfer,mercado,,Íñigo Lekue,Chamacónicos,Mister,0.19055,2,2,1,,,,,,,2025-11-21,13343430d66f3bb92604569ae0d925bd
+marks,start_mercado,,,,,,,,,,,,,,,2025-11-21,
+transfer,mercado,,Pablo Barrios,Mister,Dani,14.94083,3,66,2,,,,,,,2025-11-21,1b4d1a182e3b1202fb87808c2fb82f86
+transfer,mercado,,Gerard Moreno,Mister,Dani,9.195649,4,43,20,,,,,,,2025-11-21,3096f04f12204649ee4f03b2863edcca
+transfer,Puja,,Gerard Moreno,Mister,MuchaSalsa,9.098,4,43,20,,,,,,,2025-11-21,435e52fd31eb292b8a85ed26c4447e4e
+transfer,Puja,,Gerard Moreno,Mister,Libre,9.00005,4,43,20,,,,,,,2025-11-21,5d4270344295c4574c530797795be1e1
+transfer,Puja,,Gerard Moreno,Mister,Jotabetrbb,8.9999,4,43,20,,,,,,,2025-11-21,2919fbabc99a6a9bb8a573b8d68f8803
+transfer,Puja,,Gerard Moreno,Mister,Maldinillo 💥,8.83535,4,43,20,,,,,,,2025-11-21,b974f3b60a98e008a5216a910f030921
+transfer,mercado,,Moussa Diarra,Mister,Maldinillo 💥,0.20406,2,5,48,,,,,,,2025-11-21,59e190504b45c3b0265f353771186661
+marks,start_mercado,,,,,,,,,,,,,,,2025-11-21,
+transfer,mercado,,Mario Martín,Maldinillo 💥,Mister,2.82345,3.0,47.0,9.0,,,,,,,2025-11-20,3828d69555f1c0dd400058ebb342752b
 marks,start_mercado,,,,,,,,,,,,,,,2025-11-20,
-transfer,mercado,,Mario Martín,Maldinillo 💥,Mister,2.82345,3,47,9,,,,,,,2025-11-20,3828d69555f1c0dd400058ebb342752b
+transfer,clausula,,Javier López,Chamacónicos,Jotabetrbb,1.0,2.0,12.0,1370.0,,,,,,,2025-11-20,c75e66497997f322d57aee90a17930bb
 marks,start_mercado,,,,,,,,,,,,,,,2025-11-20,
-transfer,clausula,,Javier López,Chamacónicos,Jotabetrbb,1.0,2,12,1370,,,,,,,2025-11-20,c75e66497997f322d57aee90a17930bb
+transfer,clausula,,Matteo Ruggeri,Jotabetrbb,Los marinero,1.67625,2.0,26.0,2.0,,,,,,,2025-11-20,f70e0437baa59b0e2367976f0f3e1a7f
 marks,start_mercado,,,,,,,,,,,,,,,2025-11-20,
-transfer,clausula,,Matteo Ruggeri,Jotabetrbb,Los marinero,1.67625,2,26,2,,,,,,,2025-11-20,f70e0437baa59b0e2367976f0f3e1a7f
+transfer,mercado,,Viktor Tsygankov,Chamacónicos,Mister,5.36316,3.0,24.0,222.0,,,,,,,2025-11-20,95a6d36a8363b642c8feb29321324b7e
 marks,start_mercado,,,,,,,,,,,,,,,2025-11-20,
-transfer,mercado,,Viktor Tsygankov,Chamacónicos,Mister,5.36316,3,24,222,,,,,,,2025-11-20,95a6d36a8363b642c8feb29321324b7e
-marks,start_mercado,,,,,,,,,,,,,,,2025-11-20,
-transfer,mercado,,Nacho Vidal,De la Guettir FC,Mister,1.1004,2,23,1370,,,,,,,2025-11-20,96d4beef7b99de2df541faaaf4084b13
+transfer,mercado,,Nacho Vidal,De la Guettir FC,Mister,1.1004,2.0,23.0,1370.0,,,,,,,2025-11-20,96d4beef7b99de2df541faaaf4084b13
 marks,start_mercado,,,,,,,,,,,,,,,2025-11-20,
 transfer,mercado,,Thiago Almada,Maldinillo 💥,Mister,9.5634,3.0,39.0,2.0,,,,,,,2025-11-19,bf5ea325b63bfcaa98b4ca85fd643392
 marks,start_mercado,,,,,,,,,,,,,,,2025-11-19,
