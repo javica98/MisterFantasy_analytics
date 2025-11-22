@@ -1,20 +1,32 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
+marks,start_mercado,,,,,,,,,,,,,,,2025-11-22,
+transfer,mercado,,Clemens Riedel,Dani,Mister,5.20302,2,27,8,,,,,,,2025-11-22,64d38fac1d675e448580d8cc833bb17a
+marks,start_mercado,,,,,,,,,,,,,,,2025-11-22,
+transfer,mercado,,Valentín Gómez,Mister,Los marinero,1.094,2,27,4,,,,,,,2025-11-22,9cdac9e070d193e2d092877e4e365533
+transfer,mercado,,Trent Alexander-Arnold,Mister,Dani,8.0132,2,11,15,,,,,,,2025-11-22,3945e0ea946b0afbf96df935bc0d4b06
+marks,start_jornada,,,,,,,,,,,,,,13.0,2025-11-22,
+marks,start_mercado,,,,,,,,,,,,,,,2025-11-22,
+transfer,mercado,,Antonio Blanco,Libre,Mister,5.59674,3,46,48,,,,,,,2025-11-22,c648a1fc7af94c6f4efb9f1cc8e8e305
+marks,start_mercado,,,,,,,,,,,,,,,2025-11-22,
+transfer,mercado,,Dávid Hancko,Dani,Mister,9.114,2,49,2,,,,,,,2025-11-22,b940bb19a39b0df02fab91f8348c3c22
+marks,start_mercado,,,,,,,,,,,,,,,2025-11-22,
+transfer,mercado,,Pepelu,Dani,Mister,6.09863,3,31,19,,,,,,,2025-11-22,9e8704fd2d15aaf99354ecb68631dc38
+marks,start_mercado,,,,,,,,,,,,,,,2025-11-22,
+transfer,mercado,,Vedat Muriqi,Dani,Mister,12.62151,4.0,59.0,408.0,,,,,,,2025-11-21,f824bc810a87e4035d31eeb10d5ddae1
 marks,start_mercado,,,,,,,,,,,,,,,2025-11-21,
-transfer,mercado,,Vedat Muriqi,Dani,Mister,12.62151,4,59,408,,,,,,,2025-11-21,f824bc810a87e4035d31eeb10d5ddae1
+transfer,mercado,,Borja Mayoral,Dani,Mister,10.27956,4.0,42.0,9.0,,,,,,,2025-11-21,e1f63c72f74381ac110ffcb564cfe6ca
 marks,start_mercado,,,,,,,,,,,,,,,2025-11-21,
-transfer,mercado,,Borja Mayoral,Dani,Mister,10.27956,4,42,9,,,,,,,2025-11-21,e1f63c72f74381ac110ffcb564cfe6ca
+transfer,mercado,,Rafa Mir,Maldinillo 💥,Mister,8.20017,4.0,61.0,23.0,,,,,,,2025-11-21,7e8462166743c3213a4cc910059bb7fa
 marks,start_mercado,,,,,,,,,,,,,,,2025-11-21,
-transfer,mercado,,Rafa Mir,Maldinillo 💥,Mister,8.20017,4,61,23,,,,,,,2025-11-21,7e8462166743c3213a4cc910059bb7fa
+transfer,mercado,,Íñigo Lekue,Chamacónicos,Mister,0.19055,2.0,2.0,1.0,,,,,,,2025-11-21,13343430d66f3bb92604569ae0d925bd
 marks,start_mercado,,,,,,,,,,,,,,,2025-11-21,
-transfer,mercado,,Íñigo Lekue,Chamacónicos,Mister,0.19055,2,2,1,,,,,,,2025-11-21,13343430d66f3bb92604569ae0d925bd
-marks,start_mercado,,,,,,,,,,,,,,,2025-11-21,
-transfer,mercado,,Pablo Barrios,Mister,Dani,14.94083,3,66,2,,,,,,,2025-11-21,1b4d1a182e3b1202fb87808c2fb82f86
-transfer,mercado,,Gerard Moreno,Mister,Dani,9.195649,4,43,20,,,,,,,2025-11-21,3096f04f12204649ee4f03b2863edcca
-transfer,Puja,,Gerard Moreno,Mister,MuchaSalsa,9.098,4,43,20,,,,,,,2025-11-21,435e52fd31eb292b8a85ed26c4447e4e
-transfer,Puja,,Gerard Moreno,Mister,Libre,9.00005,4,43,20,,,,,,,2025-11-21,5d4270344295c4574c530797795be1e1
-transfer,Puja,,Gerard Moreno,Mister,Jotabetrbb,8.9999,4,43,20,,,,,,,2025-11-21,2919fbabc99a6a9bb8a573b8d68f8803
-transfer,Puja,,Gerard Moreno,Mister,Maldinillo 💥,8.83535,4,43,20,,,,,,,2025-11-21,b974f3b60a98e008a5216a910f030921
-transfer,mercado,,Moussa Diarra,Mister,Maldinillo 💥,0.20406,2,5,48,,,,,,,2025-11-21,59e190504b45c3b0265f353771186661
+transfer,mercado,,Pablo Barrios,Mister,Dani,14.94083,3.0,66.0,2.0,,,,,,,2025-11-21,1b4d1a182e3b1202fb87808c2fb82f86
+transfer,mercado,,Gerard Moreno,Mister,Dani,9.195649,4.0,43.0,20.0,,,,,,,2025-11-21,3096f04f12204649ee4f03b2863edcca
+transfer,Puja,,Gerard Moreno,Mister,MuchaSalsa,9.098,4.0,43.0,20.0,,,,,,,2025-11-21,435e52fd31eb292b8a85ed26c4447e4e
+transfer,Puja,,Gerard Moreno,Mister,Libre,9.00005,4.0,43.0,20.0,,,,,,,2025-11-21,5d4270344295c4574c530797795be1e1
+transfer,Puja,,Gerard Moreno,Mister,Jotabetrbb,8.9999,4.0,43.0,20.0,,,,,,,2025-11-21,2919fbabc99a6a9bb8a573b8d68f8803
+transfer,Puja,,Gerard Moreno,Mister,Maldinillo 💥,8.83535,4.0,43.0,20.0,,,,,,,2025-11-21,b974f3b60a98e008a5216a910f030921
+transfer,mercado,,Moussa Diarra,Mister,Maldinillo 💥,0.20406,2.0,5.0,48.0,,,,,,,2025-11-21,59e190504b45c3b0265f353771186661
 marks,start_mercado,,,,,,,,,,,,,,,2025-11-21,
 transfer,mercado,,Mario Martín,Maldinillo 💥,Mister,2.82345,3.0,47.0,9.0,,,,,,,2025-11-20,3828d69555f1c0dd400058ebb342752b
 marks,start_mercado,,,,,,,,,,,,,,,2025-11-20,
