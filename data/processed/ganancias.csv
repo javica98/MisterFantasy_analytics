@@ -1,6 +1,15 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
-marks,start_mercado,,,,,,,,,,,,,,,2025-11-23,
-transfer,mercado,,David Costas,Mister,Jotabetrbb,1.0,2,25,1370,,,,,,,2025-11-23,34e64a17e6d53081a18ceac54a20342d
+marks,start_mercado,,,,,,,,,,,,,,,2025-11-24,
+transfer,mercado,,Moussa Diarra,Maldinillo 💥,Mister,0.1552,2,5,48,,,,,,,2025-11-24,5ca2ef5ed618573d32189c1b1d39442a
+marks,start_mercado,,,,,,,,,,,,,,,2025-11-24,
+transfer,mercado,,Diego López,Mister,Jotabetrbb,4.205,3,43,19,,,,,,,2025-11-24,efcfca5412ad858aad038bb3e1367472
+transfer,Puja,,Diego López,Mister,Los marinero,3.977,3,43,19,,,,,,,2025-11-24,73ae4cc5d15bbd7697850a727ae999d5
+transfer,mercado,,Frenkie De Jong,Mister,Dani,16.70839,3,54,3,,,,,,,2025-11-24,59e2f4c6a74b90f6c252369827455959
+transfer,Puja,,Frenkie De Jong,Mister,Maldinillo 💥,15.632,3,54,3,,,,,,,2025-11-24,87798acf2915611d257f0a805e95d592
+transfer,mercado,,Arnau Martínez,Mister,Maldinillo 💥,2.53608,2,42,222,,,,,,,2025-11-24,0153033f92aa09a498ee1c551d345e56
+transfer,mercado,,Adrián de la Fuente,Mister,Maldinillo 💥,1.10505,2,33,12,,,,,,,2025-11-24,9347df6fcfed82ab0f1acb19a619473c
+marks,start_mercado,,,,,,,,,,,,,,,2025-11-24,
+transfer,mercado,,David Costas,Mister,Jotabetrbb,1.0,2.0,25.0,1370.0,,,,,,,2025-11-23,34e64a17e6d53081a18ceac54a20342d
 marks,start_mercado,,,,,,,,,,,,,,,2025-11-23,
 transfer,mercado,,Clemens Riedel,Dani,Mister,5.20302,2.0,27.0,8.0,,,,,,,2025-11-22,64d38fac1d675e448580d8cc833bb17a
 marks,start_mercado,,,,,,,,,,,,,,,2025-11-22,
