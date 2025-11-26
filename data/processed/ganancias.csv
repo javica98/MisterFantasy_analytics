@@ -1,15 +1,43 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
+marks,start_mercado,,,,,,,,,,,,,,,2025-11-26,
+transfer,mercado,,Antonio Rüdiger,Mister,Maldinillo 💥,2.04732,2,4,15,,,,,,,2025-11-26,83a8e3b62b13f2c3665cc5c58561a1ee
+marks,start_mercado,,,,,,,,,,,,,,,2025-11-26,
+transfer,mercado,,Etta Eyong,Los marinero,Mister,14.11795,4,79,12,,,,,,,2025-11-26,b81678ce818951121e227d7773bb23d6
+marks,start_mercado,,,,,,,,,,,,,,,2025-11-26,
+transfer,mercado,,Pablo Fornals,Dani,Mister,15.74085,3,76,4,,,,,,,2025-11-26,d3169dd91b1a663fd328e1b7e9a03afa
+marks,start_mercado,,,,,,,,,,,,,,,2025-11-26,
+transfer,mercado,,Héctor Bellerín,Chamacónicos,Mister,6.99324,2,54,4,,,,,,,2025-11-26,140a9bd702f6f42047b600f5783b7280
+bonificacion,quiniela,,,,,,,,,De la Guettir FC,0.6,1º,6,,,2025-11-26,
+bonificacion,quiniela,,,,,,,,,Maldinillo 💥,0.6,2º,6,,,2025-11-26,
+bonificacion,quiniela,,,,,,,,,Chamacónicos,0.5,3º,5,,,2025-11-26,
+bonificacion,quiniela,,,,,,,,,Dani,0.5,4º,5,,,2025-11-26,
+bonificacion,quiniela,,,,,,,,,Jotabetrbb,0.5,5º,5,,,2025-11-26,
+bonificacion,quiniela,,,,,,,,,Los marinero,0.5,6º,5,,,2025-11-26,
+bonificacion,quiniela,,,,,,,,,MuchaSalsa,0.3,7º,3,,,2025-11-26,
+bonificacion,quiniela,,,,,,,,,Juanba,,8º,0,,,2025-11-26,
+bonificacion,quiniela,,,,,,,,,Libre,,9º,0,,,2025-11-26,
+bonificacion,clasificacion,,,,,,,,,Maldinillo 💥,2.13,1,,59,,2025-11-26,
+bonificacion,clasificacion,,,,,,,,,De la Guettir FC,1.66,2,,58,,2025-11-26,
+bonificacion,clasificacion,,,,,,,,,Jotabetrbb,1.95,3,,50,,2025-11-26,
+bonificacion,clasificacion,,,,,,,,,Dani,2.01,4,,48,,2025-11-26,
+bonificacion,clasificacion,,,,,,,,,Los marinero,1.86,5,,43,,2025-11-26,
+bonificacion,clasificacion,,,,,,,,,MuchaSalsa,1.9,6,,35,,2025-11-26,
+bonificacion,clasificacion,,,,,,,,,Libre,2.06,7,,33,,2025-11-26,
+bonificacion,clasificacion,,,,,,,,,Chamacónicos,2.2,8,,30,,2025-11-26,
+bonificacion,clasificacion,,,,,,,,,Juanba,2.5,9,,30,,2025-11-26,
+marks,start_mercado,,,,,,,,,,,,,,,2025-11-26,
+transfer,mercado,,Adrián de la Fuente,Maldinillo 💥,Mister,1.01555,2,33,12,,,,,,,2025-11-26,52cbba0a43a75f78fe0231c5e746ceae
+marks,start_mercado,,,,,,,,,,,,,,,2025-11-26,
+transfer,mercado,,Kike Barja,Mister,Libre,0.204,3.0,14.0,50.0,,,,,,,2025-11-25,669539f6d9c9ace150fa555bd426e9b0
+transfer,mercado,,Abu Kamara,Mister,Libre,0.2,4.0,7.0,9.0,,,,,,,2025-11-25,77202e8c760e5b3839264caf90b943fe
+transfer,mercado,,Giacomo Raspadori,Mister,Libre,0.17201,4.0,18.0,2.0,,,,,,,2025-11-25,0dd5db56a94876d4c178ba411153dae1
+transfer,mercado,,Roberto Fernández,Mister,Los marinero,9.681,4.0,67.0,8.0,,,,,,,2025-11-25,900656ddf17f6c9ddb46477f95cf7719
+transfer,mercado,,Pau Cubarsi,Mister,Maldinillo 💥,10.5,2.0,41.0,3.0,,,,,,,2025-11-25,ed35b3597baad3dacf0a0216f079a3f4
+transfer,Puja,,Pau Cubarsi,Mister,Libre,9.94096,2.0,41.0,3.0,,,,,,,2025-11-25,6b214828030f7dbc51d82fc3eb6b1d25
 marks,start_mercado,,,,,,,,,,,,,,,2025-11-25,
-transfer,mercado,,Kike Barja,Mister,Libre,0.204,3,14,50,,,,,,,2025-11-25,669539f6d9c9ace150fa555bd426e9b0
-transfer,mercado,,Abu Kamara,Mister,Libre,0.2,4,7,9,,,,,,,2025-11-25,77202e8c760e5b3839264caf90b943fe
-transfer,mercado,,Giacomo Raspadori,Mister,Libre,0.17201,4,18,2,,,,,,,2025-11-25,0dd5db56a94876d4c178ba411153dae1
-transfer,mercado,,Roberto Fernández,Mister,Los marinero,9.681,4,67,8,,,,,,,2025-11-25,900656ddf17f6c9ddb46477f95cf7719
-transfer,mercado,,Pau Cubarsi,Mister,Maldinillo 💥,10.5,2,41,3,,,,,,,2025-11-25,ed35b3597baad3dacf0a0216f079a3f4
-transfer,Puja,,Pau Cubarsi,Mister,Libre,9.94096,2,41,3,,,,,,,2025-11-25,6b214828030f7dbc51d82fc3eb6b1d25
+transfer,mercado,,Pablo Maffeo,Maldinillo 💥,Mister,5.7375,2.0,36.0,408.0,,,,,,,2025-11-25,7119773818890a023a46768df26c5005
 marks,start_mercado,,,,,,,,,,,,,,,2025-11-25,
-transfer,mercado,,Pablo Maffeo,Maldinillo 💥,Mister,5.7375,2,36,408,,,,,,,2025-11-25,7119773818890a023a46768df26c5005
-marks,start_mercado,,,,,,,,,,,,,,,2025-11-25,
-transfer,mercado,,Juan Foyth,Maldinillo 💥,Mister,10.32472,2,35,20,,,,,,,2025-11-25,bd53fa3ce13a39207e871efcd57d91bc
+transfer,mercado,,Juan Foyth,Maldinillo 💥,Mister,10.32472,2.0,35.0,20.0,,,,,,,2025-11-25,bd53fa3ce13a39207e871efcd57d91bc
 marks,start_mercado,,,,,,,,,,,,,,,2025-11-25,
 transfer,mercado,,Moussa Diarra,Maldinillo 💥,Mister,0.1552,2.0,5.0,48.0,,,,,,,2025-11-24,5ca2ef5ed618573d32189c1b1d39442a
 marks,start_mercado,,,,,,,,,,,,,,,2025-11-24,
