@@ -1,16 +1,35 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
+marks,start_mercado,,,,,,,,,,,,,,,2025-11-28,
+transfer,mercado,,Aurélien Tchouaméni,Mister,Libre,11.93088,3,56,15,,,,,,,2025-11-28,251a524a19dd0eb9f344ef89478af03e
+transfer,mercado,,Jon Moncayola,Mister,Chamacónicos,7.63,3,53,50,,,,,,,2025-11-28,73a7cfa4e208e0bba6df03d161cef8b3
+transfer,mercado,,Luiz Felipe,Mister,Dani,0.51397,2,12,14,,,,,,,2025-11-28,8a402393f4f57b0e8dac2bb75f2ef118
+transfer,Puja,,Luiz Felipe,Mister,Chamacónicos,0.249,2,12,14,,,,,,,2025-11-28,f2fd76fb6cfcc4d2a92ac841ebb2f7e5
+transfer,Puja,,Luiz Felipe,Mister,Maldinillo 💥,0.23928,2,12,14,,,,,,,2025-11-28,05635e113886c7ad41f263e9d47717c6
+transfer,mercado,,Kike García,Mister,Maldinillo 💥,1.92625,4,39,8,,,,,,,2025-11-28,0b45b4b2ceb6c19c00d7dd8de6e13ac6
+transfer,mercado,,Lucas Bergström,Mister,Maldinillo 💥,1.41789,1,14,408,,,,,,,2025-11-28,75b2b4b91fe8be1b19ddee5012d475af
+transfer,Puja,,Lucas Bergström,Mister,Libre,1.41603,1,14,408,,,,,,,2025-11-28,d6018aee1bd3a55d1c61e3bd2fbc73cb
+marks,start_mercado,,,,,,,,,,,,,,,2025-11-28,
+transfer,mercado,,Javi López,Jotabetrbb,Mister,0.39416,2,16,1370,,,,,,,2025-11-28,993736d562ebda996209d58cbfc9ef86
+marks,start_mercado,,,,,,,,,,,,,,,2025-11-28,
+transfer,mercado,,Rubén Vargas,Jotabetrbb,Mister,11.451,3,66,17,,,,,,,2025-11-28,23dd7f3a2c602730befe9cd9f933ce57
+marks,start_mercado,,,,,,,,,,,,,,,2025-11-28,
+transfer,mercado,,Horațiu Moldovan,Jotabetrbb,Mister,0.16587,1,0,1370,,,,,,,2025-11-28,553e97396c45d58a9dbe202a62ed7132
+marks,start_mercado,,,,,,,,,,,,,,,2025-11-28,
+transfer,mercado,,Tanguy Nianzou,Jotabetrbb,Mister,0.15908,2,13,17,,,,,,,2025-11-28,2244ed865039dfe3ad963c0867765c7a
+marks,start_mercado,,,,,,,,,,,,,,,2025-11-28,
+transfer,mercado,,Abdel Abqar,Jotabetrbb,Mister,0.5635,2,23,9,,,,,,,2025-11-28,bcd4285d9bf6947abc2169220701a63e
+marks,start_mercado,,,,,,,,,,,,,,,2025-11-28,
+transfer,mercado,,Pablo García,Los marinero,Mister,0.18375,4.0,20.0,4.0,,,,,,,2025-11-27,46e1d77efda284982b6233715942d0d5
 marks,start_mercado,,,,,,,,,,,,,,,2025-11-27,
-transfer,mercado,,Pablo García,Los marinero,Mister,0.18375,4,20,4,,,,,,,2025-11-27,46e1d77efda284982b6233715942d0d5
+transfer,mercado,,Luka Sučić,Los marinero,Mister,0.18139,3.0,2.0,16.0,,,,,,,2025-11-27,6dd7eafc6754f3b6c136c8c71e0f2c1e
 marks,start_mercado,,,,,,,,,,,,,,,2025-11-27,
-transfer,mercado,,Luka Sučić,Los marinero,Mister,0.18139,3,2,16,,,,,,,2025-11-27,6dd7eafc6754f3b6c136c8c71e0f2c1e
+transfer,mercado,,Yvan Neyou,Los marinero,Mister,0.17271,3.0,3.0,9.0,,,,,,,2025-11-27,bb4502cd2bba02a97711d2375a9ec156
 marks,start_mercado,,,,,,,,,,,,,,,2025-11-27,
-transfer,mercado,,Yvan Neyou,Los marinero,Mister,0.17271,3,3,9,,,,,,,2025-11-27,bb4502cd2bba02a97711d2375a9ec156
+transfer,mercado,,Óscar Trejo,Los marinero,Mister,0.1632,3.0,9.0,14.0,,,,,,,2025-11-27,0e9a7ef168e8bc87dcc7c871b30132ba
 marks,start_mercado,,,,,,,,,,,,,,,2025-11-27,
-transfer,mercado,,Óscar Trejo,Los marinero,Mister,0.1632,3,9,14,,,,,,,2025-11-27,0e9a7ef168e8bc87dcc7c871b30132ba
+transfer,clausula,,Gonçalo Guedes,Juanba,Los marinero,7.690146,4.0,38.0,16.0,,,,,,,2025-11-27,c524838ef5a7d72a58ffd1bf0b32cc11
 marks,start_mercado,,,,,,,,,,,,,,,2025-11-27,
-transfer,clausula,,Gonçalo Guedes,Juanba,Los marinero,7.690146,4,38,16,,,,,,,2025-11-27,c524838ef5a7d72a58ffd1bf0b32cc11
-marks,start_mercado,,,,,,,,,,,,,,,2025-11-27,
-transfer,mercado,,Nemanja Gudelj,Los marinero,Mister,1.34312,3,37,17,,,,,,,2025-11-27,d9a1b40b4547cece545f088760aacd77
+transfer,mercado,,Nemanja Gudelj,Los marinero,Mister,1.34312,3.0,37.0,17.0,,,,,,,2025-11-27,d9a1b40b4547cece545f088760aacd77
 marks,start_mercado,,,,,,,,,,,,,,,2025-11-27,
 transfer,mercado,,Antonio Rüdiger,Mister,Maldinillo 💥,2.04732,2.0,4.0,15.0,,,,,,,2025-11-26,83a8e3b62b13f2c3665cc5c58561a1ee
 marks,start_mercado,,,,,,,,,,,,,,,2025-11-26,
