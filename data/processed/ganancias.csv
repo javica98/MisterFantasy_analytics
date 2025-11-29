@@ -1,23 +1,31 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
+marks,start_mercado,,,,,,,,,,,,,,,2025-11-29,
+transfer,mercado,,José Giménez,Mister,Jotabetrbb,6.338,2,27,2,,,,,,,2025-11-29,028f6da71ed37c5ff3b1635b422d959c
+transfer,Puja,,José Giménez,Mister,Chamacónicos,6.31,2,27,2,,,,,,,2025-11-29,ae834cfcf1fdf2162c4f0bb8b967e4df
+transfer,Puja,,José Giménez,Mister,Dani,5.90609,2,27,2,,,,,,,2025-11-29,7cc52c308c25a4ed158b0ce8838fda8f
+transfer,mercado,,Santi Comesaña,Mister,Dani,9.42911,3,59,20,,,,,,,2025-11-29,fd6675a1ab507a63dc451dcf6d6eaaf4
+marks,start_jornada,,,,,,,,,,,,,,14.0,2025-11-29,
+marks,start_mercado,,,,,,,,,,,,,,,2025-11-29,
+transfer,mercado,,José Luis Gayà,Dani,Mister,2.75712,2,20,19,,,,,,,2025-11-29,c344a3084d857a19b1354f6967d92063
+marks,start_mercado,,,,,,,,,,,,,,,2025-11-29,
+transfer,mercado,,Aurélien Tchouaméni,Mister,Libre,11.93088,3.0,56.0,15.0,,,,,,,2025-11-28,251a524a19dd0eb9f344ef89478af03e
+transfer,mercado,,Jon Moncayola,Mister,Chamacónicos,7.63,3.0,53.0,50.0,,,,,,,2025-11-28,73a7cfa4e208e0bba6df03d161cef8b3
+transfer,mercado,,Luiz Felipe,Mister,Dani,0.51397,2.0,12.0,14.0,,,,,,,2025-11-28,8a402393f4f57b0e8dac2bb75f2ef118
+transfer,Puja,,Luiz Felipe,Mister,Chamacónicos,0.249,2.0,12.0,14.0,,,,,,,2025-11-28,f2fd76fb6cfcc4d2a92ac841ebb2f7e5
+transfer,Puja,,Luiz Felipe,Mister,Maldinillo 💥,0.23928,2.0,12.0,14.0,,,,,,,2025-11-28,05635e113886c7ad41f263e9d47717c6
+transfer,mercado,,Kike García,Mister,Maldinillo 💥,1.92625,4.0,39.0,8.0,,,,,,,2025-11-28,0b45b4b2ceb6c19c00d7dd8de6e13ac6
+transfer,mercado,,Lucas Bergström,Mister,Maldinillo 💥,1.41789,1.0,14.0,408.0,,,,,,,2025-11-28,75b2b4b91fe8be1b19ddee5012d475af
+transfer,Puja,,Lucas Bergström,Mister,Libre,1.41603,1.0,14.0,408.0,,,,,,,2025-11-28,d6018aee1bd3a55d1c61e3bd2fbc73cb
 marks,start_mercado,,,,,,,,,,,,,,,2025-11-28,
-transfer,mercado,,Aurélien Tchouaméni,Mister,Libre,11.93088,3,56,15,,,,,,,2025-11-28,251a524a19dd0eb9f344ef89478af03e
-transfer,mercado,,Jon Moncayola,Mister,Chamacónicos,7.63,3,53,50,,,,,,,2025-11-28,73a7cfa4e208e0bba6df03d161cef8b3
-transfer,mercado,,Luiz Felipe,Mister,Dani,0.51397,2,12,14,,,,,,,2025-11-28,8a402393f4f57b0e8dac2bb75f2ef118
-transfer,Puja,,Luiz Felipe,Mister,Chamacónicos,0.249,2,12,14,,,,,,,2025-11-28,f2fd76fb6cfcc4d2a92ac841ebb2f7e5
-transfer,Puja,,Luiz Felipe,Mister,Maldinillo 💥,0.23928,2,12,14,,,,,,,2025-11-28,05635e113886c7ad41f263e9d47717c6
-transfer,mercado,,Kike García,Mister,Maldinillo 💥,1.92625,4,39,8,,,,,,,2025-11-28,0b45b4b2ceb6c19c00d7dd8de6e13ac6
-transfer,mercado,,Lucas Bergström,Mister,Maldinillo 💥,1.41789,1,14,408,,,,,,,2025-11-28,75b2b4b91fe8be1b19ddee5012d475af
-transfer,Puja,,Lucas Bergström,Mister,Libre,1.41603,1,14,408,,,,,,,2025-11-28,d6018aee1bd3a55d1c61e3bd2fbc73cb
+transfer,mercado,,Javi López,Jotabetrbb,Mister,0.39416,2.0,16.0,1370.0,,,,,,,2025-11-28,993736d562ebda996209d58cbfc9ef86
 marks,start_mercado,,,,,,,,,,,,,,,2025-11-28,
-transfer,mercado,,Javi López,Jotabetrbb,Mister,0.39416,2,16,1370,,,,,,,2025-11-28,993736d562ebda996209d58cbfc9ef86
+transfer,mercado,,Rubén Vargas,Jotabetrbb,Mister,11.451,3.0,66.0,17.0,,,,,,,2025-11-28,23dd7f3a2c602730befe9cd9f933ce57
 marks,start_mercado,,,,,,,,,,,,,,,2025-11-28,
-transfer,mercado,,Rubén Vargas,Jotabetrbb,Mister,11.451,3,66,17,,,,,,,2025-11-28,23dd7f3a2c602730befe9cd9f933ce57
+transfer,mercado,,Horațiu Moldovan,Jotabetrbb,Mister,0.16587,1.0,0.0,1370.0,,,,,,,2025-11-28,553e97396c45d58a9dbe202a62ed7132
 marks,start_mercado,,,,,,,,,,,,,,,2025-11-28,
-transfer,mercado,,Horațiu Moldovan,Jotabetrbb,Mister,0.16587,1,0,1370,,,,,,,2025-11-28,553e97396c45d58a9dbe202a62ed7132
+transfer,mercado,,Tanguy Nianzou,Jotabetrbb,Mister,0.15908,2.0,13.0,17.0,,,,,,,2025-11-28,2244ed865039dfe3ad963c0867765c7a
 marks,start_mercado,,,,,,,,,,,,,,,2025-11-28,
-transfer,mercado,,Tanguy Nianzou,Jotabetrbb,Mister,0.15908,2,13,17,,,,,,,2025-11-28,2244ed865039dfe3ad963c0867765c7a
-marks,start_mercado,,,,,,,,,,,,,,,2025-11-28,
-transfer,mercado,,Abdel Abqar,Jotabetrbb,Mister,0.5635,2,23,9,,,,,,,2025-11-28,bcd4285d9bf6947abc2169220701a63e
+transfer,mercado,,Abdel Abqar,Jotabetrbb,Mister,0.5635,2.0,23.0,9.0,,,,,,,2025-11-28,bcd4285d9bf6947abc2169220701a63e
 marks,start_mercado,,,,,,,,,,,,,,,2025-11-28,
 transfer,mercado,,Pablo García,Los marinero,Mister,0.18375,4.0,20.0,4.0,,,,,,,2025-11-27,46e1d77efda284982b6233715942d0d5
 marks,start_mercado,,,,,,,,,,,,,,,2025-11-27,
