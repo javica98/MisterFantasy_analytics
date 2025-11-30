@@ -1,12 +1,20 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
-marks,start_mercado,,,,,,,,,,,,,,,2025-11-29,
-transfer,mercado,,José Giménez,Mister,Jotabetrbb,6.338,2,27,2,,,,,,,2025-11-29,028f6da71ed37c5ff3b1635b422d959c
-transfer,Puja,,José Giménez,Mister,Chamacónicos,6.31,2,27,2,,,,,,,2025-11-29,ae834cfcf1fdf2162c4f0bb8b967e4df
-transfer,Puja,,José Giménez,Mister,Dani,5.90609,2,27,2,,,,,,,2025-11-29,7cc52c308c25a4ed158b0ce8838fda8f
-transfer,mercado,,Santi Comesaña,Mister,Dani,9.42911,3,59,20,,,,,,,2025-11-29,fd6675a1ab507a63dc451dcf6d6eaaf4
+marks,start_mercado,,,,,,,,,,,,,,,2025-11-30,
+transfer,mercado,,César Tárrega,Mister,Libre,4.86186,2,44,19,,,,,,,2025-11-30,8ce3f0c4efc7648740a2fe3060b44549
+transfer,Puja,,César Tárrega,Mister,Dani,4.47844,2,44,19,,,,,,,2025-11-30,2b8202d3416df191952cf792d04b6a5a
+transfer,mercado,,Leander Dendoncker,Mister,Maldinillo 💥,1.76547,3,46,1370,,,,,,,2025-11-30,5b8c69cf8ceebe1dfa96ad18e19b07fb
+marks,start_mercado,,,,,,,,,,,,,,,2025-11-30,
+transfer,mercado,,Youssef Enríquez,Libre,Mister,1.4112,2,32,48,,,,,,,2025-11-30,129943947e1b506c4c4a3a68e6e6e309
+marks,start_mercado,,,,,,,,,,,,,,,2025-11-30,
+transfer,mercado,,Marcos Llorente,Libre,Mister,13.95517,2,64,2,,,,,,,2025-11-30,8b29a723be106a6b184dc26254a2be68
+marks,start_mercado,,,,,,,,,,,,,,,2025-11-30,
+transfer,mercado,,José Giménez,Mister,Jotabetrbb,6.338,2.0,27.0,2.0,,,,,,,2025-11-29,028f6da71ed37c5ff3b1635b422d959c
+transfer,Puja,,José Giménez,Mister,Chamacónicos,6.31,2.0,27.0,2.0,,,,,,,2025-11-29,ae834cfcf1fdf2162c4f0bb8b967e4df
+transfer,Puja,,José Giménez,Mister,Dani,5.90609,2.0,27.0,2.0,,,,,,,2025-11-29,7cc52c308c25a4ed158b0ce8838fda8f
+transfer,mercado,,Santi Comesaña,Mister,Dani,9.42911,3.0,59.0,20.0,,,,,,,2025-11-29,fd6675a1ab507a63dc451dcf6d6eaaf4
 marks,start_jornada,,,,,,,,,,,,,,14.0,2025-11-29,
 marks,start_mercado,,,,,,,,,,,,,,,2025-11-29,
-transfer,mercado,,José Luis Gayà,Dani,Mister,2.75712,2,20,19,,,,,,,2025-11-29,c344a3084d857a19b1354f6967d92063
+transfer,mercado,,José Luis Gayà,Dani,Mister,2.75712,2.0,20.0,19.0,,,,,,,2025-11-29,c344a3084d857a19b1354f6967d92063
 marks,start_mercado,,,,,,,,,,,,,,,2025-11-29,
 transfer,mercado,,Aurélien Tchouaméni,Mister,Libre,11.93088,3.0,56.0,15.0,,,,,,,2025-11-28,251a524a19dd0eb9f344ef89478af03e
 transfer,mercado,,Jon Moncayola,Mister,Chamacónicos,7.63,3.0,53.0,50.0,,,,,,,2025-11-28,73a7cfa4e208e0bba6df03d161cef8b3
