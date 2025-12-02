@@ -1,6 +1,17 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
-marks,start_mercado,,,,,,,,,,,,,,,2025-12-01,
-transfer,mercado,,Lucas Bergström,Maldinillo 💥,Mister,1.46373,1,15,408,,,,,,,2025-12-01,70ab17dfbf918dd069b23c78bf2a38de
+marks,start_mercado,,,,,,,,,,,,,,,2025-12-02,
+transfer,mercado,,Pere Milla,Mister,Libre,10.77461,4,69,8,,,,,,,2025-12-02,c8bee63c74f9901200ec318def89a88d
+transfer,mercado,,Gerard Martín,Mister,Jotabetrbb,3.985,2,47,3,,,,,,,2025-12-02,5ea104e6014de2761a39afe3fb8fea74
+transfer,Puja,,Gerard Martín,Mister,MuchaSalsa,3.375,2,47,3,,,,,,,2025-12-02,84482b6fc89295d5bc7a20a527e3b00f
+transfer,Puja,,Gerard Martín,Mister,Libre,3.2116,2,47,3,,,,,,,2025-12-02,9167cd6adc5bc7be4e626f8115343665
+transfer,Puja,,Gerard Martín,Mister,Chamacónicos,3.175,2,47,3,,,,,,,2025-12-02,82d5e334bafe11f8b8e6d83ddcbfd1f1
+transfer,Puja,,Gerard Martín,Mister,Dani,3.11336,2,47,3,,,,,,,2025-12-02,c72752d146e80538b60d99cd23e68f51
+transfer,mercado,,Jeremy Toljan,Mister,Dani,3.30839,2,54,12,,,,,,,2025-12-02,c275431577e8dfe1c8c66b52778d3748
+transfer,Puja,,Jeremy Toljan,Mister,Libre,3.19101,2,54,12,,,,,,,2025-12-02,61a1bb9dbae3eebccbb4fcce832b9054
+marks,start_mercado,,,,,,,,,,,,,,,2025-12-02,
+transfer,mercado,,Borja Iglesias,Dani,Mister,13.30896,4,78,5,,,,,,,2025-12-02,06a995736a10d3618321acc682a32732
+marks,start_mercado,,,,,,,,,,,,,,,2025-12-02,
+transfer,mercado,,Lucas Bergström,Maldinillo 💥,Mister,1.46373,1.0,15.0,408.0,,,,,,,2025-12-01,70ab17dfbf918dd069b23c78bf2a38de
 marks,start_mercado,,,,,,,,,,,,,,,2025-12-01,
 transfer,mercado,,César Tárrega,Mister,Libre,4.86186,2.0,44.0,19.0,,,,,,,2025-11-30,8ce3f0c4efc7648740a2fe3060b44549
 transfer,Puja,,César Tárrega,Mister,Dani,4.47844,2.0,44.0,19.0,,,,,,,2025-11-30,2b8202d3416df191952cf792d04b6a5a
