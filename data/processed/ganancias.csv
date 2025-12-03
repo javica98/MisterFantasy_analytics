@@ -1,15 +1,41 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
+marks,start_mercado,,,,,,,,,,,,,,,2025-12-03,
+transfer,mercado,,Leander Dendoncker,Maldinillo 💥,Mister,1.56655,3,46,1370,,,,,,,2025-12-03,63144a4d4483f995146276e216279b99
+marks,start_mercado,,,,,,,,,,,,,,,2025-12-03,
+transfer,mercado,,Unai López,Mister,Libre,2.97601,3,43,14,,,,,,,2025-12-03,7e1e7156d204f8d800fea0bfc9ad4ef1
+transfer,mercado,,Franco Mastantuono,Mister,Maldinillo 💥,5.7591,3,34,15,,,,,,,2025-12-03,ff1e3c792e951bd226f1dc2f6f1e90d8
+marks,start_jornada,,,,,,,,,,,,,,19.0,2025-12-03,
+marks,start_mercado,,,,,,,,,,,,,,,2025-12-03,
+transfer,mercado,,Marcus Rashford,Libre,Mister,15.05405,4,74,3,,,,,,,2025-12-03,1770c061e50426809231998733a58dc4
+bonificacion,quiniela,,,,,,,,,Chamacónicos,0.5,1º,5,,,2025-12-03,
+bonificacion,quiniela,,,,,,,,,Maldinillo 💥,0.5,2º,5,,,2025-12-03,
+bonificacion,quiniela,,,,,,,,,Los marinero,0.4,3º,4,,,2025-12-03,
+bonificacion,quiniela,,,,,,,,,De la Guettir FC,0.3,4º,3,,,2025-12-03,
+bonificacion,quiniela,,,,,,,,,Dani,,5º,0,,,2025-12-03,
+bonificacion,quiniela,,,,,,,,,Jotabetrbb,,6º,0,,,2025-12-03,
+bonificacion,quiniela,,,,,,,,,Juanba,,7º,0,,,2025-12-03,
+bonificacion,quiniela,,,,,,,,,Libre,,8º,0,,,2025-12-03,
+bonificacion,quiniela,,,,,,,,,MuchaSalsa,,9º,0,,,2025-12-03,
+bonificacion,clasificacion,,,,,,,,,Chamacónicos,2.02,1,,61,,2025-12-03,
+bonificacion,clasificacion,,,,,,,,,MuchaSalsa,1.4,2,,50,,2025-12-03,
+bonificacion,clasificacion,,,,,,,,,Maldinillo 💥,1.66,3,,48,,2025-12-03,
+bonificacion,clasificacion,,,,,,,,,Jotabetrbb,1.82,4,,46,,2025-12-03,
+bonificacion,clasificacion,,,,,,,,,Los marinero,2.19,5,,42,,2025-12-03,
+bonificacion,clasificacion,,,,,,,,,De la Guettir FC,1.88,6,,34,,2025-12-03,
+bonificacion,clasificacion,,,,,,,,,Dani,2.02,7,,31,,2025-12-03,
+bonificacion,clasificacion,,,,,,,,,Juanba,2.08,8,,19,,2025-12-03,
+bonificacion,clasificacion,,,,,,,,,Libre,,9,,0,,2025-12-03,
+marks,start_mercado,,,,,,,,,,,,,,,2025-12-03,
+transfer,mercado,,Pere Milla,Mister,Libre,10.77461,4.0,69.0,8.0,,,,,,,2025-12-02,c8bee63c74f9901200ec318def89a88d
+transfer,mercado,,Gerard Martín,Mister,Jotabetrbb,3.985,2.0,47.0,3.0,,,,,,,2025-12-02,5ea104e6014de2761a39afe3fb8fea74
+transfer,Puja,,Gerard Martín,Mister,MuchaSalsa,3.375,2.0,47.0,3.0,,,,,,,2025-12-02,84482b6fc89295d5bc7a20a527e3b00f
+transfer,Puja,,Gerard Martín,Mister,Libre,3.2116,2.0,47.0,3.0,,,,,,,2025-12-02,9167cd6adc5bc7be4e626f8115343665
+transfer,Puja,,Gerard Martín,Mister,Chamacónicos,3.175,2.0,47.0,3.0,,,,,,,2025-12-02,82d5e334bafe11f8b8e6d83ddcbfd1f1
+transfer,Puja,,Gerard Martín,Mister,Dani,3.11336,2.0,47.0,3.0,,,,,,,2025-12-02,c72752d146e80538b60d99cd23e68f51
+transfer,mercado,,Jeremy Toljan,Mister,Dani,3.30839,2.0,54.0,12.0,,,,,,,2025-12-02,c275431577e8dfe1c8c66b52778d3748
+transfer,Puja,,Jeremy Toljan,Mister,Libre,3.19101,2.0,54.0,12.0,,,,,,,2025-12-02,61a1bb9dbae3eebccbb4fcce832b9054
 marks,start_mercado,,,,,,,,,,,,,,,2025-12-02,
-transfer,mercado,,Pere Milla,Mister,Libre,10.77461,4,69,8,,,,,,,2025-12-02,c8bee63c74f9901200ec318def89a88d
-transfer,mercado,,Gerard Martín,Mister,Jotabetrbb,3.985,2,47,3,,,,,,,2025-12-02,5ea104e6014de2761a39afe3fb8fea74
-transfer,Puja,,Gerard Martín,Mister,MuchaSalsa,3.375,2,47,3,,,,,,,2025-12-02,84482b6fc89295d5bc7a20a527e3b00f
-transfer,Puja,,Gerard Martín,Mister,Libre,3.2116,2,47,3,,,,,,,2025-12-02,9167cd6adc5bc7be4e626f8115343665
-transfer,Puja,,Gerard Martín,Mister,Chamacónicos,3.175,2,47,3,,,,,,,2025-12-02,82d5e334bafe11f8b8e6d83ddcbfd1f1
-transfer,Puja,,Gerard Martín,Mister,Dani,3.11336,2,47,3,,,,,,,2025-12-02,c72752d146e80538b60d99cd23e68f51
-transfer,mercado,,Jeremy Toljan,Mister,Dani,3.30839,2,54,12,,,,,,,2025-12-02,c275431577e8dfe1c8c66b52778d3748
-transfer,Puja,,Jeremy Toljan,Mister,Libre,3.19101,2,54,12,,,,,,,2025-12-02,61a1bb9dbae3eebccbb4fcce832b9054
-marks,start_mercado,,,,,,,,,,,,,,,2025-12-02,
-transfer,mercado,,Borja Iglesias,Dani,Mister,13.30896,4,78,5,,,,,,,2025-12-02,06a995736a10d3618321acc682a32732
+transfer,mercado,,Borja Iglesias,Dani,Mister,13.30896,4.0,78.0,5.0,,,,,,,2025-12-02,06a995736a10d3618321acc682a32732
 marks,start_mercado,,,,,,,,,,,,,,,2025-12-02,
 transfer,mercado,,Lucas Bergström,Maldinillo 💥,Mister,1.46373,1.0,15.0,408.0,,,,,,,2025-12-01,70ab17dfbf918dd069b23c78bf2a38de
 marks,start_mercado,,,,,,,,,,,,,,,2025-12-01,
