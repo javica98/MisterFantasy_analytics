@@ -1,30 +1,47 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
+marks,start_mercado,,,,,,,,,,,,,,,2025-12-04,
+transfer,mercado,,Franco Mastantuono,Maldinillo 💥,Mister,5.714,3,34,15,,,,,,,2025-12-04,30188175348e7d29d89f01865d87d7a3
+marks,start_mercado,,,,,,,,,,,,,,,2025-12-04,
+transfer,mercado,,Jude Bellingham,Mister,Libre,27.8632,3,63,15,,,,,,,2025-12-04,6369d9fe223b840b7f233d7c0123e93c
+transfer,Puja,,Jude Bellingham,Mister,Dani,27.14971,3,63,15,,,,,,,2025-12-04,2a9991cb2dacff9fbd8d10269d50bb37
+transfer,Puja,,Jude Bellingham,Mister,Maldinillo 💥,25.53744,3,63,15,,,,,,,2025-12-04,86d826a2e501f2b4b7642e12b9679607
+transfer,Puja,,Jude Bellingham,Mister,Los marinero,23.827,3,63,15,,,,,,,2025-12-04,72772230c055beef9a1d3a9f101a3750
+transfer,Puja,,Jude Bellingham,Mister,De la Guettir FC,23.122233,3,63,15,,,,,,,2025-12-04,23e563db98af7e6f5deddc95be07721f
+transfer,Puja,,Jude Bellingham,Mister,Chamacónicos,19.847,3,63,15,,,,,,,2025-12-04,188ddb2c2dfe9bdf448dd5c2293ccb6f
+transfer,mercado,,David Affengruber,Mister,De la Guettir FC,5.679,2,43,23,,,,,,,2025-12-04,92c2a23ded21543a94eb43fbf487c1df
+transfer,mercado,,Rubén Sánchez,Mister,Maldinillo 💥,0.17,2,17,8,,,,,,,2025-12-04,322779f7f6292c10f21319528a22ebe2
+marks,start_mercado,,,,,,,,,,,,,,,2025-12-04,
+transfer,mercado,,Trent Alexander-Arnold,Dani,Mister,8.94456,2,22,15,,,,,,,2025-12-04,e576684da55d7d86504c5d2da5be1440
+marks,start_mercado,,,,,,,,,,,,,,,2025-12-04,
+transfer,mercado,,Jon Moncayola,Chamacónicos,Mister,7.9152,3,56,50,,,,,,,2025-12-04,b22e624aca981eb684af0f1547e2283b
+marks,start_mercado,,,,,,,,,,,,,,,2025-12-04,
+transfer,mercado,,Álvaro Carreras,Libre,Mister,13.5252,2,68,15,,,,,,,2025-12-04,b23adc769f7dabd26de7333e3a79fbf8
+marks,start_mercado,,,,,,,,,,,,,,,2025-12-04,
+transfer,mercado,,Leander Dendoncker,Maldinillo 💥,Mister,1.56655,3.0,46.0,1370.0,,,,,,,2025-12-03,63144a4d4483f995146276e216279b99
 marks,start_mercado,,,,,,,,,,,,,,,2025-12-03,
-transfer,mercado,,Leander Dendoncker,Maldinillo 💥,Mister,1.56655,3,46,1370,,,,,,,2025-12-03,63144a4d4483f995146276e216279b99
-marks,start_mercado,,,,,,,,,,,,,,,2025-12-03,
-transfer,mercado,,Unai López,Mister,Libre,2.97601,3,43,14,,,,,,,2025-12-03,7e1e7156d204f8d800fea0bfc9ad4ef1
-transfer,mercado,,Franco Mastantuono,Mister,Maldinillo 💥,5.7591,3,34,15,,,,,,,2025-12-03,ff1e3c792e951bd226f1dc2f6f1e90d8
+transfer,mercado,,Unai López,Mister,Libre,2.97601,3.0,43.0,14.0,,,,,,,2025-12-03,7e1e7156d204f8d800fea0bfc9ad4ef1
+transfer,mercado,,Franco Mastantuono,Mister,Maldinillo 💥,5.7591,3.0,34.0,15.0,,,,,,,2025-12-03,ff1e3c792e951bd226f1dc2f6f1e90d8
 marks,start_jornada,,,,,,,,,,,,,,19.0,2025-12-03,
 marks,start_mercado,,,,,,,,,,,,,,,2025-12-03,
-transfer,mercado,,Marcus Rashford,Libre,Mister,15.05405,4,74,3,,,,,,,2025-12-03,1770c061e50426809231998733a58dc4
-bonificacion,quiniela,,,,,,,,,Chamacónicos,0.5,1º,5,,,2025-12-03,
-bonificacion,quiniela,,,,,,,,,Maldinillo 💥,0.5,2º,5,,,2025-12-03,
-bonificacion,quiniela,,,,,,,,,Los marinero,0.4,3º,4,,,2025-12-03,
-bonificacion,quiniela,,,,,,,,,De la Guettir FC,0.3,4º,3,,,2025-12-03,
-bonificacion,quiniela,,,,,,,,,Dani,,5º,0,,,2025-12-03,
-bonificacion,quiniela,,,,,,,,,Jotabetrbb,,6º,0,,,2025-12-03,
-bonificacion,quiniela,,,,,,,,,Juanba,,7º,0,,,2025-12-03,
-bonificacion,quiniela,,,,,,,,,Libre,,8º,0,,,2025-12-03,
-bonificacion,quiniela,,,,,,,,,MuchaSalsa,,9º,0,,,2025-12-03,
-bonificacion,clasificacion,,,,,,,,,Chamacónicos,2.02,1,,61,,2025-12-03,
-bonificacion,clasificacion,,,,,,,,,MuchaSalsa,1.4,2,,50,,2025-12-03,
-bonificacion,clasificacion,,,,,,,,,Maldinillo 💥,1.66,3,,48,,2025-12-03,
-bonificacion,clasificacion,,,,,,,,,Jotabetrbb,1.82,4,,46,,2025-12-03,
-bonificacion,clasificacion,,,,,,,,,Los marinero,2.19,5,,42,,2025-12-03,
-bonificacion,clasificacion,,,,,,,,,De la Guettir FC,1.88,6,,34,,2025-12-03,
-bonificacion,clasificacion,,,,,,,,,Dani,2.02,7,,31,,2025-12-03,
-bonificacion,clasificacion,,,,,,,,,Juanba,2.08,8,,19,,2025-12-03,
-bonificacion,clasificacion,,,,,,,,,Libre,,9,,0,,2025-12-03,
+transfer,mercado,,Marcus Rashford,Libre,Mister,15.05405,4.0,74.0,3.0,,,,,,,2025-12-03,1770c061e50426809231998733a58dc4
+bonificacion,quiniela,,,,,,,,,Chamacónicos,0.5,1º,5.0,,,2025-12-03,
+bonificacion,quiniela,,,,,,,,,Maldinillo 💥,0.5,2º,5.0,,,2025-12-03,
+bonificacion,quiniela,,,,,,,,,Los marinero,0.4,3º,4.0,,,2025-12-03,
+bonificacion,quiniela,,,,,,,,,De la Guettir FC,0.3,4º,3.0,,,2025-12-03,
+bonificacion,quiniela,,,,,,,,,Dani,,5º,0.0,,,2025-12-03,
+bonificacion,quiniela,,,,,,,,,Jotabetrbb,,6º,0.0,,,2025-12-03,
+bonificacion,quiniela,,,,,,,,,Juanba,,7º,0.0,,,2025-12-03,
+bonificacion,quiniela,,,,,,,,,Libre,,8º,0.0,,,2025-12-03,
+bonificacion,quiniela,,,,,,,,,MuchaSalsa,,9º,0.0,,,2025-12-03,
+bonificacion,clasificacion,,,,,,,,,Chamacónicos,2.02,1,,61.0,,2025-12-03,
+bonificacion,clasificacion,,,,,,,,,MuchaSalsa,1.4,2,,50.0,,2025-12-03,
+bonificacion,clasificacion,,,,,,,,,Maldinillo 💥,1.66,3,,48.0,,2025-12-03,
+bonificacion,clasificacion,,,,,,,,,Jotabetrbb,1.82,4,,46.0,,2025-12-03,
+bonificacion,clasificacion,,,,,,,,,Los marinero,2.19,5,,42.0,,2025-12-03,
+bonificacion,clasificacion,,,,,,,,,De la Guettir FC,1.88,6,,34.0,,2025-12-03,
+bonificacion,clasificacion,,,,,,,,,Dani,2.02,7,,31.0,,2025-12-03,
+bonificacion,clasificacion,,,,,,,,,Juanba,2.08,8,,19.0,,2025-12-03,
+bonificacion,clasificacion,,,,,,,,,Libre,,9,,0.0,,2025-12-03,
 marks,start_mercado,,,,,,,,,,,,,,,2025-12-03,
 transfer,mercado,,Pere Milla,Mister,Libre,10.77461,4.0,69.0,8.0,,,,,,,2025-12-02,c8bee63c74f9901200ec318def89a88d
 transfer,mercado,,Gerard Martín,Mister,Jotabetrbb,3.985,2.0,47.0,3.0,,,,,,,2025-12-02,5ea104e6014de2761a39afe3fb8fea74
