@@ -1,21 +1,43 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
+marks,start_mercado,,,,,,,,,,,,,,,2025-12-05,
+transfer,mercado,,Juan Iglesias,Mister,Chamacónicos,5.562,2,56,9,,,,,,,2025-12-05,8ac577d73ffcf26e36d29438edc268b9
+transfer,mercado,,Mikel Vesga,Mister,Chamacónicos,0.197,3,24,1,,,,,,,2025-12-05,55ad11a5f23d8525f45f14df0ac9ff5a
+transfer,mercado,,Álvaro Valles,Mister,Maldinillo 💥,2.466,1,28,4,,,,,,,2025-12-05,3b6cf14cf4f8ff9e3dc4f4dbc4fc9cf8
+transfer,mercado,,Ricardo Rodríguez,Mister,Maldinillo 💥,0.20503,2,19,4,,,,,,,2025-12-05,0b6fbbc403bac5da1f8f0cf00c48f3c7
+marks,start_mercado,,,,,,,,,,,,,,,2025-12-05,
+transfer,clausula,,Antonio Rüdiger,Maldinillo 💥,Dani,3.07098,2,13,15,,,,,,,2025-12-05,4bc78c1d57d4a6a5ce399ccbbbe2b401
+marks,start_mercado,,,,,,,,,,,,,,,2025-12-05,
+transfer,clausula,,Djibril Sow,Chamacónicos,Los marinero,1.656,3,32,17,,,,,,,2025-12-05,ca3fc7558958b91958ae97d4e9a28b74
+marks,start_mercado,,,,,,,,,,,,,,,2025-12-05,
+transfer,clausula,,Valentín Gómez,Los marinero,Chamacónicos,2.2275,2,42,4,,,,,,,2025-12-05,eb42cd46e56a771d45d742ee627ea5c5
+marks,start_mercado,,,,,,,,,,,,,,,2025-12-05,
+transfer,mercado,,Renato Veiga,De la Guettir FC,Mister,9.7524,2,40,20,,,,,,,2025-12-05,6879f3c24e4ec9f9bea40b9285b14829
+bonificacion,clasificacion,,,,,,,,,Jotabetrbb,0.66,1,,33,,2025-12-05,
+bonificacion,clasificacion,,,,,,,,,Maldinillo 💥,0.4,2,,20,,2025-12-05,
+bonificacion,clasificacion,,,,,,,,,Chamacónicos,0.38,3,,19,,2025-12-05,
+bonificacion,clasificacion,,,,,,,,,Dani,0.32,4,,16,,2025-12-05,
+bonificacion,clasificacion,,,,,,,,,MuchaSalsa,0.3,5,,15,,2025-12-05,
+bonificacion,clasificacion,,,,,,,,,Los marinero,0.28,6,,14,,2025-12-05,
+bonificacion,clasificacion,,,,,,,,,De la Guettir FC,0.24,7,,12,,2025-12-05,
+bonificacion,clasificacion,,,,,,,,,Libre,0.24,8,,12,,2025-12-05,
+bonificacion,clasificacion,,,,,,,,,Juanba,,9,,-1,,2025-12-05,
+marks,start_mercado,,,,,,,,,,,,,,,2025-12-05,
+transfer,mercado,,Franco Mastantuono,Maldinillo 💥,Mister,5.714,3.0,34.0,15.0,,,,,,,2025-12-04,30188175348e7d29d89f01865d87d7a3
 marks,start_mercado,,,,,,,,,,,,,,,2025-12-04,
-transfer,mercado,,Franco Mastantuono,Maldinillo 💥,Mister,5.714,3,34,15,,,,,,,2025-12-04,30188175348e7d29d89f01865d87d7a3
+transfer,mercado,,Jude Bellingham,Mister,Libre,27.8632,3.0,63.0,15.0,,,,,,,2025-12-04,6369d9fe223b840b7f233d7c0123e93c
+transfer,Puja,,Jude Bellingham,Mister,Dani,27.14971,3.0,63.0,15.0,,,,,,,2025-12-04,2a9991cb2dacff9fbd8d10269d50bb37
+transfer,Puja,,Jude Bellingham,Mister,Maldinillo 💥,25.53744,3.0,63.0,15.0,,,,,,,2025-12-04,86d826a2e501f2b4b7642e12b9679607
+transfer,Puja,,Jude Bellingham,Mister,Los marinero,23.827,3.0,63.0,15.0,,,,,,,2025-12-04,72772230c055beef9a1d3a9f101a3750
+transfer,Puja,,Jude Bellingham,Mister,De la Guettir FC,23.122233,3.0,63.0,15.0,,,,,,,2025-12-04,23e563db98af7e6f5deddc95be07721f
+transfer,Puja,,Jude Bellingham,Mister,Chamacónicos,19.847,3.0,63.0,15.0,,,,,,,2025-12-04,188ddb2c2dfe9bdf448dd5c2293ccb6f
+transfer,mercado,,David Affengruber,Mister,De la Guettir FC,5.679,2.0,43.0,23.0,,,,,,,2025-12-04,92c2a23ded21543a94eb43fbf487c1df
+transfer,mercado,,Rubén Sánchez,Mister,Maldinillo 💥,0.17,2.0,17.0,8.0,,,,,,,2025-12-04,322779f7f6292c10f21319528a22ebe2
 marks,start_mercado,,,,,,,,,,,,,,,2025-12-04,
-transfer,mercado,,Jude Bellingham,Mister,Libre,27.8632,3,63,15,,,,,,,2025-12-04,6369d9fe223b840b7f233d7c0123e93c
-transfer,Puja,,Jude Bellingham,Mister,Dani,27.14971,3,63,15,,,,,,,2025-12-04,2a9991cb2dacff9fbd8d10269d50bb37
-transfer,Puja,,Jude Bellingham,Mister,Maldinillo 💥,25.53744,3,63,15,,,,,,,2025-12-04,86d826a2e501f2b4b7642e12b9679607
-transfer,Puja,,Jude Bellingham,Mister,Los marinero,23.827,3,63,15,,,,,,,2025-12-04,72772230c055beef9a1d3a9f101a3750
-transfer,Puja,,Jude Bellingham,Mister,De la Guettir FC,23.122233,3,63,15,,,,,,,2025-12-04,23e563db98af7e6f5deddc95be07721f
-transfer,Puja,,Jude Bellingham,Mister,Chamacónicos,19.847,3,63,15,,,,,,,2025-12-04,188ddb2c2dfe9bdf448dd5c2293ccb6f
-transfer,mercado,,David Affengruber,Mister,De la Guettir FC,5.679,2,43,23,,,,,,,2025-12-04,92c2a23ded21543a94eb43fbf487c1df
-transfer,mercado,,Rubén Sánchez,Mister,Maldinillo 💥,0.17,2,17,8,,,,,,,2025-12-04,322779f7f6292c10f21319528a22ebe2
+transfer,mercado,,Trent Alexander-Arnold,Dani,Mister,8.94456,2.0,22.0,15.0,,,,,,,2025-12-04,e576684da55d7d86504c5d2da5be1440
 marks,start_mercado,,,,,,,,,,,,,,,2025-12-04,
-transfer,mercado,,Trent Alexander-Arnold,Dani,Mister,8.94456,2,22,15,,,,,,,2025-12-04,e576684da55d7d86504c5d2da5be1440
+transfer,mercado,,Jon Moncayola,Chamacónicos,Mister,7.9152,3.0,56.0,50.0,,,,,,,2025-12-04,b22e624aca981eb684af0f1547e2283b
 marks,start_mercado,,,,,,,,,,,,,,,2025-12-04,
-transfer,mercado,,Jon Moncayola,Chamacónicos,Mister,7.9152,3,56,50,,,,,,,2025-12-04,b22e624aca981eb684af0f1547e2283b
-marks,start_mercado,,,,,,,,,,,,,,,2025-12-04,
-transfer,mercado,,Álvaro Carreras,Libre,Mister,13.5252,2,68,15,,,,,,,2025-12-04,b23adc769f7dabd26de7333e3a79fbf8
+transfer,mercado,,Álvaro Carreras,Libre,Mister,13.5252,2.0,68.0,15.0,,,,,,,2025-12-04,b23adc769f7dabd26de7333e3a79fbf8
 marks,start_mercado,,,,,,,,,,,,,,,2025-12-04,
 transfer,mercado,,Leander Dendoncker,Maldinillo 💥,Mister,1.56655,3.0,46.0,1370.0,,,,,,,2025-12-03,63144a4d4483f995146276e216279b99
 marks,start_mercado,,,,,,,,,,,,,,,2025-12-03,
