@@ -1,26 +1,45 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
+marks,start_mercado,,,,,,,,,,,,,,,2025-12-06,
+transfer,mercado,,Federico Viñas,Maldinillo 💥,Mister,1.63904,4,31,1370,,,,,,,2025-12-06,b25bdb5e4ae5aa21781d09a32b127ff0
+marks,start_mercado,,,,,,,,,,,,,,,2025-12-06,
+transfer,mercado,,Álex Sancris,Mister,Libre,0.2,3,20,9,,,,,,,2025-12-06,7653f45973482a9ab9d51a31d7f0843d
+transfer,mercado,,Martim Neto,Mister,Libre,0.179,3,31,23,,,,,,,2025-12-06,9c774109cb6ad363f3517678208afa7c
+transfer,mercado,,José Luis Gayà,Mister,Los marinero,3.693,2,24,19,,,,,,,2025-12-06,38a08a6d11f9c4ba8327d6a828d3474c
+transfer,Puja,,José Luis Gayà,Mister,Maldinillo 💥,3.54541,2,24,19,,,,,,,2025-12-06,33e98343f1666ede40eb65461608ee8f
+transfer,Puja,,José Luis Gayà,Mister,Dani,3.52126,2,24,19,,,,,,,2025-12-06,85f46115bc8d5cc2702d41cb8ca3b7d0
+transfer,Puja,,José Luis Gayà,Mister,Libre,3.48504,2,24,19,,,,,,,2025-12-06,836efbed00ee605362d5c652632ee1f9
+transfer,mercado,,Omar El Hilali,Mister,Dani,4.32484,2,51,8,,,,,,,2025-12-06,7ed211d605e7399fe808e29677d912de
+transfer,Puja,,Omar El Hilali,Mister,Maldinillo 💥,4.3189,2,51,8,,,,,,,2025-12-06,67cf226aa876894d3e52d8874c212021
+transfer,Puja,,Omar El Hilali,Mister,Libre,4.29107,2,51,8,,,,,,,2025-12-06,46cece68dda28caa645beea131960b49
+marks,start_jornada,,,,,,,,,,,,,,15.0,2025-12-06,
+marks,start_mercado,,,,,,,,,,,,,,,2025-12-06,
+transfer,mercado,,Santiago Colombatto,Libre,Mister,1.3296,3,35,1370,,,,,,,2025-12-06,d022a50ba22d3134df64b682f50decb0
+marks,start_mercado,,,,,,,,,,,,,,,2025-12-06,
+transfer,mercado,,Unai López,Libre,Mister,3.09767,3,43,14,,,,,,,2025-12-06,f7abe327e3fac4f1a5654d3c4b4568fd
+marks,start_mercado,,,,,,,,,,,,,,,2025-12-06,
+transfer,acuerdo,,Jon Gorrotxategi,Libre,Maldinillo 💥,3.669,3,56,16,,,,,,,2025-12-06,4202a8bca22e955d59a665d8e7641793
+marks,start_mercado,,,,,,,,,,,,,,,2025-12-06,
+transfer,mercado,,Juan Iglesias,Mister,Chamacónicos,5.562,2.0,56.0,9.0,,,,,,,2025-12-05,8ac577d73ffcf26e36d29438edc268b9
+transfer,mercado,,Mikel Vesga,Mister,Chamacónicos,0.197,3.0,24.0,1.0,,,,,,,2025-12-05,55ad11a5f23d8525f45f14df0ac9ff5a
+transfer,mercado,,Álvaro Valles,Mister,Maldinillo 💥,2.466,1.0,28.0,4.0,,,,,,,2025-12-05,3b6cf14cf4f8ff9e3dc4f4dbc4fc9cf8
+transfer,mercado,,Ricardo Rodríguez,Mister,Maldinillo 💥,0.20503,2.0,19.0,4.0,,,,,,,2025-12-05,0b6fbbc403bac5da1f8f0cf00c48f3c7
 marks,start_mercado,,,,,,,,,,,,,,,2025-12-05,
-transfer,mercado,,Juan Iglesias,Mister,Chamacónicos,5.562,2,56,9,,,,,,,2025-12-05,8ac577d73ffcf26e36d29438edc268b9
-transfer,mercado,,Mikel Vesga,Mister,Chamacónicos,0.197,3,24,1,,,,,,,2025-12-05,55ad11a5f23d8525f45f14df0ac9ff5a
-transfer,mercado,,Álvaro Valles,Mister,Maldinillo 💥,2.466,1,28,4,,,,,,,2025-12-05,3b6cf14cf4f8ff9e3dc4f4dbc4fc9cf8
-transfer,mercado,,Ricardo Rodríguez,Mister,Maldinillo 💥,0.20503,2,19,4,,,,,,,2025-12-05,0b6fbbc403bac5da1f8f0cf00c48f3c7
+transfer,clausula,,Antonio Rüdiger,Maldinillo 💥,Dani,3.07098,2.0,13.0,15.0,,,,,,,2025-12-05,4bc78c1d57d4a6a5ce399ccbbbe2b401
 marks,start_mercado,,,,,,,,,,,,,,,2025-12-05,
-transfer,clausula,,Antonio Rüdiger,Maldinillo 💥,Dani,3.07098,2,13,15,,,,,,,2025-12-05,4bc78c1d57d4a6a5ce399ccbbbe2b401
+transfer,clausula,,Djibril Sow,Chamacónicos,Los marinero,1.656,3.0,32.0,17.0,,,,,,,2025-12-05,ca3fc7558958b91958ae97d4e9a28b74
 marks,start_mercado,,,,,,,,,,,,,,,2025-12-05,
-transfer,clausula,,Djibril Sow,Chamacónicos,Los marinero,1.656,3,32,17,,,,,,,2025-12-05,ca3fc7558958b91958ae97d4e9a28b74
+transfer,clausula,,Valentín Gómez,Los marinero,Chamacónicos,2.2275,2.0,42.0,4.0,,,,,,,2025-12-05,eb42cd46e56a771d45d742ee627ea5c5
 marks,start_mercado,,,,,,,,,,,,,,,2025-12-05,
-transfer,clausula,,Valentín Gómez,Los marinero,Chamacónicos,2.2275,2,42,4,,,,,,,2025-12-05,eb42cd46e56a771d45d742ee627ea5c5
-marks,start_mercado,,,,,,,,,,,,,,,2025-12-05,
-transfer,mercado,,Renato Veiga,De la Guettir FC,Mister,9.7524,2,40,20,,,,,,,2025-12-05,6879f3c24e4ec9f9bea40b9285b14829
-bonificacion,clasificacion,,,,,,,,,Jotabetrbb,0.66,1,,33,,2025-12-05,
-bonificacion,clasificacion,,,,,,,,,Maldinillo 💥,0.4,2,,20,,2025-12-05,
-bonificacion,clasificacion,,,,,,,,,Chamacónicos,0.38,3,,19,,2025-12-05,
-bonificacion,clasificacion,,,,,,,,,Dani,0.32,4,,16,,2025-12-05,
-bonificacion,clasificacion,,,,,,,,,MuchaSalsa,0.3,5,,15,,2025-12-05,
-bonificacion,clasificacion,,,,,,,,,Los marinero,0.28,6,,14,,2025-12-05,
-bonificacion,clasificacion,,,,,,,,,De la Guettir FC,0.24,7,,12,,2025-12-05,
-bonificacion,clasificacion,,,,,,,,,Libre,0.24,8,,12,,2025-12-05,
-bonificacion,clasificacion,,,,,,,,,Juanba,,9,,-1,,2025-12-05,
+transfer,mercado,,Renato Veiga,De la Guettir FC,Mister,9.7524,2.0,40.0,20.0,,,,,,,2025-12-05,6879f3c24e4ec9f9bea40b9285b14829
+bonificacion,clasificacion,,,,,,,,,Jotabetrbb,0.66,1,,33.0,,2025-12-05,
+bonificacion,clasificacion,,,,,,,,,Maldinillo 💥,0.4,2,,20.0,,2025-12-05,
+bonificacion,clasificacion,,,,,,,,,Chamacónicos,0.38,3,,19.0,,2025-12-05,
+bonificacion,clasificacion,,,,,,,,,Dani,0.32,4,,16.0,,2025-12-05,
+bonificacion,clasificacion,,,,,,,,,MuchaSalsa,0.3,5,,15.0,,2025-12-05,
+bonificacion,clasificacion,,,,,,,,,Los marinero,0.28,6,,14.0,,2025-12-05,
+bonificacion,clasificacion,,,,,,,,,De la Guettir FC,0.24,7,,12.0,,2025-12-05,
+bonificacion,clasificacion,,,,,,,,,Libre,0.24,8,,12.0,,2025-12-05,
+bonificacion,clasificacion,,,,,,,,,Juanba,,9,,-1.0,,2025-12-05,
 marks,start_mercado,,,,,,,,,,,,,,,2025-12-05,
 transfer,mercado,,Franco Mastantuono,Maldinillo 💥,Mister,5.714,3.0,34.0,15.0,,,,,,,2025-12-04,30188175348e7d29d89f01865d87d7a3
 marks,start_mercado,,,,,,,,,,,,,,,2025-12-04,
