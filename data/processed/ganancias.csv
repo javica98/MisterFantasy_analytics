@@ -1,23 +1,32 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
+marks,start_mercado,,,,,,,,,,,,,,,2025-12-07,
+transfer,mercado,,Aitor Ruibal,Mister,Libre,1.20202,2,41,4,,,,,,,2025-12-07,bfd659059ed689f1e5b7d74b0fa11173
+transfer,mercado,,Thibaut Courtois,Mister,Dani,10.27691,1,73,15,,,,,,,2025-12-07,d3d5c9e16e74200ecfc1bdfcba5fd07c
+transfer,Puja,,Thibaut Courtois,Mister,Maldinillo 💥,10.27447,1,73,15,,,,,,,2025-12-07,c8b9743914ffaa87d17d5cf2a59fa64a
+transfer,Puja,,Thibaut Courtois,Mister,Libre,10.274,1,73,15,,,,,,,2025-12-07,e4695183a4dd723cfdd07d0091da1f31
+marks,start_mercado,,,,,,,,,,,,,,,2025-12-07,
+transfer,mercado,,Gerard Moreno,Dani,Mister,10.84464,4,56,20,,,,,,,2025-12-07,b64e0ae2e67e5157ea90d297814722e8
+marks,start_mercado,,,,,,,,,,,,,,,2025-12-07,
+transfer,mercado,,Jeremy Toljan,Dani,Mister,3.26456,2,54,12,,,,,,,2025-12-07,7984fe3cf0f27dad52b46a6836ea2382
+marks,start_mercado,,,,,,,,,,,,,,,2025-12-07,
+transfer,mercado,,Federico Viñas,Maldinillo 💥,Mister,1.63904,4.0,31.0,1370.0,,,,,,,2025-12-06,b25bdb5e4ae5aa21781d09a32b127ff0
 marks,start_mercado,,,,,,,,,,,,,,,2025-12-06,
-transfer,mercado,,Federico Viñas,Maldinillo 💥,Mister,1.63904,4,31,1370,,,,,,,2025-12-06,b25bdb5e4ae5aa21781d09a32b127ff0
-marks,start_mercado,,,,,,,,,,,,,,,2025-12-06,
-transfer,mercado,,Álex Sancris,Mister,Libre,0.2,3,20,9,,,,,,,2025-12-06,7653f45973482a9ab9d51a31d7f0843d
-transfer,mercado,,Martim Neto,Mister,Libre,0.179,3,31,23,,,,,,,2025-12-06,9c774109cb6ad363f3517678208afa7c
-transfer,mercado,,José Luis Gayà,Mister,Los marinero,3.693,2,24,19,,,,,,,2025-12-06,38a08a6d11f9c4ba8327d6a828d3474c
-transfer,Puja,,José Luis Gayà,Mister,Maldinillo 💥,3.54541,2,24,19,,,,,,,2025-12-06,33e98343f1666ede40eb65461608ee8f
-transfer,Puja,,José Luis Gayà,Mister,Dani,3.52126,2,24,19,,,,,,,2025-12-06,85f46115bc8d5cc2702d41cb8ca3b7d0
-transfer,Puja,,José Luis Gayà,Mister,Libre,3.48504,2,24,19,,,,,,,2025-12-06,836efbed00ee605362d5c652632ee1f9
-transfer,mercado,,Omar El Hilali,Mister,Dani,4.32484,2,51,8,,,,,,,2025-12-06,7ed211d605e7399fe808e29677d912de
-transfer,Puja,,Omar El Hilali,Mister,Maldinillo 💥,4.3189,2,51,8,,,,,,,2025-12-06,67cf226aa876894d3e52d8874c212021
-transfer,Puja,,Omar El Hilali,Mister,Libre,4.29107,2,51,8,,,,,,,2025-12-06,46cece68dda28caa645beea131960b49
+transfer,mercado,,Álex Sancris,Mister,Libre,0.2,3.0,20.0,9.0,,,,,,,2025-12-06,7653f45973482a9ab9d51a31d7f0843d
+transfer,mercado,,Martim Neto,Mister,Libre,0.179,3.0,31.0,23.0,,,,,,,2025-12-06,9c774109cb6ad363f3517678208afa7c
+transfer,mercado,,José Luis Gayà,Mister,Los marinero,3.693,2.0,24.0,19.0,,,,,,,2025-12-06,38a08a6d11f9c4ba8327d6a828d3474c
+transfer,Puja,,José Luis Gayà,Mister,Maldinillo 💥,3.54541,2.0,24.0,19.0,,,,,,,2025-12-06,33e98343f1666ede40eb65461608ee8f
+transfer,Puja,,José Luis Gayà,Mister,Dani,3.52126,2.0,24.0,19.0,,,,,,,2025-12-06,85f46115bc8d5cc2702d41cb8ca3b7d0
+transfer,Puja,,José Luis Gayà,Mister,Libre,3.48504,2.0,24.0,19.0,,,,,,,2025-12-06,836efbed00ee605362d5c652632ee1f9
+transfer,mercado,,Omar El Hilali,Mister,Dani,4.32484,2.0,51.0,8.0,,,,,,,2025-12-06,7ed211d605e7399fe808e29677d912de
+transfer,Puja,,Omar El Hilali,Mister,Maldinillo 💥,4.3189,2.0,51.0,8.0,,,,,,,2025-12-06,67cf226aa876894d3e52d8874c212021
+transfer,Puja,,Omar El Hilali,Mister,Libre,4.29107,2.0,51.0,8.0,,,,,,,2025-12-06,46cece68dda28caa645beea131960b49
 marks,start_jornada,,,,,,,,,,,,,,15.0,2025-12-06,
 marks,start_mercado,,,,,,,,,,,,,,,2025-12-06,
-transfer,mercado,,Santiago Colombatto,Libre,Mister,1.3296,3,35,1370,,,,,,,2025-12-06,d022a50ba22d3134df64b682f50decb0
+transfer,mercado,,Santiago Colombatto,Libre,Mister,1.3296,3.0,35.0,1370.0,,,,,,,2025-12-06,d022a50ba22d3134df64b682f50decb0
 marks,start_mercado,,,,,,,,,,,,,,,2025-12-06,
-transfer,mercado,,Unai López,Libre,Mister,3.09767,3,43,14,,,,,,,2025-12-06,f7abe327e3fac4f1a5654d3c4b4568fd
+transfer,mercado,,Unai López,Libre,Mister,3.09767,3.0,43.0,14.0,,,,,,,2025-12-06,f7abe327e3fac4f1a5654d3c4b4568fd
 marks,start_mercado,,,,,,,,,,,,,,,2025-12-06,
-transfer,acuerdo,,Jon Gorrotxategi,Libre,Maldinillo 💥,3.669,3,56,16,,,,,,,2025-12-06,4202a8bca22e955d59a665d8e7641793
+transfer,acuerdo,,Jon Gorrotxategi,Libre,Maldinillo 💥,3.669,3.0,56.0,16.0,,,,,,,2025-12-06,4202a8bca22e955d59a665d8e7641793
 marks,start_mercado,,,,,,,,,,,,,,,2025-12-06,
 transfer,mercado,,Juan Iglesias,Mister,Chamacónicos,5.562,2.0,56.0,9.0,,,,,,,2025-12-05,8ac577d73ffcf26e36d29438edc268b9
 transfer,mercado,,Mikel Vesga,Mister,Chamacónicos,0.197,3.0,24.0,1.0,,,,,,,2025-12-05,55ad11a5f23d8525f45f14df0ac9ff5a
