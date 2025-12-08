@@ -1,13 +1,25 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
+marks,start_mercado,,,,,,,,,,,,,,,2025-12-08,
+transfer,mercado,,Etta Eyong,Mister,Maldinillo 💥,15.00325,4,83,12,,,,,,,2025-12-08,d65051a7a9ae5fbe262e8dedd8921ae6
+transfer,mercado,,Juan Foyth,Mister,Maldinillo 💥,10.60288,2,45,20,,,,,,,2025-12-08,93114ba26292bc0bc41329cfac579495
+transfer,Puja,,Juan Foyth,Mister,Libre,10.29972,2,45,20,,,,,,,2025-12-08,9c818761b777d979046c104aeb62233a
+transfer,Puja,,Juan Foyth,Mister,Dani,10.12957,2,45,20,,,,,,,2025-12-08,e50f4eee17baf4dce26a5f61ef315d53
+transfer,mercado,,Alexander Sørloth,Mister,Maldinillo 💥,6.03509,4,42,2,,,,,,,2025-12-08,e2508d93d07d157dc112ee05c403ba5a
+marks,start_mercado,,,,,,,,,,,,,,,2025-12-08,
+transfer,clausula,,Antonio Rüdiger,Dani,Chamacónicos,4.60647,2,15,15,,,,,,,2025-12-08,520a8e752a0872be52e1f1fe38e313ae
+marks,start_mercado,,,,,,,,,,,,,,,2025-12-08,
+transfer,mercado,,Jon Gorrotxategi,Maldinillo 💥,Mister,6.39733,3,60,16,,,,,,,2025-12-08,8991cfe3f8da3738bd4cb1af1b2ee6d6
+marks,start_mercado,,,,,,,,,,,,,,,2025-12-08,
+transfer,mercado,,Nicolas Pépé,De la Guettir FC,Mister,15.18117,4,74,20,,,,,,,2025-12-08,1e41e779a3c3af7c67f7b75cbf2dd3b6
+marks,start_mercado,,,,,,,,,,,,,,,2025-12-08,
+transfer,mercado,,Aitor Ruibal,Mister,Libre,1.20202,2.0,41.0,4.0,,,,,,,2025-12-07,bfd659059ed689f1e5b7d74b0fa11173
+transfer,mercado,,Thibaut Courtois,Mister,Dani,10.27691,1.0,73.0,15.0,,,,,,,2025-12-07,d3d5c9e16e74200ecfc1bdfcba5fd07c
+transfer,Puja,,Thibaut Courtois,Mister,Maldinillo 💥,10.27447,1.0,73.0,15.0,,,,,,,2025-12-07,c8b9743914ffaa87d17d5cf2a59fa64a
+transfer,Puja,,Thibaut Courtois,Mister,Libre,10.274,1.0,73.0,15.0,,,,,,,2025-12-07,e4695183a4dd723cfdd07d0091da1f31
 marks,start_mercado,,,,,,,,,,,,,,,2025-12-07,
-transfer,mercado,,Aitor Ruibal,Mister,Libre,1.20202,2,41,4,,,,,,,2025-12-07,bfd659059ed689f1e5b7d74b0fa11173
-transfer,mercado,,Thibaut Courtois,Mister,Dani,10.27691,1,73,15,,,,,,,2025-12-07,d3d5c9e16e74200ecfc1bdfcba5fd07c
-transfer,Puja,,Thibaut Courtois,Mister,Maldinillo 💥,10.27447,1,73,15,,,,,,,2025-12-07,c8b9743914ffaa87d17d5cf2a59fa64a
-transfer,Puja,,Thibaut Courtois,Mister,Libre,10.274,1,73,15,,,,,,,2025-12-07,e4695183a4dd723cfdd07d0091da1f31
+transfer,mercado,,Gerard Moreno,Dani,Mister,10.84464,4.0,56.0,20.0,,,,,,,2025-12-07,b64e0ae2e67e5157ea90d297814722e8
 marks,start_mercado,,,,,,,,,,,,,,,2025-12-07,
-transfer,mercado,,Gerard Moreno,Dani,Mister,10.84464,4,56,20,,,,,,,2025-12-07,b64e0ae2e67e5157ea90d297814722e8
-marks,start_mercado,,,,,,,,,,,,,,,2025-12-07,
-transfer,mercado,,Jeremy Toljan,Dani,Mister,3.26456,2,54,12,,,,,,,2025-12-07,7984fe3cf0f27dad52b46a6836ea2382
+transfer,mercado,,Jeremy Toljan,Dani,Mister,3.26456,2.0,54.0,12.0,,,,,,,2025-12-07,7984fe3cf0f27dad52b46a6836ea2382
 marks,start_mercado,,,,,,,,,,,,,,,2025-12-07,
 transfer,mercado,,Federico Viñas,Maldinillo 💥,Mister,1.63904,4.0,31.0,1370.0,,,,,,,2025-12-06,b25bdb5e4ae5aa21781d09a32b127ff0
 marks,start_mercado,,,,,,,,,,,,,,,2025-12-06,
