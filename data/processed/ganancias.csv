@@ -1,45 +1,63 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
+marks,start_mercado,,,,,,,,,,,,,,,2025-12-11,
+transfer,mercado,,Gonçalo Guedes,Los marinero,Mister,6.0564,4,44,16,,,,,,,2025-12-11,57b5c9a41d1cb78f7263bbc971e0169e
+marks,start_mercado,,,,,,,,,,,,,,,2025-12-11,
+transfer,mercado,,Fernando Calero,Mister,Jotabetrbb,2.868,2,48,8,,,,,,,2025-12-11,9b660ec511e6571d2a5fdf6b0cd349ca
+transfer,Puja,,Fernando Calero,Mister,Dani,1.93779,2,48,8,,,,,,,2025-12-11,0c591fadbe05c68cf1c0a72635fcfb4f
+transfer,Puja,,Fernando Calero,Mister,De la Guettir FC,1.77575,2,48,8,,,,,,,2025-12-11,9b32fbf29d87438de4dd7ae3e0c7fdca
+transfer,Puja,,Fernando Calero,Mister,Libre,1.57643,2,48,8,,,,,,,2025-12-11,79873e058d933d5168597d2a4d55cd55
+transfer,mercado,,Ayoze Pérez,Mister,Maldinillo 💥,15.60221,4,34,20,,,,,,,2025-12-11,d59d7006d34483560bc2aa3fc03b9969
+transfer,Puja,,Ayoze Pérez,Mister,De la Guettir FC,13.988333,4,34,20,,,,,,,2025-12-11,36ad53ab4ebd3e87c44992903ee0a910
+transfer,Puja,,Ayoze Pérez,Mister,Dani,12.00586,4,34,20,,,,,,,2025-12-11,a20d085652cee39e5e51cf947d9a8742
+transfer,Puja,,Ayoze Pérez,Mister,Chamacónicos,11.243,4,34,20,,,,,,,2025-12-11,1da45336f384ac7e1dd3e7f2955bd3a2
+transfer,Puja,,Ayoze Pérez,Mister,Libre,10.86313,4,34,20,,,,,,,2025-12-11,89c39d666a2aab4c679ec43ee5ad024f
+marks,start_mercado,,,,,,,,,,,,,,,2025-12-11,
+transfer,mercado,,Bryan Gil,Los marinero,Mister,2.64784,3,32,222,,,,,,,2025-12-11,e92ca1866127357745e1245a5946ee20
+marks,start_mercado,,,,,,,,,,,,,,,2025-12-11,
+transfer,clausula,,Rodrigo Riquelme,Dani,Chamacónicos,1.35978,3,25,4,,,,,,,2025-12-11,da0136ca0cda6c9c174affa2a6320e7b
+marks,start_mercado,,,,,,,,,,,,,,,2025-12-11,
+transfer,mercado,,Juan Foyth,Maldinillo 💥,Mister,10.6953,2,45,20,,,,,,,2025-12-11,2c17ca8c7f69208a5531267d269bf94d
+marks,start_mercado,,,,,,,,,,,,,,,2025-12-11,
+transfer,mercado,,Etta Eyong,Maldinillo 💥,Mister,14.959,4.0,84.0,12.0,,,,,,,2025-12-10,240405377dba1d8961271dc7388aa07f
 marks,start_mercado,,,,,,,,,,,,,,,2025-12-10,
-transfer,mercado,,Etta Eyong,Maldinillo 💥,Mister,14.959,4,84,12,,,,,,,2025-12-10,240405377dba1d8961271dc7388aa07f
+transfer,mercado,,Daniel Vivian,Los marinero,Mister,8.5904,2.0,43.0,1.0,,,,,,,2025-12-10,363fd3f34eb66b66788d0958c1fb1176
 marks,start_mercado,,,,,,,,,,,,,,,2025-12-10,
-transfer,mercado,,Daniel Vivian,Los marinero,Mister,8.5904,2,43,1,,,,,,,2025-12-10,363fd3f34eb66b66788d0958c1fb1176
+transfer,mercado,,Nico Williams,Mister,Los marinero,19.417502,4.0,63.0,1.0,,,,,,,2025-12-10,0301b6ab9809b0bea38d265793295a4f
+transfer,Puja,,Nico Williams,Mister,Dani,18.52556,4.0,63.0,1.0,,,,,,,2025-12-10,b4a1cf2805ddfd9e2cf991bb381243c8
+transfer,Puja,,Nico Williams,Mister,Chamacónicos,17.317,4.0,63.0,1.0,,,,,,,2025-12-10,91c31300fb1e9b5b56ddb0fcc5b087e5
+transfer,Puja,,Nico Williams,Mister,Libre,16.3666,4.0,63.0,1.0,,,,,,,2025-12-10,7d581a328e35f96c1373c091bbe43bed
+transfer,Puja,,Nico Williams,Mister,De la Guettir FC,15.566676,4.0,63.0,1.0,,,,,,,2025-12-10,6944342688758dea2759adc1cb577d69
+transfer,mercado,,Oihan Sancet,Mister,Los marinero,7.821,3.0,19.0,1.0,,,,,,,2025-12-10,1331794bef53c339efbe00c494a98f3b
+transfer,Puja,,Oihan Sancet,Mister,Chamacónicos,7.171,3.0,19.0,1.0,,,,,,,2025-12-10,d5039a7c10c0c680105d2e8e0109ea1e
+transfer,Puja,,Oihan Sancet,Mister,Maldinillo 💥,6.39875,3.0,19.0,1.0,,,,,,,2025-12-10,986c5105043675f20293480cdeb3ae8d
 marks,start_mercado,,,,,,,,,,,,,,,2025-12-10,
-transfer,mercado,,Nico Williams,Mister,Los marinero,19.417502,4,63,1,,,,,,,2025-12-10,0301b6ab9809b0bea38d265793295a4f
-transfer,Puja,,Nico Williams,Mister,Dani,18.52556,4,63,1,,,,,,,2025-12-10,b4a1cf2805ddfd9e2cf991bb381243c8
-transfer,Puja,,Nico Williams,Mister,Chamacónicos,17.317,4,63,1,,,,,,,2025-12-10,91c31300fb1e9b5b56ddb0fcc5b087e5
-transfer,Puja,,Nico Williams,Mister,Libre,16.3666,4,63,1,,,,,,,2025-12-10,7d581a328e35f96c1373c091bbe43bed
-transfer,Puja,,Nico Williams,Mister,De la Guettir FC,15.566676,4,63,1,,,,,,,2025-12-10,6944342688758dea2759adc1cb577d69
-transfer,mercado,,Oihan Sancet,Mister,Los marinero,7.821,3,19,1,,,,,,,2025-12-10,1331794bef53c339efbe00c494a98f3b
-transfer,Puja,,Oihan Sancet,Mister,Chamacónicos,7.171,3,19,1,,,,,,,2025-12-10,d5039a7c10c0c680105d2e8e0109ea1e
-transfer,Puja,,Oihan Sancet,Mister,Maldinillo 💥,6.39875,3,19,1,,,,,,,2025-12-10,986c5105043675f20293480cdeb3ae8d
+transfer,mercado,,Arnaut Danjuma,De la Guettir FC,Mister,8.6211,4.0,55.0,19.0,,,,,,,2025-12-10,f92a629d5d95e6eeb9c3d2f3c7c313bc
+bonificacion,quiniela,,,,,,,,,Chamacónicos,0.7,1º,7.0,,,2025-12-10,
+bonificacion,quiniela,,,,,,,,,Dani,0.5,2º,5.0,,,2025-12-10,
+bonificacion,quiniela,,,,,,,,,De la Guettir FC,0.5,3º,5.0,,,2025-12-10,
+bonificacion,quiniela,,,,,,,,,Los marinero,0.4,4º,4.0,,,2025-12-10,
+bonificacion,quiniela,,,,,,,,,Maldinillo 💥,0.4,5º,4.0,,,2025-12-10,
+bonificacion,quiniela,,,,,,,,,Jotabetrbb,,6º,0.0,,,2025-12-10,
+bonificacion,quiniela,,,,,,,,,Juanba,,7º,0.0,,,2025-12-10,
+bonificacion,quiniela,,,,,,,,,Libre,,8º,0.0,,,2025-12-10,
+bonificacion,quiniela,,,,,,,,,MuchaSalsa,,9º,0.0,,,2025-12-10,
+bonificacion,clasificacion,,,,,,,,,Jotabetrbb,1.87,1,,56.0,,2025-12-10,
+bonificacion,clasificacion,,,,,,,,,Los marinero,1.5,2,,45.0,,2025-12-10,
+bonificacion,clasificacion,,,,,,,,,Dani,1.73,3,,44.0,,2025-12-10,
+bonificacion,clasificacion,,,,,,,,,De la Guettir FC,1.85,4,,40.0,,2025-12-10,
+bonificacion,clasificacion,,,,,,,,,Maldinillo 💥,1.87,5,,36.0,,2025-12-10,
+bonificacion,clasificacion,,,,,,,,,Juanba,2.09,6,,32.0,,2025-12-10,
+bonificacion,clasificacion,,,,,,,,,MuchaSalsa,1.84,7,,22.0,,2025-12-10,
+bonificacion,clasificacion,,,,,,,,,Libre,2.02,8,,21.0,,2025-12-10,
+bonificacion,clasificacion,,,,,,,,,Chamacónicos,2.16,9,,18.0,,2025-12-10,
 marks,start_mercado,,,,,,,,,,,,,,,2025-12-10,
-transfer,mercado,,Arnaut Danjuma,De la Guettir FC,Mister,8.6211,4,55,19,,,,,,,2025-12-10,f92a629d5d95e6eeb9c3d2f3c7c313bc
-bonificacion,quiniela,,,,,,,,,Chamacónicos,0.7,1º,7,,,2025-12-10,
-bonificacion,quiniela,,,,,,,,,Dani,0.5,2º,5,,,2025-12-10,
-bonificacion,quiniela,,,,,,,,,De la Guettir FC,0.5,3º,5,,,2025-12-10,
-bonificacion,quiniela,,,,,,,,,Los marinero,0.4,4º,4,,,2025-12-10,
-bonificacion,quiniela,,,,,,,,,Maldinillo 💥,0.4,5º,4,,,2025-12-10,
-bonificacion,quiniela,,,,,,,,,Jotabetrbb,,6º,0,,,2025-12-10,
-bonificacion,quiniela,,,,,,,,,Juanba,,7º,0,,,2025-12-10,
-bonificacion,quiniela,,,,,,,,,Libre,,8º,0,,,2025-12-10,
-bonificacion,quiniela,,,,,,,,,MuchaSalsa,,9º,0,,,2025-12-10,
-bonificacion,clasificacion,,,,,,,,,Jotabetrbb,1.87,1,,56,,2025-12-10,
-bonificacion,clasificacion,,,,,,,,,Los marinero,1.5,2,,45,,2025-12-10,
-bonificacion,clasificacion,,,,,,,,,Dani,1.73,3,,44,,2025-12-10,
-bonificacion,clasificacion,,,,,,,,,De la Guettir FC,1.85,4,,40,,2025-12-10,
-bonificacion,clasificacion,,,,,,,,,Maldinillo 💥,1.87,5,,36,,2025-12-10,
-bonificacion,clasificacion,,,,,,,,,Juanba,2.09,6,,32,,2025-12-10,
-bonificacion,clasificacion,,,,,,,,,MuchaSalsa,1.84,7,,22,,2025-12-10,
-bonificacion,clasificacion,,,,,,,,,Libre,2.02,8,,21,,2025-12-10,
-bonificacion,clasificacion,,,,,,,,,Chamacónicos,2.16,9,,18,,2025-12-10,
+transfer,mercado,,Sofyan Amrabat,Los marinero,Mister,10.16969,3.0,45.0,4.0,,,,,,,2025-12-10,a309ddc07d8d110c1e567d4a89bfdecc
 marks,start_mercado,,,,,,,,,,,,,,,2025-12-10,
-transfer,mercado,,Sofyan Amrabat,Los marinero,Mister,10.16969,3,45,4,,,,,,,2025-12-10,a309ddc07d8d110c1e567d4a89bfdecc
+transfer,mercado,,Thierry Correia,Los marinero,Mister,1.016,2.0,18.0,19.0,,,,,,,2025-12-10,3ecdd252ad50b969b53789d5b6ef120d
 marks,start_mercado,,,,,,,,,,,,,,,2025-12-10,
-transfer,mercado,,Thierry Correia,Los marinero,Mister,1.016,2,18,19,,,,,,,2025-12-10,3ecdd252ad50b969b53789d5b6ef120d
+transfer,mercado,,Éder Militão,Los marinero,Mister,13.76606,2.0,81.0,15.0,,,,,,,2025-12-10,14d84d9419fe860ff318093e5ec653f8
 marks,start_mercado,,,,,,,,,,,,,,,2025-12-10,
-transfer,mercado,,Éder Militão,Los marinero,Mister,13.76606,2,81,15,,,,,,,2025-12-10,14d84d9419fe860ff318093e5ec653f8
-marks,start_mercado,,,,,,,,,,,,,,,2025-12-10,
-transfer,mercado,,José Giménez,Jotabetrbb,Mister,5.41259,2,32,2,,,,,,,2025-12-10,6124733c5d5d6b5bf6c040c7957dbd12
+transfer,mercado,,José Giménez,Jotabetrbb,Mister,5.41259,2.0,32.0,2.0,,,,,,,2025-12-10,6124733c5d5d6b5bf6c040c7957dbd12
 marks,start_mercado,,,,,,,,,,,,,,,2025-12-10,
 transfer,mercado,,Thibaut Courtois,Dani,Mister,10.59474,1.0,75.0,15.0,,,,,,,2025-12-09,1299eed689448e4147814bd3b6780367
 marks,start_mercado,,,,,,,,,,,,,,,2025-12-09,
