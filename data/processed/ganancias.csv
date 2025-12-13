@@ -1,34 +1,47 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
+marks,start_mercado,,,,,,,,,,,,,,,2025-12-13,
+transfer,mercado,,Aimar Oroz,Mister,Chamacónicos,6.868,3,35,50,,,,,,,2025-12-13,9a21aa74a0351f3996af18b1aa569505
+transfer,Puja,,Aimar Oroz,Mister,Dani,6.74944,3,35,50,,,,,,,2025-12-13,2eebd0789281100acf1da42943224cb8
+transfer,Puja,,Aimar Oroz,Mister,Libre,6.46801,3,35,50,,,,,,,2025-12-13,2011847b71f918c676ec369c82a2359f
+transfer,mercado,,Salomón Rondón,Mister,Maldinillo 💥,1.24626,4,37,1370,,,,,,,2025-12-13,055262fcdf317efba533e6cb99328bbc
+transfer,mercado,,Yáser Asprilla,Mister,Maldinillo 💥,0.24153,3,29,222,,,,,,,2025-12-13,bcf1ca3ea60e5e21ce3167ecd29eee84
+marks,start_jornada,,,,,,,,,,,,,,16.0,2025-12-13,
+marks,start_mercado,,,,,,,,,,,,,,,2025-12-13,
+transfer,mercado,,Abel Bretones,Chamacónicos,Mister,4.642,2,48,50,,,,,,,2025-12-13,1b34b333ad85517ad1293bc67bfb4856
+marks,start_mercado,,,,,,,,,,,,,,,2025-12-13,
+transfer,mercado,,Luis Rioja,Los marinero,Mister,4.94665,3,57,19,,,,,,,2025-12-13,028da08cbcb5f980f1ca37c72e6b29b9
+marks,start_mercado,,,,,,,,,,,,,,,2025-12-13,
+transfer,mercado,,Luiz Felipe,Dani,Mister,0.1584,2,13,14,,,,,,,2025-12-13,12cb8aee2c1de8bf8d7d44ec515d6bb0
+marks,start_mercado,,,,,,,,,,,,,,,2025-12-13,
+transfer,mercado,,Antoine Griezmann,Mister,De la Guettir FC,12.688888,4.0,72.0,2.0,,,,,,,2025-12-12,a7c1715248342c87152656cfb31f06cf
+transfer,Puja,,Antoine Griezmann,Mister,Dani,12.40329,4.0,72.0,2.0,,,,,,,2025-12-12,4f4ab9ca916e861cc1a300077545b95c
+transfer,Puja,,Antoine Griezmann,Mister,Libre,12.13156,4.0,72.0,2.0,,,,,,,2025-12-12,6aff61621f0d34e4a513ef1e0bdfb604
+transfer,mercado,,Iván Romero,Mister,De la Guettir FC,10.8668,4.0,64.0,12.0,,,,,,,2025-12-12,3246537bca0636313c27442a6e9b5611
+transfer,mercado,,Thomas Lemar,Mister,De la Guettir FC,0.344444,3.0,13.0,222.0,,,,,,,2025-12-12,2685a1cff6222d83cd45bef68fe4a909
+transfer,Puja,,Thomas Lemar,Mister,Chamacónicos,0.233,3.0,13.0,222.0,,,,,,,2025-12-12,f625701c3b24a70ab4ad62ed5b881e5b
+transfer,mercado,,Nacho Vidal,Mister,Los marinero,1.628,2.0,31.0,1370.0,,,,,,,2025-12-12,808d2cffb2ec350ef30914ee184c7e54
+transfer,Puja,,Nacho Vidal,Mister,Dani,1.26805,2.0,31.0,1370.0,,,,,,,2025-12-12,8b5f8668661714743cb5870d5447916a
+transfer,Puja,,Nacho Vidal,Mister,Libre,1.108,2.0,31.0,1370.0,,,,,,,2025-12-12,e5b2e10ea453710c99c3c225ed14e979
+transfer,mercado,,Thibaut Courtois,Mister,Dani,10.59475,1.0,75.0,15.0,,,,,,,2025-12-12,33ece14d8c23980a0faab6dbf87bf083
+transfer,mercado,,Nahuel Molina,Mister,Dani,1.40124,2.0,26.0,2.0,,,,,,,2025-12-12,48432ecdf21bd8a0e367b0850edcad35
+transfer,Puja,,Nahuel Molina,Mister,De la Guettir FC,1.225,2.0,26.0,2.0,,,,,,,2025-12-12,4fbf7d1d83dc8177a8c5e6ed3b960dd9
+transfer,Puja,,Nahuel Molina,Mister,Libre,0.95,2.0,26.0,2.0,,,,,,,2025-12-12,6c4188f5ef0cac5b8b42ca9b75e2d679
+transfer,mercado,,José Copete,Mister,Dani,1.23729,2.0,29.0,19.0,,,,,,,2025-12-12,8fdba6f1b07b90d1fbe3e20b18bc4292
+transfer,mercado,,Dani Raba,Mister,Dani,0.1688,4.0,22.0,19.0,,,,,,,2025-12-12,19646bc407082ca6b529eb942bab3785
+transfer,Puja,,Dani Raba,Mister,Chamacónicos,0.161,4.0,22.0,19.0,,,,,,,2025-12-12,df651483c5c8f69db0a025284daa42e6
+transfer,mercado,,Diego Morcillo,Mister,Dani,0.1675,4.0,1.0,48.0,,,,,,,2025-12-12,36601626bf23799ddce98201a7819a12
 marks,start_mercado,,,,,,,,,,,,,,,2025-12-12,
-transfer,mercado,,Antoine Griezmann,Mister,De la Guettir FC,12.688888,4,72,2,,,,,,,2025-12-12,a7c1715248342c87152656cfb31f06cf
-transfer,Puja,,Antoine Griezmann,Mister,Dani,12.40329,4,72,2,,,,,,,2025-12-12,4f4ab9ca916e861cc1a300077545b95c
-transfer,Puja,,Antoine Griezmann,Mister,Libre,12.13156,4,72,2,,,,,,,2025-12-12,6aff61621f0d34e4a513ef1e0bdfb604
-transfer,mercado,,Iván Romero,Mister,De la Guettir FC,10.8668,4,64,12,,,,,,,2025-12-12,3246537bca0636313c27442a6e9b5611
-transfer,mercado,,Thomas Lemar,Mister,De la Guettir FC,0.344444,3,13,222,,,,,,,2025-12-12,2685a1cff6222d83cd45bef68fe4a909
-transfer,Puja,,Thomas Lemar,Mister,Chamacónicos,0.233,3,13,222,,,,,,,2025-12-12,f625701c3b24a70ab4ad62ed5b881e5b
-transfer,mercado,,Nacho Vidal,Mister,Los marinero,1.628,2,31,1370,,,,,,,2025-12-12,808d2cffb2ec350ef30914ee184c7e54
-transfer,Puja,,Nacho Vidal,Mister,Dani,1.26805,2,31,1370,,,,,,,2025-12-12,8b5f8668661714743cb5870d5447916a
-transfer,Puja,,Nacho Vidal,Mister,Libre,1.108,2,31,1370,,,,,,,2025-12-12,e5b2e10ea453710c99c3c225ed14e979
-transfer,mercado,,Thibaut Courtois,Mister,Dani,10.59475,1,75,15,,,,,,,2025-12-12,33ece14d8c23980a0faab6dbf87bf083
-transfer,mercado,,Nahuel Molina,Mister,Dani,1.40124,2,26,2,,,,,,,2025-12-12,48432ecdf21bd8a0e367b0850edcad35
-transfer,Puja,,Nahuel Molina,Mister,De la Guettir FC,1.225,2,26,2,,,,,,,2025-12-12,4fbf7d1d83dc8177a8c5e6ed3b960dd9
-transfer,Puja,,Nahuel Molina,Mister,Libre,0.95,2,26,2,,,,,,,2025-12-12,6c4188f5ef0cac5b8b42ca9b75e2d679
-transfer,mercado,,José Copete,Mister,Dani,1.23729,2,29,19,,,,,,,2025-12-12,8fdba6f1b07b90d1fbe3e20b18bc4292
-transfer,mercado,,Dani Raba,Mister,Dani,0.1688,4,22,19,,,,,,,2025-12-12,19646bc407082ca6b529eb942bab3785
-transfer,Puja,,Dani Raba,Mister,Chamacónicos,0.161,4,22,19,,,,,,,2025-12-12,df651483c5c8f69db0a025284daa42e6
-transfer,mercado,,Diego Morcillo,Mister,Dani,0.1675,4,1,48,,,,,,,2025-12-12,36601626bf23799ddce98201a7819a12
+transfer,mercado,,Arnau Martínez,Maldinillo 💥,Mister,4.01472,2.0,47.0,222.0,,,,,,,2025-12-12,62bf5df4aac9614b2c57c80f24e918ad
 marks,start_mercado,,,,,,,,,,,,,,,2025-12-12,
-transfer,mercado,,Arnau Martínez,Maldinillo 💥,Mister,4.01472,2,47,222,,,,,,,2025-12-12,62bf5df4aac9614b2c57c80f24e918ad
+transfer,acuerdo,,Alexander Sørloth,Maldinillo 💥,Dani,6.75,4.0,42.0,2.0,,,,,,,2025-12-12,42ad4ef53caad36ecf85300cc13cc3df
 marks,start_mercado,,,,,,,,,,,,,,,2025-12-12,
-transfer,acuerdo,,Alexander Sørloth,Maldinillo 💥,Dani,6.75,4,42,2,,,,,,,2025-12-12,42ad4ef53caad36ecf85300cc13cc3df
+transfer,clausula,,Cucho Hernández,Dani,Chamacónicos,22.8225,4.0,88.0,4.0,,,,,,,2025-12-12,84451475dcc0f0fd7b9bda3107116787
 marks,start_mercado,,,,,,,,,,,,,,,2025-12-12,
-transfer,clausula,,Cucho Hernández,Dani,Chamacónicos,22.8225,4,88,4,,,,,,,2025-12-12,84451475dcc0f0fd7b9bda3107116787
+transfer,mercado,,César Tárrega,Libre,Mister,5.36865,2.0,49.0,19.0,,,,,,,2025-12-12,63e99e4783636f6743e2ade7c2f6973a
 marks,start_mercado,,,,,,,,,,,,,,,2025-12-12,
-transfer,mercado,,César Tárrega,Libre,Mister,5.36865,2,49,19,,,,,,,2025-12-12,63e99e4783636f6743e2ade7c2f6973a
+transfer,mercado,,José Ángel Carmona,Jotabetrbb,Mister,4.51268,2.0,52.0,17.0,,,,,,,2025-12-12,720ce5638d89effd6e05c1569d3c9db1
 marks,start_mercado,,,,,,,,,,,,,,,2025-12-12,
-transfer,mercado,,José Ángel Carmona,Jotabetrbb,Mister,4.51268,2,52,17,,,,,,,2025-12-12,720ce5638d89effd6e05c1569d3c9db1
-marks,start_mercado,,,,,,,,,,,,,,,2025-12-12,
-transfer,mercado,,Dakonam Djené,Jotabetrbb,Mister,4.3533,2,47,9,,,,,,,2025-12-12,a4ab24740954bd318a4f2303808dd111
+transfer,mercado,,Dakonam Djené,Jotabetrbb,Mister,4.3533,2.0,47.0,9.0,,,,,,,2025-12-12,a4ab24740954bd318a4f2303808dd111
 marks,start_mercado,,,,,,,,,,,,,,,2025-12-12,
 transfer,mercado,,Gonçalo Guedes,Los marinero,Mister,6.0564,4.0,44.0,16.0,,,,,,,2025-12-11,57b5c9a41d1cb78f7263bbc971e0169e
 marks,start_mercado,,,,,,,,,,,,,,,2025-12-11,
