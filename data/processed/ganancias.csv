@@ -1,17 +1,30 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
+marks,start_mercado,,,,,,,,,,,,,,,2025-12-15,
+transfer,mercado,,Marash Kumbulla,Chamacónicos,Mister,0.32448,2,10,408,,,,,,,2025-12-15,2ad6052cef857d1c0e49be91d4383661
+marks,start_mercado,,,,,,,,,,,,,,,2025-12-15,
+transfer,mercado,,Raúl Asencio,Mister,Chamacónicos,5.941,2,41,15,,,,,,,2025-12-15,3a23a5bfcf68bc000404805d16a65274
+transfer,Puja,,Raúl Asencio,Mister,Dani,5.75582,2,41,15,,,,,,,2025-12-15,a66c9431de238f2792c2c76eb6c556bf
+transfer,mercado,,Eduardo Camavinga,Mister,Dani,9.97537,3,44,15,,,,,,,2025-12-15,41a672408010f706ac75e414e7b35cdf
+transfer,mercado,,Martin Valjent,Mister,Dani,3.12095,2,47,408,,,,,,,2025-12-15,e5de09d7d6c389d73293e0e106c6c533
+transfer,mercado,,Marc Bernal,Mister,Maldinillo 💥,0.62476,3,15,3,,,,,,,2025-12-15,1e36e28132b3750bc4a26c0c92fbc131
+transfer,Puja,,Marc Bernal,Mister,Los marinero,0.61302,3,15,3,,,,,,,2025-12-15,3d047de6223c583434616a8721f213a8
+marks,start_mercado,,,,,,,,,,,,,,,2025-12-15,
+transfer,mercado,,Beñat Turrientes,Maldinillo 💥,Mister,0.1648,3,25,16,,,,,,,2025-12-15,a55a0e9e00b52d35d8c88cec26999492
+marks,start_mercado,,,,,,,,,,,,,,,2025-12-15,
+transfer,mercado,,Salomón Rondón,Maldinillo 💥,Mister,1.20848,4,37,1370,,,,,,,2025-12-15,911a78af89b30865f8ca6d5da35dabf5
+marks,start_mercado,,,,,,,,,,,,,,,2025-12-15,
+transfer,mercado,,Omar El Hilali,Dani,Mister,5.28768,2.0,60.0,8.0,,,,,,,2025-12-14,b8785eb21814d3c0cd6a859afd6d6857
 marks,start_mercado,,,,,,,,,,,,,,,2025-12-14,
-transfer,mercado,,Omar El Hilali,Dani,Mister,5.28768,2,60,8,,,,,,,2025-12-14,b8785eb21814d3c0cd6a859afd6d6857
+transfer,mercado,,Lucas Torró,Mister,Chamacónicos,3.128,3.0,53.0,50.0,,,,,,,2025-12-14,a88bf3cf95a3c0649a28fea6b4aef86d
+transfer,mercado,,Javi Rueda,Mister,Chamacónicos,2.683,2.0,46.0,5.0,,,,,,,2025-12-14,1fdf1d8c400fd94a7187be468df92627
+transfer,mercado,,Alberto Moleiro,Mister,Dani,19.0769,3.0,91.0,20.0,,,,,,,2025-12-14,16e44b9307234db70c87aa5b010e021e
+transfer,Puja,,Alberto Moleiro,Mister,Los marinero,16.731,3.0,91.0,20.0,,,,,,,2025-12-14,51577eff95b6d0621bcc1156abf2385b
+transfer,Puja,,Alberto Moleiro,Mister,Maldinillo 💥,16.18054,3.0,91.0,20.0,,,,,,,2025-12-14,ffb66b5eb90680470fd9b989321022f8
+transfer,Puja,,Alberto Moleiro,Mister,Libre,15.17405,3.0,91.0,20.0,,,,,,,2025-12-14,7c7b26c3f72ee1362c2848cbcb719e46
+transfer,Puja,,Alberto Moleiro,Mister,Chamacónicos,14.333333,3.0,91.0,20.0,,,,,,,2025-12-14,6dee86448f72cc3975a454c6a61b87b0
+transfer,mercado,,Fran García,Mister,Maldinillo 💥,0.16002,2.0,5.0,15.0,,,,,,,2025-12-14,abb91bb8e6ac4e790cb2060391c58dc2
 marks,start_mercado,,,,,,,,,,,,,,,2025-12-14,
-transfer,mercado,,Lucas Torró,Mister,Chamacónicos,3.128,3,53,50,,,,,,,2025-12-14,a88bf3cf95a3c0649a28fea6b4aef86d
-transfer,mercado,,Javi Rueda,Mister,Chamacónicos,2.683,2,46,5,,,,,,,2025-12-14,1fdf1d8c400fd94a7187be468df92627
-transfer,mercado,,Alberto Moleiro,Mister,Dani,19.0769,3,91,20,,,,,,,2025-12-14,16e44b9307234db70c87aa5b010e021e
-transfer,Puja,,Alberto Moleiro,Mister,Los marinero,16.731,3,91,20,,,,,,,2025-12-14,51577eff95b6d0621bcc1156abf2385b
-transfer,Puja,,Alberto Moleiro,Mister,Maldinillo 💥,16.18054,3,91,20,,,,,,,2025-12-14,ffb66b5eb90680470fd9b989321022f8
-transfer,Puja,,Alberto Moleiro,Mister,Libre,15.17405,3,91,20,,,,,,,2025-12-14,7c7b26c3f72ee1362c2848cbcb719e46
-transfer,Puja,,Alberto Moleiro,Mister,Chamacónicos,14.333333,3,91,20,,,,,,,2025-12-14,6dee86448f72cc3975a454c6a61b87b0
-transfer,mercado,,Fran García,Mister,Maldinillo 💥,0.16002,2,5,15,,,,,,,2025-12-14,abb91bb8e6ac4e790cb2060391c58dc2
-marks,start_mercado,,,,,,,,,,,,,,,2025-12-14,
-transfer,mercado,,Thibaut Courtois,Dani,Mister,10.89843,1,75,15,,,,,,,2025-12-14,c3c6c28894b927baf8a858544abc3f6d
+transfer,mercado,,Thibaut Courtois,Dani,Mister,10.89843,1.0,75.0,15.0,,,,,,,2025-12-14,c3c6c28894b927baf8a858544abc3f6d
 marks,start_mercado,,,,,,,,,,,,,,,2025-12-14,
 transfer,mercado,,Aimar Oroz,Mister,Chamacónicos,6.868,3.0,35.0,50.0,,,,,,,2025-12-13,9a21aa74a0351f3996af18b1aa569505
 transfer,Puja,,Aimar Oroz,Mister,Dani,6.74944,3.0,35.0,50.0,,,,,,,2025-12-13,2eebd0789281100acf1da42943224cb8
