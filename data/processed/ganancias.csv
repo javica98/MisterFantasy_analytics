@@ -1,17 +1,26 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
+marks,start_mercado,,,,,,,,,,,,,,,2025-12-16,
+transfer,mercado,,Manu Sánchez,Mister,Chamacónicos,4.3,2,60,12,,,,,,,2025-12-16,c4ce154a9db667ec4edc9c17075e0621
+transfer,mercado,,Carl Starfelt,Mister,Chamacónicos,1.588,2,23,5,,,,,,,2025-12-16,bbc3d6b3043b07866a77107262bf59d7
+transfer,Puja,,Carl Starfelt,Mister,Dani,1.42349,2,23,5,,,,,,,2025-12-16,0b3a0ab386fdcfdbd9bd488151b07ead
+transfer,Puja,,Carl Starfelt,Mister,Los marinero,1.258,2,23,5,,,,,,,2025-12-16,8cc08ec65d4cbc28bb5f2e3aacc748de
+transfer,mercado,,Fran Pérez,Mister,Chamacónicos,0.656,3,39,14,,,,,,,2025-12-16,e2d06f3dd427460b51bf739f6e3138aa
+transfer,mercado,,Hector Fort,Mister,Dani,1.32181,2,32,23,,,,,,,2025-12-16,3d3e8aaa81294692d1e6546bc91b5c42
+marks,start_mercado,,,,,,,,,,,,,,,2025-12-16,
+transfer,mercado,,Diego Morcillo,Dani,Mister,0.1536,4,1,48,,,,,,,2025-12-16,93222e1ef8352300629ba9a9a464e9ee
+marks,start_mercado,,,,,,,,,,,,,,,2025-12-16,
+transfer,mercado,,Marash Kumbulla,Chamacónicos,Mister,0.32448,2.0,10.0,408.0,,,,,,,2025-12-15,2ad6052cef857d1c0e49be91d4383661
 marks,start_mercado,,,,,,,,,,,,,,,2025-12-15,
-transfer,mercado,,Marash Kumbulla,Chamacónicos,Mister,0.32448,2,10,408,,,,,,,2025-12-15,2ad6052cef857d1c0e49be91d4383661
+transfer,mercado,,Raúl Asencio,Mister,Chamacónicos,5.941,2.0,41.0,15.0,,,,,,,2025-12-15,3a23a5bfcf68bc000404805d16a65274
+transfer,Puja,,Raúl Asencio,Mister,Dani,5.75582,2.0,41.0,15.0,,,,,,,2025-12-15,a66c9431de238f2792c2c76eb6c556bf
+transfer,mercado,,Eduardo Camavinga,Mister,Dani,9.97537,3.0,44.0,15.0,,,,,,,2025-12-15,41a672408010f706ac75e414e7b35cdf
+transfer,mercado,,Martin Valjent,Mister,Dani,3.12095,2.0,47.0,408.0,,,,,,,2025-12-15,e5de09d7d6c389d73293e0e106c6c533
+transfer,mercado,,Marc Bernal,Mister,Maldinillo 💥,0.62476,3.0,15.0,3.0,,,,,,,2025-12-15,1e36e28132b3750bc4a26c0c92fbc131
+transfer,Puja,,Marc Bernal,Mister,Los marinero,0.61302,3.0,15.0,3.0,,,,,,,2025-12-15,3d047de6223c583434616a8721f213a8
 marks,start_mercado,,,,,,,,,,,,,,,2025-12-15,
-transfer,mercado,,Raúl Asencio,Mister,Chamacónicos,5.941,2,41,15,,,,,,,2025-12-15,3a23a5bfcf68bc000404805d16a65274
-transfer,Puja,,Raúl Asencio,Mister,Dani,5.75582,2,41,15,,,,,,,2025-12-15,a66c9431de238f2792c2c76eb6c556bf
-transfer,mercado,,Eduardo Camavinga,Mister,Dani,9.97537,3,44,15,,,,,,,2025-12-15,41a672408010f706ac75e414e7b35cdf
-transfer,mercado,,Martin Valjent,Mister,Dani,3.12095,2,47,408,,,,,,,2025-12-15,e5de09d7d6c389d73293e0e106c6c533
-transfer,mercado,,Marc Bernal,Mister,Maldinillo 💥,0.62476,3,15,3,,,,,,,2025-12-15,1e36e28132b3750bc4a26c0c92fbc131
-transfer,Puja,,Marc Bernal,Mister,Los marinero,0.61302,3,15,3,,,,,,,2025-12-15,3d047de6223c583434616a8721f213a8
+transfer,mercado,,Beñat Turrientes,Maldinillo 💥,Mister,0.1648,3.0,25.0,16.0,,,,,,,2025-12-15,a55a0e9e00b52d35d8c88cec26999492
 marks,start_mercado,,,,,,,,,,,,,,,2025-12-15,
-transfer,mercado,,Beñat Turrientes,Maldinillo 💥,Mister,0.1648,3,25,16,,,,,,,2025-12-15,a55a0e9e00b52d35d8c88cec26999492
-marks,start_mercado,,,,,,,,,,,,,,,2025-12-15,
-transfer,mercado,,Salomón Rondón,Maldinillo 💥,Mister,1.20848,4,37,1370,,,,,,,2025-12-15,911a78af89b30865f8ca6d5da35dabf5
+transfer,mercado,,Salomón Rondón,Maldinillo 💥,Mister,1.20848,4.0,37.0,1370.0,,,,,,,2025-12-15,911a78af89b30865f8ca6d5da35dabf5
 marks,start_mercado,,,,,,,,,,,,,,,2025-12-15,
 transfer,mercado,,Omar El Hilali,Dani,Mister,5.28768,2.0,60.0,8.0,,,,,,,2025-12-14,b8785eb21814d3c0cd6a859afd6d6857
 marks,start_mercado,,,,,,,,,,,,,,,2025-12-14,
