@@ -1,30 +1,41 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
+marks,start_mercado,,,,,,,,,,,,,,,2025-12-18,
+transfer,mercado,,Antonio Sivera,Mister,Libre,5.797,1,71,48,,,,,,,2025-12-18,b9fe4f4d0024402c5de5d49371e84a49
+transfer,mercado,,Arnau Martínez,Mister,Libre,5.650505,2,50,222,,,,,,,2025-12-18,4b56267f24bbc9e781e1566d1eedbcce
+transfer,Puja,,Arnau Martínez,Mister,Dani,5.10916,2,50,222,,,,,,,2025-12-18,57e553e6e14ba0939855eadba3a501ad
+transfer,mercado,,Salomón Rondón,Mister,Dani,1.0423,4,37,1370,,,,,,,2025-12-18,4c7f17832307150b1b89e6a540a44e21
+marks,start_mercado,,,,,,,,,,,,,,,2025-12-18,
+transfer,mercado,,Carlos Álvarez,De la Guettir FC,Mister,8.27022,3,65,12,,,,,,,2025-12-18,17b15d92aa869a3cbfe766358b6e7448
+marks,start_mercado,,,,,,,,,,,,,,,2025-12-18,
+transfer,mercado,,Nacho Vidal,Los marinero,Mister,1.04333,2,31,1370,,,,,,,2025-12-18,08c22518c63f82c4f0b1faab73360b90
+marks,start_mercado,,,,,,,,,,,,,,,2025-12-18,
+transfer,clausula,,Hector Fort,Dani,Los marinero,2.0265,2,32,23,,,,,,,2025-12-18,5119dd9aff15c1c16ffe01dd9747be7e
+marks,start_mercado,,,,,,,,,,,,,,,2025-12-18,
+transfer,mercado,,Óscar Mingueza,Mister,Dani,10.5174,2.0,62.0,5.0,,,,,,,2025-12-17,bb8c8d885ebe17acb594337c678e43c3
+transfer,Puja,,Óscar Mingueza,Mister,Libre,9.94136,2.0,62.0,5.0,,,,,,,2025-12-17,1a105f832ca33f572d600c264a4734a7
 marks,start_mercado,,,,,,,,,,,,,,,2025-12-17,
-transfer,mercado,,Óscar Mingueza,Mister,Dani,10.5174,2,62,5,,,,,,,2025-12-17,bb8c8d885ebe17acb594337c678e43c3
-transfer,Puja,,Óscar Mingueza,Mister,Libre,9.94136,2,62,5,,,,,,,2025-12-17,1a105f832ca33f572d600c264a4734a7
+transfer,mercado,,Frenkie De Jong,Dani,Mister,15.53032,3.0,57.0,3.0,,,,,,,2025-12-17,0de3c8ff88fc593207a402b9c048367b
 marks,start_mercado,,,,,,,,,,,,,,,2025-12-17,
-transfer,mercado,,Frenkie De Jong,Dani,Mister,15.53032,3,57,3,,,,,,,2025-12-17,0de3c8ff88fc593207a402b9c048367b
+transfer,mercado,,Azzedine Ounahi,Chamacónicos,Mister,10.90976,3.0,74.0,222.0,,,,,,,2025-12-17,6f6c4efede5cf79163a89b03da587ee1
 marks,start_mercado,,,,,,,,,,,,,,,2025-12-17,
-transfer,mercado,,Azzedine Ounahi,Chamacónicos,Mister,10.90976,3,74,222,,,,,,,2025-12-17,6f6c4efede5cf79163a89b03da587ee1
+transfer,mercado,,Eduardo Camavinga,Dani,Mister,10.06842,3.0,44.0,15.0,,,,,,,2025-12-17,47011a5f48197dfc49d1d8a8e534e6db
 marks,start_mercado,,,,,,,,,,,,,,,2025-12-17,
-transfer,mercado,,Eduardo Camavinga,Dani,Mister,10.06842,3,44,15,,,,,,,2025-12-17,47011a5f48197dfc49d1d8a8e534e6db
+transfer,mercado,,César Azpilicueta,De la Guettir FC,Mister,1.765,2.0,34.0,17.0,,,,,,,2025-12-17,94ff7261dba571c7f7411101605fe0f8
 marks,start_mercado,,,,,,,,,,,,,,,2025-12-17,
-transfer,mercado,,César Azpilicueta,De la Guettir FC,Mister,1.765,2,34,17,,,,,,,2025-12-17,94ff7261dba571c7f7411101605fe0f8
+transfer,mercado,,Giovani Lo Celso,Chamacónicos,Mister,14.5704,3.0,64.0,4.0,,,,,,,2025-12-17,6e6a1485bb386b04d2de17ebd1f8d799
 marks,start_mercado,,,,,,,,,,,,,,,2025-12-17,
-transfer,mercado,,Giovani Lo Celso,Chamacónicos,Mister,14.5704,3,64,4,,,,,,,2025-12-17,6e6a1485bb386b04d2de17ebd1f8d799
+transfer,mercado,,Vladyslav Vanat,De la Guettir FC,Mister,3.93238,4.0,44.0,222.0,,,,,,,2025-12-17,0a0eb64a60e96690df4542bfa84897e3
 marks,start_mercado,,,,,,,,,,,,,,,2025-12-17,
-transfer,mercado,,Vladyslav Vanat,De la Guettir FC,Mister,3.93238,4,44,222,,,,,,,2025-12-17,0a0eb64a60e96690df4542bfa84897e3
-marks,start_mercado,,,,,,,,,,,,,,,2025-12-17,
-transfer,mercado,,Andrei Rațiu,Dani,Mister,10.57875,2,70,14,,,,,,,2025-12-17,901fae6213a924c12165aa7d066b9800
-bonificacion,clasificacion,,,,,,,,,Chamacónicos,1.14,1,,57,,2025-12-17,
-bonificacion,clasificacion,,,,,,,,,MuchaSalsa,0.86,2,,43,,2025-12-17,
-bonificacion,clasificacion,,,,,,,,,Los marinero,0.74,3,,37,,2025-12-17,
-bonificacion,clasificacion,,,,,,,,,Dani,0.7,4,,35,,2025-12-17,
-bonificacion,clasificacion,,,,,,,,,Jotabetrbb,0.7,5,,35,,2025-12-17,
-bonificacion,clasificacion,,,,,,,,,Maldinillo 💥,0.64,6,,32,,2025-12-17,
-bonificacion,clasificacion,,,,,,,,,De la Guettir FC,0.6,7,,30,,2025-12-17,
-bonificacion,clasificacion,,,,,,,,,Libre,0.52,8,,26,,2025-12-17,
-bonificacion,clasificacion,,,,,,,,,Juanba,0.3,9,,15,,2025-12-17,
+transfer,mercado,,Andrei Rațiu,Dani,Mister,10.57875,2.0,70.0,14.0,,,,,,,2025-12-17,901fae6213a924c12165aa7d066b9800
+bonificacion,clasificacion,,,,,,,,,Chamacónicos,1.14,1,,57.0,,2025-12-17,
+bonificacion,clasificacion,,,,,,,,,MuchaSalsa,0.86,2,,43.0,,2025-12-17,
+bonificacion,clasificacion,,,,,,,,,Los marinero,0.74,3,,37.0,,2025-12-17,
+bonificacion,clasificacion,,,,,,,,,Dani,0.7,4,,35.0,,2025-12-17,
+bonificacion,clasificacion,,,,,,,,,Jotabetrbb,0.7,5,,35.0,,2025-12-17,
+bonificacion,clasificacion,,,,,,,,,Maldinillo 💥,0.64,6,,32.0,,2025-12-17,
+bonificacion,clasificacion,,,,,,,,,De la Guettir FC,0.6,7,,30.0,,2025-12-17,
+bonificacion,clasificacion,,,,,,,,,Libre,0.52,8,,26.0,,2025-12-17,
+bonificacion,clasificacion,,,,,,,,,Juanba,0.3,9,,15.0,,2025-12-17,
 marks,start_mercado,,,,,,,,,,,,,,,2025-12-17,
 transfer,mercado,,Manu Sánchez,Mister,Chamacónicos,4.3,2.0,60.0,12.0,,,,,,,2025-12-16,c4ce154a9db667ec4edc9c17075e0621
 transfer,mercado,,Carl Starfelt,Mister,Chamacónicos,1.588,2.0,23.0,5.0,,,,,,,2025-12-16,bbc3d6b3043b07866a77107262bf59d7
