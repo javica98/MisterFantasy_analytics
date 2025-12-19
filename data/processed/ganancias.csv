@@ -1,15 +1,29 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
+marks,start_mercado,,,,,,,,,,,,,,,2025-12-19,
+transfer,mercado,,Filip Ugrinic,Mister,Jotabetrbb,0.5,3,20,19,,,,,,,2025-12-19,20d85640707048e00044bc072bfd95d9
+marks,start_mercado,,,,,,,,,,,,,,,2025-12-19,
+transfer,acuerdo,,Iván Romero,De la Guettir FC,Maldinillo 💥,9.6,4,64,12,,,,,,,2025-12-19,7af27d833c38ac1d04c109c22b9d3855
+marks,start_mercado,,,,,,,,,,,,,,,2025-12-19,
+transfer,clausula,,Ayoze Pérez,Maldinillo 💥,Jotabetrbb,23.403315,4,34,20,,,,,,,2025-12-19,d9fb80e0685b484cf551dd89015d01eb
+marks,start_mercado,,,,,,,,,,,,,,,2025-12-19,
+transfer,clausula,,Ferran Torres,Jotabetrbb,De la Guettir FC,32.186,4,119,3,,,,,,,2025-12-19,ccd2fa3c46f132e6f590c77be4886741
+marks,start_mercado,,,,,,,,,,,,,,,2025-12-19,
+transfer,mercado,,Lucas Torró,Chamacónicos,Mister,3.05898,3,53,50,,,,,,,2025-12-19,693d9782fdf8bac2d38a3fcdf8c102fe
+marks,start_mercado,,,,,,,,,,,,,,,2025-12-19,
+transfer,mercado,,Raúl Asencio,Chamacónicos,Mister,5.93981,2,41,15,,,,,,,2025-12-19,82af2b1c307039b748812811a9757cdc
+marks,start_mercado,,,,,,,,,,,,,,,2025-12-19,
+transfer,mercado,,Dani Raba,Dani,Mister,0.1632,4,22,19,,,,,,,2025-12-19,ad019402c5cd336b37f70d9bb0151086
+marks,start_mercado,,,,,,,,,,,,,,,2025-12-19,
+transfer,mercado,,Antonio Sivera,Mister,Libre,5.797,1.0,71.0,48.0,,,,,,,2025-12-18,b9fe4f4d0024402c5de5d49371e84a49
+transfer,mercado,,Arnau Martínez,Mister,Libre,5.650505,2.0,50.0,222.0,,,,,,,2025-12-18,4b56267f24bbc9e781e1566d1eedbcce
+transfer,Puja,,Arnau Martínez,Mister,Dani,5.10916,2.0,50.0,222.0,,,,,,,2025-12-18,57e553e6e14ba0939855eadba3a501ad
+transfer,mercado,,Salomón Rondón,Mister,Dani,1.0423,4.0,37.0,1370.0,,,,,,,2025-12-18,4c7f17832307150b1b89e6a540a44e21
 marks,start_mercado,,,,,,,,,,,,,,,2025-12-18,
-transfer,mercado,,Antonio Sivera,Mister,Libre,5.797,1,71,48,,,,,,,2025-12-18,b9fe4f4d0024402c5de5d49371e84a49
-transfer,mercado,,Arnau Martínez,Mister,Libre,5.650505,2,50,222,,,,,,,2025-12-18,4b56267f24bbc9e781e1566d1eedbcce
-transfer,Puja,,Arnau Martínez,Mister,Dani,5.10916,2,50,222,,,,,,,2025-12-18,57e553e6e14ba0939855eadba3a501ad
-transfer,mercado,,Salomón Rondón,Mister,Dani,1.0423,4,37,1370,,,,,,,2025-12-18,4c7f17832307150b1b89e6a540a44e21
+transfer,mercado,,Carlos Álvarez,De la Guettir FC,Mister,8.27022,3.0,65.0,12.0,,,,,,,2025-12-18,17b15d92aa869a3cbfe766358b6e7448
 marks,start_mercado,,,,,,,,,,,,,,,2025-12-18,
-transfer,mercado,,Carlos Álvarez,De la Guettir FC,Mister,8.27022,3,65,12,,,,,,,2025-12-18,17b15d92aa869a3cbfe766358b6e7448
+transfer,mercado,,Nacho Vidal,Los marinero,Mister,1.04333,2.0,31.0,1370.0,,,,,,,2025-12-18,08c22518c63f82c4f0b1faab73360b90
 marks,start_mercado,,,,,,,,,,,,,,,2025-12-18,
-transfer,mercado,,Nacho Vidal,Los marinero,Mister,1.04333,2,31,1370,,,,,,,2025-12-18,08c22518c63f82c4f0b1faab73360b90
-marks,start_mercado,,,,,,,,,,,,,,,2025-12-18,
-transfer,clausula,,Hector Fort,Dani,Los marinero,2.0265,2,32,23,,,,,,,2025-12-18,5119dd9aff15c1c16ffe01dd9747be7e
+transfer,clausula,,Hector Fort,Dani,Los marinero,2.0265,2.0,32.0,23.0,,,,,,,2025-12-18,5119dd9aff15c1c16ffe01dd9747be7e
 marks,start_mercado,,,,,,,,,,,,,,,2025-12-18,
 transfer,mercado,,Óscar Mingueza,Mister,Dani,10.5174,2.0,62.0,5.0,,,,,,,2025-12-17,bb8c8d885ebe17acb594337c678e43c3
 transfer,Puja,,Óscar Mingueza,Mister,Libre,9.94136,2.0,62.0,5.0,,,,,,,2025-12-17,1a105f832ca33f572d600c264a4734a7
