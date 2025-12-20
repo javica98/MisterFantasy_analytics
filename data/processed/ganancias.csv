@@ -1,18 +1,30 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
+marks,start_mercado,,,,,,,,,,,,,,,2025-12-20,
+transfer,mercado,,Marko Dmitrović,Mister,Dani,10.03871,1,77,8,,,,,,,2025-12-20,3212d48ad3e9f92b76690822583b9336
+transfer,Puja,,Marko Dmitrović,Mister,Maldinillo 💥,10.0281,1,77,8,,,,,,,2025-12-20,f6ea797de674959c5291de08b048174b
+transfer,mercado,,Thierry Correia,Mister,Dani,1.11941,2,29,19,,,,,,,2025-12-20,65fcc5484555d0aba80ab6be2cf078ed
+transfer,Puja,,Thierry Correia,Mister,Maldinillo 💥,1.05517,2,29,19,,,,,,,2025-12-20,266c91d614369bb67961495bd3d9f4c6
+marks,start_mercado,,,,,,,,,,,,,,,2025-12-20,
+transfer,mercado,,Salomón Rondón,Dani,Mister,1.06708,4,37,1370,,,,,,,2025-12-20,eb81f190b41843457d31078f36b865eb
+marks,start_jornada,,,,,,,,,,,,,,17.0,2025-12-20,
+marks,start_mercado,,,,,,,,,,,,,,,2025-12-20,
+transfer,mercado,,Fran Pérez,Chamacónicos,Mister,0.55045,3,39,14,,,,,,,2025-12-20,52f01cfe106ed6d465f8bd0514adbf0d
+marks,start_mercado,,,,,,,,,,,,,,,2025-12-20,
+transfer,mercado,,David Alaba,Chamacónicos,Mister,0.191,2,6,15,,,,,,,2025-12-20,3a1ec0b56f218781d82a2303ec23586f
+marks,start_mercado,,,,,,,,,,,,,,,2025-12-20,
+transfer,mercado,,Filip Ugrinic,Mister,Jotabetrbb,0.5,3.0,20.0,19.0,,,,,,,2025-12-19,20d85640707048e00044bc072bfd95d9
 marks,start_mercado,,,,,,,,,,,,,,,2025-12-19,
-transfer,mercado,,Filip Ugrinic,Mister,Jotabetrbb,0.5,3,20,19,,,,,,,2025-12-19,20d85640707048e00044bc072bfd95d9
+transfer,acuerdo,,Iván Romero,De la Guettir FC,Maldinillo 💥,9.6,4.0,64.0,12.0,,,,,,,2025-12-19,7af27d833c38ac1d04c109c22b9d3855
 marks,start_mercado,,,,,,,,,,,,,,,2025-12-19,
-transfer,acuerdo,,Iván Romero,De la Guettir FC,Maldinillo 💥,9.6,4,64,12,,,,,,,2025-12-19,7af27d833c38ac1d04c109c22b9d3855
+transfer,clausula,,Ayoze Pérez,Maldinillo 💥,Jotabetrbb,23.403315,4.0,34.0,20.0,,,,,,,2025-12-19,d9fb80e0685b484cf551dd89015d01eb
 marks,start_mercado,,,,,,,,,,,,,,,2025-12-19,
-transfer,clausula,,Ayoze Pérez,Maldinillo 💥,Jotabetrbb,23.403315,4,34,20,,,,,,,2025-12-19,d9fb80e0685b484cf551dd89015d01eb
+transfer,clausula,,Ferran Torres,Jotabetrbb,De la Guettir FC,32.186,4.0,119.0,3.0,,,,,,,2025-12-19,ccd2fa3c46f132e6f590c77be4886741
 marks,start_mercado,,,,,,,,,,,,,,,2025-12-19,
-transfer,clausula,,Ferran Torres,Jotabetrbb,De la Guettir FC,32.186,4,119,3,,,,,,,2025-12-19,ccd2fa3c46f132e6f590c77be4886741
+transfer,mercado,,Lucas Torró,Chamacónicos,Mister,3.05898,3.0,53.0,50.0,,,,,,,2025-12-19,693d9782fdf8bac2d38a3fcdf8c102fe
 marks,start_mercado,,,,,,,,,,,,,,,2025-12-19,
-transfer,mercado,,Lucas Torró,Chamacónicos,Mister,3.05898,3,53,50,,,,,,,2025-12-19,693d9782fdf8bac2d38a3fcdf8c102fe
+transfer,mercado,,Raúl Asencio,Chamacónicos,Mister,5.93981,2.0,41.0,15.0,,,,,,,2025-12-19,82af2b1c307039b748812811a9757cdc
 marks,start_mercado,,,,,,,,,,,,,,,2025-12-19,
-transfer,mercado,,Raúl Asencio,Chamacónicos,Mister,5.93981,2,41,15,,,,,,,2025-12-19,82af2b1c307039b748812811a9757cdc
-marks,start_mercado,,,,,,,,,,,,,,,2025-12-19,
-transfer,mercado,,Dani Raba,Dani,Mister,0.1632,4,22,19,,,,,,,2025-12-19,ad019402c5cd336b37f70d9bb0151086
+transfer,mercado,,Dani Raba,Dani,Mister,0.1632,4.0,22.0,19.0,,,,,,,2025-12-19,ad019402c5cd336b37f70d9bb0151086
 marks,start_mercado,,,,,,,,,,,,,,,2025-12-19,
 transfer,mercado,,Antonio Sivera,Mister,Libre,5.797,1.0,71.0,48.0,,,,,,,2025-12-18,b9fe4f4d0024402c5de5d49371e84a49
 transfer,mercado,,Arnau Martínez,Mister,Libre,5.650505,2.0,50.0,222.0,,,,,,,2025-12-18,4b56267f24bbc9e781e1566d1eedbcce
