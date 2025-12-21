@@ -1,16 +1,25 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
+marks,start_mercado,,,,,,,,,,,,,,,2025-12-21,
+transfer,mercado,,Óscar Mingueza,Dani,Mister,10.20706,2,62,5,,,,,,,2025-12-21,89967fc240c3bd5ce38da300e9126993
+marks,start_mercado,,,,,,,,,,,,,,,2025-12-21,
+transfer,mercado,,Marc Aguado,Mister,Libre,2.05391,3,47,23,,,,,,,2025-12-21,ce9d773e2903b3c014987873b0650300
+transfer,mercado,,César Azpilicueta,Mister,Jotabetrbb,1.4,2,34,17,,,,,,,2025-12-21,8e0960ce6bd7aa7d5689e563cc57b523
+marks,start_mercado,,,,,,,,,,,,,,,2025-12-21,
+transfer,mercado,,Alexander Sørloth,Dani,Mister,6.75342,4,45,2,,,,,,,2025-12-21,9a770ef554c9760bc61e2194df281d06
+marks,start_mercado,,,,,,,,,,,,,,,2025-12-21,
+transfer,mercado,,Diego López,Jotabetrbb,Mister,5.40855,3,62,19,,,,,,,2025-12-21,522f5fb9ee078cbbdf8eba9c8bd95412
+marks,start_mercado,,,,,,,,,,,,,,,2025-12-21,
+transfer,mercado,,Marko Dmitrović,Mister,Dani,10.03871,1.0,77.0,8.0,,,,,,,2025-12-20,3212d48ad3e9f92b76690822583b9336
+transfer,Puja,,Marko Dmitrović,Mister,Maldinillo 💥,10.0281,1.0,77.0,8.0,,,,,,,2025-12-20,f6ea797de674959c5291de08b048174b
+transfer,mercado,,Thierry Correia,Mister,Dani,1.11941,2.0,29.0,19.0,,,,,,,2025-12-20,65fcc5484555d0aba80ab6be2cf078ed
+transfer,Puja,,Thierry Correia,Mister,Maldinillo 💥,1.05517,2.0,29.0,19.0,,,,,,,2025-12-20,266c91d614369bb67961495bd3d9f4c6
 marks,start_mercado,,,,,,,,,,,,,,,2025-12-20,
-transfer,mercado,,Marko Dmitrović,Mister,Dani,10.03871,1,77,8,,,,,,,2025-12-20,3212d48ad3e9f92b76690822583b9336
-transfer,Puja,,Marko Dmitrović,Mister,Maldinillo 💥,10.0281,1,77,8,,,,,,,2025-12-20,f6ea797de674959c5291de08b048174b
-transfer,mercado,,Thierry Correia,Mister,Dani,1.11941,2,29,19,,,,,,,2025-12-20,65fcc5484555d0aba80ab6be2cf078ed
-transfer,Puja,,Thierry Correia,Mister,Maldinillo 💥,1.05517,2,29,19,,,,,,,2025-12-20,266c91d614369bb67961495bd3d9f4c6
-marks,start_mercado,,,,,,,,,,,,,,,2025-12-20,
-transfer,mercado,,Salomón Rondón,Dani,Mister,1.06708,4,37,1370,,,,,,,2025-12-20,eb81f190b41843457d31078f36b865eb
+transfer,mercado,,Salomón Rondón,Dani,Mister,1.06708,4.0,37.0,1370.0,,,,,,,2025-12-20,eb81f190b41843457d31078f36b865eb
 marks,start_jornada,,,,,,,,,,,,,,17.0,2025-12-20,
 marks,start_mercado,,,,,,,,,,,,,,,2025-12-20,
-transfer,mercado,,Fran Pérez,Chamacónicos,Mister,0.55045,3,39,14,,,,,,,2025-12-20,52f01cfe106ed6d465f8bd0514adbf0d
+transfer,mercado,,Fran Pérez,Chamacónicos,Mister,0.55045,3.0,39.0,14.0,,,,,,,2025-12-20,52f01cfe106ed6d465f8bd0514adbf0d
 marks,start_mercado,,,,,,,,,,,,,,,2025-12-20,
-transfer,mercado,,David Alaba,Chamacónicos,Mister,0.191,2,6,15,,,,,,,2025-12-20,3a1ec0b56f218781d82a2303ec23586f
+transfer,mercado,,David Alaba,Chamacónicos,Mister,0.191,2.0,6.0,15.0,,,,,,,2025-12-20,3a1ec0b56f218781d82a2303ec23586f
 marks,start_mercado,,,,,,,,,,,,,,,2025-12-20,
 transfer,mercado,,Filip Ugrinic,Mister,Jotabetrbb,0.5,3.0,20.0,19.0,,,,,,,2025-12-19,20d85640707048e00044bc072bfd95d9
 marks,start_mercado,,,,,,,,,,,,,,,2025-12-19,
