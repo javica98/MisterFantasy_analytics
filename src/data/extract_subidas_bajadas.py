@@ -49,7 +49,7 @@ def extraer_subidas_bajadas(html: str) -> pd.DataFrame:
                     logger.debug(f"Error procesando fila de tabla: {row_e}")
 
         df = pd.DataFrame(jugadores)
-        df['variacion'] = df['variacion'] / 1_000
+        df['variacion'] = df['variacion'].astype(float) / 1_000
         logger.info(f"✅ Extraídos {len(df)} jugadores en subidas/bajadas.")
         return df
 

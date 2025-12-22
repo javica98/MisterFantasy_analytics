@@ -100,7 +100,7 @@ def extraer_mercado(html: str) -> pd.DataFrame:
                     "manager": manager,
                     "periodo": periodo,
                     "jugador": jugador,
-                    "precio": float(precio) if precio else None,
+                    "precio": float(precio) / 1_000_000 if precio else None,
                     "posicionJugador": int(pos) if pos else None,
                     "puntosJugador": int(points) if points else None,
                     "equipoLiga": team,
@@ -111,7 +111,6 @@ def extraer_mercado(html: str) -> pd.DataFrame:
             except Exception as inner_e:
                 logger.debug(f"Error procesando jugador: {inner_e}")
 
-        mercado['precio'] = mercado['precio'] / 1_000_000
         logger.info(f"✅ Extraídos {len(mercado)} jugadores del mercado.")
         return pd.DataFrame(mercado)
 
