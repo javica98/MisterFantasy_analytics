@@ -21,7 +21,12 @@ paths:
     notificaciones_jugador: "data/processed/ganancias_jugador.csv"
     clausulas_acuerdos: "data/processed/clausulas_acuerdos.csv"
     test: "data/processed/test.csv"
-
+  pdf:
+    template: "dashboards/templates/monthly_template.pdf"
+    reports: "dashboards/reports/"
+  images:
+    teams_dir: "assets/"
+    default_team: "default.png"
 
 scraper:
   delay: 2

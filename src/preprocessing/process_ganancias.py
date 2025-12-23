@@ -29,6 +29,7 @@ def procesar_ganancias(df: pd.DataFrame) -> pd.DataFrame:
     bool_new_id = False
 
     for _, row in df.iterrows():
+        fecha = row['date']
         if bool_new_id and row["de_equipo"]!="Mister":
             new_id =new_id +1
             bool_new_id = False
@@ -37,6 +38,7 @@ def procesar_ganancias(df: pd.DataFrame) -> pd.DataFrame:
         if subtipo == "start_mercado":
             bool_new_id = True
             registros.append({
+                "fecha":fecha,
                 "id": new_id,
                 "type": tipo,
                 "subtype": subtipo,
@@ -45,6 +47,7 @@ def procesar_ganancias(df: pd.DataFrame) -> pd.DataFrame:
             })
         elif subtipo == "start_jornada":
             registros.append({
+                "fecha":fecha,
                 "id": new_id,
                 "type": tipo,
                 "subtype": subtipo,
@@ -57,6 +60,7 @@ def procesar_ganancias(df: pd.DataFrame) -> pd.DataFrame:
             else:
                 ganancia = 0
             registros.append({
+                "fecha":fecha,
                 "id": new_id,
                 "type": tipo,
                 "subtype": subtipo,
@@ -71,6 +75,7 @@ def procesar_ganancias(df: pd.DataFrame) -> pd.DataFrame:
 
                 if pd.isna(a_equipo):
                     registros.append({
+                        "fecha":fecha,
                         "id": new_id,
                         "type": "bajadaclausula",
                         "equipo": de_equipo,
@@ -82,6 +87,7 @@ def procesar_ganancias(df: pd.DataFrame) -> pd.DataFrame:
                     if subtipo == "Puja":
                         precio = 0
                     registros.append({
+                        "fecha":fecha,
                         "id": new_id,
                         "type": "transfer",
                         "subtype": subtipo,
@@ -91,6 +97,7 @@ def procesar_ganancias(df: pd.DataFrame) -> pd.DataFrame:
                         "ganancias": precio
                     })
                     registros.append({
+                        "fecha":fecha,
                         "id": new_id,
                         "type": "transfer",
                         "subtype": subtipo,
