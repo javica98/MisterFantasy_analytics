@@ -57,3 +57,21 @@ jobs:
           else
             echo "No changes to commit."
           fi
+        # 6️⃣ Commit y push de PDF automáticamente usando PAT
+      - name: Commit and push PDF
+        env:
+          PAT_TOKEN: ${{ secrets.PAT_TOKEN }}
+        run: |
+          git config --global user.email "github-actions@github.com"
+          git config --global user.name "GitHub Actions"
+
+          git remote set-url origin https://x-access-token:${PAT_TOKEN}@github.com/${{ github.repository }}.git
+
+          git add dashboard/reports/*.pdf  # carpeta donde guardas tus PDFs
+
+          if ! git diff --cached --quiet; then
+            git commit -m "Auto-update monthly dashboard PDF [skip ci]"
+            git push origin main
+          else
+            echo "No changes to commit."
+          fi
