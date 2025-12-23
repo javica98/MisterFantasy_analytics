@@ -67,7 +67,7 @@ jobs:
 
           git remote set-url origin https://x-access-token:${PAT_TOKEN}@github.com/${{ github.repository }}.git
 
-          git add dashboard/reports/*.pdf  # carpeta donde guardas tus PDFs
+          git add dashboards/reports/*.pdf  # carpeta donde guardas tus PDFs
 
           if ! git diff --cached --quiet; then
             git commit -m "Auto-update monthly dashboard PDF [skip ci]"
