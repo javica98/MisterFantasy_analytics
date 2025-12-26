@@ -20,7 +20,9 @@ paths:
     notificaciones_clean: "data/processed/ganancias_clean.csv"
     notificaciones_jugador: "data/processed/ganancias_jugador.csv"
     clausulas_acuerdos: "data/processed/clausulas_acuerdos.csv"
+    model: "data/processed/data_model.csv"
     test: "data/processed/test.csv"
+
   pdf:
     template: "dashboards/templates/monthly_template.pdf"
     reports: "dashboards/reports/"
