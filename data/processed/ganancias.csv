@@ -1,5 +1,9 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
-marks,start_mercado,,,,,,,,,,,,,,,2025-12-25,
+marks,start_mercado,,,,,,,,,,,,,,,2025-12-26,
+transfer,mercado,,Mikel Jauregizar,Mister,Maldinillo 💥,6.4321,3,67,1,,,,,,,2025-12-26,009c09bbf12333a06553d50e65274f9b
+marks,start_mercado,,,,,,,,,,,,,,,2025-12-26,
+transfer,mercado,,Iván Martín,Jotabetrbb,Mister,4.95792,3,52,222,,,,,,,2025-12-26,d501b273542a1e5cbed309561a6177a7
+marks,start_mercado,,,,,,,,,,,,,,,2025-12-26,
 transfer,mercado,,Conor Gallagher,Mister,Jotabetrbb,1.826,3.0,63.0,2.0,,,,,,,2025-12-24,8e8eff903ce8ba356e186e2d19efabca
 transfer,Puja,,Conor Gallagher,Mister,Libre,1.62726,3.0,63.0,2.0,,,,,,,2025-12-24,d51553e3403b1a35bdf04625a254b097
 transfer,mercado,,Viktor Tsygankov,Mister,Maldinillo 💥,6.43482,3.0,50.0,222.0,,,,,,,2025-12-24,92887209bdb1ab38548a53f1235d1f4a
