@@ -1,13 +1,25 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
+marks,start_mercado,,,,,,,,,,,,,,,2025-12-28,
+transfer,mercado,,Alan Matturro,Mister,Libre,0.181,2,9,12,,,,,,,2025-12-28,0206e11f2c15225bbd6f9cf6d0b0d9e2
+transfer,mercado,,Ander Barrenetxea,Mister,Maldinillo 💥,11.21389,3,89,16,,,,,,,2025-12-28,453086380a7f998a9b65d18b9fda25f5
+transfer,mercado,,Alexander Sørloth,Mister,Maldinillo 💥,6.46435,4,49,2,,,,,,,2025-12-28,47d8d91d98072c4c662e7f02234c4bdc
+marks,start_mercado,,,,,,,,,,,,,,,2025-12-28,
+transfer,clausula,,Pedri,Maldinillo 💥,Los marinero,60.29502,3,117,3,,,,,,,2025-12-28,2de37b07c93b4c737246c9b4a2ca23e0
+marks,start_mercado,,,,,,,,,,,,,,,2025-12-28,
+transfer,clausula,,Lamine Yamal,Los marinero,Dani,46.550565,4,121,3,,,,,,,2025-12-28,486a71577808e91962b9f2daa5d667f0
+marks,start_mercado,,,,,,,,,,,,,,,2025-12-28,
+transfer,clausula,,Raphinha,MuchaSalsa,Maldinillo 💥,40.649998,4,96,3,,,,,,,2025-12-28,92e0e6a98ac37cd8ee50c4a5c572dd24
+marks,start_mercado,,,,,,,,,,,,,,,2025-12-28,
+transfer,mercado,,Robert Lewandowski,Maldinillo 💥,Mister,17.776,4,80,3,,,,,,,2025-12-28,d521564fb89b78c520d449d1e7366d59
+marks,start_mercado,,,,,,,,,,,,,,,2025-12-28,
+transfer,mercado,,Batista Mendy,Mister,Jotabetrbb,2.991,3.0,51.0,17.0,,,,,,,2025-12-27,999c6512875af37f4f938f30aaaedaaf
+transfer,Puja,,Batista Mendy,Mister,Los marinero,2.561,3.0,51.0,17.0,,,,,,,2025-12-27,080888a721c980f0acd587ad401083d1
+transfer,Puja,,Batista Mendy,Mister,Dani,2.30884,3.0,51.0,17.0,,,,,,,2025-12-27,eaacbedcbf18eac1cf8125f43cc9bf03
+transfer,mercado,,Alejandro Catena,Mister,Dani,10.50159,2.0,75.0,50.0,,,,,,,2025-12-27,786f184f716f0a3d180f2a3a2ee584ea
 marks,start_mercado,,,,,,,,,,,,,,,2025-12-27,
-transfer,mercado,,Batista Mendy,Mister,Jotabetrbb,2.991,3,51,17,,,,,,,2025-12-27,999c6512875af37f4f938f30aaaedaaf
-transfer,Puja,,Batista Mendy,Mister,Los marinero,2.561,3,51,17,,,,,,,2025-12-27,080888a721c980f0acd587ad401083d1
-transfer,Puja,,Batista Mendy,Mister,Dani,2.30884,3,51,17,,,,,,,2025-12-27,eaacbedcbf18eac1cf8125f43cc9bf03
-transfer,mercado,,Alejandro Catena,Mister,Dani,10.50159,2,75,50,,,,,,,2025-12-27,786f184f716f0a3d180f2a3a2ee584ea
+transfer,mercado,,Abel Bretones,Maldinillo 💥,Mister,4.51682,2.0,54.0,50.0,,,,,,,2025-12-27,e097f8e0c3c2d370db1155af6909c11c
 marks,start_mercado,,,,,,,,,,,,,,,2025-12-27,
-transfer,mercado,,Abel Bretones,Maldinillo 💥,Mister,4.51682,2,54,50,,,,,,,2025-12-27,e097f8e0c3c2d370db1155af6909c11c
-marks,start_mercado,,,,,,,,,,,,,,,2025-12-27,
-transfer,mercado,,Marko Dmitrović,Dani,Mister,10.41021,1,87,8,,,,,,,2025-12-27,2c3a7ba710371ac82eb01981ae36d92b
+transfer,mercado,,Marko Dmitrović,Dani,Mister,10.41021,1.0,87.0,8.0,,,,,,,2025-12-27,2c3a7ba710371ac82eb01981ae36d92b
 marks,start_mercado,,,,,,,,,,,,,,,2025-12-27,
 transfer,mercado,,Mikel Jauregizar,Mister,Maldinillo 💥,6.4321,3.0,67.0,1.0,,,,,,,2025-12-26,009c09bbf12333a06553d50e65274f9b
 marks,start_mercado,,,,,,,,,,,,,,,2025-12-26,
