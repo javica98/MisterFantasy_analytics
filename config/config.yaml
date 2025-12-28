@@ -10,6 +10,7 @@ paths:
     mercado: "data/raw/mercado.html"
     jornadas: "data/raw/mi_equipo.html"
     subidas_bajadas: "data/raw/MarketSubidasBajadas.html"
+    gameweek: "data/raw/gameweek.html"
 
   csv:
     notificaciones: "data/processed/ganancias.csv"
@@ -29,6 +30,8 @@ paths:
   images:
     teams_dir: "assets/"
     default_team: "default.png"
+  results:
+    data_audit: "results/auditoria_dataset.csv"
 
 scraper:
   delay: 2

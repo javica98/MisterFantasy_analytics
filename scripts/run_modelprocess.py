@@ -70,12 +70,15 @@ CSV_SUBIDASBAJADAS = cfg["paths"]["csv"]["subidas_bajadas"]
 CSV_NOTIFICACIONES_CLEAN = cfg["paths"]["csv"]["notificaciones_clean"]
 CSV_DATA_MODEL = cfg["paths"]["csv"]["model"]
 
+# Results audit
+CSV_AUDIT = cfg["paths"]["results"]["data_audit"]
+
+
 logger.info("Creando Dashboard")
 csv_notificaciones_clean = safe_read_csv(CSV_NOTIFICACIONES_CLEAN)
 csv_mercado = safe_read_csv(CSV_MERCADO)
 csv_subidasBajadas = safe_read_csv(CSV_SUBIDASBAJADAS)
 csv_jornada = safe_read_csv(CSV_JORNADA)
-print(csv_mercado["estado"].unique())
 
 if (csv_notificaciones_clean is None) or (csv_mercado is None):
     logger.warning("⏭️ Saltando sección de notificaciones y clasificaciones (no hay CSV disponible).")
@@ -164,7 +167,4 @@ audit_df = pd.DataFrame({
 print("\nResumen de auditoría:")
 print(audit_df)
 
-# =========================
-# OPCIONAL: EXPORTAR AUDITORÍA
-# =========================
-# audit_df.to_csv("auditoria_dataset.csv", index=False)
+safe_save_csv(audit_df,CSV_AUDIT)

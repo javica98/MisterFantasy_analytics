@@ -162,7 +162,8 @@ def login():
             rutas = {
                 "market": "mercado.html",
                 "team": "mi_equipo.html",
-                "standings": "clasificacion.html"
+                "standings": "clasificacion.html",
+                "feed#gameweek":"gameweek.html"
             }
 
             for ruta_name, archivo in rutas.items():

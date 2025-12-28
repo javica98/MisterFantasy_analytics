@@ -30,6 +30,7 @@ def procesar_model_data(csv_mercado, csv_subidasBajadas, csv_jornada, csv_notifi
     csv_subidasBajadas["nombre"] = csv_subidasBajadas["nombre"].astype(str).str.strip().str.upper()
     csv_subidasBajadas["nombre"] = csv_subidasBajadas["nombre"].apply(abreviar_nombre)
     csv_notificaciones_clean["jugador"] = csv_notificaciones_clean["jugador"].astype(str).str.strip().str.upper()
+    csv_notificaciones_clean["jugador"] = csv_notificaciones_clean["jugador"].apply(abreviar_nombre)
 
 
     columnas_mercado = [

@@ -1,0 +1,15 @@
+columna,tipo,nulos,pct_nulos,valores_unicos
+date,datetime64[ns],0,0.0,25
+jugador,object,0,0.0,209
+precio,float64,0,0.0,224
+posicionJugador,float64,0,0.0,4
+puntosJugador,float64,0,0.0,69
+equipoLiga,float64,0,0.0,20
+avgPoints,float64,0,0.0,54
+estado,int64,0,0.0,6
+variacion,float64,35,11.513157894736842,160
+jornada,int64,0,0.0,4
+detalles,float64,0,0.0,14
+equipo,object,236,77.63157894736842,8
+ganancias,float64,236,77.63157894736842,68
+num_pujas,int64,0,0.0,5
