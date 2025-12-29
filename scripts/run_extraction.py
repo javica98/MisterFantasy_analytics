@@ -35,6 +35,8 @@ from src.data.extract_clasificacion import extraer_clasificaciones
 from src.data.extract_mercado import extraer_mercado
 from src.data.extract_jornadas import extraer_jornadas
 from src.data.extract_subidas_bajadas import extraer_subidas_bajadas
+from src.data.extract_gameweek import extraer_gameweek
+from src.data.merge_gameweek import merge_gameweek
 
 from src.scraper.login import login
 
@@ -75,6 +77,7 @@ HTML_CLAS_AUX = cfg["paths"]["html"]["clas_aux"]
 HTML_MERCADO_AUX = cfg["paths"]["html"]["mercado"]
 HTML_JORNADAS_AUX = cfg["paths"]["html"]["jornadas"]
 HTML_SUBIDASBAJADAS = cfg["paths"]["html"]["subidas_bajadas"]
+HTML_GAMEWEEK = cfg["paths"]["html"]["gameweek"]
 
 # Archivos CSV
 CSV_NOTIFICACIONES = cfg["paths"]["csv"]["notificaciones"]
@@ -82,6 +85,7 @@ CSV_CLASIFICACIONES = cfg["paths"]["csv"]["clasificaciones"]
 CSV_MERCADO = cfg["paths"]["csv"]["mercado"]
 CSV_JORNADA = cfg["paths"]["csv"]["jornada"]
 CSV_SUBIDASBAJADAS = cfg["paths"]["csv"]["subidas_bajadas"]
+CSV_GAMEWEEK = cfg["paths"]["csv"]["gameweek"]
 
 # Variables de entorno (login)
 MISTER_USERNAME = cfg["env"]["MISTER_USERNAME"]
@@ -166,5 +170,18 @@ else:
     merged_csv_subidas_bajadas = pd.concat([csv_subidas_bajadas, new_csv_subidas_bajadas], ignore_index=True)
     safe_save_csv(merged_csv_subidas_bajadas, CSV_SUBIDASBAJADAS)
     logger.info("✅ Datos de subidas/bajadas actualizados correctamente.")
+
+# --- 6. Gameweek ---
+logger.info("Extrayendo gameweek...")
+new_html_gameweek = safe_read_html(HTML_GAMEWEEK)
+if new_html_gameweek is None:
+    logger.warning("⏭️ Saltando sección de Gameweek (no hay HTML disponible).")
+else:
+    new_gameweek = extraer_gameweek(new_html_gameweek)
+    logger.info("✅ Nuevas gameweeks extraídas.")
+    csv_gameweek = safe_read_csv(CSV_GAMEWEEK)
+    new_csv_gameweek = merge_gameweek(csv_gameweek, new_gameweek)
+    safe_save_csv(new_csv_gameweek, CSV_GAMEWEEK)
+    logger.info("✅ Nuevas gameweeks añadidas y guardadas.")
 
 logger.info("🏁 Proceso de extracción completado sin errores.")

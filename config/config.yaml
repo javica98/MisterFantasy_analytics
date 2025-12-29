@@ -22,6 +22,8 @@ paths:
     notificaciones_jugador: "data/processed/ganancias_jugador.csv"
     clausulas_acuerdos: "data/processed/clausulas_acuerdos.csv"
     model: "data/processed/data_model.csv"
+    gameweek: "data/processed/gameweek.csv"
+
     test: "data/processed/test.csv"
 
   pdf:
