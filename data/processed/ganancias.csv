@@ -1,16 +1,28 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
+marks,start_mercado,,,,,,,,,,,,,,,2025-12-29,
+transfer,mercado,,Alexander Sørloth,Maldinillo 💥,Mister,6.70176,4,49,2,,,,,,,2025-12-29,c6aea188c144bd215d139730bddeb8b8
+marks,start_mercado,,,,,,,,,,,,,,,2025-12-29,
+transfer,mercado,,Ander Barrenetxea,Maldinillo 💥,Mister,11.63032,3,89,16,,,,,,,2025-12-29,16fa71babe44c525fbe0401a45719ab3
+marks,start_mercado,,,,,,,,,,,,,,,2025-12-29,
+transfer,mercado,,Álex Berenguer,Mister,Maldinillo 💥,8.21945,3,68,1,,,,,,,2025-12-29,e09ca76ab26106e9d4415b1ad0d63c7a
+transfer,Puja,,Álex Berenguer,Mister,Jotabetrbb,8.0,3,68,1,,,,,,,2025-12-29,446ab28c9bfeb83aab9c4a6150513bec
+transfer,Puja,,Álex Berenguer,Mister,Dani,7.30159,3,68,1,,,,,,,2025-12-29,632361d72a24d629eabfc0a5cd48e2a8
+transfer,Puja,,Álex Berenguer,Mister,Chamacónicos,7.158,3,68,1,,,,,,,2025-12-29,bc3583cb7cc2f45344ffc303a9a8f5c0
+transfer,mercado,,Matteo Ruggeri,Mister,Maldinillo 💥,1.52228,2,40,2,,,,,,,2025-12-29,85a3149c13658f92740be018e0a4164b
+marks,start_mercado,,,,,,,,,,,,,,,2025-12-29,
+transfer,mercado,,Dávid Hancko,Los marinero,Mister,9.97524,2,76,2,,,,,,,2025-12-29,1ef81bdf2181e38d305b240d3924737e
+marks,start_mercado,,,,,,,,,,,,,,,2025-12-29,
+transfer,mercado,,Alan Matturro,Mister,Libre,0.181,2.0,9.0,12.0,,,,,,,2025-12-28,0206e11f2c15225bbd6f9cf6d0b0d9e2
+transfer,mercado,,Ander Barrenetxea,Mister,Maldinillo 💥,11.21389,3.0,89.0,16.0,,,,,,,2025-12-28,453086380a7f998a9b65d18b9fda25f5
+transfer,mercado,,Alexander Sørloth,Mister,Maldinillo 💥,6.46435,4.0,49.0,2.0,,,,,,,2025-12-28,47d8d91d98072c4c662e7f02234c4bdc
 marks,start_mercado,,,,,,,,,,,,,,,2025-12-28,
-transfer,mercado,,Alan Matturro,Mister,Libre,0.181,2,9,12,,,,,,,2025-12-28,0206e11f2c15225bbd6f9cf6d0b0d9e2
-transfer,mercado,,Ander Barrenetxea,Mister,Maldinillo 💥,11.21389,3,89,16,,,,,,,2025-12-28,453086380a7f998a9b65d18b9fda25f5
-transfer,mercado,,Alexander Sørloth,Mister,Maldinillo 💥,6.46435,4,49,2,,,,,,,2025-12-28,47d8d91d98072c4c662e7f02234c4bdc
+transfer,clausula,,Pedri,Maldinillo 💥,Los marinero,60.29502,3.0,117.0,3.0,,,,,,,2025-12-28,2de37b07c93b4c737246c9b4a2ca23e0
 marks,start_mercado,,,,,,,,,,,,,,,2025-12-28,
-transfer,clausula,,Pedri,Maldinillo 💥,Los marinero,60.29502,3,117,3,,,,,,,2025-12-28,2de37b07c93b4c737246c9b4a2ca23e0
+transfer,clausula,,Lamine Yamal,Los marinero,Dani,46.550565,4.0,121.0,3.0,,,,,,,2025-12-28,486a71577808e91962b9f2daa5d667f0
 marks,start_mercado,,,,,,,,,,,,,,,2025-12-28,
-transfer,clausula,,Lamine Yamal,Los marinero,Dani,46.550565,4,121,3,,,,,,,2025-12-28,486a71577808e91962b9f2daa5d667f0
+transfer,clausula,,Raphinha,MuchaSalsa,Maldinillo 💥,40.649998,4.0,96.0,3.0,,,,,,,2025-12-28,92e0e6a98ac37cd8ee50c4a5c572dd24
 marks,start_mercado,,,,,,,,,,,,,,,2025-12-28,
-transfer,clausula,,Raphinha,MuchaSalsa,Maldinillo 💥,40.649998,4,96,3,,,,,,,2025-12-28,92e0e6a98ac37cd8ee50c4a5c572dd24
-marks,start_mercado,,,,,,,,,,,,,,,2025-12-28,
-transfer,mercado,,Robert Lewandowski,Maldinillo 💥,Mister,17.776,4,80,3,,,,,,,2025-12-28,d521564fb89b78c520d449d1e7366d59
+transfer,mercado,,Robert Lewandowski,Maldinillo 💥,Mister,17.776,4.0,80.0,3.0,,,,,,,2025-12-28,d521564fb89b78c520d449d1e7366d59
 marks,start_mercado,,,,,,,,,,,,,,,2025-12-28,
 transfer,mercado,,Batista Mendy,Mister,Jotabetrbb,2.991,3.0,51.0,17.0,,,,,,,2025-12-27,999c6512875af37f4f938f30aaaedaaf
 transfer,Puja,,Batista Mendy,Mister,Los marinero,2.561,3.0,51.0,17.0,,,,,,,2025-12-27,080888a721c980f0acd587ad401083d1
