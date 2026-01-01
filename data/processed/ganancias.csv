@@ -1,13 +1,15 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
+marks,start_mercado,,,,,,,,,,,,,,,2026-01-01,
+transfer,clausula,,César Azpilicueta,Jotabetrbb,Los marinero,2.1,2,34,17,,,,,,,2026-01-01,45d95c860302bfb774d4eea6afde01ed
+marks,start_mercado,,,,,,,,,,,,,,,2026-01-01,
+transfer,mercado,,Alexis Sánchez,Mister,Libre,5.44401,4.0,50.0,17.0,,,,,,,2025-12-31,79ad4f98c3f0ae25d620bc204c64914e
+transfer,Puja,,Alexis Sánchez,Mister,Dani,5.41203,4.0,50.0,17.0,,,,,,,2025-12-31,d7d457a591512ccc37a047e4095ba8d7
+transfer,mercado,,Abde Rebbach,Mister,Los marinero,0.551,3.0,46.0,48.0,,,,,,,2025-12-31,7a774d136d806923c42b8ea3d112ba14
+transfer,mercado,,Alejandro Balde,Mister,Dani,11.80764,2.0,58.0,3.0,,,,,,,2025-12-31,b74d954bf166a79706d3def5e28ede55
+transfer,Puja,,Alejandro Balde,Mister,Jotabetrbb,11.8,2.0,58.0,3.0,,,,,,,2025-12-31,5488157d81b0fa546f4889b949a8579e
+transfer,Puja,,Alejandro Balde,Mister,Maldinillo 💥,11.716,2.0,58.0,3.0,,,,,,,2025-12-31,e29bff983e53cd12c2ab98c6317b455d
 marks,start_mercado,,,,,,,,,,,,,,,2025-12-31,
-transfer,mercado,,Alexis Sánchez,Mister,Libre,5.44401,4,50,17,,,,,,,2025-12-31,79ad4f98c3f0ae25d620bc204c64914e
-transfer,Puja,,Alexis Sánchez,Mister,Dani,5.41203,4,50,17,,,,,,,2025-12-31,d7d457a591512ccc37a047e4095ba8d7
-transfer,mercado,,Abde Rebbach,Mister,Los marinero,0.551,3,46,48,,,,,,,2025-12-31,7a774d136d806923c42b8ea3d112ba14
-transfer,mercado,,Alejandro Balde,Mister,Dani,11.80764,2,58,3,,,,,,,2025-12-31,b74d954bf166a79706d3def5e28ede55
-transfer,Puja,,Alejandro Balde,Mister,Jotabetrbb,11.8,2,58,3,,,,,,,2025-12-31,5488157d81b0fa546f4889b949a8579e
-transfer,Puja,,Alejandro Balde,Mister,Maldinillo 💥,11.716,2,58,3,,,,,,,2025-12-31,e29bff983e53cd12c2ab98c6317b455d
-marks,start_mercado,,,,,,,,,,,,,,,2025-12-31,
-transfer,clausula,,Thierry Correia,Dani,Los marinero,1.95,2,29,19,,,,,,,2025-12-31,82acce12452ebef5f231a09095028077
+transfer,clausula,,Thierry Correia,Dani,Los marinero,1.95,2.0,29.0,19.0,,,,,,,2025-12-31,82acce12452ebef5f231a09095028077
 marks,start_mercado,,,,,,,,,,,,,,,2025-12-31,
 transfer,mercado,,Mikel Jauregizar,Maldinillo 💥,Mister,6.64782,3.0,67.0,1.0,,,,,,,2025-12-30,23ef2845dce7a41fd443ac6e7d05afdf
 marks,start_mercado,,,,,,,,,,,,,,,2025-12-30,
