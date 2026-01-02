@@ -1,6 +1,17 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
-marks,start_mercado,,,,,,,,,,,,,,,2026-01-01,
-transfer,clausula,,César Azpilicueta,Jotabetrbb,Los marinero,2.1,2,34,17,,,,,,,2026-01-01,45d95c860302bfb774d4eea6afde01ed
+marks,start_mercado,,,,,,,,,,,,,,,2026-01-02,
+transfer,mercado,,Rubén Vargas,Mister,Jotabetrbb,9.312,3,66,17,,,,,,,2026-01-02,65fb8b9ec357d073d0ece71e554fd534
+transfer,mercado,,Allan Nyom,Mister,Dani,0.18352,2,6,9,,,,,,,2026-01-02,e9b5a08f14b138c6a95d6207b1c17c7f
+transfer,Puja,,Allan Nyom,Mister,Los marinero,0.173,2,6,9,,,,,,,2026-01-02,5761efd86da7cd053af17cac3cb2e0e3
+transfer,mercado,,Jorge Cabello,Mister,Dani,0.17254,2,11,12,,,,,,,2026-01-02,3a17e3054dddde69fe2056569db48f82
+transfer,mercado,,John Donald,Mister,Dani,0.16128,2,29,23,,,,,,,2026-01-02,1ae824db21855dac5f21fade2984bda8
+transfer,mercado,,Yvan Neyou,Mister,Dani,0.16,3,3,9,,,,,,,2026-01-02,6176f63d0c97b95676b561794b7ac310
+transfer,mercado,,Marcos Llorente,Mister,Maldinillo 💥,13.59044,2,68,2,,,,,,,2026-01-02,bd054b9e1fe9be943cab1834f948db37
+transfer,Puja,,Marcos Llorente,Mister,Dani,13.31644,2,68,2,,,,,,,2026-01-02,1340e592913f4bc22b9675621c6e7a0a
+marks,start_mercado,,,,,,,,,,,,,,,2026-01-02,
+transfer,mercado,,Gabriel Suazo,Los marinero,Mister,3.94485,2,45,17,,,,,,,2026-01-02,41af3624f790674897ff37f4025e2b17
+marks,start_mercado,,,,,,,,,,,,,,,2026-01-02,
+transfer,clausula,,César Azpilicueta,Jotabetrbb,Los marinero,2.1,2.0,34.0,17.0,,,,,,,2026-01-01,45d95c860302bfb774d4eea6afde01ed
 marks,start_mercado,,,,,,,,,,,,,,,2026-01-01,
 transfer,mercado,,Alexis Sánchez,Mister,Libre,5.44401,4.0,50.0,17.0,,,,,,,2025-12-31,79ad4f98c3f0ae25d620bc204c64914e
 transfer,Puja,,Alexis Sánchez,Mister,Dani,5.41203,4.0,50.0,17.0,,,,,,,2025-12-31,d7d457a591512ccc37a047e4095ba8d7
