@@ -39,14 +39,17 @@ from src.data.extract_subidas_bajadas import extraer_subidas_bajadas
 from src.data.extract_gameweek import extraer_gameweek
 from src.data.merge_gameweek import merge_gameweek
 
+from src.AI_newspaper.generate_json import generate_json
+from src.AI_newspaper.generate_prompt import generate_prompts,build_final_prompt
+from src.AI_newspaper.generate_article import generate_articles,parse_generated_text
+
 from src.scraper.login import login
 
 # --- Cargar configuración ---
 from src.utils.config_loader import load_config
 from src.utils.data_utils import normalize_date_column
-from src.utils.file_utils import safe_read_html, safe_read_csv, safe_save_csv,safe_save_png,safe_read_json
+from src.utils.file_utils import safe_read_html, safe_read_csv,safe_read_json, safe_save_csv,safe_save_json,safe_read_text, safe_save_text
 
-from src.AI_newspaper.generate_pdf import create_card,create_pdf
 
 cfg = load_config()
 
@@ -83,38 +86,65 @@ HTML_GAMEWEEK = cfg["paths"]["html"]["gameweek"]
 
 # Archivos CSV
 CSV_NOTIFICACIONES = cfg["paths"]["csv"]["notificaciones"]
+CSV_NOTIFICACIONES_CLEAN = cfg["paths"]["csv"]["notificaciones_clean"]
 CSV_CLASIFICACIONES = cfg["paths"]["csv"]["clasificaciones"]
 CSV_MERCADO = cfg["paths"]["csv"]["mercado"]
 CSV_JORNADA = cfg["paths"]["csv"]["jornada"]
 CSV_SUBIDASBAJADAS = cfg["paths"]["csv"]["subidas_bajadas"]
 CSV_GAMEWEEK = cfg["paths"]["csv"]["gameweek"]
 
+# Archivos CSV
+JSON_NEWS = cfg["paths"]["json"]["news"]
+
+NEWS_UTILS = cfg["paths"]["images"]["news_utils"]
+
 # Variables de entorno (login)
 MISTER_USERNAME = cfg["env"]["MISTER_USERNAME"]
 MISTER_PASSWORD = cfg["env"]["MISTER_PASSWORD"]
 MISTER_BASE_URL = cfg["env"]["MISTER_BASE_URL"]
 
-JSON_NEWS = cfg["paths"]["json"]["news"]
-#PHOTOS
-IMAGES_TEAMS_DIR = cfg["paths"]["images"]["teams_dir"]
-DEFAULT_TEAM_IMAGE = cfg["paths"]["images"]["default_team"]
-NEWS_UTILS = cfg["paths"]["images"]["news_utils"]
+# --- 1. Create JSONs ---
+logger.info("Creando Jsons...")
+csv_gameweek = safe_read_csv(CSV_GAMEWEEK)
+csv_notificaciones = safe_read_csv(CSV_NOTIFICACIONES_CLEAN)
+csv_clasificacion = safe_read_csv(CSV_CLASIFICACIONES)
 
-card_info = {
-      "tipo": "rumor",
-      "titulo": "RUMORES",
-      "subtitulo": "",
-      "texto": [
-        "¡BOMBA EN EL MERCADO! Se rumorea que Jotabetrbb está preparando un \"clausulazo\" sin precedentes, ¡apuntando al mismísimo Pedri de \"Los marinero\" para desestabilizar la liga!\n\n---\n\n="
-      ]
-    }
-cards_json_path = os.path.join(JSON_NEWS, f"2025-12-30_cards.json")
-cards = safe_read_json(cards_json_path)
-#card = create_card(card_info,IMAGES_TEAMS_DIR,DEFAULT_TEAM_IMAGE)
-card = create_pdf(cards,NEWS_UTILS,IMAGES_TEAMS_DIR,DEFAULT_TEAM_IMAGE)
-fecha_hoy = datetime.today().strftime("%Y-%m-%d")
-card_png_path = os.path.join(JSON_NEWS, f"{fecha_hoy}_card.png")
-card_save = safe_save_png(card,card_png_path)
+if (csv_gameweek is None)and (csv_notificaciones is None):
+    logger.warning("⏭️ Saltando csvs .csv no existe.")
+else:
+    daily_json = generate_json(3,csv_notificaciones[csv_notificaciones['type'] == 'transfer'],csv_gameweek,csv_clasificacion)
+    logger.info("✅ Json creado.")
+    fecha_hoy = datetime.today().strftime("%Y-%m-%d")
+    json_final_path = os.path.join(JSON_NEWS, f"{fecha_hoy}_json.json")
+    #daily_json = safe_save_json(daily_json,json_final_path)
+    
+# --- 2. Crear prompt ---
+logger.info("Creando prompt...")
+json_new = safe_read_json(json_final_path)
+if (json_new is None):
+    logger.warning("⏭️ Saltando prompt .json no existe.")
+else:
+    prompt_json = generate_prompts(json_new)
+    commun_prompt_json = build_final_prompt(prompt_json["bloques"],json_new)
+    logger.info("✅ Prompt Json creado.")
+    fecha_hoy = datetime.today().strftime("%Y-%m-%d")
+    prompt_final_path = os.path.join(JSON_NEWS, f"{fecha_hoy}_prompt.txt")
+    #prompt_saved = safe_save_text(commun_prompt_json,prompt_final_path)
+
+# --- 3. Llamar Gemini y crear contenido---
+prompt_txt = safe_read_text(json_final_path)
+logger.info("📡 Llamando a Gemini para generar los textos...")
+#texto_generado = generate_articles(prompt_txt)
+#logger.info("✅ Todo el contenido creado.")
+article_final_path = os.path.join(JSON_NEWS, f"{fecha_hoy}_article.txt")
+#article = safe_save_text(texto_generado,article_final_path)
+
+
+#--- 3.Crear CARDS
+json_new = safe_read_json(json_final_path)
+bloques = generate_prompts(json_new)["bloques"]
+articles = safe_read_text(article_final_path)
+json_cards = parse_generated_text(articles, bloques)
+cards_final_path = os.path.join(JSON_NEWS, f"{fecha_hoy}_cards.json")
+cards = safe_save_json(json_cards,cards_final_path)
 logger.info("🏁 Proceso de extracción completado sin errores.")
-
-

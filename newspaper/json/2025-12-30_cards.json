@@ -1,0 +1,126 @@
+{
+  "cards": [
+    {
+      "tipo": "clasificacion",
+      "titulo": "CLASIFICACION",
+      "subtitulo": "",
+      "texto": [
+        " Dani, el bicampeón, se aferra al liderato general con 750 puntos, pero su corona nunca ha estado tan amenazada con \"Los marinero\" pisándole los talones.",
+        " La jornada fue un auténtico terremoto: \"Los marinero\" arrasaron con 56 puntos, mientras Dani sufría un batacazo histórico, cayendo al séptimo puesto.",
+        " Maldinillo, el estratega silencioso, escala posiciones con una jornada sólida, situándose a las puertas del podio y listo para dar el zarpazo final."
+      ]
+    },
+    {
+      "tipo": "rumor",
+      "titulo": "RUMORES",
+      "subtitulo": "",
+      "texto": [
+        " ¡BOMBA EN EL MERCADO! Se rumorea que Jotabetrbb está preparando un \"clausulazo\" sin precedentes, ¡apuntando al mismísimo Pedri de \"Los marinero\" para desestabilizar la liga!\n\n\n\n"
+      ]
+    },
+    {
+      "tipo": "Fichaje destacado",
+      "jugador": "Pedri",
+      "manager": "Los marinero",
+      "puntos": null,
+      "dinero": 60.29502,
+      "titulo": "¡EXPLOSIÓN EN EL MERCADO! ¡LOS MARINERO DESEMBOLSAN UNA FORTUNA POR PEDRI!",
+      "subtitulo": "¿Un golpe de autoridad o una apuesta kamikaze? El segundo de la tabla no escatima en gastos para asaltar la cima.",
+      "texto": [
+        "Con 60.30 millones de euros, \"Los marinero\" han agitado el mercado con la adquisición de Pedri, un movimiento que los consolida como serios aspirantes al trono.",
+        "Su arrollador rendimiento en la jornada, sumado a este fichaje galáctico, envía un mensaje claro a Dani: ¡la lucha por el campeonato está más viva que nunca!"
+      ]
+    },
+    {
+      "tipo": "Fichaje destacado",
+      "jugador": "Lamine Yamal",
+      "manager": "Dani",
+      "puntos": null,
+      "dinero": 46.550565,
+      "titulo": "¡DANI NO SE RINDE! EL BICAMPEÓN APUESTA FUERTE POR LAMINE YAMAL",
+      "subtitulo": "¿Movimiento estratégico o señal de pánico? El líder invierte para frenar su caída en la jornada.",
+      "texto": [
+        "Pese a un discreto séptimo puesto en la última jornada, Dani ha respondido con un fichaje de 46.55 millones por Lamine Yamal, buscando reafirmar su hegemonía.",
+        "¿Será esta la chispa que necesita el bicampeón para superar su bache o una señal de que la presión de sus perseguidores empieza a hacer mella?"
+      ]
+    },
+    {
+      "tipo": "Fichaje destacado",
+      "jugador": "Raphinha",
+      "manager": "Maldinillo 💥",
+      "puntos": null,
+      "dinero": 40.649998,
+      "titulo": "¡MALDINILLO GOLPEA LA MESA! RAPHINHA CAE EN SUS MANOS",
+      "subtitulo": "El estratega del \"💥\" hace de las suyas: un fichaje clave para su imparable ascenso.",
+      "texto": [
+        "Con un movimiento maestro, Maldinillo ha asegurado a Raphinha por 40.65 millones, demostrando su agudeza para fortalecer su plantilla en el momento justo.",
+        "Mientras otros dudan, el tercer clasificado sigue su escalada imparable, y este fichaje estratégico podría ser la clave para asaltar el liderato."
+      ]
+    },
+    {
+      "tipo": "Venta récord",
+      "jugador": "Robert Lewandowski",
+      "manager": "Maldinillo 💥",
+      "puntos": null,
+      "dinero": 17.776,
+      "titulo": "¡MALDINILLO, EL REY DEL TRADING! VENTA MILLONARIA DE LEWANDOWSKI",
+      "subtitulo": "¿Sacrificio o jugada maestra? El \"💥\" demuestra su olfato para los negocios y la reinversión.",
+      "texto": [
+        "Robert Lewandowski se marcha de las filas de Maldinillo por 17.78 millones, una cifra que demuestra la astucia del manager para optimizar sus recursos.",
+        "Esta ingeniería financiera no es casualidad; Maldinillo sabe que cada euro cuenta en su camino hacia la cima, preparando el terreno para futuros bombazos."
+      ]
+    },
+    {
+      "tipo": "MVP de la jornada",
+      "jugador": "A. Ruibal",
+      "manager": "Libre",
+      "puntos": 21,
+      "dinero": null,
+      "titulo": "¡SORPRESA EN EL SÓTANO! RUIBAL, EL MVP INESPERADO",
+      "subtitulo": "Un oasis en el desierto: el jugador del \"Libre\" brilla con luz propia en medio de la debacle.",
+      "texto": [
+        "A. Ruibal, del equipo \"Libre\", se erige como el MVP de la jornada con 21 puntos, un destello de calidad en un mar de decepción para su manager.",
+        "A pesar de esta brillante actuación individual, el manager \"Libre\" sigue anclado en el último puesto, sin poder capitalizar el rendimiento de su estrella."
+      ]
+    },
+    {
+      "tipo": "MVP de la jornada",
+      "jugador": "Koke",
+      "manager": "MuchaSalsa",
+      "puntos": 14,
+      "dinero": null,
+      "titulo": "¡KOKE DESPIERTA! MUCHASALSA ENCUENTRA SU BRÚJULA",
+      "subtitulo": "El veterano capitán se reivindica y catapulta a su manager a la parte alta de la jornada.",
+      "texto": [
+        "Koke ha resurgido con 14 puntos, convirtiéndose en el faro de \"MuchaSalsa\" y guiándolos a un impresionante segundo puesto en la jornada.",
+        "Este rendimiento es un soplo de aire fresco para el séptimo clasificado general, que ahora mira hacia arriba con renovadas esperanzas."
+      ]
+    },
+    {
+      "tipo": "MVP de la jornada",
+      "jugador": "Raphinha",
+      "manager": "MuchaSalsa",
+      "puntos": 14,
+      "dinero": null,
+      "titulo": "¡RAPHINHA TAMBIÉN SE SUMA A LA FIESTA! DOBLETE DE GLORIA PARA MUCHASALSA",
+      "subtitulo": "La estrategia de \"MuchaSalsa\" da sus frutos: dos MVPs en una jornada de ensueño.",
+      "texto": [
+        "No solo Koke, Raphinha también brilló con 14 puntos, consolidando a \"MuchaSalsa\" como el equipo revelación de la jornada.",
+        "Con dos jugadores en el top de la jornada, \"MuchaSalsa\" demuestra que está en un momento dulce y es una amenaza real para los de arriba."
+      ]
+    },
+    {
+      "tipo": "Peor actuación de la jornada",
+      "jugador": "N. Mendy",
+      "manager": "Chamacónicos",
+      "puntos": -1,
+      "dinero": null,
+      "titulo": "¡CATASTRÓFICO! N. MENDY HUNDE A CHAMACÓNICOS",
+      "subtitulo": "Una actuación para el olvido: el jugador que restó en lugar de sumar a las aspiraciones del equipo.",
+      "texto": [
+        "N. Mendy protagonizó la pesadilla de la jornada al restar un punto, un lastre inesperado para \"Chamacónicos\" que frena su avance.",
+        "Este desastre individual podría tener consecuencias nefastas para el cuarto clasificado, que ve cómo se le escapa el podio por un solo punto."
+      ]
+    }
+  ]
+}

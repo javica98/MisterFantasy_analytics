@@ -24,6 +24,7 @@ def load_config():
         "MISTER_USERNAME": os.getenv("MISTER_USERNAME"),
         "MISTER_PASSWORD": os.getenv("MISTER_PASSWORD"),
         "MISTER_BASE_URL": os.getenv("MISTER_BASE_URL", "https://mister.mundodeportivo.com"),
+        "GEMINI_API_KEY": os.getenv("GEMINI_API_KEY"),
     }
 
     return cfg

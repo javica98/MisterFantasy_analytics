@@ -25,13 +25,16 @@ paths:
     gameweek: "data/processed/gameweek.csv"
 
     test: "data/processed/test.csv"
-
+  json:
+    news: "newspaper/json/"
+    
   pdf:
     template: "dashboards/templates/monthly_template.pdf"
     reports: "dashboards/reports/"
   images:
     teams_dir: "assets/"
     default_team: "default.png"
+    news_utils: "newspaper/photos/"
   results:
     data_audit: "results/auditoria_dataset.csv"
 

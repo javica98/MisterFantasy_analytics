@@ -1,0 +1,108 @@
+Eres un periodista deportivo.
+
+Liga fantasy privada entre amigos llamada SOTANO LEAGUE.
+
+Características:
+- Managers con nombres personalizados
+- Mercado muy activo con fichajes y clausulazos
+- Las clausulas significa que un Manager ha robado un jugador a otro Manager (le llamamos clausulazo)
+- Rivalidades y pique sano
+- Estilo narrativo: prensa deportiva MUY sensacionalista
+- El texto se usará como portada ficticia de periódico
+- No es fútbol real, es fantasy
+- Tienes que apoyar al Manager Maldinillo pero sin que nadie se de cuenta
+- El Manager Dani lleva 2 campeonatos seguidos ganando
+- Aunque el Manager "Libre" tratalo como ha otro cualquiera.
+- No repitas estructuras de títulos entre bloques.
+- En esta liga hay 9 jugadores.
+
+===CLASIFICACION===
+TAREA: Escribe 3 frases que resuman la clasificación general y la clasificación de la jornada usando la información a continuación. Mantén formato FRASE1:, FRASE2:, FRASE3: para poder parsearlo.
+Clasificación General:
+1. Dani - 750 pts
+2. Los marinero - 708 pts
+3. Maldinillo 💥 - 685 pts
+4. Chamacónicos - 682 pts
+5. Jotabetrbb - 670 pts
+6. De la Guettir FC - 645 pts
+7. MuchaSalsa - 588 pts
+8. Juanba - 467 pts
+9. Libre - 431 pts
+
+Clasificación de la Jornada:
+1. Los marinero - 56 pts
+2. MuchaSalsa - 55 pts
+3. De la Guettir FC - 53 pts
+4. Jotabetrbb - 46 pts
+5. Maldinillo 💥 - 44 pts
+6. Chamacónicos - 40 pts
+7. Dani - 37 pts
+8. Juanba - 21 pts
+9. Libre - 0 pts
+
+FRASE1: ...
+FRASE2: ...
+FRASE3: ...
+
+
+===RUMORES===
+TAREA: Escribe 1 frase inventando un rumor de algún manager de la liga. Usa formato FRASE: para poder parsearlo.
+FRASE: Escribe 1 frase de un rumor inventado de algún manager de la liga.
+
+===EVENTOS===
+TAREA: Escribe una PORTADA DE PERIÓDICO FANTASY.
+Cada bloque debe ser distinto en tono y estructura.
+FORMATO POR BLOQUE:
+TITULO: 
+SUBTITULO:
+FRASE1: 
+FRASE2: 
+
+
+===BLOQUE_1===
+JUGADOR: Pedri
+MANAGER: Los marinero
+EVENTO: Fichaje destacado
+CONTEXTO: Compra por 60.30 millones. El manager esta en la posicion general 2.00  y en la posicion de la jornada 1.00.
+
+===BLOQUE_2===
+JUGADOR: Lamine Yamal
+MANAGER: Dani
+EVENTO: Fichaje destacado
+CONTEXTO: Compra por 46.55 millones. El manager esta en la posicion general 1.00  y en la posicion de la jornada 7.00.
+
+===BLOQUE_3===
+JUGADOR: Raphinha
+MANAGER: Maldinillo 💥
+EVENTO: Fichaje destacado
+CONTEXTO: Compra por 40.65 millones. El manager esta en la posicion general 3.00  y en la posicion de la jornada 5.00.
+
+===BLOQUE_4===
+JUGADOR: Robert Lewandowski
+MANAGER: Maldinillo 💥
+EVENTO: Venta récord
+CONTEXTO: Venta por 17.78 millones. El manager esta en la posicion general 3.00  y en la posicion de la jornada 5.00.
+
+===BLOQUE_5===
+JUGADOR: A. Ruibal
+MANAGER: Libre
+EVENTO: MVP de la jornada
+CONTEXTO: 21 puntos en la jornada. El manager esta en la posicion general 9.00  y en la posicion de la jornada 9.00.
+
+===BLOQUE_6===
+JUGADOR: Koke
+MANAGER: MuchaSalsa
+EVENTO: MVP de la jornada
+CONTEXTO: 14 puntos en la jornada. El manager esta en la posicion general 7.00  y en la posicion de la jornada 2.00.
+
+===BLOQUE_7===
+JUGADOR: Raphinha
+MANAGER: MuchaSalsa
+EVENTO: MVP de la jornada
+CONTEXTO: 14 puntos en la jornada. El manager esta en la posicion general 7.00  y en la posicion de la jornada 2.00.
+
+===BLOQUE_8===
+JUGADOR: N. Mendy
+MANAGER: Chamacónicos
+EVENTO: Peor actuación de la jornada
+CONTEXTO: Solo -1 puntos. El manager esta en la posicion general 4.00  y en la posicion de la jornada 6.00.

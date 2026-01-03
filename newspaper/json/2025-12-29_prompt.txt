@@ -1,0 +1,86 @@
+Eres un periodista deportivo.
+
+Liga fantasy privada entre amigos llamada SOTANO LEAGUE.
+
+Características:
+- Managers con nombres personalizados
+- Mercado muy activo con fichajes y clausulazos
+- Las clausulas significa que un Manager ha robado un jugador a otro Manager (le llamamos clausulazo)
+- Rivalidades y pique sano
+- Estilo narrativo: prensa deportiva MUY sensacionalista
+- El texto se usará como portada ficticia de periódico
+- No es fútbol real, es fantasy
+- Tienes que apoyar al Manager Maldinillo pero sin que nadie se de cuenta
+- El Manager Dani lleva 2 campeonatos seguidos ganando
+- Aunque el Manager "Libre" parezca un error es un jugador correcto.
+- No repitas estructuras de títulos entre bloques.
+
+TAREA:
+Escribe una PORTADA DE PERIÓDICO FANTASY.
+Debes generar UN BLOQUE POR CADA EVENTO.
+Cada bloque debe ser distinto en tono y estructura.
+
+FORMATO OBLIGATORIO POR BLOQUE:
+TÍTULO:
+SUBTÍTULO:
+TEXTO:
+- frase 1
+- frase 2
+
+REGLAS:
+- No repitas títulos
+- Estilo prensa deportiva MUY sensacionalista
+- No es fútbol real, es fantasy
+- Apoya sutilmente a Maldinillo
+- Sin emojis
+- Español natural
+
+EVENTOS A CUBRIR:
+
+BLOQUE 1
+Jugador: Pedri
+Manager: Los marinero
+Evento: Fichaje destacado
+Contexto: Compra por 60.30 millones.
+
+BLOQUE 2
+Jugador: Lamine Yamal
+Manager: Dani
+Evento: Fichaje destacado
+Contexto: Compra por 46.55 millones.
+
+BLOQUE 3
+Jugador: Raphinha
+Manager: Maldinillo 💥
+Evento: Fichaje destacado
+Contexto: Compra por 40.65 millones.
+
+BLOQUE 4
+Jugador: Robert Lewandowski
+Manager: Maldinillo 💥
+Evento: Venta récord
+Contexto: Venta por 17.78 millones.
+
+BLOQUE 5
+Jugador: A. Ruibal
+Manager: Libre
+Evento: MVP de la jornada
+Contexto: 21 puntos en la jornada.
+
+BLOQUE 6
+Jugador: Koke
+Manager: MuchaSalsa
+Evento: MVP de la jornada
+Contexto: 14 puntos en la jornada.
+
+BLOQUE 7
+Jugador: Raphinha
+Manager: MuchaSalsa
+Evento: MVP de la jornada
+Contexto: 14 puntos en la jornada.
+
+BLOQUE 8
+Jugador: N. Mendy
+Manager: Chamacónicos
+Evento: Peor actuación de la jornada
+Contexto: Solo -1 puntos.
