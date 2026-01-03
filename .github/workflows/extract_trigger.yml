@@ -36,8 +36,11 @@ jobs:
           MISTER_PASSWORD: ${{ secrets.MISTER_PASSWORD }}
           MISTER_BASE_URL: ${{ secrets.MISTER_BASE_URL }}
         run: python scripts/run_extraction.py
+      # 5️⃣ Ejecutar preprocessing
+      - name: Run preprocessing
+        run: python scripts/run_preprocess.py
 
-      # 5️⃣ Commit y push de CSV automáticamente usando PAT
+      # 6️⃣ Commit y push de CSV automáticamente usando PAT
       - name: Commit and push CSVs
         env:
           PAT_TOKEN: ${{ secrets.PAT_TOKEN }}

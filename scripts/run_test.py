@@ -95,25 +95,17 @@ MISTER_PASSWORD = cfg["env"]["MISTER_PASSWORD"]
 MISTER_BASE_URL = cfg["env"]["MISTER_BASE_URL"]
 
 JSON_NEWS = cfg["paths"]["json"]["news"]
+IMG_NEWS = cfg["paths"]["images"]["news"]
 #PHOTOS
 IMAGES_TEAMS_DIR = cfg["paths"]["images"]["teams_dir"]
 DEFAULT_TEAM_IMAGE = cfg["paths"]["images"]["default_team"]
 NEWS_UTILS = cfg["paths"]["images"]["news_utils"]
 
-card_info = {
-      "tipo": "rumor",
-      "titulo": "RUMORES",
-      "subtitulo": "",
-      "texto": [
-        "¡BOMBA EN EL MERCADO! Se rumorea que Jotabetrbb está preparando un \"clausulazo\" sin precedentes, ¡apuntando al mismísimo Pedri de \"Los marinero\" para desestabilizar la liga!\n\n---\n\n="
-      ]
-    }
 cards_json_path = os.path.join(JSON_NEWS, f"2025-12-30_cards.json")
 cards = safe_read_json(cards_json_path)
-#card = create_card(card_info,IMAGES_TEAMS_DIR,DEFAULT_TEAM_IMAGE)
 card = create_pdf(cards,NEWS_UTILS,IMAGES_TEAMS_DIR,DEFAULT_TEAM_IMAGE)
 fecha_hoy = datetime.today().strftime("%Y-%m-%d")
-card_png_path = os.path.join(JSON_NEWS, f"{fecha_hoy}_card.png")
+card_png_path = os.path.join(IMG_NEWS, f"{fecha_hoy}_card.png")
 card_save = safe_save_png(card,card_png_path)
 logger.info("🏁 Proceso de extracción completado sin errores.")
 

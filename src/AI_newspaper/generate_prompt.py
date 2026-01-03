@@ -99,10 +99,11 @@ def get_own_goals(gameweek: List[Dict]):
         None
     )
 
-def build_player_block(jugador: str, manager: str, evento: str, contexto: str, puntos,dinero):
+def build_player_block(jugador: str,manager: str, equipo: str, evento: str, contexto: str, puntos,dinero):
     return {
         "jugador": jugador,
         "manager": manager,
+        "equipo": equipo,
         "evento": evento,
         "contexto": contexto,
         "puntos": puntos,
@@ -125,6 +126,7 @@ def generate_prompts(events_json: Dict):
             build_player_block(
                 jugador=t["jugador"],
                 manager=t["equipo"],
+                equipo=t["equipo_jugador"],
                 evento="Fichaje destacado",
                 contexto=f"Compra por {abs(t['ganancias']):.2f} millones. El manager esta en la posicion general {abs(t['clasificacion_manager_general']['posicion']):.2f}  y en la posicion de la jornada {abs(t['clasificacion_manager_jornada']['posicion']):.2f}.",
                 puntos=None,
@@ -141,6 +143,7 @@ def generate_prompts(events_json: Dict):
             build_player_block(
                 jugador=top_sale["jugador"],
                 manager=top_sale["equipo"],
+                equipo=top_sale["equipo_jugador"],
                 evento="Venta récord",
                 contexto=f"Venta por {top_sale['ganancias']:.2f} millones. El manager esta en la posicion general {abs(top_sale['clasificacion_manager_general']['posicion']):.2f}  y en la posicion de la jornada {abs(top_sale['clasificacion_manager_jornada']['posicion']):.2f}.",
                 puntos=None,
@@ -157,6 +160,7 @@ def generate_prompts(events_json: Dict):
             build_player_block(
                 jugador=m["jugador"],
                 manager=m["manager"],
+                equipo=m["equipo_jugador"],
                 evento="MVP de la jornada",
                 contexto=f"{m['puntos']} puntos en la jornada. El manager esta en la posicion general {abs(m['clasificacion_manager_general']['posicion']):.2f}  y en la posicion de la jornada {abs(m['clasificacion_manager_jornada']['posicion']):.2f}.",
                 puntos=m['puntos'],
@@ -173,6 +177,7 @@ def generate_prompts(events_json: Dict):
             build_player_block(
                 jugador=worst["jugador"],
                 manager=worst["manager"],
+                equipo=worst["equipo_jugador"],
                 evento="Peor actuación de la jornada",
                 contexto=f"Solo {worst['puntos']} puntos. El manager esta en la posicion general {abs(worst['clasificacion_manager_general']['posicion']):.2f}  y en la posicion de la jornada {abs(worst['clasificacion_manager_jornada']['posicion']):.2f}.",
                 puntos=worst['puntos'],
@@ -189,6 +194,7 @@ def generate_prompts(events_json: Dict):
             build_player_block(
                 jugador=r["jugador"],
                 manager=r["manager"],
+                equipo=r["equipo_jugador"],
                 evento="Expulsión",
                 contexto=f"Tarjeta roja que condicionó la jornada. El manager esta en la posicion general {abs(r['clasificacion_manager_general']['posicion']):.2f}  y en la posicion de la jornada {abs(r['clasificacion_manager_jornada']['posicion']):.2f}.",
                 puntos=r['puntos'],
@@ -205,6 +211,7 @@ def generate_prompts(events_json: Dict):
             build_player_block(
                 jugador=p["jugador"],
                 manager=p["manager"],
+                equipo=p["equipo_jugador"],
                 evento="Héroe bajo palos",
                 contexto=f"Paró un penalti decisivo. El manager esta en la posicion general {abs(p['clasificacion_manager_general']['posicion']):.2f}  y en la posicion de la jornada {abs(p['clasificacion_manager_jornada']['posicion']):.2f}.",
                 puntos=p['puntos'],
@@ -221,6 +228,7 @@ def generate_prompts(events_json: Dict):
             build_player_block(
                 jugador=o["jugador"],
                 manager=o["manager"],
+                equipo=o["equipo_jugador"],
                 evento="Gol en propia",
                 contexto=f"Desafortunada acción en su propio área. El manager esta en la posicion general {abs(o['clasificacion_manager_general']['posicion']):.2f}  y en la posicion de la jornada {abs(o['clasificacion_manager_jornada']['posicion']):.2f}.",
                 puntos=o['puntos'],

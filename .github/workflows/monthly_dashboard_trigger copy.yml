@@ -2,7 +2,7 @@ name: Monthly Data Dashboard
 
 on:
   schedule:
-    - cron: '0 7 28 * *'   # Cada día 28 a las 9:00 UTC
+    - cron: '0 8 28 * *'   # Cada día 28 a las 9:00 UTC
   workflow_dispatch:
 
 jobs:
@@ -29,15 +29,12 @@ jobs:
           pip install -r requirements.txt
           playwright install --with-deps
 
-      # 4️⃣ Ejecutar preprocessing
-      - name: Run preprocessing
-        run: python scripts/run_preprocess.py
-
-      # 5️⃣ Ejecutar dashboard mensual
+      
+      # 4️⃣ Ejecutar dashboard mensual
       - name: Run monthly dashboard
         run: python scripts/run_monthly_dashboard.py
 
-      # 6️⃣ Commit y push de CSV automáticamente usando PAT
+      # 5️⃣ Commit y push de CSV automáticamente usando PAT
       - name: Commit and push CSVs
         env:
           PAT_TOKEN: ${{ secrets.PAT_TOKEN }}

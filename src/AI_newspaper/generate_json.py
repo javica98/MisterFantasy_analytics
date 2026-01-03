@@ -88,6 +88,7 @@ def generate_json(last_days: int, df_clean: pd.DataFrame, df_gameweek: pd.DataFr
             "ganancias": row['ganancias'],
             "jugador": row['jugador'],
             "compra_venta": row['compra-venta'],
+            "equipo_jugador": map_team(row["equipoLiga"]),
             "clasificacion_manager_general": df_class_gen[row['equipo']],
             "clasificacion_manager_jornada": df_class_jor[row['equipo']]
         })

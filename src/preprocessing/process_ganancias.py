@@ -80,6 +80,7 @@ def procesar_ganancias(df: pd.DataFrame) -> pd.DataFrame:
                         "type": "bajadaclausula",
                         "equipo": de_equipo,
                         "jugador": jugador,
+                        "equipoLiga": row["equipoLiga"],
                         "ganancias": 0
                     })
                 else:
@@ -94,6 +95,7 @@ def procesar_ganancias(df: pd.DataFrame) -> pd.DataFrame:
                         "equipo": de_equipo,
                         "jugador": jugador,
                         "compra-venta": "venta",
+                        "equipoLiga": row["equipoLiga"],
                         "ganancias": precio
                     })
                     registros.append({
@@ -104,6 +106,7 @@ def procesar_ganancias(df: pd.DataFrame) -> pd.DataFrame:
                         "equipo": a_equipo,
                         "jugador": jugador,
                         "compra-venta": "compra",
+                        "equipoLiga": row["equipoLiga"],
                         "ganancias": -precio
                     })
             except Exception as e:

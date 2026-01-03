@@ -35,6 +35,7 @@ paths:
     teams_dir: "assets/"
     default_team: "default.png"
     news_utils: "newspaper/photos/"
+    news: "newspaper/new/"
   results:
     data_audit: "results/auditoria_dataset.csv"
 

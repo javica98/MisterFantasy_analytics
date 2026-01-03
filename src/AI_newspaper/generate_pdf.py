@@ -1,6 +1,7 @@
 import os
 from PIL import Image, ImageDraw, ImageFont
-
+import requests
+from bs4 import BeautifulSoup
 from src.utils.photo_utils import manager_photo
 ZONES = {
     "top_bar":    (0, 0, 1080, 150),
@@ -11,6 +12,69 @@ ZONES = {
 #IMG_WIDTH = (1080/4)
 IMG_WIDTH = 1080
 IMG_HEIGHT = 1350
+
+
+def download_player_image(player_name: str, team_name: str, save_dir: str = "player_images") -> str:
+    """
+    Busca en Bing Images una foto del jugador en marca.com y descarga la primera disponible.
+    Devuelve la ruta local de la imagen descargada.
+    """
+    # Crear directorio si no existe
+    os.makedirs(save_dir, exist_ok=True)
+
+    # Construir query de búsqueda
+    query = f'"{player_name}" "{team_name}" site:marca.com'
+    url = f"https://www.bing.com/images/search?q={requests.utils.quote(query)}&qft=+filterui:imagesize-large&form=IRFLTR"
+
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+                      "(KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36"
+    }
+
+    # Hacer la petición a Bing
+    response = requests.get(url, headers=headers)
+    if response.status_code != 200:
+        print(f"Error al buscar imagen: {response.status_code}")
+        return ""
+
+    # Parsear HTML con BeautifulSoup
+    soup = BeautifulSoup(response.text, "html.parser")
+    
+    # Buscar URLs de imágenes
+    img_tags = soup.find_all("a", class_="iusc")
+    if not img_tags:
+        print("No se encontraron imágenes.")
+        return ""
+
+    # Extraer la primera URL de imagen grande
+    first_img_tag = img_tags[0]
+    m = first_img_tag.get("m")
+    if not m:
+        print("No se encontró URL en el tag.")
+        return ""
+    
+    import json
+    m_json = json.loads(m)
+    img_url = m_json.get("murl")
+    if not img_url:
+        print("No hay URL de imagen en el JSON.")
+        return ""
+
+    # Descargar la imagen
+    ext = os.path.splitext(img_url)[1].split("?")[0] or ".jpg"
+    filename = f"{player_name.replace(' ', '_')}_{team_name.replace(' ', '_')}{ext}"
+    save_path = os.path.join(save_dir, filename)
+
+    try:
+        img_resp = requests.get(img_url, headers=headers)
+        with open(save_path, "wb") as f:
+            f.write(img_resp.content)
+        print(f"Imagen descargada: {save_path}")
+        return save_path
+    except Exception as e:
+        print(f"Error al descargar la imagen: {e}")
+        return ""
+
 def get_cards_by_tipo(data: dict, tipos: list[str]) -> list:
     tipos = set(tipos)
     return [
@@ -178,6 +242,7 @@ def create_card(card_info, IMAGES_TEAMS_DIR, DEFAULT_TEAM_IMAGE,tipo):
     return img
 def create_portada(canvas,card_info, PATH_UTILS):
     PORTADA_PATH = "Portada.jpg"
+    download_player_image(card_info["jugador"],card_info["equipo"],PATH_UTILS)
     image_path_portada = os.path.join(PATH_UTILS, PORTADA_PATH)
     # --- 2. Pegar foto portada ---
     portada = Image.open(image_path_portada).convert("RGBA")
