@@ -1,263 +1,281 @@
-fecha,subtype,equipo,jugador,Diff
-2025-12-28,clausula,Maldinillo 💥,Pedri,30.14751
-2025-12-28,clausula,Los marinero,Lamine Yamal,15.516855
-2025-12-28,mercado,Maldinillo 💥,Robert Lewandowski,0.624130000000001
-2025-12-27,mercado,Maldinillo 💥,Abel Bretones,-0.10221999999999998
-2025-12-27,mercado,Dani,Marko Dmitrović,0.3714999999999993
-2025-12-26,mercado,Jotabetrbb,Iván Martín,1.6669999999999998
-2025-12-23,mercado,Libre,Abu Kamara,0.0009899999999999909
-2025-12-23,mercado,Maldinillo 💥,Fran García,0.19230000000000003
-2025-12-23,clausula,Chamacónicos,Carl Starfelt,0.794
-2025-12-23,mercado,Chamacónicos,Manu Sánchez,0.04600000000000026
-2025-12-23,mercado,Jotabetrbb,Nico González,0.1441599999999994
-2025-12-22,mercado,Maldinillo 💥,Iván Romero,-0.4873200000000004
-2025-12-22,mercado,Dani,Nahuel Molina,-0.29024000000000005
-2025-12-22,mercado,Libre,Jon Aramburu,1.25971
-2025-12-21,mercado,Dani,Óscar Mingueza,-0.31034000000000006
-2025-12-21,mercado,Dani,Alexander Sørloth,0.0034200000000002007
-2025-12-21,mercado,Jotabetrbb,Diego López,1.20355
-2025-12-20,mercado,Dani,Salomón Rondón,0.024780000000000024
-2025-12-20,mercado,Chamacónicos,Fran Pérez,-0.10555000000000003
-2025-12-20,mercado,Chamacónicos,David Alaba,0.030999
-2025-12-19,acuerdo,De la Guettir FC,Iván Romero,-1.2668
-2025-12-19,clausula,Maldinillo 💥,Ayoze Pérez,7.801105
-2025-12-19,clausula,Jotabetrbb,Ferran Torres,17.448
-2025-12-19,mercado,Chamacónicos,Lucas Torró,-0.06902000000000008
-2025-12-19,mercado,Chamacónicos,Raúl Asencio,-0.0011900000000002464
-2025-12-19,mercado,Dani,Dani Raba,-0.005599999999999994
-2025-12-18,mercado,De la Guettir FC,Carlos Álvarez,0.3802310000000002
-2025-12-18,mercado,Los marinero,Nacho Vidal,-0.5846699999999998
-2025-12-18,clausula,Dani,Hector Fort,0.70469
-2025-12-17,mercado,Dani,Frenkie De Jong,-1.1780700000000017
-2025-12-17,mercado,Chamacónicos,Azzedine Ounahi,4.2877600000000005
-2025-12-17,mercado,Dani,Eduardo Camavinga,0.09304999999999986
-2025-12-17,mercado,De la Guettir FC,César Azpilicueta,-1.23497
-2025-12-17,mercado,Chamacónicos,Giovani Lo Celso,-2.096266
-2025-12-17,mercado,Dani,Andrei Rațiu,3.4245099999999997
-2025-12-16,mercado,Dani,Diego Morcillo,-0.013900000000000023
-2025-12-15,mercado,Chamacónicos,Marash Kumbulla,0.12448099999999998
-2025-12-15,mercado,Maldinillo 💥,Beñat Turrientes,-0.08750999999999998
-2025-12-15,mercado,Maldinillo 💥,Salomón Rondón,-0.037779999999999925
-2025-12-14,mercado,Dani,Omar El Hilali,0.9628399999999999
-2025-12-14,mercado,Dani,Thibaut Courtois,0.30367999999999995
-2025-12-13,mercado,Chamacónicos,Abel Bretones,0.8122000000000003
-2025-12-13,mercado,Los marinero,Luis Rioja,-0.3783500000000002
-2025-12-13,mercado,Dani,Luiz Felipe,-0.35557000000000005
-2025-12-12,mercado,Maldinillo 💥,Arnau Martínez,1.4786399999999995
-2025-12-12,acuerdo,Maldinillo 💥,Alexander Sørloth,0.7149099999999997
-2025-12-12,clausula,Dani,Cucho Hernández,7.693990000000001
-2025-12-12,mercado,Libre,César Tárrega,0.5067899999999996
-2025-12-12,mercado,Jotabetrbb,José Ángel Carmona,0.1976799999999992
-2025-12-12,mercado,Jotabetrbb,Dakonam Djené,1.3523
-2025-12-11,mercado,Los marinero,Gonçalo Guedes,-1.6337460000000004
-2025-12-11,mercado,Los marinero,Bryan Gil,-0.7431800000000002
-2025-12-11,clausula,Dani,Rodrigo Riquelme,0.45326
-2025-12-11,mercado,Maldinillo 💥,Juan Foyth,0.09241999999999884
-2025-12-10,mercado,Maldinillo 💥,Etta Eyong,-0.0442499999999999
-2025-12-10,mercado,Los marinero,Daniel Vivian,1.7514000000000003
-2025-12-10,mercado,Los marinero,Sofyan Amrabat,0.1747809999999994
-2025-12-10,mercado,Los marinero,Thierry Correia,0.016000000000000014
-2025-12-10,mercado,Jotabetrbb,José Giménez,-0.9254100000000003
-2025-12-09,mercado,Dani,Thibaut Courtois,0.31782999999999895
-2025-12-09,mercado,Chamacónicos,Akor Adams,-0.3189199999999994
-2025-12-09,mercado,Libre,Martim Neto,-0.012999999999999984
-2025-12-09,clausula,Chamacónicos,Valentín Gómez,1.11375
-2025-12-09,mercado,Chamacónicos,Juan Iglesias,0.13949999999999996
-2025-12-09,mercado,Jotabetrbb,Victor Muñoz,1.9525500000000005
-2025-12-09,mercado,Los marinero,Matteo Ruggeri,-0.3892500000000001
-2025-12-08,clausula,Dani,Antonio Rüdiger,1.5354899999999998
-2025-12-08,mercado,Maldinillo 💥,Jon Gorrotxategi,2.72833
-2025-12-08,mercado,De la Guettir FC,Nicolas Pépé,-0.30668000000000006
-2025-12-07,mercado,Dani,Gerard Moreno,1.6489910000000005
-2025-12-07,mercado,Dani,Jeremy Toljan,-0.04383000000000026
-2025-12-06,mercado,Maldinillo 💥,Federico Viñas,1.4770400000000001
-2025-12-06,mercado,Libre,Santiago Colombatto,-0.38040000000000007
-2025-12-06,mercado,Libre,Unai López,0.12165999999999988
-2025-12-06,acuerdo,Libre,Jon Gorrotxategi,0.26900000000000013
-2025-12-05,clausula,Maldinillo 💥,Antonio Rüdiger,1.02366
-2025-12-05,clausula,Chamacónicos,Djibril Sow,0.7679999999999999
-2025-12-05,clausula,Los marinero,Valentín Gómez,1.1335
-2025-12-05,mercado,De la Guettir FC,Renato Veiga,2.4170669999999994
-2025-12-04,mercado,Maldinillo 💥,Franco Mastantuono,-0.045099999999999696
-2025-12-04,mercado,Dani,Trent Alexander-Arnold,0.9313599999999997
-2025-12-04,mercado,Chamacónicos,Jon Moncayola,0.2851999999999997
-2025-12-04,mercado,Libre,Álvaro Carreras,0.7890599999999992
-2025-12-03,mercado,Maldinillo 💥,Leander Dendoncker,-0.19891999999999999
-2025-12-03,mercado,Libre,Marcus Rashford,1.79772
-2025-12-02,mercado,Dani,Borja Iglesias,-0.0228799999999989
-2025-12-01,mercado,Maldinillo 💥,Lucas Bergström,0.04583999999999988
-2025-11-30,mercado,Libre,Youssef Enríquez,1.11454
-2025-11-30,mercado,Libre,Marcos Llorente,5.1217700000000015
-2025-11-29,mercado,Dani,José Luis Gayà,0.15601999999999983
-2025-11-28,mercado,Jotabetrbb,Rubén Vargas,2.4510000000000005
-2025-11-28,mercado,Jotabetrbb,Horațiu Moldovan,-0.027130000000000015
-2025-11-28,mercado,Jotabetrbb,Tanguy Nianzou,-0.8699199999999999
-2025-11-28,mercado,Jotabetrbb,Abdel Abqar,-1.3435000000000001
-2025-11-27,mercado,Los marinero,Pablo García,-0.39625
-2025-11-27,mercado,Los marinero,Luka Sučić,-0.050610000000000016
-2025-11-27,mercado,Los marinero,Nemanja Gudelj,-0.39388
-2025-11-26,mercado,Dani,Pablo Fornals,2.2210300000000007
-2025-11-26,mercado,Chamacónicos,Héctor Bellerín,2.7622400000000003
-2025-11-26,mercado,Maldinillo 💥,Adrián de la Fuente,-0.08950000000000014
-2025-11-25,mercado,Maldinillo 💥,Pablo Maffeo,3.6464999999999996
-2025-11-25,mercado,Maldinillo 💥,Juan Foyth,2.752719999999999
-2025-11-24,mercado,Maldinillo 💥,Moussa Diarra,-0.04885999999999999
-2025-11-22,mercado,Dani,Clemens Riedel,3.5267700000000004
-2025-11-22,mercado,Libre,Antonio Blanco,0.07234999999999925
-2025-11-22,mercado,Dani,Dávid Hancko,1.525170000000001
-2025-11-22,mercado,Dani,Pepelu,0.8288099999999998
-2025-11-21,mercado,Dani,Borja Mayoral,0.5724800000000005
-2025-11-21,mercado,Maldinillo 💥,Rafa Mir,1.0399200000000004
-2025-11-21,mercado,Chamacónicos,Íñigo Lekue,-0.015460000000000002
-2025-11-20,mercado,Maldinillo 💥,Mario Martín,0.8076719999999997
-2025-11-20,clausula,Jotabetrbb,Matteo Ruggeri,0.5587500000000001
-2025-11-20,mercado,Chamacónicos,Viktor Tsygankov,0.4701599999999999
-2025-11-20,mercado,De la Guettir FC,Nacho Vidal,-0.07515699999999992
-2025-11-19,mercado,Maldinillo 💥,Thiago Almada,1.2034000000000002
-2025-11-19,mercado,Libre,Juan Iglesias,0.4932999999999996
-2025-11-19,mercado,Libre,Jon Moncayola,1.6984700000000004
-2025-11-19,mercado,Dani,Marc Bartra,2.2577499999999997
-2025-11-18,mercado,Dani,Ronald Araújo,1.1309500000000003
-2025-11-17,mercado,Chamacónicos,Moi Gómez,0.35334999999999983
-2025-11-17,mercado,Maldinillo 💥,Adrián Liso,0.33753999999999973
-2025-11-16,mercado,Maldinillo 💥,Aymeric Laporte,1.6920000000000002
-2025-11-14,mercado,Libre,Chidera Ejuke,-0.11416000000000004
-2025-11-13,mercado,De la Guettir FC,Javi Galán,-0.2247
-2025-11-12,mercado,Libre,Pol Lozano,1.5137620000000003
-2025-11-12,mercado,Libre,Roony Bardghji,0.8135599999999998
-2025-11-12,mercado,Chamacónicos,Pedro Díaz,-0.3470000000000001
-2025-11-12,clausula,Dani,Matteo Ruggeri,0.5216799999999999
-2025-11-10,mercado,Los marinero,Óscar Valentín,0.5885500000000001
-2025-11-08,mercado,Dani,Victor Chust,0.1658900000000001
-2025-11-08,mercado,Chamacónicos,Trent Alexander-Arnold,-0.29757999999999996
-2025-11-08,mercado,De la Guettir FC,Adrián de la Fuente,-1.29576
-2025-11-08,mercado,Libre,Goduine Koyalipou,-0.07445000000000002
-2025-11-07,mercado,Maldinillo 💥,Paulo Gazzaniga,3.1014
-2025-11-07,clausula,Dani,André Silva,4.30264
-2025-11-07,mercado,MuchaSalsa,Borja Iglesias,1.06597
-2025-11-07,mercado,Jotabetrbb,Marc Roca,-1.2475200000000002
-2025-11-06,mercado,Libre,Yuri Berchiche,0.5575200000000002
-2025-11-06,mercado,Dani,Nikola Maraš,0.05632000000000001
-2025-11-06,mercado,Maldinillo 💥,Unai Gómez,0.03583999999999998
-2025-11-05,mercado,Los marinero,Pau López,-0.45650000000000013
-2025-11-05,clausula,Chamacónicos,Odysseas Vlachodimos,3.25
-2025-11-05,mercado,Libre,Alejandro Rego,0.4416000000000001
-2025-11-05,mercado,Libre,Samuel Costa,0.5579799999999997
-2025-11-05,mercado,Los marinero,Pablo Torre,-0.13257999999999992
-2025-11-05,mercado,Chamacónicos,Georges Mikautadze,1.1656499999999994
-2025-11-05,mercado,Chamacónicos,Viktor Tsygankov,0.3698069999999998
-2025-11-04,mercado,Maldinillo 💥,Nico Williams,0.13525000000000098
-2025-11-04,clausula,Juanba,Abde Ezzalzouli,5.423592
-2025-11-03,mercado,Maldinillo 💥,Ander Barrenetxea,0.33498999999999945
-2025-11-02,mercado,Los marinero,José Copete,-0.5436749999999999
-2025-11-02,mercado,Libre,Pau Navarro,-0.02356999999999998
-2025-11-02,mercado,Libre,Filip Ugrinic,-0.04124
-2025-11-01,mercado,Dani,Cristian Portu,-0.45899999999999996
-2025-10-31,mercado,Dani,Rafa Mir,-1.8634149999999998
-2025-10-31,mercado,Dani,Antonio Raíllo,0.5739200000000002
-2025-10-31,mercado,Maldinillo 💥,Thiago Almada,-0.3010800000000007
-2025-10-31,mercado,Jotabetrbb,Eduardo Camavinga,0.3798199999999996
-2025-10-31,clausula,Dani,Iván Martín,1.64546
-2025-11-01,mercado,Chamacónicos,Yangel Herrera,0.8811600000000002
-2025-10-30,mercado,Libre,Adrián San Miguel,0.0020799999999999985
-,mercado,Libre,Álex Moreno,-0.22324999999999973
-,mercado,Libre,Antoine Griezmann,-0.6041800000000013
-,mercado,Jotabetrbb,Valentín Gómez,-0.24560000000000004
-,mercado,De la Guettir FC,Jon Pacheco,1.417027
-,mercado,Libre,Kike Barja,-0.08697000000000002
-,mercado,Jotabetrbb,Arnau Tenas,-2.0629
-,mercado,Maldinillo 💥,Alexis Sánchez,-0.7877190000000001
-,mercado,Libre,Hugo Rincón,0.31039000000000005
-,mercado,De la Guettir FC,Andreas Christensen,0.8408510000000002
-,mercado,Libre,Igor Zubeldia,-0.2640600000000006
-,mercado,Maldinillo 💥,Oihan Sancet,0.35427999999999926
-,mercado,De la Guettir FC,Franco Mastantuono,-0.753400000000001
-,mercado,Libre,Gabriel Suazo,1.7604439999999997
-,mercado,Libre,Logan Costa,0.004949999999999982
-,mercado,Dani,Omar Falah,-0.08387
-,mercado,Dani,David López,-0.009089999999999987
-,mercado,Dani,Aritz Elustondo,-0.19612999999999997
-,acuerdo,Chamacónicos,Marc Roca,0.5730000000000004
-,acuerdo,Chamacónicos,Eduardo Camavinga,0.5679999999999996
-,mercado,Maldinillo 💥,Iago Aspas,-0.21289999999999942
-,clausula,Jotabetrbb,Marc Roca,1.1234999999999997
-,clausula,Dani,José Copete,0.40885499999999986
-,clausula,MuchaSalsa,Cristian Portu,0.45699999999999996
-,mercado,Maldinillo 💥,Unai López,0.3732999999999995
-,mercado,Maldinillo 💥,Tyrhys Dolan,-0.5449999999999999
-,mercado,Libre,Iker Losada,0.0022999999999999965
-,clausula,Chamacónicos,Koke,2.166666
-,mercado,Maldinillo 💥,Gorka Guruzeta,0.4268099999999999
-,mercado,Maldinillo 💥,Carlos Álvarez,1.7019200000000003
-,mercado,De la Guettir FC,Marc Bernal,-2.204111
-,mercado,Los marinero,Batista Mendy,0.15144000000000002
-,mercado,Libre,Luis Rioja,0.6782399999999997
-,mercado,Los marinero,Ricardo Rodríguez,0.8879199999999999
-,mercado,Dani,Roger Brugué,-0.10313000000000005
-,mercado,Dani,Manu Sánchez,-0.37129999999999974
-,mercado,Libre,Johan Mojica,-0.5242500000000003
-,mercado,Libre,Matías Moreno,-0.05634000000000006
-,mercado,Libre,Igor Zubeldia,0.10476000000000063
-,mercado,Dani,Jeremy Toljan,0.7299300000000004
-,acuerdo,Maldinillo 💥,Samuel Costa,1.508
-,acuerdo,Maldinillo 💥,Jon Gorrotxategi,0.7639999999999998
-,mercado,Dani,Omar El Hilali,1.2990399999999998
-,mercado,Dani,Aitor Paredes,0.15552999999999972
-,mercado,Chamacónicos,Pere Milla,1.2496100000000006
-,mercado,Chamacónicos,Haissem Hassan,0.8653200000000005
-,acuerdo,Los marinero,Tyrhys Dolan,-1.612
-,mercado,Maldinillo 💥,Alberto Moleiro,0.32093999999999934
-,mercado,Chamacónicos,Antonio Blanco,1.0549999999999997
-,mercado,Libre,Alexander Sørloth,-2.03613
-,clausula,Jotabetrbb,Clemens Riedel,0.5587500000000001
-,mercado,Chamacónicos,Antonio Sivera,0.2809500000000007
-,mercado,Libre,Aurélien Tchouaméni,0.6340900000000005
-,mercado,Dani,David Affengruber,1.7123100000000004
-,mercado,Chamacónicos,Iván Balliu,-0.13494999999999996
-,mercado,Jotabetrbb,Léo Pétrot,-0.0826
-,mercado,Maldinillo 💥,Pedro Bigas,0.3268999999999993
-,clausula,Maldinillo 💥,Clemens Riedel,0.47204999999999997
-,mercado,Libre,Matías Dituro,-1.0171999999999999
-,mercado,Maldinillo 💥,César Tárrega,0.18766999999999978
-,mercado,Dani,Abel Ruiz,-0.010030000000000011
-,mercado,Maldinillo 💥,Sergi Darder,0.41352999999999973
-,mercado,Dani,Pablo Martínez,-0.051289999999999836
-,mercado,Los marinero,Javi Guerra,-0.43123999999999985
-,mercado,Los marinero,Diego Rico,-0.4501200000000001
-,mercado,Dani,Beñat Prados,-0.061829999999999996
-,clausula,Dani,Abel Bretones,1.9149
-,mercado,Maldinillo 💥,Flavien Boyomo,0.46592000000000056
-,mercado,Libre,Andrés Castrín,-0.2043400000000002
-,mercado,Libre,Dani Parejo,-0.5376799999999999
-,acuerdo,Dani,Abdel Abqar,0.20645000000000002
-,mercado,MuchaSalsa,Luis Milla,0.8099500000000006
-,mercado,Maldinillo 💥,Marcos Alonso,-0.11707000000000001
-,mercado,Maldinillo 💥,Isaac Romero,-0.0033399999999996766
-,clausula,Los marinero,Marc Roca,0.4475
-,clausula,Jotabetrbb,Pablo Ibáñez,1.4135
-,mercado,Chamacónicos,Lucas Boyé,0.0046999999999999265
-,clausula,Maldinillo 💥,Abde Ezzalzouli,2.601636
-,mercado,Maldinillo 💥,Dani Carvajal,-1.7368609999999993
-,mercado,Dani,Denis Suárez,-0.040429999999999966
-,mercado,Los marinero,Leandro Cabrera,-0.048769999999999314
-,mercado,Maldinillo 💥,Mikel Vesga,0.09698000000000007
-,mercado,Los marinero,Mariano Díaz,-1.0461600000000002
-,mercado,Maldinillo 💥,Luka Ilic,-0.07480999999999982
-,mercado,Libre,Pichu Cuéllar,-0.003160000000000024
-,mercado,Libre,Kike Salas,-0.32564999999999955
-,clausula,Maldinillo 💥,Rafa Mir,2.7570550000000003
-,mercado,Chamacónicos,Alejandro Catena,0.5293599999999996
-,mercado,Jotabetrbb,Sergio Carreira,-0.04028799999999988
-,clausula,Chamacónicos,Valentín Gómez,1.0
-,mercado,Chamacónicos,Marko Dmitrović,0.22225000000000072
-,clausula,Libre,Valentín Gómez,0.5559700000000001
-,mercado,Maldinillo 💥,Hugo Duro,0.382200000000001
-,clausula,Los marinero,Tanguy Nianzou,0.34299999999999986
-,mercado,Maldinillo 💥,Carles Aleñá,0.11752999999999947
-,mercado,Los marinero,Gorka Guruzeta,-0.09356000000000009
-,mercado,Maldinillo 💥,José Copete,-0.04592000000000018
-,clausula,Chamacónicos,Carlos Dominguez,0.5527500000000001
-,acuerdo,Chamacónicos,Aitor Fernández,-0.13226000000000002
-,clausula,Maldinillo 💥,Bryan Gil,1.1303400000000003
-,mercado,Maldinillo 💥,Javi Puado,-0.11036999999999964
-,mercado,Los marinero,Beñat Prados,-0.11599999999999999
+fecha,subtype,equipo,jugador,equipoLiga,Diff
+2026-01-04,mercado,Dani,Jorge Cabello,12.0,-0.007739999999999997
+2026-01-04,mercado,Dani,Yvan Neyou,9.0,-0.006400000000000017
+2026-01-04,mercado,Dani,John Donald,23.0,0.008819999999999995
+2026-01-04,mercado,Dani,Allan Nyom,9.0,-0.028319999999999984
+2026-01-03,mercado,Libre,Arnau Martínez,222.0,-1.1014650000000001
+2026-01-03,mercado,Libre,Mauro Arambarri,9.0,2.063460000000001
+2026-01-03,mercado,Los marinero,Hector Fort,23.0,0.10720000000000018
+2026-01-03,mercado,Maldinillo 💥,Isco,4.0,-5.2173099999999994
+2026-01-02,mercado,Los marinero,Gabriel Suazo,17.0,-1.42815
+2026-01-01,clausula,Jotabetrbb,César Azpilicueta,17.0,0.7000000000000002
+2025-12-31,clausula,Dani,Thierry Correia,19.0,0.8305899999999999
+2025-12-30,mercado,Maldinillo 💥,Mikel Jauregizar,1.0,0.21572000000000013
+2025-12-30,clausula,Chamacónicos,Gabriel Suazo,17.0,2.378
+2025-12-30,mercado,Los marinero,Oihan Sancet,1.0,-0.17813999999999997
+2025-12-30,clausula,MuchaSalsa,Koke,2.0,10.441001
+2025-12-29,mercado,Maldinillo 💥,Alexander Sørloth,2.0,0.23741000000000057
+2025-12-29,mercado,Maldinillo 💥,Ander Barrenetxea,16.0,0.4164300000000001
+2025-12-29,mercado,Los marinero,Dávid Hancko,2.0,-0.2777600000000007
+2025-12-28,clausula,Maldinillo 💥,Pedri,3.0,30.14751
+2025-12-28,clausula,Los marinero,Lamine Yamal,3.0,15.516855
+2025-12-28,mercado,Maldinillo 💥,Robert Lewandowski,3.0,0.624130000000001
+2025-12-27,mercado,Maldinillo 💥,Abel Bretones,50.0,-0.10221999999999998
+2025-12-27,mercado,Dani,Marko Dmitrović,8.0,0.3714999999999993
+2025-12-26,mercado,Jotabetrbb,Iván Martín,222.0,1.6669999999999998
+2025-12-23,mercado,Libre,Abu Kamara,9.0,0.0009899999999999909
+2025-12-23,mercado,Maldinillo 💥,Fran García,15.0,0.19230000000000003
+2025-12-23,clausula,Chamacónicos,Carl Starfelt,5.0,0.794
+2025-12-23,mercado,Chamacónicos,Manu Sánchez,12.0,0.04600000000000026
+2025-12-23,mercado,Jotabetrbb,Nico González,2.0,0.1441599999999994
+2025-12-22,mercado,Maldinillo 💥,Iván Romero,12.0,-0.4873200000000004
+2025-12-22,mercado,Dani,Nahuel Molina,2.0,-0.29024000000000005
+2025-12-22,mercado,Libre,Jon Aramburu,16.0,1.25971
+2025-12-21,mercado,Dani,Óscar Mingueza,5.0,-0.31034000000000006
+2025-12-21,mercado,Dani,Alexander Sørloth,2.0,0.0034200000000002007
+2025-12-21,mercado,Jotabetrbb,Diego López,19.0,1.20355
+2025-12-20,mercado,Dani,Salomón Rondón,1370.0,0.024780000000000024
+2025-12-20,mercado,Chamacónicos,Fran Pérez,14.0,-0.10555000000000003
+2025-12-20,mercado,Chamacónicos,David Alaba,15.0,0.030999
+2025-12-19,acuerdo,De la Guettir FC,Iván Romero,12.0,-1.2668
+2025-12-19,clausula,Maldinillo 💥,Ayoze Pérez,20.0,7.801105
+2025-12-19,clausula,Jotabetrbb,Ferran Torres,3.0,17.448
+2025-12-19,mercado,Chamacónicos,Lucas Torró,50.0,-0.06902000000000008
+2025-12-19,mercado,Chamacónicos,Raúl Asencio,15.0,-0.0011900000000002464
+2025-12-19,mercado,Dani,Dani Raba,19.0,-0.005599999999999994
+2025-12-18,mercado,De la Guettir FC,Carlos Álvarez,12.0,0.3802310000000002
+2025-12-18,mercado,Los marinero,Nacho Vidal,1370.0,-0.5846699999999998
+2025-12-18,clausula,Dani,Hector Fort,23.0,0.70469
+2025-12-17,mercado,Dani,Frenkie De Jong,3.0,-1.1780700000000017
+2025-12-17,mercado,Chamacónicos,Azzedine Ounahi,222.0,4.2877600000000005
+2025-12-17,mercado,Dani,Eduardo Camavinga,15.0,0.09304999999999986
+2025-12-17,mercado,De la Guettir FC,César Azpilicueta,17.0,-1.23497
+2025-12-17,mercado,Chamacónicos,Giovani Lo Celso,4.0,-2.096266
+2025-12-17,mercado,Dani,Andrei Rațiu,14.0,3.4245099999999997
+2025-12-16,mercado,Dani,Diego Morcillo,48.0,-0.013900000000000023
+2025-12-15,mercado,Chamacónicos,Marash Kumbulla,408.0,0.12448099999999998
+2025-12-15,mercado,Maldinillo 💥,Beñat Turrientes,16.0,-0.08750999999999998
+2025-12-15,mercado,Maldinillo 💥,Salomón Rondón,1370.0,-0.037779999999999925
+2025-12-14,mercado,Dani,Omar El Hilali,8.0,0.9628399999999999
+2025-12-14,mercado,Dani,Thibaut Courtois,15.0,0.30367999999999995
+2025-12-13,mercado,Chamacónicos,Abel Bretones,50.0,0.8122000000000003
+2025-12-13,mercado,Los marinero,Luis Rioja,19.0,-0.3783500000000002
+2025-12-13,mercado,Dani,Luiz Felipe,14.0,-0.35557000000000005
+2025-12-12,mercado,Maldinillo 💥,Arnau Martínez,222.0,1.4786399999999995
+2025-12-12,acuerdo,Maldinillo 💥,Alexander Sørloth,2.0,0.7149099999999997
+2025-12-12,clausula,Dani,Cucho Hernández,4.0,7.693990000000001
+2025-12-12,mercado,Libre,César Tárrega,19.0,0.5067899999999996
+2025-12-12,mercado,Jotabetrbb,José Ángel Carmona,17.0,0.1976799999999992
+2025-12-12,mercado,Jotabetrbb,Dakonam Djené,9.0,1.3523
+2025-12-11,mercado,Los marinero,Gonçalo Guedes,16.0,-1.6337460000000004
+2025-12-11,mercado,Los marinero,Bryan Gil,222.0,-0.7431800000000002
+2025-12-11,clausula,Dani,Rodrigo Riquelme,4.0,0.45326
+2025-12-11,mercado,Maldinillo 💥,Juan Foyth,20.0,0.09241999999999884
+2025-12-10,mercado,Maldinillo 💥,Etta Eyong,12.0,-0.0442499999999999
+2025-12-10,mercado,Los marinero,Daniel Vivian,1.0,1.7514000000000003
+2025-12-10,mercado,Los marinero,Sofyan Amrabat,4.0,0.1747809999999994
+2025-12-10,mercado,Los marinero,Thierry Correia,19.0,0.016000000000000014
+2025-12-10,mercado,Jotabetrbb,José Giménez,2.0,-0.9254100000000003
+2025-12-09,mercado,Dani,Thibaut Courtois,15.0,0.31782999999999895
+2025-12-09,mercado,Chamacónicos,Akor Adams,17.0,-0.3189199999999994
+2025-12-09,mercado,Libre,Martim Neto,23.0,-0.012999999999999984
+2025-12-09,clausula,Chamacónicos,Valentín Gómez,4.0,1.11375
+2025-12-09,mercado,Chamacónicos,Juan Iglesias,9.0,0.13949999999999996
+2025-12-09,mercado,Jotabetrbb,Victor Muñoz,50.0,1.9525500000000005
+2025-12-09,mercado,Los marinero,Matteo Ruggeri,2.0,-0.3892500000000001
+2025-12-08,clausula,Dani,Antonio Rüdiger,15.0,1.5354899999999998
+2025-12-08,mercado,Maldinillo 💥,Jon Gorrotxategi,16.0,2.72833
+2025-12-08,mercado,De la Guettir FC,Nicolas Pépé,20.0,-0.30668000000000006
+2025-12-07,mercado,Dani,Gerard Moreno,20.0,1.6489910000000005
+2025-12-07,mercado,Dani,Jeremy Toljan,12.0,-0.04383000000000026
+2025-12-06,mercado,Maldinillo 💥,Federico Viñas,1370.0,1.4770400000000001
+2025-12-06,mercado,Libre,Santiago Colombatto,1370.0,-0.38040000000000007
+2025-12-06,mercado,Libre,Unai López,14.0,0.12165999999999988
+2025-12-06,acuerdo,Libre,Jon Gorrotxategi,16.0,0.26900000000000013
+2025-12-05,clausula,Maldinillo 💥,Antonio Rüdiger,15.0,1.02366
+2025-12-05,clausula,Chamacónicos,Djibril Sow,17.0,0.7679999999999999
+2025-12-05,clausula,Los marinero,Valentín Gómez,4.0,1.1335
+2025-12-05,mercado,De la Guettir FC,Renato Veiga,20.0,2.4170669999999994
+2025-12-04,mercado,Maldinillo 💥,Franco Mastantuono,15.0,-0.045099999999999696
+2025-12-04,mercado,Dani,Trent Alexander-Arnold,15.0,0.9313599999999997
+2025-12-04,mercado,Chamacónicos,Jon Moncayola,50.0,0.2851999999999997
+2025-12-04,mercado,Libre,Álvaro Carreras,15.0,0.7890599999999992
+2025-12-03,mercado,Maldinillo 💥,Leander Dendoncker,1370.0,-0.19891999999999999
+2025-12-03,mercado,Libre,Marcus Rashford,3.0,1.79772
+2025-12-02,mercado,Dani,Borja Iglesias,5.0,-0.0228799999999989
+2025-12-01,mercado,Maldinillo 💥,Lucas Bergström,408.0,0.04583999999999988
+2025-11-30,mercado,Libre,Youssef Enríquez,48.0,1.11454
+2025-11-30,mercado,Libre,Marcos Llorente,2.0,5.1217700000000015
+2025-11-29,mercado,Dani,José Luis Gayà,19.0,0.15601999999999983
+2025-11-28,mercado,Jotabetrbb,Rubén Vargas,17.0,2.4510000000000005
+2025-11-28,mercado,Jotabetrbb,Horațiu Moldovan,1370.0,-0.027130000000000015
+2025-11-28,mercado,Jotabetrbb,Tanguy Nianzou,17.0,-0.8699199999999999
+2025-11-28,mercado,Jotabetrbb,Abdel Abqar,9.0,-1.3435000000000001
+2025-11-27,mercado,Los marinero,Pablo García,4.0,-0.39625
+2025-11-27,mercado,Los marinero,Luka Sučić,16.0,-0.050610000000000016
+2025-11-27,mercado,Los marinero,Nemanja Gudelj,17.0,-0.39388
+2025-11-26,mercado,Dani,Pablo Fornals,4.0,2.2210300000000007
+2025-11-26,mercado,Chamacónicos,Héctor Bellerín,4.0,2.7622400000000003
+2025-11-26,mercado,Maldinillo 💥,Adrián de la Fuente,12.0,-0.08950000000000014
+2025-11-25,mercado,Maldinillo 💥,Pablo Maffeo,408.0,3.6464999999999996
+2025-11-25,mercado,Maldinillo 💥,Juan Foyth,20.0,2.752719999999999
+2025-11-24,mercado,Maldinillo 💥,Moussa Diarra,48.0,-0.04885999999999999
+2025-11-22,mercado,Dani,Clemens Riedel,8.0,3.5267700000000004
+2025-11-22,mercado,Libre,Antonio Blanco,48.0,0.07234999999999925
+2025-11-22,mercado,Dani,Dávid Hancko,2.0,1.525170000000001
+2025-11-22,mercado,Dani,Pepelu,19.0,0.8288099999999998
+2025-11-21,mercado,Dani,Borja Mayoral,9.0,0.5724800000000005
+2025-11-21,mercado,Maldinillo 💥,Rafa Mir,23.0,1.0399200000000004
+2025-11-21,mercado,Chamacónicos,Íñigo Lekue,1.0,-0.015460000000000002
+2025-11-20,mercado,Maldinillo 💥,Mario Martín,9.0,0.8076719999999997
+2025-11-20,clausula,Jotabetrbb,Matteo Ruggeri,2.0,0.5587500000000001
+2025-11-20,mercado,Chamacónicos,Viktor Tsygankov,222.0,0.4701599999999999
+2025-11-20,mercado,De la Guettir FC,Nacho Vidal,1370.0,-0.07515699999999992
+2025-11-19,mercado,Maldinillo 💥,Thiago Almada,2.0,1.2034000000000002
+2025-11-19,mercado,Libre,Juan Iglesias,9.0,0.4932999999999996
+2025-11-19,mercado,Libre,Jon Moncayola,50.0,1.6984700000000004
+2025-11-19,mercado,Dani,Marc Bartra,4.0,2.2577499999999997
+2025-11-18,mercado,Dani,Ronald Araújo,3.0,1.1309500000000003
+2025-11-17,mercado,Chamacónicos,Moi Gómez,50.0,0.35334999999999983
+2025-11-17,mercado,Maldinillo 💥,Adrián Liso,9.0,0.33753999999999973
+2025-11-16,mercado,Maldinillo 💥,Aymeric Laporte,1.0,1.6920000000000002
+2025-11-14,mercado,Libre,Chidera Ejuke,17.0,-0.11416000000000004
+2025-11-13,mercado,De la Guettir FC,Javi Galán,2.0,-0.2247
+2025-11-12,mercado,Libre,Pol Lozano,8.0,1.5137620000000003
+2025-11-12,mercado,Libre,Roony Bardghji,3.0,0.8135599999999998
+2025-11-12,mercado,Chamacónicos,Pedro Díaz,14.0,-0.3470000000000001
+2025-11-12,clausula,Dani,Matteo Ruggeri,2.0,0.5216799999999999
+2025-11-10,mercado,Los marinero,Óscar Valentín,14.0,0.5885500000000001
+2025-11-08,mercado,Dani,Victor Chust,23.0,0.1658900000000001
+2025-11-08,mercado,Chamacónicos,Trent Alexander-Arnold,15.0,-0.29757999999999996
+2025-11-08,mercado,De la Guettir FC,Adrián de la Fuente,12.0,-1.29576
+2025-11-08,mercado,Libre,Goduine Koyalipou,12.0,-0.07445000000000002
+2025-11-07,mercado,Maldinillo 💥,Paulo Gazzaniga,222.0,3.1014
+2025-11-07,clausula,Dani,André Silva,23.0,4.30264
+2025-11-07,mercado,MuchaSalsa,Borja Iglesias,5.0,1.06597
+2025-11-07,mercado,Jotabetrbb,Marc Roca,4.0,-1.2475200000000002
+2025-11-06,mercado,Libre,Yuri Berchiche,1.0,0.5575200000000002
+2025-11-06,mercado,Dani,Nikola Maraš,48.0,0.05632000000000001
+2025-11-06,mercado,Maldinillo 💥,Unai Gómez,1.0,0.03583999999999998
+2025-11-05,mercado,Los marinero,Pau López,4.0,-0.45650000000000013
+2025-11-05,clausula,Chamacónicos,Odysseas Vlachodimos,17.0,3.25
+2025-11-05,mercado,Libre,Alejandro Rego,1.0,0.4416000000000001
+2025-11-05,mercado,Libre,Samuel Costa,408.0,0.5579799999999997
+2025-11-05,mercado,Los marinero,Pablo Torre,408.0,-0.13257999999999992
+2025-11-05,mercado,Chamacónicos,Georges Mikautadze,20.0,1.1656499999999994
+2025-11-05,mercado,Chamacónicos,Viktor Tsygankov,222.0,0.3698069999999998
+2025-11-04,mercado,Maldinillo 💥,Nico Williams,1.0,0.13525000000000098
+2025-11-04,clausula,Juanba,Abde Ezzalzouli,4.0,5.423592
+2025-11-03,mercado,Maldinillo 💥,Ander Barrenetxea,16.0,0.33498999999999945
+2025-11-02,mercado,Los marinero,José Copete,19.0,-0.5436749999999999
+2025-11-02,mercado,Libre,Pau Navarro,20.0,-0.02356999999999998
+2025-11-02,mercado,Libre,Filip Ugrinic,19.0,-0.04124
+2025-11-01,mercado,Dani,Cristian Portu,222.0,-0.45899999999999996
+2025-10-31,mercado,Dani,Rafa Mir,23.0,-1.8634149999999998
+2025-10-31,mercado,Dani,Antonio Raíllo,408.0,0.5739200000000002
+2025-10-31,mercado,Maldinillo 💥,Thiago Almada,2.0,-0.3010800000000007
+2025-10-31,mercado,Jotabetrbb,Eduardo Camavinga,15.0,0.3798199999999996
+2025-10-31,clausula,Dani,Iván Martín,222.0,1.64546
+2025-11-01,mercado,Chamacónicos,Yangel Herrera,16.0,0.8811600000000002
+2025-10-30,mercado,Libre,Adrián San Miguel,4.0,0.0020799999999999985
+,mercado,Libre,Álex Moreno,222.0,-0.22324999999999973
+,mercado,Libre,Antoine Griezmann,2.0,-0.6041800000000013
+,mercado,Jotabetrbb,Valentín Gómez,4.0,-0.24560000000000004
+,mercado,De la Guettir FC,Jon Pacheco,48.0,1.417027
+,mercado,Libre,Kike Barja,50.0,-0.08697000000000002
+,mercado,Jotabetrbb,Arnau Tenas,20.0,-2.0629
+,mercado,Maldinillo 💥,Alexis Sánchez,17.0,-0.7877190000000001
+,mercado,Libre,Hugo Rincón,222.0,0.31039000000000005
+,mercado,De la Guettir FC,Andreas Christensen,3.0,0.8408510000000002
+,mercado,Libre,Igor Zubeldia,16.0,-0.2640600000000006
+,mercado,Maldinillo 💥,Oihan Sancet,1.0,0.35427999999999926
+,mercado,De la Guettir FC,Franco Mastantuono,15.0,-0.753400000000001
+,mercado,Libre,Gabriel Suazo,17.0,1.7604439999999997
+,mercado,Libre,Logan Costa,20.0,0.004949999999999982
+,mercado,Dani,Omar Falah,1370.0,-0.08387
+,mercado,Dani,David López,408.0,-0.009089999999999987
+,mercado,Dani,Aritz Elustondo,16.0,-0.19612999999999997
+,acuerdo,Chamacónicos,Marc Roca,4.0,0.5730000000000004
+,acuerdo,Chamacónicos,Eduardo Camavinga,15.0,0.5679999999999996
+,mercado,Maldinillo 💥,Iago Aspas,5.0,-0.21289999999999942
+,clausula,Jotabetrbb,Marc Roca,4.0,1.1234999999999997
+,clausula,Dani,José Copete,19.0,0.40885499999999986
+,clausula,MuchaSalsa,Cristian Portu,222.0,0.45699999999999996
+,mercado,Maldinillo 💥,Unai López,14.0,0.3732999999999995
+,mercado,Maldinillo 💥,Tyrhys Dolan,8.0,-0.5449999999999999
+,mercado,Libre,Iker Losada,12.0,0.0022999999999999965
+,clausula,Chamacónicos,Koke,2.0,2.166666
+,mercado,Maldinillo 💥,Gorka Guruzeta,1.0,0.4268099999999999
+,mercado,Maldinillo 💥,Carlos Álvarez,12.0,1.7019200000000003
+,mercado,De la Guettir FC,Marc Bernal,3.0,-2.204111
+,mercado,Los marinero,Batista Mendy,17.0,0.15144000000000002
+,mercado,Libre,Luis Rioja,19.0,0.6782399999999997
+,mercado,Los marinero,Ricardo Rodríguez,4.0,0.8879199999999999
+,mercado,Dani,Roger Brugué,12.0,-0.10313000000000005
+,mercado,Dani,Manu Sánchez,12.0,-0.37129999999999974
+,mercado,Libre,Johan Mojica,408.0,-0.5242500000000003
+,mercado,Libre,Matías Moreno,12.0,-0.05634000000000006
+,mercado,Libre,Igor Zubeldia,16.0,0.10476000000000063
+,mercado,Dani,Jeremy Toljan,12.0,0.7299300000000004
+,acuerdo,Maldinillo 💥,Samuel Costa,408.0,1.508
+,acuerdo,Maldinillo 💥,Jon Gorrotxategi,16.0,0.7639999999999998
+,mercado,Dani,Omar El Hilali,8.0,1.2990399999999998
+,mercado,Dani,Aitor Paredes,1.0,0.15552999999999972
+,mercado,Chamacónicos,Pere Milla,8.0,1.2496100000000006
+,mercado,Chamacónicos,Haissem Hassan,1370.0,0.8653200000000005
+,acuerdo,Los marinero,Tyrhys Dolan,8.0,-1.612
+,mercado,Maldinillo 💥,Alberto Moleiro,20.0,0.32093999999999934
+,mercado,Chamacónicos,Antonio Blanco,48.0,1.0549999999999997
+,mercado,Libre,Alexander Sørloth,2.0,-2.03613
+,clausula,Jotabetrbb,Clemens Riedel,8.0,0.5587500000000001
+,mercado,Chamacónicos,Antonio Sivera,48.0,0.2809500000000007
+,mercado,Libre,Aurélien Tchouaméni,15.0,0.6340900000000005
+,mercado,Dani,David Affengruber,23.0,1.7123100000000004
+,mercado,Chamacónicos,Iván Balliu,14.0,-0.13494999999999996
+,mercado,Jotabetrbb,Léo Pétrot,23.0,-0.0826
+,mercado,Maldinillo 💥,Pedro Bigas,23.0,0.3268999999999993
+,clausula,Maldinillo 💥,Clemens Riedel,8.0,0.47204999999999997
+,mercado,Libre,Matías Dituro,23.0,-1.0171999999999999
+,mercado,Maldinillo 💥,César Tárrega,19.0,0.18766999999999978
+,mercado,Dani,Abel Ruiz,222.0,-0.010030000000000011
+,mercado,Maldinillo 💥,Sergi Darder,408.0,0.41352999999999973
+,mercado,Dani,Pablo Martínez,12.0,-0.051289999999999836
+,mercado,Los marinero,Javi Guerra,19.0,-0.43123999999999985
+,mercado,Los marinero,Diego Rico,9.0,-0.4501200000000001
+,mercado,Dani,Beñat Prados,1.0,-0.061829999999999996
+,clausula,Dani,Abel Bretones,50.0,1.9149
+,mercado,Maldinillo 💥,Flavien Boyomo,50.0,0.46592000000000056
+,mercado,Libre,Andrés Castrín,17.0,-0.2043400000000002
+,mercado,Libre,Dani Parejo,20.0,-0.5376799999999999
+,acuerdo,Dani,Abdel Abqar,9.0,0.20645000000000002
+,mercado,MuchaSalsa,Luis Milla,9.0,0.8099500000000006
+,mercado,Maldinillo 💥,Marcos Alonso,5.0,-0.11707000000000001
+,mercado,Maldinillo 💥,Isaac Romero,17.0,-0.0033399999999996766
+,clausula,Los marinero,Marc Roca,4.0,0.4475
+,clausula,Jotabetrbb,Pablo Ibáñez,48.0,1.4135
+,mercado,Chamacónicos,Lucas Boyé,48.0,0.0046999999999999265
+,clausula,Maldinillo 💥,Abde Ezzalzouli,4.0,2.601636
+,mercado,Maldinillo 💥,Dani Carvajal,15.0,-1.7368609999999993
+,mercado,Dani,Denis Suárez,48.0,-0.040429999999999966
+,mercado,Los marinero,Leandro Cabrera,8.0,-0.048769999999999314
+,mercado,Maldinillo 💥,Mikel Vesga,1.0,0.09698000000000007
+,mercado,Los marinero,Mariano Díaz,48.0,-1.0461600000000002
+,mercado,Maldinillo 💥,Luka Ilic,1370.0,-0.07480999999999982
+,mercado,Libre,Pichu Cuéllar,408.0,-0.003160000000000024
+,mercado,Libre,Kike Salas,17.0,-0.32564999999999955
+,clausula,Maldinillo 💥,Rafa Mir,23.0,2.7570550000000003
+,mercado,Chamacónicos,Alejandro Catena,50.0,0.5293599999999996
+,mercado,Jotabetrbb,Sergio Carreira,5.0,-0.04028799999999988
+,clausula,Chamacónicos,Valentín Gómez,4.0,1.0
+,mercado,Chamacónicos,Marko Dmitrović,8.0,0.22225000000000072
+,clausula,Libre,Valentín Gómez,4.0,0.5559700000000001
+,mercado,Maldinillo 💥,Hugo Duro,19.0,0.382200000000001
+,clausula,Los marinero,Tanguy Nianzou,17.0,0.34299999999999986
+,mercado,Maldinillo 💥,Carles Aleñá,48.0,0.11752999999999947
+,mercado,Los marinero,Gorka Guruzeta,1.0,-0.09356000000000009
+,mercado,Maldinillo 💥,José Copete,19.0,-0.04592000000000018
+,clausula,Chamacónicos,Carlos Dominguez,5.0,0.5527500000000001
+,acuerdo,Chamacónicos,Aitor Fernández,50.0,-0.13226000000000002
+,clausula,Maldinillo 💥,Bryan Gil,222.0,1.1303400000000003
+,mercado,Maldinillo 💥,Javi Puado,8.0,-0.11036999999999964
+,mercado,Los marinero,Beñat Prados,1.0,-0.11599999999999999
