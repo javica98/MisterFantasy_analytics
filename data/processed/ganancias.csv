@@ -1,17 +1,33 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
+marks,start_mercado,,,,,,,,,,,,,,,2026-01-05,
+transfer,mercado,,Filip Ugrinic,Jotabetrbb,Mister,0.6308,3,24,19,,,,,,,2026-01-05,bb1194414db8e7644ca2cb73cef41458
+marks,start_mercado,,,,,,,,,,,,,,,2026-01-05,
+transfer,mercado,,Raúl Asencio,Mister,Chamacónicos,4.872,2,53,15,,,,,,,2026-01-05,ab1038ead3050a650d3b61694c41d5ba
+transfer,Puja,,Raúl Asencio,Mister,Los marinero,,2,53,15,,,,,,,2026-01-05,db37adcf7d4eec80e1cf1ef0027d416f
+transfer,mercado,,Hugo Duro,Mister,Dani,9.85103,4,77,19,,,,,,,2026-01-05,686b5c159b37d2418089ba0e0763dcdf
+marks,start_mercado,,,,,,,,,,,,,,,2026-01-05,
+transfer,mercado,,José Luis Gayà,Los marinero,Mister,2.84921,2,32,19,,,,,,,2026-01-05,390e72af967395d28e67d0bcc008edb0
+marks,start_mercado,,,,,,,,,,,,,,,2026-01-05,
+transfer,mercado,,César Azpilicueta,Los marinero,Mister,0.94963,2,34,17,,,,,,,2026-01-05,e2660bc3ff272b7ea35fc7eebdf583bb
+marks,start_mercado,,,,,,,,,,,,,,,2026-01-05,
+transfer,mercado,,José Copete,Dani,Mister,2.57088,2,36,19,,,,,,,2026-01-05,a005d57d4f1fde0f7ff30382e982930f
+marks,start_mercado,,,,,,,,,,,,,,,2026-01-05,
+transfer,mercado,,Luiz Júnior,Maldinillo 💥,Mister,7.42644,1,61,20,,,,,,,2026-01-05,5e397bda8751c2798d65c41937f5c252
+marks,start_mercado,,,,,,,,,,,,,,,2026-01-05,
+transfer,mercado,,Matteo Ruggeri,Maldinillo 💥,Mister,1.30271,2,40,2,,,,,,,2026-01-05,15a48e3f0757d4ee250014693b9dba92
+marks,start_mercado,,,,,,,,,,,,,,,2026-01-05,
+transfer,mercado,,Javi Galán,Mister,Dani,2.02641,2.0,18.0,50.0,,,,,,,2026-01-04,aefc806442976bc6ea1c31a8c671aa1a
+transfer,Puja,,Javi Galán,Mister,Maldinillo 💥,0.77066,2.0,18.0,50.0,,,,,,,2026-01-04,ae0e03b013d0e56a0cf9443d7261668d
+transfer,Puja,,Javi Galán,Mister,Los marinero,0.701,2.0,18.0,50.0,,,,,,,2026-01-04,16197dffed23395174d20cc91cc0456b
+transfer,mercado,,Thibaut Courtois,Mister,Maldinillo 💥,12.55728,1.0,91.0,15.0,,,,,,,2026-01-04,623f148b43c1c3539cb3caa1c324d8a0
 marks,start_mercado,,,,,,,,,,,,,,,2026-01-04,
-transfer,mercado,,Javi Galán,Mister,Dani,2.02641,2,18,50,,,,,,,2026-01-04,aefc806442976bc6ea1c31a8c671aa1a
-transfer,Puja,,Javi Galán,Mister,Maldinillo 💥,0.77066,2,18,50,,,,,,,2026-01-04,ae0e03b013d0e56a0cf9443d7261668d
-transfer,Puja,,Javi Galán,Mister,Los marinero,0.701,2,18,50,,,,,,,2026-01-04,16197dffed23395174d20cc91cc0456b
-transfer,mercado,,Thibaut Courtois,Mister,Maldinillo 💥,12.55728,1,91,15,,,,,,,2026-01-04,623f148b43c1c3539cb3caa1c324d8a0
+transfer,mercado,,Jorge Cabello,Dani,Mister,0.1648,2.0,11.0,12.0,,,,,,,2026-01-04,b57d160ccd022006bb145e521602e64c
 marks,start_mercado,,,,,,,,,,,,,,,2026-01-04,
-transfer,mercado,,Jorge Cabello,Dani,Mister,0.1648,2,11,12,,,,,,,2026-01-04,b57d160ccd022006bb145e521602e64c
+transfer,mercado,,Yvan Neyou,Dani,Mister,0.1536,3.0,3.0,9.0,,,,,,,2026-01-04,bade34570cc1ada4af41dcf9d07405db
 marks,start_mercado,,,,,,,,,,,,,,,2026-01-04,
-transfer,mercado,,Yvan Neyou,Dani,Mister,0.1536,3,3,9,,,,,,,2026-01-04,bade34570cc1ada4af41dcf9d07405db
+transfer,mercado,,John Donald,Dani,Mister,0.1701,2.0,29.0,23.0,,,,,,,2026-01-04,ac557ff9985e9ba325df9e150435af89
 marks,start_mercado,,,,,,,,,,,,,,,2026-01-04,
-transfer,mercado,,John Donald,Dani,Mister,0.1701,2,29,23,,,,,,,2026-01-04,ac557ff9985e9ba325df9e150435af89
-marks,start_mercado,,,,,,,,,,,,,,,2026-01-04,
-transfer,mercado,,Allan Nyom,Dani,Mister,0.1552,2,6,9,,,,,,,2026-01-04,5af2d78106f01a46046792ac13e8b847
+transfer,mercado,,Allan Nyom,Dani,Mister,0.1552,2.0,6.0,9.0,,,,,,,2026-01-04,5af2d78106f01a46046792ac13e8b847
 marks,start_mercado,,,,,,,,,,,,,,,2026-01-04,
 transfer,mercado,,Pacha Espino,Mister,Libre,0.24412,2.0,31.0,14.0,,,,,,,2026-01-03,9d1c74090fcb07de4d79c060e26b975e
 transfer,mercado,,Javi López,Mister,Libre,0.16,2.0,18.0,1370.0,,,,,,,2026-01-03,5d8a8afdc2314393da1c099ecae123d4
