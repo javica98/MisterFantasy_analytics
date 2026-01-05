@@ -102,7 +102,8 @@ def parse_generated_text(texto: str, bloques_info: List[Dict]) -> Dict:
                     "jugador": info.get("jugador", ""),
                     "manager": info.get("manager", ""),
                     "puntos": info.get("puntos"),
-                    "dinero": info.get("dinero")
+                    "dinero": info.get("dinero"),
+                    "equipo": info.get("equipo"),
                 })
 
             for line in bloque_lines:

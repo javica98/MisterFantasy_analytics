@@ -44,9 +44,12 @@ from src.scraper.login import login
 # --- Cargar configuración ---
 from src.utils.config_loader import load_config
 from src.utils.data_utils import normalize_date_column
-from src.utils.file_utils import safe_read_html, safe_read_csv, safe_save_csv,safe_save_png,safe_read_json
+from src.utils.file_utils import safe_read_html, safe_read_csv, safe_save_csv,safe_save_png,safe_read_json,safe_save_json,safe_read_text
 
-from src.AI_newspaper.generate_pdf import create_card,create_pdf
+from src.AI_newspaper.generate_json import generate_json
+from src.AI_newspaper.generate_prompt import generate_prompts,build_final_prompt
+from src.AI_newspaper.generate_article import generate_articles,parse_generated_text
+from src.AI_newspaper.generate_pdf import create_pdf
 
 cfg = load_config()
 
@@ -101,11 +104,26 @@ IMAGES_TEAMS_DIR = cfg["paths"]["images"]["teams_dir"]
 DEFAULT_TEAM_IMAGE = cfg["paths"]["images"]["default_team"]
 NEWS_UTILS = cfg["paths"]["images"]["news_utils"]
 
-cards_json_path = os.path.join(JSON_NEWS, f"2025-12-30_cards.json")
+
+article_final_path = os.path.join(JSON_NEWS, f"news_article.txt")
+json_final_path = os.path.join(JSON_NEWS, f"news_json.json")
+
+#--- 3.Crear CARDS
+json_new = safe_read_json(json_final_path)
+bloques = generate_prompts(json_new)["bloques"]
+articles = safe_read_text(article_final_path)
+json_cards = parse_generated_text(articles, bloques)
+cards_final_path = os.path.join(JSON_NEWS, f"news_cards.json")
+cards = safe_save_json(json_cards,cards_final_path)
+logger.info("🏁 Proceso de extracción completado sin errores.")
+
+
+
+cards_json_path = os.path.join(JSON_NEWS, f"news_cards.json")
 cards = safe_read_json(cards_json_path)
 card = create_pdf(cards,NEWS_UTILS,IMAGES_TEAMS_DIR,DEFAULT_TEAM_IMAGE)
 fecha_hoy = datetime.today().strftime("%Y-%m-%d")
-card_png_path = os.path.join(IMG_NEWS, f"{fecha_hoy}_card.png")
+card_png_path = os.path.join(IMG_NEWS, f"{fecha_hoy}_news.png")
 card_save = safe_save_png(card,card_png_path)
 logger.info("🏁 Proceso de extracción completado sin errores.")
 

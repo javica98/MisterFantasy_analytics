@@ -205,7 +205,7 @@ def generate_prompts(events_json: Dict):
         managers_mencionados.add(r["manager"])
 
     # -------- PENALTIS PARADOS --------
-    p = get_penalty_saves
+    p = get_penalty_saves(gameweek)
     if p:
         bloques.append(
             build_player_block(
@@ -258,25 +258,62 @@ CONTEXTO: {b['contexto']}
 """)
 
     return f"""
-Eres un periodista deportivo.
+IMPORTANTE:
 
-{LEAGUE_CONTEXT}
+Debes responder ÚNICAMENTE en el formato indicado.
+
+NO añadas texto adicional.
+
+NO inventes datos.
+
+NO uses títulos ni párrafos largos.
+
+Si no sigues el formato, la respuesta será descartada.
+
+
+
+===ROL===
+
+Eres un periodista deportivo de fantasy league.
+
+
+
+===REGLAS===
+
+- Usa SOLO la información proporcionada
+
+- NO inventes jugadores, fichajes ni managers
+
+- NO añadas introducciones ni cierres
+
+- Respeta EXACTAMENTE las etiquetas solicitadas
+
+- Cada FRASE debe ser UNA SOLA FRASE
 
 ===CLASIFICACION===
 TAREA: Escribe 3 frases que resuman la clasificación general y la clasificación de la jornada usando la información a continuación. Mantén formato FRASE1:, FRASE2:, FRASE3: para poder parsearlo.
 {clasif_text}
-FRASE1: ...
-FRASE2: ...
-FRASE3: ...
+
+"===CLASIFICACION==="\n
+
+FRASE1: ...\n
+
+FRASE2: ...\n
+
+FRASE3: ...\n
 
 
-===RUMORES===
-TAREA: Escribe 1 frase inventando un rumor de algún manager de la liga. Usa formato FRASE: para poder parsearlo.
-FRASE: Escribe 1 frase de un rumor inventado de algún manager de la liga.
+"===RUMORES==="\n
+
+TAREA: Escribe 1 frase inventando un rumor de algún manager de la liga. Usa formato FRASE: para poder parsearlo. \n
+ 
+FRASE: Escribe 1 frase de un rumor inventado de algún manager de la liga. \n
+
 
 ===EVENTOS===
 TAREA: Escribe una PORTADA DE PERIÓDICO FANTASY.
 Cada bloque debe ser distinto en tono y estructura.
+"===EVENTOS==="\n
 FORMATO POR BLOQUE:
 TITULO: 
 SUBTITULO:

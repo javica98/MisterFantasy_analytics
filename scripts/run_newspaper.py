@@ -42,13 +42,14 @@ from src.data.merge_gameweek import merge_gameweek
 from src.AI_newspaper.generate_json import generate_json
 from src.AI_newspaper.generate_prompt import generate_prompts,build_final_prompt
 from src.AI_newspaper.generate_article import generate_articles,parse_generated_text
+from src.AI_newspaper.generate_pdf import create_pdf
 
 from src.scraper.login import login
 
 # --- Cargar configuración ---
 from src.utils.config_loader import load_config
 from src.utils.data_utils import normalize_date_column
-from src.utils.file_utils import safe_read_html, safe_read_csv,safe_read_json, safe_save_csv,safe_save_json,safe_read_text, safe_save_text
+from src.utils.file_utils import safe_read_html, safe_read_csv,safe_read_json, safe_save_csv,safe_save_json,safe_read_text, safe_save_text,safe_save_png
 
 
 cfg = load_config()
@@ -95,8 +96,13 @@ CSV_GAMEWEEK = cfg["paths"]["csv"]["gameweek"]
 
 # Archivos CSV
 JSON_NEWS = cfg["paths"]["json"]["news"]
-
 NEWS_UTILS = cfg["paths"]["images"]["news_utils"]
+
+#PHOTOS
+IMAGES_TEAMS_DIR = cfg["paths"]["images"]["teams_dir"]
+DEFAULT_TEAM_IMAGE = cfg["paths"]["images"]["default_team"]
+NEWS_UTILS = cfg["paths"]["images"]["news_utils"]
+IMG_NEWS = cfg["paths"]["images"]["news"]
 
 # Variables de entorno (login)
 MISTER_USERNAME = cfg["env"]["MISTER_USERNAME"]
@@ -114,9 +120,8 @@ if (csv_gameweek is None)and (csv_notificaciones is None):
 else:
     daily_json = generate_json(3,csv_notificaciones[csv_notificaciones['type'] == 'transfer'],csv_gameweek,csv_clasificacion)
     logger.info("✅ Json creado.")
-    fecha_hoy = datetime.today().strftime("%Y-%m-%d")
-    json_final_path = os.path.join(JSON_NEWS, f"{fecha_hoy}_json.json")
-    #daily_json = safe_save_json(daily_json,json_final_path)
+    json_final_path = os.path.join(JSON_NEWS, f"news_json.json")
+    daily_json = safe_save_json(daily_json,json_final_path)
     
 # --- 2. Crear prompt ---
 logger.info("Creando prompt...")
@@ -127,16 +132,15 @@ else:
     prompt_json = generate_prompts(json_new)
     commun_prompt_json = build_final_prompt(prompt_json["bloques"],json_new)
     logger.info("✅ Prompt Json creado.")
-    fecha_hoy = datetime.today().strftime("%Y-%m-%d")
-    prompt_final_path = os.path.join(JSON_NEWS, f"{fecha_hoy}_prompt.txt")
-    #prompt_saved = safe_save_text(commun_prompt_json,prompt_final_path)
+    prompt_final_path = os.path.join(JSON_NEWS, f"news_prompt.txt")
+    prompt_saved = safe_save_text(commun_prompt_json,prompt_final_path)
 
 # --- 3. Llamar Gemini y crear contenido---
 prompt_txt = safe_read_text(json_final_path)
 logger.info("📡 Llamando a Gemini para generar los textos...")
 #texto_generado = generate_articles(prompt_txt)
-#logger.info("✅ Todo el contenido creado.")
-article_final_path = os.path.join(JSON_NEWS, f"{fecha_hoy}_article.txt")
+logger.info("✅ Todo el contenido creado.")
+article_final_path = os.path.join(JSON_NEWS, f"news_article.txt")
 #article = safe_save_text(texto_generado,article_final_path)
 
 
@@ -145,6 +149,15 @@ json_new = safe_read_json(json_final_path)
 bloques = generate_prompts(json_new)["bloques"]
 articles = safe_read_text(article_final_path)
 json_cards = parse_generated_text(articles, bloques)
-cards_final_path = os.path.join(JSON_NEWS, f"{fecha_hoy}_cards.json")
+cards_final_path = os.path.join(JSON_NEWS, f"news_cards.json")
 cards = safe_save_json(json_cards,cards_final_path)
+logger.info("🏁 Proceso de extracción completado sin errores.")
+
+#--- 4.Crear Pdf
+cards_json_path = os.path.join(JSON_NEWS, f"news_cards.json")
+cards = safe_read_json(cards_json_path)
+card = create_pdf(cards,NEWS_UTILS,IMAGES_TEAMS_DIR,DEFAULT_TEAM_IMAGE)
+fecha_hoy = datetime.today().strftime("%Y-%m-%d")
+card_png_path = os.path.join(IMG_NEWS, f"{fecha_hoy}_news.png")
+card_save = safe_save_png(card,card_png_path)
 logger.info("🏁 Proceso de extracción completado sin errores.")

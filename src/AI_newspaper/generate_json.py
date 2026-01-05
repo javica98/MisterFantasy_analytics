@@ -1,34 +1,36 @@
 import pandas as pd
 from datetime import datetime, timedelta
 TEAM_POSICION = {
-    "Portero": 1,
-    "Defensa": 2,
-    "Mediocentro": 3,
-    "Delantero": 4
+    1: "Portero",
+    2: "Defensa",
+    3: "Mediocentro",
+    4: "Delantero"
 }
 
+
 TEAM_MAP = {
-    "Real Madrid": 15,
-    "FC Barcelona": 3,
-    "Atlético de Madrid": 2,
-    "Sevilla FC": 17,
-    "Real Betis Balompié": 4,
-    "Real Sociedad": 16,
-    "Villarreal CF": 20,
-    "Athletic Club": 1,
-    "Valencia CF": 19,
-    "CA Osasuna": 50,
-    "RC Celta de Vigo": 5,
-    "Rayo Vallecano": 14,
-    "Deportivo Alavés": 48,
-    "RCD Espanyol": 8,
-    "Elche CF": 23,
-    "Getafe CF": 9,
-    "Girona FC": 222,
-    "Levante UD": 12,
-    "RCD Mallorca": 408,
-    "Real Oviedo": 1370
+    15: "Real Madrid",
+    3: "FC Barcelona",
+    2: "Atlético de Madrid",
+    17: "Sevilla FC",
+    4: "Real Betis Balompié",
+    16: "Real Sociedad",
+    20: "Villarreal CF",
+    1: "Athletic Club",
+    19: "Valencia CF",
+    50: "CA Osasuna",
+    5: "RC Celta de Vigo",
+    14: "Rayo Vallecano",
+    48: "Deportivo Alavés",
+    8: "RCD Espanyol",
+    23: "Elche CF",
+    9: "Getafe CF",
+    222: "Girona FC",
+    12: "Levante UD",
+    408: "RCD Mallorca",
+    1370: "Real Oviedo"
 }
+
 def clasificacion_dict(df):
     out = (
         df.groupby("nombre", as_index=False)["puntos"]

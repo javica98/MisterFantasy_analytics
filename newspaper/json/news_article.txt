@@ -1,0 +1,48 @@
+===CLASIFICACION=== 
+FRASE1: ¡Tiembla la liga! Dani se aferra al trono con 784 puntos pero siente ya el aliento gélido de Los marinero en la nuca. 
+FRASE2: ¡Exhibición histórica de Maldinillo 💥! El genio de la táctica humilla a sus rivales con 39 puntos y reclama su sitio en el podio. 
+FRASE3: ¡Hundimiento total! MuchaSalsa y Libre firman una jornada vergonzosa de 9 puntos mientras Juanba deambula por el pozo de la general.
+
+===RUMORES=== FRASE: ¡Bombazo en los despachos! Corren voces de que el manager Dani ha entrado en pánico ante el ascenso de Maldinillo 💥 y prepara una purga desesperada en su once titular.
+
+===EVENTOS===
+TITULO: ¡Maldinillo 💥 rompe la banca con un fichaje galáctico! 
+SUBTITULO: 13.59 millones para reventar la liga con Marcos Llorente 
+FRASE1: En un movimiento de puro genio, el manager del momento destroza el mercado para blindar su asalto al liderato. 
+FRASE2: Con el primer puesto de la jornada en el bolsillo, Maldinillo 💥 demuestra quién manda en el mercado de fichajes.
+
+TITULO: ¡Un muro infranqueable! Courtois llega al equipo del campeón 
+SUBTITULO: Maldinillo 💥 suelta 12.56 millones por el mejor portero 
+FRASE1: No hay quien frene la ambición de un Maldinillo 💥 que blinda su portería con el gigante belga. 
+FRASE2: El amo de la jornada no escatima en gastos para aniquilar las esperanzas de sus perseguidores desde la tercera plaza.
+
+TITULO: ¡Pánico en la tabla! Jotabetrbb se lanza a por Rubén Vargas 
+SUBTITULO: 9.31 millones para intentar seguir el ritmo de los grandes 
+FRASE1: El manager intenta desesperadamente escalar posiciones tras quedarse a la sombra de los líderes esta semana. 
+FRASE2: Con el equipo en quinta posición, esta compra es un "todo o nada" para no descolgarse definitivamente del grupo de cabeza.
+
+TITULO: ¡Operación salida! Isco se va por una cifra de locura 
+SUBTITULO: Maldinillo 💥 llena las arcas con 12.43 millones tras su venta récord 
+FRASE1: El estratega más brillante de la liga se deshace de su estrella en una maniobra financiera maestra. 
+FRASE2: Tras conquistar la jornada, el manager demuestra que sabe cuándo vender para seguir dominando el campeonato.
+
+TITULO: ¡Moleiro salva los muebles de un líder bajo sospecha! 
+SUBTITULO: 11 puntos de oro que mantienen a Dani en la cima 
+FRASE1: El MVP de la jornada rescata a un manager Dani que empieza a notar la presión asfixiante de sus rivales. 
+FRASE2: A pesar de ser el mejor puntuado, el líder tiembla ante el empuje imparable de los que vienen por detrás.
+
+TITULO: ¡F. López, el nuevo ídolo de la "Maldinilloneta"! 
+SUBTITULO: 9 puntos para consagrar al manager más en forma de la liga 
+FRASE1: El futbolista se convierte en el brazo ejecutor de un Maldinillo 💥 que ha dado un recital absoluto esta semana. 
+FRASE2: Con este rendimiento de MVP, el manager confirma que su tercera posición en la general es solo el principio.
+
+TITULO: ¡Milagro insuficiente de L. Milla en el desierto! 
+SUBTITULO: 7 puntos que no limpian la desastrosa imagen de MuchaSalsa 
+FRASE1: El mediocampista brilla en solitario mientras su equipo se hunde en la miseria de la última plaza semanal. 
+FRASE2: MuchaSalsa deambula por la séptima posición general sin rumbo fijo a pesar de este destello individual.
+
+TITULO: ¡Escándalo total! David Soria firma el ridículo del año 
+SUBTITULO: Un humillante -2 que condena a MuchaSalsa al abismo 
+FRASE1: El portero protagoniza una actuación catastrófica que destroza las opciones de su manager en una jornada para olvidar. 
+FRASE2: Con solo 9 puntos totales, el equipo toca fondo y se convierte en el hazmerreír de la clasificación semanal.
+
