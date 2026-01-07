@@ -1,22 +1,28 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
+marks,start_mercado,,,,,,,,,,,,,,,2026-01-07,
+transfer,mercado,,Nico González,Mister,Jotabetrbb,7.225,3,63,2,,,,,,,2026-01-07,66a0f10afafbfc03bb7711e9a7fe6034
+transfer,mercado,,Eric García,Mister,Dani,23.12764,2,116,3,,,,,,,2026-01-07,d69a6cbd866ba1f2dde9bab9028e6c73
+transfer,Puja,,Eric García,Mister,Maldinillo 💥,20.12561,2,116,3,,,,,,,2026-01-07,f811fa28cb1480d6d0fde1debf07d9ec
+marks,start_mercado,,,,,,,,,,,,,,,2026-01-07,
+transfer,mercado,,Martin Valjent,Dani,Mister,4.80768,2,55,408,,,,,,,2026-01-07,3e4f63afb0ecc8249ff0192e9527a806
+marks,start_mercado,,,,,,,,,,,,,,,2026-01-07,
+transfer,mercado,,Antony Santos,Mister,Libre,20.00002,4.0,67.0,4.0,,,,,,,2026-01-06,49412c4d5732dbf254e4c7dae5f5c903
+transfer,Puja,,Antony Santos,Mister,Maldinillo 💥,17.8736,4.0,67.0,4.0,,,,,,,2026-01-06,d508105f7964336a5635253b07236f2e
+transfer,mercado,,Carlos Álvarez,Mister,Jotabetrbb,7.711,3.0,80.0,12.0,,,,,,,2026-01-06,095d4bd0fef5b7a98fdf46da91eec6f3
+transfer,Puja,,Carlos Álvarez,Mister,Dani,7.21384,3.0,80.0,12.0,,,,,,,2026-01-06,14a88f44759d35c62ba40c2fe4bdb5b2
+transfer,mercado,,Abdul Mumin,Mister,Los marinero,0.161,2.0,0.0,14.0,,,,,,,2026-01-06,6cb239b9a193d0751e72d7dd61a9575f
 marks,start_mercado,,,,,,,,,,,,,,,2026-01-06,
-transfer,mercado,,Antony Santos,Mister,Libre,20.00002,4,67,4,,,,,,,2026-01-06,49412c4d5732dbf254e4c7dae5f5c903
-transfer,Puja,,Antony Santos,Mister,Maldinillo 💥,17.8736,4,67,4,,,,,,,2026-01-06,d508105f7964336a5635253b07236f2e
-transfer,mercado,,Carlos Álvarez,Mister,Jotabetrbb,7.711,3,80,12,,,,,,,2026-01-06,095d4bd0fef5b7a98fdf46da91eec6f3
-transfer,Puja,,Carlos Álvarez,Mister,Dani,7.21384,3,80,12,,,,,,,2026-01-06,14a88f44759d35c62ba40c2fe4bdb5b2
-transfer,mercado,,Abdul Mumin,Mister,Los marinero,0.161,2,0,14,,,,,,,2026-01-06,6cb239b9a193d0751e72d7dd61a9575f
+transfer,mercado,,Iñaki Williams,Maldinillo 💥,Mister,5.65587,4.0,26.0,1.0,,,,,,,2026-01-06,ac713a4f119c6dc496b9332032be0740
 marks,start_mercado,,,,,,,,,,,,,,,2026-01-06,
-transfer,mercado,,Iñaki Williams,Maldinillo 💥,Mister,5.65587,4,26,1,,,,,,,2026-01-06,ac713a4f119c6dc496b9332032be0740
+transfer,mercado,,Álvaro Valles,Libre,Mister,5.28944,1.0,42.0,4.0,,,,,,,2026-01-06,dd758eb6d47e2849c83e458ea3612535
 marks,start_mercado,,,,,,,,,,,,,,,2026-01-06,
-transfer,mercado,,Álvaro Valles,Libre,Mister,5.28944,1,42,4,,,,,,,2026-01-06,dd758eb6d47e2849c83e458ea3612535
+transfer,mercado,,Kike García,Maldinillo 💥,Mister,2.68981,4.0,62.0,8.0,,,,,,,2026-01-06,e6a6524b50472b55c21c89dcb854ad61
 marks,start_mercado,,,,,,,,,,,,,,,2026-01-06,
-transfer,mercado,,Kike García,Maldinillo 💥,Mister,2.68981,4,62,8,,,,,,,2026-01-06,e6a6524b50472b55c21c89dcb854ad61
+transfer,acuerdo,,Raúl Asencio,Chamacónicos,Los marinero,5.358,2.0,53.0,15.0,,,,,,,2026-01-06,b3419c56dbbb18d79353bcf93d610c3e
 marks,start_mercado,,,,,,,,,,,,,,,2026-01-06,
-transfer,acuerdo,,Raúl Asencio,Chamacónicos,Los marinero,5.358,2,53,15,,,,,,,2026-01-06,b3419c56dbbb18d79353bcf93d610c3e
+transfer,mercado,,Javi Rueda,Chamacónicos,Mister,4.7112,2.0,55.0,5.0,,,,,,,2026-01-06,b4b005eb0b29ec287e0bdaed8707c0c5
 marks,start_mercado,,,,,,,,,,,,,,,2026-01-06,
-transfer,mercado,,Javi Rueda,Chamacónicos,Mister,4.7112,2,55,5,,,,,,,2026-01-06,b4b005eb0b29ec287e0bdaed8707c0c5
-marks,start_mercado,,,,,,,,,,,,,,,2026-01-06,
-transfer,mercado,,Antonio Blanco,Chamacónicos,Mister,5.35392,3,65,48,,,,,,,2026-01-06,0ddc7b5b59a84a4cf8ef5a34d95e7b48
+transfer,mercado,,Antonio Blanco,Chamacónicos,Mister,5.35392,3.0,65.0,48.0,,,,,,,2026-01-06,0ddc7b5b59a84a4cf8ef5a34d95e7b48
 bonificacion,quiniela,,,,,,,,,De la Guettir FC,0.7,1º,,,,2026-01-06,
 bonificacion,quiniela,,,,,,,,,Chamacónicos,0.5,2º,,,,2026-01-06,
 bonificacion,quiniela,,,,,,,,,Maldinillo 💥,0.5,3º,,,,2026-01-06,
