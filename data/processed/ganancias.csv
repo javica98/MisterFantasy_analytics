@@ -1,10 +1,14 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
+marks,start_mercado,,,,,,,,,,,,,,,2026-01-08,
+transfer,mercado,,Luis Rioja,Jotabetrbb,Mister,5.64585,3,65,19,,,,,,,2026-01-08,da3f4e1963c234c007fc373736d57843
+marks,start_mercado,,,,,,,,,,,,,,,2026-01-08,
+transfer,mercado,,Marcus Rashford,Mister,Maldinillo 💥,15.03231,4,87,3,,,,,,,2026-01-08,481fe0a5af8de424e97e4e09d7b6ccfd
+marks,start_mercado,,,,,,,,,,,,,,,2026-01-08,
+transfer,mercado,,Nico González,Mister,Jotabetrbb,7.225,3.0,63.0,2.0,,,,,,,2026-01-07,66a0f10afafbfc03bb7711e9a7fe6034
+transfer,mercado,,Eric García,Mister,Dani,23.12764,2.0,116.0,3.0,,,,,,,2026-01-07,d69a6cbd866ba1f2dde9bab9028e6c73
+transfer,Puja,,Eric García,Mister,Maldinillo 💥,20.12561,2.0,116.0,3.0,,,,,,,2026-01-07,f811fa28cb1480d6d0fde1debf07d9ec
 marks,start_mercado,,,,,,,,,,,,,,,2026-01-07,
-transfer,mercado,,Nico González,Mister,Jotabetrbb,7.225,3,63,2,,,,,,,2026-01-07,66a0f10afafbfc03bb7711e9a7fe6034
-transfer,mercado,,Eric García,Mister,Dani,23.12764,2,116,3,,,,,,,2026-01-07,d69a6cbd866ba1f2dde9bab9028e6c73
-transfer,Puja,,Eric García,Mister,Maldinillo 💥,20.12561,2,116,3,,,,,,,2026-01-07,f811fa28cb1480d6d0fde1debf07d9ec
-marks,start_mercado,,,,,,,,,,,,,,,2026-01-07,
-transfer,mercado,,Martin Valjent,Dani,Mister,4.80768,2,55,408,,,,,,,2026-01-07,3e4f63afb0ecc8249ff0192e9527a806
+transfer,mercado,,Martin Valjent,Dani,Mister,4.80768,2.0,55.0,408.0,,,,,,,2026-01-07,3e4f63afb0ecc8249ff0192e9527a806
 marks,start_mercado,,,,,,,,,,,,,,,2026-01-07,
 transfer,mercado,,Antony Santos,Mister,Libre,20.00002,4.0,67.0,4.0,,,,,,,2026-01-06,49412c4d5732dbf254e4c7dae5f5c903
 transfer,Puja,,Antony Santos,Mister,Maldinillo 💥,17.8736,4.0,67.0,4.0,,,,,,,2026-01-06,d508105f7964336a5635253b07236f2e
