@@ -1,8 +1,13 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
+marks,start_mercado,,,,,,,,,,,,,,,2026-01-09,
+transfer,mercado,,Hugo Duro,Dani,Mister,10.28475,4,77,19,,,,,,,2026-01-09,b607838302d5f61d2819f0437224a68b
+marks,start_mercado,,,,,,,,,,,,,,,2026-01-09,
+transfer,mercado,,Javi Rodríguez,Mister,Los marinero,1.735,2,48,5,,,,,,,2026-01-09,1462260d2b35256b2eaf10f06b4c1d3d
+transfer,Puja,,Javi Rodríguez,Mister,Dani,1.25066,2,48,5,,,,,,,2026-01-09,df3f0d6665bb737e9f8a4b547fe00512
+marks,start_mercado,,,,,,,,,,,,,,,2026-01-09,
+transfer,mercado,,Luis Rioja,Jotabetrbb,Mister,5.64585,3.0,65.0,19.0,,,,,,,2026-01-08,da3f4e1963c234c007fc373736d57843
 marks,start_mercado,,,,,,,,,,,,,,,2026-01-08,
-transfer,mercado,,Luis Rioja,Jotabetrbb,Mister,5.64585,3,65,19,,,,,,,2026-01-08,da3f4e1963c234c007fc373736d57843
-marks,start_mercado,,,,,,,,,,,,,,,2026-01-08,
-transfer,mercado,,Marcus Rashford,Mister,Maldinillo 💥,15.03231,4,87,3,,,,,,,2026-01-08,481fe0a5af8de424e97e4e09d7b6ccfd
+transfer,mercado,,Marcus Rashford,Mister,Maldinillo 💥,15.03231,4.0,87.0,3.0,,,,,,,2026-01-08,481fe0a5af8de424e97e4e09d7b6ccfd
 marks,start_mercado,,,,,,,,,,,,,,,2026-01-08,
 transfer,mercado,,Nico González,Mister,Jotabetrbb,7.225,3.0,63.0,2.0,,,,,,,2026-01-07,66a0f10afafbfc03bb7711e9a7fe6034
 transfer,mercado,,Eric García,Mister,Dani,23.12764,2.0,116.0,3.0,,,,,,,2026-01-07,d69a6cbd866ba1f2dde9bab9028e6c73
