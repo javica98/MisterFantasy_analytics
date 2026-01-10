@@ -1,9 +1,22 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
+marks,start_mercado,,,,,,,,,,,,,,,2026-01-10,
+transfer,mercado,,José Giménez,Mister,Dani,4.0094,2,32,2,,,,,,,2026-01-10,9f0ef30af11162a1e6e452036ca83238
+transfer,Puja,,José Giménez,Mister,Chamacónicos,3.705,2,32,2,,,,,,,2026-01-10,5e8de7ed9005535c9d39269fed2c60ab
+transfer,mercado,,Borja Iglesias,Mister,Maldinillo 💥,16.59209,4,102,5,,,,,,,2026-01-10,295de26d39e2799ccbef9f8cb1175003
+transfer,Puja,,Borja Iglesias,Mister,Dani,13.81164,4,102,5,,,,,,,2026-01-10,5fe4b1048a990ae26459280c98ec7153
+transfer,mercado,,Gerard Moreno,Mister,Maldinillo 💥,16.19306,4,59,20,,,,,,,2026-01-10,38838eacb5c3d19a41606ae1fa5d7038
+transfer,Puja,,Gerard Moreno,Mister,Libre,12.06018,4,59,20,,,,,,,2026-01-10,b72819ba94c3a54e493e4bb1b9a39583
+marks,start_mercado,,,,,,,,,,,,,,,2026-01-10,
+transfer,mercado,,Alexis Sánchez,Libre,Mister,5.19849,4,50,17,,,,,,,2026-01-10,183a8884e0eb91c49251860755552a60
+marks,start_mercado,,,,,,,,,,,,,,,2026-01-10,
+transfer,mercado,,Marcus Rashford,Maldinillo 💥,Mister,14.59062,4,87,3,,,,,,,2026-01-10,b8f9f12cf684dd4c95f86ff63e0113f1
+marks,start_mercado,,,,,,,,,,,,,,,2026-01-10,
+transfer,mercado,,Ante Budimir,Maldinillo 💥,Mister,11.92905,4,77,50,,,,,,,2026-01-10,30a1fe25b66a396f041a851c04081fbb
+marks,start_mercado,,,,,,,,,,,,,,,2026-01-10,
+transfer,mercado,,Hugo Duro,Dani,Mister,10.28475,4.0,77.0,19.0,,,,,,,2026-01-09,b607838302d5f61d2819f0437224a68b
 marks,start_mercado,,,,,,,,,,,,,,,2026-01-09,
-transfer,mercado,,Hugo Duro,Dani,Mister,10.28475,4,77,19,,,,,,,2026-01-09,b607838302d5f61d2819f0437224a68b
-marks,start_mercado,,,,,,,,,,,,,,,2026-01-09,
-transfer,mercado,,Javi Rodríguez,Mister,Los marinero,1.735,2,48,5,,,,,,,2026-01-09,1462260d2b35256b2eaf10f06b4c1d3d
-transfer,Puja,,Javi Rodríguez,Mister,Dani,1.25066,2,48,5,,,,,,,2026-01-09,df3f0d6665bb737e9f8a4b547fe00512
+transfer,mercado,,Javi Rodríguez,Mister,Los marinero,1.735,2.0,48.0,5.0,,,,,,,2026-01-09,1462260d2b35256b2eaf10f06b4c1d3d
+transfer,Puja,,Javi Rodríguez,Mister,Dani,1.25066,2.0,48.0,5.0,,,,,,,2026-01-09,df3f0d6665bb737e9f8a4b547fe00512
 marks,start_mercado,,,,,,,,,,,,,,,2026-01-09,
 transfer,mercado,,Luis Rioja,Jotabetrbb,Mister,5.64585,3.0,65.0,19.0,,,,,,,2026-01-08,da3f4e1963c234c007fc373736d57843
 marks,start_mercado,,,,,,,,,,,,,,,2026-01-08,
