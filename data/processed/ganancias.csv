@@ -1,9 +1,18 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
+marks,start_mercado,,,,,,,,,,,,,,,2026-01-12,
+transfer,mercado,,Víctor García,Maldinillo 💥,Mister,0.19005,3,23,12,,,,,,,2026-01-12,7d490ca0bcb9d239544a4f522f39e466
+marks,start_mercado,,,,,,,,,,,,,,,2026-01-12,
+transfer,mercado,,Beñat Turrientes,Mister,Jotabetrbb,0.423,3,36,16,,,,,,,2026-01-12,9b7aceb7dee748ceed522ed00ad8fa10
+transfer,mercado,,Brahim Díaz,Mister,Maldinillo 💥,0.32949,3,25,15,,,,,,,2026-01-12,91f5f555937c6c4f836266e8854a9753
+marks,start_mercado,,,,,,,,,,,,,,,2026-01-12,
+transfer,mercado,,Santi Comesaña,Dani,Mister,12.3624,3,79,20,,,,,,,2026-01-12,04ef8d08bebc0845f1efc1be003a53eb
+marks,start_mercado,,,,,,,,,,,,,,,2026-01-12,
+transfer,mercado,,Batista Mendy,Jotabetrbb,Mister,2.2932,3,53,17,,,,,,,2026-01-12,dcd0ac71a615e5434ba2e00b9b962d8f
+marks,start_mercado,,,,,,,,,,,,,,,2026-01-12,
+transfer,mercado,,Jofre Carreras,Mister,Chamacónicos,0.416,3.0,31.0,8.0,,,,,,,2026-01-11,4421aa4a8f577a63e8fdd8c8a38a8151
+transfer,mercado,,Daley Blind,Mister,Dani,3.72697,2.0,56.0,222.0,,,,,,,2026-01-11,56b184041c80f0c96549bba612fb067a
 marks,start_mercado,,,,,,,,,,,,,,,2026-01-11,
-transfer,mercado,,Jofre Carreras,Mister,Chamacónicos,0.416,3,31,8,,,,,,,2026-01-11,4421aa4a8f577a63e8fdd8c8a38a8151
-transfer,mercado,,Daley Blind,Mister,Dani,3.72697,2,56,222,,,,,,,2026-01-11,56b184041c80f0c96549bba612fb067a
-marks,start_mercado,,,,,,,,,,,,,,,2026-01-11,
-transfer,mercado,,Conor Gallagher,Jotabetrbb,Mister,1.9431,3,62,2,,,,,,,2026-01-11,8170264b86527df47aa6398881ce30bd
+transfer,mercado,,Conor Gallagher,Jotabetrbb,Mister,1.9431,3.0,62.0,2.0,,,,,,,2026-01-11,8170264b86527df47aa6398881ce30bd
 marks,start_mercado,,,,,,,,,,,,,,,2026-01-11,
 transfer,mercado,,José Giménez,Mister,Dani,4.0094,2.0,32.0,2.0,,,,,,,2026-01-10,9f0ef30af11162a1e6e452036ca83238
 transfer,Puja,,José Giménez,Mister,Chamacónicos,3.705,2.0,32.0,2.0,,,,,,,2026-01-10,5e8de7ed9005535c9d39269fed2c60ab
