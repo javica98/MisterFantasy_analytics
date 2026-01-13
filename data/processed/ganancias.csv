@@ -1,13 +1,25 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
+marks,start_mercado,,,,,,,,,,,,,,,2026-01-13,
+transfer,mercado,,Dani Olmo,Mister,Jotabetrbb,13.429018,3,89,3,,,,,,,2026-01-13,bbb38a3609f469bde1746529242c38a7
+transfer,Puja,,Dani Olmo,Mister,Chamacónicos,11.854,3,89,3,,,,,,,2026-01-13,b73d3d85527f38e459d8a71996365a79
+transfer,Puja,,Dani Olmo,Mister,Dani,11.32411,3,89,3,,,,,,,2026-01-13,0986f2b409c790a0a2882a3bb9652f3d
+transfer,Puja,,Dani Olmo,Mister,Libre,11.12401,3,89,3,,,,,,,2026-01-13,246c0d1cd8c3bf2e711312e2915e434a
+transfer,mercado,,Juanlu Sánchez,Mister,Los marinero,0.252,2,39,17,,,,,,,2026-01-13,93b77a4078ef04b42826b038e22647a5
+transfer,mercado,,Cédric Bakambu,Mister,Dani,0.95109,4,13,4,,,,,,,2026-01-13,24fb735f2a1af0ea724687cadd1a15d0
+transfer,Puja,,Cédric Bakambu,Mister,Los marinero,0.239,4,13,4,,,,,,,2026-01-13,c6efdc4e5c44a08776c48fd94be9d32a
+marks,start_mercado,,,,,,,,,,,,,,,2026-01-13,
+transfer,mercado,,Álex Berenguer,Maldinillo 💥,Mister,8.6623,3,73,1,,,,,,,2026-01-13,4c665c101356d59689bf29d312ab5f99
+marks,start_mercado,,,,,,,,,,,,,,,2026-01-13,
+transfer,mercado,,Thierry Correia,Los marinero,Mister,1.08155,2,33,19,,,,,,,2026-01-13,1722a954d1f5075e382819cfb9c21cee
+marks,start_mercado,,,,,,,,,,,,,,,2026-01-13,
+transfer,mercado,,Víctor García,Maldinillo 💥,Mister,0.19005,3.0,23.0,12.0,,,,,,,2026-01-12,7d490ca0bcb9d239544a4f522f39e466
 marks,start_mercado,,,,,,,,,,,,,,,2026-01-12,
-transfer,mercado,,Víctor García,Maldinillo 💥,Mister,0.19005,3,23,12,,,,,,,2026-01-12,7d490ca0bcb9d239544a4f522f39e466
+transfer,mercado,,Beñat Turrientes,Mister,Jotabetrbb,0.423,3.0,36.0,16.0,,,,,,,2026-01-12,9b7aceb7dee748ceed522ed00ad8fa10
+transfer,mercado,,Brahim Díaz,Mister,Maldinillo 💥,0.32949,3.0,25.0,15.0,,,,,,,2026-01-12,91f5f555937c6c4f836266e8854a9753
 marks,start_mercado,,,,,,,,,,,,,,,2026-01-12,
-transfer,mercado,,Beñat Turrientes,Mister,Jotabetrbb,0.423,3,36,16,,,,,,,2026-01-12,9b7aceb7dee748ceed522ed00ad8fa10
-transfer,mercado,,Brahim Díaz,Mister,Maldinillo 💥,0.32949,3,25,15,,,,,,,2026-01-12,91f5f555937c6c4f836266e8854a9753
+transfer,mercado,,Santi Comesaña,Dani,Mister,12.3624,3.0,79.0,20.0,,,,,,,2026-01-12,04ef8d08bebc0845f1efc1be003a53eb
 marks,start_mercado,,,,,,,,,,,,,,,2026-01-12,
-transfer,mercado,,Santi Comesaña,Dani,Mister,12.3624,3,79,20,,,,,,,2026-01-12,04ef8d08bebc0845f1efc1be003a53eb
-marks,start_mercado,,,,,,,,,,,,,,,2026-01-12,
-transfer,mercado,,Batista Mendy,Jotabetrbb,Mister,2.2932,3,53,17,,,,,,,2026-01-12,dcd0ac71a615e5434ba2e00b9b962d8f
+transfer,mercado,,Batista Mendy,Jotabetrbb,Mister,2.2932,3.0,53.0,17.0,,,,,,,2026-01-12,dcd0ac71a615e5434ba2e00b9b962d8f
 marks,start_mercado,,,,,,,,,,,,,,,2026-01-12,
 transfer,mercado,,Jofre Carreras,Mister,Chamacónicos,0.416,3.0,31.0,8.0,,,,,,,2026-01-11,4421aa4a8f577a63e8fdd8c8a38a8151
 transfer,mercado,,Daley Blind,Mister,Dani,3.72697,2.0,56.0,222.0,,,,,,,2026-01-11,56b184041c80f0c96549bba612fb067a
