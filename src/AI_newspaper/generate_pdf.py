@@ -5,6 +5,8 @@ from bs4 import BeautifulSoup
 from io import BytesIO
 from src.utils.photo_utils import manager_photo
 import json
+from urllib.parse import urljoin
+
 ZONES = {
     "top_bar":    (0, 0, 1080, 150),
     "main_left":  (0, 120, 760, 820),
@@ -30,67 +32,49 @@ def is_valid_photo(img_bytes: bytes, headers: dict) -> bool:
         return False
 
     return True
-def download_player_image(player_name: str, team_name: str, save_dir: str = "player_images") -> str:
+
+def download_player_image(player, team, save_dir="player_images"):
     """
-    Busca en Bing Images una foto del jugador en marca.com y descarga la primera válida (NO GIF).
-    Devuelve la ruta local de la imagen descargada.
+    Busca y descarga la primera imagen válida del jugador.
+    1) Intenta descargar directamente de Bing.
+    2) Si hay página de origen, descarga la imagen real desde allí.
+    Devuelve la ruta local de la imagen descargada o "" si falla.
     """
     os.makedirs(save_dir, exist_ok=True)
-
-    # 🔎 Query
-    query = f'"{player_name}" "{team_name}" jugando site:marca.com -gif -animated'
-    url = (
-        "https://www.bing.com/images/search?"
-        f"q={requests.utils.quote(query)}"
-        "&qft=+filterui:imagesize-large+filterui:photo-photo"
-        "&form=IRFLTR"
-    )
-    print(url)
+    query = f"{player} {team} jugador"
+    url = f"https://www.bing.com/images/search?q={requests.utils.quote(query)}&form=HDRSC2"
     headers = {
-        "User-Agent": (
-            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-            "AppleWebKit/537.36 (KHTML, like Gecko) "
-            "Chrome/116.0.0.0 Safari/537.36"
-        )
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+                      "AppleWebKit/537.36 (KHTML, like Gecko) "
+                      "Chrome/116.0.0.0 Safari/537.36"
     }
 
-    response = requests.get(url, headers=headers)
-    if response.status_code != 200:
-        print(f"Error al buscar imagen: {response.status_code}")
-        return ""
-
-    soup = BeautifulSoup(response.text, "html.parser")
+    html = requests.get(url, headers=headers, timeout=10).text
+    soup = BeautifulSoup(html, "html.parser")
     img_tags = soup.find_all("a", class_="iusc")
 
-    if not img_tags:
-        print("No se encontraron imágenes.")
-        return ""
-
-    # 🔁 Probar varias imágenes (clave)
-    for tag in img_tags[:10]:
-        m = tag.get("m")
-        if not m:
+    for tag in img_tags:
+        m_attr = tag.get("m")
+        if not m_attr:
             continue
 
         try:
-            m_json = json.loads(m)
-            img_url = m_json.get("murl")
-            if not img_url:
+            data = json.loads(m_attr)
+            img_url = data.get("murl")      # URL de la página de origen
+            print(img_url)
+            # Descargar la imagen final
+            resp = requests.get(img_url, headers=headers, timeout=10)
+            if resp.status_code != 200:
                 continue
 
-            img_resp = requests.get(img_url, headers=headers, timeout=10)
-            if not is_valid_photo(img_resp.content, img_resp.headers):
-                continue
-
-            # Guardar imagen válida
-            img = Image.open(BytesIO(img_resp.content)).convert("RGB")
-            save_path = os.path.join(save_dir, "Portada.jpg")
-            img.save(save_path, "JPEG", quality=95)
-
-            print(f"Imagen válida descargada: {save_path}")
+            image = Image.open(BytesIO(resp.content)).convert("RGB")
+            save_path = os.path.join(save_dir, f"{player.replace(' ', '_')}.jpg")
+            image.save(save_path, "JPEG", quality=95)
+            print(f"Imagen descargada en: {save_path}")
             return save_path
 
-        except Exception:
+        except Exception as e:
+            print(f"Error procesando una imagen: {e}")
             continue
 
     print("No se encontró ninguna imagen válida.")
@@ -199,7 +183,7 @@ def create_template(canvas,PATH_UTILS):
     # --- 3. Pegar columna derecha ---
     columnbar = Image.open(image_path_column).convert("RGBA")
     canvas.alpha_composite(columnbar, (810, 0))
-    # --- 4. Pegar Logo ---
+    # --- 4. Pegar Po ---
     logo = create_logo(PATH_UTILS)
     canvas.paste(logo, (-145, -200), logo)  
 
@@ -268,6 +252,7 @@ def create_portada(canvas,card_info, PATH_UTILS):
     portada = Image.open(image_path_portada).convert("RGBA")
 
     min_width = IMG_WIDTH * 0.75
+    min_height = IMG_HEIGHT * 0.75
     w, h = portada.size
 
     if w < min_width:
@@ -276,7 +261,20 @@ def create_portada(canvas,card_info, PATH_UTILS):
             (int(w * scale), int(h * scale)),
             Image.LANCZOS
         )
-    canvas.alpha_composite(portada, (0, 0))    
+    w, h = portada.size
+    if h < min_height:
+        scale = min_height / h
+        portada = portada.resize(
+            (int(w * scale), int(h * scale)),
+            Image.LANCZOS
+        )
+
+
+    target_center_x = IMG_WIDTH * 3 / 8
+    w, h = portada.size
+
+    x = int(target_center_x - w / 2)   
+    canvas.alpha_composite(portada, (x, 100))    
     return canvas
 def create_logo(PATH_UTILS):
     LOGO_PATH = "LogoBajando.png"
@@ -305,11 +303,14 @@ def create_logo(PATH_UTILS):
     return logo_rotado
 def create_botton(canvas,cards,peor,corner_card, IMAGES_TEAMS_DIR, DEFAULT_TEAM_IMAGE):
     peorcard = create_card(peor[0], IMAGES_TEAMS_DIR, DEFAULT_TEAM_IMAGE,"standard")
-    mvps1 = create_card(cards[0], IMAGES_TEAMS_DIR, DEFAULT_TEAM_IMAGE,"standard")
-    mvps2 = create_card(cards[1], IMAGES_TEAMS_DIR, DEFAULT_TEAM_IMAGE,"standard")
+    
     if corner_card is None:
+        mvps1 = create_card(cards[0], IMAGES_TEAMS_DIR, DEFAULT_TEAM_IMAGE,"standard")
+        mvps2 = create_card(cards[1], IMAGES_TEAMS_DIR, DEFAULT_TEAM_IMAGE,"standard")
         corner = create_card(cards[2], IMAGES_TEAMS_DIR, DEFAULT_TEAM_IMAGE,"standard")
     else:
+        mvps1 = create_card(cards[1], IMAGES_TEAMS_DIR, DEFAULT_TEAM_IMAGE,"standard")
+        mvps2 = create_card(cards[2], IMAGES_TEAMS_DIR, DEFAULT_TEAM_IMAGE,"standard")
         corner = create_card(corner_card, IMAGES_TEAMS_DIR, DEFAULT_TEAM_IMAGE,"standard")
     canvas.alpha_composite(peorcard, (0,1100))
     canvas.alpha_composite(mvps1, (270,1100))

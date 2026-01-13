@@ -5,9 +5,9 @@
       "titulo": "CLASIFICACION",
       "subtitulo": "",
       "texto": [
-        " ¡Tiembla la liga! Dani se aferra al trono con 784 puntos pero siente ya el aliento gélido de Los marinero en la nuca.",
-        " ¡Exhibición histórica de Maldinillo 💥! El genio de la táctica humilla a sus rivales con 39 puntos y reclama su sitio en el podio.",
-        " ¡Hundimiento total! MuchaSalsa y Libre firman una jornada vergonzosa de 9 puntos mientras Juanba deambula por el pozo de la general.",
+        " ¡Dani se escapa en la cima, dejando a sus rivales comiendo polvo mientras consolida su liderazgo con una ventaja abrumadora de casi 80 puntos!",
+        " La batalla por el segundo puesto es un auténtico infierno: Maldinillo, Chamacónicos y Los marinero se separan por apenas TRES puntos, ¡un error y todo puede cambiar!",
+        " Juanba se hunde en el abismo de la clasificación de la jornada, con una actuación desastrosa de solo 21 puntos, ¡mientras Dani y De la Guettir FC comparten la gloria de la jornada!",
         ""
       ]
     },
@@ -16,120 +16,120 @@
       "titulo": "RUMORES",
       "subtitulo": "",
       "texto": [
-        " ¡Bombazo en los despachos! Corren voces de que el manager Dani ha entrado en pánico ante el ascenso de Maldinillo 💥 y prepara una purga desesperada en su once titular.\n\n"
+        " ¿Está Maldinillo 💥 al borde de la bancarrota o es un genio incomprendido? Se rumorea que sus movimientos de mercado, fichando a Borja Iglesias y Gerard Moreno por sumas estratosféricas tras vender a Rashford, son parte de un plan maestro... ¡o una desesperada huida hacia adelante!\n\n"
       ]
     },
     {
       "tipo": "Fichaje destacado",
-      "jugador": "Marcos Llorente",
+      "jugador": "Borja Iglesias",
       "manager": "Maldinillo 💥",
       "puntos": null,
-      "dinero": 13.59044,
-      "titulo": "¡Maldinillo 💥 rompe la banca con un fichaje galáctico!",
-      "subtitulo": "13.59 millones para reventar la liga con Marcos Llorente",
+      "dinero": 16.59209,
+      "titulo": "¡Maldinillo 💥 en modo \"todo o nada\"!",
+      "subtitulo": "La cartera arde por Borja Iglesias",
       "texto": [
-        "En un movimiento de puro genio, el manager del momento destroza el mercado para blindar su asalto al liderato.",
-        "Con el primer puesto de la jornada en el bolsillo, Maldinillo 💥 demuestra quién manda en el mercado de fichajes."
+        "En un movimiento que ha dejado a la liga boquiabierta, Maldinillo 💥 ha desembolsado 16.59 millones por Borja Iglesias, ¡una apuesta de proporciones épicas!",
+        "Con el segundo puesto en la general y el tercero en la jornada, ¿es esta la jugada maestra para asaltar el liderato o la señal de un manager al límite?"
       ],
-      "equipo": "Atlético de Madrid"
+      "equipo": "RC Celta de Vigo"
     },
     {
       "tipo": "Fichaje destacado",
-      "jugador": "Thibaut Courtois",
+      "jugador": "Gerard Moreno",
       "manager": "Maldinillo 💥",
       "puntos": null,
-      "dinero": 12.55728,
-      "titulo": "¡Un muro infranqueable! Courtois llega al equipo del campeón",
-      "subtitulo": "Maldinillo 💥 suelta 12.56 millones por el mejor portero",
+      "dinero": 16.19306,
+      "titulo": "¡Doble golpe de Maldinillo 💥!",
+      "subtitulo": "Gerard Moreno, la nueva joya de la corona.",
       "texto": [
-        "No hay quien frene la ambición de un Maldinillo 💥 que blinda su portería con el gigante belga.",
-        "El amo de la jornada no escatima en gastos para aniquilar las esperanzas de sus perseguidores desde la tercera plaza."
-      ],
-      "equipo": "Real Madrid"
-    },
-    {
-      "tipo": "Fichaje destacado",
-      "jugador": "Rubén Vargas",
-      "manager": "Jotabetrbb",
-      "puntos": null,
-      "dinero": 9.312,
-      "titulo": "¡Pánico en la tabla! Jotabetrbb se lanza a por Rubén Vargas",
-      "subtitulo": "9.31 millones para intentar seguir el ritmo de los grandes",
-      "texto": [
-        "El manager intenta desesperadamente escalar posiciones tras quedarse a la sombra de los líderes esta semana.",
-        "Con el equipo en quinta posición, esta compra es un \"todo o nada\" para no descolgarse definitivamente del grupo de cabeza."
-      ],
-      "equipo": "Sevilla FC"
-    },
-    {
-      "tipo": "Venta récord",
-      "jugador": "Isco",
-      "manager": "Maldinillo 💥",
-      "puntos": null,
-      "dinero": 12.43249,
-      "titulo": "¡Operación salida! Isco se va por una cifra de locura",
-      "subtitulo": "Maldinillo 💥 llena las arcas con 12.43 millones tras su venta récord",
-      "texto": [
-        "El estratega más brillante de la liga se deshace de su estrella en una maniobra financiera maestra.",
-        "Tras conquistar la jornada, el manager demuestra que sabe cuándo vender para seguir dominando el campeonato."
-      ],
-      "equipo": "Real Betis Balompié"
-    },
-    {
-      "tipo": "MVP de la jornada",
-      "jugador": "A. Moleiro",
-      "manager": "Dani",
-      "puntos": 11,
-      "dinero": null,
-      "titulo": "¡Moleiro salva los muebles de un líder bajo sospecha!",
-      "subtitulo": "11 puntos de oro que mantienen a Dani en la cima",
-      "texto": [
-        "El MVP de la jornada rescata a un manager Dani que empieza a notar la presión asfixiante de sus rivales.",
-        "A pesar de ser el mejor puntuado, el líder tiembla ante el empuje imparable de los que vienen por detrás."
+        "¡No contento con un bombazo, Maldinillo 💥 ha vuelto a sacudir el mercado con la adquisición de Gerard Moreno por 16.19 millones!",
+        "Este manager, que respira en el segundo puesto, está enviando un mensaje claro: ¡la cima de la liga tiene un precio y él está dispuesto a pagarlo!"
       ],
       "equipo": "Villarreal CF"
     },
     {
-      "tipo": "MVP de la jornada",
-      "jugador": "F. López",
-      "manager": "Maldinillo 💥",
-      "puntos": 9,
-      "dinero": null,
-      "titulo": "¡F. López, el nuevo ídolo de la \"Maldinilloneta\"!",
-      "subtitulo": "9 puntos para consagrar al manager más en forma de la liga",
+      "tipo": "Fichaje destacado",
+      "jugador": "Dani Olmo",
+      "manager": "Jotabetrbb",
+      "puntos": null,
+      "dinero": 13.429018,
+      "titulo": "¡Jotabetrbb mueve ficha en silencio!",
+      "subtitulo": "Dani Olmo llega para revolucionar el mediocampo.",
       "texto": [
-        "El futbolista se convierte en el brazo ejecutor de un Maldinillo 💥 que ha dado un recital absoluto esta semana.",
-        "Con este rendimiento de MVP, el manager confirma que su tercera posición en la general es solo el principio."
+        "Jotabetrbb ha realizado un fichaje estratégico, incorporando a Dani Olmo por 13.43 millones, buscando la chispa que lo impulse en la tabla.",
+        "En un quinto puesto general y de jornada, este movimiento es un claro intento de escalar posiciones, ¿será Olmo la pieza que le faltaba?"
+      ],
+      "equipo": "FC Barcelona"
+    },
+    {
+      "tipo": "Venta récord",
+      "jugador": "Marcus Rashford",
+      "manager": "Maldinillo 💥",
+      "puntos": null,
+      "dinero": 14.59062,
+      "titulo": "¡Rashford fuera! ¿Locura o genialidad de Maldinillo 💥?",
+      "subtitulo": "Venta récord que levanta sospechas.",
+      "texto": [
+        "Marcus Rashford ha sido vendido por 14.59 millones, un movimiento que ha desatado el pánico y la especulación en las oficinas de Maldinillo 💥.",
+        "¿Es esta una jugada maestra para financiar sus recientes y explosivos fichajes, o un error garrafal que le costará caro al subcampeón?"
       ],
       "equipo": "FC Barcelona"
     },
     {
       "tipo": "MVP de la jornada",
-      "jugador": "L. Milla",
-      "manager": "MuchaSalsa",
-      "puntos": 7,
+      "jugador": "C. Romero",
+      "manager": "Maldinillo 💥",
+      "puntos": 14,
       "dinero": null,
-      "titulo": "¡Milagro insuficiente de L. Milla en el desierto!",
-      "subtitulo": "7 puntos que no limpian la desastrosa imagen de MuchaSalsa",
+      "titulo": "¡C. Romero, el muro de Maldinillo 💥!",
+      "subtitulo": "14 puntos que reafirman la inversión.",
       "texto": [
-        "El mediocampista brilla en solitario mientras su equipo se hunde en la miseria de la última plaza semanal.",
-        "MuchaSalsa deambula por la séptima posición general sin rumbo fijo a pesar de este destello individual."
+        "C. Romero ha brillado con luz propia, aportando 14 puntos cruciales a la escuadra de Maldinillo 💥, demostrando su valía en el campo.",
+        "Este MVP de la jornada es un soplo de aire fresco para un manager que no para de gastar, ¡parece que las inversiones empiezan a dar sus frutos!"
       ],
-      "equipo": "Getafe CF"
+      "equipo": "RCD Espanyol"
+    },
+    {
+      "tipo": "MVP de la jornada",
+      "jugador": "J. Aramburu",
+      "manager": "Libre",
+      "puntos": 11,
+      "dinero": null,
+      "titulo": "¡Milagro en el sótano! Libre encuentra su estrella.",
+      "subtitulo": "J. Aramburu, el héroe inesperado con 11 puntos.",
+      "texto": [
+        "Desde las profundidades de la tabla, Libre ha encontrado una joya: J. Aramburu, quien ha logrado un impresionante MVP con 11 puntos.",
+        "A pesar de ser el noveno en la general, esta actuación de su jugador le ha valido un cuarto puesto en la jornada, ¡una luz de esperanza para el colista!"
+      ],
+      "equipo": "Real Sociedad"
+    },
+    {
+      "tipo": "MVP de la jornada",
+      "jugador": "G. Lo Celso",
+      "manager": "Chamacónicos",
+      "puntos": 11,
+      "dinero": null,
+      "titulo": "¡Chamacónicos se mantiene a flote con Lo Celso!",
+      "subtitulo": "11 puntos vitales para el aspirante.",
+      "texto": [
+        "G. Lo Celso ha sido el faro de Chamacónicos, sumando 11 puntos y asegurando un MVP que mantiene a su equipo en la lucha por el podio.",
+        "Con el tercer puesto general en juego, estas actuaciones individuales son oxígeno puro para un manager que no puede permitirse ningún tropiezo."
+      ],
+      "equipo": "Real Betis Balompié"
     },
     {
       "tipo": "Peor actuación de la jornada",
-      "jugador": "D. Soria",
-      "manager": "MuchaSalsa",
-      "puntos": -2,
+      "jugador": "M. Oyarzabal",
+      "manager": "Libre",
+      "puntos": 1,
       "dinero": null,
-      "titulo": "¡Escándalo total! David Soria firma el ridículo del año",
-      "subtitulo": "Un humillante -2 que condena a MuchaSalsa al abismo",
+      "titulo": "¡De la gloria al infierno! Oyarzabal decepciona a Libre.",
+      "subtitulo": "Un mísero punto que duele en el alma.",
       "texto": [
-        "El portero protagoniza una actuación catastrófica que destroza las opciones de su manager en una jornada para olvidar.",
-        "Con solo 9 puntos totales, el equipo toca fondo y se convierte en el hazmerreír de la clasificación semanal."
+        "La jornada ha sido un auténtico calvario para M. Oyarzabal, que ha aportado un triste punto a la plantilla de Libre, una actuación para el olvido.",
+        "Mientras uno de sus jugadores brillaba, Oyarzabal se hundía, ¡demostrando la montaña rusa emocional que es ser manager de Libre!"
       ],
-      "equipo": "Getafe CF"
+      "equipo": "Real Sociedad"
     }
   ]
 }

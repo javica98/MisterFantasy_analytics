@@ -1,48 +1,41 @@
-===CLASIFICACION=== 
-FRASE1: ¡Tiembla la liga! Dani se aferra al trono con 784 puntos pero siente ya el aliento gélido de Los marinero en la nuca. 
-FRASE2: ¡Exhibición histórica de Maldinillo 💥! El genio de la táctica humilla a sus rivales con 39 puntos y reclama su sitio en el podio. 
-FRASE3: ¡Hundimiento total! MuchaSalsa y Libre firman una jornada vergonzosa de 9 puntos mientras Juanba deambula por el pozo de la general.
+===CLASIFICACION===
+FRASE1: ¡Dani se escapa en la cima, dejando a sus rivales comiendo polvo mientras consolida su liderazgo con una ventaja abrumadora de casi 80 puntos!
+FRASE2: La batalla por el segundo puesto es un auténtico infierno: Maldinillo, Chamacónicos y Los marinero se separan por apenas TRES puntos, ¡un error y todo puede cambiar!
+FRASE3: Juanba se hunde en el abismo de la clasificación de la jornada, con una actuación desastrosa de solo 21 puntos, ¡mientras Dani y De la Guettir FC comparten la gloria de la jornada!
 
-===RUMORES=== FRASE: ¡Bombazo en los despachos! Corren voces de que el manager Dani ha entrado en pánico ante el ascenso de Maldinillo 💥 y prepara una purga desesperada en su once titular.
+===RUMORES===
+FRASE: ¿Está Maldinillo 💥 al borde de la bancarrota o es un genio incomprendido? Se rumorea que sus movimientos de mercado, fichando a Borja Iglesias y Gerard Moreno por sumas estratosféricas tras vender a Rashford, son parte de un plan maestro... ¡o una desesperada huida hacia adelante!
 
 ===EVENTOS===
-TITULO: ¡Maldinillo 💥 rompe la banca con un fichaje galáctico! 
-SUBTITULO: 13.59 millones para reventar la liga con Marcos Llorente 
-FRASE1: En un movimiento de puro genio, el manager del momento destroza el mercado para blindar su asalto al liderato. 
-FRASE2: Con el primer puesto de la jornada en el bolsillo, Maldinillo 💥 demuestra quién manda en el mercado de fichajes.
-
-TITULO: ¡Un muro infranqueable! Courtois llega al equipo del campeón 
-SUBTITULO: Maldinillo 💥 suelta 12.56 millones por el mejor portero 
-FRASE1: No hay quien frene la ambición de un Maldinillo 💥 que blinda su portería con el gigante belga. 
-FRASE2: El amo de la jornada no escatima en gastos para aniquilar las esperanzas de sus perseguidores desde la tercera plaza.
-
-TITULO: ¡Pánico en la tabla! Jotabetrbb se lanza a por Rubén Vargas 
-SUBTITULO: 9.31 millones para intentar seguir el ritmo de los grandes 
-FRASE1: El manager intenta desesperadamente escalar posiciones tras quedarse a la sombra de los líderes esta semana. 
-FRASE2: Con el equipo en quinta posición, esta compra es un "todo o nada" para no descolgarse definitivamente del grupo de cabeza.
-
-TITULO: ¡Operación salida! Isco se va por una cifra de locura 
-SUBTITULO: Maldinillo 💥 llena las arcas con 12.43 millones tras su venta récord 
-FRASE1: El estratega más brillante de la liga se deshace de su estrella en una maniobra financiera maestra. 
-FRASE2: Tras conquistar la jornada, el manager demuestra que sabe cuándo vender para seguir dominando el campeonato.
-
-TITULO: ¡Moleiro salva los muebles de un líder bajo sospecha! 
-SUBTITULO: 11 puntos de oro que mantienen a Dani en la cima 
-FRASE1: El MVP de la jornada rescata a un manager Dani que empieza a notar la presión asfixiante de sus rivales. 
-FRASE2: A pesar de ser el mejor puntuado, el líder tiembla ante el empuje imparable de los que vienen por detrás.
-
-TITULO: ¡F. López, el nuevo ídolo de la "Maldinilloneta"! 
-SUBTITULO: 9 puntos para consagrar al manager más en forma de la liga 
-FRASE1: El futbolista se convierte en el brazo ejecutor de un Maldinillo 💥 que ha dado un recital absoluto esta semana. 
-FRASE2: Con este rendimiento de MVP, el manager confirma que su tercera posición en la general es solo el principio.
-
-TITULO: ¡Milagro insuficiente de L. Milla en el desierto! 
-SUBTITULO: 7 puntos que no limpian la desastrosa imagen de MuchaSalsa 
-FRASE1: El mediocampista brilla en solitario mientras su equipo se hunde en la miseria de la última plaza semanal. 
-FRASE2: MuchaSalsa deambula por la séptima posición general sin rumbo fijo a pesar de este destello individual.
-
-TITULO: ¡Escándalo total! David Soria firma el ridículo del año 
-SUBTITULO: Un humillante -2 que condena a MuchaSalsa al abismo 
-FRASE1: El portero protagoniza una actuación catastrófica que destroza las opciones de su manager en una jornada para olvidar. 
-FRASE2: Con solo 9 puntos totales, el equipo toca fondo y se convierte en el hazmerreír de la clasificación semanal.
-
+TITULO: ¡Maldinillo 💥 en modo "todo o nada"!
+SUBTITULO: La cartera arde por Borja Iglesias
+FRASE1: En un movimiento que ha dejado a la liga boquiabierta, Maldinillo 💥 ha desembolsado 16.59 millones por Borja Iglesias, ¡una apuesta de proporciones épicas!
+FRASE2: Con el segundo puesto en la general y el tercero en la jornada, ¿es esta la jugada maestra para asaltar el liderato o la señal de un manager al límite?
+TITULO: ¡Doble golpe de Maldinillo 💥!
+SUBTITULO: Gerard Moreno, la nueva joya de la corona.
+FRASE1: ¡No contento con un bombazo, Maldinillo 💥 ha vuelto a sacudir el mercado con la adquisición de Gerard Moreno por 16.19 millones!
+FRASE2: Este manager, que respira en el segundo puesto, está enviando un mensaje claro: ¡la cima de la liga tiene un precio y él está dispuesto a pagarlo!
+TITULO: ¡Jotabetrbb mueve ficha en silencio!
+SUBTITULO: Dani Olmo llega para revolucionar el mediocampo.
+FRASE1: Jotabetrbb ha realizado un fichaje estratégico, incorporando a Dani Olmo por 13.43 millones, buscando la chispa que lo impulse en la tabla.
+FRASE2: En un quinto puesto general y de jornada, este movimiento es un claro intento de escalar posiciones, ¿será Olmo la pieza que le faltaba?
+TITULO: ¡Rashford fuera! ¿Locura o genialidad de Maldinillo 💥?
+SUBTITULO: Venta récord que levanta sospechas.
+FRASE1: Marcus Rashford ha sido vendido por 14.59 millones, un movimiento que ha desatado el pánico y la especulación en las oficinas de Maldinillo 💥.
+FRASE2: ¿Es esta una jugada maestra para financiar sus recientes y explosivos fichajes, o un error garrafal que le costará caro al subcampeón?
+TITULO: ¡C. Romero, el muro de Maldinillo 💥!
+SUBTITULO: 14 puntos que reafirman la inversión.
+FRASE1: C. Romero ha brillado con luz propia, aportando 14 puntos cruciales a la escuadra de Maldinillo 💥, demostrando su valía en el campo.
+FRASE2: Este MVP de la jornada es un soplo de aire fresco para un manager que no para de gastar, ¡parece que las inversiones empiezan a dar sus frutos!
+TITULO: ¡Milagro en el sótano! Libre encuentra su estrella.
+SUBTITULO: J. Aramburu, el héroe inesperado con 11 puntos.
+FRASE1: Desde las profundidades de la tabla, Libre ha encontrado una joya: J. Aramburu, quien ha logrado un impresionante MVP con 11 puntos.
+FRASE2: A pesar de ser el noveno en la general, esta actuación de su jugador le ha valido un cuarto puesto en la jornada, ¡una luz de esperanza para el colista!
+TITULO: ¡Chamacónicos se mantiene a flote con Lo Celso!
+SUBTITULO: 11 puntos vitales para el aspirante.
+FRASE1: G. Lo Celso ha sido el faro de Chamacónicos, sumando 11 puntos y asegurando un MVP que mantiene a su equipo en la lucha por el podio.
+FRASE2: Con el tercer puesto general en juego, estas actuaciones individuales son oxígeno puro para un manager que no puede permitirse ningún tropiezo.
+TITULO: ¡De la gloria al infierno! Oyarzabal decepciona a Libre.
+SUBTITULO: Un mísero punto que duele en el alma.
+FRASE1: La jornada ha sido un auténtico calvario para M. Oyarzabal, que ha aportado un triste punto a la plantilla de Libre, una actuación para el olvido.
+FRASE2: Mientras uno de sus jugadores brillaba, Oyarzabal se hundía, ¡demostrando la montaña rusa emocional que es ser manager de Libre!

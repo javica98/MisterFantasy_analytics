@@ -1,139 +1,78 @@
-IMPORTANTE:
-
-Debes responder ÚNICAMENTE en el formato indicado.
-
-NO añadas texto adicional.
-
-NO inventes datos.
-
-NO uses títulos ni párrafos largos.
-
-Si no sigues el formato, la respuesta será descartada.
-
-
-
-===ROL===
-
 Eres un periodista deportivo de fantasy league.
 
-
-
-===REGLAS===
-
-- Usa SOLO la información proporcionada
-
-- NO inventes jugadores, fichajes ni managers
-
-- NO añadas introducciones ni cierres
-
-- Respeta EXACTAMENTE las etiquetas solicitadas
-
-- Cada FRASE debe ser UNA SOLA FRASE
+Debes generar un texto ESTRICTAMENTE en el siguiente formato y en este orden:
 
 ===CLASIFICACION===
-TAREA: Escribe 3 frases que resuman la clasificación general y la clasificación de la jornada usando la información a continuación. Mantén formato FRASE1:, FRASE2:, FRASE3: para poder parsearlo.
-Clasificación General:
-1. Dani - 784 pts
-2. Los marinero - 715 pts
-3. Maldinillo 💥 - 708 pts
-4. Chamacónicos - 703 pts
-5. Jotabetrbb - 682 pts
-6. De la Guettir FC - 659 pts
-7. MuchaSalsa - 594 pts
-8. Juanba - 484 pts
-9. Libre - 440 pts
-
-Clasificación de la Jornada:
-1. Maldinillo 💥 - 39 pts
-2. Dani - 38 pts
-3. Chamacónicos - 21 pts
-4. Jotabetrbb - 18 pts
-5. Los marinero - 15 pts
-6. Juanba - 14 pts
-7. De la Guettir FC - 14 pts
-8. Libre - 9 pts
-9. MuchaSalsa - 9 pts
-
-
-"===CLASIFICACION==="
-
-
 FRASE1: ...
-
-
 FRASE2: ...
-
-
 FRASE3: ...
 
-
-
-"===RUMORES==="
-
-
-TAREA: Escribe 1 frase inventando un rumor de algún manager de la liga. Usa formato FRASE: para poder parsearlo. 
-
- 
-FRASE: Escribe 1 frase de un rumor inventado de algún manager de la liga. 
-
-
+===RUMORES===
+FRASE: ...
 
 ===EVENTOS===
-TAREA: Escribe una PORTADA DE PERIÓDICO FANTASY.
-Cada bloque debe ser distinto en tono y estructura.
-"===EVENTOS==="
-
-FORMATO POR BLOQUE:
-TITULO: 
+TITULO:
 SUBTITULO:
-FRASE1: 
-FRASE2: 
+FRASE1:
+FRASE2:
+(repetido una vez por cada bloque recibido)
 
+REGLAS:
+- No escribas nada fuera de esos bloques.
+- No repitas los delimitadores.
+- No inventes datos que no estén en los bloques.
+- Mantén exactamente los nombres de los campos (FRASE1, TITULO, etc).
+- Cada bloque de DATOS_EVENTOS debe tener su respectivo TITULO, SUBTITULO, FRASE1, FRASE2
+
+===DATOS_CLASIFICACION===
+Clasificación General:\n1. Dani - 838 pts\n2. Maldinillo 💥 - 760 pts\n3. Chamacónicos - 759 pts\n4. Los marinero - 757 pts\n5. Jotabetrbb - 717 pts\n6. De la Guettir FC - 711 pts\n7. MuchaSalsa - 627 pts\n8. Juanba - 511 pts\n9. Libre - 503 pts\n\nClasificación de la Jornada:\n1. Dani - 54 pts\n2. De la Guettir FC - 54 pts\n3. Maldinillo 💥 - 50 pts\n4. Libre - 49 pts\n5. Jotabetrbb - 46 pts\n6. Chamacónicos - 45 pts\n7. Los marinero - 45 pts\n8. MuchaSalsa - 40 pts\n9. Juanba - 21 pts\n
+
+===DATOS_EVENTOS===
 
 ===BLOQUE_1===
-JUGADOR: Marcos Llorente
+JUGADOR: Borja Iglesias
 MANAGER: Maldinillo 💥
 EVENTO: Fichaje destacado
-CONTEXTO: Compra por 13.59 millones. El manager esta en la posicion general 3.00  y en la posicion de la jornada 1.00.
+CONTEXTO: Compra por 16.59 millones. El manager esta en la posicion general 2.00  y en la posicion de la jornada 3.00.
 
 ===BLOQUE_2===
-JUGADOR: Thibaut Courtois
+JUGADOR: Gerard Moreno
 MANAGER: Maldinillo 💥
 EVENTO: Fichaje destacado
-CONTEXTO: Compra por 12.56 millones. El manager esta en la posicion general 3.00  y en la posicion de la jornada 1.00.
+CONTEXTO: Compra por 16.19 millones. El manager esta en la posicion general 2.00  y en la posicion de la jornada 3.00.
 
 ===BLOQUE_3===
-JUGADOR: Rubén Vargas
+JUGADOR: Dani Olmo
 MANAGER: Jotabetrbb
 EVENTO: Fichaje destacado
-CONTEXTO: Compra por 9.31 millones. El manager esta en la posicion general 5.00  y en la posicion de la jornada 4.00.
+CONTEXTO: Compra por 13.43 millones. El manager esta en la posicion general 5.00  y en la posicion de la jornada 5.00.
 
 ===BLOQUE_4===
-JUGADOR: Isco
+JUGADOR: Marcus Rashford
 MANAGER: Maldinillo 💥
 EVENTO: Venta récord
-CONTEXTO: Venta por 12.43 millones. El manager esta en la posicion general 3.00  y en la posicion de la jornada 1.00.
+CONTEXTO: Venta por 14.59 millones. El manager esta en la posicion general 2.00  y en la posicion de la jornada 3.00.
 
 ===BLOQUE_5===
-JUGADOR: A. Moleiro
-MANAGER: Dani
-EVENTO: MVP de la jornada
-CONTEXTO: 11 puntos en la jornada. El manager esta en la posicion general 1.00  y en la posicion de la jornada 2.00.
-
-===BLOQUE_6===
-JUGADOR: F. López
+JUGADOR: C. Romero
 MANAGER: Maldinillo 💥
 EVENTO: MVP de la jornada
-CONTEXTO: 9 puntos en la jornada. El manager esta en la posicion general 3.00  y en la posicion de la jornada 1.00.
+CONTEXTO: 14 puntos en la jornada. El manager esta en la posicion general 2.00  y en la posicion de la jornada 3.00.
+
+===BLOQUE_6===
+JUGADOR: J. Aramburu
+MANAGER: Libre
+EVENTO: MVP de la jornada
+CONTEXTO: 11 puntos en la jornada. El manager esta en la posicion general 9.00  y en la posicion de la jornada 4.00.
 
 ===BLOQUE_7===
-JUGADOR: L. Milla
-MANAGER: MuchaSalsa
+JUGADOR: G. Lo Celso
+MANAGER: Chamacónicos
 EVENTO: MVP de la jornada
-CONTEXTO: 7 puntos en la jornada. El manager esta en la posicion general 7.00  y en la posicion de la jornada 9.00.
+CONTEXTO: 11 puntos en la jornada. El manager esta en la posicion general 3.00  y en la posicion de la jornada 6.00.
 
 ===BLOQUE_8===
-JUGADOR: D. Soria
-MANAGER: MuchaSalsa
+JUGADOR: M. Oyarzabal
+MANAGER: Libre
 EVENTO: Peor actuación de la jornada
-CONTEXTO: Solo -2 puntos. El manager esta en la posicion general 7.00  y en la posicion de la jornada 9.00.
+CONTEXTO: Solo 1 puntos. El manager esta en la posicion general 9.00  y en la posicion de la jornada 4.00.

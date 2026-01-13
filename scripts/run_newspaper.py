@@ -40,7 +40,7 @@ from src.data.extract_gameweek import extraer_gameweek
 from src.data.merge_gameweek import merge_gameweek
 
 from src.AI_newspaper.generate_json import generate_json
-from src.AI_newspaper.generate_prompt import generate_prompts,build_final_prompt
+from src.AI_newspaper.generate_prompt import generate_prompts,build_final_prompt,build_clasification_prompt,build_blocks_prompt
 from src.AI_newspaper.generate_article import generate_articles,parse_generated_text
 from src.AI_newspaper.generate_pdf import create_pdf
 
@@ -135,13 +135,25 @@ else:
     prompt_final_path = os.path.join(JSON_NEWS, f"news_prompt.txt")
     prompt_saved = safe_save_text(commun_prompt_json,prompt_final_path)
 
+    #clasification_prompt = build_clasification_prompt(json_new)
+    #blocks_prompt = build_blocks_prompt(prompt_json["bloques"],json_new)
+    #prompt_clas_path = os.path.join(JSON_NEWS, f"news_clas_prompt.txt")
+    #prompt_blocks_path = os.path.join(JSON_NEWS, f"news_blocks_prompt.txt")
+
+    #prompt_saved1 = safe_save_text(clasification_prompt,prompt_clas_path)
+    #prompt_saved2 = safe_save_text(blocks_prompt,prompt_blocks_path)
+
+
 # --- 3. Llamar Gemini y crear contenido---
-prompt_txt = safe_read_text(json_final_path)
+prompt_txt = safe_read_text(prompt_final_path)
+#prompt_clas = safe_read_text(json_final_path)
+#prompt_blocks = safe_read_text(json_final_path)
 logger.info("📡 Llamando a Gemini para generar los textos...")
-#texto_generado = generate_articles(prompt_txt)
+texto_generado = generate_articles(prompt_txt)
+
 logger.info("✅ Todo el contenido creado.")
 article_final_path = os.path.join(JSON_NEWS, f"news_article.txt")
-#article = safe_save_text(texto_generado,article_final_path)
+article = safe_save_text(texto_generado,article_final_path)
 
 
 #--- 3.Crear CARDS

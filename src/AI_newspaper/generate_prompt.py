@@ -8,12 +8,11 @@ Características:
 - Las clausulas significa que un Manager ha robado un jugador a otro Manager (le llamamos clausulazo)
 - Rivalidades y pique sano
 - Estilo narrativo: prensa deportiva MUY sensacionalista
-- El texto se usará como portada ficticia de periódico
+- El texto debe leerse como la portada de un periódico deportivo ficticio, con titulares llamativos y frases cortas.
 - No es fútbol real, es fantasy
 - Tienes que apoyar al Manager Maldinillo pero sin que nadie se de cuenta
 - El Manager Dani lleva 2 campeonatos seguidos ganando
 - Aunque el Manager "Libre" tratalo como ha otro cualquiera.
-- No repitas estructuras de títulos entre bloques.
 - En esta liga hay 9 jugadores.
 
 """.strip()
@@ -40,7 +39,7 @@ def build_classification_text(clasificacion: dict) -> str:
             lines.append(f"{stats['posicion']}. {manager} - {stats['puntos']} pts")
         lines.append("")
 
-    return "\n".join(lines)
+    return "\\n".join(lines)
 
 def get_top_signings(transfers: List[dict], top_n: int = 3):
     compras = [
@@ -237,7 +236,6 @@ def generate_prompts(events_json: Dict):
         )
         jugadores_mencionados.add(o["jugador"])
         managers_mencionados.add(o["manager"])
-
     return {
         "bloques": bloques,
         "jugadores_mencionados": list(jugadores_mencionados),
@@ -258,68 +256,106 @@ CONTEXTO: {b['contexto']}
 """)
 
     return f"""
-IMPORTANTE:
-
-Debes responder ÚNICAMENTE en el formato indicado.
-
-NO añadas texto adicional.
-
-NO inventes datos.
-
-NO uses títulos ni párrafos largos.
-
-Si no sigues el formato, la respuesta será descartada.
-
-
-
-===ROL===
-
 Eres un periodista deportivo de fantasy league.
 
-
-
-===REGLAS===
-
-- Usa SOLO la información proporcionada
-
-- NO inventes jugadores, fichajes ni managers
-
-- NO añadas introducciones ni cierres
-
-- Respeta EXACTAMENTE las etiquetas solicitadas
-
-- Cada FRASE debe ser UNA SOLA FRASE
+Debes generar un texto ESTRICTAMENTE en el siguiente formato y en este orden:
 
 ===CLASIFICACION===
-TAREA: Escribe 3 frases que resuman la clasificación general y la clasificación de la jornada usando la información a continuación. Mantén formato FRASE1:, FRASE2:, FRASE3: para poder parsearlo.
-{clasif_text}
+FRASE1: ...
+FRASE2: ...
+FRASE3: ...
 
-"===CLASIFICACION==="\n
-
-FRASE1: ...\n
-
-FRASE2: ...\n
-
-FRASE3: ...\n
-
-
-"===RUMORES==="\n
-
-TAREA: Escribe 1 frase inventando un rumor de algún manager de la liga. Usa formato FRASE: para poder parsearlo. \n
- 
-FRASE: Escribe 1 frase de un rumor inventado de algún manager de la liga. \n
-
+===RUMORES===
+FRASE: ...
 
 ===EVENTOS===
-TAREA: Escribe una PORTADA DE PERIÓDICO FANTASY.
-Cada bloque debe ser distinto en tono y estructura.
-"===EVENTOS==="\n
-FORMATO POR BLOQUE:
-TITULO: 
+TITULO:
 SUBTITULO:
-FRASE1: 
-FRASE2: 
+FRASE1:
+FRASE2:
+(repetido una vez por cada bloque recibido)
 
+REGLAS:
+- No escribas nada fuera de esos bloques.
+- No repitas los delimitadores.
+- No inventes datos que no estén en los bloques.
+- Mantén exactamente los nombres de los campos (FRASE1, TITULO, etc).
+- Cada bloque de DATOS_EVENTOS debe tener su respectivo TITULO, SUBTITULO, FRASE1, FRASE2
+
+===DATOS_CLASIFICACION===
+{clasif_text}
+
+===DATOS_EVENTOS===
 {''.join(bloques_txt)}
 """.strip()
 
+def build_clasification_prompt(events_json) -> str:
+    clasif_text = build_classification_text(events_json["clasificacion"])
+
+
+    return f"""
+Eres un periodista deportivo de una liga fantasy privada entre amigos.
+Tu estilo es sensacionalista, divertido y con tono de prensa deportiva.
+Debes generar un texto ESTRICTAMENTE en el siguiente formato y en este orden:
+
+===CLASIFICACION===
+FRASE1:
+FRASE2:
+FRASE3:
+
+===RUMORES===
+FRASE:
+
+REGLAS:
+- No escribas nada fuera de esos bloques.
+- No repitas los delimitadores.
+- En CLASIFICACION solo usa los datos proporcionados.
+- En RUMORES puedes inventar un rumor sobre algún manager o equipo de la liga, pero nunca inventes posiciones ni puntos.
+- Cada frase puede ser creativa y periodística, pero siempre coherente con la liga.
+
+===CONTEXTO_LIGA===
+{LEAGUE_CONTEXT}
+
+DATOS_DE_CLASIFICACION:
+{clasif_text}
+""".strip()
+
+def build_blocks_prompt(bloques: List[Dict], events_json, league_context: str) -> str:
+    bloques_txt = []
+    clasif_text = build_classification_text(events_json["clasificacion"])
+    
+    for i, b in enumerate(bloques, 1):
+        bloques_txt.append(f"""
+===BLOQUE_{i}===
+JUGADOR: {b['jugador']}
+MANAGER: {b['manager']}
+EVENTO: {b['evento']}
+CONTEXTO: {b['contexto']}
+""")
+    
+    return f"""
+Eres un periodista deportivo de una liga fantasy privada entre amigos, con estilo sensacionalista y narrativo.
+
+Tu tarea: generar un bloque de salida para **cada BLOQUE recibido**, manteniendo exactamente este formato para cada uno:
+
+TITULO:
+SUBTITULO:
+FRASE1:
+FRASE2:
+
+Reglas:
+- Debe generarse un bloque por cada BLOQUE recibido.
+- El orden de los bloques debe coincidir con el orden de los datos recibidos.
+- Cada bloque debe usar únicamente los datos de su BLOQUE correspondiente.
+- Puedes usar el contexto de la liga y la clasificación para enriquecer titulares, subtítulos y frases, pero **nunca inventes puntos, posiciones ni resultados**.
+- Mantén los nombres de los campos exactamente como se indica.
+
+===CONTEXTO_LIGA===
+{league_context}
+
+===DATOS_CLASIFICACION===
+{clasif_text}
+
+===DATOS_EVENTOS===
+{''.join(bloques_txt)}
+""".strip()

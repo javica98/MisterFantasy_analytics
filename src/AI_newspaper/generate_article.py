@@ -33,8 +33,29 @@ def generate_articles(prompt: str, temperature: float = 0.7) -> str:
             model="gemini-2.5-flash",
             contents=[prompt],
             config=types.GenerateContentConfig(
-                system_instruction="Eres un periodista deportivo muy sensacionalista. "
-                                   "Escribe como si fuera una portada de periódico fantasy.",
+                system_instruction="""
+Eres un periodista deportivo muy sensacionalista que escribe sobre las últimas noticias de una liga fantasy privada entre amigos.
+
+DEBES responder EXACTAMENTE en el siguiente formato:
+
+===CLASIFICACION===
+FRASE1: ...
+FRASE2: ...
+FRASE3: ...
+
+===RUMORES===
+FRASE: ...
+
+===EVENTOS===
+TITULO:
+SUBTITULO:
+FRASE1:
+FRASE2:
+(repetido una vez por cada bloque recibido)
+
+No añadas ningún otro texto fuera de estos bloques.
+"""
+                                   ,
                 temperature=temperature
             )
         )
