@@ -1,16 +1,37 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
+marks,start_mercado,,,,,,,,,,,,,,,2026-01-14,
+transfer,mercado,,Sergi Cardona,Mister,Los marinero,3.122,2,49,20,,,,,,,2026-01-14,dea775338681c384338adec5fa4e7e35
+transfer,mercado,,Santiago Mouriño,Mister,Dani,7.35536,2,47,20,,,,,,,2026-01-14,38c7c844f7b61ad49c65f82a942f7c6f
+bonificacion,quiniela,,,,,,,,,De la Guettir FC,0.6,1º,,,,2026-01-14,
+bonificacion,quiniela,,,,,,,,,Dani,0.5,2º,,,,2026-01-14,
+bonificacion,quiniela,,,,,,,,,Los marinero,0.5,3º,,,,2026-01-14,
+bonificacion,quiniela,,,,,,,,,Maldinillo 💥,0.5,4º,,,,2026-01-14,
+bonificacion,quiniela,,,,,,,,,Chamacónicos,0.4,5º,,,,2026-01-14,
+bonificacion,quiniela,,,,,,,,,Jotabetrbb,0.2,6º,,,,2026-01-14,
+bonificacion,quiniela,,,,,,,,,Juanba,,7º,,,,2026-01-14,
+bonificacion,quiniela,,,,,,,,,Libre,,8º,,,,2026-01-14,
+bonificacion,quiniela,,,,,,,,,MuchaSalsa,,9º,,,,2026-01-14,
+bonificacion,clasificacion,,,,,,,,,Dani,1.38,1,,,,2026-01-14,
+bonificacion,clasificacion,,,,,,,,,De la Guettir FC,1.83,2,,,,2026-01-14,
+bonificacion,clasificacion,,,,,,,,,Maldinillo 💥,1.85,3,,,,2026-01-14,
+bonificacion,clasificacion,,,,,,,,,Libre,2.03,4,,,,2026-01-14,
+bonificacion,clasificacion,,,,,,,,,Jotabetrbb,2.02,5,,,,2026-01-14,
+bonificacion,clasificacion,,,,,,,,,Chamacónicos,2.55,6,,,,2026-01-14,
+bonificacion,clasificacion,,,,,,,,,Los marinero,2.3,7,,,,2026-01-14,
+bonificacion,clasificacion,,,,,,,,,MuchaSalsa,2.65,8,,,,2026-01-14,
+bonificacion,clasificacion,,,,,,,,,Juanba,2.22,9,,,,2026-01-14,
+marks,start_mercado,,,,,,,,,,,,,,,2026-01-14,
+transfer,mercado,,Dani Olmo,Mister,Jotabetrbb,13.429018,3.0,89.0,3.0,,,,,,,2026-01-13,bbb38a3609f469bde1746529242c38a7
+transfer,Puja,,Dani Olmo,Mister,Chamacónicos,11.854,3.0,89.0,3.0,,,,,,,2026-01-13,b73d3d85527f38e459d8a71996365a79
+transfer,Puja,,Dani Olmo,Mister,Dani,11.32411,3.0,89.0,3.0,,,,,,,2026-01-13,0986f2b409c790a0a2882a3bb9652f3d
+transfer,Puja,,Dani Olmo,Mister,Libre,11.12401,3.0,89.0,3.0,,,,,,,2026-01-13,246c0d1cd8c3bf2e711312e2915e434a
+transfer,mercado,,Juanlu Sánchez,Mister,Los marinero,0.252,2.0,39.0,17.0,,,,,,,2026-01-13,93b77a4078ef04b42826b038e22647a5
+transfer,mercado,,Cédric Bakambu,Mister,Dani,0.95109,4.0,13.0,4.0,,,,,,,2026-01-13,24fb735f2a1af0ea724687cadd1a15d0
+transfer,Puja,,Cédric Bakambu,Mister,Los marinero,0.239,4.0,13.0,4.0,,,,,,,2026-01-13,c6efdc4e5c44a08776c48fd94be9d32a
 marks,start_mercado,,,,,,,,,,,,,,,2026-01-13,
-transfer,mercado,,Dani Olmo,Mister,Jotabetrbb,13.429018,3,89,3,,,,,,,2026-01-13,bbb38a3609f469bde1746529242c38a7
-transfer,Puja,,Dani Olmo,Mister,Chamacónicos,11.854,3,89,3,,,,,,,2026-01-13,b73d3d85527f38e459d8a71996365a79
-transfer,Puja,,Dani Olmo,Mister,Dani,11.32411,3,89,3,,,,,,,2026-01-13,0986f2b409c790a0a2882a3bb9652f3d
-transfer,Puja,,Dani Olmo,Mister,Libre,11.12401,3,89,3,,,,,,,2026-01-13,246c0d1cd8c3bf2e711312e2915e434a
-transfer,mercado,,Juanlu Sánchez,Mister,Los marinero,0.252,2,39,17,,,,,,,2026-01-13,93b77a4078ef04b42826b038e22647a5
-transfer,mercado,,Cédric Bakambu,Mister,Dani,0.95109,4,13,4,,,,,,,2026-01-13,24fb735f2a1af0ea724687cadd1a15d0
-transfer,Puja,,Cédric Bakambu,Mister,Los marinero,0.239,4,13,4,,,,,,,2026-01-13,c6efdc4e5c44a08776c48fd94be9d32a
+transfer,mercado,,Álex Berenguer,Maldinillo 💥,Mister,8.6623,3.0,73.0,1.0,,,,,,,2026-01-13,4c665c101356d59689bf29d312ab5f99
 marks,start_mercado,,,,,,,,,,,,,,,2026-01-13,
-transfer,mercado,,Álex Berenguer,Maldinillo 💥,Mister,8.6623,3,73,1,,,,,,,2026-01-13,4c665c101356d59689bf29d312ab5f99
-marks,start_mercado,,,,,,,,,,,,,,,2026-01-13,
-transfer,mercado,,Thierry Correia,Los marinero,Mister,1.08155,2,33,19,,,,,,,2026-01-13,1722a954d1f5075e382819cfb9c21cee
+transfer,mercado,,Thierry Correia,Los marinero,Mister,1.08155,2.0,33.0,19.0,,,,,,,2026-01-13,1722a954d1f5075e382819cfb9c21cee
 marks,start_mercado,,,,,,,,,,,,,,,2026-01-13,
 transfer,mercado,,Víctor García,Maldinillo 💥,Mister,0.19005,3.0,23.0,12.0,,,,,,,2026-01-12,7d490ca0bcb9d239544a4f522f39e466
 marks,start_mercado,,,,,,,,,,,,,,,2026-01-12,
