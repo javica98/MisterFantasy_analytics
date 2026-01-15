@@ -47,7 +47,7 @@ def map_team(team_name):
 def map_position(position):
     return TEAM_POSICION.get(position, position)
 
-def generate_json(last_days: int, df_clean: pd.DataFrame, df_gameweek: pd.DataFrame,df_clasificacion: pd.DataFrame):
+def generate_json(last_days: int, df_clean: pd.DataFrame, df_gameweek: pd.DataFrame,df_clasificacion: pd.DataFrame,df_quinielas: pd.DataFrame):
     """
     Recibe:
         last_days: número de días atrás para filtrar los datos
@@ -75,6 +75,12 @@ def generate_json(last_days: int, df_clean: pd.DataFrame, df_gameweek: pd.DataFr
     df_class_gen = clasificacion_dict(df_clasificacion)
     df_class_jor = clasificacion_dict(
         df_clasificacion[df_clasificacion["jornada"].isin(jornadas)]
+    )
+    #Quinielas general y jornada
+    
+    df_quin_gen = clasificacion_dict(df_quinielas)
+    df_quin_jor = clasificacion_dict(
+        df_quinielas[df_quinielas["jornada"].isin(jornadas)]
     )
     # ---------------------
     # Procesar transfers
@@ -132,6 +138,10 @@ def generate_json(last_days: int, df_clean: pd.DataFrame, df_gameweek: pd.DataFr
     "general": df_class_gen,
     "jornada": df_class_jor
     }
+    quinielas = {
+    "general": df_quin_gen,
+    "jornada": df_quin_jor
+    }
 
     # ---------------------
     # JSON final
@@ -141,7 +151,8 @@ def generate_json(last_days: int, df_clean: pd.DataFrame, df_gameweek: pd.DataFr
         "fecha_fin": str(today),
         "transfers": transfers,
         "gameweek": gameweek,
-        "clasificacion": clasificacion
+        "clasificacion": clasificacion,
+        "quinielas":quinielas
     }
 
     return final_json

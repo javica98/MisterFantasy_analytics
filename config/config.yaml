@@ -11,6 +11,7 @@ paths:
     jornadas: "data/raw/mi_equipo.html"
     subidas_bajadas: "data/raw/MarketSubidasBajadas.html"
     gameweek: "data/raw/gameweek.html"
+    quiniela: "data/raw/quiniela.html"
 
   csv:
     notificaciones: "data/processed/ganancias.csv"
@@ -23,6 +24,7 @@ paths:
     clausulas_acuerdos: "data/processed/clausulas_acuerdos.csv"
     model: "data/processed/data_model.csv"
     gameweek: "data/processed/gameweek.csv"
+    quiniela: "data/processed/quiniela.csv"
 
     test: "data/processed/test.csv"
   json:

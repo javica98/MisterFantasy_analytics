@@ -84,6 +84,7 @@ HTML_MERCADO_AUX = cfg["paths"]["html"]["mercado"]
 HTML_JORNADAS_AUX = cfg["paths"]["html"]["jornadas"]
 HTML_SUBIDASBAJADAS = cfg["paths"]["html"]["subidas_bajadas"]
 HTML_GAMEWEEK = cfg["paths"]["html"]["gameweek"]
+HTML_QUINIELAS = cfg["paths"]["html"]["quinielas"]
 
 # Archivos CSV
 CSV_NOTIFICACIONES = cfg["paths"]["csv"]["notificaciones"]
@@ -93,6 +94,7 @@ CSV_MERCADO = cfg["paths"]["csv"]["mercado"]
 CSV_JORNADA = cfg["paths"]["csv"]["jornada"]
 CSV_SUBIDASBAJADAS = cfg["paths"]["csv"]["subidas_bajadas"]
 CSV_GAMEWEEK = cfg["paths"]["csv"]["gameweek"]
+CSV_QUINIELAS = cfg["paths"]["csv"]["quinielas"]
 
 # Archivos CSV
 JSON_NEWS = cfg["paths"]["json"]["news"]
@@ -114,11 +116,12 @@ logger.info("Creando Jsons...")
 csv_gameweek = safe_read_csv(CSV_GAMEWEEK)
 csv_notificaciones = safe_read_csv(CSV_NOTIFICACIONES_CLEAN)
 csv_clasificacion = safe_read_csv(CSV_CLASIFICACIONES)
+csv_quinielas = safe_read_csv(CSV_QUINIELAS)
 
 if (csv_gameweek is None)and (csv_notificaciones is None):
     logger.warning("⏭️ Saltando csvs .csv no existe.")
 else:
-    daily_json = generate_json(3,csv_notificaciones[csv_notificaciones['type'] == 'transfer'],csv_gameweek,csv_clasificacion)
+    daily_json = generate_json(3,csv_notificaciones[csv_notificaciones['type'] == 'transfer'],csv_gameweek,csv_clasificacion,csv_quinielas)
     logger.info("✅ Json creado.")
     json_final_path = os.path.join(JSON_NEWS, f"news_json.json")
     daily_json = safe_save_json(daily_json,json_final_path)

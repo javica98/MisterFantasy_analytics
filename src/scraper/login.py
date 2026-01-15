@@ -163,7 +163,8 @@ def login():
                 "market": "mercado.html",
                 "team": "mi_equipo.html",
                 "standings": "clasificacion.html",
-                "feed#gameweek":"gameweek.html"
+                "feed#gameweek":"gameweek.html",
+                "feed#pool-private":"quiniela.html"
             }
 
             for ruta_name, archivo in rutas.items():

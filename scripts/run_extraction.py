@@ -37,6 +37,8 @@ from src.data.extract_jornadas import extraer_jornadas
 from src.data.extract_subidas_bajadas import extraer_subidas_bajadas
 from src.data.extract_gameweek import extraer_gameweek
 from src.data.merge_gameweek import merge_gameweek
+from src.data.extract_quinielas import extraer_quinielas
+from src.data.merge_quinielas import merge_quinielas
 
 from src.scraper.login import login
 
@@ -78,6 +80,7 @@ HTML_MERCADO_AUX = cfg["paths"]["html"]["mercado"]
 HTML_JORNADAS_AUX = cfg["paths"]["html"]["jornadas"]
 HTML_SUBIDASBAJADAS = cfg["paths"]["html"]["subidas_bajadas"]
 HTML_GAMEWEEK = cfg["paths"]["html"]["gameweek"]
+HTML_QUINIELA = cfg["paths"]["html"]["quiniela"]
 
 # Archivos CSV
 CSV_NOTIFICACIONES = cfg["paths"]["csv"]["notificaciones"]
@@ -86,6 +89,7 @@ CSV_MERCADO = cfg["paths"]["csv"]["mercado"]
 CSV_JORNADA = cfg["paths"]["csv"]["jornada"]
 CSV_SUBIDASBAJADAS = cfg["paths"]["csv"]["subidas_bajadas"]
 CSV_GAMEWEEK = cfg["paths"]["csv"]["gameweek"]
+CSV_QUINIELA = cfg["paths"]["csv"]["quiniela"]
 
 # Variables de entorno (login)
 MISTER_USERNAME = cfg["env"]["MISTER_USERNAME"]
@@ -183,5 +187,20 @@ else:
     new_csv_gameweek = merge_gameweek(csv_gameweek, new_gameweek)
     safe_save_csv(new_csv_gameweek, CSV_GAMEWEEK)
     logger.info("✅ Nuevas gameweeks añadidas y guardadas.")
+
+# --- 7.Quiniela ---
+logger.info("Extrayendo quiniela...")
+new_html_quin = safe_read_html(HTML_QUINIELA)
+if new_html_clas is None:
+    logger.warning("⏭️ Saltando sección de quinielas (no hay HTML disponible).")
+else:
+    new_quinielas = extraer_quinielas(new_html_quin)
+    logger.info("✅ Nuevas quinielas extraídas.")
+    csv_quinielas = safe_read_csv(CSV_QUINIELA)
+    new_csv_quinielas = merge_quinielas(csv_quinielas, new_quinielas)
+    safe_save_csv(new_csv_quinielas, CSV_QUINIELA)
+    logger.info("✅ Nuevas quinielas añadidas y guardadas.")
+
+
 
 logger.info("🏁 Proceso de extracción completado sin errores.")

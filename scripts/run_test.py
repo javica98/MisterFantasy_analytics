@@ -49,7 +49,7 @@ from src.utils.file_utils import safe_read_html, safe_read_csv, safe_save_csv,sa
 from src.AI_newspaper.generate_json import generate_json
 from src.AI_newspaper.generate_prompt import generate_prompts,build_final_prompt
 from src.AI_newspaper.generate_article import generate_articles,parse_generated_text
-from src.AI_newspaper.generate_pdf import create_pdf
+from src.AI_newspaper.generate_pdf_copy  import create_pdf
 
 cfg = load_config()
 
@@ -118,10 +118,10 @@ cards = safe_save_json(json_cards,cards_final_path)
 logger.info("🏁 Proceso de extracción completado sin errores.")
 
 
-
+clasificacion_json= safe_read_json(json_final_path)["clasificacion"]
 cards_json_path = os.path.join(JSON_NEWS, f"news_cards.json")
 cards = safe_read_json(cards_json_path)
-card = create_pdf(cards,NEWS_UTILS,IMAGES_TEAMS_DIR,DEFAULT_TEAM_IMAGE)
+card = create_pdf("Jornada",cards,clasificacion_json,NEWS_UTILS,IMAGES_TEAMS_DIR,DEFAULT_TEAM_IMAGE)
 fecha_hoy = datetime.today().strftime("%Y-%m-%d")
 card_png_path = os.path.join(IMG_NEWS, f"{fecha_hoy}_news.png")
 card_save = safe_save_png(card,card_png_path)
