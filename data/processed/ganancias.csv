@@ -1,7 +1,19 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
-marks,start_mercado,,,,,,,,,,,,,,,2026-01-14,
-transfer,mercado,,Sergi Cardona,Mister,Los marinero,3.122,2,49,20,,,,,,,2026-01-14,dea775338681c384338adec5fa4e7e35
-transfer,mercado,,Santiago Mouriño,Mister,Dani,7.35536,2,47,20,,,,,,,2026-01-14,38c7c844f7b61ad49c65f82a942f7c6f
+marks,start_mercado,,,,,,,,,,,,,,,2026-01-15,
+transfer,mercado,,Rubén Vargas,Jotabetrbb,Mister,7.70165,3,67,17,,,,,,,2026-01-15,b4053593f40458d0d3be8ca2d88cc1f8
+marks,start_mercado,,,,,,,,,,,,,,,2026-01-15,
+transfer,mercado,,Joan Garcia,Mister,Libre,15.75408,1,92,3,,,,,,,2026-01-15,7c431675e472527658abb2dcdcbb2055
+transfer,mercado,,Mikel Jauregizar,Mister,Chamacónicos,5.964,3,72,1,,,,,,,2026-01-15,10aa8ad881209201f04f95c4118655ab
+transfer,mercado,,Juan Iglesias,Mister,Chamacónicos,2.38,2,67,9,,,,,,,2026-01-15,f6b3dac4a4a67ddc47c392653afbaa3b
+transfer,mercado,,Umar Sadiq,Mister,Dani,0.9446,4,11,19,,,,,,,2026-01-15,23a0ae5bf01d27260390309852152bdb
+transfer,Puja,,Umar Sadiq,Mister,Los marinero,0.799,4,11,19,,,,,,,2026-01-15,8c1819b3d2ba3d6d532a93d1f2e158fa
+marks,start_mercado,,,,,,,,,,,,,,,2026-01-15,
+transfer,mercado,,Alejandro Catena,Dani,Mister,11.30631,2,85,50,,,,,,,2026-01-15,f0e8a8ff50b93d7722043453717a70fc
+marks,start_mercado,,,,,,,,,,,,,,,2026-01-15,
+transfer,mercado,,Nico González,Jotabetrbb,Mister,6.32196,3,63,2,,,,,,,2026-01-15,83f517316d2bc88654cc89d4d0259fe0
+marks,start_mercado,,,,,,,,,,,,,,,2026-01-15,
+transfer,mercado,,Sergi Cardona,Mister,Los marinero,3.122,2.0,49.0,20.0,,,,,,,2026-01-14,dea775338681c384338adec5fa4e7e35
+transfer,mercado,,Santiago Mouriño,Mister,Dani,7.35536,2.0,47.0,20.0,,,,,,,2026-01-14,38c7c844f7b61ad49c65f82a942f7c6f
 bonificacion,quiniela,,,,,,,,,De la Guettir FC,0.6,1º,,,,2026-01-14,
 bonificacion,quiniela,,,,,,,,,Dani,0.5,2º,,,,2026-01-14,
 bonificacion,quiniela,,,,,,,,,Los marinero,0.5,3º,,,,2026-01-14,
