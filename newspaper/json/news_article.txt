@@ -1,41 +1,45 @@
 ===CLASIFICACION===
-FRASE1: ¡Dani se escapa en la cima, dejando a sus rivales comiendo polvo mientras consolida su liderazgo con una ventaja abrumadora de casi 80 puntos!
-FRASE2: La batalla por el segundo puesto es un auténtico infierno: Maldinillo, Chamacónicos y Los marinero se separan por apenas TRES puntos, ¡un error y todo puede cambiar!
-FRASE3: Juanba se hunde en el abismo de la clasificación de la jornada, con una actuación desastrosa de solo 21 puntos, ¡mientras Dani y De la Guettir FC comparten la gloria de la jornada!
+FRASE1: ¡Dani, el titán inalcanzable, sigue aferrado a la cima con 883 puntos, pero el aliento de sus perseguidores ya se siente en la nuca!
+FRASE2: ¡Chamacónicos ha desatado un vendaval en la jornada, conquistando el primer puesto con 58 puntos y escalando a la segunda plaza general, sembrando el pánico entre la élite!
+FRASE3: ¡Maldinillo 💥 y Los marinero se enzarzan en una batalla épica por el podio, separados por un miserable punto! ¡La tensión es palpable, la lucha es encarnizada!
 
 ===RUMORES===
-FRASE: ¿Está Maldinillo 💥 al borde de la bancarrota o es un genio incomprendido? Se rumorea que sus movimientos de mercado, fichando a Borja Iglesias y Gerard Moreno por sumas estratosféricas tras vender a Rashford, son parte de un plan maestro... ¡o una desesperada huida hacia adelante!
+FRASE: ¡Se susurra en los corrillos que Libre, tras su magistral jugada de ventas y fichajes, podría estar preparando un asalto sorpresa a la parte alta de la tabla, con un arsenal de millones y una estrategia oculta!
 
 ===EVENTOS===
-TITULO: ¡Maldinillo 💥 en modo "todo o nada"!
-SUBTITULO: La cartera arde por Borja Iglesias
-FRASE1: En un movimiento que ha dejado a la liga boquiabierta, Maldinillo 💥 ha desembolsado 16.59 millones por Borja Iglesias, ¡una apuesta de proporciones épicas!
-FRASE2: Con el segundo puesto en la general y el tercero en la jornada, ¿es esta la jugada maestra para asaltar el liderato o la señal de un manager al límite?
-TITULO: ¡Doble golpe de Maldinillo 💥!
-SUBTITULO: Gerard Moreno, la nueva joya de la corona.
-FRASE1: ¡No contento con un bombazo, Maldinillo 💥 ha vuelto a sacudir el mercado con la adquisición de Gerard Moreno por 16.19 millones!
-FRASE2: Este manager, que respira en el segundo puesto, está enviando un mensaje claro: ¡la cima de la liga tiene un precio y él está dispuesto a pagarlo!
-TITULO: ¡Jotabetrbb mueve ficha en silencio!
-SUBTITULO: Dani Olmo llega para revolucionar el mediocampo.
-FRASE1: Jotabetrbb ha realizado un fichaje estratégico, incorporando a Dani Olmo por 13.43 millones, buscando la chispa que lo impulse en la tabla.
-FRASE2: En un quinto puesto general y de jornada, este movimiento es un claro intento de escalar posiciones, ¿será Olmo la pieza que le faltaba?
-TITULO: ¡Rashford fuera! ¿Locura o genialidad de Maldinillo 💥?
-SUBTITULO: Venta récord que levanta sospechas.
-FRASE1: Marcus Rashford ha sido vendido por 14.59 millones, un movimiento que ha desatado el pánico y la especulación en las oficinas de Maldinillo 💥.
-FRASE2: ¿Es esta una jugada maestra para financiar sus recientes y explosivos fichajes, o un error garrafal que le costará caro al subcampeón?
-TITULO: ¡C. Romero, el muro de Maldinillo 💥!
-SUBTITULO: 14 puntos que reafirman la inversión.
-FRASE1: C. Romero ha brillado con luz propia, aportando 14 puntos cruciales a la escuadra de Maldinillo 💥, demostrando su valía en el campo.
-FRASE2: Este MVP de la jornada es un soplo de aire fresco para un manager que no para de gastar, ¡parece que las inversiones empiezan a dar sus frutos!
-TITULO: ¡Milagro en el sótano! Libre encuentra su estrella.
-SUBTITULO: J. Aramburu, el héroe inesperado con 11 puntos.
-FRASE1: Desde las profundidades de la tabla, Libre ha encontrado una joya: J. Aramburu, quien ha logrado un impresionante MVP con 11 puntos.
-FRASE2: A pesar de ser el noveno en la general, esta actuación de su jugador le ha valido un cuarto puesto en la jornada, ¡una luz de esperanza para el colista!
-TITULO: ¡Chamacónicos se mantiene a flote con Lo Celso!
-SUBTITULO: 11 puntos vitales para el aspirante.
-FRASE1: G. Lo Celso ha sido el faro de Chamacónicos, sumando 11 puntos y asegurando un MVP que mantiene a su equipo en la lucha por el podio.
-FRASE2: Con el tercer puesto general en juego, estas actuaciones individuales son oxígeno puro para un manager que no puede permitirse ningún tropiezo.
-TITULO: ¡De la gloria al infierno! Oyarzabal decepciona a Libre.
-SUBTITULO: Un mísero punto que duele en el alma.
-FRASE1: La jornada ha sido un auténtico calvario para M. Oyarzabal, que ha aportado un triste punto a la plantilla de Libre, una actuación para el olvido.
-FRASE2: Mientras uno de sus jugadores brillaba, Oyarzabal se hundía, ¡demostrando la montaña rusa emocional que es ser manager de Libre!
+TITULO: ¡Jotabetrbb Desembolsa una Fortuna por Rodrygo!
+SUBTITULO: ¿Apuesta de riesgo o jugada maestra del 5º clasificado?
+FRASE1: Jotabetrbb, estancado en la 5ª posición general y con una jornada discreta (7º), ha sacudido el mercado con la adquisición de Rodrygo por 12.22 millones.
+FRASE2: ¿Será este el revulsivo que necesita para escalar posiciones o una inversión precipitada que lo hunda más? ¡Las gradas están divididas!
+TITULO: ¡Libre Refuerza su Defensa con Juan Foyth!
+SUBTITULO: ¿El 8º clasificado busca estabilidad tras su resurgir en la jornada?
+FRASE1: Tras una jornada estelar (3º), Libre, desde su 8ª posición general, se hace con Juan Foyth por 11.06 millones.
+FRASE2: ¿Será este movimiento defensivo la clave para consolidar su buen momento y escapar del furgón de cola? ¡El tiempo lo dirá!
+TITULO: ¡Dani, el Líder, No se Duerme y Ficha a Victor Muñoz!
+SUBTITULO: ¿Consolidación o señal de nerviosismo en la cima?
+FRASE1: El intocable Dani, líder absoluto con 883 puntos, ha invertido 10.18 millones en Victor Muñoz, ¡un movimiento que nadie esperaba!
+FRASE2: ¿Es un golpe de autoridad o un intento desesperado por mantener la distancia con unos Chamacónicos que le pisan los talones? ¡La intriga está servida!
+TITULO: ¡Libre Realiza la Venta del Siglo con Joan Garcia!
+SUBTITULO: ¿Movimiento estratégico o desesperación por dinero en efectivo?
+FRASE1: Libre, el manager que oscila entre la 8ª posición general y la 3ª de la jornada, ha sorprendido a todos vendiendo a Joan Garcia por la friolera de 15.16 millones.
+FRASE2: ¿Ha visto una oportunidad de oro o está preparando un bombazo en el mercado con esa liquidez inesperada? ¡Los analistas se frotan las manos!
+TITULO: ¡V. Muriqi Desata la Locura y Es el MVP Absoluto!
+SUBTITULO: ¡Chamacónicos se dispara gracias a su delantero estrella!
+FRASE1: ¡Con 19 puntos estratosféricos, V. Muriqi se corona como el MVP de la jornada, llevando a Chamacónicos (2º general, 1º jornada) a la gloria!
+FRASE2: Este rendimiento sublime demuestra que Chamacónicos tiene dinamita pura en sus filas, ¡y Dani debería empezar a temblar!
+TITULO: ¡A. Ruibal Sorprende y Se Cuelga el MVP!
+SUBTITULO: ¡Libre, el resurgido, celebra otro acierto en su plantilla!
+FRASE1: A. Ruibal, con 15 puntos cruciales, ha sido un pilar fundamental para Libre, que ha logrado una impresionante 3ª posición en la jornada desde su 8º puesto general.
+FRASE2: ¿Es este jugador la pieza secreta que Libre necesitaba para escalar posiciones de forma definitiva? ¡La esperanza renace en sus filas!
+TITULO: ¡R. Asencio Brilla y Da Alas a Los Marinero!
+SUBTITULO: ¡El 4º clasificado encuentra un héroe inesperado!
+FRASE1: R. Asencio, con 13 puntos de oro, se ha erigido como un MVP para Los marinero, impulsándolos a la 2ª posición en la jornada y manteniéndolos cerca del podio general (4º).
+FRASE2: Con actuaciones así, Los marinero demuestran que son un contendiente serio y que no van a ceder ni un milímetro en la lucha por la gloria.
+TITULO: ¡N. Mendy: El Desastre Personal de Chamacónicos!
+SUBTITULO: ¿Un borrón en una jornada casi perfecta o una señal de alarma?
+FRASE1: Mientras Chamacónicos celebraba su victoria de jornada, N. Mendy se hundía con unos vergonzosos -8 puntos, ¡la peor actuación de la liga!
+FRASE2: ¿Podrá Chamacónicos permitirse estos tropiezos individuales mientras persigue al líder Dani? ¡La afición exige explicaciones!
+TITULO: ¡Escándalo en el Campo! ¡N. Mendy Expulsado!
+SUBTITULO: La tarjeta roja que pudo costar la jornada a Chamacónicos.
+FRASE1: N. Mendy, el mismo jugador que protagonizó la peor actuación, ¡también vio la tarjeta roja, dejando a Chamacónicos (1º jornada) con diez!
+FRASE2: Esta expulsión, que condicionó el partido, es un claro aviso: ¡la indisciplina puede ser el talón de Aquiles del aspirante al título!

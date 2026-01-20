@@ -5,9 +5,9 @@
       "titulo": "CLASIFICACION",
       "subtitulo": "",
       "texto": [
-        " ¡Dani se escapa en la cima, dejando a sus rivales comiendo polvo mientras consolida su liderazgo con una ventaja abrumadora de casi 80 puntos!",
-        " La batalla por el segundo puesto es un auténtico infierno: Maldinillo, Chamacónicos y Los marinero se separan por apenas TRES puntos, ¡un error y todo puede cambiar!",
-        " Juanba se hunde en el abismo de la clasificación de la jornada, con una actuación desastrosa de solo 21 puntos, ¡mientras Dani y De la Guettir FC comparten la gloria de la jornada!",
+        " ¡Dani, el titán inalcanzable, sigue aferrado a la cima con 883 puntos, pero el aliento de sus perseguidores ya se siente en la nuca!",
+        " ¡Chamacónicos ha desatado un vendaval en la jornada, conquistando el primer puesto con 58 puntos y escalando a la segunda plaza general, sembrando el pánico entre la élite!",
+        " ¡Maldinillo 💥 y Los marinero se enzarzan en una batalla épica por el podio, separados por un miserable punto! ¡La tensión es palpable, la lucha es encarnizada!",
         ""
       ]
     },
@@ -16,120 +16,134 @@
       "titulo": "RUMORES",
       "subtitulo": "",
       "texto": [
-        " ¿Está Maldinillo 💥 al borde de la bancarrota o es un genio incomprendido? Se rumorea que sus movimientos de mercado, fichando a Borja Iglesias y Gerard Moreno por sumas estratosféricas tras vender a Rashford, son parte de un plan maestro... ¡o una desesperada huida hacia adelante!\n\n"
+        " ¡Se susurra en los corrillos que Libre, tras su magistral jugada de ventas y fichajes, podría estar preparando un asalto sorpresa a la parte alta de la tabla, con un arsenal de millones y una estrategia oculta!\n\n"
       ]
     },
     {
       "tipo": "Fichaje destacado",
-      "jugador": "Borja Iglesias",
-      "manager": "Maldinillo 💥",
+      "jugador": "Rodrygo",
+      "manager": "Jotabetrbb",
       "puntos": null,
-      "dinero": 16.59209,
-      "titulo": "¡Maldinillo 💥 en modo \"todo o nada\"!",
-      "subtitulo": "La cartera arde por Borja Iglesias",
+      "dinero": 12.225,
+      "titulo": "¡Jotabetrbb Desembolsa una Fortuna por Rodrygo!",
+      "subtitulo": "¿Apuesta de riesgo o jugada maestra del 5º clasificado?",
       "texto": [
-        "En un movimiento que ha dejado a la liga boquiabierta, Maldinillo 💥 ha desembolsado 16.59 millones por Borja Iglesias, ¡una apuesta de proporciones épicas!",
-        "Con el segundo puesto en la general y el tercero en la jornada, ¿es esta la jugada maestra para asaltar el liderato o la señal de un manager al límite?"
+        "Jotabetrbb, estancado en la 5ª posición general y con una jornada discreta (7º), ha sacudido el mercado con la adquisición de Rodrygo por 12.22 millones.",
+        "¿Será este el revulsivo que necesita para escalar posiciones o una inversión precipitada que lo hunda más? ¡Las gradas están divididas!"
       ],
-      "equipo": "RC Celta de Vigo"
+      "equipo": "Real Madrid"
     },
     {
       "tipo": "Fichaje destacado",
-      "jugador": "Gerard Moreno",
-      "manager": "Maldinillo 💥",
+      "jugador": "Juan Foyth",
+      "manager": "Libre",
       "puntos": null,
-      "dinero": 16.19306,
-      "titulo": "¡Doble golpe de Maldinillo 💥!",
-      "subtitulo": "Gerard Moreno, la nueva joya de la corona.",
+      "dinero": 11.06023,
+      "titulo": "¡Libre Refuerza su Defensa con Juan Foyth!",
+      "subtitulo": "¿El 8º clasificado busca estabilidad tras su resurgir en la jornada?",
       "texto": [
-        "¡No contento con un bombazo, Maldinillo 💥 ha vuelto a sacudir el mercado con la adquisición de Gerard Moreno por 16.19 millones!",
-        "Este manager, que respira en el segundo puesto, está enviando un mensaje claro: ¡la cima de la liga tiene un precio y él está dispuesto a pagarlo!"
+        "Tras una jornada estelar (3º), Libre, desde su 8ª posición general, se hace con Juan Foyth por 11.06 millones.",
+        "¿Será este movimiento defensivo la clave para consolidar su buen momento y escapar del furgón de cola? ¡El tiempo lo dirá!"
       ],
       "equipo": "Villarreal CF"
     },
     {
       "tipo": "Fichaje destacado",
-      "jugador": "Dani Olmo",
-      "manager": "Jotabetrbb",
+      "jugador": "Victor Muñoz",
+      "manager": "Dani",
       "puntos": null,
-      "dinero": 13.429018,
-      "titulo": "¡Jotabetrbb mueve ficha en silencio!",
-      "subtitulo": "Dani Olmo llega para revolucionar el mediocampo.",
+      "dinero": 10.17924,
+      "titulo": "¡Dani, el Líder, No se Duerme y Ficha a Victor Muñoz!",
+      "subtitulo": "¿Consolidación o señal de nerviosismo en la cima?",
       "texto": [
-        "Jotabetrbb ha realizado un fichaje estratégico, incorporando a Dani Olmo por 13.43 millones, buscando la chispa que lo impulse en la tabla.",
-        "En un quinto puesto general y de jornada, este movimiento es un claro intento de escalar posiciones, ¿será Olmo la pieza que le faltaba?"
+        "El intocable Dani, líder absoluto con 883 puntos, ha invertido 10.18 millones en Victor Muñoz, ¡un movimiento que nadie esperaba!",
+        "¿Es un golpe de autoridad o un intento desesperado por mantener la distancia con unos Chamacónicos que le pisan los talones? ¡La intriga está servida!"
       ],
-      "equipo": "FC Barcelona"
+      "equipo": "CA Osasuna"
     },
     {
       "tipo": "Venta récord",
-      "jugador": "Marcus Rashford",
-      "manager": "Maldinillo 💥",
+      "jugador": "Joan Garcia",
+      "manager": "Libre",
       "puntos": null,
-      "dinero": 14.59062,
-      "titulo": "¡Rashford fuera! ¿Locura o genialidad de Maldinillo 💥?",
-      "subtitulo": "Venta récord que levanta sospechas.",
+      "dinero": 15.15936,
+      "titulo": "¡Libre Realiza la Venta del Siglo con Joan Garcia!",
+      "subtitulo": "¿Movimiento estratégico o desesperación por dinero en efectivo?",
       "texto": [
-        "Marcus Rashford ha sido vendido por 14.59 millones, un movimiento que ha desatado el pánico y la especulación en las oficinas de Maldinillo 💥.",
-        "¿Es esta una jugada maestra para financiar sus recientes y explosivos fichajes, o un error garrafal que le costará caro al subcampeón?"
+        "Libre, el manager que oscila entre la 8ª posición general y la 3ª de la jornada, ha sorprendido a todos vendiendo a Joan Garcia por la friolera de 15.16 millones.",
+        "¿Ha visto una oportunidad de oro o está preparando un bombazo en el mercado con esa liquidez inesperada? ¡Los analistas se frotan las manos!"
       ],
       "equipo": "FC Barcelona"
     },
     {
       "tipo": "MVP de la jornada",
-      "jugador": "C. Romero",
-      "manager": "Maldinillo 💥",
-      "puntos": 14,
-      "dinero": null,
-      "titulo": "¡C. Romero, el muro de Maldinillo 💥!",
-      "subtitulo": "14 puntos que reafirman la inversión.",
-      "texto": [
-        "C. Romero ha brillado con luz propia, aportando 14 puntos cruciales a la escuadra de Maldinillo 💥, demostrando su valía en el campo.",
-        "Este MVP de la jornada es un soplo de aire fresco para un manager que no para de gastar, ¡parece que las inversiones empiezan a dar sus frutos!"
-      ],
-      "equipo": "RCD Espanyol"
-    },
-    {
-      "tipo": "MVP de la jornada",
-      "jugador": "J. Aramburu",
-      "manager": "Libre",
-      "puntos": 11,
-      "dinero": null,
-      "titulo": "¡Milagro en el sótano! Libre encuentra su estrella.",
-      "subtitulo": "J. Aramburu, el héroe inesperado con 11 puntos.",
-      "texto": [
-        "Desde las profundidades de la tabla, Libre ha encontrado una joya: J. Aramburu, quien ha logrado un impresionante MVP con 11 puntos.",
-        "A pesar de ser el noveno en la general, esta actuación de su jugador le ha valido un cuarto puesto en la jornada, ¡una luz de esperanza para el colista!"
-      ],
-      "equipo": "Real Sociedad"
-    },
-    {
-      "tipo": "MVP de la jornada",
-      "jugador": "G. Lo Celso",
+      "jugador": "V. Muriqi",
       "manager": "Chamacónicos",
-      "puntos": 11,
+      "puntos": 19,
       "dinero": null,
-      "titulo": "¡Chamacónicos se mantiene a flote con Lo Celso!",
-      "subtitulo": "11 puntos vitales para el aspirante.",
+      "titulo": "¡V. Muriqi Desata la Locura y Es el MVP Absoluto!",
+      "subtitulo": "¡Chamacónicos se dispara gracias a su delantero estrella!",
       "texto": [
-        "G. Lo Celso ha sido el faro de Chamacónicos, sumando 11 puntos y asegurando un MVP que mantiene a su equipo en la lucha por el podio.",
-        "Con el tercer puesto general en juego, estas actuaciones individuales son oxígeno puro para un manager que no puede permitirse ningún tropiezo."
+        "¡Con 19 puntos estratosféricos, V. Muriqi se corona como el MVP de la jornada, llevando a Chamacónicos (2º general, 1º jornada) a la gloria!",
+        "Este rendimiento sublime demuestra que Chamacónicos tiene dinamita pura en sus filas, ¡y Dani debería empezar a temblar!"
+      ],
+      "equipo": "RCD Mallorca"
+    },
+    {
+      "tipo": "MVP de la jornada",
+      "jugador": "A. Ruibal",
+      "manager": "Libre",
+      "puntos": 15,
+      "dinero": null,
+      "titulo": "¡A. Ruibal Sorprende y Se Cuelga el MVP!",
+      "subtitulo": "¡Libre, el resurgido, celebra otro acierto en su plantilla!",
+      "texto": [
+        "A. Ruibal, con 15 puntos cruciales, ha sido un pilar fundamental para Libre, que ha logrado una impresionante 3ª posición en la jornada desde su 8º puesto general.",
+        "¿Es este jugador la pieza secreta que Libre necesitaba para escalar posiciones de forma definitiva? ¡La esperanza renace en sus filas!"
       ],
       "equipo": "Real Betis Balompié"
     },
     {
-      "tipo": "Peor actuación de la jornada",
-      "jugador": "M. Oyarzabal",
-      "manager": "Libre",
-      "puntos": 1,
+      "tipo": "MVP de la jornada",
+      "jugador": "R. Asencio",
+      "manager": "Los marinero",
+      "puntos": 13,
       "dinero": null,
-      "titulo": "¡De la gloria al infierno! Oyarzabal decepciona a Libre.",
-      "subtitulo": "Un mísero punto que duele en el alma.",
+      "titulo": "¡R. Asencio Brilla y Da Alas a Los Marinero!",
+      "subtitulo": "¡El 4º clasificado encuentra un héroe inesperado!",
       "texto": [
-        "La jornada ha sido un auténtico calvario para M. Oyarzabal, que ha aportado un triste punto a la plantilla de Libre, una actuación para el olvido.",
-        "Mientras uno de sus jugadores brillaba, Oyarzabal se hundía, ¡demostrando la montaña rusa emocional que es ser manager de Libre!"
+        "R. Asencio, con 13 puntos de oro, se ha erigido como un MVP para Los marinero, impulsándolos a la 2ª posición en la jornada y manteniéndolos cerca del podio general (4º).",
+        "Con actuaciones así, Los marinero demuestran que son un contendiente serio y que no van a ceder ni un milímetro en la lucha por la gloria."
       ],
-      "equipo": "Real Sociedad"
+      "equipo": "Real Madrid"
+    },
+    {
+      "tipo": "Peor actuación de la jornada",
+      "jugador": "N. Mendy",
+      "manager": "Chamacónicos",
+      "puntos": -8,
+      "dinero": null,
+      "titulo": "¡N. Mendy: El Desastre Personal de Chamacónicos!",
+      "subtitulo": "¿Un borrón en una jornada casi perfecta o una señal de alarma?",
+      "texto": [
+        "Mientras Chamacónicos celebraba su victoria de jornada, N. Mendy se hundía con unos vergonzosos -8 puntos, ¡la peor actuación de la liga!",
+        "¿Podrá Chamacónicos permitirse estos tropiezos individuales mientras persigue al líder Dani? ¡La afición exige explicaciones!"
+      ],
+      "equipo": "Rayo Vallecano"
+    },
+    {
+      "tipo": "Expulsión",
+      "jugador": "N. Mendy",
+      "manager": "Chamacónicos",
+      "puntos": -8,
+      "dinero": null,
+      "titulo": "¡Escándalo en el Campo! ¡N. Mendy Expulsado!",
+      "subtitulo": "La tarjeta roja que pudo costar la jornada a Chamacónicos.",
+      "texto": [
+        "N. Mendy, el mismo jugador que protagonizó la peor actuación, ¡también vio la tarjeta roja, dejando a Chamacónicos (1º jornada) con diez!",
+        "Esta expulsión, que condicionó el partido, es un claro aviso: ¡la indisciplina puede ser el talón de Aquiles del aspirante al título!"
+      ],
+      "equipo": "Rayo Vallecano"
     }
   ]
 }

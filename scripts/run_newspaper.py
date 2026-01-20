@@ -84,7 +84,7 @@ HTML_MERCADO_AUX = cfg["paths"]["html"]["mercado"]
 HTML_JORNADAS_AUX = cfg["paths"]["html"]["jornadas"]
 HTML_SUBIDASBAJADAS = cfg["paths"]["html"]["subidas_bajadas"]
 HTML_GAMEWEEK = cfg["paths"]["html"]["gameweek"]
-HTML_QUINIELAS = cfg["paths"]["html"]["quinielas"]
+HTML_QUINIELAS = cfg["paths"]["html"]["quiniela"]
 
 # Archivos CSV
 CSV_NOTIFICACIONES = cfg["paths"]["csv"]["notificaciones"]
@@ -94,7 +94,7 @@ CSV_MERCADO = cfg["paths"]["csv"]["mercado"]
 CSV_JORNADA = cfg["paths"]["csv"]["jornada"]
 CSV_SUBIDASBAJADAS = cfg["paths"]["csv"]["subidas_bajadas"]
 CSV_GAMEWEEK = cfg["paths"]["csv"]["gameweek"]
-CSV_QUINIELAS = cfg["paths"]["csv"]["quinielas"]
+CSV_QUINIELAS = cfg["paths"]["csv"]["quiniela"]
 
 # Archivos CSV
 JSON_NEWS = cfg["paths"]["json"]["news"]
@@ -169,10 +169,16 @@ cards = safe_save_json(json_cards,cards_final_path)
 logger.info("🏁 Proceso de extracción completado sin errores.")
 
 #--- 4.Crear Pdf
+json= safe_read_json(json_final_path)
+clasificacion_json= json["clasificacion"]
+quiniela_json= json["quinielas"]
 cards_json_path = os.path.join(JSON_NEWS, f"news_cards.json")
 cards = safe_read_json(cards_json_path)
-card = create_pdf(cards,NEWS_UTILS,IMAGES_TEAMS_DIR,DEFAULT_TEAM_IMAGE)
+portada_fichajes = create_pdf("Fichajes",cards,quiniela_json,NEWS_UTILS,IMAGES_TEAMS_DIR,DEFAULT_TEAM_IMAGE)
+portada_jornada = create_pdf("Jornada",cards,clasificacion_json,NEWS_UTILS,IMAGES_TEAMS_DIR,DEFAULT_TEAM_IMAGE)
 fecha_hoy = datetime.today().strftime("%Y-%m-%d")
-card_png_path = os.path.join(IMG_NEWS, f"{fecha_hoy}_news.png")
-card_save = safe_save_png(card,card_png_path)
+portada_fichajes_path = os.path.join(IMG_NEWS, f"{fecha_hoy}_fichajes_news.png")
+portada_jornada_path = os.path.join(IMG_NEWS, f"{fecha_hoy}_jornada_news.png")
+card_save = safe_save_png(portada_fichajes,portada_fichajes_path)
+card_save = safe_save_png(portada_jornada,portada_jornada_path)
 logger.info("🏁 Proceso de extracción completado sin errores.")

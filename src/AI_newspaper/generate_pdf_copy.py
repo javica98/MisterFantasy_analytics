@@ -86,7 +86,7 @@ def is_valid_photo(img_bytes: bytes, headers: dict) -> bool:
         return False
 
     return True
-def download_player_image(player, team, save_dir="player_images"):
+def download_player_image(tipo,player, team, save_dir="player_images"):
     """
     Busca y descarga la primera imagen válida del jugador.
     1) Intenta descargar directamente de Bing.
@@ -121,7 +121,7 @@ def download_player_image(player, team, save_dir="player_images"):
                 continue
 
             image = Image.open(BytesIO(resp.content)).convert("RGB")
-            save_path = os.path.join(save_dir, f"{player.replace(' ', '_')}.jpg")
+            save_path = os.path.join(save_dir, f"Portada_"+tipo+".jpg")
             image.save(save_path, "JPEG", quality=95)
             print(f"Imagen descargada en: {save_path}")
             return save_path
@@ -296,9 +296,9 @@ def create_card(card_info, IMAGES_TEAMS_DIR, DEFAULT_TEAM_IMAGE,tipo, PATH_UTILS
         return final_height
     else:
         return img
-def create_portada(canvas,card_info, PATH_UTILS):
-    PORTADA_PATH = "Portada.jpg"
-    download_player_image(card_info["jugador"],card_info["equipo"],PATH_UTILS)
+def create_portada(tipo,canvas,card_info, PATH_UTILS):
+    PORTADA_PATH = "Portada_"+tipo+".jpg"
+    download_player_image(tipo,card_info["jugador"],card_info["equipo"],PATH_UTILS)
     image_path_portada = os.path.join(PATH_UTILS, PORTADA_PATH)
     # --- 2. Pegar foto portada ---
     portada = Image.open(image_path_portada).convert("RGBA")
@@ -411,7 +411,7 @@ def create_pdf(tipo,cards,clasificacion_json, PATH_UTILS,IMAGES_TEAMS_DIR, DEFAU
         (255, 255, 255, 255)
     )
     # --- 2. Creo Portada y botton ---
-    create_portada(canvas,botton_cards[0],PATH_UTILS)
+    create_portada(tipo,canvas,botton_cards[0],PATH_UTILS)
     create_template(canvas,tipo,PATH_UTILS)
     portada_text = create_card(botton_cards[0], IMAGES_TEAMS_DIR, DEFAULT_TEAM_IMAGE,"Portada", PATH_UTILS)
 
@@ -419,7 +419,7 @@ def create_pdf(tipo,cards,clasificacion_json, PATH_UTILS,IMAGES_TEAMS_DIR, DEFAU
     create_botton(canvas,botton_cards, IMAGES_TEAMS_DIR, DEFAULT_TEAM_IMAGE, PATH_UTILS)    
 
     
-    canvas.alpha_composite(portada_text, (0,500))
+    canvas.alpha_composite(portada_text, (0,400))
 
     card_general = create_clasification_card_horizontal(clasificacion_json["general"],PATH_UTILS,width=600,height=75,IMAGES_TEAMS_DIR=IMAGES_TEAMS_DIR,DEFAULT_TEAM_IMAGE=DEFAULT_TEAM_IMAGE)
     canvas.alpha_composite(card_general, (490, 0))
@@ -434,6 +434,7 @@ def create_pdf(tipo,cards,clasificacion_json, PATH_UTILS,IMAGES_TEAMS_DIR, DEFAU
     canvas.alpha_composite(rightbar, (675, 155))
 
     # --- 5. Creo Columna Izquierda ---
-    create_columns(canvas,column_cards, IMAGES_TEAMS_DIR, DEFAULT_TEAM_IMAGE, PATH_UTILS)
+    if(tipo == "Jornada"):
+        create_columns(canvas,column_cards, IMAGES_TEAMS_DIR, DEFAULT_TEAM_IMAGE, PATH_UTILS)
     
     return canvas

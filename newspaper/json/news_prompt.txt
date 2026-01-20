@@ -25,54 +25,60 @@ REGLAS:
 - Cada bloque de DATOS_EVENTOS debe tener su respectivo TITULO, SUBTITULO, FRASE1, FRASE2
 
 ===DATOS_CLASIFICACION===
-Clasificación General:\n1. Dani - 838 pts\n2. Maldinillo 💥 - 760 pts\n3. Chamacónicos - 759 pts\n4. Los marinero - 757 pts\n5. Jotabetrbb - 717 pts\n6. De la Guettir FC - 711 pts\n7. MuchaSalsa - 627 pts\n8. Juanba - 511 pts\n9. Libre - 503 pts\n\nClasificación de la Jornada:\n1. Dani - 54 pts\n2. De la Guettir FC - 54 pts\n3. Maldinillo 💥 - 50 pts\n4. Libre - 49 pts\n5. Jotabetrbb - 46 pts\n6. Chamacónicos - 45 pts\n7. Los marinero - 45 pts\n8. MuchaSalsa - 40 pts\n9. Juanba - 21 pts\n
+Clasificación General:\n1. Dani - 883 pts\n2. Chamacónicos - 817 pts\n3. Maldinillo 💥 - 806 pts\n4. Los marinero - 805 pts\n5. Jotabetrbb - 755 pts\n6. De la Guettir FC - 751 pts\n7. MuchaSalsa - 634 pts\n8. Libre - 549 pts\n9. Juanba - 539 pts\n\nClasificación de la Jornada:\n1. Chamacónicos - 58 pts\n2. Los marinero - 48 pts\n3. Libre - 46 pts\n4. Maldinillo 💥 - 46 pts\n5. Dani - 45 pts\n6. De la Guettir FC - 40 pts\n7. Jotabetrbb - 38 pts\n8. Juanba - 28 pts\n9. MuchaSalsa - 7 pts\n
 
 ===DATOS_EVENTOS===
 
 ===BLOQUE_1===
-JUGADOR: Borja Iglesias
-MANAGER: Maldinillo 💥
-EVENTO: Fichaje destacado
-CONTEXTO: Compra por 16.59 millones. El manager esta en la posicion general 2.00  y en la posicion de la jornada 3.00.
-
-===BLOQUE_2===
-JUGADOR: Gerard Moreno
-MANAGER: Maldinillo 💥
-EVENTO: Fichaje destacado
-CONTEXTO: Compra por 16.19 millones. El manager esta en la posicion general 2.00  y en la posicion de la jornada 3.00.
-
-===BLOQUE_3===
-JUGADOR: Dani Olmo
+JUGADOR: Rodrygo
 MANAGER: Jotabetrbb
 EVENTO: Fichaje destacado
-CONTEXTO: Compra por 13.43 millones. El manager esta en la posicion general 5.00  y en la posicion de la jornada 5.00.
+CONTEXTO: Compra por 12.22 millones. El manager esta en la posicion general 5.00  y en la posicion de la jornada 7.00.
+
+===BLOQUE_2===
+JUGADOR: Juan Foyth
+MANAGER: Libre
+EVENTO: Fichaje destacado
+CONTEXTO: Compra por 11.06 millones. El manager esta en la posicion general 8.00  y en la posicion de la jornada 3.00.
+
+===BLOQUE_3===
+JUGADOR: Victor Muñoz
+MANAGER: Dani
+EVENTO: Fichaje destacado
+CONTEXTO: Compra por 10.18 millones. El manager esta en la posicion general 1.00  y en la posicion de la jornada 5.00.
 
 ===BLOQUE_4===
-JUGADOR: Marcus Rashford
-MANAGER: Maldinillo 💥
+JUGADOR: Joan Garcia
+MANAGER: Libre
 EVENTO: Venta récord
-CONTEXTO: Venta por 14.59 millones. El manager esta en la posicion general 2.00  y en la posicion de la jornada 3.00.
+CONTEXTO: Venta por 15.16 millones. El manager esta en la posicion general 8.00  y en la posicion de la jornada 3.00.
 
 ===BLOQUE_5===
-JUGADOR: C. Romero
-MANAGER: Maldinillo 💥
-EVENTO: MVP de la jornada
-CONTEXTO: 14 puntos en la jornada. El manager esta en la posicion general 2.00  y en la posicion de la jornada 3.00.
-
-===BLOQUE_6===
-JUGADOR: J. Aramburu
-MANAGER: Libre
-EVENTO: MVP de la jornada
-CONTEXTO: 11 puntos en la jornada. El manager esta en la posicion general 9.00  y en la posicion de la jornada 4.00.
-
-===BLOQUE_7===
-JUGADOR: G. Lo Celso
+JUGADOR: V. Muriqi
 MANAGER: Chamacónicos
 EVENTO: MVP de la jornada
-CONTEXTO: 11 puntos en la jornada. El manager esta en la posicion general 3.00  y en la posicion de la jornada 6.00.
+CONTEXTO: 19 puntos en la jornada. El manager esta en la posicion general 2.00  y en la posicion de la jornada 1.00.
+
+===BLOQUE_6===
+JUGADOR: A. Ruibal
+MANAGER: Libre
+EVENTO: MVP de la jornada
+CONTEXTO: 15 puntos en la jornada. El manager esta en la posicion general 8.00  y en la posicion de la jornada 3.00.
+
+===BLOQUE_7===
+JUGADOR: R. Asencio
+MANAGER: Los marinero
+EVENTO: MVP de la jornada
+CONTEXTO: 13 puntos en la jornada. El manager esta en la posicion general 4.00  y en la posicion de la jornada 2.00.
 
 ===BLOQUE_8===
-JUGADOR: M. Oyarzabal
-MANAGER: Libre
+JUGADOR: N. Mendy
+MANAGER: Chamacónicos
 EVENTO: Peor actuación de la jornada
-CONTEXTO: Solo 1 puntos. El manager esta en la posicion general 9.00  y en la posicion de la jornada 4.00.
+CONTEXTO: Solo -8 puntos. El manager esta en la posicion general 2.00  y en la posicion de la jornada 1.00.
+
+===BLOQUE_9===
+JUGADOR: N. Mendy
+MANAGER: Chamacónicos
+EVENTO: Expulsión
+CONTEXTO: Tarjeta roja que condicionó la jornada. El manager esta en la posicion general 2.00  y en la posicion de la jornada 1.00.
