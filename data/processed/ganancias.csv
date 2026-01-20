@@ -1,11 +1,68 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
+marks,start_mercado,,,,,,,,,,,,,,,2026-01-20,
+transfer,mercado,,Rubén García,Mister,Libre,6.48202,3,68,50,,,,,,,2026-01-20,3f6fb1fe028b9cf2682914f4adfc09f1
+transfer,mercado,,Hugo Álvarez,Mister,Libre,0.45002,3,45,5,,,,,,,2026-01-20,de8f635bc06ea34d91af6d1b1873043a
+transfer,mercado,,Ronald Araújo,Mister,Chamacónicos,4.388,2,58,3,,,,,,,2026-01-20,4441b93d5f8522c6f4d1c0069bad86e3
+transfer,Puja,,Ronald Araújo,Mister,Dani,4.36196,2,58,3,,,,,,,2026-01-20,428606b92ae9e0a024cd8fe60718c696
+transfer,Puja,,Ronald Araújo,Mister,Libre,4.34803,2,58,3,,,,,,,2026-01-20,cbce3058fe3823bd373efd1f00aec229
+transfer,mercado,,Victor Muñoz,Mister,Dani,10.17924,4,106,50,,,,,,,2026-01-20,64024f9a91654921b214619007f29ba9
+marks,start_mercado,,,,,,,,,,,,,,,2026-01-20,
+transfer,mercado,,Iván Balliu,Libre,Mister,0.36225,2,22,14,,,,,,,2026-01-20,4c431fada311659ab98d82819e710504
+marks,start_mercado,,,,,,,,,,,,,,,2026-01-20,
+transfer,mercado,,Sergi Cardona,Los marinero,Mister,2.76547,2,50,20,,,,,,,2026-01-20,4402cf4eb668a267382e7baff1a18a96
+marks,start_mercado,,,,,,,,,,,,,,,2026-01-20,
+transfer,mercado,,Mateu Morey,Dani,Mister,0.168,2.0,35.0,408.0,,,,,,,2026-01-19,008ec0061488173a6509fc2d9bcab873
+marks,start_mercado,,,,,,,,,,,,,,,2026-01-19,
+transfer,mercado,,Cédric Bakambu,Dani,Mister,0.40964,4.0,13.0,4.0,,,,,,,2026-01-19,d9e64b8783ef3533fbfd118f330fc299
+marks,start_mercado,,,,,,,,,,,,,,,2026-01-19,
+transfer,mercado,,Juan Foyth,Mister,Libre,11.06023,2.0,54.0,20.0,,,,,,,2026-01-19,9833cf6b29006e84766cf3fbbc62cbd4
+transfer,Puja,,Juan Foyth,Mister,Chamacónicos,10.493,2.0,54.0,20.0,,,,,,,2026-01-19,4af7bfaac5b135432084fb529e8e3d87
+transfer,Puja,,Juan Foyth,Mister,Dani,10.34344,2.0,54.0,20.0,,,,,,,2026-01-19,1e03dc63a7241c1e7c3ef8afdcbf3962
+transfer,mercado,,Rodrygo,Mister,Jotabetrbb,12.225,4.0,51.0,15.0,,,,,,,2026-01-19,2e1cbc4dcaa5aa9f8eb94be9b2598426
+transfer,Puja,,Rodrygo,Mister,Maldinillo 💥,10.42428,4.0,51.0,15.0,,,,,,,2026-01-19,8049d26f74e836280605cc6242cbb6af
+transfer,mercado,,Filip Ugrinic,Mister,Los marinero,0.65,3.0,36.0,19.0,,,,,,,2026-01-19,d0e8bc56e47fab694d352b3d3543b894
+transfer,Puja,,Filip Ugrinic,Mister,Libre,0.55001,3.0,36.0,19.0,,,,,,,2026-01-19,fba0703d51bf7020e3ea2407dde79552
+transfer,mercado,,Andoni Gorosabel,Mister,Dani,0.25366,2.0,20.0,1.0,,,,,,,2026-01-19,6f4452b8ddae92342db52dc793f97f44
+marks,start_mercado,,,,,,,,,,,,,,,2026-01-19,
+transfer,mercado,,Nobel Mendy,Chamacónicos,Mister,5.6175,2.0,39.0,14.0,,,,,,,2026-01-19,92304f95666e775d4774b0fdc56c68ea
+marks,start_mercado,,,,,,,,,,,,,,,2026-01-19,
+transfer,mercado,,Antonio Rüdiger,Chamacónicos,Mister,6.003,2.0,24.0,15.0,,,,,,,2026-01-19,f3d913a872d4d188e4857027ed32fad7
+marks,start_mercado,,,,,,,,,,,,,,,2026-01-19,
+transfer,mercado,,Ayoze Pérez,Jotabetrbb,Mister,11.06859,4.0,40.0,20.0,,,,,,,2026-01-19,93c4e07dc092cd0669add0e55dbd7dff
+marks,start_mercado,,,,,,,,,,,,,,,2026-01-19,
+transfer,mercado,,Flavien Boyomo,Mister,Chamacónicos,5.09,2.0,73.0,50.0,,,,,,,2026-01-18,6e759bf39fdeb15816ae50233be917dc
+transfer,Puja,,Flavien Boyomo,Mister,Dani,4.70159,2.0,73.0,50.0,,,,,,,2026-01-18,6d573dc5d073782f7effbdab41d4b320
+transfer,Puja,,Flavien Boyomo,Mister,Maldinillo 💥,4.62531,2.0,73.0,50.0,,,,,,,2026-01-18,348c1280262d19b3adfdd22c38d30865
+transfer,mercado,,Arnau Martínez,Mister,Dani,4.24136,2.0,66.0,222.0,,,,,,,2026-01-18,f7fe317f66d68dcfb3a31cf44f27e7d9
+marks,start_mercado,,,,,,,,,,,,,,,2026-01-18,
+transfer,mercado,,Adrián San Miguel,Libre,Mister,0.1764,1.0,0.0,4.0,,,,,,,2026-01-18,66788b6792604a8ce3289538cd41a26a
+marks,start_mercado,,,,,,,,,,,,,,,2026-01-18,
+transfer,mercado,,Jorge Herrando,Mister,Libre,1.06002,2.0,34.0,50.0,,,,,,,2026-01-17,6d0c8c3c99ce250125d2ceb2724a30a6
+transfer,mercado,,Kiko Femenía,Mister,Libre,0.53502,2.0,43.0,9.0,,,,,,,2026-01-17,64100f0c487eb63fb46d8bd17ff71c0c
+marks,start_mercado,,,,,,,,,,,,,,,2026-01-17,
+transfer,clausula,,Umar Sadiq,Dani,Jotabetrbb,1.4169,4.0,11.0,19.0,,,,,,,2026-01-17,2534b4eabecbdb93ef2af5ea5134676b
+marks,start_jornada,,,,,,,,,,,,,,20.0,2026-01-17,
+marks,start_mercado,,,,,,,,,,,,,,,2026-01-17,
+transfer,mercado,,Mathew Ryan,Libre,Mister,9.1238,1.0,81.0,12.0,,,,,,,2026-01-17,e059cdc7a3b145678a1fb8b1ebea20e5
+marks,start_mercado,,,,,,,,,,,,,,,2026-01-17,
+transfer,mercado,,Joan Garcia,Libre,Mister,15.15936,1.0,92.0,3.0,,,,,,,2026-01-17,81c90a0b8eb433d055f30b0e4984ffe6
+marks,start_mercado,,,,,,,,,,,,,,,2026-01-17,
+transfer,mercado,,Giacomo Raspadori,Libre,Mister,0.16968,4.0,23.0,0.0,,,,,,,2026-01-17,492ba0f60485dde343f41aeee93f0814
+marks,start_mercado,,,,,,,,,,,,,,,2026-01-17,
+transfer,mercado,,Kike Barja,Libre,Mister,0.16583,3.0,23.0,50.0,,,,,,,2026-01-17,384b5041a64429aa454d49d9db1e2b6a
+marks,start_mercado,,,,,,,,,,,,,,,2026-01-17,
+transfer,mercado,,Daley Blind,Dani,Mister,4.07939,2.0,63.0,222.0,,,,,,,2026-01-17,bf5850ceb5f003d86a3e322bbee9fd64
+marks,start_mercado,,,,,,,,,,,,,,,2026-01-17,
+transfer,mercado,,José Giménez,Dani,Mister,4.22918,2.0,32.0,2.0,,,,,,,2026-01-17,548b98cc8e580bca3ba614209589fa6b
+marks,start_mercado,,,,,,,,,,,,,,,2026-01-17,
+transfer,mercado,,Alejandro Balde,Dani,Mister,12.05536,2.0,64.0,3.0,,,,,,,2026-01-17,a46c0e94aadb1957c665871f42ee5dc0
+marks,start_mercado,,,,,,,,,,,,,,,2026-01-17,
+transfer,mercado,,Georges Mikautadze,Mister,Dani,14.127603,4.0,70.0,20.0,,,,,,,2026-01-16,47f3cb3138b0d22639c9311a186e05d0
+transfer,Puja,,Georges Mikautadze,Mister,Chamacónicos,11.151,4.0,70.0,20.0,,,,,,,2026-01-16,7cd9a9a0ab604eb3137d6cee1b818799
+transfer,mercado,,João Cancelo,Mister,Dani,3.11993,2.0,0.0,3.0,,,,,,,2026-01-16,b6c8c2b917d638724ea88c49e94dcd1c
+transfer,mercado,,Mateu Morey,Mister,Dani,0.22321,2.0,32.0,408.0,,,,,,,2026-01-16,b32963c1e2b2abc71cfd4278937989da
 marks,start_mercado,,,,,,,,,,,,,,,2026-01-16,
-transfer,mercado,,Georges Mikautadze,Mister,Dani,14.127603,4,70,20,,,,,,,2026-01-16,47f3cb3138b0d22639c9311a186e05d0
-transfer,Puja,,Georges Mikautadze,Mister,Chamacónicos,11.151,4,70,20,,,,,,,2026-01-16,7cd9a9a0ab604eb3137d6cee1b818799
-transfer,mercado,,João Cancelo,Mister,Dani,3.11993,2,0,3,,,,,,,2026-01-16,b6c8c2b917d638724ea88c49e94dcd1c
-transfer,mercado,,Mateu Morey,Mister,Dani,0.22321,2,32,408,,,,,,,2026-01-16,b32963c1e2b2abc71cfd4278937989da
-marks,start_mercado,,,,,,,,,,,,,,,2026-01-16,
-transfer,clausula,,Thomas Lemar,De la Guettir FC,Los marinero,1.0,3,25,222,,,,,,,2026-01-16,572fadd8527fed9923f5b44dae1950df
+transfer,clausula,,Thomas Lemar,De la Guettir FC,Los marinero,1.0,3.0,25.0,222.0,,,,,,,2026-01-16,572fadd8527fed9923f5b44dae1950df
 marks,start_mercado,,,,,,,,,,,,,,,2026-01-16,
 transfer,mercado,,Rubén Vargas,Jotabetrbb,Mister,7.70165,3.0,67.0,17.0,,,,,,,2026-01-15,b4053593f40458d0d3be8ca2d88cc1f8
 marks,start_mercado,,,,,,,,,,,,,,,2026-01-15,
