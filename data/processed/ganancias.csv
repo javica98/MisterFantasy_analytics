@@ -1,15 +1,42 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
+marks,start_mercado,,,,,,,,,,,,,,,2026-01-21,
+transfer,mercado,,Carlos Martín,Mister,De la Guettir FC,1.373,3,7,14,,,,,,,2026-01-21,bc4d8e847bfcbb25d01a179110797b03
+transfer,mercado,,Óscar Mingueza,Mister,Los marinero,10.559,2,78,5,,,,,,,2026-01-21,10661eb7fe4a89191f9f7052b8a5702d
+transfer,mercado,,Grady Diangana,Mister,Dani,0.32115,3,30,23,,,,,,,2026-01-21,f55d6009b4512d9e17bbe27c2346607f
+transfer,Puja,,Grady Diangana,Mister,Libre,0.314,3,30,23,,,,,,,2026-01-21,175e8ad145c3753087df1b0e36b8921a
+marks,start_mercado,,,,,,,,,,,,,,,2026-01-21,
+transfer,mercado,,Kiko Femenía,Libre,Mister,0.5661,2,43,9,,,,,,,2026-01-21,55fede2bebf47e53a406b17ed01137fb
+marks,start_mercado,,,,,,,,,,,,,,,2026-01-21,
+transfer,mercado,,Alan Matturro,Libre,Mister,0.1617,2,13,12,,,,,,,2026-01-21,5226f321a8134a6c82102c26f5077c52
+bonificacion,quiniela,,,,,,,,,Libre,0.5,1º,,,,2026-01-21,
+bonificacion,quiniela,,,,,,,,,Chamacónicos,0.4,2º,,,,2026-01-21,
+bonificacion,quiniela,,,,,,,,,Dani,0.4,3º,,,,2026-01-21,
+bonificacion,quiniela,,,,,,,,,Maldinillo 💥,0.4,4º,,,,2026-01-21,
+bonificacion,quiniela,,,,,,,,,De la Guettir FC,0.3,5º,,,,2026-01-21,
+bonificacion,quiniela,,,,,,,,,Los marinero,0.3,6º,,,,2026-01-21,
+bonificacion,quiniela,,,,,,,,,Jotabetrbb,,7º,,,,2026-01-21,
+bonificacion,quiniela,,,,,,,,,Juanba,,8º,,,,2026-01-21,
+bonificacion,quiniela,,,,,,,,,MuchaSalsa,,9º,,,,2026-01-21,
+bonificacion,clasificacion,,,,,,,,,Chamacónicos,2.16,1,,,,2026-01-21,
+bonificacion,clasificacion,,,,,,,,,Los marinero,1.71,2,,,,2026-01-21,
+bonificacion,clasificacion,,,,,,,,,Maldinillo 💥,1.77,3,,,,2026-01-21,
+bonificacion,clasificacion,,,,,,,,,Libre,2.07,4,,,,2026-01-21,
+bonificacion,clasificacion,,,,,,,,,Dani,1.9,5,,,,2026-01-21,
+bonificacion,clasificacion,,,,,,,,,De la Guettir FC,2.25,6,,,,2026-01-21,
+bonificacion,clasificacion,,,,,,,,,Jotabetrbb,2.16,7,,,,2026-01-21,
+bonificacion,clasificacion,,,,,,,,,Juanba,2.26,8,,,,2026-01-21,
+bonificacion,clasificacion,,,,,,,,,MuchaSalsa,1.94,9,,,,2026-01-21,
+marks,start_mercado,,,,,,,,,,,,,,,2026-01-21,
+transfer,mercado,,Rubén García,Mister,Libre,6.48202,3.0,68.0,50.0,,,,,,,2026-01-20,3f6fb1fe028b9cf2682914f4adfc09f1
+transfer,mercado,,Hugo Álvarez,Mister,Libre,0.45002,3.0,45.0,5.0,,,,,,,2026-01-20,de8f635bc06ea34d91af6d1b1873043a
+transfer,mercado,,Ronald Araújo,Mister,Chamacónicos,4.388,2.0,58.0,3.0,,,,,,,2026-01-20,4441b93d5f8522c6f4d1c0069bad86e3
+transfer,Puja,,Ronald Araújo,Mister,Dani,4.36196,2.0,58.0,3.0,,,,,,,2026-01-20,428606b92ae9e0a024cd8fe60718c696
+transfer,Puja,,Ronald Araújo,Mister,Libre,4.34803,2.0,58.0,3.0,,,,,,,2026-01-20,cbce3058fe3823bd373efd1f00aec229
+transfer,mercado,,Victor Muñoz,Mister,Dani,10.17924,4.0,106.0,50.0,,,,,,,2026-01-20,64024f9a91654921b214619007f29ba9
 marks,start_mercado,,,,,,,,,,,,,,,2026-01-20,
-transfer,mercado,,Rubén García,Mister,Libre,6.48202,3,68,50,,,,,,,2026-01-20,3f6fb1fe028b9cf2682914f4adfc09f1
-transfer,mercado,,Hugo Álvarez,Mister,Libre,0.45002,3,45,5,,,,,,,2026-01-20,de8f635bc06ea34d91af6d1b1873043a
-transfer,mercado,,Ronald Araújo,Mister,Chamacónicos,4.388,2,58,3,,,,,,,2026-01-20,4441b93d5f8522c6f4d1c0069bad86e3
-transfer,Puja,,Ronald Araújo,Mister,Dani,4.36196,2,58,3,,,,,,,2026-01-20,428606b92ae9e0a024cd8fe60718c696
-transfer,Puja,,Ronald Araújo,Mister,Libre,4.34803,2,58,3,,,,,,,2026-01-20,cbce3058fe3823bd373efd1f00aec229
-transfer,mercado,,Victor Muñoz,Mister,Dani,10.17924,4,106,50,,,,,,,2026-01-20,64024f9a91654921b214619007f29ba9
+transfer,mercado,,Iván Balliu,Libre,Mister,0.36225,2.0,22.0,14.0,,,,,,,2026-01-20,4c431fada311659ab98d82819e710504
 marks,start_mercado,,,,,,,,,,,,,,,2026-01-20,
-transfer,mercado,,Iván Balliu,Libre,Mister,0.36225,2,22,14,,,,,,,2026-01-20,4c431fada311659ab98d82819e710504
-marks,start_mercado,,,,,,,,,,,,,,,2026-01-20,
-transfer,mercado,,Sergi Cardona,Los marinero,Mister,2.76547,2,50,20,,,,,,,2026-01-20,4402cf4eb668a267382e7baff1a18a96
+transfer,mercado,,Sergi Cardona,Los marinero,Mister,2.76547,2.0,50.0,20.0,,,,,,,2026-01-20,4402cf4eb668a267382e7baff1a18a96
 marks,start_mercado,,,,,,,,,,,,,,,2026-01-20,
 transfer,mercado,,Mateu Morey,Dani,Mister,0.168,2.0,35.0,408.0,,,,,,,2026-01-19,008ec0061488173a6509fc2d9bcab873
 marks,start_mercado,,,,,,,,,,,,,,,2026-01-19,
