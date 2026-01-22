@@ -1,13 +1,24 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
+marks,start_mercado,,,,,,,,,,,,,,,2026-01-22,
+transfer,mercado,,Arnau Martínez,Dani,Mister,4.62985,2,66,222,,,,,,,2026-01-22,ed3e63761aa00d3a0dd527323e80d84b
+marks,start_mercado,,,,,,,,,,,,,,,2026-01-22,
+transfer,mercado,,Yuri Berchiche,Mister,Libre,2.80301,2,54,1,,,,,,,2026-01-22,7b949929b34af1569964203d7bab0573
+transfer,mercado,,Iker Losada,Mister,Libre,0.90701,4,26,12,,,,,,,2026-01-22,60dd15fb9a3dcb3bd93ffb4b270b55fc
+transfer,mercado,,Etta Eyong,Mister,Chamacónicos,13.949,4,85,12,,,,,,,2026-01-22,fe2e53b58185da2b5b18a7302cd01a83
+transfer,Puja,,Etta Eyong,Mister,Los marinero,12.489,4,85,12,,,,,,,2026-01-22,19de39ce858b501a11ebe24fd42d412e
+marks,start_mercado,,,,,,,,,,,,,,,2026-01-22,
+transfer,mercado,,Juan Foyth,Libre,Mister,10.2816,2,54,20,,,,,,,2026-01-22,5fdad7a49e1bd8095321426fcf7b8ebf
+marks,start_mercado,,,,,,,,,,,,,,,2026-01-22,
+transfer,mercado,,Carlos Soler,Los marinero,Mister,8.70792,3,59,16,,,,,,,2026-01-22,7a53476e0f747c26fbcc08d9514634dd
+marks,start_mercado,,,,,,,,,,,,,,,2026-01-22,
+transfer,mercado,,Carlos Martín,Mister,De la Guettir FC,1.373,3.0,7.0,14.0,,,,,,,2026-01-21,bc4d8e847bfcbb25d01a179110797b03
+transfer,mercado,,Óscar Mingueza,Mister,Los marinero,10.559,2.0,78.0,5.0,,,,,,,2026-01-21,10661eb7fe4a89191f9f7052b8a5702d
+transfer,mercado,,Grady Diangana,Mister,Dani,0.32115,3.0,30.0,23.0,,,,,,,2026-01-21,f55d6009b4512d9e17bbe27c2346607f
+transfer,Puja,,Grady Diangana,Mister,Libre,0.314,3.0,30.0,23.0,,,,,,,2026-01-21,175e8ad145c3753087df1b0e36b8921a
 marks,start_mercado,,,,,,,,,,,,,,,2026-01-21,
-transfer,mercado,,Carlos Martín,Mister,De la Guettir FC,1.373,3,7,14,,,,,,,2026-01-21,bc4d8e847bfcbb25d01a179110797b03
-transfer,mercado,,Óscar Mingueza,Mister,Los marinero,10.559,2,78,5,,,,,,,2026-01-21,10661eb7fe4a89191f9f7052b8a5702d
-transfer,mercado,,Grady Diangana,Mister,Dani,0.32115,3,30,23,,,,,,,2026-01-21,f55d6009b4512d9e17bbe27c2346607f
-transfer,Puja,,Grady Diangana,Mister,Libre,0.314,3,30,23,,,,,,,2026-01-21,175e8ad145c3753087df1b0e36b8921a
+transfer,mercado,,Kiko Femenía,Libre,Mister,0.5661,2.0,43.0,9.0,,,,,,,2026-01-21,55fede2bebf47e53a406b17ed01137fb
 marks,start_mercado,,,,,,,,,,,,,,,2026-01-21,
-transfer,mercado,,Kiko Femenía,Libre,Mister,0.5661,2,43,9,,,,,,,2026-01-21,55fede2bebf47e53a406b17ed01137fb
-marks,start_mercado,,,,,,,,,,,,,,,2026-01-21,
-transfer,mercado,,Alan Matturro,Libre,Mister,0.1617,2,13,12,,,,,,,2026-01-21,5226f321a8134a6c82102c26f5077c52
+transfer,mercado,,Alan Matturro,Libre,Mister,0.1617,2.0,13.0,12.0,,,,,,,2026-01-21,5226f321a8134a6c82102c26f5077c52
 bonificacion,quiniela,,,,,,,,,Libre,0.5,1º,,,,2026-01-21,
 bonificacion,quiniela,,,,,,,,,Chamacónicos,0.4,2º,,,,2026-01-21,
 bonificacion,quiniela,,,,,,,,,Dani,0.4,3º,,,,2026-01-21,
