@@ -5,9 +5,9 @@
       "titulo": "CLASIFICACION",
       "subtitulo": "",
       "texto": [
-        " ¡Dani, el titán inalcanzable, sigue aferrado a la cima con 883 puntos, pero el aliento de sus perseguidores ya se siente en la nuca!",
-        " ¡Chamacónicos ha desatado un vendaval en la jornada, conquistando el primer puesto con 58 puntos y escalando a la segunda plaza general, sembrando el pánico entre la élite!",
-        " ¡Maldinillo 💥 y Los marinero se enzarzan en una batalla épica por el podio, separados por un miserable punto! ¡La tensión es palpable, la lucha es encarnizada!",
+        " ¡Dani, el tirano de la liga, continúa su reinado de terror con 943 puntos, dejando a sus rivales comiendo el polvo y demostrando que su hegemonía es inquebrantable!",
+        " En la mitad de la tabla, Los marinero se aferran desesperadamente a su cuarta posición con 838 puntos, ¿lograrán mantener el rumbo o se verán arrastrados por la marea de la mediocridad?",
+        " ¡Juanba se hunde sin remedio en el abismo de la clasificación con unos miserables 560 puntos, su equipo es un barco a la deriva y la catástrofe parece inminente!",
         ""
       ]
     },
@@ -16,134 +16,64 @@
       "titulo": "RUMORES",
       "subtitulo": "",
       "texto": [
-        " ¡Se susurra en los corrillos que Libre, tras su magistral jugada de ventas y fichajes, podría estar preparando un asalto sorpresa a la parte alta de la tabla, con un arsenal de millones y una estrategia oculta!\n\n"
+        " ¡El sorprendente ascenso de Libre en la jornada, pasando del octavo al tercer puesto, ha desatado rumores de una posible inyección económica o un pacto secreto, ¿será verdad que su gestión está a punto de dar un golpe en la mesa y sacudir los cimientos de la liga?!\n\n"
       ]
     },
     {
-      "tipo": "Fichaje destacado",
-      "jugador": "Rodrygo",
-      "manager": "Jotabetrbb",
-      "puntos": null,
-      "dinero": 12.225,
-      "titulo": "¡Jotabetrbb Desembolsa una Fortuna por Rodrygo!",
-      "subtitulo": "¿Apuesta de riesgo o jugada maestra del 5º clasificado?",
+      "tipo": "MVP de la jornada",
+      "jugador": "M. Oyarzabal",
+      "manager": "Libre",
+      "puntos": 17,
+      "dinero": null,
+      "titulo": "¡El Fénix Resurge de sus Cenizas!",
+      "subtitulo": "Oyarzabal, el Héroe Inesperado para un Manager en la Cuerda Floja.",
       "texto": [
-        "Jotabetrbb, estancado en la 5ª posición general y con una jornada discreta (7º), ha sacudido el mercado con la adquisición de Rodrygo por 12.22 millones.",
-        "¿Será este el revulsivo que necesita para escalar posiciones o una inversión precipitada que lo hunda más? ¡Las gradas están divididas!"
+        "¡Mikel Oyarzabal se ha coronado como el MVP indiscutible de la jornada con 17 puntos, una actuación estelar que ha dejado a la liga con la boca abierta y las mandíbulas desencajadas!",
+        "Este golpe de autoridad ha catapultado a \"Libre\", el octavo clasificado general, a la tercera posición de la jornada, ¿será este el inicio de una remontada épica o solo un espejismo en el desierto que se desvanecerá con el sol?"
+      ],
+      "equipo": "Real Sociedad"
+    },
+    {
+      "tipo": "MVP de la jornada",
+      "jugador": "K. Mbappé",
+      "manager": "Chamacónicos",
+      "puntos": 14,
+      "dinero": null,
+      "titulo": "¡La Máquina Francesa no Falla!",
+      "subtitulo": "Mbappé Demuestra su Clase, pero ¿Es Suficiente para \"Chamacónicos\"?",
+      "texto": [
+        "Kylian Mbappé, la joya indiscutible de \"Chamacónicos\", ha vuelto a brillar con 14 puntos, confirmando su estatus de superestrella y haciendo temblar a la defensa rival con cada arrancada.",
+        "A pesar de la exhibición de su crack, \"Chamacónicos\" se mantiene en la tercera posición general y solo pudo rascar un quinto puesto en la jornada, ¿empieza la presión para el técnico que no logra explotar a su galáctico y llevarlo a la gloria?"
       ],
       "equipo": "Real Madrid"
     },
     {
-      "tipo": "Fichaje destacado",
-      "jugador": "Juan Foyth",
-      "manager": "Libre",
-      "puntos": null,
-      "dinero": 11.06023,
-      "titulo": "¡Libre Refuerza su Defensa con Juan Foyth!",
-      "subtitulo": "¿El 8º clasificado busca estabilidad tras su resurgir en la jornada?",
-      "texto": [
-        "Tras una jornada estelar (3º), Libre, desde su 8ª posición general, se hace con Juan Foyth por 11.06 millones.",
-        "¿Será este movimiento defensivo la clave para consolidar su buen momento y escapar del furgón de cola? ¡El tiempo lo dirá!"
-      ],
-      "equipo": "Villarreal CF"
-    },
-    {
-      "tipo": "Fichaje destacado",
-      "jugador": "Victor Muñoz",
+      "tipo": "MVP de la jornada",
+      "jugador": "L. Yamal",
       "manager": "Dani",
-      "puntos": null,
-      "dinero": 10.17924,
-      "titulo": "¡Dani, el Líder, No se Duerme y Ficha a Victor Muñoz!",
-      "subtitulo": "¿Consolidación o señal de nerviosismo en la cima?",
+      "puntos": 13,
+      "dinero": null,
+      "titulo": "¡La Leyenda Continúa su Reinado!",
+      "subtitulo": "Lamine Yamal Sella el Dominio Absoluto de Dani en la Cima.",
       "texto": [
-        "El intocable Dani, líder absoluto con 883 puntos, ha invertido 10.18 millones en Victor Muñoz, ¡un movimiento que nadie esperaba!",
-        "¿Es un golpe de autoridad o un intento desesperado por mantener la distancia con unos Chamacónicos que le pisan los talones? ¡La intriga está servida!"
-      ],
-      "equipo": "CA Osasuna"
-    },
-    {
-      "tipo": "Venta récord",
-      "jugador": "Joan Garcia",
-      "manager": "Libre",
-      "puntos": null,
-      "dinero": 15.15936,
-      "titulo": "¡Libre Realiza la Venta del Siglo con Joan Garcia!",
-      "subtitulo": "¿Movimiento estratégico o desesperación por dinero en efectivo?",
-      "texto": [
-        "Libre, el manager que oscila entre la 8ª posición general y la 3ª de la jornada, ha sorprendido a todos vendiendo a Joan Garcia por la friolera de 15.16 millones.",
-        "¿Ha visto una oportunidad de oro o está preparando un bombazo en el mercado con esa liquidez inesperada? ¡Los analistas se frotan las manos!"
+        "Lamine Yamal, la joven promesa de \"Dani\", ha entregado 13 puntos cruciales, consolidando aún más el imparable liderazgo de su manager en la liga y dejando claro quién manda aquí.",
+        "Con este rendimiento estelar, \"Dani\" no solo se afianza en el primer puesto general, sino que también arrasa en la jornada, dejando claro que su hegemonía es inquebrantable y los demás solo luchan por las migajas."
       ],
       "equipo": "FC Barcelona"
     },
     {
-      "tipo": "MVP de la jornada",
-      "jugador": "V. Muriqi",
-      "manager": "Chamacónicos",
-      "puntos": 19,
-      "dinero": null,
-      "titulo": "¡V. Muriqi Desata la Locura y Es el MVP Absoluto!",
-      "subtitulo": "¡Chamacónicos se dispara gracias a su delantero estrella!",
-      "texto": [
-        "¡Con 19 puntos estratosféricos, V. Muriqi se corona como el MVP de la jornada, llevando a Chamacónicos (2º general, 1º jornada) a la gloria!",
-        "Este rendimiento sublime demuestra que Chamacónicos tiene dinamita pura en sus filas, ¡y Dani debería empezar a temblar!"
-      ],
-      "equipo": "RCD Mallorca"
-    },
-    {
-      "tipo": "MVP de la jornada",
-      "jugador": "A. Ruibal",
-      "manager": "Libre",
-      "puntos": 15,
-      "dinero": null,
-      "titulo": "¡A. Ruibal Sorprende y Se Cuelga el MVP!",
-      "subtitulo": "¡Libre, el resurgido, celebra otro acierto en su plantilla!",
-      "texto": [
-        "A. Ruibal, con 15 puntos cruciales, ha sido un pilar fundamental para Libre, que ha logrado una impresionante 3ª posición en la jornada desde su 8º puesto general.",
-        "¿Es este jugador la pieza secreta que Libre necesitaba para escalar posiciones de forma definitiva? ¡La esperanza renace en sus filas!"
-      ],
-      "equipo": "Real Betis Balompié"
-    },
-    {
-      "tipo": "MVP de la jornada",
-      "jugador": "R. Asencio",
-      "manager": "Los marinero",
-      "puntos": 13,
-      "dinero": null,
-      "titulo": "¡R. Asencio Brilla y Da Alas a Los Marinero!",
-      "subtitulo": "¡El 4º clasificado encuentra un héroe inesperado!",
-      "texto": [
-        "R. Asencio, con 13 puntos de oro, se ha erigido como un MVP para Los marinero, impulsándolos a la 2ª posición en la jornada y manteniéndolos cerca del podio general (4º).",
-        "Con actuaciones así, Los marinero demuestran que son un contendiente serio y que no van a ceder ni un milímetro en la lucha por la gloria."
-      ],
-      "equipo": "Real Madrid"
-    },
-    {
       "tipo": "Peor actuación de la jornada",
-      "jugador": "N. Mendy",
+      "jugador": "E. Eyong",
       "manager": "Chamacónicos",
-      "puntos": -8,
+      "puntos": -1,
       "dinero": null,
-      "titulo": "¡N. Mendy: El Desastre Personal de Chamacónicos!",
-      "subtitulo": "¿Un borrón en una jornada casi perfecta o una señal de alarma?",
+      "titulo": "¡El Desastre de la Jornada!",
+      "subtitulo": "Eyong HUNDE a \"Chamacónicos\" y Provoca el Pánico en sus Filas.",
       "texto": [
-        "Mientras Chamacónicos celebraba su victoria de jornada, N. Mendy se hundía con unos vergonzosos -8 puntos, ¡la peor actuación de la liga!",
-        "¿Podrá Chamacónicos permitirse estos tropiezos individuales mientras persigue al líder Dani? ¡La afición exige explicaciones!"
+        "¡Catástrofe total! E. Eyong ha protagonizado la peor actuación de la jornada con unos vergonzosos -1 puntos, un lastre que ni el mejor equipo podría soportar sin irse a pique.",
+        "Mientras \"Chamacónicos\" intenta digerir este desastre, los rumores de una posible venta o incluso un castigo ejemplar para Eyong no paran de circular por los pasillos, ¿se atreverá el manager a tomar medidas drásticas o se dejará arrastrar por la inercia del fracaso?"
       ],
-      "equipo": "Rayo Vallecano"
-    },
-    {
-      "tipo": "Expulsión",
-      "jugador": "N. Mendy",
-      "manager": "Chamacónicos",
-      "puntos": -8,
-      "dinero": null,
-      "titulo": "¡Escándalo en el Campo! ¡N. Mendy Expulsado!",
-      "subtitulo": "La tarjeta roja que pudo costar la jornada a Chamacónicos.",
-      "texto": [
-        "N. Mendy, el mismo jugador que protagonizó la peor actuación, ¡también vio la tarjeta roja, dejando a Chamacónicos (1º jornada) con diez!",
-        "Esta expulsión, que condicionó el partido, es un claro aviso: ¡la indisciplina puede ser el talón de Aquiles del aspirante al título!"
-      ],
-      "equipo": "Rayo Vallecano"
+      "equipo": "Levante UD"
     }
   ]
 }
