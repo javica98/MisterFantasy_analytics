@@ -1,28 +1,48 @@
 ===CLASIFICACION===
-FRASE1: ¡Dani, el tirano de la liga, continúa su reinado de terror con 943 puntos, dejando a sus rivales comiendo el polvo y demostrando que su hegemonía es inquebrantable!
-FRASE2: En la mitad de la tabla, Los marinero se aferran desesperadamente a su cuarta posición con 838 puntos, ¿lograrán mantener el rumbo o se verán arrastrados por la marea de la mediocridad?
-FRASE3: ¡Juanba se hunde sin remedio en el abismo de la clasificación con unos miserables 560 puntos, su equipo es un barco a la deriva y la catástrofe parece inminente!
+FRASE1: ¡DANI IMPARABLE! Con 943 puntos en la general y una victoria aplastante en la jornada con 60, el líder no solo domina, ¡sino que aplasta a la competencia sin piedad!
+FRASE2: ¡LA BATALLA POR LA PLATA ARDE! Maldinillo 💥 y Chamacónicos se aferran al podio con 863 y 858 puntos respectivamente, pero la sombra de Los marinero acecha peligrosamente a solo 20 puntos de la tercera plaza.
+FRASE3: ¡EL ABISMO DE JUANBA! Con unos miserables 560 puntos en la general y la peor puntuación de la jornada con 21, Juanba se hunde en el último puesto, ¿es hora de pedir la dimisión o de preparar un milagro?
 
 ===RUMORES===
-FRASE: ¡El sorprendente ascenso de Libre en la jornada, pasando del octavo al tercer puesto, ha desatado rumores de una posible inyección económica o un pacto secreto, ¿será verdad que su gestión está a punto de dar un golpe en la mesa y sacudir los cimientos de la liga?!
+FRASE: ¡ATENCIÓN, RUMORES DE REVOLUCIÓN EN LIBRE! Tras una jornada sorprendente donde escaló a la tercera posición y una serie de movimientos frenéticos en el mercado, se especula que el manager está preparando un asalto total al título, ¿será este el inicio de una nueva era o una quema de dinero sin sentido?
 
 ===EVENTOS===
-TITULO: ¡El Fénix Resurge de sus Cenizas!
-SUBTITULO: Oyarzabal, el Héroe Inesperado para un Manager en la Cuerda Floja.
-FRASE1: ¡Mikel Oyarzabal se ha coronado como el MVP indiscutible de la jornada con 17 puntos, una actuación estelar que ha dejado a la liga con la boca abierta y las mandíbulas desencajadas!
-FRASE2: Este golpe de autoridad ha catapultado a "Libre", el octavo clasificado general, a la tercera posición de la jornada, ¿será este el inicio de una remontada épica o solo un espejismo en el desierto que se desvanecerá con el sol?
+TITULO: ¡BOMBAZO EN EL MERCADO!
+SUBTITULO: Libre se lanza a por Álvaro Carreras con una oferta estratosférica.
+FRASE1: En un movimiento que ha dejado a la liga boquiabierta, el enigmático manager Libre ha desembolsado 12.82 millones por Álvaro Carreras.
+FRASE2: ¿Es esta la señal de que Libre, actualmente octavo en la general pero tercero en la jornada, está dispuesto a quemar el mercado para asaltar la cima?
 
-TITULO: ¡La Máquina Francesa no Falla!
-SUBTITULO: Mbappé Demuestra su Clase, pero ¿Es Suficiente para "Chamacónicos"?
-FRASE1: Kylian Mbappé, la joya indiscutible de "Chamacónicos", ha vuelto a brillar con 14 puntos, confirmando su estatus de superestrella y haciendo temblar a la defensa rival con cada arrancada.
-FRASE2: A pesar de la exhibición de su crack, "Chamacónicos" se mantiene en la tercera posición general y solo pudo rascar un quinto puesto en la jornada, ¿empieza la presión para el técnico que no logra explotar a su galáctico y llevarlo a la gloria?
+TITULO: ¡DOBLE GOLPE DE AUTOR!
+SUBTITULO: Libre no se detiene y ficha a Georges Mikautadze por una fortuna.
+FRASE1: ¡La chequera de Libre está que arde! Tras la adquisición de Carreras, el manager vuelve a sacudir el mercado con la incorporación de Mikautadze por 11.62 millones.
+FRASE2: ¿Estamos ante la estrategia de un genio o la desesperación de un octavo clasificado que quiere comprar su puesto en el podio? ¡Solo el tiempo lo dirá!
 
-TITULO: ¡La Leyenda Continúa su Reinado!
-SUBTITULO: Lamine Yamal Sella el Dominio Absoluto de Dani en la Cima.
-FRASE1: Lamine Yamal, la joven promesa de "Dani", ha entregado 13 puntos cruciales, consolidando aún más el imparable liderazgo de su manager en la liga y dejando claro quién manda aquí.
-FRASE2: Con este rendimiento estelar, "Dani" no solo se afianza en el primer puesto general, sino que también arrasa en la jornada, dejando claro que su hegemonía es inquebrantable y los demás solo luchan por las migajas.
+TITULO: ¡JOTABETRBB HACE RUIDO!
+SUBTITULO: Asencio, el nuevo capricho de un manager con ambiciones.
+FRASE1: Jotabetrbb, que se mantiene firme en la quinta posición general, ha puesto sobre la mesa 10.70 millones para hacerse con los servicios de Raúl Asencio.
+FRASE2: ¿Será este el fichaje que impulse a Jotabetrbb a la lucha por los puestos europeos o simplemente un dispendio más en un mercado inflacionario?
 
-TITULO: ¡El Desastre de la Jornada!
-SUBTITULO: Eyong HUNDE a "Chamacónicos" y Provoca el Pánico en sus Filas.
-FRASE1: ¡Catástrofe total! E. Eyong ha protagonizado la peor actuación de la jornada con unos vergonzosos -1 puntos, un lastre que ni el mejor equipo podría soportar sin irse a pique.
-FRASE2: Mientras "Chamacónicos" intenta digerir este desastre, los rumores de una posible venta o incluso un castigo ejemplar para Eyong no paran de circular por los pasillos, ¿se atreverá el manager a tomar medidas drásticas o se dejará arrastrar por la inercia del fracaso?
+TITULO: ¡VENTA MILLONARIA DE LIBRE!
+SUBTITULO: Tchouaméni se marcha por una cifra récord, ¿estrategia o necesidad?
+FRASE1: El misterioso Libre ha protagonizado la venta del siglo, deshaciéndose de Aurélien Tchouaméni por la friolera de 15.78 millones de euros.
+FRASE2: ¿Es esta una jugada maestra para sanear las cuentas y financiar futuros fichajes, o la venta de una de sus joyas para sobrevivir en la élite? ¡El secretismo rodea al manager!
+
+TITULO: ¡OYARZABAL, EL FARO DE LIBRE!
+SUBTITULO: MVP de la jornada con una actuación estelar.
+FRASE1: Mientras Libre gasta y vende sin piedad, M. Oyarzabal emerge como su estrella, con una actuación de 17 puntos que lo consagra como MVP de la jornada.
+FRASE2: ¿Será Oyarzabal el pilar sobre el que Libre construirá su ascenso, o simplemente un espejismo en medio de una gestión caótica?
+
+TITULO: ¡MBAPPÉ AL RESCATE DE CHAMACÓNICOS!
+SUBTITULO: El crack francés demuestra su valía con una jornada de ensueño.
+FRASE1: K. Mbappé ha vuelto a demostrar por qué es uno de los mejores, sumando 14 puntos vitales para Chamacónicos, que se mantiene tercero en la general.
+FRASE2: ¿Será esta la jornada en la que Mbappé decida cargar al equipo a sus espaldas y llevar a Chamacónicos a la lucha por el título, o solo un destello de su inmensa calidad?
+
+TITULO: ¡YAMAL, LA JOYA QUE IMPULSA AL LÍDER!
+SUBTITULO: La perla de Dani brilla con luz propia en la jornada.
+FRASE1: El intratable líder, Dani, sigue imparable, y en esta jornada ha sido L. Yamal quien ha sumado 13 puntos para consolidar su dominio absoluto.
+FRASE2: Con un líder que no afloja y sus jóvenes promesas rindiendo al máximo, ¿quién podrá detener el rodillo de Dani en su camino hacia el campeonato?
+
+TITULO: ¡EL FRACASO DE EYONG HUNDE A CHAMACÓNICOS!
+SUBTITULO: La peor actuación de la jornada, un lunar en la lucha por el podio.
+FRASE1: Mientras Mbappé intentaba brillar, E. Eyong protagonizó la actuación más lamentable de la jornada, sumando un vergonzoso -1 punto para Chamacónicos.
+FRASE2: ¿Es esta la fisura que los rivales de Chamacónicos necesitan para desbancarles del podio, o simplemente un mal día para olvidar en un equipo con aspiraciones de grandeza?

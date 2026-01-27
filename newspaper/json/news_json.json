@@ -1,7 +1,552 @@
 {
   "fecha_inicio": "2026-01-24",
   "fecha_fin": "2026-01-27",
-  "transfers": [],
+  "transfers": [
+    {
+      "fecha": "2026-01-27",
+      "subtype": "mercado",
+      "equipo": "Chamacónicos",
+      "ganancias": 5.14494,
+      "jugador": "Ronald Araújo",
+      "compra_venta": "venta",
+      "equipo_jugador": "FC Barcelona",
+      "clasificacion_manager_general": {
+        "puntos": 858,
+        "posicion": 3
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 41,
+        "posicion": 5
+      }
+    },
+    {
+      "fecha": "2026-01-27",
+      "subtype": "clausula",
+      "equipo": "Los marinero",
+      "ganancias": 10.698,
+      "jugador": "Raúl Asencio",
+      "compra_venta": "venta",
+      "equipo_jugador": "Real Madrid",
+      "clasificacion_manager_general": {
+        "puntos": 838,
+        "posicion": 4
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 33,
+        "posicion": 6
+      }
+    },
+    {
+      "fecha": "2026-01-27",
+      "subtype": "clausula",
+      "equipo": "Jotabetrbb",
+      "ganancias": -10.698,
+      "jugador": "Raúl Asencio",
+      "compra_venta": "compra",
+      "equipo_jugador": "Real Madrid",
+      "clasificacion_manager_general": {
+        "puntos": 797,
+        "posicion": 5
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 42,
+        "posicion": 4
+      }
+    },
+    {
+      "fecha": "2026-01-27",
+      "subtype": "mercado",
+      "equipo": "Jotabetrbb",
+      "ganancias": 6.04905,
+      "jugador": "Fernando Calero",
+      "compra_venta": "venta",
+      "equipo_jugador": "RCD Espanyol",
+      "clasificacion_manager_general": {
+        "puntos": 797,
+        "posicion": 5
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 42,
+        "posicion": 4
+      }
+    },
+    {
+      "fecha": "2026-01-27",
+      "subtype": "mercado",
+      "equipo": "Libre",
+      "ganancias": -12.819,
+      "jugador": "Álvaro Carreras",
+      "compra_venta": "compra",
+      "equipo_jugador": "Real Madrid",
+      "clasificacion_manager_general": {
+        "puntos": 593,
+        "posicion": 8
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 44,
+        "posicion": 3
+      }
+    },
+    {
+      "fecha": "2026-01-27",
+      "subtype": "mercado",
+      "equipo": "Dani",
+      "ganancias": -4.62151,
+      "jugador": "José Giménez",
+      "compra_venta": "compra",
+      "equipo_jugador": "Atlético de Madrid",
+      "clasificacion_manager_general": {
+        "puntos": 943,
+        "posicion": 1
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 60,
+        "posicion": 1
+      }
+    },
+    {
+      "fecha": "2026-01-27",
+      "subtype": "Puja",
+      "equipo": "Libre",
+      "ganancias": 0.0,
+      "jugador": "José Giménez",
+      "compra_venta": "compra",
+      "equipo_jugador": "Atlético de Madrid",
+      "clasificacion_manager_general": {
+        "puntos": 593,
+        "posicion": 8
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 44,
+        "posicion": 3
+      }
+    },
+    {
+      "fecha": "2026-01-27",
+      "subtype": "mercado",
+      "equipo": "Libre",
+      "ganancias": 0.30846,
+      "jugador": "Víctor Parada",
+      "compra_venta": "venta",
+      "equipo_jugador": "Deportivo Alavés",
+      "clasificacion_manager_general": {
+        "puntos": 593,
+        "posicion": 8
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 44,
+        "posicion": 3
+      }
+    },
+    {
+      "fecha": "2026-01-27",
+      "subtype": "mercado",
+      "equipo": "Libre",
+      "ganancias": 11.46249,
+      "jugador": "Pere Milla",
+      "compra_venta": "venta",
+      "equipo_jugador": "RCD Espanyol",
+      "clasificacion_manager_general": {
+        "puntos": 593,
+        "posicion": 8
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 44,
+        "posicion": 3
+      }
+    },
+    {
+      "fecha": "2026-01-27",
+      "subtype": "mercado",
+      "equipo": "Jotabetrbb",
+      "ganancias": 3.6211,
+      "jugador": "David Costas",
+      "compra_venta": "venta",
+      "equipo_jugador": "Real Oviedo",
+      "clasificacion_manager_general": {
+        "puntos": 797,
+        "posicion": 5
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 42,
+        "posicion": 4
+      }
+    },
+    {
+      "fecha": "2026-01-27",
+      "subtype": "mercado",
+      "equipo": "Jotabetrbb",
+      "ganancias": 2.76096,
+      "jugador": "André Almeida",
+      "compra_venta": "venta",
+      "equipo_jugador": "Valencia CF",
+      "clasificacion_manager_general": {
+        "puntos": 797,
+        "posicion": 5
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 42,
+        "posicion": 4
+      }
+    },
+    {
+      "fecha": "2026-01-27",
+      "subtype": "mercado",
+      "equipo": "Jotabetrbb",
+      "ganancias": -6.413785,
+      "jugador": "Daley Blind",
+      "compra_venta": "compra",
+      "equipo_jugador": "Girona FC",
+      "clasificacion_manager_general": {
+        "puntos": 797,
+        "posicion": 5
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 42,
+        "posicion": 4
+      }
+    },
+    {
+      "fecha": "2026-01-27",
+      "subtype": "Puja",
+      "equipo": "Dani",
+      "ganancias": 0.0,
+      "jugador": "Daley Blind",
+      "compra_venta": "compra",
+      "equipo_jugador": "Girona FC",
+      "clasificacion_manager_general": {
+        "puntos": 943,
+        "posicion": 1
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 60,
+        "posicion": 1
+      }
+    },
+    {
+      "fecha": "2026-01-27",
+      "subtype": "mercado",
+      "equipo": "Los marinero",
+      "ganancias": -3.668005,
+      "jugador": "Franco Mastantuono",
+      "compra_venta": "compra",
+      "equipo_jugador": "Real Madrid",
+      "clasificacion_manager_general": {
+        "puntos": 838,
+        "posicion": 4
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 33,
+        "posicion": 6
+      }
+    },
+    {
+      "fecha": "2026-01-27",
+      "subtype": "Puja",
+      "equipo": "Dani",
+      "ganancias": 0.0,
+      "jugador": "Franco Mastantuono",
+      "compra_venta": "compra",
+      "equipo_jugador": "Real Madrid",
+      "clasificacion_manager_general": {
+        "puntos": 943,
+        "posicion": 1
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 60,
+        "posicion": 1
+      }
+    },
+    {
+      "fecha": "2026-01-27",
+      "subtype": "mercado",
+      "equipo": "Dani",
+      "ganancias": 1.28235,
+      "jugador": "Jesús Areso",
+      "compra_venta": "venta",
+      "equipo_jugador": "Athletic Club",
+      "clasificacion_manager_general": {
+        "puntos": 943,
+        "posicion": 1
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 60,
+        "posicion": 1
+      }
+    },
+    {
+      "fecha": "2026-01-27",
+      "subtype": "mercado",
+      "equipo": "Dani",
+      "ganancias": 0.21186,
+      "jugador": "Andoni Gorosabel",
+      "compra_venta": "venta",
+      "equipo_jugador": "Athletic Club",
+      "clasificacion_manager_general": {
+        "puntos": 943,
+        "posicion": 1
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 60,
+        "posicion": 1
+      }
+    },
+    {
+      "fecha": "2026-01-27",
+      "subtype": "clausula",
+      "equipo": "Los marinero",
+      "ganancias": 1.266,
+      "jugador": "Filip Ugrinic",
+      "compra_venta": "venta",
+      "equipo_jugador": "Valencia CF",
+      "clasificacion_manager_general": {
+        "puntos": 838,
+        "posicion": 4
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 33,
+        "posicion": 6
+      }
+    },
+    {
+      "fecha": "2026-01-27",
+      "subtype": "clausula",
+      "equipo": "Jotabetrbb",
+      "ganancias": -1.266,
+      "jugador": "Filip Ugrinic",
+      "compra_venta": "compra",
+      "equipo_jugador": "Valencia CF",
+      "clasificacion_manager_general": {
+        "puntos": 797,
+        "posicion": 5
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 42,
+        "posicion": 4
+      }
+    },
+    {
+      "fecha": "2026-01-27",
+      "subtype": "mercado",
+      "equipo": "Dani",
+      "ganancias": 0.3781,
+      "jugador": "Grady Diangana",
+      "compra_venta": "venta",
+      "equipo_jugador": "Elche CF",
+      "clasificacion_manager_general": {
+        "puntos": 943,
+        "posicion": 1
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 60,
+        "posicion": 1
+      }
+    },
+    {
+      "fecha": "2026-01-27",
+      "subtype": "mercado",
+      "equipo": "Libre",
+      "ganancias": -3.301,
+      "jugador": "Dani Parejo",
+      "compra_venta": "compra",
+      "equipo_jugador": "Villarreal CF",
+      "clasificacion_manager_general": {
+        "puntos": 593,
+        "posicion": 8
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 44,
+        "posicion": 3
+      }
+    },
+    {
+      "fecha": "2026-01-27",
+      "subtype": "mercado",
+      "equipo": "Los marinero",
+      "ganancias": -2.569,
+      "jugador": "Héctor Bellerín",
+      "compra_venta": "compra",
+      "equipo_jugador": "Real Betis Balompié",
+      "clasificacion_manager_general": {
+        "puntos": 838,
+        "posicion": 4
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 33,
+        "posicion": 6
+      }
+    },
+    {
+      "fecha": "2026-01-27",
+      "subtype": "acuerdo",
+      "equipo": "Dani",
+      "ganancias": 11.619,
+      "jugador": "Georges Mikautadze",
+      "compra_venta": "venta",
+      "equipo_jugador": "Villarreal CF",
+      "clasificacion_manager_general": {
+        "puntos": 943,
+        "posicion": 1
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 60,
+        "posicion": 1
+      }
+    },
+    {
+      "fecha": "2026-01-27",
+      "subtype": "acuerdo",
+      "equipo": "Libre",
+      "ganancias": -11.619,
+      "jugador": "Georges Mikautadze",
+      "compra_venta": "compra",
+      "equipo_jugador": "Villarreal CF",
+      "clasificacion_manager_general": {
+        "puntos": 593,
+        "posicion": 8
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 44,
+        "posicion": 3
+      }
+    },
+    {
+      "fecha": "2026-01-27",
+      "subtype": "mercado",
+      "equipo": "Los marinero",
+      "ganancias": -1.293,
+      "jugador": "Mario Martín",
+      "compra_venta": "compra",
+      "equipo_jugador": "Getafe CF",
+      "clasificacion_manager_general": {
+        "puntos": 838,
+        "posicion": 4
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 33,
+        "posicion": 6
+      }
+    },
+    {
+      "fecha": "2026-01-27",
+      "subtype": "Puja",
+      "equipo": "Dani",
+      "ganancias": 0.0,
+      "jugador": "Mario Martín",
+      "compra_venta": "compra",
+      "equipo_jugador": "Getafe CF",
+      "clasificacion_manager_general": {
+        "puntos": 943,
+        "posicion": 1
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 60,
+        "posicion": 1
+      }
+    },
+    {
+      "fecha": "2026-01-27",
+      "subtype": "mercado",
+      "equipo": "Dani",
+      "ganancias": -1.24311,
+      "jugador": "Jesús Areso",
+      "compra_venta": "compra",
+      "equipo_jugador": "Athletic Club",
+      "clasificacion_manager_general": {
+        "puntos": 943,
+        "posicion": 1
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 60,
+        "posicion": 1
+      }
+    },
+    {
+      "fecha": "2026-01-27",
+      "subtype": "Puja",
+      "equipo": "Los marinero",
+      "ganancias": 0.0,
+      "jugador": "Jesús Areso",
+      "compra_venta": "compra",
+      "equipo_jugador": "Athletic Club",
+      "clasificacion_manager_general": {
+        "puntos": 838,
+        "posicion": 4
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 33,
+        "posicion": 6
+      }
+    },
+    {
+      "fecha": "2026-01-27",
+      "subtype": "mercado",
+      "equipo": "Dani",
+      "ganancias": -1.04594,
+      "jugador": "Federico Viñas",
+      "compra_venta": "compra",
+      "equipo_jugador": "Real Oviedo",
+      "clasificacion_manager_general": {
+        "puntos": 943,
+        "posicion": 1
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 60,
+        "posicion": 1
+      }
+    },
+    {
+      "fecha": "2026-01-27",
+      "subtype": "Puja",
+      "equipo": "Libre",
+      "ganancias": 0.0,
+      "jugador": "Federico Viñas",
+      "compra_venta": "compra",
+      "equipo_jugador": "Real Oviedo",
+      "clasificacion_manager_general": {
+        "puntos": 593,
+        "posicion": 8
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 44,
+        "posicion": 3
+      }
+    },
+    {
+      "fecha": "2026-01-27",
+      "subtype": "Puja",
+      "equipo": "Maldinillo 💥",
+      "ganancias": 0.0,
+      "jugador": "Federico Viñas",
+      "compra_venta": "compra",
+      "equipo_jugador": "Real Oviedo",
+      "clasificacion_manager_general": {
+        "puntos": 863,
+        "posicion": 2
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 57,
+        "posicion": 2
+      }
+    },
+    {
+      "fecha": "2026-01-27",
+      "subtype": "mercado",
+      "equipo": "Libre",
+      "ganancias": 15.78096,
+      "jugador": "Aurélien Tchouaméni",
+      "compra_venta": "venta",
+      "equipo_jugador": "Real Madrid",
+      "clasificacion_manager_general": {
+        "puntos": 593,
+        "posicion": 8
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 44,
+        "posicion": 3
+      }
+    }
+  ],
   "gameweek": [
     {
       "fecha": "2026-01-27",

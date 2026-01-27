@@ -30,24 +30,48 @@ Clasificación General:\n1. Dani - 943 pts\n2. Maldinillo 💥 - 863 pts\n3. Cha
 ===DATOS_EVENTOS===
 
 ===BLOQUE_1===
+JUGADOR: Álvaro Carreras
+MANAGER: Libre
+EVENTO: Fichaje destacado
+CONTEXTO: Compra por 12.82 millones. El manager esta en la posicion general 8.00  y en la posicion de la jornada 3.00.
+
+===BLOQUE_2===
+JUGADOR: Georges Mikautadze
+MANAGER: Libre
+EVENTO: Fichaje destacado
+CONTEXTO: Compra por 11.62 millones. El manager esta en la posicion general 8.00  y en la posicion de la jornada 3.00.
+
+===BLOQUE_3===
+JUGADOR: Raúl Asencio
+MANAGER: Jotabetrbb
+EVENTO: Fichaje destacado
+CONTEXTO: Compra por 10.70 millones. El manager esta en la posicion general 5.00  y en la posicion de la jornada 4.00.
+
+===BLOQUE_4===
+JUGADOR: Aurélien Tchouaméni
+MANAGER: Libre
+EVENTO: Venta récord
+CONTEXTO: Venta por 15.78 millones. El manager esta en la posicion general 8.00  y en la posicion de la jornada 3.00.
+
+===BLOQUE_5===
 JUGADOR: M. Oyarzabal
 MANAGER: Libre
 EVENTO: MVP de la jornada
 CONTEXTO: 17 puntos en la jornada. El manager esta en la posicion general 8.00  y en la posicion de la jornada 3.00.
 
-===BLOQUE_2===
+===BLOQUE_6===
 JUGADOR: K. Mbappé
 MANAGER: Chamacónicos
 EVENTO: MVP de la jornada
 CONTEXTO: 14 puntos en la jornada. El manager esta en la posicion general 3.00  y en la posicion de la jornada 5.00.
 
-===BLOQUE_3===
+===BLOQUE_7===
 JUGADOR: L. Yamal
 MANAGER: Dani
 EVENTO: MVP de la jornada
 CONTEXTO: 13 puntos en la jornada. El manager esta en la posicion general 1.00  y en la posicion de la jornada 1.00.
 
-===BLOQUE_4===
+===BLOQUE_8===
 JUGADOR: E. Eyong
 MANAGER: Chamacónicos
 EVENTO: Peor actuación de la jornada
