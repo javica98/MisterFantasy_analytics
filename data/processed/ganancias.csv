@@ -1,6 +1,13 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
-marks,start_mercado,,,,,,,,,,,,,,,2026-01-27,
-transfer,mercado,,Ronald Araújo,Chamacónicos,Mister,5.14494,2,58,3,,,,,,,2026-01-27,c8677a73dbd0b8bf9ffea506206cf597
+marks,start_mercado,,,,,,,,,,,,,,,2026-01-28,
+transfer,mercado,,Jones El-Abdellaoui,Mister,Libre,1.173,3,47,5,,,,,,,2026-01-28,1f7dd17537a461bb6047d1b2dedcebc8
+transfer,mercado,,Ante Budimir,Mister,De la Guettir FC,15.125035,4,103,50,,,,,,,2026-01-28,cd4242acfbdb5ddd6ec1a3a0fbfca4d1
+transfer,Puja,,Ante Budimir,Mister,Dani,12.55072,4,103,50,,,,,,,2026-01-28,cc7a781f86c5e61f86f6199c91232511
+transfer,Puja,,Ante Budimir,Mister,Libre,12.46501,4,103,50,,,,,,,2026-01-28,bf7a67605a9004e4c275b2c084b576e9
+transfer,mercado,,Gabriel Suazo,Mister,De la Guettir FC,2.532323,2,50,17,,,,,,,2026-01-28,52cc83b34a1b0751a3a2f5c662b539e0
+transfer,Puja,,Gabriel Suazo,Mister,Chamacónicos,2.504,2,50,17,,,,,,,2026-01-28,d979c015ddeba9df2a7d3a6f36be7aec
+marks,start_mercado,,,,,,,,,,,,,,,2026-01-28,
+transfer,mercado,,Ronald Araújo,Chamacónicos,Mister,5.14494,2.0,58.0,3.0,,,,,,,2026-01-27,c8677a73dbd0b8bf9ffea506206cf597
 bonificacion,quiniela,,,,,,,,,Chamacónicos,0.4,1º,,,,2026-01-27,
 bonificacion,quiniela,,,,,,,,,Dani,0.4,2º,,,,2026-01-27,
 bonificacion,quiniela,,,,,,,,,De la Guettir FC,0.4,3º,,,,2026-01-27,
@@ -20,50 +27,50 @@ bonificacion,clasificacion,,,,,,,,,MuchaSalsa,2.29,7,,,,2026-01-27,
 bonificacion,clasificacion,,,,,,,,,De la Guettir FC,2.08,8,,,,2026-01-27,
 bonificacion,clasificacion,,,,,,,,,Juanba,2.22,9,,,,2026-01-27,
 marks,start_mercado,,,,,,,,,,,,,,,2026-01-27,
-transfer,clausula,,Raúl Asencio,Los marinero,Jotabetrbb,10.698,2,72,15,,,,,,,2026-01-27,e21d2a380cd0f082b19488b6c36549f9
+transfer,clausula,,Raúl Asencio,Los marinero,Jotabetrbb,10.698,2.0,72.0,15.0,,,,,,,2026-01-27,e21d2a380cd0f082b19488b6c36549f9
 marks,start_mercado,,,,,,,,,,,,,,,2026-01-27,
-transfer,mercado,,Fernando Calero,Jotabetrbb,Mister,6.04905,2,69,8,,,,,,,2026-01-27,28834ac85a64e6c33fa553f8d92965ae
+transfer,mercado,,Fernando Calero,Jotabetrbb,Mister,6.04905,2.0,69.0,8.0,,,,,,,2026-01-27,28834ac85a64e6c33fa553f8d92965ae
 marks,start_mercado,,,,,,,,,,,,,,,2026-01-27,
-transfer,mercado,,Álvaro Carreras,Mister,Libre,12.819,2,79,15,,,,,,,2026-01-27,3dd2e7b7f465a38e9230a6455bc8fb94
-transfer,mercado,,José Giménez,Mister,Dani,4.62151,2,37,2,,,,,,,2026-01-27,00df24a1e64ac6d87ad43acc7f245b19
-transfer,Puja,,José Giménez,Mister,Libre,4.51107,2,37,2,,,,,,,2026-01-27,481d365898441bcdcdf87841006d9697
+transfer,mercado,,Álvaro Carreras,Mister,Libre,12.819,2.0,79.0,15.0,,,,,,,2026-01-27,3dd2e7b7f465a38e9230a6455bc8fb94
+transfer,mercado,,José Giménez,Mister,Dani,4.62151,2.0,37.0,2.0,,,,,,,2026-01-27,00df24a1e64ac6d87ad43acc7f245b19
+transfer,Puja,,José Giménez,Mister,Libre,4.51107,2.0,37.0,2.0,,,,,,,2026-01-27,481d365898441bcdcdf87841006d9697
 marks,start_mercado,,,,,,,,,,,,,,,2026-01-27,
-transfer,mercado,,Víctor Parada,Libre,Mister,0.30846,2,35,48,,,,,,,2026-01-27,255611e8e3eadc60764e7c886bb2ca92
+transfer,mercado,,Víctor Parada,Libre,Mister,0.30846,2.0,35.0,48.0,,,,,,,2026-01-27,255611e8e3eadc60764e7c886bb2ca92
 marks,start_mercado,,,,,,,,,,,,,,,2026-01-27,
-transfer,mercado,,Pere Milla,Libre,Mister,11.46249,4,94,8,,,,,,,2026-01-27,34517ae10f75b55de2e5f0b9a37a595b
+transfer,mercado,,Pere Milla,Libre,Mister,11.46249,4.0,94.0,8.0,,,,,,,2026-01-27,34517ae10f75b55de2e5f0b9a37a595b
 marks,start_mercado,,,,,,,,,,,,,,,2026-01-27,
-transfer,mercado,,David Costas,Jotabetrbb,Mister,3.6211,2,54,1370,,,,,,,2026-01-27,03f129ea2d82bface53637a62c90faa5
+transfer,mercado,,David Costas,Jotabetrbb,Mister,3.6211,2.0,54.0,1370.0,,,,,,,2026-01-27,03f129ea2d82bface53637a62c90faa5
 marks,start_mercado,,,,,,,,,,,,,,,2026-01-27,
-transfer,mercado,,André Almeida,Jotabetrbb,Mister,2.76096,3,39,19,,,,,,,2026-01-27,da622c1be05ec3625425a2b420c036fc
+transfer,mercado,,André Almeida,Jotabetrbb,Mister,2.76096,3.0,39.0,19.0,,,,,,,2026-01-27,da622c1be05ec3625425a2b420c036fc
 marks,start_mercado,,,,,,,,,,,,,,,2026-01-27,
-transfer,mercado,,Daley Blind,Mister,Jotabetrbb,6.413785,2,68,222,,,,,,,2026-01-27,5029b796ee382f8eb51ddb527967a524
-transfer,Puja,,Daley Blind,Mister,Dani,5.67331,2,68,222,,,,,,,2026-01-27,2dbf96c47681ac8a76ffac62cea7e0b2
-transfer,mercado,,Franco Mastantuono,Mister,Los marinero,3.668005,3,47,15,,,,,,,2026-01-27,3d1625f3488ab983cda0f31833752bf2
-transfer,Puja,,Franco Mastantuono,Mister,Dani,3.16816,3,47,15,,,,,,,2026-01-27,1948a6055a8b855ca5a5b048beba04c0
+transfer,mercado,,Daley Blind,Mister,Jotabetrbb,6.413785,2.0,68.0,222.0,,,,,,,2026-01-27,5029b796ee382f8eb51ddb527967a524
+transfer,Puja,,Daley Blind,Mister,Dani,5.67331,2.0,68.0,222.0,,,,,,,2026-01-27,2dbf96c47681ac8a76ffac62cea7e0b2
+transfer,mercado,,Franco Mastantuono,Mister,Los marinero,3.668005,3.0,47.0,15.0,,,,,,,2026-01-27,3d1625f3488ab983cda0f31833752bf2
+transfer,Puja,,Franco Mastantuono,Mister,Dani,3.16816,3.0,47.0,15.0,,,,,,,2026-01-27,1948a6055a8b855ca5a5b048beba04c0
 marks,start_mercado,,,,,,,,,,,,,,,2026-01-27,
-transfer,mercado,,Jesús Areso,Dani,Mister,1.28235,2,57,1,,,,,,,2026-01-27,cd118c93b21dabc3b1e441db5d93ec51
+transfer,mercado,,Jesús Areso,Dani,Mister,1.28235,2.0,57.0,1.0,,,,,,,2026-01-27,cd118c93b21dabc3b1e441db5d93ec51
 marks,start_mercado,,,,,,,,,,,,,,,2026-01-27,
-transfer,mercado,,Andoni Gorosabel,Dani,Mister,0.21186,2,20,1,,,,,,,2026-01-27,4d0b1f85bc36119d7c2a8e237f84d277
+transfer,mercado,,Andoni Gorosabel,Dani,Mister,0.21186,2.0,20.0,1.0,,,,,,,2026-01-27,4d0b1f85bc36119d7c2a8e237f84d277
 marks,start_mercado,,,,,,,,,,,,,,,2026-01-27,
-transfer,clausula,,Filip Ugrinic,Los marinero,Jotabetrbb,1.266,3,41,19,,,,,,,2026-01-27,96d4950db200171104167d39e2a312ac
+transfer,clausula,,Filip Ugrinic,Los marinero,Jotabetrbb,1.266,3.0,41.0,19.0,,,,,,,2026-01-27,96d4950db200171104167d39e2a312ac
 marks,start_mercado,,,,,,,,,,,,,,,2026-01-27,
-transfer,mercado,,Grady Diangana,Dani,Mister,0.3781,3,31,23,,,,,,,2026-01-27,3cc774bb11accec0770858baf75f12aa
+transfer,mercado,,Grady Diangana,Dani,Mister,0.3781,3.0,31.0,23.0,,,,,,,2026-01-27,3cc774bb11accec0770858baf75f12aa
 marks,start_mercado,,,,,,,,,,,,,,,2026-01-27,
-transfer,mercado,,Dani Parejo,Mister,Libre,3.301,3,53,20,,,,,,,2026-01-27,26f6a07e1621878c889821cb2f927234
-transfer,mercado,,Héctor Bellerín,Mister,Los marinero,2.569,2,58,4,,,,,,,2026-01-27,f3ba384cd58aec4326d028daac8b535c
+transfer,mercado,,Dani Parejo,Mister,Libre,3.301,3.0,53.0,20.0,,,,,,,2026-01-27,26f6a07e1621878c889821cb2f927234
+transfer,mercado,,Héctor Bellerín,Mister,Los marinero,2.569,2.0,58.0,4.0,,,,,,,2026-01-27,f3ba384cd58aec4326d028daac8b535c
 marks,start_jornada,,,,,,,,,,,,,,21.0,2026-01-27,
 marks,start_mercado,,,,,,,,,,,,,,,2026-01-27,
-transfer,acuerdo,,Georges Mikautadze,Dani,Libre,11.619,4,76,20,,,,,,,2026-01-27,c7d7ec16ccd3ae8a8f049faeb546490e
+transfer,acuerdo,,Georges Mikautadze,Dani,Libre,11.619,4.0,76.0,20.0,,,,,,,2026-01-27,c7d7ec16ccd3ae8a8f049faeb546490e
 marks,start_mercado,,,,,,,,,,,,,,,2026-01-27,
-transfer,mercado,,Mario Martín,Mister,Los marinero,1.293,3,66,9,,,,,,,2026-01-27,f19bf77cd121ce3a4bc66eba16a5feee
-transfer,Puja,,Mario Martín,Mister,Dani,0.94974,3,66,9,,,,,,,2026-01-27,7cb79544a8c3f5550744ac3f521663e7
-transfer,mercado,,Jesús Areso,Mister,Dani,1.24311,2,57,1,,,,,,,2026-01-27,9d073f0692cde0cf99f40e31533e01a3
-transfer,Puja,,Jesús Areso,Mister,Los marinero,1.225,2,57,1,,,,,,,2026-01-27,d4ba4ff72380c5b8501a1da7df1ce1ff
-transfer,mercado,,Federico Viñas,Mister,Dani,1.04594,4,52,1370,,,,,,,2026-01-27,9c95b26d94e8789e8168d7b2df675a6a
-transfer,Puja,,Federico Viñas,Mister,Libre,1.00311,4,52,1370,,,,,,,2026-01-27,d77ebe2a5852fffe07b27d99e22f8e54
-transfer,Puja,,Federico Viñas,Mister,Maldinillo 💥,1.003,4,52,1370,,,,,,,2026-01-27,a6dc5d1ef69a55a055d15d353ecc69ed
+transfer,mercado,,Mario Martín,Mister,Los marinero,1.293,3.0,66.0,9.0,,,,,,,2026-01-27,f19bf77cd121ce3a4bc66eba16a5feee
+transfer,Puja,,Mario Martín,Mister,Dani,0.94974,3.0,66.0,9.0,,,,,,,2026-01-27,7cb79544a8c3f5550744ac3f521663e7
+transfer,mercado,,Jesús Areso,Mister,Dani,1.24311,2.0,57.0,1.0,,,,,,,2026-01-27,9d073f0692cde0cf99f40e31533e01a3
+transfer,Puja,,Jesús Areso,Mister,Los marinero,1.225,2.0,57.0,1.0,,,,,,,2026-01-27,d4ba4ff72380c5b8501a1da7df1ce1ff
+transfer,mercado,,Federico Viñas,Mister,Dani,1.04594,4.0,52.0,1370.0,,,,,,,2026-01-27,9c95b26d94e8789e8168d7b2df675a6a
+transfer,Puja,,Federico Viñas,Mister,Libre,1.00311,4.0,52.0,1370.0,,,,,,,2026-01-27,d77ebe2a5852fffe07b27d99e22f8e54
+transfer,Puja,,Federico Viñas,Mister,Maldinillo 💥,1.003,4.0,52.0,1370.0,,,,,,,2026-01-27,a6dc5d1ef69a55a055d15d353ecc69ed
 marks,start_mercado,,,,,,,,,,,,,,,2026-01-27,
-transfer,mercado,,Aurélien Tchouaméni,Libre,Mister,15.78096,3,84,15,,,,,,,2026-01-27,0bd87d85df02ec291284ddee1852cfbd
+transfer,mercado,,Aurélien Tchouaméni,Libre,Mister,15.78096,3.0,84.0,15.0,,,,,,,2026-01-27,0bd87d85df02ec291284ddee1852cfbd
 marks,start_mercado,,,,,,,,,,,,,,,2026-01-27,
 transfer,mercado,,Arnau Martínez,Dani,Mister,4.62985,2.0,66.0,222.0,,,,,,,2026-01-22,ed3e63761aa00d3a0dd527323e80d84b
 marks,start_mercado,,,,,,,,,,,,,,,2026-01-22,
