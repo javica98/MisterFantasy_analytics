@@ -1,11 +1,32 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
-marks,start_mercado,,,,,,,,,,,,,,,2026-01-28,
-transfer,mercado,,Jones El-Abdellaoui,Mister,Libre,1.173,3,47,5,,,,,,,2026-01-28,1f7dd17537a461bb6047d1b2dedcebc8
-transfer,mercado,,Ante Budimir,Mister,De la Guettir FC,15.125035,4,103,50,,,,,,,2026-01-28,cd4242acfbdb5ddd6ec1a3a0fbfca4d1
-transfer,Puja,,Ante Budimir,Mister,Dani,12.55072,4,103,50,,,,,,,2026-01-28,cc7a781f86c5e61f86f6199c91232511
-transfer,Puja,,Ante Budimir,Mister,Libre,12.46501,4,103,50,,,,,,,2026-01-28,bf7a67605a9004e4c275b2c084b576e9
-transfer,mercado,,Gabriel Suazo,Mister,De la Guettir FC,2.532323,2,50,17,,,,,,,2026-01-28,52cc83b34a1b0751a3a2f5c662b539e0
-transfer,Puja,,Gabriel Suazo,Mister,Chamacónicos,2.504,2,50,17,,,,,,,2026-01-28,d979c015ddeba9df2a7d3a6f36be7aec
+marks,start_mercado,,,,,,,,,,,,,,,2026-01-29,
+transfer,mercado,,Óscar Mingueza,Los marinero,Mister,10.979,2,81,5,,,,,,,2026-01-29,21d208ee002f45813eb4c23f0c1ff618
+marks,start_mercado,,,,,,,,,,,,,,,2026-01-29,
+transfer,mercado,,Javi Rueda,Mister,Libre,4.18901,2,68,5,,,,,,,2026-01-29,219cfe35fcc79a9f5aad3b4ae989bfef
+transfer,mercado,,Valentin Rosier,Mister,Chamacónicos,1.664,2,44,50,,,,,,,2026-01-29,30a51651da0b335a204d334e2a321e15
+marks,start_mercado,,,,,,,,,,,,,,,2026-01-29,
+transfer,mercado,,Antoine Griezmann,De la Guettir FC,Mister,12.7755,4,95,2,,,,,,,2026-01-29,5a4567032d28cb22ae801ead8d229d44
+marks,start_mercado,,,,,,,,,,,,,,,2026-01-29,
+transfer,clausula,,Fermín López,Maldinillo 💥,Los marinero,23.667,3,98,3,,,,,,,2026-01-29,f7b6c57278f4598a1bd66bad3e7fe592
+marks,start_mercado,,,,,,,,,,,,,,,2026-01-29,
+transfer,mercado,,Marc Aguado,Libre,Mister,3.80285,3,65,23,,,,,,,2026-01-29,add8915ed03fb3b86cf12a134007573e
+marks,start_mercado,,,,,,,,,,,,,,,2026-01-29,
+transfer,clausula,,Franco Mastantuono,Los marinero,Jotabetrbb,5.502007,3,47,15,,,,,,,2026-01-29,25195f4d0aa0feb6c1444b3fb1133364
+marks,start_mercado,,,,,,,,,,,,,,,2026-01-29,
+transfer,clausula,,Dani Olmo,Jotabetrbb,De la Guettir FC,20.143527,3,108,3,,,,,,,2026-01-29,16937cb0cd340333025a2d53afb5f9c6
+marks,start_mercado,,,,,,,,,,,,,,,2026-01-29,
+transfer,mercado,,Álvaro García,De la Guettir FC,Mister,8.2032,3,93,14,,,,,,,2026-01-29,13f91e4a2b821748ed9c94d624ae1d7c
+marks,start_mercado,,,,,,,,,,,,,,,2026-01-29,
+transfer,mercado,,David Affengruber,De la Guettir FC,Mister,7.58716,2,71,23,,,,,,,2026-01-29,c89e23c008d055ef8fa2545f0a143537
+marks,start_mercado,,,,,,,,,,,,,,,2026-01-29,
+transfer,mercado,,Gerard Martín,Jotabetrbb,Mister,10.50702,2,79,3,,,,,,,2026-01-29,1581945b7e09f55bdf171ecec79e0e20
+marks,start_mercado,,,,,,,,,,,,,,,2026-01-29,
+transfer,mercado,,Jones El-Abdellaoui,Mister,Libre,1.173,3.0,47.0,5.0,,,,,,,2026-01-28,1f7dd17537a461bb6047d1b2dedcebc8
+transfer,mercado,,Ante Budimir,Mister,De la Guettir FC,15.125035,4.0,103.0,50.0,,,,,,,2026-01-28,cd4242acfbdb5ddd6ec1a3a0fbfca4d1
+transfer,Puja,,Ante Budimir,Mister,Dani,12.55072,4.0,103.0,50.0,,,,,,,2026-01-28,cc7a781f86c5e61f86f6199c91232511
+transfer,Puja,,Ante Budimir,Mister,Libre,12.46501,4.0,103.0,50.0,,,,,,,2026-01-28,bf7a67605a9004e4c275b2c084b576e9
+transfer,mercado,,Gabriel Suazo,Mister,De la Guettir FC,2.532323,2.0,50.0,17.0,,,,,,,2026-01-28,52cc83b34a1b0751a3a2f5c662b539e0
+transfer,Puja,,Gabriel Suazo,Mister,Chamacónicos,2.504,2.0,50.0,17.0,,,,,,,2026-01-28,d979c015ddeba9df2a7d3a6f36be7aec
 marks,start_mercado,,,,,,,,,,,,,,,2026-01-28,
 transfer,mercado,,Ronald Araújo,Chamacónicos,Mister,5.14494,2.0,58.0,3.0,,,,,,,2026-01-27,c8677a73dbd0b8bf9ffea506206cf597
 bonificacion,quiniela,,,,,,,,,Chamacónicos,0.4,1º,,,,2026-01-27,
