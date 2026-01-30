@@ -1,25 +1,32 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
+marks,start_mercado,,,,,,,,,,,,,,,2026-01-30,
+transfer,mercado,,Igor Zubeldia,Mister,Los marinero,1.753,2,52,16,,,,,,,2026-01-30,24d063d3369953da66f2440552dd5b64
+transfer,mercado,,Marc Casadó,Mister,Dani,1.51435,3,43,3,,,,,,,2026-01-30,84030936fbea7c0ab1ae10dd18614a81
+transfer,Puja,,Marc Casadó,Mister,Chamacónicos,1.269,3,43,3,,,,,,,2026-01-30,465052800504eeeb79632a30d08cb571
+transfer,mercado,,Antonio Blanco,Mister,Maldinillo 💥,5.36548,3,76,48,,,,,,,2026-01-30,c462d570502fb029fa8fc7c45a745198
+marks,start_mercado,,,,,,,,,,,,,,,2026-01-30,
+transfer,mercado,,Josip Brekalo,De la Guettir FC,Mister,0.15485,3,30,1370,,,,,,,2026-01-30,633d56aa04468748fab02f4e20891ad4
+marks,start_mercado,,,,,,,,,,,,,,,2026-01-30,
+transfer,mercado,,Óscar Mingueza,Los marinero,Mister,10.979,2.0,81.0,5.0,,,,,,,2026-01-29,21d208ee002f45813eb4c23f0c1ff618
 marks,start_mercado,,,,,,,,,,,,,,,2026-01-29,
-transfer,mercado,,Óscar Mingueza,Los marinero,Mister,10.979,2,81,5,,,,,,,2026-01-29,21d208ee002f45813eb4c23f0c1ff618
+transfer,mercado,,Javi Rueda,Mister,Libre,4.18901,2.0,68.0,5.0,,,,,,,2026-01-29,219cfe35fcc79a9f5aad3b4ae989bfef
+transfer,mercado,,Valentin Rosier,Mister,Chamacónicos,1.664,2.0,44.0,50.0,,,,,,,2026-01-29,30a51651da0b335a204d334e2a321e15
 marks,start_mercado,,,,,,,,,,,,,,,2026-01-29,
-transfer,mercado,,Javi Rueda,Mister,Libre,4.18901,2,68,5,,,,,,,2026-01-29,219cfe35fcc79a9f5aad3b4ae989bfef
-transfer,mercado,,Valentin Rosier,Mister,Chamacónicos,1.664,2,44,50,,,,,,,2026-01-29,30a51651da0b335a204d334e2a321e15
+transfer,mercado,,Antoine Griezmann,De la Guettir FC,Mister,12.7755,4.0,95.0,2.0,,,,,,,2026-01-29,5a4567032d28cb22ae801ead8d229d44
 marks,start_mercado,,,,,,,,,,,,,,,2026-01-29,
-transfer,mercado,,Antoine Griezmann,De la Guettir FC,Mister,12.7755,4,95,2,,,,,,,2026-01-29,5a4567032d28cb22ae801ead8d229d44
+transfer,clausula,,Fermín López,Maldinillo 💥,Los marinero,23.667,3.0,98.0,3.0,,,,,,,2026-01-29,f7b6c57278f4598a1bd66bad3e7fe592
 marks,start_mercado,,,,,,,,,,,,,,,2026-01-29,
-transfer,clausula,,Fermín López,Maldinillo 💥,Los marinero,23.667,3,98,3,,,,,,,2026-01-29,f7b6c57278f4598a1bd66bad3e7fe592
+transfer,mercado,,Marc Aguado,Libre,Mister,3.80285,3.0,65.0,23.0,,,,,,,2026-01-29,add8915ed03fb3b86cf12a134007573e
 marks,start_mercado,,,,,,,,,,,,,,,2026-01-29,
-transfer,mercado,,Marc Aguado,Libre,Mister,3.80285,3,65,23,,,,,,,2026-01-29,add8915ed03fb3b86cf12a134007573e
+transfer,clausula,,Franco Mastantuono,Los marinero,Jotabetrbb,5.502007,3.0,47.0,15.0,,,,,,,2026-01-29,25195f4d0aa0feb6c1444b3fb1133364
 marks,start_mercado,,,,,,,,,,,,,,,2026-01-29,
-transfer,clausula,,Franco Mastantuono,Los marinero,Jotabetrbb,5.502007,3,47,15,,,,,,,2026-01-29,25195f4d0aa0feb6c1444b3fb1133364
+transfer,clausula,,Dani Olmo,Jotabetrbb,De la Guettir FC,20.143527,3.0,108.0,3.0,,,,,,,2026-01-29,16937cb0cd340333025a2d53afb5f9c6
 marks,start_mercado,,,,,,,,,,,,,,,2026-01-29,
-transfer,clausula,,Dani Olmo,Jotabetrbb,De la Guettir FC,20.143527,3,108,3,,,,,,,2026-01-29,16937cb0cd340333025a2d53afb5f9c6
+transfer,mercado,,Álvaro García,De la Guettir FC,Mister,8.2032,3.0,93.0,14.0,,,,,,,2026-01-29,13f91e4a2b821748ed9c94d624ae1d7c
 marks,start_mercado,,,,,,,,,,,,,,,2026-01-29,
-transfer,mercado,,Álvaro García,De la Guettir FC,Mister,8.2032,3,93,14,,,,,,,2026-01-29,13f91e4a2b821748ed9c94d624ae1d7c
+transfer,mercado,,David Affengruber,De la Guettir FC,Mister,7.58716,2.0,71.0,23.0,,,,,,,2026-01-29,c89e23c008d055ef8fa2545f0a143537
 marks,start_mercado,,,,,,,,,,,,,,,2026-01-29,
-transfer,mercado,,David Affengruber,De la Guettir FC,Mister,7.58716,2,71,23,,,,,,,2026-01-29,c89e23c008d055ef8fa2545f0a143537
-marks,start_mercado,,,,,,,,,,,,,,,2026-01-29,
-transfer,mercado,,Gerard Martín,Jotabetrbb,Mister,10.50702,2,79,3,,,,,,,2026-01-29,1581945b7e09f55bdf171ecec79e0e20
+transfer,mercado,,Gerard Martín,Jotabetrbb,Mister,10.50702,2.0,79.0,3.0,,,,,,,2026-01-29,1581945b7e09f55bdf171ecec79e0e20
 marks,start_mercado,,,,,,,,,,,,,,,2026-01-29,
 transfer,mercado,,Jones El-Abdellaoui,Mister,Libre,1.173,3.0,47.0,5.0,,,,,,,2026-01-28,1f7dd17537a461bb6047d1b2dedcebc8
 transfer,mercado,,Ante Budimir,Mister,De la Guettir FC,15.125035,4.0,103.0,50.0,,,,,,,2026-01-28,cd4242acfbdb5ddd6ec1a3a0fbfca4d1
