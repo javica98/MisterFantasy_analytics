@@ -1,11 +1,28 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
+marks,start_mercado,,,,,,,,,,,,,,,2026-01-31,
+transfer,mercado,,Joan Garcia,Mister,Dani,16.70801,1,101,3,,,,,,,2026-01-31,6daa2e85b186f4fa964dec93d22e9bcc
+transfer,Puja,,Joan Garcia,Mister,Maldinillo 💥,16.34116,1,101,3,,,,,,,2026-01-31,5afca25e07d5a1376dc0ed96f5d84c37
+transfer,Puja,,Joan Garcia,Mister,Libre,15.99328,1,101,3,,,,,,,2026-01-31,598927f8abff248d021c0a16a95ac97f
+transfer,mercado,,Jorge de Frutos,Mister,Maldinillo 💥,11.94212,3,106,14,,,,,,,2026-01-31,c290a33c29475dafe976d92fe7be5d69
+transfer,Puja,,Jorge de Frutos,Mister,Libre,11.63001,3,106,14,,,,,,,2026-01-31,eb135084e6f0ed992a354b9e85d03e94
+marks,start_jornada,,,,,,,,,,,,,,22.0,2026-01-31,
+marks,start_mercado,,,,,,,,,,,,,,,2026-01-31,
+transfer,mercado,,José Giménez,Dani,Mister,5.11632,2,37,2,,,,,,,2026-01-31,1d4e1779626b3dd10119543ede626b6e
+marks,start_mercado,,,,,,,,,,,,,,,2026-01-31,
+transfer,mercado,,Javi Muñoz,Libre,Mister,0.1632,3,25,9,,,,,,,2026-01-31,d5a7540a3d3a6f3f7f8c0f67cf0e33bf
+marks,start_mercado,,,,,,,,,,,,,,,2026-01-31,
+transfer,mercado,,Álvaro Carreras,Libre,Mister,12.52032,2,79,15,,,,,,,2026-01-31,7e768fb2f470dcd37a75911ceb56e28b
+marks,start_mercado,,,,,,,,,,,,,,,2026-01-31,
+transfer,mercado,,Jorge Herrando,Libre,Mister,1.045,2,39,50,,,,,,,2026-01-31,6719bf85c12e9d5ec256a759ddc9f09f
+marks,start_mercado,,,,,,,,,,,,,,,2026-01-31,
+transfer,mercado,,Iker Losada,Libre,Mister,1.05976,4,29,12,,,,,,,2026-01-31,b0b30a817eb16188472aae2d46535452
+marks,start_mercado,,,,,,,,,,,,,,,2026-01-31,
+transfer,mercado,,Igor Zubeldia,Mister,Los marinero,1.753,2.0,52.0,16.0,,,,,,,2026-01-30,24d063d3369953da66f2440552dd5b64
+transfer,mercado,,Marc Casadó,Mister,Dani,1.51435,3.0,43.0,3.0,,,,,,,2026-01-30,84030936fbea7c0ab1ae10dd18614a81
+transfer,Puja,,Marc Casadó,Mister,Chamacónicos,1.269,3.0,43.0,3.0,,,,,,,2026-01-30,465052800504eeeb79632a30d08cb571
+transfer,mercado,,Antonio Blanco,Mister,Maldinillo 💥,5.36548,3.0,76.0,48.0,,,,,,,2026-01-30,c462d570502fb029fa8fc7c45a745198
 marks,start_mercado,,,,,,,,,,,,,,,2026-01-30,
-transfer,mercado,,Igor Zubeldia,Mister,Los marinero,1.753,2,52,16,,,,,,,2026-01-30,24d063d3369953da66f2440552dd5b64
-transfer,mercado,,Marc Casadó,Mister,Dani,1.51435,3,43,3,,,,,,,2026-01-30,84030936fbea7c0ab1ae10dd18614a81
-transfer,Puja,,Marc Casadó,Mister,Chamacónicos,1.269,3,43,3,,,,,,,2026-01-30,465052800504eeeb79632a30d08cb571
-transfer,mercado,,Antonio Blanco,Mister,Maldinillo 💥,5.36548,3,76,48,,,,,,,2026-01-30,c462d570502fb029fa8fc7c45a745198
-marks,start_mercado,,,,,,,,,,,,,,,2026-01-30,
-transfer,mercado,,Josip Brekalo,De la Guettir FC,Mister,0.15485,3,30,1370,,,,,,,2026-01-30,633d56aa04468748fab02f4e20891ad4
+transfer,mercado,,Josip Brekalo,De la Guettir FC,Mister,0.15485,3.0,30.0,1370.0,,,,,,,2026-01-30,633d56aa04468748fab02f4e20891ad4
 marks,start_mercado,,,,,,,,,,,,,,,2026-01-30,
 transfer,mercado,,Óscar Mingueza,Los marinero,Mister,10.979,2.0,81.0,5.0,,,,,,,2026-01-29,21d208ee002f45813eb4c23f0c1ff618
 marks,start_mercado,,,,,,,,,,,,,,,2026-01-29,
