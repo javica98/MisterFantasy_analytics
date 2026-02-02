@@ -1,6 +1,11 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
-marks,start_mercado,,,,,,,,,,,,,,,2026-02-01,
-transfer,mercado,,Lucas Beltrán,Mister,Libre,1.006,3,52,19,,,,,,,2026-02-01,495fbc4337bdbd4cde0604cde8d6ba48
+marks,start_mercado,,,,,,,,,,,,,,,2026-02-02,
+transfer,mercado,,Marcos Alonso,Mister,Chamacónicos,12.315,2,78,5,,,,,,,2026-02-02,8f917671da5ca56b83220fda015ee098
+transfer,mercado,,Lucas Boyé,Mister,Dani,5.91883,4,82,48,,,,,,,2026-02-02,ab68dc4657dc2f13d4311b078973f00e
+marks,start_mercado,,,,,,,,,,,,,,,2026-02-02,
+transfer,mercado,,Koke,Maldinillo 💥,Mister,12.36872,3,109,2,,,,,,,2026-02-02,af63666698bf984871f597beff6ce8e2
+marks,start_mercado,,,,,,,,,,,,,,,2026-02-02,
+transfer,mercado,,Lucas Beltrán,Mister,Libre,1.006,3.0,52.0,19.0,,,,,,,2026-02-01,495fbc4337bdbd4cde0604cde8d6ba48
 marks,start_mercado,,,,,,,,,,,,,,,2026-02-01,
 transfer,mercado,,Joan Garcia,Mister,Dani,16.70801,1.0,101.0,3.0,,,,,,,2026-01-31,6daa2e85b186f4fa964dec93d22e9bcc
 transfer,Puja,,Joan Garcia,Mister,Maldinillo 💥,16.34116,1.0,101.0,3.0,,,,,,,2026-01-31,5afca25e07d5a1376dc0ed96f5d84c37
