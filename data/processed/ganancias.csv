@@ -1,9 +1,23 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
+marks,start_mercado,,,,,,,,,,,,,,,2026-02-03,
+transfer,mercado,,Marc Casadó,Dani,Mister,1.2566,3,44,3,,,,,,,2026-02-03,cdb8ef534fc8a89f6014a34c041871df
+marks,start_mercado,,,,,,,,,,,,,,,2026-02-03,
+transfer,mercado,,Fran Beltrán,Mister,Dani,1.22801,3,32,222,,,,,,,2026-02-03,7482bcc964a2ff077c8f4dc9611ff66c
+transfer,Puja,,Fran Beltrán,Mister,Maldinillo 💥,1.05078,3,32,222,,,,,,,2026-02-03,292586dcd06b5511e5819a35bc65c9e9
+transfer,Puja,,Fran Beltrán,Mister,Los marinero,0.952,3,32,222,,,,,,,2026-02-03,c909328e1bf70709aec8a676a9b139d1
+transfer,Puja,,Fran Beltrán,Mister,Libre,0.942,3,32,222,,,,,,,2026-02-03,eecbceef85f587f354b618f1b953b415
+transfer,mercado,,Marcus Rashford,Mister,Maldinillo 💥,14.79861,4,106,3,,,,,,,2026-02-03,564dfeaeed1e1ef99e2ab1fb17cb1040
+transfer,Puja,,Marcus Rashford,Mister,Dani,14.75643,4,106,3,,,,,,,2026-02-03,114273fe961dcdcb5314bf9e74b7cb1f
+transfer,Puja,,Marcus Rashford,Mister,Los marinero,14.557,4,106,3,,,,,,,2026-02-03,0dd8663bf8b97185ccf82848c4f1efb0
+transfer,Puja,,Marcus Rashford,Mister,Libre,14.42705,4,106,3,,,,,,,2026-02-03,33a62db8718c92b9e445139da0877377
+transfer,mercado,,Giovani Lo Celso,Mister,Maldinillo 💥,12.0877,3,87,4,,,,,,,2026-02-03,b3c342634078785bd9b3e409bb68df8e
+marks,start_mercado,,,,,,,,,,,,,,,2026-02-03,
+transfer,mercado,,João Cancelo,Dani,Mister,5.4117,2,6,3,,,,,,,2026-02-03,18ac0167466152ce91f0dc3810623ad1
+marks,start_mercado,,,,,,,,,,,,,,,2026-02-03,
+transfer,mercado,,Marcos Alonso,Mister,Chamacónicos,12.315,2.0,78.0,5.0,,,,,,,2026-02-02,8f917671da5ca56b83220fda015ee098
+transfer,mercado,,Lucas Boyé,Mister,Dani,5.91883,4.0,82.0,48.0,,,,,,,2026-02-02,ab68dc4657dc2f13d4311b078973f00e
 marks,start_mercado,,,,,,,,,,,,,,,2026-02-02,
-transfer,mercado,,Marcos Alonso,Mister,Chamacónicos,12.315,2,78,5,,,,,,,2026-02-02,8f917671da5ca56b83220fda015ee098
-transfer,mercado,,Lucas Boyé,Mister,Dani,5.91883,4,82,48,,,,,,,2026-02-02,ab68dc4657dc2f13d4311b078973f00e
-marks,start_mercado,,,,,,,,,,,,,,,2026-02-02,
-transfer,mercado,,Koke,Maldinillo 💥,Mister,12.36872,3,109,2,,,,,,,2026-02-02,af63666698bf984871f597beff6ce8e2
+transfer,mercado,,Koke,Maldinillo 💥,Mister,12.36872,3.0,109.0,2.0,,,,,,,2026-02-02,af63666698bf984871f597beff6ce8e2
 marks,start_mercado,,,,,,,,,,,,,,,2026-02-02,
 transfer,mercado,,Lucas Beltrán,Mister,Libre,1.006,3.0,52.0,19.0,,,,,,,2026-02-01,495fbc4337bdbd4cde0604cde8d6ba48
 marks,start_mercado,,,,,,,,,,,,,,,2026-02-01,
