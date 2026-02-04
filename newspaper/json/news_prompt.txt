@@ -25,54 +25,54 @@ REGLAS:
 - Cada bloque de DATOS_EVENTOS debe tener su respectivo TITULO, SUBTITULO, FRASE1, FRASE2
 
 ===DATOS_CLASIFICACION===
-Clasificación General:\n1. Dani - 943 pts\n2. Maldinillo 💥 - 863 pts\n3. Chamacónicos - 858 pts\n4. Los marinero - 838 pts\n5. Jotabetrbb - 797 pts\n6. De la Guettir FC - 775 pts\n7. MuchaSalsa - 661 pts\n8. Libre - 593 pts\n9. Juanba - 560 pts\n\nClasificación de la Jornada:\n1. Dani - 60 pts\n2. Maldinillo 💥 - 57 pts\n3. Libre - 44 pts\n4. Jotabetrbb - 42 pts\n5. Chamacónicos - 41 pts\n6. Los marinero - 33 pts\n7. MuchaSalsa - 27 pts\n8. De la Guettir FC - 24 pts\n9. Juanba - 21 pts\n
+Clasificación General:\n1. Dani - 999 pts\n2. Maldinillo 💥 - 921 pts\n3. Chamacónicos - 900 pts\n4. Los marinero - 875 pts\n5. Jotabetrbb - 833 pts\n6. De la Guettir FC - 817 pts\n7. MuchaSalsa - 688 pts\n8. Libre - 633 pts\n9. Juanba - 575 pts\n\nClasificación de la Jornada:\n1. Maldinillo 💥 - 58 pts\n2. Dani - 56 pts\n3. Chamacónicos - 42 pts\n4. De la Guettir FC - 42 pts\n5. Libre - 40 pts\n6. Los marinero - 37 pts\n7. Jotabetrbb - 36 pts\n8. MuchaSalsa - 27 pts\n9. Juanba - 15 pts\n
 
 ===DATOS_EVENTOS===
 
 ===BLOQUE_1===
-JUGADOR: Álvaro Carreras
-MANAGER: Libre
+JUGADOR: Marcus Rashford
+MANAGER: Maldinillo 💥
 EVENTO: Fichaje destacado
-CONTEXTO: Compra por 12.82 millones. El manager esta en la posicion general 8.00  y en la posicion de la jornada 3.00.
+CONTEXTO: Compra por 14.80 millones. El manager esta en la posicion general 2.00  y en la posicion de la jornada 1.00.
 
 ===BLOQUE_2===
-JUGADOR: Georges Mikautadze
-MANAGER: Libre
+JUGADOR: Marcos Alonso
+MANAGER: Chamacónicos
 EVENTO: Fichaje destacado
-CONTEXTO: Compra por 11.62 millones. El manager esta en la posicion general 8.00  y en la posicion de la jornada 3.00.
+CONTEXTO: Compra por 12.31 millones. El manager esta en la posicion general 3.00  y en la posicion de la jornada 3.00.
 
 ===BLOQUE_3===
-JUGADOR: Raúl Asencio
-MANAGER: Jotabetrbb
+JUGADOR: Giovani Lo Celso
+MANAGER: Maldinillo 💥
 EVENTO: Fichaje destacado
-CONTEXTO: Compra por 10.70 millones. El manager esta en la posicion general 5.00  y en la posicion de la jornada 4.00.
+CONTEXTO: Compra por 12.09 millones. El manager esta en la posicion general 2.00  y en la posicion de la jornada 1.00.
 
 ===BLOQUE_4===
-JUGADOR: Aurélien Tchouaméni
-MANAGER: Libre
+JUGADOR: Koke
+MANAGER: Maldinillo 💥
 EVENTO: Venta récord
-CONTEXTO: Venta por 15.78 millones. El manager esta en la posicion general 8.00  y en la posicion de la jornada 3.00.
+CONTEXTO: Venta por 12.37 millones. El manager esta en la posicion general 2.00  y en la posicion de la jornada 1.00.
 
 ===BLOQUE_5===
-JUGADOR: M. Oyarzabal
-MANAGER: Libre
+JUGADOR: G. Moreno
+MANAGER: Maldinillo 💥
 EVENTO: MVP de la jornada
-CONTEXTO: 17 puntos en la jornada. El manager esta en la posicion general 8.00  y en la posicion de la jornada 3.00.
+CONTEXTO: 15 puntos en la jornada. El manager esta en la posicion general 2.00  y en la posicion de la jornada 1.00.
 
 ===BLOQUE_6===
-JUGADOR: K. Mbappé
-MANAGER: Chamacónicos
-EVENTO: MVP de la jornada
-CONTEXTO: 14 puntos en la jornada. El manager esta en la posicion general 3.00  y en la posicion de la jornada 5.00.
-
-===BLOQUE_7===
 JUGADOR: L. Yamal
 MANAGER: Dani
 EVENTO: MVP de la jornada
-CONTEXTO: 13 puntos en la jornada. El manager esta en la posicion general 1.00  y en la posicion de la jornada 1.00.
+CONTEXTO: 14 puntos en la jornada. El manager esta en la posicion general 1.00  y en la posicion de la jornada 2.00.
+
+===BLOQUE_7===
+JUGADOR: I. Ruiz De Galarreta
+MANAGER: MuchaSalsa
+EVENTO: MVP de la jornada
+CONTEXTO: 12 puntos en la jornada. El manager esta en la posicion general 7.00  y en la posicion de la jornada 8.00.
 
 ===BLOQUE_8===
-JUGADOR: E. Eyong
-MANAGER: Chamacónicos
+JUGADOR: F. Mastantuono
+MANAGER: Jotabetrbb
 EVENTO: Peor actuación de la jornada
-CONTEXTO: Solo -1 puntos. El manager esta en la posicion general 3.00  y en la posicion de la jornada 5.00.
+CONTEXTO: Solo -1 puntos. El manager esta en la posicion general 5.00  y en la posicion de la jornada 7.00.
