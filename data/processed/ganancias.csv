@@ -1,10 +1,16 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
+marks,start_mercado,,,,,,,,,,,,,,,2026-02-05,
+transfer,mercado,,Adrián de la Fuente,Mister,Maldinillo 💥,2.37632,2,73,12,,,,,,,2026-02-05,9ed6a25e02e7b89874722a753030d289
+transfer,mercado,,Aitor Paredes,Mister,Maldinillo 💥,2.129,2,61,1,,,,,,,2026-02-05,5b92c3ce13dc346644af6c1916bbb7e7
+transfer,mercado,,Pablo Maffeo,Mister,Maldinillo 💥,2.07202,2,60,408,,,,,,,2026-02-05,6798468b7a3b8a485641b068c2d50d0c
+marks,start_mercado,,,,,,,,,,,,,,,2026-02-05,
+transfer,mercado,,Joan Garcia,Dani,Mister,16.50369,1,106,3,,,,,,,2026-02-05,ce473933900af67de6000412a643fb5a
+marks,start_mercado,,,,,,,,,,,,,,,2026-02-05,
+transfer,mercado,,Giovani Lo Celso,Maldinillo 💥,Mister,12.19623,3.0,87.0,4.0,,,,,,,2026-02-04,70e389008f5cd113e54ac3c9d3128389
 marks,start_mercado,,,,,,,,,,,,,,,2026-02-04,
-transfer,mercado,,Giovani Lo Celso,Maldinillo 💥,Mister,12.19623,3,87,4,,,,,,,2026-02-04,70e389008f5cd113e54ac3c9d3128389
-marks,start_mercado,,,,,,,,,,,,,,,2026-02-04,
-transfer,mercado,,Jon Moncayola,Mister,Libre,6.1661,3,86,50,,,,,,,2026-02-04,4decb72353f1e6015929bf360e948c04
-transfer,mercado,,Kike Salas,Mister,Jotabetrbb,1.838,2,42,17,,,,,,,2026-02-04,3e6e2f3304f7165a50e24a44bab4524c
-transfer,Puja,,Kike Salas,Mister,Libre,1.74285,2,42,17,,,,,,,2026-02-04,283ed72e8e20dc43a8e37d75fdd0c121
+transfer,mercado,,Jon Moncayola,Mister,Libre,6.1661,3.0,86.0,50.0,,,,,,,2026-02-04,4decb72353f1e6015929bf360e948c04
+transfer,mercado,,Kike Salas,Mister,Jotabetrbb,1.838,2.0,42.0,17.0,,,,,,,2026-02-04,3e6e2f3304f7165a50e24a44bab4524c
+transfer,Puja,,Kike Salas,Mister,Libre,1.74285,2.0,42.0,17.0,,,,,,,2026-02-04,283ed72e8e20dc43a8e37d75fdd0c121
 bonificacion,quiniela,,,,,,,,,Chamacónicos,0.6,1º,,,,2026-02-04,
 bonificacion,quiniela,,,,,,,,,Los marinero,0.6,2º,,,,2026-02-04,
 bonificacion,quiniela,,,,,,,,,Dani,0.5,3º,,,,2026-02-04,
