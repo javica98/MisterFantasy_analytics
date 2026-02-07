@@ -1,11 +1,16 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
-marks,start_mercado,,,,,,,,,,,,,,,2026-02-06,
-transfer,mercado,,Hugo Sotelo,Mister,Libre,0.86302,3,55,5,,,,,,,2026-02-06,edb98ac596b5fe85ee741658c182c6c8
-transfer,mercado,,Alan Matturro,Mister,Libre,0.81503,2,32,12,,,,,,,2026-02-06,94b482d389e762046d46e0ca9d1c4fa7
-transfer,Puja,,Alan Matturro,Mister,Dani,0.81207,2,32,12,,,,,,,2026-02-06,9ffd034f7574333feee2813c2ac8a838
-transfer,mercado,,Neal Maupay,Mister,Jotabetrbb,4.586,4,8,17,,,,,,,2026-02-06,fdf08a1f3501afc7a8570d110e38af99
-transfer,mercado,,Robert Navarro,Mister,Dani,1.91118,3,73,1,,,,,,,2026-02-06,4ce3ac101fa1501b04b53eb91c9936a8
-transfer,Puja,,Robert Navarro,Mister,Libre,1.69205,3,73,1,,,,,,,2026-02-06,8a3d2d4516778e61f69c1185f71f023a
+marks,start_jornada,,,,,,,,,,,,,,23.0,2026-02-07,
+marks,start_mercado,,,,,,,,,,,,,,,2026-02-07,
+transfer,mercado,,Aitor Paredes,Maldinillo 💥,Mister,2.15635,2,61,1,,,,,,,2026-02-07,ad87998d30d14beb2caa78e21dfa22be
+marks,start_mercado,,,,,,,,,,,,,,,2026-02-07,
+transfer,mercado,,Aimar Oroz,Chamacónicos,Mister,7.786,3,62,50,,,,,,,2026-02-07,a647759139f02217055bc8e6e193e889
+marks,start_mercado,,,,,,,,,,,,,,,2026-02-07,
+transfer,mercado,,Hugo Sotelo,Mister,Libre,0.86302,3.0,55.0,5.0,,,,,,,2026-02-06,edb98ac596b5fe85ee741658c182c6c8
+transfer,mercado,,Alan Matturro,Mister,Libre,0.81503,2.0,32.0,12.0,,,,,,,2026-02-06,94b482d389e762046d46e0ca9d1c4fa7
+transfer,Puja,,Alan Matturro,Mister,Dani,0.81207,2.0,32.0,12.0,,,,,,,2026-02-06,9ffd034f7574333feee2813c2ac8a838
+transfer,mercado,,Neal Maupay,Mister,Jotabetrbb,4.586,4.0,8.0,17.0,,,,,,,2026-02-06,fdf08a1f3501afc7a8570d110e38af99
+transfer,mercado,,Robert Navarro,Mister,Dani,1.91118,3.0,73.0,1.0,,,,,,,2026-02-06,4ce3ac101fa1501b04b53eb91c9936a8
+transfer,Puja,,Robert Navarro,Mister,Libre,1.69205,3.0,73.0,1.0,,,,,,,2026-02-06,8a3d2d4516778e61f69c1185f71f023a
 marks,start_mercado,,,,,,,,,,,,,,,2026-02-06,
 transfer,mercado,,Adrián de la Fuente,Mister,Maldinillo 💥,2.37632,2.0,73.0,12.0,,,,,,,2026-02-05,9ed6a25e02e7b89874722a753030d289
 transfer,mercado,,Aitor Paredes,Mister,Maldinillo 💥,2.129,2.0,61.0,1.0,,,,,,,2026-02-05,5b92c3ce13dc346644af6c1916bbb7e7

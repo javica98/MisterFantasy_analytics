@@ -1,5 +1,8 @@
 fecha,id,type,subtype,equipo,ganancias,jugador,compra-venta,equipoLiga
-2026-02-06,0,marks,start_mercado,Mercado diario,0.0,,,
+2026-02-07,0,marks,start_jornada,23.0,0.0,,,
+2026-02-07,0,transfer,mercado,Maldinillo 💥,2.15635,Aitor Paredes,venta,1.0
+2026-02-07,0,transfer,mercado,Chamacónicos,7.786,Aimar Oroz,venta,50.0
+2026-02-07,0,marks,start_mercado,Mercado diario,0.0,,,
 2026-02-06,0,transfer,mercado,Libre,-0.86302,Hugo Sotelo,compra,5.0
 2026-02-06,0,transfer,mercado,Libre,-0.81503,Alan Matturro,compra,12.0
 2026-02-06,0,transfer,Puja,Dani,0.0,Alan Matturro,compra,12.0
