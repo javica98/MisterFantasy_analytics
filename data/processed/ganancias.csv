@@ -1,9 +1,19 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
-marks,start_jornada,,,,,,,,,,,,,,23.0,2026-02-07,
+marks,start_mercado,,,,,,,,,,,,,,,2026-02-08,
+transfer,mercado,,Coba da Costa,Maldinillo 💥,Mister,0.152,3,31,0,,,,,,,2026-02-08,cfbff086849d3500ad0fc7b85ded0f9a
+marks,start_mercado,,,,,,,,,,,,,,,2026-02-08,
+transfer,mercado,,Yáser Asprilla,Maldinillo 💥,Mister,0.26624,3,37,0,,,,,,,2026-02-08,2ded293cd39ee3554297af5692623be4
+marks,start_mercado,,,,,,,,,,,,,,,2026-02-08,
+transfer,mercado,,Ademola Lookman,Mister,Jotabetrbb,16.793,4,0,2,,,,,,,2026-02-08,ac7a1534c4c6f77406aba2e10dd0a396
+transfer,Puja,,Ademola Lookman,Mister,Dani,10.31129,4,0,2,,,,,,,2026-02-08,059d1a5d5618999a08fc01d8ea1167b1
+transfer,Puja,,Ademola Lookman,Mister,Libre,8.29951,4,0,2,,,,,,,2026-02-08,77eae09da134d0d4df454847993f10ef
+marks,start_mercado,,,,,,,,,,,,,,,2026-02-08,
+transfer,mercado,,Federico Viñas,Dani,Mister,1.31172,4,56,1370,,,,,,,2026-02-08,4e177f79fec771b74bd40bdd702e6366
+marks,start_jornada,,,,,,,,,,,,,,23.0,2026-02-08,
+marks,start_mercado,,,,,,,,,,,,,,,2026-02-08,
+transfer,mercado,,Aitor Paredes,Maldinillo 💥,Mister,2.15635,2.0,61.0,1.0,,,,,,,2026-02-07,ad87998d30d14beb2caa78e21dfa22be
 marks,start_mercado,,,,,,,,,,,,,,,2026-02-07,
-transfer,mercado,,Aitor Paredes,Maldinillo 💥,Mister,2.15635,2,61,1,,,,,,,2026-02-07,ad87998d30d14beb2caa78e21dfa22be
-marks,start_mercado,,,,,,,,,,,,,,,2026-02-07,
-transfer,mercado,,Aimar Oroz,Chamacónicos,Mister,7.786,3,62,50,,,,,,,2026-02-07,a647759139f02217055bc8e6e193e889
+transfer,mercado,,Aimar Oroz,Chamacónicos,Mister,7.786,3.0,62.0,50.0,,,,,,,2026-02-07,a647759139f02217055bc8e6e193e889
 marks,start_mercado,,,,,,,,,,,,,,,2026-02-07,
 transfer,mercado,,Hugo Sotelo,Mister,Libre,0.86302,3.0,55.0,5.0,,,,,,,2026-02-06,edb98ac596b5fe85ee741658c182c6c8
 transfer,mercado,,Alan Matturro,Mister,Libre,0.81503,2.0,32.0,12.0,,,,,,,2026-02-06,94b482d389e762046d46e0ca9d1c4fa7
