@@ -1,14 +1,30 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
+marks,start_mercado,,,,,,,,,,,,,,,2026-02-09,
+transfer,clausula,,Dani Olmo,De la Guettir FC,Jotabetrbb,30.21529,3,120,3,,,,,,,2026-02-09,ff1acbdc77646e9bf93a7869388182b0
+marks,start_mercado,,,,,,,,,,,,,,,2026-02-09,
+transfer,mercado,,Rodrygo,Jotabetrbb,Mister,10.77544,4,53,15,,,,,,,2026-02-09,37896c1e950d8b700877c23d89ef03e2
+marks,start_mercado,,,,,,,,,,,,,,,2026-02-09,
+transfer,mercado,,Umar Sadiq,Jotabetrbb,Mister,1.09197,4,19,19,,,,,,,2026-02-09,d534b0929bcd5850421d10b2a0426adb
+marks,start_mercado,,,,,,,,,,,,,,,2026-02-09,
+transfer,mercado,,José Luis Gayà,Mister,Jotabetrbb,2.669,2,54,19,,,,,,,2026-02-09,71a359e80cde404b584ac1535531d238
+transfer,mercado,,Peque Fernández,Mister,Chamacónicos,1.901,3,61,17,,,,,,,2026-02-09,b61842bb761ae653db19af70e8886816
+transfer,mercado,,Azzedine Ounahi,Mister,Maldinillo 💥,9.23451,3,74,222,,,,,,,2026-02-09,735ae7d8e932d3a3ff6bf3aa05c0dd64
+marks,start_mercado,,,,,,,,,,,,,,,2026-02-09,
+transfer,mercado,,Viktor Tsygankov,Maldinillo 💥,Mister,10.7184,3,79,222,,,,,,,2026-02-09,9d431bab9ac1b9a6bfba2382fd85f7cc
+marks,start_mercado,,,,,,,,,,,,,,,2026-02-09,
+transfer,mercado,,Hugo Sotelo,Libre,Mister,0.82425,3,55,5,,,,,,,2026-02-09,b2dedd5cfc5739e355a3ee0d57ffbc8a
+marks,start_mercado,,,,,,,,,,,,,,,2026-02-09,
+transfer,mercado,,Jon Moncayola,Libre,Mister,6.087,3,86,50,,,,,,,2026-02-09,a09ecc2aab120a57322f708d61ac608a
+marks,start_mercado,,,,,,,,,,,,,,,2026-02-09,
+transfer,mercado,,Coba da Costa,Maldinillo 💥,Mister,0.152,3.0,31.0,0.0,,,,,,,2026-02-08,cfbff086849d3500ad0fc7b85ded0f9a
 marks,start_mercado,,,,,,,,,,,,,,,2026-02-08,
-transfer,mercado,,Coba da Costa,Maldinillo 💥,Mister,0.152,3,31,0,,,,,,,2026-02-08,cfbff086849d3500ad0fc7b85ded0f9a
+transfer,mercado,,Yáser Asprilla,Maldinillo 💥,Mister,0.26624,3.0,37.0,0.0,,,,,,,2026-02-08,2ded293cd39ee3554297af5692623be4
 marks,start_mercado,,,,,,,,,,,,,,,2026-02-08,
-transfer,mercado,,Yáser Asprilla,Maldinillo 💥,Mister,0.26624,3,37,0,,,,,,,2026-02-08,2ded293cd39ee3554297af5692623be4
+transfer,mercado,,Ademola Lookman,Mister,Jotabetrbb,16.793,4.0,0.0,2.0,,,,,,,2026-02-08,ac7a1534c4c6f77406aba2e10dd0a396
+transfer,Puja,,Ademola Lookman,Mister,Dani,10.31129,4.0,0.0,2.0,,,,,,,2026-02-08,059d1a5d5618999a08fc01d8ea1167b1
+transfer,Puja,,Ademola Lookman,Mister,Libre,8.29951,4.0,0.0,2.0,,,,,,,2026-02-08,77eae09da134d0d4df454847993f10ef
 marks,start_mercado,,,,,,,,,,,,,,,2026-02-08,
-transfer,mercado,,Ademola Lookman,Mister,Jotabetrbb,16.793,4,0,2,,,,,,,2026-02-08,ac7a1534c4c6f77406aba2e10dd0a396
-transfer,Puja,,Ademola Lookman,Mister,Dani,10.31129,4,0,2,,,,,,,2026-02-08,059d1a5d5618999a08fc01d8ea1167b1
-transfer,Puja,,Ademola Lookman,Mister,Libre,8.29951,4,0,2,,,,,,,2026-02-08,77eae09da134d0d4df454847993f10ef
-marks,start_mercado,,,,,,,,,,,,,,,2026-02-08,
-transfer,mercado,,Federico Viñas,Dani,Mister,1.31172,4,56,1370,,,,,,,2026-02-08,4e177f79fec771b74bd40bdd702e6366
+transfer,mercado,,Federico Viñas,Dani,Mister,1.31172,4.0,56.0,1370.0,,,,,,,2026-02-08,4e177f79fec771b74bd40bdd702e6366
 marks,start_jornada,,,,,,,,,,,,,,23.0,2026-02-08,
 marks,start_mercado,,,,,,,,,,,,,,,2026-02-08,
 transfer,mercado,,Aitor Paredes,Maldinillo 💥,Mister,2.15635,2.0,61.0,1.0,,,,,,,2026-02-07,ad87998d30d14beb2caa78e21dfa22be
