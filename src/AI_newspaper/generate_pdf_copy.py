@@ -122,7 +122,7 @@ def download_player_image(tipo,player, team, save_dir="player_images"):
 
             image = Image.open(BytesIO(resp.content)).convert("RGB")
             save_path = os.path.join(save_dir, f"Portada_"+tipo+".jpg")
-            #image.save(save_path, "JPEG", quality=95)
+            image.save(save_path, "JPEG", quality=95)
             print(f"Imagen descargada en: {save_path}")
             return save_path
 

@@ -5,9 +5,9 @@
       "titulo": "CLASIFICACION",
       "subtitulo": "",
       "texto": [
-        " ¡Dani se aferra al trono por los pelos, pero Maldinillo 💥 ha desatado un vendaval que le pisa los talones con una jornada de ensueño!",
-        " Chamacónicos aguanta el tipo en el podio, mientras que por abajo, Juanba se hunde sin remedio, ¡necesita un milagro para no ser el farolillo rojo definitivo!",
-        " La jornada ha sido un auténtico terremoto, con Maldinillo 💥 arrasando en el primer puesto semanal y Dani aguantando el envite, ¡la batalla por la gloria está al rojo vivo!",
+        " ¡Dani sigue siendo el TIRANO de la liga, con 1066 puntos que lo colocan en la cima, inalcanzable para los mortales! ¿Alguien tiene el valor de desafiar a este COLOSO?",
+        " ¡Libre ha despertado de su letargo con una jornada ESPECTACULAR, escalando al segundo puesto de la semana con 65 puntos! ¿Es este el inicio de una REVOLUCIÓN o un simple espejismo?",
+        " ¡Juanba se arrastra por el fango de la clasificación de la jornada, con unos RIDÍCULOS 20 puntos que lo hunden en el fondo de la tabla! ¡Un DESASTRE absoluto!",
         ""
       ]
     },
@@ -16,120 +16,134 @@
       "titulo": "RUMORES",
       "subtitulo": "",
       "texto": [
-        " ¡Se comenta en los pasillos que Maldinillo 💥 ha hipotecado hasta el alma con sus fichajes estratosféricos, buscando el asalto al trono cueste lo que cueste!\n\n"
+        " ¡Fuentes cercanas a la liga susurran que Jotabetrbb está a punto de hipotecar su alma para seguir financiando su frenesí de fichajes! ¿Será el 'todo o nada' del manager para ascender o su ruina definitiva?\n\n"
       ]
     },
     {
       "tipo": "Fichaje destacado",
-      "jugador": "Marcus Rashford",
-      "manager": "Maldinillo 💥",
+      "jugador": "Dani Olmo",
+      "manager": "Jotabetrbb",
       "puntos": null,
-      "dinero": 14.79861,
-      "titulo": "¡BOMBAZO EN EL MERCADO!",
-      "subtitulo": "Maldinillo 💥 se lanza a por Rashford en un fichaje de locura",
+      "dinero": 30.21529,
+      "titulo": "¡Jotabetrbb ROMPE EL MERCADO!",
+      "subtitulo": "Dani Olmo, la nueva joya de la corona que vacía las arcas.",
       "texto": [
-        "El manager del momento, Maldinillo 💥, no se anda con chiquitas y suelta 14.80 millones por Marcus Rashford, ¡una apuesta arriesgada que podría catapultarle al liderato o hundirle en la miseria!",
-        "Con esta inversión estratosférica, Maldinillo 💥 envía un mensaje claro a Dani: ¡viene a por todas y no le temblará el pulso para destronarle!"
+        "El osado manager Jotabetrbb, anclado en la quinta posición, ha desatado la locura con el fichaje bomba de Dani Olmo por la escalofriante cifra de 30.22 millones.",
+        "¿Es esta una jugada maestra o el inicio de una quiebra financiera para un equipo que necesita desesperadamente un empujón?"
       ],
       "equipo": "FC Barcelona"
     },
     {
       "tipo": "Fichaje destacado",
-      "jugador": "Marcos Alonso",
-      "manager": "Chamacónicos",
+      "jugador": "Ademola Lookman",
+      "manager": "Jotabetrbb",
       "puntos": null,
-      "dinero": 12.315,
-      "titulo": "¡MOVIMIENTO ESTRATÉGICO!",
-      "subtitulo": "Chamacónicos refuerza su defensa con Marcos Alonso",
+      "dinero": 16.793,
+      "titulo": "¡DOBLE GOLPE DE JOTABETRBB!",
+      "subtitulo": "Lookman se une a la fiesta del despilfarro.",
       "texto": [
-        "Chamacónicos, aferrado al tercer puesto, ha soltado 12.31 millones por Marcos Alonso, buscando la solidez defensiva que le permita asaltar la segunda posición.",
-        "¿Será este el fichaje que blinde su plantilla y le dé el empuje necesario para competir con los titanes de arriba? ¡La liga está expectante!"
+        "No contento con un solo bombazo, Jotabetrbb vuelve a abrir la chequera y se hace con Ademola Lookman por 16.79 millones, ¡demostrando que no le teme a las deudas!",
+        "La afición se pregunta: ¿Es esto una estrategia brillante o simplemente un manager desesperado intentando comprar la gloria?"
       ],
-      "equipo": "RC Celta de Vigo"
+      "equipo": "Atlético de Madrid"
     },
     {
       "tipo": "Fichaje destacado",
-      "jugador": "Giovani Lo Celso",
+      "jugador": "Azzedine Ounahi",
       "manager": "Maldinillo 💥",
       "puntos": null,
-      "dinero": 12.0877,
-      "titulo": "¡OTRA INVERSIÓN MILLONARIA!",
-      "subtitulo": "Maldinillo 💥 no tiene límites y ficha a Lo Celso",
+      "dinero": 9.23451,
+      "titulo": "¡Maldinillo REFUERZA LA MEDULAR!",
+      "subtitulo": "Ounahi llega para apuntalar al subcampeón.",
       "texto": [
-        "¡La vorágine de Maldinillo 💥 continúa! Tras Rashford, ahora desembolsa 12.09 millones por Giovani Lo Celso, consolidando su ataque y dejando a la liga boquiabierta.",
-        "Con la chequera abierta y la ambición desatada, Maldinillo 💥 está construyendo un auténtico Dream Team, ¡¿podrá Dani aguantar este ritmo infernal?!"
+        "Maldinillo 💥, ese depredador que acecha desde la segunda posición, ha sumado a Azzedine Ounahi por 9.23 millones, ¡un movimiento inteligente para mantener la presión sobre el líder!",
+        "Mientras Dani tiembla en la cima, Maldinillo se rearma en silencio, ¿estamos ante el preludio de un asalto al liderato?"
       ],
-      "equipo": "Real Betis Balompié"
+      "equipo": "Girona FC"
     },
     {
       "tipo": "Venta récord",
-      "jugador": "Koke",
-      "manager": "Maldinillo 💥",
+      "jugador": "Julián Álvarez",
+      "manager": "Jotabetrbb",
       "puntos": null,
-      "dinero": 12.36872,
-      "titulo": "¡ADIÓS A UNA LEYENDA!",
-      "subtitulo": "Maldinillo 💥 sacrifica a Koke en una venta millonaria",
+      "dinero": 18.94053,
+      "titulo": "¡Jotabetrbb HACE CAJA!",
+      "subtitulo": "Julián Álvarez, la 'Araña' que se va por un dineral.",
       "texto": [
-        "En un movimiento que ha dejado a todos perplejos, Maldinillo 💥 ha vendido a Koke por 12.37 millones, una decisión arriesgada tras sus recientes y costosos fichajes.",
-        "¿Es una genialidad financiera o un error fatal? ¡Solo el tiempo dirá si Maldinillo 💥 está saneando sus cuentas o simplemente deshaciéndose de lo que ya no le sirve para ir a por más!"
+        "En una jugada maestra para equilibrar las cuentas (o quizás para seguir comprando), Jotabetrbb ha vendido a Julián Álvarez por 18.94 millones.",
+        "¿Es esta una venta dolorosa o un sacrificio necesario para financiar su ambiciosa (y arriesgada) estrategia de fichajes?"
       ],
       "equipo": "Atlético de Madrid"
     },
     {
       "tipo": "MVP de la jornada",
-      "jugador": "G. Moreno",
-      "manager": "Maldinillo 💥",
-      "puntos": 15,
+      "jugador": "A. Moleiro",
+      "manager": "Dani",
+      "puntos": 14,
       "dinero": null,
-      "titulo": "¡EL REY DE LA JORNADA!",
-      "subtitulo": "G. Moreno, la joya de Maldinillo 💥, se corona MVP",
+      "titulo": "¡MOLEIRO, EL HÉROE SILENCIOSO DE DANI!",
+      "subtitulo": "El líder no solo gana, ¡también tiene MVPs!",
       "texto": [
-        "¡No hay quien pare a Maldinillo 💥! Su jugador, G. Moreno, ha destrozado la jornada con 15 puntos, consolidando el dominio del manager en la semana y levantando a la afición de sus asientos.",
-        "Con fichajes estrella y un MVP en sus filas, Maldinillo 💥 está demostrando que su estrategia es la del éxito más rotundo, ¡los demás tiemblan ante su poderío!"
+        "A. Moleiro, bajo la batuta del intocable Dani, ha sido el MVP de la jornada con 14 puntos, ¡demostrando que el líder tiene un ojo clínico para el talento!",
+        "Mientras el resto se desgañita, Dani sigue sumando con sus jugadores estrella, ¿hay alguien que pueda frenar esta hegemonía?"
       ],
       "equipo": "Villarreal CF"
     },
     {
       "tipo": "MVP de la jornada",
-      "jugador": "L. Yamal",
-      "manager": "Dani",
-      "puntos": 14,
+      "jugador": "K. Salas",
+      "manager": "Jotabetrbb",
+      "puntos": 13,
       "dinero": null,
-      "titulo": "¡EL LÍDER NO SE DUERME!",
-      "subtitulo": "L. Yamal mantiene a Dani en la pelea con otra actuación estelar",
+      "titulo": "¡SALAS DA LA CARA POR JOTABETRBB!",
+      "subtitulo": "Un destello de esperanza en la inversión.",
       "texto": [
-        "Aunque Maldinillo 💥 arrasó, el líder Dani no se queda atrás gracias a los 14 puntos de su prodigio, L. Yamal, ¡demostrando por qué es el número uno y no piensa ceder su puesto!",
-        "Dani sabe que cada punto cuenta y L. Yamal es su bastión. La lucha por el trono está más encendida que nunca, ¡cada jornada es una auténtica final!"
+        "K. Salas ha brillado con 13 puntos, siendo el MVP de la jornada para el siempre polémico Jotabetrbb, ¡un respiro en medio de su frenesí de fichajes!",
+        "¿Será Salas el salvador que justifique la arriesgada apuesta de un manager que vive al límite?"
       ],
-      "equipo": "FC Barcelona"
+      "equipo": "Sevilla FC"
     },
     {
       "tipo": "MVP de la jornada",
-      "jugador": "I. Ruiz De Galarreta",
-      "manager": "MuchaSalsa",
-      "puntos": 12,
+      "jugador": "G. Mikautadze",
+      "manager": "Libre",
+      "puntos": 13,
       "dinero": null,
-      "titulo": "¡SORPRESA INESPERADA!",
-      "subtitulo": "MuchaSalsa encuentra un diamante en Galarreta",
+      "titulo": "¡MIKAUTADZE, LA ESTRELLA INESPERADA DE LIBRE!",
+      "subtitulo": "El renacer de un equipo que nadie veía venir.",
       "texto": [
-        "En medio de la lucha de titanes, MuchaSalsa, desde la séptima posición, celebra los 12 puntos de I. Ruiz De Galarreta, un destello de esperanza en su discreta jornada.",
-        "¿Será este el inicio de una remontada para MuchaSalsa o solo un espejismo en la oscuridad? ¡Necesitará muchos más para salir del pozo y competir de verdad!"
+        "G. Mikautadze ha sido el MVP con 13 puntos para Libre, catapultando a su equipo a la segunda posición de la jornada, ¡una gesta que nadie esperaba!",
+        "¿Estamos presenciando el surgimiento de un nuevo contendiente o es solo un espejismo en el desierto de la clasificación?"
       ],
-      "equipo": "Athletic Club"
+      "equipo": "Villarreal CF"
     },
     {
       "tipo": "Peor actuación de la jornada",
-      "jugador": "F. Mastantuono",
-      "manager": "Jotabetrbb",
+      "jugador": "R. Fernández",
+      "manager": "Los marinero",
       "puntos": -1,
       "dinero": null,
-      "titulo": "¡DESASTRE TOTAL!",
-      "subtitulo": "F. Mastantuono sentencia la jornada de Jotabetrbb",
+      "titulo": "¡FERNÁNDEZ, LA PESADILLA DE LOS MARINERO!",
+      "subtitulo": "Una actuación para olvidar y un lastre para el equipo.",
       "texto": [
-        "¡Catástrofe en el equipo de Jotabetrbb! F. Mastantuono ha firmado la peor actuación de la jornada con -1 puntos, un golpe durísimo para sus aspiraciones y un mazazo para su afición.",
-        "Mientras algunos celebran, Jotabetrbb lamenta esta pírrica actuación que le hunde aún más en la clasificación. ¿Podrá levantarse de este varapalo o se quedará estancado en el fango?"
+        "R. Fernández ha perpetrado la peor actuación de la jornada para Los marinero, ¡con un vergonzoso -1 punto!",
+        "¿Es este un error aislado o el síntoma de que Los marinero están perdiendo el rumbo en aguas turbulentas?"
       ],
-      "equipo": "Real Madrid"
+      "equipo": "RCD Espanyol"
+    },
+    {
+      "tipo": "Héroe bajo palos",
+      "jugador": "O. Vlachodimos",
+      "manager": "Los marinero",
+      "puntos": 9,
+      "dinero": null,
+      "titulo": "¡VLACHODIMOS, EL SALVADOR DE LOS MARINERO!",
+      "subtitulo": "Un muro infranqueable que evita el desastre.",
+      "texto": [
+        "Cuando todo parecía perdido, O. Vlachodimos se ha erigido en el héroe de Los marinero, ¡parando un penalti decisivo y salvando los muebles!",
+        "A pesar de la debacle de Fernández, Vlachodimos demuestra que Los marinero tienen un ángel de la guarda bajo los tres palos."
+      ],
+      "equipo": "Sevilla FC"
     }
   ]
 }

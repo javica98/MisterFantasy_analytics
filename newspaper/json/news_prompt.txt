@@ -25,54 +25,60 @@ REGLAS:
 - Cada bloque de DATOS_EVENTOS debe tener su respectivo TITULO, SUBTITULO, FRASE1, FRASE2
 
 ===DATOS_CLASIFICACION===
-Clasificación General:\n1. Dani - 999 pts\n2. Maldinillo 💥 - 921 pts\n3. Chamacónicos - 900 pts\n4. Los marinero - 875 pts\n5. Jotabetrbb - 833 pts\n6. De la Guettir FC - 817 pts\n7. MuchaSalsa - 688 pts\n8. Libre - 633 pts\n9. Juanba - 575 pts\n\nClasificación de la Jornada:\n1. Maldinillo 💥 - 58 pts\n2. Dani - 56 pts\n3. Chamacónicos - 42 pts\n4. De la Guettir FC - 42 pts\n5. Libre - 40 pts\n6. Los marinero - 37 pts\n7. Jotabetrbb - 36 pts\n8. MuchaSalsa - 27 pts\n9. Juanba - 15 pts\n
+Clasificación General:\n1. Dani - 1066 pts\n2. Maldinillo 💥 - 966 pts\n3. Chamacónicos - 935 pts\n4. Los marinero - 919 pts\n5. Jotabetrbb - 870 pts\n6. De la Guettir FC - 848 pts\n7. MuchaSalsa - 713 pts\n8. Libre - 698 pts\n9. Juanba - 595 pts\n\nClasificación de la Jornada:\n1. Dani - 67 pts\n2. Libre - 65 pts\n3. Maldinillo 💥 - 45 pts\n4. Los marinero - 44 pts\n5. Jotabetrbb - 37 pts\n6. Chamacónicos - 35 pts\n7. De la Guettir FC - 31 pts\n8. MuchaSalsa - 25 pts\n9. Juanba - 20 pts\n
 
 ===DATOS_EVENTOS===
 
 ===BLOQUE_1===
-JUGADOR: Marcus Rashford
-MANAGER: Maldinillo 💥
+JUGADOR: Dani Olmo
+MANAGER: Jotabetrbb
 EVENTO: Fichaje destacado
-CONTEXTO: Compra por 14.80 millones. El manager esta en la posicion general 2.00  y en la posicion de la jornada 1.00.
+CONTEXTO: Compra por 30.22 millones. El manager esta en la posicion general 5.00  y en la posicion de la jornada 5.00.
 
 ===BLOQUE_2===
-JUGADOR: Marcos Alonso
-MANAGER: Chamacónicos
+JUGADOR: Ademola Lookman
+MANAGER: Jotabetrbb
 EVENTO: Fichaje destacado
-CONTEXTO: Compra por 12.31 millones. El manager esta en la posicion general 3.00  y en la posicion de la jornada 3.00.
+CONTEXTO: Compra por 16.79 millones. El manager esta en la posicion general 5.00  y en la posicion de la jornada 5.00.
 
 ===BLOQUE_3===
-JUGADOR: Giovani Lo Celso
+JUGADOR: Azzedine Ounahi
 MANAGER: Maldinillo 💥
 EVENTO: Fichaje destacado
-CONTEXTO: Compra por 12.09 millones. El manager esta en la posicion general 2.00  y en la posicion de la jornada 1.00.
+CONTEXTO: Compra por 9.23 millones. El manager esta en la posicion general 2.00  y en la posicion de la jornada 3.00.
 
 ===BLOQUE_4===
-JUGADOR: Koke
-MANAGER: Maldinillo 💥
+JUGADOR: Julián Álvarez
+MANAGER: Jotabetrbb
 EVENTO: Venta récord
-CONTEXTO: Venta por 12.37 millones. El manager esta en la posicion general 2.00  y en la posicion de la jornada 1.00.
+CONTEXTO: Venta por 18.94 millones. El manager esta en la posicion general 5.00  y en la posicion de la jornada 5.00.
 
 ===BLOQUE_5===
-JUGADOR: G. Moreno
-MANAGER: Maldinillo 💥
-EVENTO: MVP de la jornada
-CONTEXTO: 15 puntos en la jornada. El manager esta en la posicion general 2.00  y en la posicion de la jornada 1.00.
-
-===BLOQUE_6===
-JUGADOR: L. Yamal
+JUGADOR: A. Moleiro
 MANAGER: Dani
 EVENTO: MVP de la jornada
-CONTEXTO: 14 puntos en la jornada. El manager esta en la posicion general 1.00  y en la posicion de la jornada 2.00.
+CONTEXTO: 14 puntos en la jornada. El manager esta en la posicion general 1.00  y en la posicion de la jornada 1.00.
+
+===BLOQUE_6===
+JUGADOR: K. Salas
+MANAGER: Jotabetrbb
+EVENTO: MVP de la jornada
+CONTEXTO: 13 puntos en la jornada. El manager esta en la posicion general 5.00  y en la posicion de la jornada 5.00.
 
 ===BLOQUE_7===
-JUGADOR: I. Ruiz De Galarreta
-MANAGER: MuchaSalsa
+JUGADOR: G. Mikautadze
+MANAGER: Libre
 EVENTO: MVP de la jornada
-CONTEXTO: 12 puntos en la jornada. El manager esta en la posicion general 7.00  y en la posicion de la jornada 8.00.
+CONTEXTO: 13 puntos en la jornada. El manager esta en la posicion general 8.00  y en la posicion de la jornada 2.00.
 
 ===BLOQUE_8===
-JUGADOR: F. Mastantuono
-MANAGER: Jotabetrbb
+JUGADOR: R. Fernández
+MANAGER: Los marinero
 EVENTO: Peor actuación de la jornada
-CONTEXTO: Solo -1 puntos. El manager esta en la posicion general 5.00  y en la posicion de la jornada 7.00.
+CONTEXTO: Solo -1 puntos. El manager esta en la posicion general 4.00  y en la posicion de la jornada 4.00.
+
+===BLOQUE_9===
+JUGADOR: O. Vlachodimos
+MANAGER: Los marinero
+EVENTO: Héroe bajo palos
+CONTEXTO: Paró un penalti decisivo. El manager esta en la posicion general 4.00  y en la posicion de la jornada 4.00.

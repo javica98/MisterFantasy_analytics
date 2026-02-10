@@ -1,48 +1,53 @@
 ===CLASIFICACION===
-FRASE1: ¡Dani se aferra al trono por los pelos, pero Maldinillo 💥 ha desatado un vendaval que le pisa los talones con una jornada de ensueño!
-FRASE2: Chamacónicos aguanta el tipo en el podio, mientras que por abajo, Juanba se hunde sin remedio, ¡necesita un milagro para no ser el farolillo rojo definitivo!
-FRASE3: La jornada ha sido un auténtico terremoto, con Maldinillo 💥 arrasando en el primer puesto semanal y Dani aguantando el envite, ¡la batalla por la gloria está al rojo vivo!
+FRASE1: ¡Dani sigue siendo el TIRANO de la liga, con 1066 puntos que lo colocan en la cima, inalcanzable para los mortales! ¿Alguien tiene el valor de desafiar a este COLOSO?
+FRASE2: ¡Libre ha despertado de su letargo con una jornada ESPECTACULAR, escalando al segundo puesto de la semana con 65 puntos! ¿Es este el inicio de una REVOLUCIÓN o un simple espejismo?
+FRASE3: ¡Juanba se arrastra por el fango de la clasificación de la jornada, con unos RIDÍCULOS 20 puntos que lo hunden en el fondo de la tabla! ¡Un DESASTRE absoluto!
 
 ===RUMORES===
-FRASE: ¡Se comenta en los pasillos que Maldinillo 💥 ha hipotecado hasta el alma con sus fichajes estratosféricos, buscando el asalto al trono cueste lo que cueste!
+FRASE: ¡Fuentes cercanas a la liga susurran que Jotabetrbb está a punto de hipotecar su alma para seguir financiando su frenesí de fichajes! ¿Será el 'todo o nada' del manager para ascender o su ruina definitiva?
 
 ===EVENTOS===
-TITULO: ¡BOMBAZO EN EL MERCADO!
-SUBTITULO: Maldinillo 💥 se lanza a por Rashford en un fichaje de locura
-FRASE1: El manager del momento, Maldinillo 💥, no se anda con chiquitas y suelta 14.80 millones por Marcus Rashford, ¡una apuesta arriesgada que podría catapultarle al liderato o hundirle en la miseria!
-FRASE2: Con esta inversión estratosférica, Maldinillo 💥 envía un mensaje claro a Dani: ¡viene a por todas y no le temblará el pulso para destronarle!
+TITULO: ¡Jotabetrbb ROMPE EL MERCADO!
+SUBTITULO: Dani Olmo, la nueva joya de la corona que vacía las arcas.
+FRASE1: El osado manager Jotabetrbb, anclado en la quinta posición, ha desatado la locura con el fichaje bomba de Dani Olmo por la escalofriante cifra de 30.22 millones.
+FRASE2: ¿Es esta una jugada maestra o el inicio de una quiebra financiera para un equipo que necesita desesperadamente un empujón?
 
-TITULO: ¡MOVIMIENTO ESTRATÉGICO!
-SUBTITULO: Chamacónicos refuerza su defensa con Marcos Alonso
-FRASE1: Chamacónicos, aferrado al tercer puesto, ha soltado 12.31 millones por Marcos Alonso, buscando la solidez defensiva que le permita asaltar la segunda posición.
-FRASE2: ¿Será este el fichaje que blinde su plantilla y le dé el empuje necesario para competir con los titanes de arriba? ¡La liga está expectante!
+TITULO: ¡DOBLE GOLPE DE JOTABETRBB!
+SUBTITULO: Lookman se une a la fiesta del despilfarro.
+FRASE1: No contento con un solo bombazo, Jotabetrbb vuelve a abrir la chequera y se hace con Ademola Lookman por 16.79 millones, ¡demostrando que no le teme a las deudas!
+FRASE2: La afición se pregunta: ¿Es esto una estrategia brillante o simplemente un manager desesperado intentando comprar la gloria?
 
-TITULO: ¡OTRA INVERSIÓN MILLONARIA!
-SUBTITULO: Maldinillo 💥 no tiene límites y ficha a Lo Celso
-FRASE1: ¡La vorágine de Maldinillo 💥 continúa! Tras Rashford, ahora desembolsa 12.09 millones por Giovani Lo Celso, consolidando su ataque y dejando a la liga boquiabierta.
-FRASE2: Con la chequera abierta y la ambición desatada, Maldinillo 💥 está construyendo un auténtico Dream Team, ¡¿podrá Dani aguantar este ritmo infernal?!
+TITULO: ¡Maldinillo REFUERZA LA MEDULAR!
+SUBTITULO: Ounahi llega para apuntalar al subcampeón.
+FRASE1: Maldinillo 💥, ese depredador que acecha desde la segunda posición, ha sumado a Azzedine Ounahi por 9.23 millones, ¡un movimiento inteligente para mantener la presión sobre el líder!
+FRASE2: Mientras Dani tiembla en la cima, Maldinillo se rearma en silencio, ¿estamos ante el preludio de un asalto al liderato?
 
-TITULO: ¡ADIÓS A UNA LEYENDA!
-SUBTITULO: Maldinillo 💥 sacrifica a Koke en una venta millonaria
-FRASE1: En un movimiento que ha dejado a todos perplejos, Maldinillo 💥 ha vendido a Koke por 12.37 millones, una decisión arriesgada tras sus recientes y costosos fichajes.
-FRASE2: ¿Es una genialidad financiera o un error fatal? ¡Solo el tiempo dirá si Maldinillo 💥 está saneando sus cuentas o simplemente deshaciéndose de lo que ya no le sirve para ir a por más!
+TITULO: ¡Jotabetrbb HACE CAJA!
+SUBTITULO: Julián Álvarez, la 'Araña' que se va por un dineral.
+FRASE1: En una jugada maestra para equilibrar las cuentas (o quizás para seguir comprando), Jotabetrbb ha vendido a Julián Álvarez por 18.94 millones.
+FRASE2: ¿Es esta una venta dolorosa o un sacrificio necesario para financiar su ambiciosa (y arriesgada) estrategia de fichajes?
 
-TITULO: ¡EL REY DE LA JORNADA!
-SUBTITULO: G. Moreno, la joya de Maldinillo 💥, se corona MVP
-FRASE1: ¡No hay quien pare a Maldinillo 💥! Su jugador, G. Moreno, ha destrozado la jornada con 15 puntos, consolidando el dominio del manager en la semana y levantando a la afición de sus asientos.
-FRASE2: Con fichajes estrella y un MVP en sus filas, Maldinillo 💥 está demostrando que su estrategia es la del éxito más rotundo, ¡los demás tiemblan ante su poderío!
+TITULO: ¡MOLEIRO, EL HÉROE SILENCIOSO DE DANI!
+SUBTITULO: El líder no solo gana, ¡también tiene MVPs!
+FRASE1: A. Moleiro, bajo la batuta del intocable Dani, ha sido el MVP de la jornada con 14 puntos, ¡demostrando que el líder tiene un ojo clínico para el talento!
+FRASE2: Mientras el resto se desgañita, Dani sigue sumando con sus jugadores estrella, ¿hay alguien que pueda frenar esta hegemonía?
 
-TITULO: ¡EL LÍDER NO SE DUERME!
-SUBTITULO: L. Yamal mantiene a Dani en la pelea con otra actuación estelar
-FRASE1: Aunque Maldinillo 💥 arrasó, el líder Dani no se queda atrás gracias a los 14 puntos de su prodigio, L. Yamal, ¡demostrando por qué es el número uno y no piensa ceder su puesto!
-FRASE2: Dani sabe que cada punto cuenta y L. Yamal es su bastión. La lucha por el trono está más encendida que nunca, ¡cada jornada es una auténtica final!
+TITULO: ¡SALAS DA LA CARA POR JOTABETRBB!
+SUBTITULO: Un destello de esperanza en la inversión.
+FRASE1: K. Salas ha brillado con 13 puntos, siendo el MVP de la jornada para el siempre polémico Jotabetrbb, ¡un respiro en medio de su frenesí de fichajes!
+FRASE2: ¿Será Salas el salvador que justifique la arriesgada apuesta de un manager que vive al límite?
 
-TITULO: ¡SORPRESA INESPERADA!
-SUBTITULO: MuchaSalsa encuentra un diamante en Galarreta
-FRASE1: En medio de la lucha de titanes, MuchaSalsa, desde la séptima posición, celebra los 12 puntos de I. Ruiz De Galarreta, un destello de esperanza en su discreta jornada.
-FRASE2: ¿Será este el inicio de una remontada para MuchaSalsa o solo un espejismo en la oscuridad? ¡Necesitará muchos más para salir del pozo y competir de verdad!
+TITULO: ¡MIKAUTADZE, LA ESTRELLA INESPERADA DE LIBRE!
+SUBTITULO: El renacer de un equipo que nadie veía venir.
+FRASE1: G. Mikautadze ha sido el MVP con 13 puntos para Libre, catapultando a su equipo a la segunda posición de la jornada, ¡una gesta que nadie esperaba!
+FRASE2: ¿Estamos presenciando el surgimiento de un nuevo contendiente o es solo un espejismo en el desierto de la clasificación?
 
-TITULO: ¡DESASTRE TOTAL!
-SUBTITULO: F. Mastantuono sentencia la jornada de Jotabetrbb
-FRASE1: ¡Catástrofe en el equipo de Jotabetrbb! F. Mastantuono ha firmado la peor actuación de la jornada con -1 puntos, un golpe durísimo para sus aspiraciones y un mazazo para su afición.
-FRASE2: Mientras algunos celebran, Jotabetrbb lamenta esta pírrica actuación que le hunde aún más en la clasificación. ¿Podrá levantarse de este varapalo o se quedará estancado en el fango?
+TITULO: ¡FERNÁNDEZ, LA PESADILLA DE LOS MARINERO!
+SUBTITULO: Una actuación para olvidar y un lastre para el equipo.
+FRASE1: R. Fernández ha perpetrado la peor actuación de la jornada para Los marinero, ¡con un vergonzoso -1 punto!
+FRASE2: ¿Es este un error aislado o el síntoma de que Los marinero están perdiendo el rumbo en aguas turbulentas?
+
+TITULO: ¡VLACHODIMOS, EL SALVADOR DE LOS MARINERO!
+SUBTITULO: Un muro infranqueable que evita el desastre.
+FRASE1: Cuando todo parecía perdido, O. Vlachodimos se ha erigido en el héroe de Los marinero, ¡parando un penalti decisivo y salvando los muebles!
+FRASE2: A pesar de la debacle de Fernández, Vlachodimos demuestra que Los marinero tienen un ángel de la guarda bajo los tres palos.
