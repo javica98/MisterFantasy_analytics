@@ -1435,24 +1435,41 @@ date,manager,periodo,jugador,precio,posicionJugador,puntosJugador,equipoLiga,avg
 2026-02-08,Maldinillo 💥,20h 20m,P. Maffeo,2.21,2.0,61.0,408.0,3.4,
 2026-02-08,Libre,20h 20m,D. Jiménez,0.16,2.0,0.0,15.0,0.0,
 2026-02-08,Libre,20h 20m,A. Gorosabel,0.16,2.0,23.0,1.0,2.1,
-2026-02-09,Jotabetrbb,1d 20h,J. Álvarez,18.753,4.0,92.0,2,4.0,
-2026-02-09,Jotabetrbb,1d 20h,F. Mastantuono,5.141,3.0,47.0,15,3.1,
-2026-02-09,Jotabetrbb,1d 20h,B. Turrientes,1.308,3.0,52.0,16,3.7,
-2026-02-09,Jotabetrbb,1d 20h,C. Starfelt,5.249,2.0,50.0,5,3.1,
-2026-02-09,Libre,20h 1m,T. Martínez,3.546,4.0,96.0,48,4.4,
-2026-02-09,Dani,20h 1m,P. Barrios,15.755,3.0,114.0,2,5.4,injury
-2026-02-09,Maldinillo 💥,20h 1m,A. Blanco,6.001,3.0,89.0,48,4.2,
-2026-02-09,Maldinillo 💥,20h 1m,B. Díaz,1.483,3.0,34.0,15,2.3,
-2026-02-09,Dani,20h 1m,F. Beltrán,1.264,3.0,38.0,222,2.9,
-2026-02-09,Libre,20h 1m,J. El-Abdellaoui,0.978,3.0,54.0,5,3.9,
-2026-02-09,Libre,20h 1m,J. Kalumba,0.207,3.0,0.0,408,0.0,
-2026-02-09,Libre,20h 1m,J. Foyth,6.96,2.0,56.0,20,4.3,injury
-2026-02-09,Chamacónicos,20h 1m,F. Boyomo,5.457,2.0,83.0,50,4.2,injury
-2026-02-09,Libre,20h 1m,J. Mojica,3.46,2.0,78.0,408,3.4,
-2026-02-09,Maldinillo 💥,20h 1m,P. Maffeo,2.224,2.0,61.0,408,3.4,
-2026-02-09,Libre,20h 1m,M. Sánchez,1.008,2.0,74.0,12,3.9,
-2026-02-09,Libre,20h 1m,Y. Álvarez,0.179,2.0,0.0,1,0.0,other
-2026-02-09,Libre,20h 1m,A. Batalla,6.314,1.0,97.0,14,4.4,
-2026-02-09,Libre,20h 1m,A. Padilla,0.184,1.0,0.0,1,0.0,
-2026-02-09,Libre,20h 1m,C. Rivero,0.16,1.0,0.0,19,0.0,
-2026-02-09,Libre,20h 1m,A. Lunin,0.16,1.0,0.0,15,0.0,
+2026-02-09,Jotabetrbb,1d 20h,J. Álvarez,18.753,4.0,92.0,2.0,4.0,
+2026-02-09,Jotabetrbb,1d 20h,F. Mastantuono,5.141,3.0,47.0,15.0,3.1,
+2026-02-09,Jotabetrbb,1d 20h,B. Turrientes,1.308,3.0,52.0,16.0,3.7,
+2026-02-09,Jotabetrbb,1d 20h,C. Starfelt,5.249,2.0,50.0,5.0,3.1,
+2026-02-09,Libre,20h 1m,T. Martínez,3.546,4.0,96.0,48.0,4.4,
+2026-02-09,Dani,20h 1m,P. Barrios,15.755,3.0,114.0,2.0,5.4,injury
+2026-02-09,Maldinillo 💥,20h 1m,A. Blanco,6.001,3.0,89.0,48.0,4.2,
+2026-02-09,Maldinillo 💥,20h 1m,B. Díaz,1.483,3.0,34.0,15.0,2.3,
+2026-02-09,Dani,20h 1m,F. Beltrán,1.264,3.0,38.0,222.0,2.9,
+2026-02-09,Libre,20h 1m,J. El-Abdellaoui,0.978,3.0,54.0,5.0,3.9,
+2026-02-09,Libre,20h 1m,J. Kalumba,0.207,3.0,0.0,408.0,0.0,
+2026-02-09,Libre,20h 1m,J. Foyth,6.96,2.0,56.0,20.0,4.3,injury
+2026-02-09,Chamacónicos,20h 1m,F. Boyomo,5.457,2.0,83.0,50.0,4.2,injury
+2026-02-09,Libre,20h 1m,J. Mojica,3.46,2.0,78.0,408.0,3.4,
+2026-02-09,Maldinillo 💥,20h 1m,P. Maffeo,2.224,2.0,61.0,408.0,3.4,
+2026-02-09,Libre,20h 1m,M. Sánchez,1.008,2.0,74.0,12.0,3.9,
+2026-02-09,Libre,20h 1m,Y. Álvarez,0.179,2.0,0.0,1.0,0.0,other
+2026-02-09,Libre,20h 1m,A. Batalla,6.314,1.0,97.0,14.0,4.4,
+2026-02-09,Libre,20h 1m,A. Padilla,0.184,1.0,0.0,1.0,0.0,
+2026-02-09,Libre,20h 1m,C. Rivero,0.16,1.0,0.0,19.0,0.0,
+2026-02-09,Libre,20h 1m,A. Lunin,0.16,1.0,0.0,15.0,0.0,
+2026-02-10,Maldinillo 💥,1d 19h,A. Blanco,6.03,3.0,89.0,48,4.2,
+2026-02-10,Jotabetrbb,1d 19h,B. Turrientes,1.315,3.0,52.0,16,3.7,
+2026-02-10,Jotabetrbb,1d 19h,C. Starfelt,5.185,2.0,50.0,5,3.1,
+2026-02-10,Jotabetrbb,1d 19h,J. Luis Gayà,2.545,2.0,54.0,19,2.8,
+2026-02-10,Maldinillo 💥,1d 19h,P. Maffeo,2.249,2.0,61.0,408,3.4,
+2026-02-10,Libre,19h 59m,B. Mayoral,1.619,4.0,50.0,9,3.6,injury
+2026-02-10,Dani,19h 59m,P. Barrios,15.666,3.0,114.0,2,5.4,injury
+2026-02-10,Libre,19h 59m,O. Sancet,3.63,3.0,27.0,1,1.7,injury
+2026-02-10,Libre,19h 59m,P. Lozano,1.076,3.0,71.0,8,3.4,
+2026-02-10,Libre,19h 59m,D. Suárez,0.176,3.0,58.0,48,3.2,
+2026-02-10,Libre,19h 59m,T. Partey,0.171,3.0,31.0,20,2.2,injury
+2026-02-10,Libre,19h 59m,M. Pubill,8.222,2.0,53.0,2,5.3,injury
+2026-02-10,De la Guettir FC,19h 59m,P. Chavarría,7.382,2.0,87.0,14,4.0,double
+2026-02-10,Libre,19h 59m,J. Vertrouwd,0.21,2.0,6.0,14,1.0,
+2026-02-10,Libre,19h 59m,I. Bekhoucha,0.171,2.0,8.0,9,2.0,other
+2026-02-10,Libre,19h 59m,J. Agirrezabala,1.555,1.0,76.0,19,4.2,injury
+2026-02-10,Libre,19h 59m,L. Bergström,0.16,1.0,22.0,408,4.4,

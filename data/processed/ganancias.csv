@@ -1,20 +1,32 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
+marks,start_mercado,,,,,,,,,,,,,,,2026-02-10,
+transfer,mercado,,Franco Mastantuono,Jotabetrbb,Mister,5.39805,3,47,15,,,,,,,2026-02-10,d9df2fb98485ed1fb4f8e8f9230c991c
+marks,start_mercado,,,,,,,,,,,,,,,2026-02-10,
+transfer,mercado,,Julián Álvarez,Jotabetrbb,Mister,18.94053,4,92,2,,,,,,,2026-02-10,fdf2fff1f587040fb975c33511ee6682
+marks,start_mercado,,,,,,,,,,,,,,,2026-02-10,
+transfer,mercado,,Manu Sánchez,Mister,De la Guettir FC,1.3896,2,74,12,,,,,,,2026-02-10,ccb7583169d95e2ff5e95f2b9b9a1942
+transfer,mercado,,Toni Martínez,Mister,Dani,3.7531,4,96,48,,,,,,,2026-02-10,a139002cc103a47e243937f980679303
+transfer,Puja,,Toni Martínez,Mister,Libre,3.68461,4,96,48,,,,,,,2026-02-10,b3a42e0b37959730b6c5fecfcc25313a
+marks,start_mercado,,,,,,,,,,,,,,,2026-02-10,
+transfer,mercado,,Fran Beltrán,Dani,Mister,1.27995,3,38,222,,,,,,,2026-02-10,8b0df7f3be80937c51b3e87e66eb11b0
+marks,start_mercado,,,,,,,,,,,,,,,2026-02-10,
+transfer,mercado,,Flavien Boyomo,Chamacónicos,Mister,5.74946,2,83,50,,,,,,,2026-02-10,84986a87be1904d64eb59ba03411d58d
+marks,start_mercado,,,,,,,,,,,,,,,2026-02-10,
+transfer,clausula,,Dani Olmo,De la Guettir FC,Jotabetrbb,30.21529,3.0,120.0,3.0,,,,,,,2026-02-09,ff1acbdc77646e9bf93a7869388182b0
 marks,start_mercado,,,,,,,,,,,,,,,2026-02-09,
-transfer,clausula,,Dani Olmo,De la Guettir FC,Jotabetrbb,30.21529,3,120,3,,,,,,,2026-02-09,ff1acbdc77646e9bf93a7869388182b0
+transfer,mercado,,Rodrygo,Jotabetrbb,Mister,10.77544,4.0,53.0,15.0,,,,,,,2026-02-09,37896c1e950d8b700877c23d89ef03e2
 marks,start_mercado,,,,,,,,,,,,,,,2026-02-09,
-transfer,mercado,,Rodrygo,Jotabetrbb,Mister,10.77544,4,53,15,,,,,,,2026-02-09,37896c1e950d8b700877c23d89ef03e2
+transfer,mercado,,Umar Sadiq,Jotabetrbb,Mister,1.09197,4.0,19.0,19.0,,,,,,,2026-02-09,d534b0929bcd5850421d10b2a0426adb
 marks,start_mercado,,,,,,,,,,,,,,,2026-02-09,
-transfer,mercado,,Umar Sadiq,Jotabetrbb,Mister,1.09197,4,19,19,,,,,,,2026-02-09,d534b0929bcd5850421d10b2a0426adb
+transfer,mercado,,José Luis Gayà,Mister,Jotabetrbb,2.669,2.0,54.0,19.0,,,,,,,2026-02-09,71a359e80cde404b584ac1535531d238
+transfer,mercado,,Peque Fernández,Mister,Chamacónicos,1.901,3.0,61.0,17.0,,,,,,,2026-02-09,b61842bb761ae653db19af70e8886816
+transfer,mercado,,Azzedine Ounahi,Mister,Maldinillo 💥,9.23451,3.0,74.0,222.0,,,,,,,2026-02-09,735ae7d8e932d3a3ff6bf3aa05c0dd64
 marks,start_mercado,,,,,,,,,,,,,,,2026-02-09,
-transfer,mercado,,José Luis Gayà,Mister,Jotabetrbb,2.669,2,54,19,,,,,,,2026-02-09,71a359e80cde404b584ac1535531d238
-transfer,mercado,,Peque Fernández,Mister,Chamacónicos,1.901,3,61,17,,,,,,,2026-02-09,b61842bb761ae653db19af70e8886816
-transfer,mercado,,Azzedine Ounahi,Mister,Maldinillo 💥,9.23451,3,74,222,,,,,,,2026-02-09,735ae7d8e932d3a3ff6bf3aa05c0dd64
+transfer,mercado,,Viktor Tsygankov,Maldinillo 💥,Mister,10.7184,3.0,79.0,222.0,,,,,,,2026-02-09,9d431bab9ac1b9a6bfba2382fd85f7cc
 marks,start_mercado,,,,,,,,,,,,,,,2026-02-09,
-transfer,mercado,,Viktor Tsygankov,Maldinillo 💥,Mister,10.7184,3,79,222,,,,,,,2026-02-09,9d431bab9ac1b9a6bfba2382fd85f7cc
+transfer,mercado,,Hugo Sotelo,Libre,Mister,0.82425,3.0,55.0,5.0,,,,,,,2026-02-09,b2dedd5cfc5739e355a3ee0d57ffbc8a
 marks,start_mercado,,,,,,,,,,,,,,,2026-02-09,
-transfer,mercado,,Hugo Sotelo,Libre,Mister,0.82425,3,55,5,,,,,,,2026-02-09,b2dedd5cfc5739e355a3ee0d57ffbc8a
-marks,start_mercado,,,,,,,,,,,,,,,2026-02-09,
-transfer,mercado,,Jon Moncayola,Libre,Mister,6.087,3,86,50,,,,,,,2026-02-09,a09ecc2aab120a57322f708d61ac608a
+transfer,mercado,,Jon Moncayola,Libre,Mister,6.087,3.0,86.0,50.0,,,,,,,2026-02-09,a09ecc2aab120a57322f708d61ac608a
 marks,start_mercado,,,,,,,,,,,,,,,2026-02-09,
 transfer,mercado,,Coba da Costa,Maldinillo 💥,Mister,0.152,3.0,31.0,0.0,,,,,,,2026-02-08,cfbff086849d3500ad0fc7b85ded0f9a
 marks,start_mercado,,,,,,,,,,,,,,,2026-02-08,
