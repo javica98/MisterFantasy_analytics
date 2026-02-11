@@ -1456,20 +1456,42 @@ date,manager,periodo,jugador,precio,posicionJugador,puntosJugador,equipoLiga,avg
 2026-02-09,Libre,20h 1m,A. Padilla,0.184,1.0,0.0,1.0,0.0,
 2026-02-09,Libre,20h 1m,C. Rivero,0.16,1.0,0.0,19.0,0.0,
 2026-02-09,Libre,20h 1m,A. Lunin,0.16,1.0,0.0,15.0,0.0,
-2026-02-10,Maldinillo 💥,1d 19h,A. Blanco,6.03,3.0,89.0,48,4.2,
-2026-02-10,Jotabetrbb,1d 19h,B. Turrientes,1.315,3.0,52.0,16,3.7,
-2026-02-10,Jotabetrbb,1d 19h,C. Starfelt,5.185,2.0,50.0,5,3.1,
-2026-02-10,Jotabetrbb,1d 19h,J. Luis Gayà,2.545,2.0,54.0,19,2.8,
-2026-02-10,Maldinillo 💥,1d 19h,P. Maffeo,2.249,2.0,61.0,408,3.4,
-2026-02-10,Libre,19h 59m,B. Mayoral,1.619,4.0,50.0,9,3.6,injury
-2026-02-10,Dani,19h 59m,P. Barrios,15.666,3.0,114.0,2,5.4,injury
-2026-02-10,Libre,19h 59m,O. Sancet,3.63,3.0,27.0,1,1.7,injury
-2026-02-10,Libre,19h 59m,P. Lozano,1.076,3.0,71.0,8,3.4,
-2026-02-10,Libre,19h 59m,D. Suárez,0.176,3.0,58.0,48,3.2,
-2026-02-10,Libre,19h 59m,T. Partey,0.171,3.0,31.0,20,2.2,injury
-2026-02-10,Libre,19h 59m,M. Pubill,8.222,2.0,53.0,2,5.3,injury
-2026-02-10,De la Guettir FC,19h 59m,P. Chavarría,7.382,2.0,87.0,14,4.0,double
-2026-02-10,Libre,19h 59m,J. Vertrouwd,0.21,2.0,6.0,14,1.0,
-2026-02-10,Libre,19h 59m,I. Bekhoucha,0.171,2.0,8.0,9,2.0,other
-2026-02-10,Libre,19h 59m,J. Agirrezabala,1.555,1.0,76.0,19,4.2,injury
-2026-02-10,Libre,19h 59m,L. Bergström,0.16,1.0,22.0,408,4.4,
+2026-02-10,Maldinillo 💥,1d 19h,A. Blanco,6.03,3.0,89.0,48.0,4.2,
+2026-02-10,Jotabetrbb,1d 19h,B. Turrientes,1.315,3.0,52.0,16.0,3.7,
+2026-02-10,Jotabetrbb,1d 19h,C. Starfelt,5.185,2.0,50.0,5.0,3.1,
+2026-02-10,Jotabetrbb,1d 19h,J. Luis Gayà,2.545,2.0,54.0,19.0,2.8,
+2026-02-10,Maldinillo 💥,1d 19h,P. Maffeo,2.249,2.0,61.0,408.0,3.4,
+2026-02-10,Libre,19h 59m,B. Mayoral,1.619,4.0,50.0,9.0,3.6,injury
+2026-02-10,Dani,19h 59m,P. Barrios,15.666,3.0,114.0,2.0,5.4,injury
+2026-02-10,Libre,19h 59m,O. Sancet,3.63,3.0,27.0,1.0,1.7,injury
+2026-02-10,Libre,19h 59m,P. Lozano,1.076,3.0,71.0,8.0,3.4,
+2026-02-10,Libre,19h 59m,D. Suárez,0.176,3.0,58.0,48.0,3.2,
+2026-02-10,Libre,19h 59m,T. Partey,0.171,3.0,31.0,20.0,2.2,injury
+2026-02-10,Libre,19h 59m,M. Pubill,8.222,2.0,53.0,2.0,5.3,injury
+2026-02-10,De la Guettir FC,19h 59m,P. Chavarría,7.382,2.0,87.0,14.0,4.0,double
+2026-02-10,Libre,19h 59m,J. Vertrouwd,0.21,2.0,6.0,14.0,1.0,
+2026-02-10,Libre,19h 59m,I. Bekhoucha,0.171,2.0,8.0,9.0,2.0,other
+2026-02-10,Libre,19h 59m,J. Agirrezabala,1.555,1.0,76.0,19.0,4.2,injury
+2026-02-10,Libre,19h 59m,L. Bergström,0.16,1.0,22.0,408.0,4.4,
+2026-02-11,Jotabetrbb,1d 20h,F. Ugrinic,1.533,3.0,48.0,19,3.7,
+2026-02-11,Jotabetrbb,1d 20h,B. Turrientes,1.331,3.0,52.0,16,3.7,
+2026-02-11,Jotabetrbb,1d 20h,J. Luis Gayà,2.602,2.0,54.0,19,2.8,
+2026-02-11,Maldinillo 💥,1d 20h,J. Agirrezabala,1.501,1.0,76.0,19,4.2,injury
+2026-02-11,Dani,20h 2m,L. Boyé,6.075,4.0,84.0,48,4.9,
+2026-02-11,Dani,20h 2m,T. Martínez,3.802,4.0,96.0,48,4.4,
+2026-02-11,Libre,20h 2m,A. González,0.199,4.0,27.0,20,2.7,doubt
+2026-02-11,Libre,20h 2m,J. Karrikaburu,0.18,4.0,11.0,16,1.8,
+2026-02-11,Dani,20h 2m,P. Barrios,15.58,3.0,114.0,2,5.4,injury
+2026-02-11,Dani,20h 2m,E. Expósito,14.934,3.0,110.0,8,5.0,
+2026-02-11,Libre,20h 2m,R. García,7.65,3.0,79.0,50,3.8,
+2026-02-11,Maldinillo 💥,20h 2m,A. Blanco,6.085,3.0,89.0,48,4.2,
+2026-02-11,Dani,20h 2m,R. Navarro,2.052,3.0,84.0,1,4.4,
+2026-02-11,Libre,20h 2m,A. Guevara,0.16,3.0,42.0,48,2.8,
+2026-02-11,Libre,20h 2m,T. Marqués,0.16,3.0,1.0,3,1.0,
+2026-02-11,Libre,20h 2m,L. Dendoncker,0.16,3.0,54.0,1370,3.0,
+2026-02-11,Libre,20h 2m,J. Mojica,3.371,2.0,78.0,408,3.4,
+2026-02-11,Libre,20h 2m,A. Paredes,2.324,2.0,65.0,1,4.1,
+2026-02-11,Libre,20h 2m,A. Matturro,0.774,2.0,24.0,12,2.4,red
+2026-02-11,Libre,20h 2m,U. Elgezabal,0.286,2.0,38.0,12,3.2,
+2026-02-11,Libre,20h 2m,D. Pampín,0.195,2.0,13.0,12,2.6,
+2026-02-11,Libre,20h 2m,J. Montes,0.16,2.0,2.0,9,2.0,

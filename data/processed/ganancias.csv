@@ -1,16 +1,39 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
+marks,start_mercado,,,,,,,,,,,,,,,2026-02-11,
+transfer,mercado,,Carl Starfelt,Jotabetrbb,Mister,5.185,2,50,5,,,,,,,2026-02-11,cb0dfe8308c881fb378a55d71060e523
+marks,start_mercado,,,,,,,,,,,,,,,2026-02-11,
+transfer,mercado,,Pablo Maffeo,Maldinillo 💥,Mister,2.29398,2,61,408,,,,,,,2026-02-11,26bfb57cdb1db39d4d30c5c44f64f4bc
+marks,start_mercado,,,,,,,,,,,,,,,2026-02-11,
+transfer,mercado,,Marc Pubill,Mister,Jotabetrbb,9.422,2,53,2,,,,,,,2026-02-11,5d724ca7c2dbbb8e0a0587b34bb974ab
+transfer,Puja,,Marc Pubill,Mister,Maldinillo 💥,8.72221,2,53,2,,,,,,,2026-02-11,5e966546cc9862579f2ba74eb286f9a3
+transfer,Puja,,Marc Pubill,Mister,Chamacónicos,8.452,2,53,2,,,,,,,2026-02-11,028d68daff3d48ec6f663e7e6b3b6a0f
+transfer,Puja,,Marc Pubill,Mister,Dani,8.32086,2,53,2,,,,,,,2026-02-11,d1e6be599663c48a2df18c313cb30dd1
+transfer,mercado,,Oihan Sancet,Mister,Maldinillo 💥,3.63018,3,27,1,,,,,,,2026-02-11,6d9f764645b4f465b35eeac6e064ce62
+transfer,mercado,,Borja Mayoral,Mister,Maldinillo 💥,1.61904,4,50,9,,,,,,,2026-02-11,642b8ce405daeba4f540b22a2dca3068
+transfer,mercado,,Julen Agirrezabala,Mister,Maldinillo 💥,1.555,1,76,19,,,,,,,2026-02-11,80ea46af5dd6911f5a79b5da32e84fde
+marks,start_mercado,,,,,,,,,,,,,,,2026-02-11,
+transfer,clausula,,Lucas Beltrán,Libre,Jotabetrbb,1.9845,3,62,19,,,,,,,2026-02-11,1933b99c607b063ed83d28a93bded4d5
+bonificacion,clasificacion,,,,,,,,,Dani,1.34,1,,,,2026-02-11,
+bonificacion,clasificacion,,,,,,,,,Libre,1.3,2,,,,2026-02-11,
+bonificacion,clasificacion,,,,,,,,,Maldinillo 💥,0.9,3,,,,2026-02-11,
+bonificacion,clasificacion,,,,,,,,,Los marinero,0.88,4,,,,2026-02-11,
+bonificacion,clasificacion,,,,,,,,,Jotabetrbb,0.74,5,,,,2026-02-11,
+bonificacion,clasificacion,,,,,,,,,Chamacónicos,0.7,6,,,,2026-02-11,
+bonificacion,clasificacion,,,,,,,,,De la Guettir FC,0.62,7,,,,2026-02-11,
+bonificacion,clasificacion,,,,,,,,,MuchaSalsa,0.5,8,,,,2026-02-11,
+bonificacion,clasificacion,,,,,,,,,Juanba,0.4,9,,,,2026-02-11,
+marks,start_mercado,,,,,,,,,,,,,,,2026-02-11,
+transfer,mercado,,Franco Mastantuono,Jotabetrbb,Mister,5.39805,3.0,47.0,15.0,,,,,,,2026-02-10,d9df2fb98485ed1fb4f8e8f9230c991c
 marks,start_mercado,,,,,,,,,,,,,,,2026-02-10,
-transfer,mercado,,Franco Mastantuono,Jotabetrbb,Mister,5.39805,3,47,15,,,,,,,2026-02-10,d9df2fb98485ed1fb4f8e8f9230c991c
+transfer,mercado,,Julián Álvarez,Jotabetrbb,Mister,18.94053,4.0,92.0,2.0,,,,,,,2026-02-10,fdf2fff1f587040fb975c33511ee6682
 marks,start_mercado,,,,,,,,,,,,,,,2026-02-10,
-transfer,mercado,,Julián Álvarez,Jotabetrbb,Mister,18.94053,4,92,2,,,,,,,2026-02-10,fdf2fff1f587040fb975c33511ee6682
+transfer,mercado,,Manu Sánchez,Mister,De la Guettir FC,1.3896,2.0,74.0,12.0,,,,,,,2026-02-10,ccb7583169d95e2ff5e95f2b9b9a1942
+transfer,mercado,,Toni Martínez,Mister,Dani,3.7531,4.0,96.0,48.0,,,,,,,2026-02-10,a139002cc103a47e243937f980679303
+transfer,Puja,,Toni Martínez,Mister,Libre,3.68461,4.0,96.0,48.0,,,,,,,2026-02-10,b3a42e0b37959730b6c5fecfcc25313a
 marks,start_mercado,,,,,,,,,,,,,,,2026-02-10,
-transfer,mercado,,Manu Sánchez,Mister,De la Guettir FC,1.3896,2,74,12,,,,,,,2026-02-10,ccb7583169d95e2ff5e95f2b9b9a1942
-transfer,mercado,,Toni Martínez,Mister,Dani,3.7531,4,96,48,,,,,,,2026-02-10,a139002cc103a47e243937f980679303
-transfer,Puja,,Toni Martínez,Mister,Libre,3.68461,4,96,48,,,,,,,2026-02-10,b3a42e0b37959730b6c5fecfcc25313a
+transfer,mercado,,Fran Beltrán,Dani,Mister,1.27995,3.0,38.0,222.0,,,,,,,2026-02-10,8b0df7f3be80937c51b3e87e66eb11b0
 marks,start_mercado,,,,,,,,,,,,,,,2026-02-10,
-transfer,mercado,,Fran Beltrán,Dani,Mister,1.27995,3,38,222,,,,,,,2026-02-10,8b0df7f3be80937c51b3e87e66eb11b0
-marks,start_mercado,,,,,,,,,,,,,,,2026-02-10,
-transfer,mercado,,Flavien Boyomo,Chamacónicos,Mister,5.74946,2,83,50,,,,,,,2026-02-10,84986a87be1904d64eb59ba03411d58d
+transfer,mercado,,Flavien Boyomo,Chamacónicos,Mister,5.74946,2.0,83.0,50.0,,,,,,,2026-02-10,84986a87be1904d64eb59ba03411d58d
 marks,start_mercado,,,,,,,,,,,,,,,2026-02-10,
 transfer,clausula,,Dani Olmo,De la Guettir FC,Jotabetrbb,30.21529,3.0,120.0,3.0,,,,,,,2026-02-09,ff1acbdc77646e9bf93a7869388182b0
 marks,start_mercado,,,,,,,,,,,,,,,2026-02-09,
