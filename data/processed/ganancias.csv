@@ -1,18 +1,24 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
+marks,start_mercado,,,,,,,,,,,,,,,2026-02-12,
+transfer,mercado,,Julen Agirrezabala,Maldinillo 💥,Mister,1.47098,1,76,19,,,,,,,2026-02-12,4e655a37e84e88a1b5ca0e322385536c
+marks,start_mercado,,,,,,,,,,,,,,,2026-02-12,
+transfer,mercado,,Pablo Barrios,Dani,Mister,15.82266,3,114,2,,,,,,,2026-02-12,ee4e2a629230d128b961003ae82962ba
+marks,start_mercado,,,,,,,,,,,,,,,2026-02-12,
+transfer,mercado,,Alan Matturro,Libre,Mister,0.83556,2,24,12,,,,,,,2026-02-12,6325435b3511ff92391d77558ca7f7cc
+marks,start_mercado,,,,,,,,,,,,,,,2026-02-12,
+transfer,mercado,,Carl Starfelt,Jotabetrbb,Mister,5.185,2.0,50.0,5.0,,,,,,,2026-02-11,cb0dfe8308c881fb378a55d71060e523
 marks,start_mercado,,,,,,,,,,,,,,,2026-02-11,
-transfer,mercado,,Carl Starfelt,Jotabetrbb,Mister,5.185,2,50,5,,,,,,,2026-02-11,cb0dfe8308c881fb378a55d71060e523
+transfer,mercado,,Pablo Maffeo,Maldinillo 💥,Mister,2.29398,2.0,61.0,408.0,,,,,,,2026-02-11,26bfb57cdb1db39d4d30c5c44f64f4bc
 marks,start_mercado,,,,,,,,,,,,,,,2026-02-11,
-transfer,mercado,,Pablo Maffeo,Maldinillo 💥,Mister,2.29398,2,61,408,,,,,,,2026-02-11,26bfb57cdb1db39d4d30c5c44f64f4bc
+transfer,mercado,,Marc Pubill,Mister,Jotabetrbb,9.422,2.0,53.0,2.0,,,,,,,2026-02-11,5d724ca7c2dbbb8e0a0587b34bb974ab
+transfer,Puja,,Marc Pubill,Mister,Maldinillo 💥,8.72221,2.0,53.0,2.0,,,,,,,2026-02-11,5e966546cc9862579f2ba74eb286f9a3
+transfer,Puja,,Marc Pubill,Mister,Chamacónicos,8.452,2.0,53.0,2.0,,,,,,,2026-02-11,028d68daff3d48ec6f663e7e6b3b6a0f
+transfer,Puja,,Marc Pubill,Mister,Dani,8.32086,2.0,53.0,2.0,,,,,,,2026-02-11,d1e6be599663c48a2df18c313cb30dd1
+transfer,mercado,,Oihan Sancet,Mister,Maldinillo 💥,3.63018,3.0,27.0,1.0,,,,,,,2026-02-11,6d9f764645b4f465b35eeac6e064ce62
+transfer,mercado,,Borja Mayoral,Mister,Maldinillo 💥,1.61904,4.0,50.0,9.0,,,,,,,2026-02-11,642b8ce405daeba4f540b22a2dca3068
+transfer,mercado,,Julen Agirrezabala,Mister,Maldinillo 💥,1.555,1.0,76.0,19.0,,,,,,,2026-02-11,80ea46af5dd6911f5a79b5da32e84fde
 marks,start_mercado,,,,,,,,,,,,,,,2026-02-11,
-transfer,mercado,,Marc Pubill,Mister,Jotabetrbb,9.422,2,53,2,,,,,,,2026-02-11,5d724ca7c2dbbb8e0a0587b34bb974ab
-transfer,Puja,,Marc Pubill,Mister,Maldinillo 💥,8.72221,2,53,2,,,,,,,2026-02-11,5e966546cc9862579f2ba74eb286f9a3
-transfer,Puja,,Marc Pubill,Mister,Chamacónicos,8.452,2,53,2,,,,,,,2026-02-11,028d68daff3d48ec6f663e7e6b3b6a0f
-transfer,Puja,,Marc Pubill,Mister,Dani,8.32086,2,53,2,,,,,,,2026-02-11,d1e6be599663c48a2df18c313cb30dd1
-transfer,mercado,,Oihan Sancet,Mister,Maldinillo 💥,3.63018,3,27,1,,,,,,,2026-02-11,6d9f764645b4f465b35eeac6e064ce62
-transfer,mercado,,Borja Mayoral,Mister,Maldinillo 💥,1.61904,4,50,9,,,,,,,2026-02-11,642b8ce405daeba4f540b22a2dca3068
-transfer,mercado,,Julen Agirrezabala,Mister,Maldinillo 💥,1.555,1,76,19,,,,,,,2026-02-11,80ea46af5dd6911f5a79b5da32e84fde
-marks,start_mercado,,,,,,,,,,,,,,,2026-02-11,
-transfer,clausula,,Lucas Beltrán,Libre,Jotabetrbb,1.9845,3,62,19,,,,,,,2026-02-11,1933b99c607b063ed83d28a93bded4d5
+transfer,clausula,,Lucas Beltrán,Libre,Jotabetrbb,1.9845,3.0,62.0,19.0,,,,,,,2026-02-11,1933b99c607b063ed83d28a93bded4d5
 bonificacion,clasificacion,,,,,,,,,Dani,1.34,1,,,,2026-02-11,
 bonificacion,clasificacion,,,,,,,,,Libre,1.3,2,,,,2026-02-11,
 bonificacion,clasificacion,,,,,,,,,Maldinillo 💥,0.9,3,,,,2026-02-11,

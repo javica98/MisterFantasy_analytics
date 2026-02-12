@@ -1,4 +1,7 @@
 fecha,id,type,subtype,equipo,jugador,compra-venta,equipoLiga,ganancias
+2026-02-12,0,transfer,mercado,Maldinillo 💥,Julen Agirrezabala,venta,19.0,1.47098
+2026-02-12,0,transfer,mercado,Dani,Pablo Barrios,venta,2.0,15.82266
+2026-02-12,0,transfer,mercado,Libre,Alan Matturro,venta,12.0,0.83556
 2026-02-11,0,transfer,mercado,Jotabetrbb,Carl Starfelt,venta,5.0,5.185
 2026-02-11,0,transfer,mercado,Maldinillo 💥,Pablo Maffeo,venta,408.0,2.29398
 2026-02-11,0,marks,start_mercado,Mercado diario,,,,0.0
