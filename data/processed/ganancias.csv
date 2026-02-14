@@ -1,18 +1,26 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
+marks,start_mercado,,,,,,,,,,,,,,,2026-02-14,
+transfer,mercado,,Antonio Blanco,Maldinillo 💥,Mister,6.5058,3,89,48,,,,,,,2026-02-14,70a03aa2a0e8f2e65de1e26f7cfa54b1
+marks,start_mercado,,,,,,,,,,,,,,,2026-02-14,
+transfer,mercado,,Eray Cömert,Mister,Libre,0.75351,2,25,19,,,,,,,2026-02-14,06cb489865915252dd7894722bb12e81
+transfer,mercado,,Fer López,Mister,Dani,5.50589,3,7,5,,,,,,,2026-02-14,44685407148cf9bdff0398a777b73f13
+marks,start_jornada,,,,,,,,,,,,,,24.0,2026-02-14,
+marks,start_mercado,,,,,,,,,,,,,,,2026-02-14,
+transfer,mercado,,Borja Mayoral,Maldinillo 💥,Mister,1.55925,4,50,9,,,,,,,2026-02-14,d14f30f6ed9ce7bf580d9b40d51dc96c
+marks,start_mercado,,,,,,,,,,,,,,,2026-02-14,
+transfer,mercado,,José Luis Gayà,Jotabetrbb,Mister,2.53175,2.0,54.0,19.0,,,,,,,2026-02-13,f0836afcde1bbfa72eece98cb3f9772b
 marks,start_mercado,,,,,,,,,,,,,,,2026-02-13,
-transfer,mercado,,José Luis Gayà,Jotabetrbb,Mister,2.53175,2,54,19,,,,,,,2026-02-13,f0836afcde1bbfa72eece98cb3f9772b
-marks,start_mercado,,,,,,,,,,,,,,,2026-02-13,
-transfer,mercado,,Raúl Moro,Mister,De la Guettir FC,6.788802,3,7,50,,,,,,,2026-02-13,724273ce81b4e6ee4fda7014b5708a3d
-transfer,Puja,,Raúl Moro,Mister,Maldinillo 💥,6.043,3,7,50,,,,,,,2026-02-13,c02aaf846069867780de7a06a0577ef3
-transfer,Puja,,Raúl Moro,Mister,Chamacónicos,5.643,3,7,50,,,,,,,2026-02-13,56e4af839f71ee4af56a35035fd6d33d
-transfer,Puja,,Raúl Moro,Mister,Dani,4.70327,3,7,50,,,,,,,2026-02-13,8c25f5a3b6fb4094621b2299ce20fbd3
-transfer,Puja,,Raúl Moro,Mister,Libre,3.943,3,7,50,,,,,,,2026-02-13,02189469f577e14df802d209885fe9f3
-transfer,mercado,,Miguel Román,Mister,Dani,2.9212,3,61,5,,,,,,,2026-02-13,e49d5249851f5b62928046e00f148bc9
-transfer,Puja,,Miguel Román,Mister,De la Guettir FC,2.88648,3,61,5,,,,,,,2026-02-13,c8ff8a37a2368adf83aa52751b25f051
-transfer,Puja,,Miguel Román,Mister,Chamacónicos,2.704,3,61,5,,,,,,,2026-02-13,670e96312f3ce222ecd64a7346f26dd3
-transfer,Puja,,Miguel Román,Mister,Libre,2.50402,3,61,5,,,,,,,2026-02-13,ccb4d4e30380ca29da920e439d226692
-transfer,mercado,,Marc Casadó,Mister,Dani,1.3417,3,50,3,,,,,,,2026-02-13,dfeb5b61f0d8e17d92e7989df6b91ad0
-transfer,mercado,,Baptiste Santamaria,Mister,Dani,0.19309,3,41,19,,,,,,,2026-02-13,08fe3088eaef8f920f8f83bed837d7cc
+transfer,mercado,,Raúl Moro,Mister,De la Guettir FC,6.788802,3.0,7.0,50.0,,,,,,,2026-02-13,724273ce81b4e6ee4fda7014b5708a3d
+transfer,Puja,,Raúl Moro,Mister,Maldinillo 💥,6.043,3.0,7.0,50.0,,,,,,,2026-02-13,c02aaf846069867780de7a06a0577ef3
+transfer,Puja,,Raúl Moro,Mister,Chamacónicos,5.643,3.0,7.0,50.0,,,,,,,2026-02-13,56e4af839f71ee4af56a35035fd6d33d
+transfer,Puja,,Raúl Moro,Mister,Dani,4.70327,3.0,7.0,50.0,,,,,,,2026-02-13,8c25f5a3b6fb4094621b2299ce20fbd3
+transfer,Puja,,Raúl Moro,Mister,Libre,3.943,3.0,7.0,50.0,,,,,,,2026-02-13,02189469f577e14df802d209885fe9f3
+transfer,mercado,,Miguel Román,Mister,Dani,2.9212,3.0,61.0,5.0,,,,,,,2026-02-13,e49d5249851f5b62928046e00f148bc9
+transfer,Puja,,Miguel Román,Mister,De la Guettir FC,2.88648,3.0,61.0,5.0,,,,,,,2026-02-13,c8ff8a37a2368adf83aa52751b25f051
+transfer,Puja,,Miguel Román,Mister,Chamacónicos,2.704,3.0,61.0,5.0,,,,,,,2026-02-13,670e96312f3ce222ecd64a7346f26dd3
+transfer,Puja,,Miguel Román,Mister,Libre,2.50402,3.0,61.0,5.0,,,,,,,2026-02-13,ccb4d4e30380ca29da920e439d226692
+transfer,mercado,,Marc Casadó,Mister,Dani,1.3417,3.0,50.0,3.0,,,,,,,2026-02-13,dfeb5b61f0d8e17d92e7989df6b91ad0
+transfer,mercado,,Baptiste Santamaria,Mister,Dani,0.19309,3.0,41.0,19.0,,,,,,,2026-02-13,08fe3088eaef8f920f8f83bed837d7cc
 marks,start_mercado,,,,,,,,,,,,,,,2026-02-13,
 transfer,mercado,,Julen Agirrezabala,Maldinillo 💥,Mister,1.47098,1.0,76.0,19.0,,,,,,,2026-02-12,4e655a37e84e88a1b5ca0e322385536c
 marks,start_mercado,,,,,,,,,,,,,,,2026-02-12,
