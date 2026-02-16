@@ -1,9 +1,13 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
+marks,start_mercado,,,,,,,,,,,,,,,2026-02-16,
+transfer,mercado,,Koke,Mister,Dani,12.07495,3,114,2,,,,,,,2026-02-16,1c04c498b28ea44dc5f839001675ed6c
+marks,start_mercado,,,,,,,,,,,,,,,2026-02-16,
+transfer,mercado,,Edu Expósito,Dani,Mister,14.97931,3,112,8,,,,,,,2026-02-16,317beadc961cda1d2f27370af0f92d4f
+marks,start_mercado,,,,,,,,,,,,,,,2026-02-16,
+transfer,mercado,,Brahim Díaz,Maldinillo 💥,Mister,1.66419,3.0,36.0,15.0,,,,,,,2026-02-15,d69fd7992d3d09e3bfbcafd94e1ac0c2
 marks,start_mercado,,,,,,,,,,,,,,,2026-02-15,
-transfer,mercado,,Brahim Díaz,Maldinillo 💥,Mister,1.66419,3,36,15,,,,,,,2026-02-15,d69fd7992d3d09e3bfbcafd94e1ac0c2
-marks,start_mercado,,,,,,,,,,,,,,,2026-02-15,
-transfer,mercado,,Frenkie De Jong,Mister,Maldinillo 💥,18.59253,3,87,3,,,,,,,2026-02-15,00454b1c76c83aac6bcc212af185c704
-transfer,Puja,,Frenkie De Jong,Mister,Dani,17.72757,3,87,3,,,,,,,2026-02-15,9c7ac7d32bd1a356a3a82d6600de1267
+transfer,mercado,,Frenkie De Jong,Mister,Maldinillo 💥,18.59253,3.0,87.0,3.0,,,,,,,2026-02-15,00454b1c76c83aac6bcc212af185c704
+transfer,Puja,,Frenkie De Jong,Mister,Dani,17.72757,3.0,87.0,3.0,,,,,,,2026-02-15,9c7ac7d32bd1a356a3a82d6600de1267
 marks,start_mercado,,,,,,,,,,,,,,,2026-02-15,
 transfer,mercado,,Antonio Blanco,Maldinillo 💥,Mister,6.5058,3.0,89.0,48.0,,,,,,,2026-02-14,70a03aa2a0e8f2e65de1e26f7cfa54b1
 marks,start_mercado,,,,,,,,,,,,,,,2026-02-14,
