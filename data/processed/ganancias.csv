@@ -1,8 +1,24 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
+marks,start_mercado,,,,,,,,,,,,,,,2026-02-17,
+transfer,mercado,,Adrián de la Fuente,Maldinillo 💥,Mister,3.26248,2,81,12,,,,,,,2026-02-17,028424f95c6031751b1984d1998756d6
+marks,start_mercado,,,,,,,,,,,,,,,2026-02-17,
+transfer,mercado,,Marcos Llorente,Maldinillo 💥,Mister,15.50224,2,89,2,,,,,,,2026-02-17,0586b7066df2bffcd014ca1979c36732
+marks,start_mercado,,,,,,,,,,,,,,,2026-02-17,
+transfer,clausula,,Abde Ezzalzouli,MuchaSalsa,Dani,19.9665,4,104,4,,,,,,,2026-02-17,9c3b524fafceacbcde2be263e4fa89fa
+marks,start_mercado,,,,,,,,,,,,,,,2026-02-17,
+transfer,mercado,,Stole Dimitrievski,Mister,Libre,1.67102,1,22,19,,,,,,,2026-02-17,7557097ed7c412eea178b69eb7985362
+transfer,mercado,,Dávid Hancko,Mister,Maldinillo 💥,11.40691,2,96,2,,,,,,,2026-02-17,2cb19e19fc1b804baf279f33ca16be00
+transfer,Puja,,Dávid Hancko,Mister,Libre,10.89103,2,96,2,,,,,,,2026-02-17,1e1745690bfa3fbc5e66f9863818a22e
+transfer,mercado,,Florian Lejeune,Mister,Maldinillo 💥,10.2155,2,96,14,,,,,,,2026-02-17,1c710248d72d6040dc929acc34dc9b21
+transfer,Puja,,Florian Lejeune,Mister,Libre,10.04905,2,96,14,,,,,,,2026-02-17,159d67f34e8a55794a40c4ed6c28defe
+marks,start_mercado,,,,,,,,,,,,,,,2026-02-17,
+transfer,mercado,,Rubén García,Libre,Mister,7.315,3,81,50,,,,,,,2026-02-17,03e5b6b210ba21fd092ca300d96a0cdd
+marks,start_mercado,,,,,,,,,,,,,,,2026-02-17,
+transfer,mercado,,Lucas Boyé,Dani,Mister,6.32298,4,87,48,,,,,,,2026-02-17,05a6a495d9485fc40c0e4ee4b429e5f3
+marks,start_mercado,,,,,,,,,,,,,,,2026-02-17,
+transfer,mercado,,Koke,Mister,Dani,12.07495,3.0,114.0,2.0,,,,,,,2026-02-16,1c04c498b28ea44dc5f839001675ed6c
 marks,start_mercado,,,,,,,,,,,,,,,2026-02-16,
-transfer,mercado,,Koke,Mister,Dani,12.07495,3,114,2,,,,,,,2026-02-16,1c04c498b28ea44dc5f839001675ed6c
-marks,start_mercado,,,,,,,,,,,,,,,2026-02-16,
-transfer,mercado,,Edu Expósito,Dani,Mister,14.97931,3,112,8,,,,,,,2026-02-16,317beadc961cda1d2f27370af0f92d4f
+transfer,mercado,,Edu Expósito,Dani,Mister,14.97931,3.0,112.0,8.0,,,,,,,2026-02-16,317beadc961cda1d2f27370af0f92d4f
 marks,start_mercado,,,,,,,,,,,,,,,2026-02-16,
 transfer,mercado,,Brahim Díaz,Maldinillo 💥,Mister,1.66419,3.0,36.0,15.0,,,,,,,2026-02-15,d69fd7992d3d09e3bfbcafd94e1ac0c2
 marks,start_mercado,,,,,,,,,,,,,,,2026-02-15,
