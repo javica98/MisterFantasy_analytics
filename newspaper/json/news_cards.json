@@ -5,9 +5,9 @@
       "titulo": "CLASIFICACION",
       "subtitulo": "",
       "texto": [
-        " ¡Dani sigue siendo el TIRANO de la liga, con 1066 puntos que lo colocan en la cima, inalcanzable para los mortales! ¿Alguien tiene el valor de desafiar a este COLOSO?",
-        " ¡Libre ha despertado de su letargo con una jornada ESPECTACULAR, escalando al segundo puesto de la semana con 65 puntos! ¿Es este el inicio de una REVOLUCIÓN o un simple espejismo?",
-        " ¡Juanba se arrastra por el fango de la clasificación de la jornada, con unos RIDÍCULOS 20 puntos que lo hunden en el fondo de la tabla! ¡Un DESASTRE absoluto!",
+        " ¡Dani mantiene su férreo liderato con 1092 puntos, pero la sombra de Maldinillo 💥, a solo 76 puntos, es cada vez más alargada!",
+        " ¡Chamacónicos ha dado el golpe en la jornada, alzándose con unos impresionantes 56 puntos y demostrando que la lucha por el podio está más viva que nunca!",
+        " ¡Mientras unos celebran, Juanba se hunde en el abismo de la tabla, cerrando la jornada con un paupérrimo resultado de 7 puntos que clama por una reacción urgente!",
         ""
       ]
     },
@@ -16,132 +16,118 @@
       "titulo": "RUMORES",
       "subtitulo": "",
       "texto": [
-        " ¡Fuentes cercanas a la liga susurran que Jotabetrbb está a punto de hipotecar su alma para seguir financiando su frenesí de fichajes! ¿Será el 'todo o nada' del manager para ascender o su ruina definitiva?\n\n"
+        " ¡Fuentes cercanas a la liga susurran que Dani, el líder indiscutible, podría estar preparando un nuevo golpe de mercado aún más escandaloso para sentenciar la liga y dejar a sus rivales temblando!\n\n"
       ]
     },
     {
       "tipo": "Fichaje destacado",
-      "jugador": "Dani Olmo",
-      "manager": "Jotabetrbb",
+      "jugador": "Abde Ezzalzouli",
+      "manager": "Dani",
       "puntos": null,
-      "dinero": 30.21529,
-      "titulo": "¡Jotabetrbb ROMPE EL MERCADO!",
-      "subtitulo": "Dani Olmo, la nueva joya de la corona que vacía las arcas.",
+      "dinero": 19.9665,
+      "titulo": "¡Bombazo en el Mercado!",
+      "subtitulo": "Dani, el líder implacable, golpea de nuevo.",
       "texto": [
-        "El osado manager Jotabetrbb, anclado en la quinta posición, ha desatado la locura con el fichaje bomba de Dani Olmo por la escalofriante cifra de 30.22 millones.",
-        "¿Es esta una jugada maestra o el inicio de una quiebra financiera para un equipo que necesita desesperadamente un empujón?"
+        "Con una chequera que arde, Dani ha sacudido el mercado al desembolsar la friolera de 19.97 millones por Abde Ezzalzouli.",
+        "¿Es esta una jugada maestra para consolidar su reinado o un acto de desesperación tras su discreto 7º puesto en la jornada?"
+      ],
+      "equipo": "Real Betis Balompié"
+    },
+    {
+      "tipo": "Fichaje destacado",
+      "jugador": "Frenkie De Jong",
+      "manager": "Maldinillo 💥",
+      "puntos": null,
+      "dinero": 18.59253,
+      "titulo": "¡Maldinillo Contesta al Líder!",
+      "subtitulo": "El subcampeón no se queda atrás y ficha a Frenkie De Jong.",
+      "texto": [
+        "¡La guerra por el título calienta! Maldinillo responde con furia al movimiento de Dani, asegurándose a Frenkie De Jong por una cifra escandalosa de 18.59 millones.",
+        "¿Será esta la pieza clave para asaltar el trono o un simple calentón en la carrera de armamentos?"
       ],
       "equipo": "FC Barcelona"
     },
     {
       "tipo": "Fichaje destacado",
-      "jugador": "Ademola Lookman",
-      "manager": "Jotabetrbb",
+      "jugador": "Koke",
+      "manager": "Dani",
       "puntos": null,
-      "dinero": 16.793,
-      "titulo": "¡DOBLE GOLPE DE JOTABETRBB!",
-      "subtitulo": "Lookman se une a la fiesta del despilfarro.",
+      "dinero": 12.07495,
+      "titulo": "¡Dani No Tiene Límite!",
+      "subtitulo": "Nuevo golpe de autoridad del líder con la adquisición de Koke.",
       "texto": [
-        "No contento con un solo bombazo, Jotabetrbb vuelve a abrir la chequera y se hace con Ademola Lookman por 16.79 millones, ¡demostrando que no le teme a las deudas!",
-        "La afición se pregunta: ¿Es esto una estrategia brillante o simplemente un manager desesperado intentando comprar la gloria?"
+        "¡El despilfarro continúa! Dani, en un acto de poderío económico, suma a Koke a sus filas por más de 12 millones, dejando claro quién manda.",
+        "¿Está Dani construyendo un equipo de ensueño o simplemente quemando dinero para intimidar a sus rivales antes de que sea demasiado tarde?"
       ],
       "equipo": "Atlético de Madrid"
     },
     {
-      "tipo": "Fichaje destacado",
-      "jugador": "Azzedine Ounahi",
+      "tipo": "Venta récord",
+      "jugador": "Marcos Llorente",
       "manager": "Maldinillo 💥",
       "puntos": null,
-      "dinero": 9.23451,
-      "titulo": "¡Maldinillo REFUERZA LA MEDULAR!",
-      "subtitulo": "Ounahi llega para apuntalar al subcampeón.",
+      "dinero": 15.50224,
+      "titulo": "¡Venta Estratégica o Gran Error de Maldinillo!",
+      "subtitulo": "Marcos Llorente sale del equipo del subcampeón.",
       "texto": [
-        "Maldinillo 💥, ese depredador que acecha desde la segunda posición, ha sumado a Azzedine Ounahi por 9.23 millones, ¡un movimiento inteligente para mantener la presión sobre el líder!",
-        "Mientras Dani tiembla en la cima, Maldinillo se rearma en silencio, ¿estamos ante el preludio de un asalto al liderato?"
+        "En un movimiento que ha dejado a todos boquiabiertos, Maldinillo se desprende de Marcos Llorente por una cifra estratosférica de 15.50 millones.",
+        "¿Es una genialidad para financiar nuevas incorporaciones o un adiós prematuro a un pilar fundamental que podría costarle el título?"
+      ],
+      "equipo": "Atlético de Madrid"
+    },
+    {
+      "tipo": "MVP de la jornada",
+      "jugador": "V. Júnior",
+      "manager": "Jotabetrbb",
+      "puntos": 15,
+      "dinero": null,
+      "titulo": "¡Vinicius Júnior, el Rey de la Jornada!",
+      "subtitulo": "Jotabetrbb celebra los puntos de su estrella.",
+      "texto": [
+        "¡Explosión total! V. Júnior ha deslumbrado con 15 puntos, llevando a Jotabetrbb (5º general) a un meritorio 3º puesto en la jornada.",
+        "¿Será este el inicio de la remontada épica para Jotabetrbb o solo un espejismo en medio de la tabla?"
+      ],
+      "equipo": "Real Madrid"
+    },
+    {
+      "tipo": "MVP de la jornada",
+      "jugador": "T. Lemar",
+      "manager": "Los marinero",
+      "puntos": 13,
+      "dinero": null,
+      "titulo": "¡Lemar Vuelve a Brillar!",
+      "subtitulo": "Los marinero se benefician de la magia del francés.",
+      "texto": [
+        "T. Lemar ha recordado por qué es una estrella, sumando 13 puntos cruciales para Los marinero, que se mantienen en la zona alta de la clasificación.",
+        "¿Podrá este destello de calidad impulsar a Los marinero a alcanzar el podio general y dar la sorpresa?"
       ],
       "equipo": "Girona FC"
     },
     {
-      "tipo": "Venta récord",
-      "jugador": "Julián Álvarez",
-      "manager": "Jotabetrbb",
-      "puntos": null,
-      "dinero": 18.94053,
-      "titulo": "¡Jotabetrbb HACE CAJA!",
-      "subtitulo": "Julián Álvarez, la 'Araña' que se va por un dineral.",
-      "texto": [
-        "En una jugada maestra para equilibrar las cuentas (o quizás para seguir comprando), Jotabetrbb ha vendido a Julián Álvarez por 18.94 millones.",
-        "¿Es esta una venta dolorosa o un sacrificio necesario para financiar su ambiciosa (y arriesgada) estrategia de fichajes?"
-      ],
-      "equipo": "Atlético de Madrid"
-    },
-    {
       "tipo": "MVP de la jornada",
-      "jugador": "A. Moleiro",
-      "manager": "Dani",
-      "puntos": 14,
+      "jugador": "P. Cubarsi",
+      "manager": "Maldinillo 💥",
+      "puntos": 12,
       "dinero": null,
-      "titulo": "¡MOLEIRO, EL HÉROE SILENCIOSO DE DANI!",
-      "subtitulo": "El líder no solo gana, ¡también tiene MVPs!",
+      "titulo": "¡El Joven Cubarsí, Sorpresa de la Jornada!",
+      "subtitulo": "Maldinillo sigue sumando con su defensa.",
       "texto": [
-        "A. Moleiro, bajo la batuta del intocable Dani, ha sido el MVP de la jornada con 14 puntos, ¡demostrando que el líder tiene un ojo clínico para el talento!",
-        "Mientras el resto se desgañita, Dani sigue sumando con sus jugadores estrella, ¿hay alguien que pueda frenar esta hegemonía?"
+        "¡Nadie lo vio venir! P. Cubarsi, la joven promesa, ha explotado con 12 puntos, consolidando la segunda posición de Maldinillo en la jornada.",
+        "¿Es este el descubrimiento que necesitaba Maldinillo para presionar al líder Dani y arrebatarle el trono?"
       ],
-      "equipo": "Villarreal CF"
-    },
-    {
-      "tipo": "MVP de la jornada",
-      "jugador": "K. Salas",
-      "manager": "Jotabetrbb",
-      "puntos": 13,
-      "dinero": null,
-      "titulo": "¡SALAS DA LA CARA POR JOTABETRBB!",
-      "subtitulo": "Un destello de esperanza en la inversión.",
-      "texto": [
-        "K. Salas ha brillado con 13 puntos, siendo el MVP de la jornada para el siempre polémico Jotabetrbb, ¡un respiro en medio de su frenesí de fichajes!",
-        "¿Será Salas el salvador que justifique la arriesgada apuesta de un manager que vive al límite?"
-      ],
-      "equipo": "Sevilla FC"
-    },
-    {
-      "tipo": "MVP de la jornada",
-      "jugador": "G. Mikautadze",
-      "manager": "Libre",
-      "puntos": 13,
-      "dinero": null,
-      "titulo": "¡MIKAUTADZE, LA ESTRELLA INESPERADA DE LIBRE!",
-      "subtitulo": "El renacer de un equipo que nadie veía venir.",
-      "texto": [
-        "G. Mikautadze ha sido el MVP con 13 puntos para Libre, catapultando a su equipo a la segunda posición de la jornada, ¡una gesta que nadie esperaba!",
-        "¿Estamos presenciando el surgimiento de un nuevo contendiente o es solo un espejismo en el desierto de la clasificación?"
-      ],
-      "equipo": "Villarreal CF"
+      "equipo": "FC Barcelona"
     },
     {
       "tipo": "Peor actuación de la jornada",
-      "jugador": "R. Fernández",
+      "jugador": "J. Sánchez",
       "manager": "Los marinero",
-      "puntos": -1,
+      "puntos": -6,
       "dinero": null,
-      "titulo": "¡FERNÁNDEZ, LA PESADILLA DE LOS MARINERO!",
-      "subtitulo": "Una actuación para olvidar y un lastre para el equipo.",
+      "titulo": "¡Desastre Total! J. Sánchez, el Peor de la Jornada.",
+      "subtitulo": "Los marinero sufren un revés inesperado.",
       "texto": [
-        "R. Fernández ha perpetrado la peor actuación de la jornada para Los marinero, ¡con un vergonzoso -1 punto!",
-        "¿Es este un error aislado o el síntoma de que Los marinero están perdiendo el rumbo en aguas turbulentas?"
-      ],
-      "equipo": "RCD Espanyol"
-    },
-    {
-      "tipo": "Héroe bajo palos",
-      "jugador": "O. Vlachodimos",
-      "manager": "Los marinero",
-      "puntos": 9,
-      "dinero": null,
-      "titulo": "¡VLACHODIMOS, EL SALVADOR DE LOS MARINERO!",
-      "subtitulo": "Un muro infranqueable que evita el desastre.",
-      "texto": [
-        "Cuando todo parecía perdido, O. Vlachodimos se ha erigido en el héroe de Los marinero, ¡parando un penalti decisivo y salvando los muebles!",
-        "A pesar de la debacle de Fernández, Vlachodimos demuestra que Los marinero tienen un ángel de la guarda bajo los tres palos."
+        "¡Catástrofe en Los marinero! J. Sánchez ha protagonizado la peor actuación de la jornada con unos dolorosos -6 puntos que hunden a su equipo.",
+        "¿Podrá el manager de Los marinero recuperar la confianza en su jugador o buscará una salida urgente para evitar más hecatombes?"
       ],
       "equipo": "Sevilla FC"
     }
