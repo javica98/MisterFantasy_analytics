@@ -1,20 +1,44 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
+marks,start_mercado,,,,,,,,,,,,,,,2026-02-18,
+transfer,mercado,,Filip Ugrinic,Jotabetrbb,Mister,1.73784,3,50,19,,,,,,,2026-02-18,18e6a2050ef2019b261a4fe1f384ebd8
+marks,start_mercado,,,,,,,,,,,,,,,2026-02-18,
+transfer,mercado,,Marc Casadó,Dani,Mister,1.32613,3,50,3,,,,,,,2026-02-18,e0bfef0224329ca9c30cfc9bca07c729
+marks,start_mercado,,,,,,,,,,,,,,,2026-02-18,
+transfer,mercado,,Alfonso Pedraza,Mister,Dani,4.0834,2,66,20,,,,,,,2026-02-18,81b7e01444ee2d9c245fc41a04fe32ac
+bonificacion,quiniela,,,,,,,,,Dani,0.4,1º,,,,2026-02-18,
+bonificacion,quiniela,,,,,,,,,Maldinillo 💥,0.4,2º,,,,2026-02-18,
+bonificacion,quiniela,,,,,,,,,Chamacónicos,0.3,3º,,,,2026-02-18,
+bonificacion,quiniela,,,,,,,,,De la Guettir FC,0.3,4º,,,,2026-02-18,
+bonificacion,quiniela,,,,,,,,,Jotabetrbb,,5º,,,,2026-02-18,
+bonificacion,quiniela,,,,,,,,,Juanba,,6º,,,,2026-02-18,
+bonificacion,quiniela,,,,,,,,,Libre,,7º,,,,2026-02-18,
+bonificacion,quiniela,,,,,,,,,Los marinero,,8º,,,,2026-02-18,
+bonificacion,quiniela,,,,,,,,,MuchaSalsa,,9º,,,,2026-02-18,
+bonificacion,clasificacion,,,,,,,,,Chamacónicos,1.82,1,,,,2026-02-18,
+bonificacion,clasificacion,,,,,,,,,Maldinillo 💥,1.75,2,,,,2026-02-18,
+bonificacion,clasificacion,,,,,,,,,Jotabetrbb,1.81,3,,,,2026-02-18,
+bonificacion,clasificacion,,,,,,,,,Los marinero,1.83,4,,,,2026-02-18,
+bonificacion,clasificacion,,,,,,,,,Libre,1.86,5,,,,2026-02-18,
+bonificacion,clasificacion,,,,,,,,,MuchaSalsa,2.05,6,,,,2026-02-18,
+bonificacion,clasificacion,,,,,,,,,Dani,1.92,7,,,,2026-02-18,
+bonificacion,clasificacion,,,,,,,,,De la Guettir FC,2.06,8,,,,2026-02-18,
+bonificacion,clasificacion,,,,,,,,,Juanba,1.94,9,,,,2026-02-18,
+marks,start_mercado,,,,,,,,,,,,,,,2026-02-18,
+transfer,mercado,,Adrián de la Fuente,Maldinillo 💥,Mister,3.26248,2.0,81.0,12.0,,,,,,,2026-02-17,028424f95c6031751b1984d1998756d6
 marks,start_mercado,,,,,,,,,,,,,,,2026-02-17,
-transfer,mercado,,Adrián de la Fuente,Maldinillo 💥,Mister,3.26248,2,81,12,,,,,,,2026-02-17,028424f95c6031751b1984d1998756d6
+transfer,mercado,,Marcos Llorente,Maldinillo 💥,Mister,15.50224,2.0,89.0,2.0,,,,,,,2026-02-17,0586b7066df2bffcd014ca1979c36732
 marks,start_mercado,,,,,,,,,,,,,,,2026-02-17,
-transfer,mercado,,Marcos Llorente,Maldinillo 💥,Mister,15.50224,2,89,2,,,,,,,2026-02-17,0586b7066df2bffcd014ca1979c36732
+transfer,clausula,,Abde Ezzalzouli,MuchaSalsa,Dani,19.9665,4.0,104.0,4.0,,,,,,,2026-02-17,9c3b524fafceacbcde2be263e4fa89fa
 marks,start_mercado,,,,,,,,,,,,,,,2026-02-17,
-transfer,clausula,,Abde Ezzalzouli,MuchaSalsa,Dani,19.9665,4,104,4,,,,,,,2026-02-17,9c3b524fafceacbcde2be263e4fa89fa
+transfer,mercado,,Stole Dimitrievski,Mister,Libre,1.67102,1.0,22.0,19.0,,,,,,,2026-02-17,7557097ed7c412eea178b69eb7985362
+transfer,mercado,,Dávid Hancko,Mister,Maldinillo 💥,11.40691,2.0,96.0,2.0,,,,,,,2026-02-17,2cb19e19fc1b804baf279f33ca16be00
+transfer,Puja,,Dávid Hancko,Mister,Libre,10.89103,2.0,96.0,2.0,,,,,,,2026-02-17,1e1745690bfa3fbc5e66f9863818a22e
+transfer,mercado,,Florian Lejeune,Mister,Maldinillo 💥,10.2155,2.0,96.0,14.0,,,,,,,2026-02-17,1c710248d72d6040dc929acc34dc9b21
+transfer,Puja,,Florian Lejeune,Mister,Libre,10.04905,2.0,96.0,14.0,,,,,,,2026-02-17,159d67f34e8a55794a40c4ed6c28defe
 marks,start_mercado,,,,,,,,,,,,,,,2026-02-17,
-transfer,mercado,,Stole Dimitrievski,Mister,Libre,1.67102,1,22,19,,,,,,,2026-02-17,7557097ed7c412eea178b69eb7985362
-transfer,mercado,,Dávid Hancko,Mister,Maldinillo 💥,11.40691,2,96,2,,,,,,,2026-02-17,2cb19e19fc1b804baf279f33ca16be00
-transfer,Puja,,Dávid Hancko,Mister,Libre,10.89103,2,96,2,,,,,,,2026-02-17,1e1745690bfa3fbc5e66f9863818a22e
-transfer,mercado,,Florian Lejeune,Mister,Maldinillo 💥,10.2155,2,96,14,,,,,,,2026-02-17,1c710248d72d6040dc929acc34dc9b21
-transfer,Puja,,Florian Lejeune,Mister,Libre,10.04905,2,96,14,,,,,,,2026-02-17,159d67f34e8a55794a40c4ed6c28defe
+transfer,mercado,,Rubén García,Libre,Mister,7.315,3.0,81.0,50.0,,,,,,,2026-02-17,03e5b6b210ba21fd092ca300d96a0cdd
 marks,start_mercado,,,,,,,,,,,,,,,2026-02-17,
-transfer,mercado,,Rubén García,Libre,Mister,7.315,3,81,50,,,,,,,2026-02-17,03e5b6b210ba21fd092ca300d96a0cdd
-marks,start_mercado,,,,,,,,,,,,,,,2026-02-17,
-transfer,mercado,,Lucas Boyé,Dani,Mister,6.32298,4,87,48,,,,,,,2026-02-17,05a6a495d9485fc40c0e4ee4b429e5f3
+transfer,mercado,,Lucas Boyé,Dani,Mister,6.32298,4.0,87.0,48.0,,,,,,,2026-02-17,05a6a495d9485fc40c0e4ee4b429e5f3
 marks,start_mercado,,,,,,,,,,,,,,,2026-02-17,
 transfer,mercado,,Koke,Mister,Dani,12.07495,3.0,114.0,2.0,,,,,,,2026-02-16,1c04c498b28ea44dc5f839001675ed6c
 marks,start_mercado,,,,,,,,,,,,,,,2026-02-16,
