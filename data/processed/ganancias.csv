@@ -1,17 +1,44 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
+marks,start_mercado,,,,,,,,,,,,,,,2026-02-20,
+transfer,mercado,,Miguel Román,Dani,Mister,3.2697,3,65,5,,,,,,,2026-02-20,de01f648c1de0db8502ff5e6fd84376c
+marks,start_mercado,,,,,,,,,,,,,,,2026-02-20,
+transfer,mercado,,Dani Carvajal,Mister,Maldinillo 💥,3.33181,2,27,15,,,,,,,2026-02-20,6daad4f17e90280e5d78d957f26d7f26
+transfer,mercado,,Guido Rodríguez,Mister,Maldinillo 💥,2.84116,3,5,19,,,,,,,2026-02-20,cfc1cb1ffa1e5c33d4505ca53f1772fa
+marks,start_mercado,,,,,,,,,,,,,,,2026-02-20,
+transfer,mercado,,Victor Muñoz,Dani,Mister,12.49605,4,128,50,,,,,,,2026-02-20,e1917da50ed551178108275c9f593780
+marks,start_mercado,,,,,,,,,,,,,,,2026-02-20,
+transfer,clausula,,Marcus Rashford,Maldinillo 💥,Libre,22.212,4,114,3,,,,,,,2026-02-20,b847bed3c376cd6938e655fc6834a70f
+bonificacion,quiniela,,,,,,,,,Chamacónicos,0.6,1º,,,,2026-02-20,
+bonificacion,quiniela,,,,,,,,,Jotabetrbb,0.6,2º,,,,2026-02-20,
+bonificacion,quiniela,,,,,,,,,Dani,0.5,3º,,,,2026-02-20,
+bonificacion,quiniela,,,,,,,,,De la Guettir FC,0.5,4º,,,,2026-02-20,
+bonificacion,quiniela,,,,,,,,,Maldinillo 💥,0.5,5º,,,,2026-02-20,
+bonificacion,quiniela,,,,,,,,,Libre,0.4,6º,,,,2026-02-20,
+bonificacion,quiniela,,,,,,,,,Los marinero,0.4,7º,,,,2026-02-20,
+bonificacion,quiniela,,,,,,,,,Juanba,,8º,,,,2026-02-20,
+bonificacion,quiniela,,,,,,,,,MuchaSalsa,,9º,,,,2026-02-20,
+bonificacion,clasificacion,,,,,,,,,Chamacónicos,1.69,1,,,,2026-02-20,
+bonificacion,clasificacion,,,,,,,,,MuchaSalsa,1.86,2,,,,2026-02-20,
+bonificacion,clasificacion,,,,,,,,,Dani,1.38,3,,,,2026-02-20,
+bonificacion,clasificacion,,,,,,,,,Maldinillo 💥,1.56,4,,,,2026-02-20,
+bonificacion,clasificacion,,,,,,,,,Los marinero,1.84,5,,,,2026-02-20,
+bonificacion,clasificacion,,,,,,,,,Jotabetrbb,1.9,6,,,,2026-02-20,
+bonificacion,clasificacion,,,,,,,,,De la Guettir FC,2.16,7,,,,2026-02-20,
+bonificacion,clasificacion,,,,,,,,,Libre,2.2,8,,,,2026-02-20,
+bonificacion,clasificacion,,,,,,,,,Juanba,2.1,9,,,,2026-02-20,
+marks,start_mercado,,,,,,,,,,,,,,,2026-02-20,
+transfer,mercado,,Baptiste Santamaria,Dani,Mister,0.18315,3.0,42.0,19.0,,,,,,,2026-02-19,b885ea8925c370b9a43918fd57e56d69
 marks,start_mercado,,,,,,,,,,,,,,,2026-02-19,
-transfer,mercado,,Baptiste Santamaria,Dani,Mister,0.18315,3,42,19,,,,,,,2026-02-19,b885ea8925c370b9a43918fd57e56d69
+transfer,mercado,,Antonio Rüdiger,Mister,Jotabetrbb,6.301,2.0,28.0,15.0,,,,,,,2026-02-19,e8cf978fd151cb8976d8164519b4c778
+transfer,mercado,,Fran Beltrán,Mister,De la Guettir FC,3.3161,3.0,50.0,222.0,,,,,,,2026-02-19,671b4d30c8e8bc40a75553c0878493d9
+transfer,Puja,,Fran Beltrán,Mister,Jotabetrbb,2.898,3.0,50.0,222.0,,,,,,,2026-02-19,71b3f104e8c35aee73184e022a128a57
+transfer,Puja,,Fran Beltrán,Mister,Dani,2.0306,3.0,50.0,222.0,,,,,,,2026-02-19,422e5b24a6f441875ef7dc903b3ef53c
 marks,start_mercado,,,,,,,,,,,,,,,2026-02-19,
-transfer,mercado,,Antonio Rüdiger,Mister,Jotabetrbb,6.301,2,28,15,,,,,,,2026-02-19,e8cf978fd151cb8976d8164519b4c778
-transfer,mercado,,Fran Beltrán,Mister,De la Guettir FC,3.3161,3,50,222,,,,,,,2026-02-19,671b4d30c8e8bc40a75553c0878493d9
-transfer,Puja,,Fran Beltrán,Mister,Jotabetrbb,2.898,3,50,222,,,,,,,2026-02-19,71b3f104e8c35aee73184e022a128a57
-transfer,Puja,,Fran Beltrán,Mister,Dani,2.0306,3,50,222,,,,,,,2026-02-19,422e5b24a6f441875ef7dc903b3ef53c
+transfer,clausula,,Georges Mikautadze,Libre,Dani,25.308,4.0,111.0,20.0,,,,,,,2026-02-19,1cb5e06670af4311827ccae0b7b4fd4f
 marks,start_mercado,,,,,,,,,,,,,,,2026-02-19,
-transfer,clausula,,Georges Mikautadze,Libre,Dani,25.308,4,111,20,,,,,,,2026-02-19,1cb5e06670af4311827ccae0b7b4fd4f
+transfer,mercado,,Koke,Dani,Mister,12.15939,3.0,114.0,2.0,,,,,,,2026-02-19,2b73cc75feb045cc6d9737c84e8230fe
 marks,start_mercado,,,,,,,,,,,,,,,2026-02-19,
-transfer,mercado,,Koke,Dani,Mister,12.15939,3,114,2,,,,,,,2026-02-19,2b73cc75feb045cc6d9737c84e8230fe
-marks,start_mercado,,,,,,,,,,,,,,,2026-02-19,
-transfer,mercado,,Dávid Hancko,Maldinillo 💥,Mister,11.43345,2,96,2,,,,,,,2026-02-19,8403fc2f6667f266d81c0ef1963cce79
+transfer,mercado,,Dávid Hancko,Maldinillo 💥,Mister,11.43345,2.0,96.0,2.0,,,,,,,2026-02-19,8403fc2f6667f266d81c0ef1963cce79
 marks,start_mercado,,,,,,,,,,,,,,,2026-02-19,
 transfer,mercado,,Filip Ugrinic,Jotabetrbb,Mister,1.73784,3.0,50.0,19.0,,,,,,,2026-02-18,18e6a2050ef2019b261a4fe1f384ebd8
 marks,start_mercado,,,,,,,,,,,,,,,2026-02-18,
