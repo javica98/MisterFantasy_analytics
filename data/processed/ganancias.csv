@@ -1,13 +1,20 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
+marks,start_mercado,,,,,,,,,,,,,,,2026-02-21,
+transfer,mercado,,Jon Pacheco,Mister,Dani,4.40323,2,65,48,,,,,,,2026-02-21,d5d3e2c2c354e5c8ffa3ac765966fbc8
+transfer,mercado,,Arda Güler,Mister,Maldinillo 💥,25.23226,3,118,15,,,,,,,2026-02-21,c3a56e7aa2af4fbcfa5347342ba458d2
+transfer,Puja,,Arda Güler,Mister,Dani,18.22605,3,118,15,,,,,,,2026-02-21,7c2b28d7ae92b7688294c2b8d375c53a
+marks,start_mercado,,,,,,,,,,,,,,,2026-02-21,
+transfer,mercado,,Santiago Mouriño,Dani,Mister,5.77824,2,63,20,,,,,,,2026-02-21,e5060161112ad2a55b36466b28f3ebcc
+marks,start_jornada,,,,,,,,,,,,,,25.0,2026-02-21,
+marks,start_mercado,,,,,,,,,,,,,,,2026-02-21,
+transfer,mercado,,Miguel Román,Dani,Mister,3.2697,3.0,65.0,5.0,,,,,,,2026-02-20,de01f648c1de0db8502ff5e6fd84376c
 marks,start_mercado,,,,,,,,,,,,,,,2026-02-20,
-transfer,mercado,,Miguel Román,Dani,Mister,3.2697,3,65,5,,,,,,,2026-02-20,de01f648c1de0db8502ff5e6fd84376c
+transfer,mercado,,Dani Carvajal,Mister,Maldinillo 💥,3.33181,2.0,27.0,15.0,,,,,,,2026-02-20,6daad4f17e90280e5d78d957f26d7f26
+transfer,mercado,,Guido Rodríguez,Mister,Maldinillo 💥,2.84116,3.0,5.0,19.0,,,,,,,2026-02-20,cfc1cb1ffa1e5c33d4505ca53f1772fa
 marks,start_mercado,,,,,,,,,,,,,,,2026-02-20,
-transfer,mercado,,Dani Carvajal,Mister,Maldinillo 💥,3.33181,2,27,15,,,,,,,2026-02-20,6daad4f17e90280e5d78d957f26d7f26
-transfer,mercado,,Guido Rodríguez,Mister,Maldinillo 💥,2.84116,3,5,19,,,,,,,2026-02-20,cfc1cb1ffa1e5c33d4505ca53f1772fa
+transfer,mercado,,Victor Muñoz,Dani,Mister,12.49605,4.0,128.0,50.0,,,,,,,2026-02-20,e1917da50ed551178108275c9f593780
 marks,start_mercado,,,,,,,,,,,,,,,2026-02-20,
-transfer,mercado,,Victor Muñoz,Dani,Mister,12.49605,4,128,50,,,,,,,2026-02-20,e1917da50ed551178108275c9f593780
-marks,start_mercado,,,,,,,,,,,,,,,2026-02-20,
-transfer,clausula,,Marcus Rashford,Maldinillo 💥,Libre,22.212,4,114,3,,,,,,,2026-02-20,b847bed3c376cd6938e655fc6834a70f
+transfer,clausula,,Marcus Rashford,Maldinillo 💥,Libre,22.212,4.0,114.0,3.0,,,,,,,2026-02-20,b847bed3c376cd6938e655fc6834a70f
 bonificacion,quiniela,,,,,,,,,Chamacónicos,0.6,1º,,,,2026-02-20,
 bonificacion,quiniela,,,,,,,,,Jotabetrbb,0.6,2º,,,,2026-02-20,
 bonificacion,quiniela,,,,,,,,,Dani,0.5,3º,,,,2026-02-20,
