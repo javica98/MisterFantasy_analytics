@@ -1,10 +1,16 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
+marks,start_mercado,,,,,,,,,,,,,,,2026-02-22,
+transfer,mercado,,Rubén Sánchez,Maldinillo 💥,Mister,0.16524,2,28,8,,,,,,,2026-02-22,276257912bc3bca9a47367b17cf1210b
+marks,start_mercado,,,,,,,,,,,,,,,2026-02-22,
+transfer,mercado,,Gorka Guruzeta,Mister,Dani,3.33935,4,70,1,,,,,,,2026-02-22,753863afff2c6d473a5b0a39afd251cc
+marks,start_mercado,,,,,,,,,,,,,,,2026-02-22,
+transfer,clausula,,Abde Ezzalzouli,Dani,Libre,29.94975,4,108,4,,,,,,,2026-02-22,0bcd012a1bb7c7fa00bd1c876a880aa9
+marks,start_mercado,,,,,,,,,,,,,,,2026-02-22,
+transfer,mercado,,Jon Pacheco,Mister,Dani,4.40323,2.0,65.0,48.0,,,,,,,2026-02-21,d5d3e2c2c354e5c8ffa3ac765966fbc8
+transfer,mercado,,Arda Güler,Mister,Maldinillo 💥,25.23226,3.0,118.0,15.0,,,,,,,2026-02-21,c3a56e7aa2af4fbcfa5347342ba458d2
+transfer,Puja,,Arda Güler,Mister,Dani,18.22605,3.0,118.0,15.0,,,,,,,2026-02-21,7c2b28d7ae92b7688294c2b8d375c53a
 marks,start_mercado,,,,,,,,,,,,,,,2026-02-21,
-transfer,mercado,,Jon Pacheco,Mister,Dani,4.40323,2,65,48,,,,,,,2026-02-21,d5d3e2c2c354e5c8ffa3ac765966fbc8
-transfer,mercado,,Arda Güler,Mister,Maldinillo 💥,25.23226,3,118,15,,,,,,,2026-02-21,c3a56e7aa2af4fbcfa5347342ba458d2
-transfer,Puja,,Arda Güler,Mister,Dani,18.22605,3,118,15,,,,,,,2026-02-21,7c2b28d7ae92b7688294c2b8d375c53a
-marks,start_mercado,,,,,,,,,,,,,,,2026-02-21,
-transfer,mercado,,Santiago Mouriño,Dani,Mister,5.77824,2,63,20,,,,,,,2026-02-21,e5060161112ad2a55b36466b28f3ebcc
+transfer,mercado,,Santiago Mouriño,Dani,Mister,5.77824,2.0,63.0,20.0,,,,,,,2026-02-21,e5060161112ad2a55b36466b28f3ebcc
 marks,start_jornada,,,,,,,,,,,,,,25.0,2026-02-21,
 marks,start_mercado,,,,,,,,,,,,,,,2026-02-21,
 transfer,mercado,,Miguel Román,Dani,Mister,3.2697,3.0,65.0,5.0,,,,,,,2026-02-20,de01f648c1de0db8502ff5e6fd84376c
