@@ -1,6 +1,20 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
-marks,start_mercado,,,,,,,,,,,,,,,2026-02-23,
-transfer,mercado,,Jules Koundé,Mister,Maldinillo 💥,14.80397,2,101,3,,,,,,,2026-02-23,28b8146f5e854d2a83deb1495a3422a4
+marks,start_mercado,,,,,,,,,,,,,,,2026-02-24,
+transfer,mercado,,Marc Roca,Mister,De la Guettir FC,7.899931,3,73,4,,,,,,,2026-02-24,cca3a088574358fdb79b35f39f7a2b3e
+transfer,Puja,,Marc Roca,Mister,Chamacónicos,7.298,3,73,4,,,,,,,2026-02-24,cf4ccdf8ea7c2d91ff521497ac73b0bc
+transfer,Puja,,Marc Roca,Mister,Dani,7.01157,3,73,4,,,,,,,2026-02-24,d451c6fcd1de4f75c31517cc7b307f2d
+transfer,Puja,,Marc Roca,Mister,Libre,6.91025,3,73,4,,,,,,,2026-02-24,842f7dad69a0304313529b3e037d494d
+transfer,mercado,,Augusto Batalla,Mister,De la Guettir FC,6.228,1,110,14,,,,,,,2026-02-24,601bf412ed30daaae03daa3ebd41408b
+marks,start_mercado,,,,,,,,,,,,,,,2026-02-24,
+transfer,clausula,,Azzedine Ounahi,Maldinillo 💥,Dani,15.1845,3,80,222,,,,,,,2026-02-24,c8d64b1b8ae528c76d2d3e0458823c0c
+marks,start_mercado,,,,,,,,,,,,,,,2026-02-24,
+transfer,mercado,,Jorge de Frutos,Maldinillo 💥,Mister,13.7853,3,119,14,,,,,,,2026-02-24,e7931dc861821d7fe6379a48131f84eb
+marks,start_mercado,,,,,,,,,,,,,,,2026-02-24,
+transfer,mercado,,Raúl Asencio,Jotabetrbb,Mister,10.37371,2,81,15,,,,,,,2026-02-24,3368227fcb68241f9bf0b26a710b1571
+marks,start_mercado,,,,,,,,,,,,,,,2026-02-24,
+transfer,mercado,,Fer López,Dani,Mister,5.78963,3,15,5,,,,,,,2026-02-24,92f30eac4498711b35268be1b2a3faed
+marks,start_mercado,,,,,,,,,,,,,,,2026-02-24,
+transfer,mercado,,Jules Koundé,Mister,Maldinillo 💥,14.80397,2.0,101.0,3.0,,,,,,,2026-02-23,28b8146f5e854d2a83deb1495a3422a4
 marks,start_mercado,,,,,,,,,,,,,,,2026-02-23,
 transfer,mercado,,Rubén Sánchez,Maldinillo 💥,Mister,0.16524,2.0,28.0,8.0,,,,,,,2026-02-22,276257912bc3bca9a47367b17cf1210b
 marks,start_mercado,,,,,,,,,,,,,,,2026-02-22,
