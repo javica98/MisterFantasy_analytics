@@ -1,48 +1,41 @@
 ===CLASIFICACION===
-FRASE1: ¡Dani mantiene su férreo liderato con 1092 puntos, pero la sombra de Maldinillo 💥, a solo 76 puntos, es cada vez más alargada!
-FRASE2: ¡Chamacónicos ha dado el golpe en la jornada, alzándose con unos impresionantes 56 puntos y demostrando que la lucha por el podio está más viva que nunca!
-FRASE3: ¡Mientras unos celebran, Juanba se hunde en el abismo de la tabla, cerrando la jornada con un paupérrimo resultado de 7 puntos que clama por una reacción urgente!
+FRASE1: ¡Dani se aferra al liderato general con uñas y dientes, pero Maldinillo 💥 le pisa los talones, amenazando con un asalto al trono en cualquier momento!
+FRASE2: ¡Los marinero dan el golpe de la jornada, alzándose como el rey indiscutible de la fecha, mientras que MuchaSalsa se arrastra en el fango con un mísero punto!
+FRASE3: ¡La parte baja de la tabla es un cementerio de ilusiones para Juanba y MuchaSalsa, que parecen resignados a la cola de la liga!
 
 ===RUMORES===
-FRASE: ¡Fuentes cercanas a la liga susurran que Dani, el líder indiscutible, podría estar preparando un nuevo golpe de mercado aún más escandaloso para sentenciar la liga y dejar a sus rivales temblando!
+FRASE: ¡Se susurra en los pasillos que Libre, desesperado por escalar posiciones, podría estar preparando un movimiento sísmico en el mercado, buscando una estrella para sacudir la clasificación!
 
 ===EVENTOS===
-TITULO: ¡Bombazo en el Mercado!
-SUBTITULO: Dani, el líder implacable, golpea de nuevo.
-FRASE1: Con una chequera que arde, Dani ha sacudido el mercado al desembolsar la friolera de 19.97 millones por Abde Ezzalzouli.
-FRASE2: ¿Es esta una jugada maestra para consolidar su reinado o un acto de desesperación tras su discreto 7º puesto en la jornada?
-
-TITULO: ¡Maldinillo Contesta al Líder!
-SUBTITULO: El subcampeón no se queda atrás y ficha a Frenkie De Jong.
-FRASE1: ¡La guerra por el título calienta! Maldinillo responde con furia al movimiento de Dani, asegurándose a Frenkie De Jong por una cifra escandalosa de 18.59 millones.
-FRASE2: ¿Será esta la pieza clave para asaltar el trono o un simple calentón en la carrera de armamentos?
-
-TITULO: ¡Dani No Tiene Límite!
-SUBTITULO: Nuevo golpe de autoridad del líder con la adquisición de Koke.
-FRASE1: ¡El despilfarro continúa! Dani, en un acto de poderío económico, suma a Koke a sus filas por más de 12 millones, dejando claro quién manda.
-FRASE2: ¿Está Dani construyendo un equipo de ensueño o simplemente quemando dinero para intimidar a sus rivales antes de que sea demasiado tarde?
-
-TITULO: ¡Venta Estratégica o Gran Error de Maldinillo!
-SUBTITULO: Marcos Llorente sale del equipo del subcampeón.
-FRASE1: En un movimiento que ha dejado a todos boquiabiertos, Maldinillo se desprende de Marcos Llorente por una cifra estratosférica de 15.50 millones.
-FRASE2: ¿Es una genialidad para financiar nuevas incorporaciones o un adiós prematuro a un pilar fundamental que podría costarle el título?
-
-TITULO: ¡Vinicius Júnior, el Rey de la Jornada!
-SUBTITULO: Jotabetrbb celebra los puntos de su estrella.
-FRASE1: ¡Explosión total! V. Júnior ha deslumbrado con 15 puntos, llevando a Jotabetrbb (5º general) a un meritorio 3º puesto en la jornada.
-FRASE2: ¿Será este el inicio de la remontada épica para Jotabetrbb o solo un espejismo en medio de la tabla?
-
-TITULO: ¡Lemar Vuelve a Brillar!
-SUBTITULO: Los marinero se benefician de la magia del francés.
-FRASE1: T. Lemar ha recordado por qué es una estrella, sumando 13 puntos cruciales para Los marinero, que se mantienen en la zona alta de la clasificación.
-FRASE2: ¿Podrá este destello de calidad impulsar a Los marinero a alcanzar el podio general y dar la sorpresa?
-
-TITULO: ¡El Joven Cubarsí, Sorpresa de la Jornada!
-SUBTITULO: Maldinillo sigue sumando con su defensa.
-FRASE1: ¡Nadie lo vio venir! P. Cubarsi, la joven promesa, ha explotado con 12 puntos, consolidando la segunda posición de Maldinillo en la jornada.
-FRASE2: ¿Es este el descubrimiento que necesitaba Maldinillo para presionar al líder Dani y arrebatarle el trono?
-
-TITULO: ¡Desastre Total! J. Sánchez, el Peor de la Jornada.
-SUBTITULO: Los marinero sufren un revés inesperado.
-FRASE1: ¡Catástrofe en Los marinero! J. Sánchez ha protagonizado la peor actuación de la jornada con unos dolorosos -6 puntos que hunden a su equipo.
-FRASE2: ¿Podrá el manager de Los marinero recuperar la confianza en su jugador o buscará una salida urgente para evitar más hecatombes?
+TITULO: ¡LIBRE SE DESATA CON UN FICHAJE BOMBA!
+SUBTITULO: ¿Un grito de guerra o el último clavo en el ataúd?
+FRASE1: ¡Libre, que languidece en la séptima posición general, ha tirado la casa por la ventana con la adquisición de Abde Ezzalzouli por la friolera de 29.95 millones!
+FRASE2: ¿Será este un movimiento desesperado para escapar del purgatorio de la tabla media o el inicio de una remontada épica? ¡El tiempo lo dirá!
+TITULO: ¡MALDINILLO 💥 NO SE CONFORMA Y REFUERZA SU ARMADA!
+SUBTITULO: El subcampeón golpea de nuevo en el mercado.
+FRASE1: ¡Maldinillo 💥, el eterno aspirante que acecha a Dani desde la segunda plaza, ficha a Arda Güler por 25.23 millones, demostrando que no hay tregua en su búsqueda del liderato!
+FRASE2: Con esta inversión millonaria, ¿estará Maldinillo 💥 preparando el asalto definitivo al trono o simplemente engordando su ya impresionante plantilla?
+TITULO: ¡DANI, EL LÍDER, SE BLINDA CON UN MOVIMIENTO MAESTRO!
+SUBTITULO: Refuerzo estratégico para mantener la hegemonía.
+FRASE1: ¡El mismísimo líder, Dani, ha movido ficha en el mercado, asegurando a Azzedine Ounahi por 15.18 millones!
+FRASE2: ¿Es este un fichaje para consolidar su dominio o una medida preventiva ante la presión asfixiante de Maldinillo 💥? ¡El campeón no da puntada sin hilo!
+TITULO: ¡MALDINILLO 💥 HACE CAJA CON UNA VENTA RÉCORD!
+SUBTITULO: ¿Estrategia financiera o un adiós doloroso?
+FRASE1: ¡Maldinillo 💥, el depredador del mercado, ha protagonizado una venta récord al desprenderse de Jorge de Frutos por 13.79 millones!
+FRASE2: ¿Está Maldinillo 💥 haciendo espacio para una nueva estrella o simplemente optimizando sus finanzas mientras persigue a Dani? ¡La astucia de este manager no tiene límites!
+TITULO: ¡M. BERNAL, EL HÉROE SILENCIOSO DE MALDINILLO 💥!
+SUBTITULO: Actuación estelar que lo catapulta al MVP.
+FRASE1: ¡M. Bernal ha emergido como el MVP de la jornada para Maldinillo 💥, sumando 13 puntos cruciales que demuestran su valor incalculable!
+FRASE2: Con el manager en la segunda posición general, ¿será Bernal la pieza clave que le faltaba para destronar a Dani? ¡Su rendimiento es un mensaje claro!
+TITULO: ¡F. LÓPEZ LLEVA A LOS MARINERO A LA CIMA DE LA JORNADA!
+SUBTITULO: Un MVP que vale una victoria de fecha.
+FRASE1: ¡Con una actuación estelar de 12 puntos, F. López se erige como el MVP de la jornada para Los marinero, impulsándolos a la victoria de la fecha!
+FRASE2: El manager, que se ha alzado con el primer puesto de la jornada, debe gran parte de su éxito a la brillantez de este jugador. ¡Un héroe inesperado!
+TITULO: ¡F. DE JONG, OTRA ESTRELLA EN EL CIELO DE MALDINILLO 💥!
+SUBTITULO: Doble MVP para el aspirante al título.
+FRASE1: ¡Maldinillo 💥 no para de cosechar éxitos individuales, y F. De Jong se une a la lista de MVPs de la jornada con 12 puntos que hacen temblar a la liga!
+FRASE2: Con dos jugadores brillando como MVPs en la misma jornada, ¿quién podrá detener el imparable avance de Maldinillo 💥 hacia el liderato? ¡Pura dinamita!
+TITULO: ¡EL LADO OSCURO DE MALDINILLO 💥: C. ROMERO, EL FRACASO DE LA JORNADA!
+SUBTITULO: Ni los grandes se libran de los tropiezos.
+FRASE1: ¡No todo es color de rosa en el campamento de Maldinillo 💥! C. Romero ha protagonizado la peor actuación de la jornada, sumando un vergonzoso -1 punto.
+FRASE2: Aunque el manager sigue en la cima, este tropiezo individual es un recordatorio de que incluso los equipos más fuertes tienen sus puntos débiles. ¡Un lunar en una jornada casi perfecta!

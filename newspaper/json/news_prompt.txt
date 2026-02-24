@@ -25,54 +25,54 @@ REGLAS:
 - Cada bloque de DATOS_EVENTOS debe tener su respectivo TITULO, SUBTITULO, FRASE1, FRASE2
 
 ===DATOS_CLASIFICACION===
-Clasificación General:\n1. Dani - 1092 pts\n2. Maldinillo 💥 - 1016 pts\n3. Chamacónicos - 991 pts\n4. Los marinero - 953 pts\n5. Jotabetrbb - 913 pts\n6. De la Guettir FC - 871 pts\n7. MuchaSalsa - 743 pts\n8. Libre - 731 pts\n9. Juanba - 602 pts\n\nClasificación de la Jornada:\n1. Chamacónicos - 56 pts\n2. Maldinillo 💥 - 50 pts\n3. Jotabetrbb - 43 pts\n4. Los marinero - 34 pts\n5. Libre - 33 pts\n6. MuchaSalsa - 30 pts\n7. Dani - 26 pts\n8. De la Guettir FC - 23 pts\n9. Juanba - 7 pts\n
+Clasificación General:\n1. Dani - 1135 pts\n2. Maldinillo 💥 - 1071 pts\n3. Chamacónicos - 1023 pts\n4. Los marinero - 1008 pts\n5. Jotabetrbb - 958 pts\n6. De la Guettir FC - 909 pts\n7. Libre - 766 pts\n8. MuchaSalsa - 744 pts\n9. Juanba - 626 pts\n\nClasificación de la Jornada:\n1. Los marinero - 55 pts\n2. Maldinillo 💥 - 49 pts\n3. Jotabetrbb - 45 pts\n4. Dani - 39 pts\n5. De la Guettir FC - 35 pts\n6. Chamacónicos - 32 pts\n7. Libre - 31 pts\n8. Juanba - 24 pts\n9. MuchaSalsa - 1 pts\n
 
 ===DATOS_EVENTOS===
 
 ===BLOQUE_1===
 JUGADOR: Abde Ezzalzouli
-MANAGER: Dani
+MANAGER: Libre
 EVENTO: Fichaje destacado
-CONTEXTO: Compra por 19.97 millones. El manager esta en la posicion general 1.00  y en la posicion de la jornada 7.00.
+CONTEXTO: Compra por 29.95 millones. El manager esta en la posicion general 7.00  y en la posicion de la jornada 7.00.
 
 ===BLOQUE_2===
-JUGADOR: Frenkie De Jong
+JUGADOR: Arda Güler
 MANAGER: Maldinillo 💥
 EVENTO: Fichaje destacado
-CONTEXTO: Compra por 18.59 millones. El manager esta en la posicion general 2.00  y en la posicion de la jornada 2.00.
+CONTEXTO: Compra por 25.23 millones. El manager esta en la posicion general 2.00  y en la posicion de la jornada 2.00.
 
 ===BLOQUE_3===
-JUGADOR: Koke
+JUGADOR: Azzedine Ounahi
 MANAGER: Dani
 EVENTO: Fichaje destacado
-CONTEXTO: Compra por 12.07 millones. El manager esta en la posicion general 1.00  y en la posicion de la jornada 7.00.
+CONTEXTO: Compra por 15.18 millones. El manager esta en la posicion general 1.00  y en la posicion de la jornada 4.00.
 
 ===BLOQUE_4===
-JUGADOR: Marcos Llorente
+JUGADOR: Jorge de Frutos
 MANAGER: Maldinillo 💥
 EVENTO: Venta récord
-CONTEXTO: Venta por 15.50 millones. El manager esta en la posicion general 2.00  y en la posicion de la jornada 2.00.
+CONTEXTO: Venta por 13.79 millones. El manager esta en la posicion general 2.00  y en la posicion de la jornada 2.00.
 
 ===BLOQUE_5===
-JUGADOR: V. Júnior
-MANAGER: Jotabetrbb
+JUGADOR: M. Bernal
+MANAGER: Maldinillo 💥
 EVENTO: MVP de la jornada
-CONTEXTO: 15 puntos en la jornada. El manager esta en la posicion general 5.00  y en la posicion de la jornada 3.00.
+CONTEXTO: 13 puntos en la jornada. El manager esta en la posicion general 2.00  y en la posicion de la jornada 2.00.
 
 ===BLOQUE_6===
-JUGADOR: T. Lemar
+JUGADOR: F. López
 MANAGER: Los marinero
 EVENTO: MVP de la jornada
-CONTEXTO: 13 puntos en la jornada. El manager esta en la posicion general 4.00  y en la posicion de la jornada 4.00.
+CONTEXTO: 12 puntos en la jornada. El manager esta en la posicion general 4.00  y en la posicion de la jornada 1.00.
 
 ===BLOQUE_7===
-JUGADOR: P. Cubarsi
+JUGADOR: F. De Jong
 MANAGER: Maldinillo 💥
 EVENTO: MVP de la jornada
 CONTEXTO: 12 puntos en la jornada. El manager esta en la posicion general 2.00  y en la posicion de la jornada 2.00.
 
 ===BLOQUE_8===
-JUGADOR: J. Sánchez
-MANAGER: Los marinero
+JUGADOR: C. Romero
+MANAGER: Maldinillo 💥
 EVENTO: Peor actuación de la jornada
-CONTEXTO: Solo -6 puntos. El manager esta en la posicion general 4.00  y en la posicion de la jornada 4.00.
+CONTEXTO: Solo -1 puntos. El manager esta en la posicion general 2.00  y en la posicion de la jornada 2.00.
