@@ -133,11 +133,12 @@ def download_player_image(tipo,player, team, save_dir="player_images"):
     print("No se encontró ninguna imagen válida.")
     return ""
 def get_cards_by_tipo(data: dict, tipos: list[str]) -> list:
-    tipos = set(tipos)
+    tipos_normalizados = {t.lower() for t in tipos}
+    
     return [
         card
         for card in data.get("cards", [])
-        if card.get("tipo") in tipos
+        if (card.get("tipo") or "").lower() in tipos_normalizados
     ]
 def paste_center_background(base_img: Image.Image, bg_path: str, opacity: float = 0.15):
     """
