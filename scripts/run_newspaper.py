@@ -3,9 +3,7 @@ import sys
 import pandas as pd
 import logging
 
-from pathlib import Path
-import os, sys
-
+from pydantic import ValidationError
 # --- 🔧 Ajuste de ruta raíz del proyecto ---
 import sys
 import os
@@ -29,23 +27,15 @@ print("📂 Directorio raíz:", ROOT_DIR)
 print("📁 SRC añadido:", SRC_DIR)
 print("📁 sys.path[0]:", sys.path[0])
 
-from src.data.merge_notifications import merge_feed_cards_until_match
-from src.data.merge_clasification import merge_clasifications
-from src.data.extract_notificaciones import extraer_notificaciones
-from src.data.extract_clasificacion import extraer_clasificaciones
-from src.data.extract_mercado import extraer_mercado
-from src.data.extract_jornadas import extraer_jornadas
-from src.data.extract_subidas_bajadas import extraer_subidas_bajadas
-from src.data.extract_gameweek import extraer_gameweek
-from src.data.merge_gameweek import merge_gameweek
 
 from src.AI_newspaper.generate_json import generate_json
-from src.AI_newspaper.generate_prompt import generate_prompts,build_final_prompt,build_clasification_prompt,build_blocks_prompt
-from src.AI_newspaper.generate_article import generate_articles,parse_generated_text
+from src.AI_newspaper.generate_prompt import generate_prompts,build_final_prompt
+from src.AI_newspaper.generate_article import generate_articles
 from src.AI_newspaper.generate_pdf import create_pdf
 
-from src.scraper.login import login
 
+
+from src.AI_newspaper.SchemeValidator import FinalJSON
 # --- Cargar configuración ---
 from src.utils.config_loader import load_config
 from src.utils.data_utils import normalize_date_column
@@ -110,7 +100,7 @@ IMG_NEWS = cfg["paths"]["images"]["news"]
 MISTER_USERNAME = cfg["env"]["MISTER_USERNAME"]
 MISTER_PASSWORD = cfg["env"]["MISTER_PASSWORD"]
 MISTER_BASE_URL = cfg["env"]["MISTER_BASE_URL"]
-
+fecha_hoy = datetime.today().strftime("%Y-%m-%d")
 # --- 1. Create JSONs ---
 logger.info("Creando Jsons...")
 csv_gameweek = safe_read_csv(CSV_GAMEWEEK)
@@ -138,35 +128,23 @@ else:
     prompt_final_path = os.path.join(JSON_NEWS, f"news_prompt.txt")
     prompt_saved = safe_save_text(commun_prompt_json,prompt_final_path)
 
-    #clasification_prompt = build_clasification_prompt(json_new)
-    #blocks_prompt = build_blocks_prompt(prompt_json["bloques"],json_new)
-    #prompt_clas_path = os.path.join(JSON_NEWS, f"news_clas_prompt.txt")
-    #prompt_blocks_path = os.path.join(JSON_NEWS, f"news_blocks_prompt.txt")
-
-    #prompt_saved1 = safe_save_text(clasification_prompt,prompt_clas_path)
-    #prompt_saved2 = safe_save_text(blocks_prompt,prompt_blocks_path)
-
-
 # --- 3. Llamar Gemini y crear contenido---
 prompt_txt = safe_read_text(prompt_final_path)
-#prompt_clas = safe_read_text(json_final_path)
-#prompt_blocks = safe_read_text(json_final_path)
-logger.info("📡 Llamando a Gemini para generar los textos...")
-texto_generado = generate_articles(prompt_txt)
+for _ in range(3):
+    logger.info("📡 Llamando a Gemini para generar los textos...")
+    texto_generado = generate_articles(prompt_txt)
+    try:
+        validated_data = FinalJSON(**texto_generado)
+        logger.info("🏁 Proceso de validación de esquema completados.")
+        break
+    except ValidationError:
+        logger.info("JSON inválido, reintentando...")
 
 logger.info("✅ Todo el contenido creado.")
-article_final_path = os.path.join(JSON_NEWS, f"news_article.txt")
-article = safe_save_text(texto_generado,article_final_path)
-
-
-#--- 3.Crear CARDS
-json_new = safe_read_json(json_final_path)
-bloques = generate_prompts(json_new)["bloques"]
-articles = safe_read_text(article_final_path)
-json_cards = parse_generated_text(articles, bloques)
-cards_final_path = os.path.join(JSON_NEWS, f"news_cards.json")
-cards = safe_save_json(json_cards,cards_final_path)
-logger.info("🏁 Proceso de extracción completado sin errores.")
+cards_json_path = os.path.join(JSON_NEWS, f"news_cards.json")
+json_weekly_path = os.path.join(JSON_NEWS, f"{fecha_hoy}_json.json")
+article = safe_save_json(texto_generado,cards_json_path)
+article = safe_save_json(texto_generado,json_weekly_path)
 
 #--- 4.Crear Pdf
 json= safe_read_json(json_final_path)

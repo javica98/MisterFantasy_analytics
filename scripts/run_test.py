@@ -108,14 +108,6 @@ NEWS_UTILS = cfg["paths"]["images"]["news_utils"]
 article_final_path = os.path.join(JSON_NEWS, f"news_article.txt")
 json_final_path = os.path.join(JSON_NEWS, f"news_json.json")
 
-#--- 3.Crear CARDS
-json_new = safe_read_json(json_final_path)
-bloques = generate_prompts(json_new)["bloques"]
-articles = safe_read_text(article_final_path)
-json_cards = parse_generated_text(articles, bloques)
-cards_final_path = os.path.join(JSON_NEWS, f"news_cards.json")
-cards = safe_save_json(json_cards,cards_final_path)
-logger.info("🏁 Proceso de extracción completado sin errores.")
 
 
 json= safe_read_json(json_final_path)

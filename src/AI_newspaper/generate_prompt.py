@@ -243,119 +243,159 @@ def generate_prompts(events_json: Dict):
     }
 
 def build_final_prompt(bloques: List[Dict], events_json) -> str:
-    bloques_txt = []
+    """
+    Construye el prompt final para generar el JSON completo del periódico.
+    FUERZA salida compatible con el schema.
+    """
+
     clasif_text = build_classification_text(events_json["clasificacion"])
-    
+
+    # --- Construir bloques de eventos ---
+    bloques_txt = []
     for i, b in enumerate(bloques, 1):
         bloques_txt.append(f"""
-===BLOQUE_{i}===
-JUGADOR: {b['jugador']}
-MANAGER: {b['manager']}
-EVENTO: {b['evento']}
-CONTEXTO: {b['contexto']}
+BLOQUE {i}:
+- tipo: {b.get('evento')}
+- jugador: {b.get('jugador') if b.get('jugador') is not None else 'null'}
+- manager: {b.get('manager') if b.get('manager') is not None else 'null'}
+- puntos: {b.get('puntos') if b.get('puntos') is not None else 'null'}
+- dinero: {b.get('dinero') if b.get('dinero') is not None else 'null'}
+- equipo: {b.get('equipo') if b.get('equipo') is not None else 'null'}
+- contexto: {b.get('contexto') if b.get('contexto') is not None else 'null'}
 """)
 
-    return f"""
-Eres un periodista deportivo de fantasy league.
+    prompt = f"""
+Eres un periodista deportivo sensacionalista que escribe para un periódico ficticio de una liga fantasy privada entre amigos.
 
-Debes generar un texto ESTRICTAMENTE en el siguiente formato y en este orden:
+Tu objetivo es generar un JSON válido.
 
-===CLASIFICACION===
-FRASE1: ...
-FRASE2: ...
-FRASE3: ...
+⚠️ RESPUESTA CRÍTICA:
+- SOLO devuelve JSON
+- NO texto extra
+- NO explicaciones
+- NO markdown
+- NO ```json
 
-===RUMORES===
-FRASE: ...
+========================
+FORMATO DE SALIDA (OBLIGATORIO)
+========================
 
-===EVENTOS===
-TITULO:
-SUBTITULO:
-FRASE1:
-FRASE2:
-(repetido una vez por cada bloque recibido)
+{{
+  "cards": [
+    {{
+      "tipo": "string",
+      "jugador": string o null,
+      "manager": string o null,
+      "puntos": number o null,
+      "dinero": number o null,
+      "equipo": string o null,
+      "titulo": "string",
+      "subtitulo": "string",
+      "texto": ["string"]
+    }}
+  ]
+}}
 
-REGLAS:
-- No escribas nada fuera de esos bloques.
-- No repitas los delimitadores.
-- No inventes datos que no estén en los bloques.
-- Mantén exactamente los nombres de los campos (FRASE1, TITULO, etc).
-- Cada bloque de DATOS_EVENTOS debe tener su respectivo TITULO, SUBTITULO, FRASE1, FRASE2
+========================
+REGLAS ESTRICTAS (NO ROMPER)
+========================
 
-===DATOS_CLASIFICACION===
-{clasif_text}
+1. JSON VÁLIDO:
+- Usa comillas dobles "
+- Usa null (NO "null")
+- Sin trailing commas
+- Sin texto fuera del JSON
 
-===DATOS_EVENTOS===
-{''.join(bloques_txt)}
-""".strip()
+2. CAMPOS:
+- SIEMPRE incluir:
+  tipo, titulo, subtitulo, texto
+- texto SIEMPRE es array de strings
+- NUNCA strings vacíos
+- Si no hay valor → null
 
-def build_clasification_prompt(events_json) -> str:
-    clasif_text = build_classification_text(events_json["clasificacion"])
+3. LONGITUD EXACTA:
+- Clasificación → 3 frases
+- Rumor → 1 frase
+- Evento → 2 frases
 
+4. ORDEN:
+1. Clasificación
+2. Rumor
+3. Eventos (uno por BLOQUE)
 
-    return f"""
-Eres un periodista deportivo de una liga fantasy privada entre amigos.
-Tu estilo es sensacionalista, divertido y con tono de prensa deportiva.
-Debes generar un texto ESTRICTAMENTE en el siguiente formato y en este orden:
+5. DATOS:
+- NO inventar puntos, dinero o posiciones
+- Usa SOLO datos proporcionados
+- Puedes interpretar narrativa, pero no números
 
-===CLASIFICACION===
-FRASE1:
-FRASE2:
-FRASE3:
+6. ESTILO:
+- Sensacionalista
+- Dramático
+- Frases cortas tipo periódico
 
-===RUMORES===
-FRASE:
+========================
+OUTPUT ESPERADO (EJEMPLO)
+========================
 
-REGLAS:
-- No escribas nada fuera de esos bloques.
-- No repitas los delimitadores.
-- En CLASIFICACION solo usa los datos proporcionados.
-- En RUMORES puedes inventar un rumor sobre algún manager o equipo de la liga, pero nunca inventes posiciones ni puntos.
-- Cada frase puede ser creativa y periodística, pero siempre coherente con la liga.
+{{
+  "cards": [
+    {{
+      "tipo": "clasificacion",
+      "jugador": null,
+      "manager": null,
+      "puntos": null,
+      "dinero": null,
+      "equipo": null,
+      "titulo": "¡La liga arde!",
+      "subtitulo": "Nada está decidido",
+      "texto": [
+        "Frase 1",
+        "Frase 2",
+        "Frase 3"
+      ]
+    }},
+    {{
+      "tipo": "rumor",
+      "jugador": null,
+      "manager": null,
+      "puntos": null,
+      "dinero": null,
+      "equipo": null,
+      "titulo": "¡Rumores!",
+      "subtitulo": "Se cuece algo grande",
+      "texto": [
+        "Frase única"
+      ]
+    }}
+  ]
+}}
 
-===CONTEXTO_LIGA===
+========================
+CONTEXTO DE LIGA
+========================
+
 {LEAGUE_CONTEXT}
 
-DATOS_DE_CLASIFICACION:
-{clasif_text}
-""".strip()
+========================
+CLASIFICACION
+========================
 
-def build_blocks_prompt(bloques: List[Dict], events_json, league_context: str) -> str:
-    bloques_txt = []
-    clasif_text = build_classification_text(events_json["clasificacion"])
-    
-    for i, b in enumerate(bloques, 1):
-        bloques_txt.append(f"""
-===BLOQUE_{i}===
-JUGADOR: {b['jugador']}
-MANAGER: {b['manager']}
-EVENTO: {b['evento']}
-CONTEXTO: {b['contexto']}
-""")
-    
-    return f"""
-Eres un periodista deportivo de una liga fantasy privada entre amigos, con estilo sensacionalista y narrativo.
-
-Tu tarea: generar un bloque de salida para **cada BLOQUE recibido**, manteniendo exactamente este formato para cada uno:
-
-TITULO:
-SUBTITULO:
-FRASE1:
-FRASE2:
-
-Reglas:
-- Debe generarse un bloque por cada BLOQUE recibido.
-- El orden de los bloques debe coincidir con el orden de los datos recibidos.
-- Cada bloque debe usar únicamente los datos de su BLOQUE correspondiente.
-- Puedes usar el contexto de la liga y la clasificación para enriquecer titulares, subtítulos y frases, pero **nunca inventes puntos, posiciones ni resultados**.
-- Mantén los nombres de los campos exactamente como se indica.
-
-===CONTEXTO_LIGA===
-{league_context}
-
-===DATOS_CLASIFICACION===
 {clasif_text}
 
-===DATOS_EVENTOS===
+========================
+EVENTOS
+========================
+
 {''.join(bloques_txt)}
+
+========================
+RECUERDA
+========================
+
+- SOLO JSON
+- TODO válido para json.loads()
+- TODO compatible con schema
+
 """.strip()
+
+    return prompt
