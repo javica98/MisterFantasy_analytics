@@ -1,10 +1,15 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
+marks,start_mercado,,,,,,,,,,,,,,,2026-02-26,
+transfer,mercado,,Natan Souza,Mister,Chamacónicos,6.993,2,81,4,,,,,,,2026-02-26,31205f304367d4f5fb7bb6aa3005527c
+transfer,Puja,,Natan Souza,Mister,Dani,6.97002,2,81,4,,,,,,,2026-02-26,149d3004002243fe641e8d123589d33f
+transfer,mercado,,Luis Vázquez,Mister,Maldinillo 💥,2.39327,4,27,9,,,,,,,2026-02-26,7164f5fb2232f60bb472dd752e6da493
+transfer,Puja,,Luis Vázquez,Mister,Dani,2.30927,4,27,9,,,,,,,2026-02-26,977e574c9ce323d1b3251a6ed02921bf
+marks,start_mercado,,,,,,,,,,,,,,,2026-02-26,
+transfer,mercado,,Jorge Herrando,Mister,Dani,0.95561,2.0,51.0,50.0,,,,,,,2026-02-25,7ce864deaf4e339e6b55f0e0fdd397d4
 marks,start_mercado,,,,,,,,,,,,,,,2026-02-25,
-transfer,mercado,,Jorge Herrando,Mister,Dani,0.95561,2,51,50,,,,,,,2026-02-25,7ce864deaf4e339e6b55f0e0fdd397d4
+transfer,mercado,,Alfonso Pedraza,Dani,Mister,4.54002,2.0,71.0,20.0,,,,,,,2026-02-25,506c3dfcf704ae38e3a1763a2bf0476e
 marks,start_mercado,,,,,,,,,,,,,,,2026-02-25,
-transfer,mercado,,Alfonso Pedraza,Dani,Mister,4.54002,2,71,20,,,,,,,2026-02-25,506c3dfcf704ae38e3a1763a2bf0476e
-marks,start_mercado,,,,,,,,,,,,,,,2026-02-25,
-transfer,mercado,,Robert Navarro,Dani,Mister,3.14265,3,88,1,,,,,,,2026-02-25,63dbe16a467b9a8e34358177173e7807
+transfer,mercado,,Robert Navarro,Dani,Mister,3.14265,3.0,88.0,1.0,,,,,,,2026-02-25,63dbe16a467b9a8e34358177173e7807
 bonificacion,quiniela,,,,,,,,,Chamacónicos,0.5,1º,,,,2026-02-25,
 bonificacion,quiniela,,,,,,,,,Dani,0.5,2º,,,,2026-02-25,
 bonificacion,quiniela,,,,,,,,,De la Guettir FC,0.5,3º,,,,2026-02-25,
@@ -15,9 +20,9 @@ bonificacion,quiniela,,,,,,,,,Libre,,7º,,,,2026-02-25,
 bonificacion,quiniela,,,,,,,,,Los marinero,,8º,,,,2026-02-25,
 bonificacion,quiniela,,,,,,,,,MuchaSalsa,,9º,,,,2026-02-25,
 marks,start_mercado,,,,,,,,,,,,,,,2026-02-25,
-transfer,mercado,,Iñaki Peña,De la Guettir FC,Mister,4.605,1,71,23,,,,,,,2026-02-25,d121b670440346ff30f7b24cee81c4d7
+transfer,mercado,,Iñaki Peña,De la Guettir FC,Mister,4.605,1.0,71.0,23.0,,,,,,,2026-02-25,d121b670440346ff30f7b24cee81c4d7
 marks,start_mercado,,,,,,,,,,,,,,,2026-02-25,
-transfer,mercado,,Beñat Turrientes,Jotabetrbb,Mister,1.661,3,56,16,,,,,,,2026-02-25,8e5f2eb66e198dc3b83b48a60a2801e2
+transfer,mercado,,Beñat Turrientes,Jotabetrbb,Mister,1.661,3.0,56.0,16.0,,,,,,,2026-02-25,8e5f2eb66e198dc3b83b48a60a2801e2
 bonificacion,clasificacion,,,,,,,,,Los marinero,1.75,1,,,,2026-02-25,
 bonificacion,clasificacion,,,,,,,,,Maldinillo 💥,1.88,2,,,,2026-02-25,
 bonificacion,clasificacion,,,,,,,,,Jotabetrbb,1.7,3,,,,2026-02-25,
