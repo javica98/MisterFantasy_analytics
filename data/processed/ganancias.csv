@@ -1,9 +1,16 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
-marks,start_mercado,,,,,,,,,,,,,,,2026-02-26,
-transfer,mercado,,Natan Souza,Mister,Chamacónicos,6.993,2,81,4,,,,,,,2026-02-26,31205f304367d4f5fb7bb6aa3005527c
-transfer,Puja,,Natan Souza,Mister,Dani,6.97002,2,81,4,,,,,,,2026-02-26,149d3004002243fe641e8d123589d33f
-transfer,mercado,,Luis Vázquez,Mister,Maldinillo 💥,2.39327,4,27,9,,,,,,,2026-02-26,7164f5fb2232f60bb472dd752e6da493
-transfer,Puja,,Luis Vázquez,Mister,Dani,2.30927,4,27,9,,,,,,,2026-02-26,977e574c9ce323d1b3251a6ed02921bf
+marks,start_mercado,,,,,,,,,,,,,,,2026-02-27,
+transfer,mercado,,Pau Navarro,Mister,Chamacónicos,0.714,2,44,20,,,,,,,2026-02-27,26f4862a04d521245be8ce372da8f1c6
+transfer,mercado,,Carlos Soler,Mister,Dani,9.10228,3,72,16,,,,,,,2026-02-27,e44d10d8c959930f3bacc7079d51906d
+transfer,mercado,,Adrián Liso,Mister,Dani,0.18101,3,73,9,,,,,,,2026-02-27,1aa4b5db3d5851b1fa4667f1cc6da5bb
+transfer,mercado,,Baptiste Santamaria,Mister,Dani,0.16,3,42,19,,,,,,,2026-02-27,a096ab06db33805719de50df87ca11c1
+marks,start_mercado,,,,,,,,,,,,,,,2026-02-27,
+transfer,mercado,,Etta Eyong,Chamacónicos,Mister,9.2456,4,92,12,,,,,,,2026-02-27,fb05668f2ad06657d51abcef9d0227ad
+marks,start_mercado,,,,,,,,,,,,,,,2026-02-27,
+transfer,mercado,,Natan Souza,Mister,Chamacónicos,6.993,2.0,81.0,4.0,,,,,,,2026-02-26,31205f304367d4f5fb7bb6aa3005527c
+transfer,Puja,,Natan Souza,Mister,Dani,6.97002,2.0,81.0,4.0,,,,,,,2026-02-26,149d3004002243fe641e8d123589d33f
+transfer,mercado,,Luis Vázquez,Mister,Maldinillo 💥,2.39327,4.0,27.0,9.0,,,,,,,2026-02-26,7164f5fb2232f60bb472dd752e6da493
+transfer,Puja,,Luis Vázquez,Mister,Dani,2.30927,4.0,27.0,9.0,,,,,,,2026-02-26,977e574c9ce323d1b3251a6ed02921bf
 marks,start_mercado,,,,,,,,,,,,,,,2026-02-26,
 transfer,mercado,,Jorge Herrando,Mister,Dani,0.95561,2.0,51.0,50.0,,,,,,,2026-02-25,7ce864deaf4e339e6b55f0e0fdd397d4
 marks,start_mercado,,,,,,,,,,,,,,,2026-02-25,
