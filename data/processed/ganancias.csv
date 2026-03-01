@@ -1,14 +1,20 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
+marks,start_mercado,,,,,,,,,,,,,,,2026-03-01,
+transfer,mercado,,Nicolas Pépé,Mister,Los marinero,11.905,4,120,20,,,,,,,2026-03-01,4d92d70e1ad69503cdd79722fb712138
+transfer,Puja,,Nicolas Pépé,Mister,Dani,11.71215,4,120,20,,,,,,,2026-03-01,3a8af44f92db6afaa4d28dca7d3fc7b3
+transfer,mercado,,Jon Aramburu,Mister,Los marinero,5.041,2,79,16,,,,,,,2026-03-01,d476d80e6d08df893b3ed27649548b0c
+marks,start_mercado,,,,,,,,,,,,,,,2026-03-01,
+transfer,clausula,,Marc Bernal,Maldinillo 💥,Los marinero,7.508,3,65,3,,,,,,,2026-03-01,f4d2d6abbbafa7ba467b0385b317225d
+marks,start_mercado,,,,,,,,,,,,,,,2026-03-01,
+transfer,mercado,,Jorge Herrando,Dani,Mister,1.07328,2.0,51.0,50.0,,,,,,,2026-02-28,5e436045f16dcc77bafa779ee54102b3
 marks,start_mercado,,,,,,,,,,,,,,,2026-02-28,
-transfer,mercado,,Jorge Herrando,Dani,Mister,1.07328,2,51,50,,,,,,,2026-02-28,5e436045f16dcc77bafa779ee54102b3
-marks,start_mercado,,,,,,,,,,,,,,,2026-02-28,
-transfer,mercado,,Santi Comesaña,Mister,Dani,7.49497,3,93,20,,,,,,,2026-02-28,90b5c9ee18c5d501ca75568641e69928
-transfer,Puja,,Santi Comesaña,Mister,Maldinillo 💥,7.45028,3,93,20,,,,,,,2026-02-28,93b109efcd544d45c106c66d00dcfa92
+transfer,mercado,,Santi Comesaña,Mister,Dani,7.49497,3.0,93.0,20.0,,,,,,,2026-02-28,90b5c9ee18c5d501ca75568641e69928
+transfer,Puja,,Santi Comesaña,Mister,Maldinillo 💥,7.45028,3.0,93.0,20.0,,,,,,,2026-02-28,93b109efcd544d45c106c66d00dcfa92
 marks,start_jornada,,,,,,,,,,,,,,26.0,2026-02-28,
 marks,start_mercado,,,,,,,,,,,,,,,2026-02-28,
-transfer,acuerdo,,Ricardo Rodríguez,Maldinillo 💥,Los marinero,1.0,2,38,4,,,,,,,2026-02-28,333018b3c98c005da533debc84a12e7a
+transfer,acuerdo,,Ricardo Rodríguez,Maldinillo 💥,Los marinero,1.0,2.0,38.0,4.0,,,,,,,2026-02-28,333018b3c98c005da533debc84a12e7a
 marks,start_mercado,,,,,,,,,,,,,,,2026-02-28,
-transfer,mercado,,Frenkie De Jong,Maldinillo 💥,Mister,17.15168,3,102,3,,,,,,,2026-02-28,db31ff283a34748a3e1d58dc21def9cc
+transfer,mercado,,Frenkie De Jong,Maldinillo 💥,Mister,17.15168,3.0,102.0,3.0,,,,,,,2026-02-28,db31ff283a34748a3e1d58dc21def9cc
 marks,start_mercado,,,,,,,,,,,,,,,2026-02-28,
 transfer,mercado,,Pau Navarro,Mister,Chamacónicos,0.714,2.0,44.0,20.0,,,,,,,2026-02-27,26f4862a04d521245be8ce372da8f1c6
 transfer,mercado,,Carlos Soler,Mister,Dani,9.10228,3.0,72.0,16.0,,,,,,,2026-02-27,e44d10d8c959930f3bacc7079d51906d
