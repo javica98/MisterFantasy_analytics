@@ -1,10 +1,17 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
+marks,start_mercado,,,,,,,,,,,,,,,2026-03-02,
+transfer,mercado,,Nico Williams,Los marinero,Mister,11.01241,4,82,1,,,,,,,2026-03-02,bdfa199ef2abb1559fefb71a12165d52
+marks,start_mercado,,,,,,,,,,,,,,,2026-03-02,
+transfer,mercado,,Joan Garcia,Mister,Dani,25.31061,1,134,3,,,,,,,2026-03-02,06e50ef40fa1b24b34260460b97d738d
+transfer,Puja,,Joan Garcia,Mister,Maldinillo 💥,20.0,1,134,3,,,,,,,2026-03-02,3a0de8c02e47d9a84ae9dd5b90dd6f59
+marks,start_mercado,,,,,,,,,,,,,,,2026-03-02,
+transfer,mercado,,Jon Pacheco,Dani,Mister,4.996,2,67,48,,,,,,,2026-03-02,0b3e55ab916f62da93d4036e60f4e810
+marks,start_mercado,,,,,,,,,,,,,,,2026-03-02,
+transfer,mercado,,Nicolas Pépé,Mister,Los marinero,11.905,4.0,120.0,20.0,,,,,,,2026-03-01,4d92d70e1ad69503cdd79722fb712138
+transfer,Puja,,Nicolas Pépé,Mister,Dani,11.71215,4.0,120.0,20.0,,,,,,,2026-03-01,3a8af44f92db6afaa4d28dca7d3fc7b3
+transfer,mercado,,Jon Aramburu,Mister,Los marinero,5.041,2.0,79.0,16.0,,,,,,,2026-03-01,d476d80e6d08df893b3ed27649548b0c
 marks,start_mercado,,,,,,,,,,,,,,,2026-03-01,
-transfer,mercado,,Nicolas Pépé,Mister,Los marinero,11.905,4,120,20,,,,,,,2026-03-01,4d92d70e1ad69503cdd79722fb712138
-transfer,Puja,,Nicolas Pépé,Mister,Dani,11.71215,4,120,20,,,,,,,2026-03-01,3a8af44f92db6afaa4d28dca7d3fc7b3
-transfer,mercado,,Jon Aramburu,Mister,Los marinero,5.041,2,79,16,,,,,,,2026-03-01,d476d80e6d08df893b3ed27649548b0c
-marks,start_mercado,,,,,,,,,,,,,,,2026-03-01,
-transfer,clausula,,Marc Bernal,Maldinillo 💥,Los marinero,7.508,3,65,3,,,,,,,2026-03-01,f4d2d6abbbafa7ba467b0385b317225d
+transfer,clausula,,Marc Bernal,Maldinillo 💥,Los marinero,7.508,3.0,65.0,3.0,,,,,,,2026-03-01,f4d2d6abbbafa7ba467b0385b317225d
 marks,start_mercado,,,,,,,,,,,,,,,2026-03-01,
 transfer,mercado,,Jorge Herrando,Dani,Mister,1.07328,2.0,51.0,50.0,,,,,,,2026-02-28,5e436045f16dcc77bafa779ee54102b3
 marks,start_mercado,,,,,,,,,,,,,,,2026-02-28,

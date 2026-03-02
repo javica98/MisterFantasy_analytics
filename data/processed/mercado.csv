@@ -1836,21 +1836,41 @@ date,manager,periodo,jugador,precio,posicionJugador,puntosJugador,equipoLiga,avg
 2026-02-28,Libre,20h 31m,J. Areso,0.592,2.0,66.0,1.0,3.1,
 2026-02-28,Libre,20h 31m,T. Nianzou,0.16,2.0,22.0,17.0,2.4,five
 2026-02-28,Dani,20h 31m,A. Escandell,14.663,1.0,140.0,1370.0,5.8,
-2026-03-01,Los marinero,1d 20h,N. Williams,11.353,4.0,82.0,1,4.3,injury
-2026-03-01,Los marinero,1d 20h,J. Aramburu,4.951,2.0,79.0,16,3.3,
-2026-03-01,Maldinillo 💥,20h 26m,G. Moreno,13.083,4.0,92.0,20,7.7,injury
-2026-03-01,Dani,20h 26m,T. Martínez,5.931,4.0,109.0,48,4.4,
-2026-03-01,Dani,20h 26m,G. Guruzeta,3.99,4.0,71.0,1,3.1,
-2026-03-01,Dani,20h 26m,C. Soler,9.044,3.0,84.0,16,4.0,
-2026-03-01,Libre,20h 26m,F. Pérez,0.225,3.0,57.0,14,2.7,
-2026-03-01,Libre,20h 26m,L. Astiazaran,0.173,3.0,0.0,16,0.0,other
-2026-03-01,Libre,20h 26m,C. Portu,0.169,3.0,26.0,222,2.6,injury
-2026-03-01,Libre,20h 26m,A. Zakharyan,0.163,3.0,26.0,16,1.9,
-2026-03-01,Libre,20h 26m,N. Fonseca,0.163,3.0,18.0,1370,2.3,
-2026-03-01,Dani,20h 26m,J. Pacheco,4.962,2.0,67.0,48,3.5,
-2026-03-01,Libre,20h 26m,Marcão,0.19,2.0,32.0,17,2.5,injury
-2026-03-01,Libre,20h 26m,Á. Odriozola,0.184,2.0,26.0,16,5.2,injury
-2026-03-01,Libre,20h 26m,C. Riedel,0.163,2.0,36.0,8,3.0,
-2026-03-01,Libre,20h 26m,J. Garcia,17.115,1.0,134.0,3,6.7,
-2026-03-01,Dani,20h 26m,A. Escandell,14.588,1.0,143.0,1370,5.7,
-2026-03-01,Libre,20h 26m,C. Rivero,0.207,1.0,0.0,19,0.0,
+2026-03-01,Los marinero,1d 20h,N. Williams,11.353,4.0,82.0,1.0,4.3,injury
+2026-03-01,Los marinero,1d 20h,J. Aramburu,4.951,2.0,79.0,16.0,3.3,
+2026-03-01,Maldinillo 💥,20h 26m,G. Moreno,13.083,4.0,92.0,20.0,7.7,injury
+2026-03-01,Dani,20h 26m,T. Martínez,5.931,4.0,109.0,48.0,4.4,
+2026-03-01,Dani,20h 26m,G. Guruzeta,3.99,4.0,71.0,1.0,3.1,
+2026-03-01,Dani,20h 26m,C. Soler,9.044,3.0,84.0,16.0,4.0,
+2026-03-01,Libre,20h 26m,F. Pérez,0.225,3.0,57.0,14.0,2.7,
+2026-03-01,Libre,20h 26m,L. Astiazaran,0.173,3.0,0.0,16.0,0.0,other
+2026-03-01,Libre,20h 26m,C. Portu,0.169,3.0,26.0,222.0,2.6,injury
+2026-03-01,Libre,20h 26m,A. Zakharyan,0.163,3.0,26.0,16.0,1.9,
+2026-03-01,Libre,20h 26m,N. Fonseca,0.163,3.0,18.0,1370.0,2.3,
+2026-03-01,Dani,20h 26m,J. Pacheco,4.962,2.0,67.0,48.0,3.5,
+2026-03-01,Libre,20h 26m,Marcão,0.19,2.0,32.0,17.0,2.5,injury
+2026-03-01,Libre,20h 26m,Á. Odriozola,0.184,2.0,26.0,16.0,5.2,injury
+2026-03-01,Libre,20h 26m,C. Riedel,0.163,2.0,36.0,8.0,3.0,
+2026-03-01,Libre,20h 26m,J. Garcia,17.115,1.0,134.0,3.0,6.7,
+2026-03-01,Dani,20h 26m,A. Escandell,14.588,1.0,143.0,1370.0,5.7,
+2026-03-01,Libre,20h 26m,C. Rivero,0.207,1.0,0.0,19.0,0.0,
+2026-03-02,Dani,1d 20h,T. Martínez,5.923,4.0,109.0,48,4.4,
+2026-03-02,Dani,1d 20h,G. Guruzeta,4.077,4.0,71.0,1,3.1,
+2026-03-02,Dani,1d 20h,C. Soler,9.193,3.0,84.0,16,4.0,
+2026-03-02,Dani,1d 20h,S. Comesaña,7.623,3.0,97.0,20,4.0,
+2026-03-02,Dani,1d 20h,A. Escandell,14.541,1.0,143.0,1370,5.7,
+2026-03-02,Jotabetrbb,20h 9m,N. Maupay,2.575,4.0,15.0,17,3.8,injury
+2026-03-02,Libre,20h 9m,Alemão,0.204,4.0,34.0,14,2.4,
+2026-03-02,Libre,20h 9m,P. Durán,0.172,4.0,63.0,5,3.2,injury
+2026-03-02,Libre,20h 9m,P. Fornals,19.081,3.0,156.0,4,6.0,
+2026-03-02,Libre,20h 9m,Pepelu,9.96,3.0,79.0,19,3.6,
+2026-03-02,Jotabetrbb,20h 9m,L. Beltrán,1.569,3.0,65.0,19,3.1,injury
+2026-03-02,Libre,20h 9m,S. Becerra,0.161,3.0,1.0,14,0.3,other
+2026-03-02,Libre,20h 9m,B. Prados,0.16,3.0,4.0,1,2.0,injury
+2026-03-02,Chamacónicos,20h 9m,M. Alonso,12.627,2.0,91.0,5,4.1,injury
+2026-03-02,Chamacónicos,20h 9m,S. Carreira,4.996,2.0,90.0,5,4.1,
+2026-03-02,Los marinero,20h 9m,J. Aramburu,4.772,2.0,79.0,16,3.3,
+2026-03-02,Libre,20h 9m,D. Costas,1.416,2.0,61.0,1370,3.6,injury
+2026-03-02,Libre,20h 9m,J. Toljan,0.987,2.0,84.0,12,3.4,
+2026-03-02,Libre,20h 9m,L. Costa,0.163,2.0,0.0,20,0.0,injury
+2026-03-02,Libre,20h 9m,Á. Valles,6.455,1.0,76.0,4,4.2,
