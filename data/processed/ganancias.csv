@@ -1,11 +1,21 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
+marks,start_mercado,,,,,,,,,,,,,,,2026-03-03,
+transfer,mercado,,Aarón Escandell,Dani,Mister,15.12264,1,143,1370,,,,,,,2026-03-03,0ac79050b96fff64e945061d45ba1786
+marks,start_mercado,,,,,,,,,,,,,,,2026-03-03,
+transfer,mercado,,Marcos Alonso,Chamacónicos,Mister,13.00581,2,91,5,,,,,,,2026-03-03,93bbee1c7b91d0c189b160ef51b5919a
+marks,start_mercado,,,,,,,,,,,,,,,2026-03-03,
+transfer,mercado,,Pablo Fornals,Mister,Chamacónicos,25.381,3,156,4,,,,,,,2026-03-03,e8e67256803446ab47306c1710ffda7f
+transfer,Puja,,Pablo Fornals,Mister,Maldinillo 💥,25.11476,3,156,4,,,,,,,2026-03-03,d18a2280b8028556d57758647383c2c0
+transfer,Puja,,Pablo Fornals,Mister,Dani,19.5314,3,156,4,,,,,,,2026-03-03,1b7786f5eb913f7f76a05faa2353f89d
+marks,start_mercado,,,,,,,,,,,,,,,2026-03-03,
+transfer,mercado,,Jon Aramburu,Los marinero,Mister,5.05002,2,79,16,,,,,,,2026-03-03,bddc14a0bd382260032cb766ab163389
+marks,start_mercado,,,,,,,,,,,,,,,2026-03-03,
+transfer,mercado,,Nico Williams,Los marinero,Mister,11.01241,4.0,82.0,1.0,,,,,,,2026-03-02,bdfa199ef2abb1559fefb71a12165d52
 marks,start_mercado,,,,,,,,,,,,,,,2026-03-02,
-transfer,mercado,,Nico Williams,Los marinero,Mister,11.01241,4,82,1,,,,,,,2026-03-02,bdfa199ef2abb1559fefb71a12165d52
+transfer,mercado,,Joan Garcia,Mister,Dani,25.31061,1.0,134.0,3.0,,,,,,,2026-03-02,06e50ef40fa1b24b34260460b97d738d
+transfer,Puja,,Joan Garcia,Mister,Maldinillo 💥,20.0,1.0,134.0,3.0,,,,,,,2026-03-02,3a0de8c02e47d9a84ae9dd5b90dd6f59
 marks,start_mercado,,,,,,,,,,,,,,,2026-03-02,
-transfer,mercado,,Joan Garcia,Mister,Dani,25.31061,1,134,3,,,,,,,2026-03-02,06e50ef40fa1b24b34260460b97d738d
-transfer,Puja,,Joan Garcia,Mister,Maldinillo 💥,20.0,1,134,3,,,,,,,2026-03-02,3a0de8c02e47d9a84ae9dd5b90dd6f59
-marks,start_mercado,,,,,,,,,,,,,,,2026-03-02,
-transfer,mercado,,Jon Pacheco,Dani,Mister,4.996,2,67,48,,,,,,,2026-03-02,0b3e55ab916f62da93d4036e60f4e810
+transfer,mercado,,Jon Pacheco,Dani,Mister,4.996,2.0,67.0,48.0,,,,,,,2026-03-02,0b3e55ab916f62da93d4036e60f4e810
 marks,start_mercado,,,,,,,,,,,,,,,2026-03-02,
 transfer,mercado,,Nicolas Pépé,Mister,Los marinero,11.905,4.0,120.0,20.0,,,,,,,2026-03-01,4d92d70e1ad69503cdd79722fb712138
 transfer,Puja,,Nicolas Pépé,Mister,Dani,11.71215,4.0,120.0,20.0,,,,,,,2026-03-01,3a8af44f92db6afaa4d28dca7d3fc7b3
