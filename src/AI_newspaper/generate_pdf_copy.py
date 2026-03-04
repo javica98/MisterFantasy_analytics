@@ -395,10 +395,10 @@ def create_columns(canvas,columns, IMAGES_TEAMS_DIR, DEFAULT_TEAM_IMAGE, PATH_UT
 def create_pdf(tipo,cards,clasificacion_json, PATH_UTILS,IMAGES_TEAMS_DIR, DEFAULT_TEAM_IMAGE):
    # --- CONFIG ---
     if tipo == "Jornada":
-        botton_cards = get_cards_by_tipo(cards,["MVP de la jornada","Peor actuación de la jornada"])
+        botton_cards = get_cards_by_tipo(cards,["MVP","Desastre"])
         right_card = get_cards_by_tipo(cards,["clasificacion"])
     else: 
-        botton_cards = get_cards_by_tipo(cards,["Fichaje destacado","Venta récord"])
+        botton_cards = get_cards_by_tipo(cards,["Fichaje","Venta"])
         right_card = get_cards_by_tipo(cards,["rumor"])
 
     column_cards =get_cards_by_tipo(cards,["Expulsión","Héroe bajo palos","Gol en propia"])

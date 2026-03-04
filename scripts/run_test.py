@@ -48,7 +48,7 @@ from src.utils.file_utils import safe_read_html, safe_read_csv, safe_save_csv,sa
 
 from src.AI_newspaper.generate_json import generate_json
 from src.AI_newspaper.generate_prompt import generate_prompts,build_final_prompt
-from src.AI_newspaper.generate_article import generate_articles,parse_generated_text
+from src.AI_newspaper.generate_article import generate_articles
 from src.AI_newspaper.generate_pdf_copy  import create_pdf
 
 cfg = load_config()

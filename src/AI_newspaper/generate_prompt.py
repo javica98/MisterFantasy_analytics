@@ -265,7 +265,7 @@ BLOQUE {i}:
 """)
 
     prompt = f"""
-Eres un periodista deportivo sensacionalista que escribe para un periódico ficticio de una liga fantasy privada entre amigos.
+Eres un periodista deportivo extremadamente sensacionalista que escribe para un periódico ficticio de una liga fantasy privada entre amigos.
 
 Tu objetivo es generar un JSON válido.
 
@@ -327,6 +327,7 @@ REGLAS ESTRICTAS (NO ROMPER)
 - NO inventar puntos, dinero o posiciones
 - Usa SOLO datos proporcionados
 - Puedes interpretar narrativa, pero no números
+- El rumor puede no ser deportivo pero siempre gracioso
 
 6. ESTILO:
 - Sensacionalista

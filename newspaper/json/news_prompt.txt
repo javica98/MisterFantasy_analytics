@@ -1,4 +1,4 @@
-Eres un periodista deportivo sensacionalista que escribe para un periódico ficticio de una liga fantasy privada entre amigos.
+Eres un periodista deportivo extremadamente sensacionalista que escribe para un periódico ficticio de una liga fantasy privada entre amigos.
 
 Tu objetivo es generar un JSON válido.
 
@@ -60,6 +60,7 @@ REGLAS ESTRICTAS (NO ROMPER)
 - NO inventar puntos, dinero o posiciones
 - Usa SOLO datos proporcionados
 - Puedes interpretar narrativa, pero no números
+- El rumor puede no ser deportivo pero siempre gracioso
 
 6. ESTILO:
 - Sensacionalista
@@ -126,7 +127,7 @@ Características:
 CLASIFICACION
 ========================
 
-Clasificación General:\n1. Dani - 1135 pts\n2. Maldinillo 💥 - 1071 pts\n3. Chamacónicos - 1023 pts\n4. Los marinero - 1008 pts\n5. Jotabetrbb - 958 pts\n6. De la Guettir FC - 909 pts\n7. Libre - 766 pts\n8. MuchaSalsa - 744 pts\n9. Juanba - 626 pts\n\nClasificación de la Jornada:\n1. Los marinero - 55 pts\n2. Maldinillo 💥 - 49 pts\n3. Jotabetrbb - 45 pts\n4. Dani - 39 pts\n5. De la Guettir FC - 35 pts\n6. Chamacónicos - 32 pts\n7. Libre - 31 pts\n8. Juanba - 24 pts\n9. MuchaSalsa - 1 pts\n
+Clasificación General:\n1. Dani - 1210 pts\n2. Maldinillo 💥 - 1128 pts\n3. Los marinero - 1054 pts\n4. Chamacónicos - 1042 pts\n5. Jotabetrbb - 990 pts\n6. De la Guettir FC - 935 pts\n7. Libre - 766 pts\n8. MuchaSalsa - 760 pts\n9. Juanba - 655 pts\n\nClasificación de la Jornada:\n1. Dani - 75 pts\n2. Maldinillo 💥 - 57 pts\n3. Los marinero - 46 pts\n4. Jotabetrbb - 32 pts\n5. Juanba - 29 pts\n6. De la Guettir FC - 26 pts\n7. Chamacónicos - 19 pts\n8. MuchaSalsa - 16 pts\n9. Libre - 0 pts\n
 
 ========================
 EVENTOS
@@ -135,75 +136,84 @@ EVENTOS
 
 BLOQUE 1:
 - tipo: Fichaje destacado
-- jugador: Abde Ezzalzouli
-- manager: Libre
+- jugador: Pablo Fornals
+- manager: Chamacónicos
 - puntos: null
-- dinero: 29.94975
+- dinero: 25.381
 - equipo: Real Betis Balompié
-- contexto: Compra por 29.95 millones. El manager esta en la posicion general 7.00  y en la posicion de la jornada 7.00.
+- contexto: Compra por 25.38 millones. El manager esta en la posicion general 4.00  y en la posicion de la jornada 7.00.
 
 BLOQUE 2:
 - tipo: Fichaje destacado
-- jugador: Azzedine Ounahi
+- jugador: Joan Garcia
 - manager: Dani
 - puntos: null
-- dinero: 15.1845
-- equipo: Girona FC
-- contexto: Compra por 15.18 millones. El manager esta en la posicion general 1.00  y en la posicion de la jornada 4.00.
+- dinero: 25.31061
+- equipo: FC Barcelona
+- contexto: Compra por 25.31 millones. El manager esta en la posicion general 1.00  y en la posicion de la jornada 1.00.
 
 BLOQUE 3:
 - tipo: Fichaje destacado
-- jugador: Jules Koundé
-- manager: Maldinillo 💥
+- jugador: Nicolas Pépé
+- manager: Los marinero
 - puntos: null
-- dinero: 14.80397
-- equipo: FC Barcelona
-- contexto: Compra por 14.80 millones. El manager esta en la posicion general 2.00  y en la posicion de la jornada 2.00.
+- dinero: 11.905
+- equipo: Villarreal CF
+- contexto: Compra por 11.90 millones. El manager esta en la posicion general 3.00  y en la posicion de la jornada 3.00.
 
 BLOQUE 4:
 - tipo: Venta récord
-- jugador: Jorge de Frutos
-- manager: Maldinillo 💥
+- jugador: Aarón Escandell
+- manager: Dani
 - puntos: null
-- dinero: 13.7853
-- equipo: Rayo Vallecano
-- contexto: Venta por 13.79 millones. El manager esta en la posicion general 2.00  y en la posicion de la jornada 2.00.
+- dinero: 15.12264
+- equipo: Real Oviedo
+- contexto: Venta por 15.12 millones. El manager esta en la posicion general 1.00  y en la posicion de la jornada 1.00.
 
 BLOQUE 5:
 - tipo: MVP de la jornada
-- jugador: M. Bernal
-- manager: Maldinillo 💥
-- puntos: 13
+- jugador: L. Yamal
+- manager: Dani
+- puntos: 21
 - dinero: null
 - equipo: FC Barcelona
-- contexto: 13 puntos en la jornada. El manager esta en la posicion general 2.00  y en la posicion de la jornada 2.00.
+- contexto: 21 puntos en la jornada. El manager esta en la posicion general 1.00  y en la posicion de la jornada 1.00.
 
 BLOQUE 6:
 - tipo: MVP de la jornada
-- jugador: F. López
-- manager: Los marinero
+- jugador: C. Soler
+- manager: Dani
 - puntos: 12
 - dinero: null
-- equipo: FC Barcelona
-- contexto: 12 puntos en la jornada. El manager esta en la posicion general 4.00  y en la posicion de la jornada 1.00.
+- equipo: Real Sociedad
+- contexto: 12 puntos en la jornada. El manager esta en la posicion general 1.00  y en la posicion de la jornada 1.00.
 
 BLOQUE 7:
 - tipo: MVP de la jornada
-- jugador: F. De Jong
+- jugador: C. Romero
 - manager: Maldinillo 💥
 - puntos: 12
 - dinero: null
-- equipo: FC Barcelona
+- equipo: RCD Espanyol
 - contexto: 12 puntos en la jornada. El manager esta en la posicion general 2.00  y en la posicion de la jornada 2.00.
 
 BLOQUE 8:
 - tipo: Peor actuación de la jornada
-- jugador: C. Romero
-- manager: Maldinillo 💥
+- jugador: A. Rüdiger
+- manager: Jotabetrbb
 - puntos: -1
 - dinero: null
-- equipo: RCD Espanyol
-- contexto: Solo -1 puntos. El manager esta en la posicion general 2.00  y en la posicion de la jornada 2.00.
+- equipo: Real Madrid
+- contexto: Solo -1 puntos. El manager esta en la posicion general 5.00  y en la posicion de la jornada 4.00.
+
+BLOQUE 9:
+- tipo: Gol en propia
+- jugador: V. Reis
+- manager: MuchaSalsa
+- puntos: 3
+- dinero: null
+- equipo: Girona FC
+- contexto: Desafortunada acción en su propio área. El manager esta en la posicion general 8.00  y en la posicion de la jornada 8.00.
 
 
 ========================
