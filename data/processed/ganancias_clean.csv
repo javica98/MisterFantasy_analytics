@@ -1,4 +1,23 @@
 fecha,id,type,subtype,equipo,jugador,compra-venta,equipoLiga,ganancias
+2026-03-04,0,transfer,mercado,Los marinero,Djibril Sow,venta,17.0,1.19704
+2026-03-04,0,bonificacion,quiniela,Chamacónicos,,,,0.4
+2026-03-04,0,bonificacion,quiniela,Dani,,,,0.4
+2026-03-04,0,bonificacion,quiniela,De la Guettir FC,,,,0.4
+2026-03-04,0,bonificacion,quiniela,Maldinillo 💥,,,,0.2
+2026-03-04,0,bonificacion,quiniela,Jotabetrbb,,,,0.0
+2026-03-04,0,bonificacion,quiniela,Juanba,,,,0.0
+2026-03-04,0,bonificacion,quiniela,Libre,,,,0.0
+2026-03-04,0,bonificacion,quiniela,Los marinero,,,,0.0
+2026-03-04,0,bonificacion,quiniela,MuchaSalsa,,,,0.0
+2026-03-04,0,bonificacion,clasificacion,Dani,,,,2.55
+2026-03-04,0,bonificacion,clasificacion,Maldinillo 💥,,,,1.94
+2026-03-04,0,bonificacion,clasificacion,Los marinero,,,,1.67
+2026-03-04,0,bonificacion,clasificacion,Jotabetrbb,,,,1.44
+2026-03-04,0,bonificacion,clasificacion,Juanba,,,,1.58
+2026-03-04,0,bonificacion,clasificacion,De la Guettir FC,,,,1.72
+2026-03-04,0,bonificacion,clasificacion,Chamacónicos,,,,1.78
+2026-03-04,0,bonificacion,clasificacion,MuchaSalsa,,,,2.07
+2026-03-04,0,bonificacion,clasificacion,Libre,,,,0.0
 2026-03-03,0,transfer,mercado,Dani,Aarón Escandell,venta,1370.0,15.12264
 2026-03-03,0,transfer,mercado,Chamacónicos,Marcos Alonso,venta,5.0,13.00581
 2026-03-03,0,marks,start_mercado,Mercado diario,,,,0.0
