@@ -1,6 +1,15 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
-marks,start_mercado,,,,,,,,,,,,,,,2026-03-04,
-transfer,mercado,,Djibril Sow,Los marinero,Mister,1.19704,3,78,17,,,,,,,2026-03-04,c4bf1bd5edaf0a94d811e7667b5d5826
+marks,start_mercado,,,,,,,,,,,,,,,2026-03-05,
+transfer,mercado,,Jules Koundé,Maldinillo 💥,Mister,15.62716,2,107,3,,,,,,,2026-03-05,3c4ad67294ce5f0f6d310cbe8d5c0b70
+marks,start_mercado,,,,,,,,,,,,,,,2026-03-05,
+transfer,mercado,,Axel Witsel,Mister,Jotabetrbb,1.36,3,71,222,,,,,,,2026-03-05,e39148228946052ab32cb523c0e47dbf
+transfer,Puja,,Axel Witsel,Mister,Dani,1.312,3,71,222,,,,,,,2026-03-05,0e0a979086533cc04fe34ff1b615d281
+transfer,Puja,,Axel Witsel,Mister,Maldinillo 💥,1.14145,3,71,222,,,,,,,2026-03-05,cd0fca62acaaab8ff4ef781982c5e1d9
+transfer,mercado,,Clément Lenglet,Mister,Dani,0.16,2,29,2,,,,,,,2026-03-05,6dfdaee6890728f71c6bacf22fce4dbf
+marks,start_mercado,,,,,,,,,,,,,,,2026-03-05,
+transfer,mercado,,Toni Martínez,Dani,Mister,5.96506,4,109,48,,,,,,,2026-03-05,226e0eba7a0a3ab491cecff9324a8612
+marks,start_mercado,,,,,,,,,,,,,,,2026-03-05,
+transfer,mercado,,Djibril Sow,Los marinero,Mister,1.19704,3.0,78.0,17.0,,,,,,,2026-03-04,c4bf1bd5edaf0a94d811e7667b5d5826
 bonificacion,quiniela,,,,,,,,,Chamacónicos,0.4,1º,,,,2026-03-04,
 bonificacion,quiniela,,,,,,,,,Dani,0.4,2º,,,,2026-03-04,
 bonificacion,quiniela,,,,,,,,,De la Guettir FC,0.4,3º,,,,2026-03-04,
