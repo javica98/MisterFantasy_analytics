@@ -1,17 +1,25 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
+marks,start_mercado,,,,,,,,,,,,,,,2026-03-07,
+transfer,mercado,,Fede Valverde,Mister,Maldinillo 💥,25.62208,3,117,15,,,,,,,2026-03-07,8fe0e97d57ec2aad32125e192d9e853e
+transfer,Puja,,Fede Valverde,Mister,Dani,17.31444,3,117,15,,,,,,,2026-03-07,664834464304882094443e02c347cb98
+transfer,mercado,,José Luis Gayà,Mister,Maldinillo 💥,3.70556,2,64,19,,,,,,,2026-03-07,6d6615f82662f80cdda6fd8c93ef0e77
+transfer,mercado,,Pablo Maffeo,Mister,Maldinillo 💥,2.78765,2,69,408,,,,,,,2026-03-07,65b0c3ad30e8ff33753e59d577a7bcb9
+marks,start_mercado,,,,,,,,,,,,,,,2026-03-07,
+transfer,mercado,,Carlos Álvarez,Jotabetrbb,Mister,9.92,3,117,12,,,,,,,2026-03-07,7760a6b1baf5b8e20d793ad7eb8e3c4d
+marks,start_jornada,,,,,,,,,,,,,,27.0,2026-03-07,
+marks,start_mercado,,,,,,,,,,,,,,,2026-03-07,
+transfer,mercado,,Baptiste Santamaria,Dani,Mister,0.168,3.0,42.0,19.0,,,,,,,2026-03-06,cc74fddcad0ab71d20d810106d2cab82
 marks,start_mercado,,,,,,,,,,,,,,,2026-03-06,
-transfer,mercado,,Baptiste Santamaria,Dani,Mister,0.168,3,42,19,,,,,,,2026-03-06,cc74fddcad0ab71d20d810106d2cab82
+transfer,mercado,,Gorka Guruzeta,Dani,Mister,4.43693,4.0,71.0,1.0,,,,,,,2026-03-06,27fa39fd5cfdddeeb60dd4c61ad329e5
 marks,start_mercado,,,,,,,,,,,,,,,2026-03-06,
-transfer,mercado,,Gorka Guruzeta,Dani,Mister,4.43693,4,71,1,,,,,,,2026-03-06,27fa39fd5cfdddeeb60dd4c61ad329e5
+transfer,mercado,,Martin Valjent,Mister,Dani,2.55429,2.0,76.0,408.0,,,,,,,2026-03-06,2e6c5509711fe954d5f3618f156bd3e8
+transfer,mercado,,Unai López,Mister,Dani,0.40943,3.0,59.0,14.0,,,,,,,2026-03-06,4463a6ed61ea07374ead1d29e444562a
+transfer,mercado,,Mathew Ryan,Mister,Maldinillo 💥,11.22315,1.0,120.0,12.0,,,,,,,2026-03-06,07847891212a44e14690711030f718ab
+transfer,mercado,,Gonzalo García,Mister,Maldinillo 💥,6.46538,4.0,57.0,15.0,,,,,,,2026-03-06,4bb2828566c5d0cd559a145f1dfc6957
 marks,start_mercado,,,,,,,,,,,,,,,2026-03-06,
-transfer,mercado,,Martin Valjent,Mister,Dani,2.55429,2,76,408,,,,,,,2026-03-06,2e6c5509711fe954d5f3618f156bd3e8
-transfer,mercado,,Unai López,Mister,Dani,0.40943,3,59,14,,,,,,,2026-03-06,4463a6ed61ea07374ead1d29e444562a
-transfer,mercado,,Mathew Ryan,Mister,Maldinillo 💥,11.22315,1,120,12,,,,,,,2026-03-06,07847891212a44e14690711030f718ab
-transfer,mercado,,Gonzalo García,Mister,Maldinillo 💥,6.46538,4,57,15,,,,,,,2026-03-06,4bb2828566c5d0cd559a145f1dfc6957
+transfer,mercado,,Carlos Soler,Dani,Mister,9.98865,3.0,84.0,16.0,,,,,,,2026-03-06,6daf594ba8f185a30b1db7557b7337e3
 marks,start_mercado,,,,,,,,,,,,,,,2026-03-06,
-transfer,mercado,,Carlos Soler,Dani,Mister,9.98865,3,84,16,,,,,,,2026-03-06,6daf594ba8f185a30b1db7557b7337e3
-marks,start_mercado,,,,,,,,,,,,,,,2026-03-06,
-transfer,clausula,,Ante Budimir,De la Guettir FC,Dani,24.078,4,138,50,,,,,,,2026-03-06,9fba37ffbbe90507cb6aa451c87578f6
+transfer,clausula,,Ante Budimir,De la Guettir FC,Dani,24.078,4.0,138.0,50.0,,,,,,,2026-03-06,9fba37ffbbe90507cb6aa451c87578f6
 bonificacion,quiniela,,,,,,,,,Dani,0.5,1º,,,,2026-03-06,
 bonificacion,quiniela,,,,,,,,,De la Guettir FC,0.5,2º,,,,2026-03-06,
 bonificacion,quiniela,,,,,,,,,Maldinillo 💥,0.5,3º,,,,2026-03-06,
