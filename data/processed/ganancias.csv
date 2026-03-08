@@ -1,11 +1,24 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
+marks,start_mercado,,,,,,,,,,,,,,,2026-03-08,
+transfer,mercado,,Daniel Vivian,Mister,Dani,2.7116,2,64,1,,,,,,,2026-03-08,7e274c7f66c61b5ee8a56c942f554bed
+transfer,mercado,,Javi Guerra,Mister,Dani,0.99071,3,71,19,,,,,,,2026-03-08,79491fb5eaa3991ee6f0d53ad94b9810
+transfer,mercado,,Leandro Cabrera,Mister,Maldinillo 💥,13.74161,2,124,8,,,,,,,2026-03-08,d9a0d931cec3a80d9154ea2b81e56280
+transfer,Puja,,Leandro Cabrera,Mister,Dani,12.1889,2,124,8,,,,,,,2026-03-08,acb2bf7848bbc881475898350c730d45
+transfer,mercado,,Gerard Martín,Mister,Maldinillo 💥,8.95998,2,96,3,,,,,,,2026-03-08,d8c829f90577550cb38c115b2803a2af
+transfer,Puja,,Gerard Martín,Mister,Dani,8.0068,2,96,3,,,,,,,2026-03-08,1ed5e6fff9b00dc14865171199f04f59
+marks,start_mercado,,,,,,,,,,,,,,,2026-03-08,
+transfer,mercado,,Clément Lenglet,Dani,Mister,0.18768,2,29,2,,,,,,,2026-03-08,0436215c00f825f8ae96959fb10a5868
+marks,start_mercado,,,,,,,,,,,,,,,2026-03-08,
+transfer,mercado,,Unai López,Dani,Mister,0.17472,3,59,14,,,,,,,2026-03-08,9be13c1b219f67df211eb03c0e7b8c1a
+marks,start_mercado,,,,,,,,,,,,,,,2026-03-08,
+transfer,mercado,,Martin Valjent,Dani,Mister,2.466,2,78,408,,,,,,,2026-03-08,33d89a031be6e2a1eb4390c3c18ba8fa
+marks,start_mercado,,,,,,,,,,,,,,,2026-03-08,
+transfer,mercado,,Fede Valverde,Mister,Maldinillo 💥,25.62208,3.0,117.0,15.0,,,,,,,2026-03-07,8fe0e97d57ec2aad32125e192d9e853e
+transfer,Puja,,Fede Valverde,Mister,Dani,17.31444,3.0,117.0,15.0,,,,,,,2026-03-07,664834464304882094443e02c347cb98
+transfer,mercado,,José Luis Gayà,Mister,Maldinillo 💥,3.70556,2.0,64.0,19.0,,,,,,,2026-03-07,6d6615f82662f80cdda6fd8c93ef0e77
+transfer,mercado,,Pablo Maffeo,Mister,Maldinillo 💥,2.78765,2.0,69.0,408.0,,,,,,,2026-03-07,65b0c3ad30e8ff33753e59d577a7bcb9
 marks,start_mercado,,,,,,,,,,,,,,,2026-03-07,
-transfer,mercado,,Fede Valverde,Mister,Maldinillo 💥,25.62208,3,117,15,,,,,,,2026-03-07,8fe0e97d57ec2aad32125e192d9e853e
-transfer,Puja,,Fede Valverde,Mister,Dani,17.31444,3,117,15,,,,,,,2026-03-07,664834464304882094443e02c347cb98
-transfer,mercado,,José Luis Gayà,Mister,Maldinillo 💥,3.70556,2,64,19,,,,,,,2026-03-07,6d6615f82662f80cdda6fd8c93ef0e77
-transfer,mercado,,Pablo Maffeo,Mister,Maldinillo 💥,2.78765,2,69,408,,,,,,,2026-03-07,65b0c3ad30e8ff33753e59d577a7bcb9
-marks,start_mercado,,,,,,,,,,,,,,,2026-03-07,
-transfer,mercado,,Carlos Álvarez,Jotabetrbb,Mister,9.92,3,117,12,,,,,,,2026-03-07,7760a6b1baf5b8e20d793ad7eb8e3c4d
+transfer,mercado,,Carlos Álvarez,Jotabetrbb,Mister,9.92,3.0,117.0,12.0,,,,,,,2026-03-07,7760a6b1baf5b8e20d793ad7eb8e3c4d
 marks,start_jornada,,,,,,,,,,,,,,27.0,2026-03-07,
 marks,start_mercado,,,,,,,,,,,,,,,2026-03-07,
 transfer,mercado,,Baptiste Santamaria,Dani,Mister,0.168,3.0,42.0,19.0,,,,,,,2026-03-06,cc74fddcad0ab71d20d810106d2cab82
