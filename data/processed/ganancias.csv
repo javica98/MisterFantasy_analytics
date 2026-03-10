@@ -1,14 +1,24 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
+marks,start_mercado,,,,,,,,,,,,,,,2026-03-10,
+transfer,mercado,,Thibaut Courtois,Maldinillo 💥,Mister,14.9016,1,127,15,,,,,,,2026-03-10,b8f02581d571cd2aee816c89ce42cc19
+marks,start_mercado,,,,,,,,,,,,,,,2026-03-10,
+transfer,mercado,,Pablo Barrios,Mister,Maldinillo 💥,20.7426,3,114,2,,,,,,,2026-03-10,471dd269096d59d26e3f26c08da88c21
+transfer,mercado,,Alexander Sørloth,Mister,Maldinillo 💥,11.47628,4,103,2,,,,,,,2026-03-10,aa648187b73950eea5fd861fe08480f1
+transfer,Puja,,Alexander Sørloth,Mister,Dani,11.2233,4,103,2,,,,,,,2026-03-10,2dba4aba563cc3e09bae99f55d70bc57
+marks,start_mercado,,,,,,,,,,,,,,,2026-03-10,
+transfer,mercado,,Luis Vázquez,Maldinillo 💥,Mister,3.18476,4,33,9,,,,,,,2026-03-10,b6f99d190c0cd45d9386f94cb6c56ee1
+marks,start_mercado,,,,,,,,,,,,,,,2026-03-10,
+transfer,mercado,,Adrián Liso,Dani,Mister,0.2037,3,70,9,,,,,,,2026-03-10,54ca93f778c9064be894de2ab0cdff4d
+marks,start_mercado,,,,,,,,,,,,,,,2026-03-10,
+transfer,mercado,,Pablo Maffeo,Maldinillo 💥,Mister,2.87436,2.0,73.0,408.0,,,,,,,2026-03-09,17aa8ea4905ea47da5362c9ed8f7737a
 marks,start_mercado,,,,,,,,,,,,,,,2026-03-09,
-transfer,mercado,,Pablo Maffeo,Maldinillo 💥,Mister,2.87436,2,73,408,,,,,,,2026-03-09,17aa8ea4905ea47da5362c9ed8f7737a
+transfer,mercado,,Lucas Beltrán,Jotabetrbb,Mister,1.21056,3.0,65.0,19.0,,,,,,,2026-03-09,46c6fd5d8237e94456212da0843802a9
 marks,start_mercado,,,,,,,,,,,,,,,2026-03-09,
-transfer,mercado,,Lucas Beltrán,Jotabetrbb,Mister,1.21056,3,65,19,,,,,,,2026-03-09,46c6fd5d8237e94456212da0843802a9
+transfer,mercado,,José Luis Gayà,Maldinillo 💥,Mister,3.72286,2.0,66.0,19.0,,,,,,,2026-03-09,3c8291666cec891768c91f6b5b33e784
 marks,start_mercado,,,,,,,,,,,,,,,2026-03-09,
-transfer,mercado,,José Luis Gayà,Maldinillo 💥,Mister,3.72286,2,66,19,,,,,,,2026-03-09,3c8291666cec891768c91f6b5b33e784
+transfer,mercado,,Oihan Sancet,Maldinillo 💥,Mister,4.94118,3.0,43.0,1.0,,,,,,,2026-03-09,5d96ef547bf5a4a7ff5bf52c287dd288
 marks,start_mercado,,,,,,,,,,,,,,,2026-03-09,
-transfer,mercado,,Oihan Sancet,Maldinillo 💥,Mister,4.94118,3,43,1,,,,,,,2026-03-09,5d96ef547bf5a4a7ff5bf52c287dd288
-marks,start_mercado,,,,,,,,,,,,,,,2026-03-09,
-transfer,mercado,,Dani Carvajal,Maldinillo 💥,Mister,3.57968,2,31,15,,,,,,,2026-03-09,8db1ee906a7596ed35d2cc9ffcbaa23d
+transfer,mercado,,Dani Carvajal,Maldinillo 💥,Mister,3.57968,2.0,31.0,15.0,,,,,,,2026-03-09,8db1ee906a7596ed35d2cc9ffcbaa23d
 marks,start_mercado,,,,,,,,,,,,,,,2026-03-09,
 transfer,mercado,,Daniel Vivian,Mister,Dani,2.7116,2.0,64.0,1.0,,,,,,,2026-03-08,7e274c7f66c61b5ee8a56c942f554bed
 transfer,mercado,,Javi Guerra,Mister,Dani,0.99071,3.0,71.0,19.0,,,,,,,2026-03-08,79491fb5eaa3991ee6f0d53ad94b9810
