@@ -8,11 +8,11 @@
       "dinero": null,
       "equipo": null,
       "titulo": "¡LA SOTANO LEAGUE ARDE!",
-      "subtitulo": "¡Dani Resiste, Maldinillo Presiona!",
+      "subtitulo": "¡Dani sigue líder, pero Maldinillo pisa los talones!",
       "texto": [
-        "Dani sigue líder inexpugnable con 1210 puntos, ¿podrá Maldinillo darle caza a la tiranía del bicampeón?",
-        "¡Maldinillo no se rinde! Sus 1128 puntos le mantienen al acecho, la emoción está servida en una lucha épica.",
-        "La jornada ha sido un festival para Dani con 75 puntos, pero Maldinillo con 57, demuestra que la guerra está lejos de terminar."
+        "Dani mantiene su hegemonía, pero la brecha se estrecha con un Maldinillo desatado.",
+        "La jornada ha sido una montaña rusa de emociones, con el líder resistiendo y el segundo pujando fuerte.",
+        "¡El 'Libre' se desinfla por completo, mientras la zona media se comprime con una lucha encarnizada!"
       ]
     },
     {
@@ -22,136 +22,136 @@
       "puntos": null,
       "dinero": null,
       "equipo": null,
-      "titulo": "¡BOMBAZO EN LA SOTANO LEAGUE!",
-      "subtitulo": "¡Un Manager Visto Comprando Croquetas!",
+      "titulo": "¡RUMOR BOMBA!",
+      "subtitulo": "¡Un manager, pillado en plena 'operación secreta'!",
       "texto": [
-        "Fuentes cercanas aseguran que un conocido manager fue avistado en la sección de congelados de un supermercado, ¿preparando algo más que fichajes de última hora?"
+        "Se dice que un conocido manager fue visto comprando 20 rollos de papel higiénico, ¿preparando un 'clausulazo' masivo?"
       ]
     },
     {
-      "tipo": "fichaje",
-      "jugador": "Pablo Fornals",
+      "tipo": "Fichaje destacado",
+      "jugador": "Pablo Barrios",
+      "manager": "Maldinillo 💥",
+      "puntos": null,
+      "dinero": 20.7426,
+      "equipo": "Atlético de Madrid",
+      "titulo": "¡GOLPE DE AUTOR DE MALDINILLO!",
+      "subtitulo": "¡Pablo Barrios aterriza para revolucionar la liga!",
+      "texto": [
+        "Maldinillo desata la locura con un fichaje estelar de 20.74 millones.",
+        "Pablo Barrios llega para dinamitar la SOTANO LEAGUE y asaltar la cima."
+      ]
+    },
+    {
+      "tipo": "Fichaje destacado",
+      "jugador": "Jorge de Frutos",
+      "manager": "Maldinillo 💥",
+      "puntos": null,
+      "dinero": 15.2973,
+      "equipo": "Rayo Vallecano",
+      "titulo": "¡MALDINILLO NO FRENA SU AMBICIÓN!",
+      "subtitulo": "¡Otro bombazo de 15.30 millones!",
+      "texto": [
+        "Jorge de Frutos se une a la causa de Maldinillo en un movimiento clave.",
+        "Este fichaje demuestra la ambición desmedida del manager por la victoria."
+      ]
+    },
+    {
+      "tipo": "Fichaje destacado",
+      "jugador": "Leandro Cabrera",
+      "manager": "Maldinillo 💥",
+      "puntos": null,
+      "dinero": 13.74161,
+      "equipo": "RCD Espanyol",
+      "titulo": "¡TRIPLETE DE FICHAJES DE MALDINILLO!",
+      "subtitulo": "¡Cabrera cierra un mercado de locura!",
+      "texto": [
+        "Leandro Cabrera es la guinda del pastel en la ofensiva de Maldinillo.",
+        "Casi 14 millones para blindar su defensa y consolidar su asalto al liderato."
+      ]
+    },
+    {
+      "tipo": "Venta récord",
+      "jugador": "Thibaut Courtois",
+      "manager": "Maldinillo 💥",
+      "puntos": null,
+      "dinero": 14.9016,
+      "equipo": "Real Madrid",
+      "titulo": "¡VENTA MILLONARIA DE MALDINILLO!",
+      "subtitulo": "¡Courtois se marcha por una fortuna!",
+      "texto": [
+        "El portero belga deja las arcas de Maldinillo repletas de dinero.",
+        "Una operación maestra de 14.90 millones que demuestra su astucia en el mercado."
+      ]
+    },
+    {
+      "tipo": "MVP de la jornada",
+      "jugador": "V. Muriqi",
       "manager": "Chamacónicos",
-      "puntos": null,
-      "dinero": 25.381,
-      "equipo": "Real Betis Balompié",
-      "titulo": "¡GOLPE EN LA MESA!",
-      "subtitulo": "Chamacónicos Desembolsa una Fortuna por Fornals",
-      "texto": [
-        "¡25.38 millones! Chamacónicos rompe la hucha por Pablo Fornals, ¿será el revulsivo que los catapulte a la gloria de la SOTANO LEAGUE?",
-        "El manager, en la cuarta posición general, busca escalar con este fichaje estrella del Real Betis. ¡La SOTANO LEAGUE no deja de sorprendernos con sus movimientos!"
-      ]
-    },
-    {
-      "tipo": "fichaje",
-      "jugador": "Joan Garcia",
-      "manager": "Dani",
-      "puntos": null,
-      "dinero": 25.31061,
-      "equipo": "FC Barcelona",
-      "titulo": "¡EL CAMPEÓN NO TIENE FRENOS!",
-      "subtitulo": "Dani Refuerza su Imperio con Joan Garcia",
-      "texto": [
-        "¡Otro fichaje millonario de Dani! 25.31 millones por Joan Garcia, ¿quién podrá detener al líder implacable de la SOTANO LEAGUE?",
-        "El dominador absoluto de la liga, primero en general y en la jornada, sigue sumando talento a su plantilla. ¡La tiranía de Dani continúa!"
-      ]
-    },
-    {
-      "tipo": "fichaje",
-      "jugador": "Nicolas Pépé",
-      "manager": "Los marinero",
-      "puntos": null,
-      "dinero": 11.905,
-      "equipo": "Villarreal CF",
-      "titulo": "¡LOS MARINERO NAVEGAN CON AMBICIÓN!",
-      "subtitulo": "Pépé Llega al Barco por Una Cifra Espectacular",
-      "texto": [
-        "¡11.90 millones por Nicolas Pépé! Los marinero muestran sus cartas y refuerzan su ataque con un golpe de timón.",
-        "El tercer clasificado general y de jornada no se conforma y busca asaltar la cima. ¡El mercado de la SOTANO LEAGUE se calienta al rojo vivo!"
-      ]
-    },
-    {
-      "tipo": "venta",
-      "jugador": "Aarón Escandell",
-      "manager": "Dani",
-      "puntos": null,
-      "dinero": 15.12264,
-      "equipo": "Real Oviedo",
-      "titulo": "¡DANI, EL REY DEL MERCADO!",
-      "subtitulo": "Venta Maestra por Aarón Escandell",
-      "texto": [
-        "¡15.12 millones por la venta de Aarón Escandell! Dani no solo compra, también vende como nadie. ¡Un genio de las finanzas fantasy!",
-        "El líder absoluto de la SOTANO LEAGUE demuestra su habilidad para hacer caja. ¿Prepara otro bombazo con ese dinero fresco para hundir a sus rivales?"
-      ]
-    },
-    {
-      "tipo": "mvp",
-      "jugador": "L. Yamal",
-      "manager": "Dani",
-      "puntos": 21,
+      "puntos": 16,
       "dinero": null,
-      "equipo": "FC Barcelona",
-      "titulo": "¡YAMAL, LA JOYA DE LA CORONA!",
-      "subtitulo": "21 Puntos para el Jugador de Dani",
+      "equipo": "RCD Mallorca",
+      "titulo": "¡MURIQI, EL PIRATA DE LOS PUNTOS!",
+      "subtitulo": "¡Chamacónicos celebra un MVP de oro!",
       "texto": [
-        "¡L. Yamal explota con 21 puntos! El talento de Dani sigue deslumbrando y sumando para el intratable líder.",
-        "El campeón no solo domina en la tabla, sus estrellas brillan más que nadie en la SOTANO LEAGUE. ¡Un rendimiento brutal que aterra a sus oponentes!"
+        "El delantero del Mallorca explota con 16 puntos decisivos para su equipo.",
+        "Chamacónicos escala posiciones gracias a la actuación estelar de su estrella."
       ]
     },
     {
-      "tipo": "mvp",
-      "jugador": "C. Soler",
-      "manager": "Dani",
-      "puntos": 12,
+      "tipo": "MVP de la jornada",
+      "jugador": "T. Buchanan",
+      "manager": "Juanba",
+      "puntos": 13,
+      "dinero": null,
+      "equipo": "Villarreal CF",
+      "titulo": "¡BUCHANAN SALVA EL HONOR DE JUANBA!",
+      "subtitulo": "¡Un rayo de esperanza en la oscuridad!",
+      "texto": [
+        "T. Buchanan brilla con 13 puntos en una jornada para olvidar.",
+        "Juanba encuentra un MVP inesperado para evitar el desastre total."
+      ]
+    },
+    {
+      "tipo": "MVP de la jornada",
+      "jugador": "M. Oyarzabal",
+      "manager": "Libre",
+      "puntos": 11,
       "dinero": null,
       "equipo": "Real Sociedad",
-      "titulo": "¡DOBLETE DE MVPS PARA DANI!",
-      "subtitulo": "C. Soler se Une a la Fiesta de Puntos",
+      "titulo": "¡OYARZABAL RESCATA AL 'LIBRE'!",
+      "subtitulo": "¡Luz en la oscuridad de la jornada!",
       "texto": [
-        "¡Otro MVP para Dani! C. Soler suma 12 puntos y consolida la hegemonía del bicampeón en la SOTANO LEAGUE.",
-        "¿Hay alguien que pueda detener esta máquina de generar puntos? ¡Dani parece imbatible y sus rivales tiemblan!"
+        "Mikel Oyarzabal se erige como el único salvador del equipo 'Libre'.",
+        "11 puntos que evitan una catástrofe total para el manager."
       ]
     },
     {
-      "tipo": "mvp",
-      "jugador": "C. Romero",
-      "manager": "Maldinillo 💥",
-      "puntos": 12,
+      "tipo": "Peor actuación de la jornada",
+      "jugador": "J. Ander Olasagasti",
+      "manager": "Chamacónicos",
+      "puntos": -6,
       "dinero": null,
-      "equipo": "RCD Espanyol",
-      "titulo": "¡MALDINILLO REACCIONA CON FUERZA!",
-      "subtitulo": "C. Romero Da un Rayo de Esperanza",
+      "equipo": "Levante UD",
+      "titulo": "¡DESASTRE DE OLASAGASTI!",
+      "subtitulo": "¡Chamacónicos sufre un golpe brutal!",
       "texto": [
-        "¡12 puntos de C. Romero para Maldinillo! El subcampeón demuestra que no se rinde y sigue en la pelea por el trono.",
-        "Un golpe sobre la mesa para el segundo clasificado general y de jornada. ¡La lucha por el título está más viva que nunca gracias a la garra de Maldinillo!"
+        "J. Ander Olasagasti firma una jornada para el olvido más absoluto.",
+        "¡-6 puntos que hunden las aspiraciones de Chamacónicos en la clasificación!"
       ]
     },
     {
-      "tipo": "desastre",
-      "jugador": "A. Rüdiger",
-      "manager": "Jotabetrbb",
-      "puntos": -1,
+      "tipo": "Expulsión",
+      "jugador": "J. Ander Olasagasti",
+      "manager": "Chamacónicos",
+      "puntos": -6,
       "dinero": null,
-      "equipo": "Real Madrid",
-      "titulo": "¡CATÁSTROFE EN DEFENSA!",
-      "subtitulo": "Rüdiger HUNDE a Jotabetrbb",
+      "equipo": "Levante UD",
+      "titulo": "¡ROJA DIRECTA Y ESCÁNDALO!",
+      "subtitulo": "¡Olasagasti fulminado en el campo!",
       "texto": [
-        "¡-1 punto para A. Rüdiger! Desastre total para Jotabetrbb, que ve cómo sus expectativas se desvanecen en un mar de errores.",
-        "Una actuación para el olvido que frena al quinto clasificado general. ¡La SOTANO LEAGUE no perdona fallos y los castiga con dureza!"
-      ]
-    },
-    {
-      "tipo": "desastre",
-      "jugador": "V. Reis",
-      "manager": "MuchaSalsa",
-      "puntos": 3,
-      "dinero": null,
-      "equipo": "Girona FC",
-      "titulo": "¡AUTOGOL Y DRAMA!",
-      "subtitulo": "V. Reis Golpea a MuchaSalsa",
-      "texto": [
-        "¡Gol en propia de V. Reis! Una acción desafortunada que castiga a MuchaSalsa, hundido en la octava posición de la tabla.",
-        "El manager busca soluciones desesperadamente, pero la mala suerte se ceba con él. ¡La jornada ha sido un calvario absoluto para MuchaSalsa!"
+        "J. Ander Olasagasti ve la roja y deja a Chamacónicos en la estacada.",
+        "La expulsión condiciona brutalmente la jornada de su manager."
       ]
     }
   ]

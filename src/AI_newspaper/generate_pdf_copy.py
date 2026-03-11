@@ -287,7 +287,7 @@ def create_card(card_info, IMAGES_TEAMS_DIR, DEFAULT_TEAM_IMAGE,tipo, PATH_UTILS
     if (tipo != "Right_box"):
         y = draw_multiline_text(tipo,draw, card_info["titulo"], x_margin, y, title_font, max_width,titulo = True)
         y += 20
-    y = draw_multiline_text(tipo,draw, card_info["subtitulo"], x_margin, y, subtitle_font, max_width)
+        y = draw_multiline_text(tipo,draw, card_info["subtitulo"], x_margin, y, subtitle_font, max_width)
     y += 25
     if tipo != "reduced":
         for frase in card_info["texto"]:
@@ -395,10 +395,10 @@ def create_columns(canvas,columns, IMAGES_TEAMS_DIR, DEFAULT_TEAM_IMAGE, PATH_UT
 def create_pdf(tipo,cards,clasificacion_json, PATH_UTILS,IMAGES_TEAMS_DIR, DEFAULT_TEAM_IMAGE):
    # --- CONFIG ---
     if tipo == "Jornada":
-        botton_cards = get_cards_by_tipo(cards,["MVP","Desastre"])
+        botton_cards = get_cards_by_tipo(cards,["MVP de la jornada","Peor actuación de la jornada"])
         right_card = get_cards_by_tipo(cards,["clasificacion"])
     else: 
-        botton_cards = get_cards_by_tipo(cards,["Fichaje","Venta"])
+        botton_cards = get_cards_by_tipo(cards,["Fichaje destacado","Venta récord"])
         right_card = get_cards_by_tipo(cards,["rumor"])
 
     column_cards =get_cards_by_tipo(cards,["Expulsión","Héroe bajo palos","Gol en propia"])

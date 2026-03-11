@@ -334,6 +334,17 @@ REGLAS ESTRICTAS (NO ROMPER)
 - Dramático
 - Frases cortas tipo periódico
 
+7. TIPO DE CARD (OBLIGATORIO)
+El campo "tipo" DEBE ser exactamente el mismo que el indicado en el input.
+Reglas:
+- Para la clasificación → tipo = "clasificacion"
+- Para el rumor → tipo = "rumor"
+- Para cada BLOQUE de EVENTOS → tipo = exactamente el valor indicado en "tipo" dentro del BLOQUE.
+NO cambiar el texto.
+NO resumirlo.
+NO traducirlo.
+NO inventar tipos nuevos.
+
 ========================
 OUTPUT ESPERADO (EJEMPLO)
 ========================

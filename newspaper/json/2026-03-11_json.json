@@ -1,0 +1,158 @@
+{
+  "cards": [
+    {
+      "tipo": "clasificacion",
+      "jugador": null,
+      "manager": null,
+      "puntos": null,
+      "dinero": null,
+      "equipo": null,
+      "titulo": "¡LA SOTANO LEAGUE ARDE!",
+      "subtitulo": "¡Dani sigue líder, pero Maldinillo pisa los talones!",
+      "texto": [
+        "Dani mantiene su hegemonía, pero la brecha se estrecha con un Maldinillo desatado.",
+        "La jornada ha sido una montaña rusa de emociones, con el líder resistiendo y el segundo pujando fuerte.",
+        "¡El 'Libre' se desinfla por completo, mientras la zona media se comprime con una lucha encarnizada!"
+      ]
+    },
+    {
+      "tipo": "rumor",
+      "jugador": null,
+      "manager": null,
+      "puntos": null,
+      "dinero": null,
+      "equipo": null,
+      "titulo": "¡RUMOR BOMBA!",
+      "subtitulo": "¡Un manager, pillado en plena 'operación secreta'!",
+      "texto": [
+        "Se dice que un conocido manager fue visto comprando 20 rollos de papel higiénico, ¿preparando un 'clausulazo' masivo?"
+      ]
+    },
+    {
+      "tipo": "Fichaje destacado",
+      "jugador": "Pablo Barrios",
+      "manager": "Maldinillo 💥",
+      "puntos": null,
+      "dinero": 20.7426,
+      "equipo": "Atlético de Madrid",
+      "titulo": "¡GOLPE DE AUTOR DE MALDINILLO!",
+      "subtitulo": "¡Pablo Barrios aterriza para revolucionar la liga!",
+      "texto": [
+        "Maldinillo desata la locura con un fichaje estelar de 20.74 millones.",
+        "Pablo Barrios llega para dinamitar la SOTANO LEAGUE y asaltar la cima."
+      ]
+    },
+    {
+      "tipo": "Fichaje destacado",
+      "jugador": "Jorge de Frutos",
+      "manager": "Maldinillo 💥",
+      "puntos": null,
+      "dinero": 15.2973,
+      "equipo": "Rayo Vallecano",
+      "titulo": "¡MALDINILLO NO FRENA SU AMBICIÓN!",
+      "subtitulo": "¡Otro bombazo de 15.30 millones!",
+      "texto": [
+        "Jorge de Frutos se une a la causa de Maldinillo en un movimiento clave.",
+        "Este fichaje demuestra la ambición desmedida del manager por la victoria."
+      ]
+    },
+    {
+      "tipo": "Fichaje destacado",
+      "jugador": "Leandro Cabrera",
+      "manager": "Maldinillo 💥",
+      "puntos": null,
+      "dinero": 13.74161,
+      "equipo": "RCD Espanyol",
+      "titulo": "¡TRIPLETE DE FICHAJES DE MALDINILLO!",
+      "subtitulo": "¡Cabrera cierra un mercado de locura!",
+      "texto": [
+        "Leandro Cabrera es la guinda del pastel en la ofensiva de Maldinillo.",
+        "Casi 14 millones para blindar su defensa y consolidar su asalto al liderato."
+      ]
+    },
+    {
+      "tipo": "Venta récord",
+      "jugador": "Thibaut Courtois",
+      "manager": "Maldinillo 💥",
+      "puntos": null,
+      "dinero": 14.9016,
+      "equipo": "Real Madrid",
+      "titulo": "¡VENTA MILLONARIA DE MALDINILLO!",
+      "subtitulo": "¡Courtois se marcha por una fortuna!",
+      "texto": [
+        "El portero belga deja las arcas de Maldinillo repletas de dinero.",
+        "Una operación maestra de 14.90 millones que demuestra su astucia en el mercado."
+      ]
+    },
+    {
+      "tipo": "MVP de la jornada",
+      "jugador": "V. Muriqi",
+      "manager": "Chamacónicos",
+      "puntos": 16,
+      "dinero": null,
+      "equipo": "RCD Mallorca",
+      "titulo": "¡MURIQI, EL PIRATA DE LOS PUNTOS!",
+      "subtitulo": "¡Chamacónicos celebra un MVP de oro!",
+      "texto": [
+        "El delantero del Mallorca explota con 16 puntos decisivos para su equipo.",
+        "Chamacónicos escala posiciones gracias a la actuación estelar de su estrella."
+      ]
+    },
+    {
+      "tipo": "MVP de la jornada",
+      "jugador": "T. Buchanan",
+      "manager": "Juanba",
+      "puntos": 13,
+      "dinero": null,
+      "equipo": "Villarreal CF",
+      "titulo": "¡BUCHANAN SALVA EL HONOR DE JUANBA!",
+      "subtitulo": "¡Un rayo de esperanza en la oscuridad!",
+      "texto": [
+        "T. Buchanan brilla con 13 puntos en una jornada para olvidar.",
+        "Juanba encuentra un MVP inesperado para evitar el desastre total."
+      ]
+    },
+    {
+      "tipo": "MVP de la jornada",
+      "jugador": "M. Oyarzabal",
+      "manager": "Libre",
+      "puntos": 11,
+      "dinero": null,
+      "equipo": "Real Sociedad",
+      "titulo": "¡OYARZABAL RESCATA AL 'LIBRE'!",
+      "subtitulo": "¡Luz en la oscuridad de la jornada!",
+      "texto": [
+        "Mikel Oyarzabal se erige como el único salvador del equipo 'Libre'.",
+        "11 puntos que evitan una catástrofe total para el manager."
+      ]
+    },
+    {
+      "tipo": "Peor actuación de la jornada",
+      "jugador": "J. Ander Olasagasti",
+      "manager": "Chamacónicos",
+      "puntos": -6,
+      "dinero": null,
+      "equipo": "Levante UD",
+      "titulo": "¡DESASTRE DE OLASAGASTI!",
+      "subtitulo": "¡Chamacónicos sufre un golpe brutal!",
+      "texto": [
+        "J. Ander Olasagasti firma una jornada para el olvido más absoluto.",
+        "¡-6 puntos que hunden las aspiraciones de Chamacónicos en la clasificación!"
+      ]
+    },
+    {
+      "tipo": "Expulsión",
+      "jugador": "J. Ander Olasagasti",
+      "manager": "Chamacónicos",
+      "puntos": -6,
+      "dinero": null,
+      "equipo": "Levante UD",
+      "titulo": "¡ROJA DIRECTA Y ESCÁNDALO!",
+      "subtitulo": "¡Olasagasti fulminado en el campo!",
+      "texto": [
+        "J. Ander Olasagasti ve la roja y deja a Chamacónicos en la estacada.",
+        "La expulsión condiciona brutalmente la jornada de su manager."
+      ]
+    }
+  ]
+}
