@@ -1,14 +1,37 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
+marks,start_mercado,,,,,,,,,,,,,,,2026-03-11,
+transfer,mercado,,Alexander Sørloth,Maldinillo 💥,Mister,11.8083,4,103,2,,,,,,,2026-03-11,f8baf43a3d3a7f94ad1a198c5824c925
+marks,start_mercado,,,,,,,,,,,,,,,2026-03-11,
+transfer,mercado,,Jorge de Frutos,Mister,Maldinillo 💥,15.2973,3,148,14,,,,,,,2026-03-11,d21d2a62a582afcc3ee3da1dcf242fb8
+transfer,Puja,,Jorge de Frutos,Mister,Dani,15.21856,3,148,14,,,,,,,2026-03-11,4f897322b121e5059301a77d50e3e963
+bonificacion,quiniela,,,,,,,,,Maldinillo 💥,0.7,1º,,,,2026-03-11,
+bonificacion,quiniela,,,,,,,,,Chamacónicos,0.6,2º,,,,2026-03-11,
+bonificacion,quiniela,,,,,,,,,De la Guettir FC,0.6,3º,,,,2026-03-11,
+bonificacion,quiniela,,,,,,,,,Dani,0.5,4º,,,,2026-03-11,
+bonificacion,quiniela,,,,,,,,,Jotabetrbb,,5º,,,,2026-03-11,
+bonificacion,quiniela,,,,,,,,,Juanba,,6º,,,,2026-03-11,
+bonificacion,quiniela,,,,,,,,,Libre,,7º,,,,2026-03-11,
+bonificacion,quiniela,,,,,,,,,Los marinero,,8º,,,,2026-03-11,
+bonificacion,quiniela,,,,,,,,,MuchaSalsa,,9º,,,,2026-03-11,
+bonificacion,clasificacion,,,,,,,,,Dani,1.67,1,,,,2026-03-11,
+bonificacion,clasificacion,,,,,,,,,Maldinillo 💥,1.38,2,,,,2026-03-11,
+bonificacion,clasificacion,,,,,,,,,Chamacónicos,1.75,3,,,,2026-03-11,
+bonificacion,clasificacion,,,,,,,,,Los marinero,1.56,4,,,,2026-03-11,
+bonificacion,clasificacion,,,,,,,,,Jotabetrbb,1.56,5,,,,2026-03-11,
+bonificacion,clasificacion,,,,,,,,,Juanba,2.11,6,,,,2026-03-11,
+bonificacion,clasificacion,,,,,,,,,De la Guettir FC,1.78,7,,,,2026-03-11,
+bonificacion,clasificacion,,,,,,,,,MuchaSalsa,1.72,8,,,,2026-03-11,
+bonificacion,clasificacion,,,,,,,,,Libre,,9,,,,2026-03-11,
+marks,start_mercado,,,,,,,,,,,,,,,2026-03-11,
+transfer,mercado,,Thibaut Courtois,Maldinillo 💥,Mister,14.9016,1.0,127.0,15.0,,,,,,,2026-03-10,b8f02581d571cd2aee816c89ce42cc19
 marks,start_mercado,,,,,,,,,,,,,,,2026-03-10,
-transfer,mercado,,Thibaut Courtois,Maldinillo 💥,Mister,14.9016,1,127,15,,,,,,,2026-03-10,b8f02581d571cd2aee816c89ce42cc19
+transfer,mercado,,Pablo Barrios,Mister,Maldinillo 💥,20.7426,3.0,114.0,2.0,,,,,,,2026-03-10,471dd269096d59d26e3f26c08da88c21
+transfer,mercado,,Alexander Sørloth,Mister,Maldinillo 💥,11.47628,4.0,103.0,2.0,,,,,,,2026-03-10,aa648187b73950eea5fd861fe08480f1
+transfer,Puja,,Alexander Sørloth,Mister,Dani,11.2233,4.0,103.0,2.0,,,,,,,2026-03-10,2dba4aba563cc3e09bae99f55d70bc57
 marks,start_mercado,,,,,,,,,,,,,,,2026-03-10,
-transfer,mercado,,Pablo Barrios,Mister,Maldinillo 💥,20.7426,3,114,2,,,,,,,2026-03-10,471dd269096d59d26e3f26c08da88c21
-transfer,mercado,,Alexander Sørloth,Mister,Maldinillo 💥,11.47628,4,103,2,,,,,,,2026-03-10,aa648187b73950eea5fd861fe08480f1
-transfer,Puja,,Alexander Sørloth,Mister,Dani,11.2233,4,103,2,,,,,,,2026-03-10,2dba4aba563cc3e09bae99f55d70bc57
+transfer,mercado,,Luis Vázquez,Maldinillo 💥,Mister,3.18476,4.0,33.0,9.0,,,,,,,2026-03-10,b6f99d190c0cd45d9386f94cb6c56ee1
 marks,start_mercado,,,,,,,,,,,,,,,2026-03-10,
-transfer,mercado,,Luis Vázquez,Maldinillo 💥,Mister,3.18476,4,33,9,,,,,,,2026-03-10,b6f99d190c0cd45d9386f94cb6c56ee1
-marks,start_mercado,,,,,,,,,,,,,,,2026-03-10,
-transfer,mercado,,Adrián Liso,Dani,Mister,0.2037,3,70,9,,,,,,,2026-03-10,54ca93f778c9064be894de2ab0cdff4d
+transfer,mercado,,Adrián Liso,Dani,Mister,0.2037,3.0,70.0,9.0,,,,,,,2026-03-10,54ca93f778c9064be894de2ab0cdff4d
 marks,start_mercado,,,,,,,,,,,,,,,2026-03-10,
 transfer,mercado,,Pablo Maffeo,Maldinillo 💥,Mister,2.87436,2.0,73.0,408.0,,,,,,,2026-03-09,17aa8ea4905ea47da5362c9ed8f7737a
 marks,start_mercado,,,,,,,,,,,,,,,2026-03-09,
