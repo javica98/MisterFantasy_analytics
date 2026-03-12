@@ -1,9 +1,13 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
+marks,start_mercado,,,,,,,,,,,,,,,2026-03-12,
+transfer,mercado,,Filip Ugrinic,Mister,Jotabetrbb,1.399,3,59,19,,,,,,,2026-03-12,199e5fbed3713aebb0857a81ec7487d1
+transfer,mercado,,Rafa Marín,Mister,Dani,3.71284,2,77,20,,,,,,,2026-03-12,ac92f278a19743ae4d21bc947ababb0f
+transfer,mercado,,José Luis Gayà,Mister,Dani,3.6472,2,66,19,,,,,,,2026-03-12,8d0085735563b6ee67657e5618a0db3e
+marks,start_mercado,,,,,,,,,,,,,,,2026-03-12,
+transfer,mercado,,Alexander Sørloth,Maldinillo 💥,Mister,11.8083,4.0,103.0,2.0,,,,,,,2026-03-11,f8baf43a3d3a7f94ad1a198c5824c925
 marks,start_mercado,,,,,,,,,,,,,,,2026-03-11,
-transfer,mercado,,Alexander Sørloth,Maldinillo 💥,Mister,11.8083,4,103,2,,,,,,,2026-03-11,f8baf43a3d3a7f94ad1a198c5824c925
-marks,start_mercado,,,,,,,,,,,,,,,2026-03-11,
-transfer,mercado,,Jorge de Frutos,Mister,Maldinillo 💥,15.2973,3,148,14,,,,,,,2026-03-11,d21d2a62a582afcc3ee3da1dcf242fb8
-transfer,Puja,,Jorge de Frutos,Mister,Dani,15.21856,3,148,14,,,,,,,2026-03-11,4f897322b121e5059301a77d50e3e963
+transfer,mercado,,Jorge de Frutos,Mister,Maldinillo 💥,15.2973,3.0,148.0,14.0,,,,,,,2026-03-11,d21d2a62a582afcc3ee3da1dcf242fb8
+transfer,Puja,,Jorge de Frutos,Mister,Dani,15.21856,3.0,148.0,14.0,,,,,,,2026-03-11,4f897322b121e5059301a77d50e3e963
 bonificacion,quiniela,,,,,,,,,Maldinillo 💥,0.7,1º,,,,2026-03-11,
 bonificacion,quiniela,,,,,,,,,Chamacónicos,0.6,2º,,,,2026-03-11,
 bonificacion,quiniela,,,,,,,,,De la Guettir FC,0.6,3º,,,,2026-03-11,
