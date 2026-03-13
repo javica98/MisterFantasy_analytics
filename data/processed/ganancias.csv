@@ -1,8 +1,14 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
-marks,start_mercado,,,,,,,,,,,,,,,2026-03-12,
-transfer,mercado,,Filip Ugrinic,Mister,Jotabetrbb,1.399,3,59,19,,,,,,,2026-03-12,199e5fbed3713aebb0857a81ec7487d1
-transfer,mercado,,Rafa Marín,Mister,Dani,3.71284,2,77,20,,,,,,,2026-03-12,ac92f278a19743ae4d21bc947ababb0f
-transfer,mercado,,José Luis Gayà,Mister,Dani,3.6472,2,66,19,,,,,,,2026-03-12,8d0085735563b6ee67657e5618a0db3e
+marks,start_mercado,,,,,,,,,,,,,,,2026-03-13,
+transfer,mercado,,Martín Satriano,Mister,De la Guettir FC,5.555555,4,43,9,,,,,,,2026-03-13,fccb9d0b63af2e032e93d1f4dc8c67b0
+transfer,Puja,,Martín Satriano,Mister,Los marinero,2.822,4,43,9,,,,,,,2026-03-13,41c6f5d98552b12fab665a6be7a2e598
+transfer,Puja,,Martín Satriano,Mister,Jotabetrbb,2.622,4,43,9,,,,,,,2026-03-13,d35c7efbc694e580f1bdd6c2840ade6e
+marks,start_mercado,,,,,,,,,,,,,,,2026-03-13,
+transfer,acuerdo,,Jorge de Frutos,Maldinillo 💥,Jotabetrbb,15.5,3,148,14,,,,,,,2026-03-13,278939391009d9c445684262a9689be2
+marks,start_mercado,,,,,,,,,,,,,,,2026-03-13,
+transfer,mercado,,Filip Ugrinic,Mister,Jotabetrbb,1.399,3.0,59.0,19.0,,,,,,,2026-03-12,199e5fbed3713aebb0857a81ec7487d1
+transfer,mercado,,Rafa Marín,Mister,Dani,3.71284,2.0,77.0,20.0,,,,,,,2026-03-12,ac92f278a19743ae4d21bc947ababb0f
+transfer,mercado,,José Luis Gayà,Mister,Dani,3.6472,2.0,66.0,19.0,,,,,,,2026-03-12,8d0085735563b6ee67657e5618a0db3e
 marks,start_mercado,,,,,,,,,,,,,,,2026-03-12,
 transfer,mercado,,Alexander Sørloth,Maldinillo 💥,Mister,11.8083,4.0,103.0,2.0,,,,,,,2026-03-11,f8baf43a3d3a7f94ad1a198c5824c925
 marks,start_mercado,,,,,,,,,,,,,,,2026-03-11,
