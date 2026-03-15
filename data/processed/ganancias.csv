@@ -1,14 +1,14 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
-marks,start_mercado,,,,,,,,,,,,,,,2026-03-14,
-transfer,mercado,,Umar Sadiq,Mister,Chamacónicos,2.675,4,46,19,,,,,,,2026-03-14,5611c012669206151f9e5d952bd1591e
-transfer,Puja,,Umar Sadiq,Mister,Jotabetrbb,2.375,4,46,19,,,,,,,2026-03-14,870761f5fd68b67417ed2ff71abc8484
-transfer,Puja,,Umar Sadiq,Mister,Dani,2.31763,4,46,19,,,,,,,2026-03-14,f8bec8d0142508298c25d6b9ebb178c1
-transfer,Puja,,Umar Sadiq,Mister,Los marinero,2.275,4,46,19,,,,,,,2026-03-14,4386700717a8a69811757ded6fe84904
+marks,start_mercado,,,,,,,,,,,,,,,2026-03-15,
+transfer,mercado,,Umar Sadiq,Mister,Chamacónicos,2.675,4.0,46.0,19.0,,,,,,,2026-03-14,5611c012669206151f9e5d952bd1591e
+transfer,Puja,,Umar Sadiq,Mister,Jotabetrbb,2.375,4.0,46.0,19.0,,,,,,,2026-03-14,870761f5fd68b67417ed2ff71abc8484
+transfer,Puja,,Umar Sadiq,Mister,Dani,2.31763,4.0,46.0,19.0,,,,,,,2026-03-14,f8bec8d0142508298c25d6b9ebb178c1
+transfer,Puja,,Umar Sadiq,Mister,Los marinero,2.275,4.0,46.0,19.0,,,,,,,2026-03-14,4386700717a8a69811757ded6fe84904
 marks,start_jornada,,,,,,,,,,,,,,28.0,2026-03-14,
 marks,start_mercado,,,,,,,,,,,,,,,2026-03-14,
-transfer,mercado,,José Luis Gayà,Dani,Mister,3.8199,2,66,19,,,,,,,2026-03-14,351a4d9c2df93668ab7176c3c83ffef2
+transfer,mercado,,José Luis Gayà,Dani,Mister,3.8199,2.0,66.0,19.0,,,,,,,2026-03-14,351a4d9c2df93668ab7176c3c83ffef2
 marks,start_mercado,,,,,,,,,,,,,,,2026-03-14,
-transfer,mercado,,Peque Fernández,Chamacónicos,Mister,0.54162,3,64,17,,,,,,,2026-03-14,fe0f3e071d818222402333aeb6e309cb
+transfer,mercado,,Peque Fernández,Chamacónicos,Mister,0.54162,3.0,64.0,17.0,,,,,,,2026-03-14,fe0f3e071d818222402333aeb6e309cb
 marks,start_mercado,,,,,,,,,,,,,,,2026-03-14,
 transfer,mercado,,Martín Satriano,Mister,De la Guettir FC,5.555555,4.0,43.0,9.0,,,,,,,2026-03-13,fccb9d0b63af2e032e93d1f4dc8c67b0
 transfer,Puja,,Martín Satriano,Mister,Los marinero,2.822,4.0,43.0,9.0,,,,,,,2026-03-13,41c6f5d98552b12fab665a6be7a2e598
