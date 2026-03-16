@@ -1,5 +1,7 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
-marks,start_mercado,,,,,,,,,,,,,,,2026-03-15,
+marks,start_mercado,,,,,,,,,,,,,,,2026-03-16,
+transfer,mercado,,Aymeric Laporte,Mister,Dani,7.4847,2,65,1,,,,,,,2026-03-16,e4bbade130b7a1ee897adf21f4f4c9bb
+marks,start_mercado,,,,,,,,,,,,,,,2026-03-16,
 transfer,mercado,,Umar Sadiq,Mister,Chamacónicos,2.675,4.0,46.0,19.0,,,,,,,2026-03-14,5611c012669206151f9e5d952bd1591e
 transfer,Puja,,Umar Sadiq,Mister,Jotabetrbb,2.375,4.0,46.0,19.0,,,,,,,2026-03-14,870761f5fd68b67417ed2ff71abc8484
 transfer,Puja,,Umar Sadiq,Mister,Dani,2.31763,4.0,46.0,19.0,,,,,,,2026-03-14,f8bec8d0142508298c25d6b9ebb178c1
