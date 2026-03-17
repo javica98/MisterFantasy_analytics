@@ -138,7 +138,7 @@ Características:
 CLASIFICACION
 ========================
 
-Clasificación General:\n1. Dani - 1269 pts\n2. Maldinillo 💥 - 1188 pts\n3. Los marinero - 1095 pts\n4. Chamacónicos - 1084 pts\n5. Jotabetrbb - 1018 pts\n6. De la Guettir FC - 960 pts\n7. Libre - 766 pts\n8. MuchaSalsa - 766 pts\n9. Juanba - 683 pts\n\nClasificación de la Jornada:\n1. Dani - 56 pts\n2. Maldinillo 💥 - 44 pts\n3. Chamacónicos - 40 pts\n4. Los marinero - 38 pts\n5. Jotabetrbb - 28 pts\n6. Juanba - 28 pts\n7. De la Guettir FC - 19 pts\n8. MuchaSalsa - 6 pts\n9. Libre - 0 pts\n
+Clasificación General:\n1. Dani - 1306 pts\n2. Maldinillo 💥 - 1273 pts\n3. Los marinero - 1139 pts\n4. Chamacónicos - 1114 pts\n5. Jotabetrbb - 1071 pts\n6. De la Guettir FC - 981 pts\n7. MuchaSalsa - 775 pts\n8. Libre - 766 pts\n9. Juanba - 701 pts\n\nClasificación de la Jornada:\n1. Maldinillo 💥 - 85 pts\n2. Jotabetrbb - 53 pts\n3. Los marinero - 44 pts\n4. Dani - 37 pts\n5. Chamacónicos - 30 pts\n6. De la Guettir FC - 21 pts\n7. Juanba - 18 pts\n8. MuchaSalsa - 9 pts\n9. Libre - 0 pts\n
 
 ========================
 EVENTOS
@@ -147,84 +147,84 @@ EVENTOS
 
 BLOQUE 1:
 - tipo: Fichaje destacado
-- jugador: Pablo Barrios
-- manager: Maldinillo 💥
+- jugador: Aymeric Laporte
+- manager: Dani
 - puntos: null
-- dinero: 20.7426
-- equipo: Atlético de Madrid
-- contexto: Compra por 20.74 millones. El manager esta en la posicion general 2.00  y en la posicion de la jornada 2.00.
+- dinero: 7.4847
+- equipo: Athletic Club
+- contexto: Compra por 7.48 millones. El manager esta en la posicion general 1.00  y en la posicion de la jornada 4.00.
 
 BLOQUE 2:
 - tipo: Fichaje destacado
-- jugador: Jorge de Frutos
-- manager: Maldinillo 💥
+- jugador: Umar Sadiq
+- manager: Chamacónicos
 - puntos: null
-- dinero: 15.2973
-- equipo: Rayo Vallecano
-- contexto: Compra por 15.30 millones. El manager esta en la posicion general 2.00  y en la posicion de la jornada 2.00.
+- dinero: 2.675
+- equipo: Valencia CF
+- contexto: Compra por 2.67 millones. El manager esta en la posicion general 4.00  y en la posicion de la jornada 5.00.
 
 BLOQUE 3:
 - tipo: Fichaje destacado
-- jugador: Leandro Cabrera
-- manager: Maldinillo 💥
+- jugador: Umar Sadiq
+- manager: Jotabetrbb
 - puntos: null
-- dinero: 13.74161
-- equipo: RCD Espanyol
-- contexto: Compra por 13.74 millones. El manager esta en la posicion general 2.00  y en la posicion de la jornada 2.00.
+- dinero: 0.0
+- equipo: Valencia CF
+- contexto: Compra por 0.00 millones. El manager esta en la posicion general 5.00  y en la posicion de la jornada 2.00.
 
 BLOQUE 4:
 - tipo: Venta récord
-- jugador: Thibaut Courtois
+- jugador: Leandro Cabrera
 - manager: Maldinillo 💥
 - puntos: null
-- dinero: 14.9016
-- equipo: Real Madrid
-- contexto: Venta por 14.90 millones. El manager esta en la posicion general 2.00  y en la posicion de la jornada 2.00.
+- dinero: 12.64086
+- equipo: RCD Espanyol
+- contexto: Venta por 12.64 millones. El manager esta en la posicion general 2.00  y en la posicion de la jornada 1.00.
 
 BLOQUE 5:
 - tipo: MVP de la jornada
-- jugador: V. Muriqi
-- manager: Chamacónicos
-- puntos: 16
+- jugador: Raphinha
+- manager: Maldinillo 💥
+- puntos: 21
 - dinero: null
-- equipo: RCD Mallorca
-- contexto: 16 puntos en la jornada. El manager esta en la posicion general 4.00  y en la posicion de la jornada 3.00.
+- equipo: FC Barcelona
+- contexto: 21 puntos en la jornada. El manager esta en la posicion general 2.00  y en la posicion de la jornada 1.00.
 
 BLOQUE 6:
 - tipo: MVP de la jornada
-- jugador: T. Buchanan
-- manager: Juanba
-- puntos: 13
+- jugador: F. Valverde
+- manager: Maldinillo 💥
+- puntos: 14
 - dinero: null
-- equipo: Villarreal CF
-- contexto: 13 puntos en la jornada. El manager esta en la posicion general 9.00  y en la posicion de la jornada 6.00.
+- equipo: Real Madrid
+- contexto: 14 puntos en la jornada. El manager esta en la posicion general 2.00  y en la posicion de la jornada 1.00.
 
 BLOQUE 7:
 - tipo: MVP de la jornada
-- jugador: M. Oyarzabal
-- manager: Libre
-- puntos: 11
+- jugador: A. Güler
+- manager: Maldinillo 💥
+- puntos: 13
 - dinero: null
-- equipo: Real Sociedad
-- contexto: 11 puntos en la jornada. El manager esta en la posicion general 7.00  y en la posicion de la jornada 9.00.
+- equipo: Real Madrid
+- contexto: 13 puntos en la jornada. El manager esta en la posicion general 2.00  y en la posicion de la jornada 1.00.
 
 BLOQUE 8:
 - tipo: Peor actuación de la jornada
-- jugador: J. Ander Olasagasti
+- jugador: M. Jauregizar
 - manager: Chamacónicos
-- puntos: -6
+- puntos: 1
 - dinero: null
-- equipo: Levante UD
-- contexto: Solo -6 puntos. El manager esta en la posicion general 4.00  y en la posicion de la jornada 3.00.
+- equipo: Athletic Club
+- contexto: Solo 1 puntos. El manager esta en la posicion general 4.00  y en la posicion de la jornada 5.00.
 
 BLOQUE 9:
-- tipo: Expulsión
-- jugador: J. Ander Olasagasti
-- manager: Chamacónicos
-- puntos: -6
+- tipo: Gol en propia
+- jugador: R. Marín
+- manager: Dani
+- puntos: 2
 - dinero: null
-- equipo: Levante UD
-- contexto: Tarjeta roja que condicionó la jornada. El manager esta en la posicion general 4.00  y en la posicion de la jornada 3.00.
+- equipo: Villarreal CF
+- contexto: Desafortunada acción en su propio área. El manager esta en la posicion general 1.00  y en la posicion de la jornada 4.00.
 
 
 ========================
