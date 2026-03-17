@@ -1,6 +1,10 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
-marks,start_mercado,,,,,,,,,,,,,,,2026-03-16,
-transfer,mercado,,Aymeric Laporte,Mister,Dani,7.4847,2,65,1,,,,,,,2026-03-16,e4bbade130b7a1ee897adf21f4f4c9bb
+marks,start_mercado,,,,,,,,,,,,,,,2026-03-17,
+transfer,mercado,,Leandro Cabrera,Maldinillo 💥,Mister,12.64086,2,130,8,,,,,,,2026-03-17,8ae08e1f8e67c2c2a74d91b334a490a9
+marks,start_mercado,,,,,,,,,,,,,,,2026-03-17,
+transfer,mercado,,Gonzalo García,Maldinillo 💥,Mister,5.09145,4,60,15,,,,,,,2026-03-17,d7741c02c8ec5b5ac49b98a106ea35f8
+marks,start_mercado,,,,,,,,,,,,,,,2026-03-17,
+transfer,mercado,,Aymeric Laporte,Mister,Dani,7.4847,2.0,65.0,1.0,,,,,,,2026-03-16,e4bbade130b7a1ee897adf21f4f4c9bb
 marks,start_mercado,,,,,,,,,,,,,,,2026-03-16,
 transfer,mercado,,Umar Sadiq,Mister,Chamacónicos,2.675,4.0,46.0,19.0,,,,,,,2026-03-14,5611c012669206151f9e5d952bd1591e
 transfer,Puja,,Umar Sadiq,Mister,Jotabetrbb,2.375,4.0,46.0,19.0,,,,,,,2026-03-14,870761f5fd68b67417ed2ff71abc8484
