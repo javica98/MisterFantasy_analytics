@@ -1,8 +1,29 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
+marks,start_mercado,,,,,,,,,,,,,,,2026-03-18,
+transfer,mercado,,Samuel Costa,Mister,Dani,9.26213,3,127,408,,,,,,,2026-03-18,9ba65a03b8b5ec54584bc1351adf2625
+transfer,Puja,,Samuel Costa,Mister,Maldinillo 💥,9.18621,3,127,408,,,,,,,2026-03-18,34004b82f8e36cdcd7b961a401f95323
+bonificacion,quiniela,,,,,,,,,De la Guettir FC,0.6,1º,,,,2026-03-18,
+bonificacion,quiniela,,,,,,,,,Jotabetrbb,0.5,2º,,,,2026-03-18,
+bonificacion,quiniela,,,,,,,,,Chamacónicos,0.4,3º,,,,2026-03-18,
+bonificacion,quiniela,,,,,,,,,Maldinillo 💥,0.4,4º,,,,2026-03-18,
+bonificacion,quiniela,,,,,,,,,Dani,,5º,,,,2026-03-18,
+bonificacion,quiniela,,,,,,,,,Juanba,,6º,,,,2026-03-18,
+bonificacion,quiniela,,,,,,,,,Libre,,7º,,,,2026-03-18,
+bonificacion,quiniela,,,,,,,,,Los marinero,,8º,,,,2026-03-18,
+bonificacion,quiniela,,,,,,,,,MuchaSalsa,,9º,,,,2026-03-18,
+bonificacion,clasificacion,,,,,,,,,Maldinillo 💥,2.85,1,,,,2026-03-18,
+bonificacion,clasificacion,,,,,,,,,Jotabetrbb,1.81,2,,,,2026-03-18,
+bonificacion,clasificacion,,,,,,,,,Los marinero,1.58,3,,,,2026-03-18,
+bonificacion,clasificacion,,,,,,,,,Dani,1.64,4,,,,2026-03-18,
+bonificacion,clasificacion,,,,,,,,,Chamacónicos,1.6,5,,,,2026-03-18,
+bonificacion,clasificacion,,,,,,,,,De la Guettir FC,1.62,6,,,,2026-03-18,
+bonificacion,clasificacion,,,,,,,,,Juanba,1.76,7,,,,2026-03-18,
+bonificacion,clasificacion,,,,,,,,,MuchaSalsa,1.78,8,,,,2026-03-18,
+bonificacion,clasificacion,,,,,,,,,Libre,,9,,,,2026-03-18,
+marks,start_mercado,,,,,,,,,,,,,,,2026-03-18,
+transfer,mercado,,Leandro Cabrera,Maldinillo 💥,Mister,12.64086,2.0,130.0,8.0,,,,,,,2026-03-17,8ae08e1f8e67c2c2a74d91b334a490a9
 marks,start_mercado,,,,,,,,,,,,,,,2026-03-17,
-transfer,mercado,,Leandro Cabrera,Maldinillo 💥,Mister,12.64086,2,130,8,,,,,,,2026-03-17,8ae08e1f8e67c2c2a74d91b334a490a9
-marks,start_mercado,,,,,,,,,,,,,,,2026-03-17,
-transfer,mercado,,Gonzalo García,Maldinillo 💥,Mister,5.09145,4,60,15,,,,,,,2026-03-17,d7741c02c8ec5b5ac49b98a106ea35f8
+transfer,mercado,,Gonzalo García,Maldinillo 💥,Mister,5.09145,4.0,60.0,15.0,,,,,,,2026-03-17,d7741c02c8ec5b5ac49b98a106ea35f8
 marks,start_mercado,,,,,,,,,,,,,,,2026-03-17,
 transfer,mercado,,Aymeric Laporte,Mister,Dani,7.4847,2.0,65.0,1.0,,,,,,,2026-03-16,e4bbade130b7a1ee897adf21f4f4c9bb
 marks,start_mercado,,,,,,,,,,,,,,,2026-03-16,
