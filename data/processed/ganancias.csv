@@ -1,7 +1,13 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
-marks,start_mercado,,,,,,,,,,,,,,,2026-03-18,
-transfer,mercado,,Samuel Costa,Mister,Dani,9.26213,3,127,408,,,,,,,2026-03-18,9ba65a03b8b5ec54584bc1351adf2625
-transfer,Puja,,Samuel Costa,Mister,Maldinillo 💥,9.18621,3,127,408,,,,,,,2026-03-18,34004b82f8e36cdcd7b961a401f95323
+marks,start_mercado,,,,,,,,,,,,,,,2026-03-19,
+transfer,mercado,,Djibril Sow,Mister,Jotabetrbb,1.994,3,91,17,,,,,,,2026-03-19,ec58fa4a6ef48dda7f197bcfadfaf081
+transfer,Puja,,Djibril Sow,Mister,Dani,1.90338,3,91,17,,,,,,,2026-03-19,5e8437646ecee26838e86d102e0b3ba6
+transfer,mercado,,Julián Álvarez,Mister,Maldinillo 💥,17.44416,4,110,2,,,,,,,2026-03-19,2d16a489a6358a6636ba6cd4e9d32614
+marks,start_mercado,,,,,,,,,,,,,,,2026-03-19,
+transfer,mercado,,Aymeric Laporte,Dani,Mister,7.5633,2,65,1,,,,,,,2026-03-19,98c219c959070eb9a10bad5ce5edc1b0
+marks,start_mercado,,,,,,,,,,,,,,,2026-03-19,
+transfer,mercado,,Samuel Costa,Mister,Dani,9.26213,3.0,127.0,408.0,,,,,,,2026-03-18,9ba65a03b8b5ec54584bc1351adf2625
+transfer,Puja,,Samuel Costa,Mister,Maldinillo 💥,9.18621,3.0,127.0,408.0,,,,,,,2026-03-18,34004b82f8e36cdcd7b961a401f95323
 bonificacion,quiniela,,,,,,,,,De la Guettir FC,0.6,1º,,,,2026-03-18,
 bonificacion,quiniela,,,,,,,,,Jotabetrbb,0.5,2º,,,,2026-03-18,
 bonificacion,quiniela,,,,,,,,,Chamacónicos,0.4,3º,,,,2026-03-18,
