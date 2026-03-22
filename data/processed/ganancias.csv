@@ -1,9 +1,11 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
-marks,start_mercado,,,,,,,,,,,,,,,2026-03-21,
-transfer,mercado,,Rafa Marín,Dani,Mister,3.91577,2,79,20,,,,,,,2026-03-21,d8b72314b8edf85b974c3eb0e46d7967
+marks,start_mercado,,,,,,,,,,,,,,,2026-03-22,
+transfer,mercado,,Julián Álvarez,Maldinillo 💥,Mister,18.096,4,110,2,,,,,,,2026-03-22,4ef46c0f98841c1bd0ae6ef4a0ef56f1
+marks,start_mercado,,,,,,,,,,,,,,,2026-03-22,
+transfer,mercado,,Rafa Marín,Dani,Mister,3.91577,2.0,79.0,20.0,,,,,,,2026-03-21,d8b72314b8edf85b974c3eb0e46d7967
 marks,start_jornada,,,,,,,,,,,,,,29.0,2026-03-21,
 marks,start_mercado,,,,,,,,,,,,,,,2026-03-21,
-transfer,mercado,,Samuel Costa,Dani,Mister,9.05952,3,127,408,,,,,,,2026-03-21,b75f56b44cfd9292abdba1701281abaa
+transfer,mercado,,Samuel Costa,Dani,Mister,9.05952,3.0,127.0,408.0,,,,,,,2026-03-21,b75f56b44cfd9292abdba1701281abaa
 marks,start_mercado,,,,,,,,,,,,,,,2026-03-21,
 transfer,mercado,,Djibril Sow,Mister,Jotabetrbb,1.994,3.0,91.0,17.0,,,,,,,2026-03-19,ec58fa4a6ef48dda7f197bcfadfaf081
 transfer,Puja,,Djibril Sow,Mister,Dani,1.90338,3.0,91.0,17.0,,,,,,,2026-03-19,5e8437646ecee26838e86d102e0b3ba6
