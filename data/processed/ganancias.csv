@@ -1,6 +1,8 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
-marks,start_mercado,,,,,,,,,,,,,,,2026-03-22,
-transfer,mercado,,Julián Álvarez,Maldinillo 💥,Mister,18.096,4,110,2,,,,,,,2026-03-22,4ef46c0f98841c1bd0ae6ef4a0ef56f1
+marks,start_mercado,,,,,,,,,,,,,,,2026-03-23,
+transfer,mercado,,Victor Muñoz,Mister,Dani,14.02068,4,162,50,,,,,,,2026-03-23,c750878b946a968a23d08d678cb25ff5
+marks,start_mercado,,,,,,,,,,,,,,,2026-03-23,
+transfer,mercado,,Julián Álvarez,Maldinillo 💥,Mister,18.096,4.0,110.0,2.0,,,,,,,2026-03-22,4ef46c0f98841c1bd0ae6ef4a0ef56f1
 marks,start_mercado,,,,,,,,,,,,,,,2026-03-22,
 transfer,mercado,,Rafa Marín,Dani,Mister,3.91577,2.0,79.0,20.0,,,,,,,2026-03-21,d8b72314b8edf85b974c3eb0e46d7967
 marks,start_jornada,,,,,,,,,,,,,,29.0,2026-03-21,
