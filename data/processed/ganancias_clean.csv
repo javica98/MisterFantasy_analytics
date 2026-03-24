@@ -1,5 +1,23 @@
 fecha,id,type,subtype,equipo,ganancias,jugador,compra-venta,equipoLiga
-2026-03-23,0,marks,start_mercado,Mercado diario,0.0,,,
+2026-03-24,0,bonificacion,quiniela,Maldinillo 💥,0.5,,,
+2026-03-24,0,bonificacion,quiniela,Chamacónicos,0.3,,,
+2026-03-24,0,bonificacion,quiniela,De la Guettir FC,0.3,,,
+2026-03-24,0,bonificacion,quiniela,Dani,0.0,,,
+2026-03-24,0,bonificacion,quiniela,Jotabetrbb,0.0,,,
+2026-03-24,0,bonificacion,quiniela,Juanba,0.0,,,
+2026-03-24,0,bonificacion,quiniela,Libre,0.0,,,
+2026-03-24,0,bonificacion,quiniela,Los marinero,0.0,,,
+2026-03-24,0,bonificacion,quiniela,MuchaSalsa,0.0,,,
+2026-03-24,0,bonificacion,clasificacion,Dani,2.16,,,
+2026-03-24,0,bonificacion,clasificacion,Maldinillo 💥,1.68,,,
+2026-03-24,0,bonificacion,clasificacion,Los marinero,1.84,,,
+2026-03-24,0,bonificacion,clasificacion,Chamacónicos,1.72,,,
+2026-03-24,0,bonificacion,clasificacion,De la Guettir FC,1.74,,,
+2026-03-24,0,bonificacion,clasificacion,Jotabetrbb,2.27,,,
+2026-03-24,0,bonificacion,clasificacion,MuchaSalsa,1.82,,,
+2026-03-24,0,bonificacion,clasificacion,Juanba,1.76,,,
+2026-03-24,0,bonificacion,clasificacion,Libre,0.0,,,
+2026-03-24,0,marks,start_mercado,Mercado diario,0.0,,,
 2026-03-23,0,transfer,mercado,Dani,-14.02068,Victor Muñoz,compra,50.0
 2026-03-22,1,transfer,mercado,Maldinillo 💥,18.096,Julián Álvarez,venta,2.0
 2026-03-21,1,transfer,mercado,Dani,3.91577,Rafa Marín,venta,20.0
