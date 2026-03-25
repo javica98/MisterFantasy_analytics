@@ -1,23 +1,29 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
-bonificacion,quiniela,,,,,,,,,Maldinillo 💥,0.5,1º,,,,2026-03-24,
-bonificacion,quiniela,,,,,,,,,Chamacónicos,0.3,2º,,,,2026-03-24,
-bonificacion,quiniela,,,,,,,,,De la Guettir FC,0.3,3º,,,,2026-03-24,
-bonificacion,quiniela,,,,,,,,,Dani,,4º,,,,2026-03-24,
-bonificacion,quiniela,,,,,,,,,Jotabetrbb,,5º,,,,2026-03-24,
-bonificacion,quiniela,,,,,,,,,Juanba,,6º,,,,2026-03-24,
-bonificacion,quiniela,,,,,,,,,Libre,,7º,,,,2026-03-24,
-bonificacion,quiniela,,,,,,,,,Los marinero,,8º,,,,2026-03-24,
-bonificacion,quiniela,,,,,,,,,MuchaSalsa,,9º,,,,2026-03-24,
-bonificacion,clasificacion,,,,,,,,,Dani,2.16,1,,,,2026-03-24,
-bonificacion,clasificacion,,,,,,,,,Maldinillo 💥,1.68,2,,,,2026-03-24,
-bonificacion,clasificacion,,,,,,,,,Los marinero,1.84,3,,,,2026-03-24,
-bonificacion,clasificacion,,,,,,,,,Chamacónicos,1.72,4,,,,2026-03-24,
-bonificacion,clasificacion,,,,,,,,,De la Guettir FC,1.74,5,,,,2026-03-24,
-bonificacion,clasificacion,,,,,,,,,Jotabetrbb,2.27,6,,,,2026-03-24,
-bonificacion,clasificacion,,,,,,,,,MuchaSalsa,1.82,7,,,,2026-03-24,
-bonificacion,clasificacion,,,,,,,,,Juanba,1.76,8,,,,2026-03-24,
-bonificacion,clasificacion,,,,,,,,,Libre,,9,,,,2026-03-24,
-marks,start_mercado,,,,,,,,,,,,,,,2026-03-24,
+marks,start_mercado,,,,,,,,,,,,,,,2026-03-25,
+transfer,mercado,,Ferran Jutglà,Mister,De la Guettir FC,3.666666,4,100,5,,,,,,,2026-03-25,544a80546905a3fa4cdd596506ea0e84
+transfer,Puja,,Ferran Jutglà,Mister,Jotabetrbb,2.999,4,100,5,,,,,,,2026-03-25,7045a8fec78ee15b06b35f2139c23d26
+transfer,Puja,,Ferran Jutglà,Mister,Maldinillo 💥,2.04527,4,100,5,,,,,,,2026-03-25,a0182b7fb2817c19b5b4cc30d200ba3e
+transfer,Puja,,Ferran Jutglà,Mister,Dani,2.03192,4,100,5,,,,,,,2026-03-25,c0f1b2e408d467131d530670dc1c8a3a
+transfer,mercado,,Lucas Boyé,Mister,Dani,8.987,4,122,48,,,,,,,2026-03-25,1c0d9896d643d56890daae4aaff4d1a0
+bonificacion,quiniela,,,,,,,,,Maldinillo 💥,0.5,1º,,,,2026-03-25,
+bonificacion,quiniela,,,,,,,,,Chamacónicos,0.3,2º,,,,2026-03-25,
+bonificacion,quiniela,,,,,,,,,De la Guettir FC,0.3,3º,,,,2026-03-25,
+bonificacion,quiniela,,,,,,,,,Dani,,4º,,,,2026-03-25,
+bonificacion,quiniela,,,,,,,,,Jotabetrbb,,5º,,,,2026-03-25,
+bonificacion,quiniela,,,,,,,,,Juanba,,6º,,,,2026-03-25,
+bonificacion,quiniela,,,,,,,,,Libre,,7º,,,,2026-03-25,
+bonificacion,quiniela,,,,,,,,,Los marinero,,8º,,,,2026-03-25,
+bonificacion,quiniela,,,,,,,,,MuchaSalsa,,9º,,,,2026-03-25,
+bonificacion,clasificacion,,,,,,,,,Dani,2.16,1,,,,2026-03-25,
+bonificacion,clasificacion,,,,,,,,,Maldinillo 💥,1.68,2,,,,2026-03-25,
+bonificacion,clasificacion,,,,,,,,,Los marinero,1.84,3,,,,2026-03-25,
+bonificacion,clasificacion,,,,,,,,,Chamacónicos,1.72,4,,,,2026-03-25,
+bonificacion,clasificacion,,,,,,,,,De la Guettir FC,1.74,5,,,,2026-03-25,
+bonificacion,clasificacion,,,,,,,,,Jotabetrbb,2.27,6,,,,2026-03-25,
+bonificacion,clasificacion,,,,,,,,,MuchaSalsa,1.82,7,,,,2026-03-25,
+bonificacion,clasificacion,,,,,,,,,Juanba,1.76,8,,,,2026-03-25,
+bonificacion,clasificacion,,,,,,,,,Libre,,9,,,,2026-03-25,
+marks,start_mercado,,,,,,,,,,,,,,,2026-03-25,
 transfer,mercado,,Victor Muñoz,Mister,Dani,14.02068,4.0,162.0,50.0,,,,,,,2026-03-23,c750878b946a968a23d08d678cb25ff5
 marks,start_mercado,,,,,,,,,,,,,,,2026-03-23,
 transfer,mercado,,Julián Álvarez,Maldinillo 💥,Mister,18.096,4.0,110.0,2.0,,,,,,,2026-03-22,4ef46c0f98841c1bd0ae6ef4a0ef56f1
