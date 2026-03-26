@@ -1,10 +1,10 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
-marks,start_mercado,,,,,,,,,,,,,,,2026-03-25,
-transfer,mercado,,Ferran Jutglà,Mister,De la Guettir FC,3.666666,4,100,5,,,,,,,2026-03-25,544a80546905a3fa4cdd596506ea0e84
-transfer,Puja,,Ferran Jutglà,Mister,Jotabetrbb,2.999,4,100,5,,,,,,,2026-03-25,7045a8fec78ee15b06b35f2139c23d26
-transfer,Puja,,Ferran Jutglà,Mister,Maldinillo 💥,2.04527,4,100,5,,,,,,,2026-03-25,a0182b7fb2817c19b5b4cc30d200ba3e
-transfer,Puja,,Ferran Jutglà,Mister,Dani,2.03192,4,100,5,,,,,,,2026-03-25,c0f1b2e408d467131d530670dc1c8a3a
-transfer,mercado,,Lucas Boyé,Mister,Dani,8.987,4,122,48,,,,,,,2026-03-25,1c0d9896d643d56890daae4aaff4d1a0
+marks,start_mercado,,,,,,,,,,,,,,,2026-03-26,
+transfer,mercado,,Ferran Jutglà,Mister,De la Guettir FC,3.666666,4.0,100.0,5.0,,,,,,,2026-03-25,544a80546905a3fa4cdd596506ea0e84
+transfer,Puja,,Ferran Jutglà,Mister,Jotabetrbb,2.999,4.0,100.0,5.0,,,,,,,2026-03-25,7045a8fec78ee15b06b35f2139c23d26
+transfer,Puja,,Ferran Jutglà,Mister,Maldinillo 💥,2.04527,4.0,100.0,5.0,,,,,,,2026-03-25,a0182b7fb2817c19b5b4cc30d200ba3e
+transfer,Puja,,Ferran Jutglà,Mister,Dani,2.03192,4.0,100.0,5.0,,,,,,,2026-03-25,c0f1b2e408d467131d530670dc1c8a3a
+transfer,mercado,,Lucas Boyé,Mister,Dani,8.987,4.0,122.0,48.0,,,,,,,2026-03-25,1c0d9896d643d56890daae4aaff4d1a0
 bonificacion,quiniela,,,,,,,,,Maldinillo 💥,0.5,1º,,,,2026-03-25,
 bonificacion,quiniela,,,,,,,,,Chamacónicos,0.3,2º,,,,2026-03-25,
 bonificacion,quiniela,,,,,,,,,De la Guettir FC,0.3,3º,,,,2026-03-25,
