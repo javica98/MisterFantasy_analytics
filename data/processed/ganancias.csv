@@ -1,5 +1,9 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
-marks,start_mercado,,,,,,,,,,,,,,,2026-03-26,
+marks,start_mercado,,,,,,,,,,,,,,,2026-03-27,
+transfer,mercado,,João Cancelo,Mister,Maldinillo 💥,9.75591,2,47,3,,,,,,,2026-03-27,9ed2caef4cffeb40a99a30879ee750b5
+transfer,Puja,,João Cancelo,Mister,Jotabetrbb,9.745,2,47,3,,,,,,,2026-03-27,6aa1b74b61488ce895a874a8143dfc99
+transfer,Puja,,João Cancelo,Mister,Dani,9.102,2,47,3,,,,,,,2026-03-27,c0281360b35d298aa2d7d41f411d2d64
+marks,start_mercado,,,,,,,,,,,,,,,2026-03-27,
 transfer,mercado,,Ferran Jutglà,Mister,De la Guettir FC,3.666666,4.0,100.0,5.0,,,,,,,2026-03-25,544a80546905a3fa4cdd596506ea0e84
 transfer,Puja,,Ferran Jutglà,Mister,Jotabetrbb,2.999,4.0,100.0,5.0,,,,,,,2026-03-25,7045a8fec78ee15b06b35f2139c23d26
 transfer,Puja,,Ferran Jutglà,Mister,Maldinillo 💥,2.04527,4.0,100.0,5.0,,,,,,,2026-03-25,a0182b7fb2817c19b5b4cc30d200ba3e
