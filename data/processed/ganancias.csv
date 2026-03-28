@@ -1,8 +1,13 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
-marks,start_mercado,,,,,,,,,,,,,,,2026-03-27,
-transfer,mercado,,João Cancelo,Mister,Maldinillo 💥,9.75591,2,47,3,,,,,,,2026-03-27,9ed2caef4cffeb40a99a30879ee750b5
-transfer,Puja,,João Cancelo,Mister,Jotabetrbb,9.745,2,47,3,,,,,,,2026-03-27,6aa1b74b61488ce895a874a8143dfc99
-transfer,Puja,,João Cancelo,Mister,Dani,9.102,2,47,3,,,,,,,2026-03-27,c0281360b35d298aa2d7d41f411d2d64
+marks,start_mercado,,,,,,,,,,,,,,,2026-03-28,
+transfer,mercado,,Santiago Mouriño,Mister,Dani,7.00823,2,92,20,,,,,,,2026-03-28,05517502f5a2e656ead0ba7c0328ebfb
+transfer,Puja,,Santiago Mouriño,Mister,Maldinillo 💥,6.87116,2,92,20,,,,,,,2026-03-28,e377a9fed80a963f663384848cc45447
+transfer,mercado,,Federico Viñas,Mister,Dani,4.43842,4,105,1370,,,,,,,2026-03-28,7b954a43f706eb82fc175c921d601014
+transfer,Puja,,Federico Viñas,Mister,Maldinillo 💥,4.43823,4,105,1370,,,,,,,2026-03-28,a0f08eb1f65473854aa1edb550499e5c
+marks,start_mercado,,,,,,,,,,,,,,,2026-03-28,
+transfer,mercado,,João Cancelo,Mister,Maldinillo 💥,9.75591,2.0,47.0,3.0,,,,,,,2026-03-27,9ed2caef4cffeb40a99a30879ee750b5
+transfer,Puja,,João Cancelo,Mister,Jotabetrbb,9.745,2.0,47.0,3.0,,,,,,,2026-03-27,6aa1b74b61488ce895a874a8143dfc99
+transfer,Puja,,João Cancelo,Mister,Dani,9.102,2.0,47.0,3.0,,,,,,,2026-03-27,c0281360b35d298aa2d7d41f411d2d64
 marks,start_mercado,,,,,,,,,,,,,,,2026-03-27,
 transfer,mercado,,Ferran Jutglà,Mister,De la Guettir FC,3.666666,4.0,100.0,5.0,,,,,,,2026-03-25,544a80546905a3fa4cdd596506ea0e84
 transfer,Puja,,Ferran Jutglà,Mister,Jotabetrbb,2.999,4.0,100.0,5.0,,,,,,,2026-03-25,7045a8fec78ee15b06b35f2139c23d26
