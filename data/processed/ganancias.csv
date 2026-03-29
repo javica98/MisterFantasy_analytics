@@ -1,9 +1,18 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
-marks,start_mercado,,,,,,,,,,,,,,,2026-03-28,
-transfer,mercado,,Santiago Mouriño,Mister,Dani,7.00823,2,92,20,,,,,,,2026-03-28,05517502f5a2e656ead0ba7c0328ebfb
-transfer,Puja,,Santiago Mouriño,Mister,Maldinillo 💥,6.87116,2,92,20,,,,,,,2026-03-28,e377a9fed80a963f663384848cc45447
-transfer,mercado,,Federico Viñas,Mister,Dani,4.43842,4,105,1370,,,,,,,2026-03-28,7b954a43f706eb82fc175c921d601014
-transfer,Puja,,Federico Viñas,Mister,Maldinillo 💥,4.43823,4,105,1370,,,,,,,2026-03-28,a0f08eb1f65473854aa1edb550499e5c
+marks,start_mercado,,,,,,,,,,,,,,,2026-03-29,
+transfer,mercado,,Antonio Blanco,Mister,Dani,7.86353,3,113,48,,,,,,,2026-03-29,dfeb64ccc6ec0047ee3cab4843ccf78a
+transfer,mercado,,Largie Ramazani,Mister,Dani,4.05724,3,84,19,,,,,,,2026-03-29,3d0bf38fac4a720e5842b4a0f6276d6d
+marks,start_mercado,,,,,,,,,,,,,,,2026-03-29,
+transfer,clausula,,Marcus Rashford,Libre,Maldinillo 💥,33.318,4,123,3,,,,,,,2026-03-29,f21480c098eecd804537fd852b4e392c
+marks,start_mercado,,,,,,,,,,,,,,,2026-03-29,
+transfer,mercado,,Carlos Romero,Maldinillo 💥,Mister,15.75179,2,165,8,,,,,,,2026-03-29,d8fbb6034dea2b71d18719d4da7572e4
+marks,start_mercado,,,,,,,,,,,,,,,2026-03-29,
+transfer,mercado,,Lucas Boyé,Dani,Mister,9.47172,4,122,48,,,,,,,2026-03-29,758ea1c7f6d64cbfb5034ed64750edb5
+marks,start_mercado,,,,,,,,,,,,,,,2026-03-29,
+transfer,mercado,,Santiago Mouriño,Mister,Dani,7.00823,2.0,92.0,20.0,,,,,,,2026-03-28,05517502f5a2e656ead0ba7c0328ebfb
+transfer,Puja,,Santiago Mouriño,Mister,Maldinillo 💥,6.87116,2.0,92.0,20.0,,,,,,,2026-03-28,e377a9fed80a963f663384848cc45447
+transfer,mercado,,Federico Viñas,Mister,Dani,4.43842,4.0,105.0,1370.0,,,,,,,2026-03-28,7b954a43f706eb82fc175c921d601014
+transfer,Puja,,Federico Viñas,Mister,Maldinillo 💥,4.43823,4.0,105.0,1370.0,,,,,,,2026-03-28,a0f08eb1f65473854aa1edb550499e5c
 marks,start_mercado,,,,,,,,,,,,,,,2026-03-28,
 transfer,mercado,,João Cancelo,Mister,Maldinillo 💥,9.75591,2.0,47.0,3.0,,,,,,,2026-03-27,9ed2caef4cffeb40a99a30879ee750b5
 transfer,Puja,,João Cancelo,Mister,Jotabetrbb,9.745,2.0,47.0,3.0,,,,,,,2026-03-27,6aa1b74b61488ce895a874a8143dfc99
