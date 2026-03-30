@@ -1,13 +1,17 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
+marks,start_mercado,,,,,,,,,,,,,,,2026-03-30,
+transfer,mercado,,Brahim Díaz,Mister,Maldinillo 💥,2.69411,3,51,15,,,,,,,2026-03-30,4101ef7ee7fc5923f54983fe725d014a
+marks,start_mercado,,,,,,,,,,,,,,,2026-03-30,
+transfer,mercado,,Victor Muñoz,Dani,Mister,15.0276,4,162,50,,,,,,,2026-03-30,77417887c9cc9606771687b2532f9753
+marks,start_mercado,,,,,,,,,,,,,,,2026-03-30,
+transfer,mercado,,Antonio Blanco,Mister,Dani,7.86353,3.0,113.0,48.0,,,,,,,2026-03-29,dfeb64ccc6ec0047ee3cab4843ccf78a
+transfer,mercado,,Largie Ramazani,Mister,Dani,4.05724,3.0,84.0,19.0,,,,,,,2026-03-29,3d0bf38fac4a720e5842b4a0f6276d6d
 marks,start_mercado,,,,,,,,,,,,,,,2026-03-29,
-transfer,mercado,,Antonio Blanco,Mister,Dani,7.86353,3,113,48,,,,,,,2026-03-29,dfeb64ccc6ec0047ee3cab4843ccf78a
-transfer,mercado,,Largie Ramazani,Mister,Dani,4.05724,3,84,19,,,,,,,2026-03-29,3d0bf38fac4a720e5842b4a0f6276d6d
+transfer,clausula,,Marcus Rashford,Libre,Maldinillo 💥,33.318,4.0,123.0,3.0,,,,,,,2026-03-29,f21480c098eecd804537fd852b4e392c
 marks,start_mercado,,,,,,,,,,,,,,,2026-03-29,
-transfer,clausula,,Marcus Rashford,Libre,Maldinillo 💥,33.318,4,123,3,,,,,,,2026-03-29,f21480c098eecd804537fd852b4e392c
+transfer,mercado,,Carlos Romero,Maldinillo 💥,Mister,15.75179,2.0,165.0,8.0,,,,,,,2026-03-29,d8fbb6034dea2b71d18719d4da7572e4
 marks,start_mercado,,,,,,,,,,,,,,,2026-03-29,
-transfer,mercado,,Carlos Romero,Maldinillo 💥,Mister,15.75179,2,165,8,,,,,,,2026-03-29,d8fbb6034dea2b71d18719d4da7572e4
-marks,start_mercado,,,,,,,,,,,,,,,2026-03-29,
-transfer,mercado,,Lucas Boyé,Dani,Mister,9.47172,4,122,48,,,,,,,2026-03-29,758ea1c7f6d64cbfb5034ed64750edb5
+transfer,mercado,,Lucas Boyé,Dani,Mister,9.47172,4.0,122.0,48.0,,,,,,,2026-03-29,758ea1c7f6d64cbfb5034ed64750edb5
 marks,start_mercado,,,,,,,,,,,,,,,2026-03-29,
 transfer,mercado,,Santiago Mouriño,Mister,Dani,7.00823,2.0,92.0,20.0,,,,,,,2026-03-28,05517502f5a2e656ead0ba7c0328ebfb
 transfer,Puja,,Santiago Mouriño,Mister,Maldinillo 💥,6.87116,2.0,92.0,20.0,,,,,,,2026-03-28,e377a9fed80a963f663384848cc45447
