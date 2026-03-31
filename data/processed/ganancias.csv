@@ -1,8 +1,10 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
+marks,start_mercado,,,,,,,,,,,,,,,2026-03-31,
+transfer,mercado,,Raphinha,Maldinillo 💥,Mister,24.9879,4,157,3,,,,,,,2026-03-31,3e44a09c921f8e64ae764bc3ebb799b6
+marks,start_mercado,,,,,,,,,,,,,,,2026-03-31,
+transfer,mercado,,Brahim Díaz,Mister,Maldinillo 💥,2.69411,3.0,51.0,15.0,,,,,,,2026-03-30,4101ef7ee7fc5923f54983fe725d014a
 marks,start_mercado,,,,,,,,,,,,,,,2026-03-30,
-transfer,mercado,,Brahim Díaz,Mister,Maldinillo 💥,2.69411,3,51,15,,,,,,,2026-03-30,4101ef7ee7fc5923f54983fe725d014a
-marks,start_mercado,,,,,,,,,,,,,,,2026-03-30,
-transfer,mercado,,Victor Muñoz,Dani,Mister,15.0276,4,162,50,,,,,,,2026-03-30,77417887c9cc9606771687b2532f9753
+transfer,mercado,,Victor Muñoz,Dani,Mister,15.0276,4.0,162.0,50.0,,,,,,,2026-03-30,77417887c9cc9606771687b2532f9753
 marks,start_mercado,,,,,,,,,,,,,,,2026-03-30,
 transfer,mercado,,Antonio Blanco,Mister,Dani,7.86353,3.0,113.0,48.0,,,,,,,2026-03-29,dfeb64ccc6ec0047ee3cab4843ccf78a
 transfer,mercado,,Largie Ramazani,Mister,Dani,4.05724,3.0,84.0,19.0,,,,,,,2026-03-29,3d0bf38fac4a720e5842b4a0f6276d6d
