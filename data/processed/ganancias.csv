@@ -1,5 +1,7 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
-marks,start_mercado,,,,,,,,,,,,,,,2026-04-01,
+marks,start_mercado,,,,,,,,,,,,,,,2026-04-02,
+transfer,mercado,,Antoine Griezmann,Mister,Jotabetrbb,11.688,4,120,2,,,,,,,2026-04-02,fbb8a6c76f6adcc68c98bb503d56d5f7
+marks,start_mercado,,,,,,,,,,,,,,,2026-04-02,
 transfer,mercado,,Raphinha,Maldinillo 💥,Mister,24.9879,4.0,157.0,3.0,,,,,,,2026-03-31,3e44a09c921f8e64ae764bc3ebb799b6
 marks,start_mercado,,,,,,,,,,,,,,,2026-03-31,
 transfer,mercado,,Brahim Díaz,Mister,Maldinillo 💥,2.69411,3.0,51.0,15.0,,,,,,,2026-03-30,4101ef7ee7fc5923f54983fe725d014a
