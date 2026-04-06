@@ -1,4 +1,7 @@
 fecha,id,type,subtype,equipo,jugador,compra-venta,equipoLiga,ganancias
+2026-04-06,0,transfer,mercado,Maldinillo 💥,Kike García,venta,8.0,3.9824
+2026-04-06,0,transfer,mercado,Maldinillo 💥,Dean Huijsen,venta,15.0,11.03728
+2026-04-06,0,transfer,mercado,Dani,Javi Galán,venta,50.0,7.68105
 2026-04-05,0,transfer,mercado,Jotabetrbb,Marc Pubill,venta,2.0,9.8468
 2026-04-05,0,marks,start_mercado,Mercado diario,,,,0.0
 2026-04-05,0,transfer,mercado,Dani,Aurélien Tchouaméni,compra,15.0,-17.43755

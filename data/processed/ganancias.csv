@@ -1,16 +1,22 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
+marks,start_mercado,,,,,,,,,,,,,,,2026-04-06,
+transfer,mercado,,Kike García,Maldinillo 💥,Mister,3.9824,4,110,8,,,,,,,2026-04-06,57bcef3777fd0ecc0df5a523f5b9c4ed
+marks,start_mercado,,,,,,,,,,,,,,,2026-04-06,
+transfer,mercado,,Dean Huijsen,Maldinillo 💥,Mister,11.03728,2,73,15,,,,,,,2026-04-06,8eac8a3dd185d862a6899ae0ce160bf9
+marks,start_mercado,,,,,,,,,,,,,,,2026-04-06,
+transfer,mercado,,Javi Galán,Dani,Mister,7.68105,2,65,50,,,,,,,2026-04-06,633a054b9453e65cd045d35df1b98d7f
+marks,start_mercado,,,,,,,,,,,,,,,2026-04-06,
+transfer,mercado,,Marc Pubill,Jotabetrbb,Mister,9.8468,2.0,64.0,2.0,,,,,,,2026-04-05,c232729a40f2e38aef03d023e02ffe56
 marks,start_mercado,,,,,,,,,,,,,,,2026-04-05,
-transfer,mercado,,Marc Pubill,Jotabetrbb,Mister,9.8468,2,64,2,,,,,,,2026-04-05,c232729a40f2e38aef03d023e02ffe56
+transfer,mercado,,Aurélien Tchouaméni,Mister,Dani,17.43755,3.0,135.0,15.0,,,,,,,2026-04-05,2695562f570e4217a5b034b429416303
+transfer,Puja,,Aurélien Tchouaméni,Mister,Maldinillo 💥,17.43014,3.0,135.0,15.0,,,,,,,2026-04-05,1b3167d6bf6d36b81cc6b43f19cfcb30
+transfer,mercado,,Andrei Rațiu,Mister,Dani,11.31804,2.0,125.0,14.0,,,,,,,2026-04-05,031a42d72022e118ec8679563db0e8c8
+transfer,Puja,,Andrei Rațiu,Mister,Maldinillo 💥,11.06271,2.0,125.0,14.0,,,,,,,2026-04-05,8e7ff77bbd90e1796791d59482f35c9e
+transfer,mercado,,Carlos Espí,Mister,Dani,2.5645,4.0,88.0,12.0,,,,,,,2026-04-05,11fafce91bfcbf069578f3b0db9f8d44
+transfer,Puja,,Carlos Espí,Mister,Maldinillo 💥,2.53281,4.0,88.0,12.0,,,,,,,2026-04-05,0900f176bdc6aed4584ed66c68ff4796
+transfer,mercado,,Dean Huijsen,Mister,Maldinillo 💥,11.00898,2.0,73.0,15.0,,,,,,,2026-04-05,3e81b52fc4e37e83550d4e34c40adcf4
 marks,start_mercado,,,,,,,,,,,,,,,2026-04-05,
-transfer,mercado,,Aurélien Tchouaméni,Mister,Dani,17.43755,3,135,15,,,,,,,2026-04-05,2695562f570e4217a5b034b429416303
-transfer,Puja,,Aurélien Tchouaméni,Mister,Maldinillo 💥,17.43014,3,135,15,,,,,,,2026-04-05,1b3167d6bf6d36b81cc6b43f19cfcb30
-transfer,mercado,,Andrei Rațiu,Mister,Dani,11.31804,2,125,14,,,,,,,2026-04-05,031a42d72022e118ec8679563db0e8c8
-transfer,Puja,,Andrei Rațiu,Mister,Maldinillo 💥,11.06271,2,125,14,,,,,,,2026-04-05,8e7ff77bbd90e1796791d59482f35c9e
-transfer,mercado,,Carlos Espí,Mister,Dani,2.5645,4,88,12,,,,,,,2026-04-05,11fafce91bfcbf069578f3b0db9f8d44
-transfer,Puja,,Carlos Espí,Mister,Maldinillo 💥,2.53281,4,88,12,,,,,,,2026-04-05,0900f176bdc6aed4584ed66c68ff4796
-transfer,mercado,,Dean Huijsen,Mister,Maldinillo 💥,11.00898,2,73,15,,,,,,,2026-04-05,3e81b52fc4e37e83550d4e34c40adcf4
-marks,start_mercado,,,,,,,,,,,,,,,2026-04-05,
-transfer,acuerdo,,Djibril Sow,Maldinillo 💥,Jotabetrbb,8.022,3,95,17,,,,,,,2026-04-05,cf55fb0af83b0e0338ac73f813f15831
+transfer,acuerdo,,Djibril Sow,Maldinillo 💥,Jotabetrbb,8.022,3.0,95.0,17.0,,,,,,,2026-04-05,cf55fb0af83b0e0338ac73f813f15831
 marks,start_mercado,,,,,,,,,,,,,,,2026-04-05,
 transfer,mercado,,Akor Adams,Maldinillo 💥,Mister,4.14216,4.0,100.0,17.0,,,,,,,2026-04-04,9a3b45dee09955996175bceb19e23cff
 marks,start_mercado,,,,,,,,,,,,,,,2026-04-04,
