@@ -1,6 +1,11 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
-marks,start_mercado,,,,,,,,,,,,,,,2026-04-08,
-transfer,mercado,,Carlos Romero,Mister,Maldinillo 💥,15.04955,2,169,8,,,,,,,2026-04-08,ef8aa1640852b2f85565981acf3f290d
+marks,start_mercado,,,,,,,,,,,,,,,2026-04-09,
+transfer,mercado,,Federico Viñas,Dani,Mister,6.20025,4,116,1370,,,,,,,2026-04-09,fb87cb4022a1a409031122bf77cc4639
+marks,start_mercado,,,,,,,,,,,,,,,2026-04-09,
+transfer,mercado,,Alex Freeman,Mister,Dani,0.16001,2,11,20,,,,,,,2026-04-09,e848b0a4a281609d0d0ca1032a145b5e
+transfer,mercado,,Takefusa Kubo,Mister,Maldinillo 💥,6.97153,3,81,16,,,,,,,2026-04-09,ab4b90d7b189aa6605ccc26184d5e5b1
+marks,start_mercado,,,,,,,,,,,,,,,2026-04-09,
+transfer,mercado,,Carlos Romero,Mister,Maldinillo 💥,15.04955,2.0,169.0,8.0,,,,,,,2026-04-08,ef8aa1640852b2f85565981acf3f290d
 bonificacion,quiniela,,,,,,,,,De la Guettir FC,0.3,1º,,,,2026-04-08,
 bonificacion,quiniela,,,,,,,,,Maldinillo 💥,0.3,2º,,,,2026-04-08,
 bonificacion,quiniela,,,,,,,,,Chamacónicos,,3º,,,,2026-04-08,
