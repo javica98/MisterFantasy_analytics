@@ -1,9 +1,16 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
+marks,start_mercado,,,,,,,,,,,,,,,2026-04-10,
+transfer,mercado,,Carlos Espí,Dani,Mister,3.07043,4,88,12,,,,,,,2026-04-10,97107c6034cbb80781761998e04625b9
+marks,start_mercado,,,,,,,,,,,,,,,2026-04-10,
+transfer,mercado,,Thierry Correia,Mister,Dani,0.16001,2,41,19,,,,,,,2026-04-10,e4a8b47aa1746a3d3b38869626ba7d1a
+transfer,mercado,,Frenkie De Jong,Mister,Maldinillo 💥,15.396153,3,102,3,,,,,,,2026-04-10,c4e99c6beb72baa075fec87192f8daf9
+marks,start_mercado,,,,,,,,,,,,,,,2026-04-10,
+transfer,mercado,,Carlos Romero,Maldinillo 💥,Mister,14.921,2,169,8,,,,,,,2026-04-10,16b91dc43da8261ef48eab3c87235c7d
+marks,start_mercado,,,,,,,,,,,,,,,2026-04-10,
+transfer,mercado,,Federico Viñas,Dani,Mister,6.20025,4.0,116.0,1370.0,,,,,,,2026-04-09,fb87cb4022a1a409031122bf77cc4639
 marks,start_mercado,,,,,,,,,,,,,,,2026-04-09,
-transfer,mercado,,Federico Viñas,Dani,Mister,6.20025,4,116,1370,,,,,,,2026-04-09,fb87cb4022a1a409031122bf77cc4639
-marks,start_mercado,,,,,,,,,,,,,,,2026-04-09,
-transfer,mercado,,Alex Freeman,Mister,Dani,0.16001,2,11,20,,,,,,,2026-04-09,e848b0a4a281609d0d0ca1032a145b5e
-transfer,mercado,,Takefusa Kubo,Mister,Maldinillo 💥,6.97153,3,81,16,,,,,,,2026-04-09,ab4b90d7b189aa6605ccc26184d5e5b1
+transfer,mercado,,Alex Freeman,Mister,Dani,0.16001,2.0,11.0,20.0,,,,,,,2026-04-09,e848b0a4a281609d0d0ca1032a145b5e
+transfer,mercado,,Takefusa Kubo,Mister,Maldinillo 💥,6.97153,3.0,81.0,16.0,,,,,,,2026-04-09,ab4b90d7b189aa6605ccc26184d5e5b1
 marks,start_mercado,,,,,,,,,,,,,,,2026-04-09,
 transfer,mercado,,Carlos Romero,Mister,Maldinillo 💥,15.04955,2.0,169.0,8.0,,,,,,,2026-04-08,ef8aa1640852b2f85565981acf3f290d
 bonificacion,quiniela,,,,,,,,,De la Guettir FC,0.3,1º,,,,2026-04-08,
