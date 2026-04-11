@@ -1,11 +1,14 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
+marks,start_mercado,,,,,,,,,,,,,,,2026-04-11,
+transfer,mercado,,Nahuel Molina,Mister,Los marinero,2.53,2,67,2,,,,,,,2026-04-11,ef41d5118617eec6a91dd368b0cf01b1
+marks,start_jornada,,,,,,,,,,,,,,31.0,2026-04-11,
+marks,start_mercado,,,,,,,,,,,,,,,2026-04-11,
+transfer,mercado,,Carlos Espí,Dani,Mister,3.07043,4.0,88.0,12.0,,,,,,,2026-04-10,97107c6034cbb80781761998e04625b9
 marks,start_mercado,,,,,,,,,,,,,,,2026-04-10,
-transfer,mercado,,Carlos Espí,Dani,Mister,3.07043,4,88,12,,,,,,,2026-04-10,97107c6034cbb80781761998e04625b9
+transfer,mercado,,Thierry Correia,Mister,Dani,0.16001,2.0,41.0,19.0,,,,,,,2026-04-10,e4a8b47aa1746a3d3b38869626ba7d1a
+transfer,mercado,,Frenkie De Jong,Mister,Maldinillo 💥,15.396153,3.0,102.0,3.0,,,,,,,2026-04-10,c4e99c6beb72baa075fec87192f8daf9
 marks,start_mercado,,,,,,,,,,,,,,,2026-04-10,
-transfer,mercado,,Thierry Correia,Mister,Dani,0.16001,2,41,19,,,,,,,2026-04-10,e4a8b47aa1746a3d3b38869626ba7d1a
-transfer,mercado,,Frenkie De Jong,Mister,Maldinillo 💥,15.396153,3,102,3,,,,,,,2026-04-10,c4e99c6beb72baa075fec87192f8daf9
-marks,start_mercado,,,,,,,,,,,,,,,2026-04-10,
-transfer,mercado,,Carlos Romero,Maldinillo 💥,Mister,14.921,2,169,8,,,,,,,2026-04-10,16b91dc43da8261ef48eab3c87235c7d
+transfer,mercado,,Carlos Romero,Maldinillo 💥,Mister,14.921,2.0,169.0,8.0,,,,,,,2026-04-10,16b91dc43da8261ef48eab3c87235c7d
 marks,start_mercado,,,,,,,,,,,,,,,2026-04-10,
 transfer,mercado,,Federico Viñas,Dani,Mister,6.20025,4.0,116.0,1370.0,,,,,,,2026-04-09,fb87cb4022a1a409031122bf77cc4639
 marks,start_mercado,,,,,,,,,,,,,,,2026-04-09,
