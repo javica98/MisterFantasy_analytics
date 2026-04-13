@@ -1,7 +1,7 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
-marks,start_mercado,,,,,,,,,,,,,,,2026-04-12,
-transfer,mercado,,Sofyan Amrabat,Mister,Maldinillo 💥,4.77028,3,53,4,,,,,,,2026-04-12,d23e3eb0a7402a4bce8498fd92bd5e17
-transfer,Puja,,Sofyan Amrabat,Mister,Dani,4.57014,3,53,4,,,,,,,2026-04-12,334bfc0b8e2e44987d93b95f83e10dc7
+marks,start_mercado,,,,,,,,,,,,,,,2026-04-13,
+transfer,mercado,,Sofyan Amrabat,Mister,Maldinillo 💥,4.77028,3.0,53.0,4.0,,,,,,,2026-04-12,d23e3eb0a7402a4bce8498fd92bd5e17
+transfer,Puja,,Sofyan Amrabat,Mister,Dani,4.57014,3.0,53.0,4.0,,,,,,,2026-04-12,334bfc0b8e2e44987d93b95f83e10dc7
 marks,start_mercado,,,,,,,,,,,,,,,2026-04-12,
 transfer,mercado,,Nahuel Molina,Mister,Los marinero,2.53,2.0,67.0,2.0,,,,,,,2026-04-11,ef41d5118617eec6a91dd368b0cf01b1
 marks,start_jornada,,,,,,,,,,,,,,31.0,2026-04-11,
