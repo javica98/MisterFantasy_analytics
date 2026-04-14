@@ -1,5 +1,25 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
-marks,start_mercado,,,,,,,,,,,,,,,2026-04-13,
+bonificacion,quiniela,,,,,,,,,Chamacónicos,0.3,1º,,,,2026-04-14,
+bonificacion,quiniela,,,,,,,,,Dani,0.3,2º,,,,2026-04-14,
+bonificacion,quiniela,,,,,,,,,Maldinillo 💥,0.2,3º,,,,2026-04-14,
+bonificacion,quiniela,,,,,,,,,De la Guettir FC,0.1,4º,,,,2026-04-14,
+bonificacion,quiniela,,,,,,,,,Jotabetrbb,,5º,,,,2026-04-14,
+bonificacion,quiniela,,,,,,,,,Juanba,,6º,,,,2026-04-14,
+bonificacion,quiniela,,,,,,,,,Libre,,7º,,,,2026-04-14,
+bonificacion,quiniela,,,,,,,,,Los marinero,,8º,,,,2026-04-14,
+bonificacion,quiniela,,,,,,,,,MuchaSalsa,,9º,,,,2026-04-14,
+bonificacion,clasificacion,,,,,,,,,Maldinillo 💥,1.54,1,,,,2026-04-14,
+bonificacion,clasificacion,,,,,,,,,Dani,1.75,2,,,,2026-04-14,
+bonificacion,clasificacion,,,,,,,,,Chamacónicos,1.69,3,,,,2026-04-14,
+bonificacion,clasificacion,,,,,,,,,Los marinero,1.64,4,,,,2026-04-14,
+bonificacion,clasificacion,,,,,,,,,De la Guettir FC,2.05,5,,,,2026-04-14,
+bonificacion,clasificacion,,,,,,,,,Jotabetrbb,1.68,6,,,,2026-04-14,
+bonificacion,clasificacion,,,,,,,,,MuchaSalsa,1.81,7,,,,2026-04-14,
+bonificacion,clasificacion,,,,,,,,,Juanba,1.82,8,,,,2026-04-14,
+bonificacion,clasificacion,,,,,,,,,Libre,2.0,9,,,,2026-04-14,
+marks,start_mercado,,,,,,,,,,,,,,,2026-04-14,
+transfer,mercado,,Alex Remiro,Maldinillo 💥,Mister,8.11824,1,118,16,,,,,,,2026-04-14,0289bcbd0bfe131c59c027d998659b39
+marks,start_mercado,,,,,,,,,,,,,,,2026-04-14,
 transfer,mercado,,Sofyan Amrabat,Mister,Maldinillo 💥,4.77028,3.0,53.0,4.0,,,,,,,2026-04-12,d23e3eb0a7402a4bce8498fd92bd5e17
 transfer,Puja,,Sofyan Amrabat,Mister,Dani,4.57014,3.0,53.0,4.0,,,,,,,2026-04-12,334bfc0b8e2e44987d93b95f83e10dc7
 marks,start_mercado,,,,,,,,,,,,,,,2026-04-12,
