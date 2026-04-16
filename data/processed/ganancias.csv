@@ -1,11 +1,17 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
+marks,start_mercado,,,,,,,,,,,,,,,2026-04-16,
+transfer,mercado,,Pablo Barrios,Maldinillo 💥,Mister,11.77592,3,114,2,,,,,,,2026-04-16,3b882da50313b86d9e8c374052221d6f
+marks,start_mercado,,,,,,,,,,,,,,,2026-04-16,
+transfer,mercado,,Santi Comesaña,Dani,Mister,12.5538,3,122,20,,,,,,,2026-04-16,f7e1c4ef4539ae03477b232dfd67d0ec
+marks,start_mercado,,,,,,,,,,,,,,,2026-04-16,
+transfer,mercado,,Leo Román,Mister,Los marinero,5.172,1,123,408,,,,,,,2026-04-16,f9df5100298d013690b1d6f92c26fd1e
+marks,start_mercado,,,,,,,,,,,,,,,2026-04-16,
+transfer,mercado,,Federico Viñas,Mister,Maldinillo 💥,7.654,4.0,133.0,1370.0,,,,,,,2026-04-15,d91dca069d67b7b90f1e0ef414964541
+transfer,Puja,,Federico Viñas,Mister,Dani,7.07127,4.0,133.0,1370.0,,,,,,,2026-04-15,f33178218ba8af656507c02f58b8f46c
 marks,start_mercado,,,,,,,,,,,,,,,2026-04-15,
-transfer,mercado,,Federico Viñas,Mister,Maldinillo 💥,7.654,4,133,1370,,,,,,,2026-04-15,d91dca069d67b7b90f1e0ef414964541
-transfer,Puja,,Federico Viñas,Mister,Dani,7.07127,4,133,1370,,,,,,,2026-04-15,f33178218ba8af656507c02f58b8f46c
+transfer,mercado,,Alberto Moleiro,Dani,Mister,16.41328,3.0,161.0,20.0,,,,,,,2026-04-15,f2d437fdf16bbbd91a86f512a1c18795
 marks,start_mercado,,,,,,,,,,,,,,,2026-04-15,
-transfer,mercado,,Alberto Moleiro,Dani,Mister,16.41328,3,161,20,,,,,,,2026-04-15,f2d437fdf16bbbd91a86f512a1c18795
-marks,start_mercado,,,,,,,,,,,,,,,2026-04-15,
-transfer,mercado,,Alex Freeman,Dani,Mister,0.1648,2,11,20,,,,,,,2026-04-15,b26b3de5569dda0a53cb9151126c18de
+transfer,mercado,,Alex Freeman,Dani,Mister,0.1648,2.0,11.0,20.0,,,,,,,2026-04-15,b26b3de5569dda0a53cb9151126c18de
 bonificacion,quiniela,,,,,,,,,Chamacónicos,0.3,1º,,,,2026-04-15,
 bonificacion,quiniela,,,,,,,,,Dani,0.3,2º,,,,2026-04-15,
 bonificacion,quiniela,,,,,,,,,Maldinillo 💥,0.2,3º,,,,2026-04-15,
