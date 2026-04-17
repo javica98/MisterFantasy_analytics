@@ -1,10 +1,10 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
+marks,start_mercado,,,,,,,,,,,,,,,2026-04-17,
+transfer,mercado,,Pablo Barrios,Maldinillo 💥,Mister,11.77592,3.0,114.0,2.0,,,,,,,2026-04-16,3b882da50313b86d9e8c374052221d6f
 marks,start_mercado,,,,,,,,,,,,,,,2026-04-16,
-transfer,mercado,,Pablo Barrios,Maldinillo 💥,Mister,11.77592,3,114,2,,,,,,,2026-04-16,3b882da50313b86d9e8c374052221d6f
+transfer,mercado,,Santi Comesaña,Dani,Mister,12.5538,3.0,122.0,20.0,,,,,,,2026-04-16,f7e1c4ef4539ae03477b232dfd67d0ec
 marks,start_mercado,,,,,,,,,,,,,,,2026-04-16,
-transfer,mercado,,Santi Comesaña,Dani,Mister,12.5538,3,122,20,,,,,,,2026-04-16,f7e1c4ef4539ae03477b232dfd67d0ec
-marks,start_mercado,,,,,,,,,,,,,,,2026-04-16,
-transfer,mercado,,Leo Román,Mister,Los marinero,5.172,1,123,408,,,,,,,2026-04-16,f9df5100298d013690b1d6f92c26fd1e
+transfer,mercado,,Leo Román,Mister,Los marinero,5.172,1.0,123.0,408.0,,,,,,,2026-04-16,f9df5100298d013690b1d6f92c26fd1e
 marks,start_mercado,,,,,,,,,,,,,,,2026-04-16,
 transfer,mercado,,Federico Viñas,Mister,Maldinillo 💥,7.654,4.0,133.0,1370.0,,,,,,,2026-04-15,d91dca069d67b7b90f1e0ef414964541
 transfer,Puja,,Federico Viñas,Mister,Dani,7.07127,4.0,133.0,1370.0,,,,,,,2026-04-15,f33178218ba8af656507c02f58b8f46c
