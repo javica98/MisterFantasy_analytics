@@ -1,4 +1,5 @@
 fecha,id,type,subtype,equipo,jugador,compra-venta,equipoLiga,ganancias
+2026-04-19,0,transfer,mercado,Dani,Georges Mikautadze,venta,20.0,15.56776
 2026-04-18,0,transfer,mercado,Los marinero,Odysseas Vlachodimos,venta,17.0,3.78816
 2026-04-18,0,marks,start_mercado,Mercado diario,,,,0.0
 2026-04-18,0,transfer,mercado,Dani,Victor Muñoz,compra,50.0,-19.02477

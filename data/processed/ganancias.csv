@@ -1,11 +1,13 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
+marks,start_mercado,,,,,,,,,,,,,,,2026-04-19,
+transfer,mercado,,Georges Mikautadze,Dani,Mister,15.56776,4,139,20,,,,,,,2026-04-19,581544083fc7ef03ab5cc023f03f7c33
+marks,start_mercado,,,,,,,,,,,,,,,2026-04-19,
+transfer,mercado,,Odysseas Vlachodimos,Los marinero,Mister,3.78816,1.0,115.0,17.0,,,,,,,2026-04-18,b6053605c3729d0e2329a09103626bcd
 marks,start_mercado,,,,,,,,,,,,,,,2026-04-18,
-transfer,mercado,,Odysseas Vlachodimos,Los marinero,Mister,3.78816,1,115,17,,,,,,,2026-04-18,b6053605c3729d0e2329a09103626bcd
-marks,start_mercado,,,,,,,,,,,,,,,2026-04-18,
-transfer,mercado,,Victor Muñoz,Mister,Dani,19.02477,4,175,50,,,,,,,2026-04-18,23469a44c9b05790996c873363b28791
-transfer,Puja,,Victor Muñoz,Mister,Maldinillo 💥,17.861,4,175,50,,,,,,,2026-04-18,93d7683495149cd982feff484504a44d
-transfer,mercado,,Matías Dituro,Mister,Dani,5.3021,1,76,23,,,,,,,2026-04-18,d54ed1142a79e28383d7c07cb61bf503
-transfer,Puja,,Matías Dituro,Mister,Maldinillo 💥,5.25929,1,76,23,,,,,,,2026-04-18,9bdb07da7c0d8582733c5c7cbbb3dfbb
+transfer,mercado,,Victor Muñoz,Mister,Dani,19.02477,4.0,175.0,50.0,,,,,,,2026-04-18,23469a44c9b05790996c873363b28791
+transfer,Puja,,Victor Muñoz,Mister,Maldinillo 💥,17.861,4.0,175.0,50.0,,,,,,,2026-04-18,93d7683495149cd982feff484504a44d
+transfer,mercado,,Matías Dituro,Mister,Dani,5.3021,1.0,76.0,23.0,,,,,,,2026-04-18,d54ed1142a79e28383d7c07cb61bf503
+transfer,Puja,,Matías Dituro,Mister,Maldinillo 💥,5.25929,1.0,76.0,23.0,,,,,,,2026-04-18,9bdb07da7c0d8582733c5c7cbbb3dfbb
 marks,start_mercado,,,,,,,,,,,,,,,2026-04-18,
 transfer,mercado,,Pablo Barrios,Maldinillo 💥,Mister,11.77592,3.0,114.0,2.0,,,,,,,2026-04-16,3b882da50313b86d9e8c374052221d6f
 marks,start_mercado,,,,,,,,,,,,,,,2026-04-16,
