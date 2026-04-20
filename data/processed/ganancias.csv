@@ -1,6 +1,8 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
-marks,start_mercado,,,,,,,,,,,,,,,2026-04-19,
-transfer,mercado,,Georges Mikautadze,Dani,Mister,15.56776,4,139,20,,,,,,,2026-04-19,581544083fc7ef03ab5cc023f03f7c33
+marks,start_mercado,,,,,,,,,,,,,,,2026-04-20,
+transfer,mercado,,Carlos Romero,Mister,Dani,14.93101,2,171,8,,,,,,,2026-04-20,4cd015257c289cf7a6c7e02357ab2d44
+marks,start_mercado,,,,,,,,,,,,,,,2026-04-20,
+transfer,mercado,,Georges Mikautadze,Dani,Mister,15.56776,4.0,139.0,20.0,,,,,,,2026-04-19,581544083fc7ef03ab5cc023f03f7c33
 marks,start_mercado,,,,,,,,,,,,,,,2026-04-19,
 transfer,mercado,,Odysseas Vlachodimos,Los marinero,Mister,3.78816,1.0,115.0,17.0,,,,,,,2026-04-18,b6053605c3729d0e2329a09103626bcd
 marks,start_mercado,,,,,,,,,,,,,,,2026-04-18,
