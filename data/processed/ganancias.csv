@@ -1,6 +1,21 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
-marks,start_mercado,,,,,,,,,,,,,,,2026-04-20,
-transfer,mercado,,Carlos Romero,Mister,Dani,14.93101,2,171,8,,,,,,,2026-04-20,4cd015257c289cf7a6c7e02357ab2d44
+marks,start_mercado,,,,,,,,,,,,,,,2026-04-21,
+transfer,mercado,,Sofyan Amrabat,Maldinillo 💥,Mister,5.15712,3,57,4,,,,,,,2026-04-21,5a87a3c9eab83890376e953bb37b26b7
+marks,start_mercado,,,,,,,,,,,,,,,2026-04-21,
+transfer,mercado,,Guido Rodríguez,Maldinillo 💥,Mister,9.10248,3,51,19,,,,,,,2026-04-21,6b6304f28e0043cce129d788bb12b71d
+marks,start_mercado,,,,,,,,,,,,,,,2026-04-21,
+transfer,mercado,,Gerard Moreno,Maldinillo 💥,Mister,15.67434,4,116,20,,,,,,,2026-04-21,adc7a9b5801e88ad1eb1a80b20cf2a45
+marks,start_mercado,,,,,,,,,,,,,,,2026-04-21,
+transfer,mercado,,Borja Iglesias,Maldinillo 💥,Mister,13.641,4,151,5,,,,,,,2026-04-21,5df356450d643e07186651562cd87ae9
+marks,start_mercado,,,,,,,,,,,,,,,2026-04-21,
+transfer,mercado,,Julián Álvarez,Mister,Dani,16.54,4,114,2,,,,,,,2026-04-21,3ee0822a2dad3797601717230d8e7b11
+transfer,mercado,,Carlos Soler,Mister,Dani,14.62316,3,117,16,,,,,,,2026-04-21,39a0b34519b98a550d88d3518ef19585
+marks,start_mercado,,,,,,,,,,,,,,,2026-04-21,
+transfer,clausula,,Lamine Yamal,Dani,Maldinillo 💥,69.825847,4,243,3,,,,,,,2026-04-21,bfefb24abe21629fe39fa9732880602b
+marks,start_mercado,,,,,,,,,,,,,,,2026-04-21,
+transfer,clausula,,Aleix Febas,Maldinillo 💥,Dani,24.3255,3,161,23,,,,,,,2026-04-21,4b98e8320313f35406530a96fd06706b
+marks,start_mercado,,,,,,,,,,,,,,,2026-04-21,
+transfer,mercado,,Carlos Romero,Mister,Dani,14.93101,2.0,171.0,8.0,,,,,,,2026-04-20,4cd015257c289cf7a6c7e02357ab2d44
 marks,start_mercado,,,,,,,,,,,,,,,2026-04-20,
 transfer,mercado,,Georges Mikautadze,Dani,Mister,15.56776,4.0,139.0,20.0,,,,,,,2026-04-19,581544083fc7ef03ab5cc023f03f7c33
 marks,start_mercado,,,,,,,,,,,,,,,2026-04-19,
