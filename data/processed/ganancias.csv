@@ -1,9 +1,11 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
-marks,start_mercado,,,,,,,,,,,,,,,2026-04-22,
-transfer,mercado,,Hector Fort,Mister,Los marinero,0.357,2,45,23,,,,,,,2026-04-22,9dacf4783909db458381c2212c9cc97a
+marks,start_mercado,,,,,,,,,,,,,,,2026-04-23,
+transfer,mercado,,Julián Álvarez,Dani,Mister,17.00942,4,114,2,,,,,,,2026-04-23,dbb0bc07a98babc327a8acbfd81609a9
+marks,start_mercado,,,,,,,,,,,,,,,2026-04-23,
+transfer,mercado,,Hector Fort,Mister,Los marinero,0.357,2.0,45.0,23.0,,,,,,,2026-04-22,9dacf4783909db458381c2212c9cc97a
 marks,start_jornada,,,,,,,,,,,,,,33.0,2026-04-22,
 marks,start_mercado,,,,,,,,,,,,,,,2026-04-22,
-transfer,mercado,,Matías Dituro,Dani,Mister,5.65032,1,76,23,,,,,,,2026-04-22,5722429571a418caf66d190a0cf94ea5
+transfer,mercado,,Matías Dituro,Dani,Mister,5.65032,1.0,76.0,23.0,,,,,,,2026-04-22,5722429571a418caf66d190a0cf94ea5
 marks,start_mercado,,,,,,,,,,,,,,,2026-04-22,
 transfer,mercado,,Sofyan Amrabat,Maldinillo 💥,Mister,5.15712,3.0,57.0,4.0,,,,,,,2026-04-21,5a87a3c9eab83890376e953bb37b26b7
 marks,start_mercado,,,,,,,,,,,,,,,2026-04-21,
