@@ -1,6 +1,30 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
-marks,start_mercado,,,,,,,,,,,,,,,2026-04-23,
-transfer,mercado,,Julián Álvarez,Dani,Mister,17.00942,4,114,2,,,,,,,2026-04-23,dbb0bc07a98babc327a8acbfd81609a9
+bonificacion,quiniela,,,,,,,,,Dani,0.6,1º,,,,2026-04-24,
+bonificacion,quiniela,,,,,,,,,Maldinillo 💥,0.6,2º,,,,2026-04-24,
+bonificacion,quiniela,,,,,,,,,De la Guettir FC,0.5,3º,,,,2026-04-24,
+bonificacion,quiniela,,,,,,,,,Chamacónicos,,4º,,,,2026-04-24,
+bonificacion,quiniela,,,,,,,,,Jotabetrbb,,5º,,,,2026-04-24,
+bonificacion,quiniela,,,,,,,,,Juanba,,6º,,,,2026-04-24,
+bonificacion,quiniela,,,,,,,,,Libre,,7º,,,,2026-04-24,
+bonificacion,quiniela,,,,,,,,,Los marinero,,8º,,,,2026-04-24,
+bonificacion,quiniela,,,,,,,,,MuchaSalsa,,9º,,,,2026-04-24,
+bonificacion,clasificacion,,,,,,,,,Maldinillo 💥,1.76,1,,,,2026-04-24,
+bonificacion,clasificacion,,,,,,,,,Dani,1.75,2,,,,2026-04-24,
+bonificacion,clasificacion,,,,,,,,,Los marinero,1.68,3,,,,2026-04-24,
+bonificacion,clasificacion,,,,,,,,,Chamacónicos,1.68,4,,,,2026-04-24,
+bonificacion,clasificacion,,,,,,,,,Jotabetrbb,1.76,5,,,,2026-04-24,
+bonificacion,clasificacion,,,,,,,,,De la Guettir FC,1.76,6,,,,2026-04-24,
+bonificacion,clasificacion,,,,,,,,,Juanba,2.29,7,,,,2026-04-24,
+bonificacion,clasificacion,,,,,,,,,Libre,2.08,8,,,,2026-04-24,
+bonificacion,clasificacion,,,,,,,,,MuchaSalsa,1.92,9,,,,2026-04-24,
+marks,start_mercado,,,,,,,,,,,,,,,2026-04-24,
+transfer,mercado,,Thierry Correia,Dani,Mister,0.1584,2,44,19,,,,,,,2026-04-24,66880785c3a45db2c3d805889b7106be
+marks,start_mercado,,,,,,,,,,,,,,,2026-04-24,
+transfer,mercado,,Jan Virgili,Mister,Maldinillo 💥,4.92911,3,100,408,,,,,,,2026-04-24,b895b05f9b5a94a9586b960dc1d146ef
+marks,start_mercado,,,,,,,,,,,,,,,2026-04-24,
+transfer,clausula,,Pau Cubarsi,Maldinillo 💥,Dani,27.81,2,146,3,,,,,,,2026-04-24,12928868e65c1b3701a3594e9b9c711d
+marks,start_mercado,,,,,,,,,,,,,,,2026-04-24,
+transfer,mercado,,Julián Álvarez,Dani,Mister,17.00942,4.0,114.0,2.0,,,,,,,2026-04-23,dbb0bc07a98babc327a8acbfd81609a9
 marks,start_mercado,,,,,,,,,,,,,,,2026-04-23,
 transfer,mercado,,Hector Fort,Mister,Los marinero,0.357,2.0,45.0,23.0,,,,,,,2026-04-22,9dacf4783909db458381c2212c9cc97a
 marks,start_jornada,,,,,,,,,,,,,,33.0,2026-04-22,
