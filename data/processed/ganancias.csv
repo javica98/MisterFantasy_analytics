@@ -1,9 +1,11 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
+marks,start_mercado,,,,,,,,,,,,,,,2026-04-27,
+transfer,mercado,,Arda Güler,Mister,Maldinillo 💥,19.02407,3,155,15,,,,,,,2026-04-27,1036fd9a36c33c75e95d2613afee4297
+marks,start_mercado,,,,,,,,,,,,,,,2026-04-27,
+transfer,mercado,,Aurélien Tchouaméni,Mister,Maldinillo 💥,17.41897,3.0,140.0,15.0,,,,,,,2026-04-26,ce24d3b8bd549dfe3c8323299234d1d6
+transfer,mercado,,Robert Lewandowski,Mister,Maldinillo 💥,14.40459,4.0,136.0,3.0,,,,,,,2026-04-26,787649ba2768efc4cdaae967d3241335
 marks,start_mercado,,,,,,,,,,,,,,,2026-04-26,
-transfer,mercado,,Aurélien Tchouaméni,Mister,Maldinillo 💥,17.41897,3,140,15,,,,,,,2026-04-26,ce24d3b8bd549dfe3c8323299234d1d6
-transfer,mercado,,Robert Lewandowski,Mister,Maldinillo 💥,14.40459,4,136,3,,,,,,,2026-04-26,787649ba2768efc4cdaae967d3241335
-marks,start_mercado,,,,,,,,,,,,,,,2026-04-26,
-transfer,mercado,,Jules Koundé,Dani,Mister,12.73335,2,117,3,,,,,,,2026-04-26,6d8f73700d91075fdd1488de466b9780
+transfer,mercado,,Jules Koundé,Dani,Mister,12.73335,2.0,117.0,3.0,,,,,,,2026-04-26,6d8f73700d91075fdd1488de466b9780
 marks,start_mercado,,,,,,,,,,,,,,,2026-04-26,
 transfer,mercado,,Thiago Fernández,Mister,Dani,0.89351,3.0,47.0,1370.0,,,,,,,2026-04-25,2a8b1ab21e314c56efdc27963076ace7
 transfer,mercado,,Samuel Costa,Mister,Maldinillo 💥,10.61241,3.0,149.0,408.0,,,,,,,2026-04-25,8c8ab2906f2c6a81dab2c7997b9a3ca3
