@@ -1,6 +1,34 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
-marks,start_mercado,,,,,,,,,,,,,,,2026-04-27,
-transfer,mercado,,Arda Güler,Mister,Maldinillo 💥,19.02407,3,155,15,,,,,,,2026-04-27,1036fd9a36c33c75e95d2613afee4297
+bonificacion,quiniela,,,,,,,,,De la Guettir FC,0.6,1º,,,,2026-04-28,
+bonificacion,quiniela,,,,,,,,,Maldinillo 💥,0.6,2º,,,,2026-04-28,
+bonificacion,quiniela,,,,,,,,,Dani,0.5,3º,,,,2026-04-28,
+bonificacion,quiniela,,,,,,,,,Chamacónicos,,4º,,,,2026-04-28,
+bonificacion,quiniela,,,,,,,,,Jotabetrbb,,5º,,,,2026-04-28,
+bonificacion,quiniela,,,,,,,,,Juanba,,6º,,,,2026-04-28,
+bonificacion,quiniela,,,,,,,,,Libre,,7º,,,,2026-04-28,
+bonificacion,quiniela,,,,,,,,,Los marinero,,8º,,,,2026-04-28,
+bonificacion,quiniela,,,,,,,,,MuchaSalsa,,9º,,,,2026-04-28,
+bonificacion,clasificacion,,,,,,,,,Maldinillo 💥,2.18,1,,,,2026-04-28,
+bonificacion,clasificacion,,,,,,,,,Dani,1.91,2,,,,2026-04-28,
+bonificacion,clasificacion,,,,,,,,,Los marinero,2.21,3,,,,2026-04-28,
+bonificacion,clasificacion,,,,,,,,,Jotabetrbb,1.82,4,,,,2026-04-28,
+bonificacion,clasificacion,,,,,,,,,Libre,2.01,5,,,,2026-04-28,
+bonificacion,clasificacion,,,,,,,,,Chamacónicos,1.8,6,,,,2026-04-28,
+bonificacion,clasificacion,,,,,,,,,MuchaSalsa,2.13,7,,,,2026-04-28,
+bonificacion,clasificacion,,,,,,,,,De la Guettir FC,2.0,8,,,,2026-04-28,
+bonificacion,clasificacion,,,,,,,,,Juanba,2.06,9,,,,2026-04-28,
+marks,start_mercado,,,,,,,,,,,,,,,2026-04-28,
+transfer,mercado,,Arda Güler,Maldinillo 💥,Mister,19.6716,3,155,15,,,,,,,2026-04-28,4b1c3c56d8d7fe8d4931163e69e27b1e
+marks,start_mercado,,,,,,,,,,,,,,,2026-04-28,
+transfer,mercado,,Nico Williams,Mister,Maldinillo 💥,10.67288,4,96,1,,,,,,,2026-04-28,f2bfc7077c77036d4228f9a9638de56a
+transfer,mercado,,Jon Aramburu,Mister,Maldinillo 💥,3.26153,2,103,16,,,,,,,2026-04-28,c8639fbe3b63a15e3d78a2d7333241e8
+marks,start_mercado,,,,,,,,,,,,,,,2026-04-28,
+transfer,mercado,,Aurélien Tchouaméni,Maldinillo 💥,Mister,18.0243,3,140,15,,,,,,,2026-04-28,26b2508514cf5c418ffbc719c43e2ed0
+marks,start_mercado,,,,,,,,,,,,,,,2026-04-28,
+marks,start_mercado,,,,,,,,,,,,,,,2026-04-28,
+transfer,mercado,,Robert Lewandowski,Maldinillo 💥,Mister,15.0276,4,136,3,,,,,,,2026-04-28,88aaa76dcff01d3b8bc64b15e0f802cc
+marks,start_mercado,,,,,,,,,,,,,,,2026-04-28,
+transfer,mercado,,Arda Güler,Mister,Maldinillo 💥,19.02407,3.0,155.0,15.0,,,,,,,2026-04-27,1036fd9a36c33c75e95d2613afee4297
 marks,start_mercado,,,,,,,,,,,,,,,2026-04-27,
 transfer,mercado,,Aurélien Tchouaméni,Mister,Maldinillo 💥,17.41897,3.0,140.0,15.0,,,,,,,2026-04-26,ce24d3b8bd549dfe3c8323299234d1d6
 transfer,mercado,,Robert Lewandowski,Mister,Maldinillo 💥,14.40459,4.0,136.0,3.0,,,,,,,2026-04-26,787649ba2768efc4cdaae967d3241335
