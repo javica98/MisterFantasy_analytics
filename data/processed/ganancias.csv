@@ -1,11 +1,18 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
+marks,start_mercado,,,,,,,,,,,,,,,2026-04-30,
+transfer,mercado,,Jon Aramburu,Maldinillo 💥,Mister,3.30264,2,103,16,,,,,,,2026-04-30,5047f76d6be04a5e863395d187c773e7
+marks,start_mercado,,,,,,,,,,,,,,,2026-04-30,
+transfer,mercado,,Santi Comesaña,Mister,Maldinillo 💥,11.30121,3,126,20,,,,,,,2026-04-30,0b4fcd76ba46b85f5c64283ca983fb59
+transfer,mercado,,Pedro Díaz,Mister,Maldinillo 💥,0.575,3,79,14,,,,,,,2026-04-30,12672b036f7dcd3edfe469ee3cf0222f
+marks,start_mercado,,,,,,,,,,,,,,,2026-04-30,
+transfer,clausula,,Mikel Oyarzabal,Libre,Dani,40.168,4,185,16,,,,,,,2026-04-30,ba01daef704c6883249286811512e74d
+marks,start_mercado,,,,,,,,,,,,,,,2026-04-30,
+transfer,mercado,,Gerard Moreno,Mister,Maldinillo 💥,26.72914,4.0,127.0,20.0,,,,,,,2026-04-29,70bb1714c56ec163a92ff26262a2e071
+transfer,Puja,,Gerard Moreno,Mister,Dani,23.0883,4.0,127.0,20.0,,,,,,,2026-04-29,4437ca3bda1c558e272067e5cba8fec7
+transfer,mercado,,Álvaro Valles,Mister,Maldinillo 💥,2.92907,1.0,96.0,4.0,,,,,,,2026-04-29,ba6a76d50128d1239a5dc8e6c96ce8e8
+transfer,mercado,,Ferland Mendy,Mister,Maldinillo 💥,0.62711,2.0,8.0,15.0,,,,,,,2026-04-29,a5f5e84ecb8bb17e30bb4db149e48ff3
 marks,start_mercado,,,,,,,,,,,,,,,2026-04-29,
-transfer,mercado,,Gerard Moreno,Mister,Maldinillo 💥,26.72914,4,127,20,,,,,,,2026-04-29,70bb1714c56ec163a92ff26262a2e071
-transfer,Puja,,Gerard Moreno,Mister,Dani,23.0883,4,127,20,,,,,,,2026-04-29,4437ca3bda1c558e272067e5cba8fec7
-transfer,mercado,,Álvaro Valles,Mister,Maldinillo 💥,2.92907,1,96,4,,,,,,,2026-04-29,ba6a76d50128d1239a5dc8e6c96ce8e8
-transfer,mercado,,Ferland Mendy,Mister,Maldinillo 💥,0.62711,2,8,15,,,,,,,2026-04-29,a5f5e84ecb8bb17e30bb4db149e48ff3
-marks,start_mercado,,,,,,,,,,,,,,,2026-04-29,
-transfer,clausula,,Largie Ramazani,Dani,Jotabetrbb,10.809,3,111,19,,,,,,,2026-04-29,a4e03e70f2fadae3b1688dc397ebdc0a
+transfer,clausula,,Largie Ramazani,Dani,Jotabetrbb,10.809,3.0,111.0,19.0,,,,,,,2026-04-29,a4e03e70f2fadae3b1688dc397ebdc0a
 bonificacion,quiniela,,,,,,,,,De la Guettir FC,0.6,1º,,,,2026-04-29,
 bonificacion,quiniela,,,,,,,,,Maldinillo 💥,0.6,2º,,,,2026-04-29,
 bonificacion,quiniela,,,,,,,,,Dani,0.5,3º,,,,2026-04-29,
