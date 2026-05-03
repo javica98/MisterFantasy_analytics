@@ -1,10 +1,12 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
-marks,start_mercado,,,,,,,,,,,,,,,2026-05-02,
-transfer,mercado,,Isco,Mister,Los marinero,14.668,3,13,4,,,,,,,2026-05-02,fdd26174995f050eeb67a8aa626616b1
-transfer,Puja,,Isco,Mister,Dani,11.58807,3,13,4,,,,,,,2026-05-02,6f174cb6032ae64b7622aa0da3e822d0
-transfer,mercado,,Ander Barrenetxea,Mister,Los marinero,10.403,3,130,16,,,,,,,2026-05-02,2b1a8f21a324d9eafdd1b27bcb56d4e5
-transfer,mercado,,Aarón Escandell,Mister,Dani,15.05083,1,184,1370,,,,,,,2026-05-02,04daee124d3f7fc65c6eee0d1fbb4039
-transfer,mercado,,César Tárrega,Mister,Dani,0.931,2,83,19,,,,,,,2026-05-02,b4fd6b91ddc6ccb86af94f9f29abb059
+marks,start_mercado,,,,,,,,,,,,,,,2026-05-03,
+transfer,mercado,,Claudio Echeverri,Dani,Mister,2.4864,3,44,222,,,,,,,2026-05-03,45dcc069283d3ecbdadcd026cb72a9e1
+marks,start_mercado,,,,,,,,,,,,,,,2026-05-03,
+transfer,mercado,,Isco,Mister,Los marinero,14.668,3.0,13.0,4.0,,,,,,,2026-05-02,fdd26174995f050eeb67a8aa626616b1
+transfer,Puja,,Isco,Mister,Dani,11.58807,3.0,13.0,4.0,,,,,,,2026-05-02,6f174cb6032ae64b7622aa0da3e822d0
+transfer,mercado,,Ander Barrenetxea,Mister,Los marinero,10.403,3.0,130.0,16.0,,,,,,,2026-05-02,2b1a8f21a324d9eafdd1b27bcb56d4e5
+transfer,mercado,,Aarón Escandell,Mister,Dani,15.05083,1.0,184.0,1370.0,,,,,,,2026-05-02,04daee124d3f7fc65c6eee0d1fbb4039
+transfer,mercado,,César Tárrega,Mister,Dani,0.931,2.0,83.0,19.0,,,,,,,2026-05-02,b4fd6b91ddc6ccb86af94f9f29abb059
 marks,start_jornada,,,,,,,,,,,,,,34.0,2026-05-02,
 marks,start_mercado,,,,,,,,,,,,,,,2026-05-02,
 transfer,mercado,,Victor Muñoz,Dani,Mister,16.39442,4.0,185.0,50.0,,,,,,,2026-05-01,4693e42c02999c8f0086d23472b6c622
