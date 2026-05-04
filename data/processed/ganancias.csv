@@ -1,6 +1,22 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
-marks,start_mercado,,,,,,,,,,,,,,,2026-05-03,
-transfer,mercado,,Claudio Echeverri,Dani,Mister,2.4864,3,44,222,,,,,,,2026-05-03,45dcc069283d3ecbdadcd026cb72a9e1
+marks,start_mercado,,,,,,,,,,,,,,,2026-05-04,
+transfer,mercado,,César Tárrega,Dani,Mister,0.9639,2,84,19,,,,,,,2026-05-04,60317826ed9adb525720f367b828c23c
+marks,start_mercado,,,,,,,,,,,,,,,2026-05-04,
+transfer,mercado,,Alberto Moleiro,Mister,Maldinillo 💥,15.5154,3,184,20,,,,,,,2026-05-04,1b0871092c07160820b8a67115aca436
+transfer,Puja,,Alberto Moleiro,Mister,Dani,15.20217,3,184,20,,,,,,,2026-05-04,7efef86029258a95e286a01c7ce34b24
+transfer,mercado,,Dean Huijsen,Mister,Maldinillo 💥,10.89,2,89,15,,,,,,,2026-05-04,6125d1bc1791c35bb3aeb283ded94fe2
+transfer,mercado,,Carlos Espí,Mister,Maldinillo 💥,9.63969,4,111,12,,,,,,,2026-05-04,f30366c1a32392eb1d19b0299764c90f
+transfer,Puja,,Carlos Espí,Mister,Dani,7.02193,4,111,12,,,,,,,2026-05-04,3b5c1f11e24751f012f2f3081a43d4eb
+marks,start_mercado,,,,,,,,,,,,,,,2026-05-04,
+transfer,clausula,,Nico Williams,Maldinillo 💥,Dani,16.3575,4,112,1,,,,,,,2026-05-04,1941999c0d0ceaa0781760536ae88385
+marks,start_mercado,,,,,,,,,,,,,,,2026-05-04,
+transfer,mercado,,Andrei Rațiu,Dani,Mister,13.7852,2,143,14,,,,,,,2026-05-04,c3ce72a78a7d4ae7bd7f7821c705a545
+marks,start_mercado,,,,,,,,,,,,,,,2026-05-04,
+transfer,mercado,,Roberto Fernández,Los marinero,Mister,3.05445,4,138,8,,,,,,,2026-05-04,13a7eb695a486bad08c6f2cccd2ca683
+marks,start_mercado,,,,,,,,,,,,,,,2026-05-04,
+transfer,mercado,,Victor Chust,Dani,Mister,0.2109,2,85,23,,,,,,,2026-05-04,98acf72ac2209fd66e5a376755b5e76e
+marks,start_mercado,,,,,,,,,,,,,,,2026-05-04,
+transfer,mercado,,Claudio Echeverri,Dani,Mister,2.4864,3.0,44.0,222.0,,,,,,,2026-05-03,45dcc069283d3ecbdadcd026cb72a9e1
 marks,start_mercado,,,,,,,,,,,,,,,2026-05-03,
 transfer,mercado,,Isco,Mister,Los marinero,14.668,3.0,13.0,4.0,,,,,,,2026-05-02,fdd26174995f050eeb67a8aa626616b1
 transfer,Puja,,Isco,Mister,Dani,11.58807,3.0,13.0,4.0,,,,,,,2026-05-02,6f174cb6032ae64b7622aa0da3e822d0
