@@ -1,12 +1,16 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
+marks,start_mercado,,,,,,,,,,,,,,,2026-05-08,
+transfer,mercado,,Roony Bardghji,Mister,Dani,1.15328,4,58,3,,,,,,,2026-05-08,7e04afed5c733936b8ca65fae74be7b4
+transfer,mercado,,Gorka Guruzeta,Mister,Maldinillo 💥,6.05641,4,109,1,,,,,,,2026-05-08,5a3d1dd97563b7edff76ef33f26c500e
+transfer,Puja,,Gorka Guruzeta,Mister,Dani,6.00219,4,109,1,,,,,,,2026-05-08,d04992002764f2806031279883adc53c
+marks,start_mercado,,,,,,,,,,,,,,,2026-05-08,
+transfer,mercado,,Mathew Ryan,Maldinillo 💥,Mister,11.14146,1.0,156.0,12.0,,,,,,,2026-05-07,36f784e5cc5eaeb80fb55360cfa325da
 marks,start_mercado,,,,,,,,,,,,,,,2026-05-07,
-transfer,mercado,,Mathew Ryan,Maldinillo 💥,Mister,11.14146,1,156,12,,,,,,,2026-05-07,36f784e5cc5eaeb80fb55360cfa325da
+transfer,mercado,,Matías Dituro,Mister,Maldinillo 💥,7.333,1.0,89.0,23.0,,,,,,,2026-05-07,b984aeb0d5fb9e65ecebdd1d1309b500
 marks,start_mercado,,,,,,,,,,,,,,,2026-05-07,
-transfer,mercado,,Matías Dituro,Mister,Maldinillo 💥,7.333,1,89,23,,,,,,,2026-05-07,b984aeb0d5fb9e65ecebdd1d1309b500
+transfer,mercado,,Nemanja Gudelj,Dani,Mister,0.30192,3.0,98.0,17.0,,,,,,,2026-05-07,b31c97a463c3b9c0f2532cf7f214c0b1
 marks,start_mercado,,,,,,,,,,,,,,,2026-05-07,
-transfer,mercado,,Nemanja Gudelj,Dani,Mister,0.30192,3,98,17,,,,,,,2026-05-07,b31c97a463c3b9c0f2532cf7f214c0b1
-marks,start_mercado,,,,,,,,,,,,,,,2026-05-07,
-transfer,mercado,,Aarón Escandell,Dani,Mister,15.43043,1,187,1370,,,,,,,2026-05-07,5940875ecbfa67d968b944ea635d306e
+transfer,mercado,,Aarón Escandell,Dani,Mister,15.43043,1.0,187.0,1370.0,,,,,,,2026-05-07,5940875ecbfa67d968b944ea635d306e
 marks,start_mercado,,,,,,,,,,,,,,,2026-05-07,
 transfer,mercado,,Renato Veiga,Mister,Dani,4.09496,2.0,90.0,20.0,,,,,,,2026-05-06,c45711ecfe4d40ab5032e469b7bc4180
 transfer,Puja,,Renato Veiga,Mister,Maldinillo 💥,3.79876,2.0,90.0,20.0,,,,,,,2026-05-06,4e19ceff2b96b965c77f11c0c7093ad4
