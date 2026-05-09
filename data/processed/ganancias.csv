@@ -1,8 +1,11 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
-marks,start_mercado,,,,,,,,,,,,,,,2026-05-08,
-transfer,mercado,,Roony Bardghji,Mister,Dani,1.15328,4,58,3,,,,,,,2026-05-08,7e04afed5c733936b8ca65fae74be7b4
-transfer,mercado,,Gorka Guruzeta,Mister,Maldinillo 💥,6.05641,4,109,1,,,,,,,2026-05-08,5a3d1dd97563b7edff76ef33f26c500e
-transfer,Puja,,Gorka Guruzeta,Mister,Dani,6.00219,4,109,1,,,,,,,2026-05-08,d04992002764f2806031279883adc53c
+marks,start_jornada,,,,,,,,,,,,,,35.0,2026-05-09,
+marks,start_mercado,,,,,,,,,,,,,,,2026-05-09,
+transfer,acuerdo,,Isco,Los marinero,Dani,11.279,3,16,4,,,,,,,2026-05-09,d07f69c33b0f60063c9d0dd61f762f76
+marks,start_mercado,,,,,,,,,,,,,,,2026-05-09,
+transfer,mercado,,Roony Bardghji,Mister,Dani,1.15328,4.0,58.0,3.0,,,,,,,2026-05-08,7e04afed5c733936b8ca65fae74be7b4
+transfer,mercado,,Gorka Guruzeta,Mister,Maldinillo 💥,6.05641,4.0,109.0,1.0,,,,,,,2026-05-08,5a3d1dd97563b7edff76ef33f26c500e
+transfer,Puja,,Gorka Guruzeta,Mister,Dani,6.00219,4.0,109.0,1.0,,,,,,,2026-05-08,d04992002764f2806031279883adc53c
 marks,start_mercado,,,,,,,,,,,,,,,2026-05-08,
 transfer,mercado,,Mathew Ryan,Maldinillo 💥,Mister,11.14146,1.0,156.0,12.0,,,,,,,2026-05-07,36f784e5cc5eaeb80fb55360cfa325da
 marks,start_mercado,,,,,,,,,,,,,,,2026-05-07,

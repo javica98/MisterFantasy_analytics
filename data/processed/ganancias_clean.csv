@@ -1,5 +1,8 @@
 fecha,id,type,subtype,equipo,ganancias,jugador,compra-venta,equipoLiga
-2026-05-08,0,marks,start_mercado,Mercado diario,0.0,,,
+2026-05-09,0,marks,start_jornada,35.0,0.0,,,
+2026-05-09,0,transfer,acuerdo,Los marinero,11.279,Isco,venta,4.0
+2026-05-09,0,transfer,acuerdo,Dani,-11.279,Isco,compra,4.0
+2026-05-09,0,marks,start_mercado,Mercado diario,0.0,,,
 2026-05-08,0,transfer,mercado,Dani,-1.15328,Roony Bardghji,compra,3.0
 2026-05-08,0,transfer,mercado,Maldinillo 💥,-6.05641,Gorka Guruzeta,compra,1.0
 2026-05-08,0,transfer,Puja,Dani,0.0,Gorka Guruzeta,compra,1.0
