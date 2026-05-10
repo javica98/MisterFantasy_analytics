@@ -1,7 +1,9 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
-marks,start_jornada,,,,,,,,,,,,,,35.0,2026-05-09,
-marks,start_mercado,,,,,,,,,,,,,,,2026-05-09,
-transfer,acuerdo,,Isco,Los marinero,Dani,11.279,3,16,4,,,,,,,2026-05-09,d07f69c33b0f60063c9d0dd61f762f76
+marks,start_mercado,,,,,,,,,,,,,,,2026-05-10,
+transfer,mercado,,Antonio Blanco,Dani,Mister,10.63429,3,144,48,,,,,,,2026-05-10,e830ebe4ce2f6dd018422f645b9a23b6
+marks,start_jornada,,,,,,,,,,,,,,35.0,2026-05-10,
+marks,start_mercado,,,,,,,,,,,,,,,2026-05-10,
+transfer,acuerdo,,Isco,Los marinero,Dani,11.279,3.0,16.0,4.0,,,,,,,2026-05-09,d07f69c33b0f60063c9d0dd61f762f76
 marks,start_mercado,,,,,,,,,,,,,,,2026-05-09,
 transfer,mercado,,Roony Bardghji,Mister,Dani,1.15328,4.0,58.0,3.0,,,,,,,2026-05-08,7e04afed5c733936b8ca65fae74be7b4
 transfer,mercado,,Gorka Guruzeta,Mister,Maldinillo 💥,6.05641,4.0,109.0,1.0,,,,,,,2026-05-08,5a3d1dd97563b7edff76ef33f26c500e
