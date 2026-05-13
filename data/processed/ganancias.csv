@@ -1,30 +1,38 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
-bonificacion,quiniela,,,,,,,,,De la Guettir FC,0.7,1º,,,,2026-05-12,
-bonificacion,quiniela,,,,,,,,,Dani,0.4,2º,,,,2026-05-12,
-bonificacion,quiniela,,,,,,,,,Maldinillo 💥,0.3,3º,,,,2026-05-12,
-bonificacion,quiniela,,,,,,,,,Chamacónicos,,4º,,,,2026-05-12,
-bonificacion,quiniela,,,,,,,,,Jotabetrbb,,5º,,,,2026-05-12,
-bonificacion,quiniela,,,,,,,,,Juanba,,6º,,,,2026-05-12,
-bonificacion,quiniela,,,,,,,,,Libre,,7º,,,,2026-05-12,
-bonificacion,quiniela,,,,,,,,,Los marinero,,8º,,,,2026-05-12,
-bonificacion,quiniela,,,,,,,,,MuchaSalsa,,9º,,,,2026-05-12,
-bonificacion,clasificacion,,,,,,,,,Maldinillo 💥,1.61,1,,,,2026-05-12,
-bonificacion,clasificacion,,,,,,,,,Dani,1.87,2,,,,2026-05-12,
-bonificacion,clasificacion,,,,,,,,,Los marinero,1.59,3,,,,2026-05-12,
-bonificacion,clasificacion,,,,,,,,,De la Guettir FC,1.83,4,,,,2026-05-12,
-bonificacion,clasificacion,,,,,,,,,Jotabetrbb,1.64,5,,,,2026-05-12,
-bonificacion,clasificacion,,,,,,,,,Chamacónicos,1.93,6,,,,2026-05-12,
-bonificacion,clasificacion,,,,,,,,,Juanba,1.93,7,,,,2026-05-12,
-bonificacion,clasificacion,,,,,,,,,Libre,2.21,8,,,,2026-05-12,
-bonificacion,clasificacion,,,,,,,,,MuchaSalsa,1.98,9,,,,2026-05-12,
+marks,start_mercado,,,,,,,,,,,,,,,2026-05-13,
+transfer,mercado,,Odysseas Vlachodimos,Mister,Dani,3.75081,1,131,17,,,,,,,2026-05-13,d2cc5d1611153ced2bbbaa46f5f2c2ec
+transfer,Puja,,Odysseas Vlachodimos,Mister,Maldinillo 💥,3.67959,1,131,17,,,,,,,2026-05-13,ea20e50e0fc8abea863d7d6912c52bc0
+marks,start_mercado,,,,,,,,,,,,,,,2026-05-13,
+transfer,clausula,,Carlos Espí,Maldinillo 💥,Dani,14.459535,4,118,12,,,,,,,2026-05-13,20653784f9cf52bd1d6323bbebf5f223
+marks,start_jornada,,,,,,,,,,,,,,36.0,2026-05-13,
+marks,start_mercado,,,,,,,,,,,,,,,2026-05-13,
+transfer,mercado,,Nico Williams,Dani,Mister,12.00568,4,116,1,,,,,,,2026-05-13,57ec257cabe3ce294afa9413bbf2ddef
+bonificacion,quiniela,,,,,,,,,De la Guettir FC,0.7,1º,,,,2026-05-13,
+bonificacion,quiniela,,,,,,,,,Dani,0.4,2º,,,,2026-05-13,
+bonificacion,quiniela,,,,,,,,,Maldinillo 💥,0.3,3º,,,,2026-05-13,
+bonificacion,quiniela,,,,,,,,,Chamacónicos,,4º,,,,2026-05-13,
+bonificacion,quiniela,,,,,,,,,Jotabetrbb,,5º,,,,2026-05-13,
+bonificacion,quiniela,,,,,,,,,Juanba,,6º,,,,2026-05-13,
+bonificacion,quiniela,,,,,,,,,Libre,,7º,,,,2026-05-13,
+bonificacion,quiniela,,,,,,,,,Los marinero,,8º,,,,2026-05-13,
+bonificacion,quiniela,,,,,,,,,MuchaSalsa,,9º,,,,2026-05-13,
+bonificacion,clasificacion,,,,,,,,,Maldinillo 💥,1.61,1,,,,2026-05-13,
+bonificacion,clasificacion,,,,,,,,,Dani,1.87,2,,,,2026-05-13,
+bonificacion,clasificacion,,,,,,,,,Los marinero,1.59,3,,,,2026-05-13,
+bonificacion,clasificacion,,,,,,,,,De la Guettir FC,1.83,4,,,,2026-05-13,
+bonificacion,clasificacion,,,,,,,,,Jotabetrbb,1.64,5,,,,2026-05-13,
+bonificacion,clasificacion,,,,,,,,,Chamacónicos,1.93,6,,,,2026-05-13,
+bonificacion,clasificacion,,,,,,,,,Juanba,1.93,7,,,,2026-05-13,
+bonificacion,clasificacion,,,,,,,,,Libre,2.21,8,,,,2026-05-13,
+bonificacion,clasificacion,,,,,,,,,MuchaSalsa,1.98,9,,,,2026-05-13,
+marks,start_mercado,,,,,,,,,,,,,,,2026-05-13,
+transfer,mercado,,Isco,Dani,Mister,11.75616,3.0,18.0,4.0,,,,,,,2026-05-12,f1c99bf9671a63a7af2b0f09bdbd1a0f
 marks,start_mercado,,,,,,,,,,,,,,,2026-05-12,
-transfer,mercado,,Isco,Dani,Mister,11.75616,3,18,4,,,,,,,2026-05-12,f1c99bf9671a63a7af2b0f09bdbd1a0f
+transfer,clausula,,Renato Veiga,Dani,Maldinillo 💥,6.6465,2.0,95.0,20.0,,,,,,,2026-05-12,4322537ceda8c52b723602a541ad5e48
 marks,start_mercado,,,,,,,,,,,,,,,2026-05-12,
-transfer,clausula,,Renato Veiga,Dani,Maldinillo 💥,6.6465,2,95,20,,,,,,,2026-05-12,4322537ceda8c52b723602a541ad5e48
+transfer,clausula,,Brahim Díaz,Maldinillo 💥,Dani,8.556165,3.0,66.0,15.0,,,,,,,2026-05-12,686bf1835a758c20cd21394fda74c111
 marks,start_mercado,,,,,,,,,,,,,,,2026-05-12,
-transfer,clausula,,Brahim Díaz,Maldinillo 💥,Dani,8.556165,3,66,15,,,,,,,2026-05-12,686bf1835a758c20cd21394fda74c111
-marks,start_mercado,,,,,,,,,,,,,,,2026-05-12,
-transfer,mercado,,Fede Valverde,Maldinillo 💥,Mister,21.15225,3,156,15,,,,,,,2026-05-12,e9074706b452018ddfe73213c2ba6b68
+transfer,mercado,,Fede Valverde,Maldinillo 💥,Mister,21.15225,3.0,156.0,15.0,,,,,,,2026-05-12,e9074706b452018ddfe73213c2ba6b68
 marks,start_mercado,,,,,,,,,,,,,,,2026-05-12,
 transfer,mercado,,Antonio Blanco,Dani,Mister,10.63429,3.0,144.0,48.0,,,,,,,2026-05-10,e830ebe4ce2f6dd018422f645b9a23b6
 marks,start_jornada,,,,,,,,,,,,,,35.0,2026-05-10,
