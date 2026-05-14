@@ -1,12 +1,38 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
+marks,start_mercado,,,,,,,,,,,,,,,2026-05-14,
+transfer,mercado,,Thiago Fernández,Dani,Mister,1.20959,3,56,1370,,,,,,,2026-05-14,4521be544fa6d3e4960a7bb0cb88c2c7
+marks,start_mercado,,,,,,,,,,,,,,,2026-05-14,
+transfer,mercado,,Roony Bardghji,Dani,Mister,1.22317,4,58,3,,,,,,,2026-05-14,de69cc9af7bc9ed31f8198ce66c4557c
+marks,start_mercado,,,,,,,,,,,,,,,2026-05-14,
+transfer,clausula,,Brahim Díaz,Dani,Jotabetrbb,12.834247,3,66,15,,,,,,,2026-05-14,b0d3af503a360339bb0d08bf4a854624
+marks,start_mercado,,,,,,,,,,,,,,,2026-05-14,
+transfer,mercado,,Frenkie De Jong,Maldinillo 💥,Mister,15.8496,3,126,3,,,,,,,2026-05-14,4d6dcdd14a4c61726e659078b0e8535c
+marks,start_mercado,,,,,,,,,,,,,,,2026-05-14,
+transfer,mercado,,Dean Huijsen,Maldinillo 💥,Mister,10.98972,2,89,15,,,,,,,2026-05-14,02c4d7fdd32bc67d582bf7d264e62b11
+marks,start_mercado,,,,,,,,,,,,,,,2026-05-14,
+transfer,mercado,,Sergi Cardona,Mister,Dani,1.55111,2,96,20,,,,,,,2026-05-14,198e171746f3d8fbf6080b79732cfa28
+transfer,mercado,,Alemão,Mister,Dani,0.66759,4,67,14,,,,,,,2026-05-14,fb87c15e57bed16130cfc485b02d43de
+transfer,mercado,,Matteo Ruggeri,Mister,Dani,0.32084,2,71,2,,,,,,,2026-05-14,fb7847c03ba238ce9c1dcfeba9891e36
+transfer,mercado,,Sergi Darder,Mister,Maldinillo 💥,12.44662,3,143,408,,,,,,,2026-05-14,f35d7259e0fd85a44f3d6ded58a7ba0f
+transfer,Puja,,Sergi Darder,Mister,Dani,10.73076,3,143,408,,,,,,,2026-05-14,d2f11762549452c3babc31c823bc270b
+marks,start_mercado,,,,,,,,,,,,,,,2026-05-14,
+transfer,clausula,,Hector Fort,Los marinero,Dani,1.041,2,61,23,,,,,,,2026-05-14,08e45d734387074cb85b761c52b3230e
+marks,start_mercado,,,,,,,,,,,,,,,2026-05-14,
+transfer,mercado,,Johan Mojica,Dani,Mister,2.28866,2,111,408,,,,,,,2026-05-14,c64dc119e599680ba0e7083c176d5d2b
+marks,start_mercado,,,,,,,,,,,,,,,2026-05-14,
+transfer,clausula,,Antoine Griezmann,Jotabetrbb,Maldinillo 💥,17.532,4,146,2,,,,,,,2026-05-14,862ab9758a0e29e13755e531091add3d
+marks,start_mercado,,,,,,,,,,,,,,,2026-05-14,
+transfer,mercado,,Álvaro Valles,Maldinillo 💥,Mister,4.4814,1,111,4,,,,,,,2026-05-14,f23b76c847e576b4641caab3440f5a4c
+marks,start_mercado,,,,,,,,,,,,,,,2026-05-14,
+transfer,mercado,,Alberto Moleiro,Maldinillo 💥,Mister,16.08776,3,189,20,,,,,,,2026-05-14,8d4d85bc8d839494b99f0287b488e6a4
+marks,start_mercado,,,,,,,,,,,,,,,2026-05-14,
+transfer,mercado,,Odysseas Vlachodimos,Mister,Dani,3.75081,1.0,131.0,17.0,,,,,,,2026-05-13,d2cc5d1611153ced2bbbaa46f5f2c2ec
+transfer,Puja,,Odysseas Vlachodimos,Mister,Maldinillo 💥,3.67959,1.0,131.0,17.0,,,,,,,2026-05-13,ea20e50e0fc8abea863d7d6912c52bc0
 marks,start_mercado,,,,,,,,,,,,,,,2026-05-13,
-transfer,mercado,,Odysseas Vlachodimos,Mister,Dani,3.75081,1,131,17,,,,,,,2026-05-13,d2cc5d1611153ced2bbbaa46f5f2c2ec
-transfer,Puja,,Odysseas Vlachodimos,Mister,Maldinillo 💥,3.67959,1,131,17,,,,,,,2026-05-13,ea20e50e0fc8abea863d7d6912c52bc0
-marks,start_mercado,,,,,,,,,,,,,,,2026-05-13,
-transfer,clausula,,Carlos Espí,Maldinillo 💥,Dani,14.459535,4,118,12,,,,,,,2026-05-13,20653784f9cf52bd1d6323bbebf5f223
+transfer,clausula,,Carlos Espí,Maldinillo 💥,Dani,14.459535,4.0,118.0,12.0,,,,,,,2026-05-13,20653784f9cf52bd1d6323bbebf5f223
 marks,start_jornada,,,,,,,,,,,,,,36.0,2026-05-13,
 marks,start_mercado,,,,,,,,,,,,,,,2026-05-13,
-transfer,mercado,,Nico Williams,Dani,Mister,12.00568,4,116,1,,,,,,,2026-05-13,57ec257cabe3ce294afa9413bbf2ddef
+transfer,mercado,,Nico Williams,Dani,Mister,12.00568,4.0,116.0,1.0,,,,,,,2026-05-13,57ec257cabe3ce294afa9413bbf2ddef
 bonificacion,quiniela,,,,,,,,,De la Guettir FC,0.7,1º,,,,2026-05-13,
 bonificacion,quiniela,,,,,,,,,Dani,0.4,2º,,,,2026-05-13,
 bonificacion,quiniela,,,,,,,,,Maldinillo 💥,0.3,3º,,,,2026-05-13,
