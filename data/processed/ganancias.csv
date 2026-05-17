@@ -1,9 +1,26 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
-marks,start_mercado,,,,,,,,,,,,,,,2026-05-16,
-transfer,mercado,,Toni Martínez,Mister,Maldinillo 💥,20.18336,4,187,48,,,,,,,2026-05-16,e2a225bac1060fbfaf9668664ed6459e
-transfer,Puja,,Toni Martínez,Mister,Dani,18.04577,4,187,48,,,,,,,2026-05-16,53dee1024351df6b01a67962cc5ad8a2
-transfer,mercado,,David Affengruber,Mister,Maldinillo 💥,15.41373,2,128,23,,,,,,,2026-05-16,d8a905f7be392d2574dcc26eeb468186
-transfer,Puja,,David Affengruber,Mister,Dani,14.54157,2,128,23,,,,,,,2026-05-16,401e38f0394efb068b871f1b9f5742f9
+marks,start_mercado,,,,,,,,,,,,,,,2026-05-17,
+transfer,mercado,,Fermín López,Los marinero,Mister,20.726,3,189,3,,,,,,,2026-05-17,e5daf08b85b5da1202c21e77572aaa6a
+marks,start_mercado,,,,,,,,,,,,,,,2026-05-17,
+transfer,mercado,,Aarón Escandell,Mister,Dani,15.24492,1,200,1370,,,,,,,2026-05-17,5bbd016bcbde7367607c41ba186958d0
+transfer,mercado,,Pepelu,Mister,Dani,4.51147,3,101,19,,,,,,,2026-05-17,95d1da86a8f44a0d79fc3e6c31b44cb0
+marks,start_mercado,,,,,,,,,,,,,,,2026-05-17,
+transfer,acuerdo,,Kylian Mbappé,Jotabetrbb,Dani,45.1531,4,230,15,,,,,,,2026-05-17,ea952846a73891f846e3145e67982da7
+marks,start_mercado,,,,,,,,,,,,,,,2026-05-17,
+transfer,clausula,,Kylian Mbappé,Chamacónicos,Jotabetrbb,87.6,4,230,15,,,,,,,2026-05-17,9ab8063b3116b7c82c863d0f7a5509e3
+marks,start_mercado,,,,,,,,,,,,,,,2026-05-17,
+transfer,clausula,,Ademola Lookman,Jotabetrbb,Los marinero,25.1895,4,38,2,,,,,,,2026-05-17,d9c394ec2828ed685893e82b26c2796e
+marks,start_mercado,,,,,,,,,,,,,,,2026-05-17,
+transfer,clausula,,Vinícius Júnior,Jotabetrbb,De la Guettir FC,47.132,4,206,15,,,,,,,2026-05-17,a5790119e2146133bdfc7013397e2b1f
+marks,start_mercado,,,,,,,,,,,,,,,2026-05-17,
+transfer,acuerdo,,Antoine Griezmann,Maldinillo 💥,Jotabetrbb,26.298,4,146,2,,,,,,,2026-05-17,63a0d68084a3eb5ba8e223d2e2ec5367
+marks,start_mercado,,,,,,,,,,,,,,,2026-05-17,
+transfer,mercado,,Renato Veiga,Maldinillo 💥,Mister,5.12171,2,98,20,,,,,,,2026-05-17,a0618beac9f667e68e31304ca0cf5e11
+marks,start_mercado,,,,,,,,,,,,,,,2026-05-17,
+transfer,mercado,,Toni Martínez,Mister,Maldinillo 💥,20.18336,4.0,187.0,48.0,,,,,,,2026-05-16,e2a225bac1060fbfaf9668664ed6459e
+transfer,Puja,,Toni Martínez,Mister,Dani,18.04577,4.0,187.0,48.0,,,,,,,2026-05-16,53dee1024351df6b01a67962cc5ad8a2
+transfer,mercado,,David Affengruber,Mister,Maldinillo 💥,15.41373,2.0,128.0,23.0,,,,,,,2026-05-16,d8a905f7be392d2574dcc26eeb468186
+transfer,Puja,,David Affengruber,Mister,Dani,14.54157,2.0,128.0,23.0,,,,,,,2026-05-16,401e38f0394efb068b871f1b9f5742f9
 bonificacion,quiniela,,,,,,,,,Dani,0.4,1º,,,,2026-05-16,
 bonificacion,quiniela,,,,,,,,,De la Guettir FC,0.4,2º,,,,2026-05-16,
 bonificacion,quiniela,,,,,,,,,Maldinillo 💥,0.3,3º,,,,2026-05-16,
