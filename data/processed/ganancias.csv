@@ -1,6 +1,18 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
-marks,start_mercado,,,,,,,,,,,,,,,2026-05-21,
-transfer,mercado,,Hector Fort,Dani,Mister,1.026,2,61,23,,,,,,,2026-05-21,dbae596fcf7b569d581667494ddf8699
+marks,start_mercado,,,,,,,,,,,,,,,2026-05-22,
+transfer,mercado,,Zaid Romero,Maldinillo 💥,Mister,2.647,2,62,9,,,,,,,2026-05-22,2833521a6698290225a6c39a468b6329
+marks,start_mercado,,,,,,,,,,,,,,,2026-05-22,
+transfer,mercado,,Aimar Oroz,Dani,Mister,3.52363,3,103,50,,,,,,,2026-05-22,a5287302f7095cb302b8068989805bac
+marks,start_mercado,,,,,,,,,,,,,,,2026-05-22,
+transfer,mercado,,Raphinha,Mister,Maldinillo 💥,37.480569,4,178,3,,,,,,,2026-05-22,e561cbb7cef3e5f959122f6866365415
+marks,start_mercado,,,,,,,,,,,,,,,2026-05-22,
+transfer,mercado,,Marcus Rashford,Maldinillo 💥,Mister,16.30342,4,174,3,,,,,,,2026-05-22,2e523d2049004b7cc03cfe1dfb0bec22
+marks,start_mercado,,,,,,,,,,,,,,,2026-05-22,
+transfer,mercado,,Gerard Moreno,Maldinillo 💥,Mister,17.10176,4,146,20,,,,,,,2026-05-22,a2ef60dfedb1092a4eb4f47fd74cf970
+marks,start_mercado,,,,,,,,,,,,,,,2026-05-22,
+transfer,clausula,,Javi Rodríguez,Los marinero,Dani,3.47,2,106,5,,,,,,,2026-05-22,6495ffe63b418e05eb1672ede78d47ea
+marks,start_mercado,,,,,,,,,,,,,,,2026-05-22,
+transfer,mercado,,Hector Fort,Dani,Mister,1.026,2.0,61.0,23.0,,,,,,,2026-05-21,dbae596fcf7b569d581667494ddf8699
 marks,start_mercado,,,,,,,,,,,,,,,2026-05-21,
 transfer,mercado,,Mikel Oyarzabal,Dani,Mister,21.23264,4.0,202.0,16.0,,,,,,,2026-05-20,72c3bf2c24607ef48bf6fd4036dbe72d
 marks,start_mercado,,,,,,,,,,,,,,,2026-05-20,
