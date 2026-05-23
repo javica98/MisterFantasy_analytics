@@ -1,16 +1,20 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
+marks,start_mercado,,,,,,,,,,,,,,,2026-05-23,
+transfer,mercado,,Pedro Díaz,Maldinillo 💥,Mister,0.204,3,86,14,,,,,,,2026-05-23,4d2a5e078095509dcd0f67de1e8fec13
+marks,start_mercado,,,,,,,,,,,,,,,2026-05-23,
+transfer,mercado,,Arnau Tenas,Mister,Dani,9.426302,1,39,20,,,,,,,2026-05-23,429fffae224ebcc4acd647589ff94337
+marks,start_mercado,,,,,,,,,,,,,,,2026-05-23,
+transfer,mercado,,Zaid Romero,Maldinillo 💥,Mister,2.647,2.0,62.0,9.0,,,,,,,2026-05-22,2833521a6698290225a6c39a468b6329
 marks,start_mercado,,,,,,,,,,,,,,,2026-05-22,
-transfer,mercado,,Zaid Romero,Maldinillo 💥,Mister,2.647,2,62,9,,,,,,,2026-05-22,2833521a6698290225a6c39a468b6329
+transfer,mercado,,Aimar Oroz,Dani,Mister,3.52363,3.0,103.0,50.0,,,,,,,2026-05-22,a5287302f7095cb302b8068989805bac
 marks,start_mercado,,,,,,,,,,,,,,,2026-05-22,
-transfer,mercado,,Aimar Oroz,Dani,Mister,3.52363,3,103,50,,,,,,,2026-05-22,a5287302f7095cb302b8068989805bac
+transfer,mercado,,Raphinha,Mister,Maldinillo 💥,37.480569,4.0,178.0,3.0,,,,,,,2026-05-22,e561cbb7cef3e5f959122f6866365415
 marks,start_mercado,,,,,,,,,,,,,,,2026-05-22,
-transfer,mercado,,Raphinha,Mister,Maldinillo 💥,37.480569,4,178,3,,,,,,,2026-05-22,e561cbb7cef3e5f959122f6866365415
+transfer,mercado,,Marcus Rashford,Maldinillo 💥,Mister,16.30342,4.0,174.0,3.0,,,,,,,2026-05-22,2e523d2049004b7cc03cfe1dfb0bec22
 marks,start_mercado,,,,,,,,,,,,,,,2026-05-22,
-transfer,mercado,,Marcus Rashford,Maldinillo 💥,Mister,16.30342,4,174,3,,,,,,,2026-05-22,2e523d2049004b7cc03cfe1dfb0bec22
+transfer,mercado,,Gerard Moreno,Maldinillo 💥,Mister,17.10176,4.0,146.0,20.0,,,,,,,2026-05-22,a2ef60dfedb1092a4eb4f47fd74cf970
 marks,start_mercado,,,,,,,,,,,,,,,2026-05-22,
-transfer,mercado,,Gerard Moreno,Maldinillo 💥,Mister,17.10176,4,146,20,,,,,,,2026-05-22,a2ef60dfedb1092a4eb4f47fd74cf970
-marks,start_mercado,,,,,,,,,,,,,,,2026-05-22,
-transfer,clausula,,Javi Rodríguez,Los marinero,Dani,3.47,2,106,5,,,,,,,2026-05-22,6495ffe63b418e05eb1672ede78d47ea
+transfer,clausula,,Javi Rodríguez,Los marinero,Dani,3.47,2.0,106.0,5.0,,,,,,,2026-05-22,6495ffe63b418e05eb1672ede78d47ea
 marks,start_mercado,,,,,,,,,,,,,,,2026-05-22,
 transfer,mercado,,Hector Fort,Dani,Mister,1.026,2.0,61.0,23.0,,,,,,,2026-05-21,dbae596fcf7b569d581667494ddf8699
 marks,start_mercado,,,,,,,,,,,,,,,2026-05-21,
