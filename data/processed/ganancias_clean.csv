@@ -1,4 +1,9 @@
 fecha,id,type,subtype,equipo,jugador,compra-venta,equipoLiga,ganancias
+2026-05-24,0,transfer,clausula,Maldinillo 💥,Raphinha,venta,3.0,56.220853
+2026-05-24,0,transfer,clausula,Jotabetrbb,Raphinha,compra,3.0,-56.220853
+2026-05-24,0,transfer,clausula,Jotabetrbb,Kylian Mbappé,venta,15.0,131.4
+2026-05-24,0,transfer,clausula,MuchaSalsa,Kylian Mbappé,compra,15.0,-131.4
+2026-05-24,0,marks,start_jornada,38.0,,,,0.0
 2026-05-23,0,transfer,mercado,Maldinillo 💥,Pedro Díaz,venta,14.0,0.204
 2026-05-23,0,marks,start_mercado,Mercado diario,,,,0.0
 2026-05-23,0,transfer,mercado,Dani,Arnau Tenas,compra,20.0,-9.426302

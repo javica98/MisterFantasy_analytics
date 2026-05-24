@@ -1,8 +1,13 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
+marks,start_mercado,,,,,,,,,,,,,,,2026-05-24,
+transfer,clausula,,Raphinha,Maldinillo 💥,Jotabetrbb,56.220853,4,178,3,,,,,,,2026-05-24,4235496c242d2638c725cd3e97556298
+marks,start_mercado,,,,,,,,,,,,,,,2026-05-24,
+transfer,clausula,,Kylian Mbappé,Jotabetrbb,MuchaSalsa,131.4,4,238,15,,,,,,,2026-05-24,a456111bc1f8fede1eeabd5fc6fb6614
+marks,start_jornada,,,,,,,,,,,,,,38.0,2026-05-24,
+marks,start_mercado,,,,,,,,,,,,,,,2026-05-24,
+transfer,mercado,,Pedro Díaz,Maldinillo 💥,Mister,0.204,3.0,86.0,14.0,,,,,,,2026-05-23,4d2a5e078095509dcd0f67de1e8fec13
 marks,start_mercado,,,,,,,,,,,,,,,2026-05-23,
-transfer,mercado,,Pedro Díaz,Maldinillo 💥,Mister,0.204,3,86,14,,,,,,,2026-05-23,4d2a5e078095509dcd0f67de1e8fec13
-marks,start_mercado,,,,,,,,,,,,,,,2026-05-23,
-transfer,mercado,,Arnau Tenas,Mister,Dani,9.426302,1,39,20,,,,,,,2026-05-23,429fffae224ebcc4acd647589ff94337
+transfer,mercado,,Arnau Tenas,Mister,Dani,9.426302,1.0,39.0,20.0,,,,,,,2026-05-23,429fffae224ebcc4acd647589ff94337
 marks,start_mercado,,,,,,,,,,,,,,,2026-05-23,
 transfer,mercado,,Zaid Romero,Maldinillo 💥,Mister,2.647,2.0,62.0,9.0,,,,,,,2026-05-22,2833521a6698290225a6c39a468b6329
 marks,start_mercado,,,,,,,,,,,,,,,2026-05-22,
