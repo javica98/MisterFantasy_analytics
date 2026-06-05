@@ -1,32 +1,20 @@
-import sys
-import pandas as pd
 import logging
-
-from pathlib import Path
-import os, sys
-
-# --- 🔧 Ajuste de ruta raíz del proyecto ---
-import sys
 import os
+import sys
 from pathlib import Path
 
-# --- 🔧 Ajuste del entorno de ejecución ---
-# Detectar raíz del proyecto automáticamente
+import pandas as pd
+
+# ── Ajuste de entorno ─────────────────────────────────────────────────────────
 CURRENT_FILE = Path(__file__).resolve()
-ROOT_DIR = CURRENT_FILE.parent.parent  # sube desde /scripts hasta la raíz
+ROOT_DIR = CURRENT_FILE.parent.parent
 SRC_DIR = ROOT_DIR / "src"
 
-# Asegurar que la raíz y src están en el sys.path
 for p in (ROOT_DIR, SRC_DIR):
     if str(p) not in sys.path:
         sys.path.insert(0, str(p))
 
-# Cambiar el directorio de trabajo a la raíz del proyecto
 os.chdir(ROOT_DIR)
-
-print("📂 Directorio raíz:", ROOT_DIR)
-print("📁 SRC añadido:", SRC_DIR)
-print("📁 sys.path[0]:", sys.path[0])
 
 from src.preprocessing.process_ganancias import procesar_ganancias
 from src.preprocessing.process_ganancias_jugador import procesar_ganancias_jugador
@@ -73,36 +61,33 @@ CSV_NOTIFICACIONES_CLEAN = cfg["paths"]["csv"]["notificaciones_clean"]
 CSV_NOTIFICACIONES_JUGADOR = cfg["paths"]["csv"]["notificaciones_jugador"]
 CSV_NOTIFICACIONES_CLAUSULA_ACUERDO = cfg["paths"]["csv"]["clausulas_acuerdos"]
 # --- 1. CLEAN ---
-logger.info("Limpiando Notificaciones")
+logger.info("Limpiando y estandarizando ganancias...")
 csv_notificaciones = safe_read_csv(CSV_NOTIFICACIONES)
 if csv_notificaciones is None:
-    logger.warning("⏭️ Saltando sección de notificaciones (no hay CSV disponible).")
+    logger.warning("⏭️ Saltando limpieza de ganancias (CSV no disponible).")
 else:
     csv_notificaciones_clean = procesar_ganancias(csv_notificaciones)
-    logger.info("✅ Notificaciones limpias.")
     safe_save_csv(csv_notificaciones_clean, CSV_NOTIFICACIONES_CLEAN)
-    logger.info("✅ Notificaciones limpias guardadas.")
+    logger.info("✅ Ganancias limpias guardadas en %s (%d filas).", CSV_NOTIFICACIONES_CLEAN, len(csv_notificaciones_clean))
 
 # --- 2. JUGADOR ---
-logger.info("Creando _jugador")
-csv_notificaciones = safe_read_csv(CSV_NOTIFICACIONES_CLEAN)
-if csv_notificaciones is None:
-    logger.warning("⏭️ Saltando sección de notificaciones (no hay CSV disponible).")
+logger.info("Calculando ganancias netas por jugador (Diff compra/venta)...")
+csv_notificaciones_clean = safe_read_csv(CSV_NOTIFICACIONES_CLEAN)
+if csv_notificaciones_clean is None:
+    logger.warning("⏭️ Saltando cálculo por jugador (ganancias_clean.csv no disponible).")
 else:
-    csv_clean = procesar_ganancias_jugador(csv_notificaciones)
-    logger.info("✅ Notificaciones limpias.")
-    safe_save_csv(csv_clean, CSV_NOTIFICACIONES_JUGADOR)
-    logger.info("✅ Notificaciones limpias guardadas.")  
+    csv_jugador = procesar_ganancias_jugador(csv_notificaciones_clean)
+    safe_save_csv(csv_jugador, CSV_NOTIFICACIONES_JUGADOR)
+    logger.info("✅ Ganancias por jugador guardadas en %s (%d filas).", CSV_NOTIFICACIONES_JUGADOR, len(csv_jugador))
 
 # --- 3. CLAUSULAS ---
-logger.info("Creando clausulas")
+logger.info("Extrayendo cláusulas y acuerdos...")
 csv_notificaciones = safe_read_csv(CSV_NOTIFICACIONES)
 if csv_notificaciones is None:
-    logger.warning("⏭️ Saltando sección de notificaciones (no hay CSV disponible).")
+    logger.warning("⏭️ Saltando extracción de cláusulas (ganancias.csv no disponible).")
 else:
-    csv_clean = procesar_clausulas_acuerdos(csv_notificaciones)
-    logger.info("✅ Notificaciones limpias.")
-    safe_save_csv(csv_clean, CSV_NOTIFICACIONES_CLAUSULA_ACUERDO)
-    logger.info("✅ Notificaciones limpias guardadas.")        
+    csv_clausulas = procesar_clausulas_acuerdos(csv_notificaciones)
+    safe_save_csv(csv_clausulas, CSV_NOTIFICACIONES_CLAUSULA_ACUERDO)
+    logger.info("✅ Cláusulas y acuerdos guardados en %s (%d filas).", CSV_NOTIFICACIONES_CLAUSULA_ACUERDO, len(csv_clausulas))
 
 

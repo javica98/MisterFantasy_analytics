@@ -1,41 +1,30 @@
-from datetime import datetime
-import sys
-import pandas as pd
 import logging
-
-from pydantic import ValidationError
-# --- 🔧 Ajuste de ruta raíz del proyecto ---
-import sys
 import os
+import sys
+from datetime import datetime
 from pathlib import Path
 
-# --- 🔧 Ajuste del entorno de ejecución ---
-# Detectar raíz del proyecto automáticamente
+import pandas as pd
+
+# ── Ajuste de entorno ─────────────────────────────────────────────────────────
 CURRENT_FILE = Path(__file__).resolve()
-ROOT_DIR = CURRENT_FILE.parent.parent  # sube desde /scripts hasta la raíz
+ROOT_DIR = CURRENT_FILE.parent.parent
 SRC_DIR = ROOT_DIR / "src"
 
-# Asegurar que la raíz y src están en el sys.path
 for p in (ROOT_DIR, SRC_DIR):
     if str(p) not in sys.path:
         sys.path.insert(0, str(p))
 
-# Cambiar el directorio de trabajo a la raíz del proyecto
 os.chdir(ROOT_DIR)
-
-print("📂 Directorio raíz:", ROOT_DIR)
-print("📁 SRC añadido:", SRC_DIR)
-print("📁 sys.path[0]:", sys.path[0])
 
 
 from src.AI_newspaper.generate_json import generate_json
 from src.AI_newspaper.generate_prompt import generate_prompts,build_final_prompt
-from src.AI_newspaper.generate_article import generate_articles
 from src.AI_newspaper.generate_pdf import create_pdf
-
-
-
-from src.AI_newspaper.SchemeValidator import FinalJSON
+from src.agents.orchestrator_agent import run_orchestrator
+from src.memory.embedding_store import build_memory_query, rebuild_embedding_index
+from src.memory.memory_builder import build_memories
+from src.memory.memory_store import DEFAULT_MEMORY_PATH, format_memory_context, retrieve_relevant_memories, upsert_memories
 # --- Cargar configuración ---
 from src.utils.config_loader import load_config
 from src.utils.data_utils import normalize_date_column
@@ -58,6 +47,7 @@ logging.basicConfig(
     ]
 )
 logger = logging.getLogger(__name__)
+logger.debug("Directorio raíz: %s", ROOT_DIR)
 
 # --- Asegurar directorios base ---
 os.makedirs(cfg["data"]["raw_dir"], exist_ok=True)
@@ -123,28 +113,58 @@ if (json_new is None):
     logger.warning("⏭️ Saltando prompt .json no existe.")
 else:
     prompt_json = generate_prompts(json_new)
-    commun_prompt_json = build_final_prompt(prompt_json["bloques"],json_new)
+    memory_query = build_memory_query(json_new)
+    relevant_memories = retrieve_relevant_memories(memory_query, top_k=8)
+    memory_context = format_memory_context(relevant_memories)
+    logger.info("🧠 Memoria recuperada para el prompt: %s recuerdos.", len(relevant_memories))
+    commun_prompt_json = build_final_prompt(prompt_json["bloques"],json_new,memory_context)
     logger.info("✅ Prompt Json creado.")
     prompt_final_path = os.path.join(JSON_NEWS, f"news_prompt.txt")
     prompt_saved = safe_save_text(commun_prompt_json,prompt_final_path)
 
-# --- 3. Llamar Gemini y crear contenido---
+# --- 3. Orquestador: genera cards + descarga fotos de portada ---
 prompt_txt = safe_read_text(prompt_final_path)
-for _ in range(3):
-    logger.info("📡 Llamando a Gemini para generar los textos...")
-    texto_generado = generate_articles(prompt_txt)
-    try:
-        validated_data = FinalJSON(**texto_generado)
-        logger.info("🏁 Proceso de validación de esquema completados.")
-        break
-    except ValidationError:
-        logger.info("JSON inválido, reintentando...")
+
+# Determinar jugadores de portada (misma lógica que create_pdf)
+from src.AI_newspaper.generate_pdf import get_cards_by_tipo
+cards_preview = safe_read_json(json_final_path)  # usamos el json para preview
+# Leer prompt_json para obtener los bloques
+prompt_json_data = generate_prompts(json_new)
+fichajes_cards = [b for b in prompt_json_data["bloques"] if b["evento"] == "Fichaje destacado"]
+mvp_cards = [b for b in prompt_json_data["bloques"] if b["evento"] == "MVP de la jornada"]
+
+portada_fichajes = fichajes_cards[0] if fichajes_cards else mvp_cards[0] if mvp_cards else {"jugador": "", "equipo": ""}
+portada_jornada = mvp_cards[0] if mvp_cards else fichajes_cards[0] if fichajes_cards else {"jugador": "", "equipo": ""}
+
+path_foto_fichajes = os.path.join(NEWS_UTILS, "Portada_Fichajes.jpg")
+path_foto_jornada = os.path.join(NEWS_UTILS, "Portada_Jornada.jpg")
+
+logger.info("📡 Llamando al OrchestratorAgent...")
+texto_generado = run_orchestrator(
+    prompt=prompt_txt,
+    portada_fichajes=portada_fichajes,
+    portada_jornada=portada_jornada,
+    path_fichajes=path_foto_fichajes,
+    path_jornada=path_foto_jornada,
+)
+
+if texto_generado is None:
+    logger.error("❌ OrchestratorAgent no pudo generar cards válidas.")
+    sys.exit(1)
 
 logger.info("✅ Todo el contenido creado.")
 cards_json_path = os.path.join(JSON_NEWS, f"news_cards.json")
 json_weekly_path = os.path.join(JSON_NEWS, f"{fecha_hoy}_json.json")
 article = safe_save_json(texto_generado,cards_json_path)
 article = safe_save_json(texto_generado,json_weekly_path)
+
+# --- 3.1 Actualizar memoria historica para el futuro RAG ---
+memories = build_memories(json_new, texto_generado)
+changed_memories = upsert_memories(memories, DEFAULT_MEMORY_PATH)
+logger.info("🧠 Memoria actualizada: %s recuerdos (%s nuevos/actualizados).", len(memories), changed_memories)
+if changed_memories:
+    rebuild_embedding_index()
+    logger.info("🧠 Índice vectorial de memoria reconstruido.")
 
 #--- 4.Crear Pdf
 json= safe_read_json(json_final_path)
@@ -160,3 +180,5 @@ portada_jornada_path = os.path.join(IMG_NEWS, f"{fecha_hoy}_jornada_news.png")
 card_save = safe_save_png(portada_fichajes,portada_fichajes_path)
 card_save = safe_save_png(portada_jornada,portada_jornada_path)
 logger.info("🏁 Proceso de extracción completado sin errores.")
+
+

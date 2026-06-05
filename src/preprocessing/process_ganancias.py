@@ -1,4 +1,9 @@
+import logging
+
 import pandas as pd
+
+logger = logging.getLogger(__name__)
+
 
 def procesar_ganancias(df: pd.DataFrame) -> pd.DataFrame:
     """
@@ -12,10 +17,12 @@ def procesar_ganancias(df: pd.DataFrame) -> pd.DataFrame:
     """
 
     # Eliminar start_mercado seguido de transfer con de_equipo != 'Mister'
+    # Usamos iloc para acceder por posición, independientemente del índice del DataFrame.
+    df = df.reset_index(drop=True)  # garantizar índice 0..n-1 antes del bucle
     filas_a_eliminar = []
     for i in range(len(df) - 1):
-        fila_actual = df.loc[i]
-        fila_siguiente = df.loc[i + 1]
+        fila_actual = df.iloc[i]
+        fila_siguiente = df.iloc[i + 1]
         if (
             fila_actual["subtype"] == "start_mercado"
             and fila_siguiente["type"] == "transfer"
@@ -110,7 +117,7 @@ def procesar_ganancias(df: pd.DataFrame) -> pd.DataFrame:
                         "ganancias": -precio
                     })
             except Exception as e:
-                print(f"Error procesando fila de transferencia: {row}\n{e}")
+                logger.warning("Error procesando fila de transferencia: %s — %s", row.get("jugador"), e)
 
     df_limpio = pd.DataFrame(registros)
 

@@ -1,22 +1,82 @@
-import os
-from PIL import Image, ImageDraw, ImageFont
-import requests
-from bs4 import BeautifulSoup
-from io import BytesIO
-from src.utils.photo_utils import manager_photo
 import json
+import logging
+import os
+from io import BytesIO
 from urllib.parse import urljoin
 
-ZONES = {
-    "top_bar":    (0, 0, 1080, 150),
-    "main_left":  (0, 120, 760, 820),
-    "main_right": (760, 120, 1080, 820),
-    "bottom":     (0, 820, 1080, 1350),
-}
-#IMG_WIDTH = (1080/4)
-IMG_WIDTH = 1080
-IMG_HEIGHT = 1350
+import requests
+from bs4 import BeautifulSoup
+from PIL import Image, ImageDraw, ImageFont
 
+from src.agents.image_agent import run_image_agent
+from src.utils.photo_utils import manager_photo
+
+logger = logging.getLogger(__name__)
+
+IMG_WIDTH = 1080 
+IMG_HEIGHT = 1350
+def create_clasification_card_horizontal(clasificacion_json,PATH_UTILS,width,height,IMAGES_TEAMS_DIR,DEFAULT_TEAM_IMAGE,font="Oswald-Bold.otf"):
+    """
+    Devuelve una imagen RGBA transparente con la clasificación horizontal.
+    """
+    font_path = os.path.join(PATH_UTILS, font)
+    # --- 1. Ordenar por posición ---
+    equipos = sorted(
+        clasificacion_json.items(),
+        key=lambda x: x[1]["posicion"]
+    )
+
+    n = len(equipos)
+    col_w = width // n
+
+    # --- 2. Crear canvas ---
+    card = Image.new("RGBA", (width, height), (0, 0, 0, 100))
+    draw = ImageDraw.Draw(card)
+
+    # --- 3. Alturas internas ---
+    logo_h = int(height * 0.50)
+    pts_h = height - logo_h
+
+    # --- 4. Fuentes ---
+    font_pts = ImageFont.truetype(font_path, int(pts_h * 0.6))
+
+    for i, (team, data) in enumerate(equipos):
+        x = i * col_w
+
+        
+        # --- ESCUDO ---
+        logo_path=manager_photo(team, IMAGES_TEAMS_DIR, DEFAULT_TEAM_IMAGE)
+        logo = Image.open(logo_path).convert("RGBA")
+
+        target_h = int(logo_h * 0.8)
+        scale = target_h / logo.height
+        logo = logo.resize((int(logo.width * scale), target_h), Image.LANCZOS)
+
+        card.alpha_composite(
+            logo,
+            (
+                x + col_w // 2 - logo.width // 2,
+                logo_h // 2 - logo.height // 2
+            )
+        )
+
+        # --- PUNTOS ---
+        pts_text = str(data["puntos"])
+        bbox = font_pts.getbbox(pts_text)
+        w = bbox[2] - bbox[0]
+        h = bbox[3] - bbox[1]
+
+        draw.text(
+            (
+                x + col_w // 2 - w // 2,
+                logo_h + pts_h // 2 - h // 2
+            ),
+            pts_text,
+            font=font_pts,
+            fill="#ff751f"
+        )
+
+    return card
 def is_valid_photo(img_bytes: bytes, headers: dict) -> bool:
     # 1️⃣ Filtrar por Content-Type
     content_type = headers.get("Content-Type", "").lower()
@@ -32,8 +92,7 @@ def is_valid_photo(img_bytes: bytes, headers: dict) -> bool:
         return False
 
     return True
-
-def download_player_image(player, team, save_dir="player_images"):
+def download_player_image(tipo,player, team, save_dir="player_images"):
     """
     Busca y descarga la primera imagen válida del jugador.
     1) Intenta descargar directamente de Bing.
@@ -60,42 +119,33 @@ def download_player_image(player, team, save_dir="player_images"):
 
         try:
             data = json.loads(m_attr)
-            img_url = data.get("murl")      # URL de la página de origen
-            print(img_url)
+            img_url = data.get("murl")
+            logger.debug("Probando imagen: %s", img_url)
             # Descargar la imagen final
             resp = requests.get(img_url, headers=headers, timeout=10)
             if resp.status_code != 200:
                 continue
 
             image = Image.open(BytesIO(resp.content)).convert("RGB")
-            save_path = os.path.join(save_dir, f"{player.replace(' ', '_')}.jpg")
+            save_path = os.path.join(save_dir, f"Portada_"+tipo+".jpg")
             image.save(save_path, "JPEG", quality=95)
-            print(f"Imagen descargada en: {save_path}")
+            logger.info("Imagen descargada en: %s", save_path)
             return save_path
 
         except Exception as e:
-            print(f"Error procesando una imagen: {e}")
+            logger.warning("Error procesando imagen: %s", e)
             continue
 
-    print("No se encontró ninguna imagen válida.")
+    logger.warning("No se encontró ninguna imagen válida para %s", tipo)
     return ""
 def get_cards_by_tipo(data: dict, tipos: list[str]) -> list:
-    tipos = set(tipos)
+    tipos_normalizados = {t.lower() for t in tipos}
+    
     return [
         card
         for card in data.get("cards", [])
-        if card.get("tipo") in tipos
+        if (card.get("tipo") or "").lower() in tipos_normalizados
     ]
-def draw_text_with_outline(draw, position, text, font, fill="white", outline="black", outline_width=2):
-    x, y = position
-    # Dibujar contorno
-    for dx in range(-outline_width, outline_width+1):
-        for dy in range(-outline_width, outline_width+1):
-            if dx != 0 or dy != 0:
-                draw.text((x+dx, y+dy), text, font=font, fill=outline)
-    # Dibujar texto principal
-    draw.text((x, y), text, font=font, fill=fill)
-
 def paste_center_background(base_img: Image.Image, bg_path: str, opacity: float = 0.15):
     """
     Pega una imagen de fondo centrada verticalmente sobre base_img
@@ -126,7 +176,7 @@ def paste_center_background(base_img: Image.Image, bg_path: str, opacity: float 
     # Pegar
     base_img.alpha_composite(bg, (0, y))
     return base_img
-def draw_multiline_text(tipo,draw, text, x, y, font, max_width, measure_only=False, line_spacing=3, paragraph_spacing=0, fill="white", stroke_fill="black", stroke_width=2):
+def draw_multiline_text(tipo,draw, text, x, y, font, max_width, measure_only=False, line_spacing=3, paragraph_spacing=0, fill="#ff751f", stroke_fill="black", stroke_width=2,titulo=False):
     """
     Dibuja texto multilínea con ajuste de ancho, contorno y espaciado.
     - fill: color del texto
@@ -150,7 +200,7 @@ def draw_multiline_text(tipo,draw, text, x, y, font, max_width, measure_only=Fal
                 break
         line = " ".join(line_words)
         lines.append(line)
-    if ((tipo == "Portada") or (tipo == "Clasificacion")):
+    if ((tipo == "Portada") or (tipo == "Right_box") or titulo):
         for line in lines:
             if not measure_only:
                 draw.text((x, y), line, font=font, fill=fill, stroke_width=stroke_width, stroke_fill=stroke_fill)
@@ -165,56 +215,61 @@ def draw_multiline_text(tipo,draw, text, x, y, font, max_width, measure_only=Fal
             y += bbox[3] - bbox[1] + line_spacing
         y += paragraph_spacing - line_spacing     
     return y
-def create_template(canvas,PATH_UTILS):
-    TOPBAR_PATH = "TopBar.png"
-    BOTTONBAR_PATH = "BottonBar.png"
-    COLUMN_PATH = "Column.png"
-    
+def create_template(canvas,tipo,PATH_UTILS):
+    TOPBAR_PATH = "Top_"+tipo+".png"
+    BOTTONBAR_PATH = "Botton_"+tipo+".png"
+
     image_path_topbar = os.path.join(PATH_UTILS, TOPBAR_PATH)
     image_path_bottonbar = os.path.join(PATH_UTILS, BOTTONBAR_PATH)
-    image_path_column = os.path.join(PATH_UTILS, COLUMN_PATH)
+    
 
-    # --- 1. Pegar barra superior ---
+    # --- 1. Pegar barra superior --
     topbar = Image.open(image_path_topbar).convert("RGBA")
-    canvas.alpha_composite(topbar, (0, 0))
+    canvas.alpha_composite(topbar, (375, 0))
     # --- 2. Pegar barra inferior ---
     bottonbar = Image.open(image_path_bottonbar).convert("RGBA")
-    canvas.alpha_composite(bottonbar, (0, 1052))
+    canvas.alpha_composite(bottonbar, (0, 930))
     # --- 3. Pegar columna derecha ---
-    columnbar = Image.open(image_path_column).convert("RGBA")
-    canvas.alpha_composite(columnbar, (810, 0))
+    #columnbar = Image.open(image_path_column).convert("RGBA")
+    #canvas.alpha_composite(columnbar, (810, 0))
     # --- 4. Pegar Po ---
     logo = create_logo(PATH_UTILS)
     canvas.paste(logo, (-145, -200), logo)  
 
     return canvas
-def create_card(card_info, IMAGES_TEAMS_DIR, DEFAULT_TEAM_IMAGE,tipo):
+def create_card(card_info, IMAGES_TEAMS_DIR, DEFAULT_TEAM_IMAGE,tipo, PATH_UTILS, measure_only=False):
+    FONT_PATH = "Extenda.ttf"
+    font_title_path = os.path.join(PATH_UTILS, FONT_PATH)
     # Fuentes
-    title_font = ImageFont.truetype("impact.ttf", 20)
-    subtitle_font = ImageFont.truetype("arial.ttf", 15)
-    text_font = ImageFont.truetype("arial.ttf", 10) 
-    card_width = IMG_WIDTH/4
-    if tipo == "rumores":
+    title_font = ImageFont.truetype(font_title_path, 50)
+    subtitle_font = ImageFont.truetype("arial.ttf", 25)
+    text_font = ImageFont.truetype("arial.ttf", 16) 
+    card_width = IMG_WIDTH/3
+    if (tipo == "reduced"):
+        title_font = ImageFont.truetype(font_title_path, 30)
+        subtitle_font = ImageFont.truetype("arial.ttf", 15)
+        text_font = ImageFont.truetype("arial.ttf", 10) 
+        card_width = IMG_WIDTH/4
+    if (tipo == "Right_box"):
         card_width = IMG_WIDTH/3
-        text_font = ImageFont.truetype("arial.ttf", 15)
-    if tipo == "Clasificacion":
-        text_font = ImageFont.truetype("arial.ttf", 15)
+        text_font = ImageFont.truetype("arial.ttf", 20)
     if tipo == "Portada":
-        title_font = ImageFont.truetype("impact.ttf", 70)
-        subtitle_font = ImageFont.truetype("arial.ttf", 20)
-        text_font = ImageFont.truetype("arial.ttf", 15) 
-        card_width = IMG_WIDTH *0.75
+        title_font = ImageFont.truetype(font_title_path, 135)
+        subtitle_font = ImageFont.truetype("arial.ttf", 25)
+        text_font = ImageFont.truetype("arial.ttf", 20) 
+        card_width = IMG_WIDTH *0.68
     x_margin = 10
     max_width = card_width - 2 * x_margin
 
     # --- 1. Calcular altura total ---
     y = 10
-    if tipo != "rumores":
-        y = draw_multiline_text(tipo,None, card_info["titulo"], x_margin, y, title_font, max_width, measure_only=True)
+    if (tipo != "Right_box"):
+        y = draw_multiline_text(tipo,None, card_info["titulo"], x_margin, y, title_font, max_width, measure_only=True,titulo = True)
         y += 15
     y = draw_multiline_text(tipo,None, card_info["subtitulo"], x_margin, y, subtitle_font, max_width, measure_only=True)
-    y += 25
+    
     if tipo != "reduced":
+        y += 25
         for frase in card_info["texto"]:
             y = draw_multiline_text(tipo,None, frase, x_margin, y, text_font, max_width, measure_only=True)
             y += 15
@@ -223,36 +278,56 @@ def create_card(card_info, IMAGES_TEAMS_DIR, DEFAULT_TEAM_IMAGE,tipo):
     # --- 2. Crear imagen con altura calculada ---
     if (tipo == "standard") or (tipo == "reduced"):
         img = Image.new("RGBA", (int(card_width), int(final_height)), (255, 255, 255, 255))
-    else:
+    elif(tipo == "Right_box"):
+        img = Image.new("RGBA", (int(card_width), int(final_height)), (0, 0, 0, 100))
+    else:    
         img = Image.new("RGBA", (int(card_width), int(final_height)), (255, 255, 255, 0))
     # --- 3. Pegar imagen de fondo centrada ---
     escudo_manager = manager_photo(card_info.get("manager", ""), IMAGES_TEAMS_DIR, DEFAULT_TEAM_IMAGE)
-    if (tipo != "rumores") and (tipo != "Portada"):
+    if (tipo != "Portada"):
         img = paste_center_background(img, escudo_manager, opacity=0.30)
 
     # --- 4. Dibujar texto encima ---
     draw = ImageDraw.Draw(img)
     y = 10
-    if tipo != "rumores":
-        y = draw_multiline_text(tipo,draw, card_info["titulo"], x_margin, y, title_font, max_width)
-        y += 15
-    y = draw_multiline_text(tipo,draw, card_info["subtitulo"], x_margin, y, subtitle_font, max_width)
+    if (tipo != "Right_box"):
+        y = draw_multiline_text(tipo,draw, card_info["titulo"], x_margin, y, title_font, max_width,titulo = True)
+        y += 20
+        y = draw_multiline_text(tipo,draw, card_info["subtitulo"], x_margin, y, subtitle_font, max_width)
     y += 25
     if tipo != "reduced":
         for frase in card_info["texto"]:
             y = draw_multiline_text(tipo,draw, frase, x_margin, y, text_font, max_width)
             y += 15
-
-    return img
-def create_portada(canvas,card_info, PATH_UTILS):
-    PORTADA_PATH = "Portada.jpg"
-    download_player_image(card_info["jugador"],card_info["equipo"],PATH_UTILS)
+    if measure_only:
+        return final_height
+    else:
+        return img
+def create_portada(tipo, canvas, card_info, PATH_UTILS):
+    PORTADA_PATH = "Portada_" + tipo + ".jpg"
     image_path_portada = os.path.join(PATH_UTILS, PORTADA_PATH)
+
+    # La foto ya fue descargada por el OrchestratorAgent antes de llegar aquí.
+    # Si no existe, usamos fallback con el ImageAgent directamente.
+    if not os.path.exists(image_path_portada):
+        import logging as _logging
+        _logging.getLogger(__name__).warning(
+            f"[create_portada] No se encontró {image_path_portada}, intentando descargar..."
+        )
+        from src.agents.image_agent import run_image_agent
+        run_image_agent(
+            jugador=card_info.get("jugador", ""),
+            equipo=card_info.get("equipo", ""),
+            save_path=image_path_portada,
+        )
+
+    if not os.path.exists(image_path_portada):
+        return canvas
     # --- 2. Pegar foto portada ---
     portada = Image.open(image_path_portada).convert("RGBA")
 
-    min_width = IMG_WIDTH * 0.75
-    min_height = IMG_HEIGHT * 0.75
+    min_width = IMG_WIDTH
+    min_height = IMG_HEIGHT * 0.8
     w, h = portada.size
 
     if w < min_width:
@@ -274,7 +349,7 @@ def create_portada(canvas,card_info, PATH_UTILS):
     w, h = portada.size
 
     x = int(target_center_x - w / 2)   
-    canvas.alpha_composite(portada, (x, 100))    
+    canvas.alpha_composite(portada, (x, 0))    
     return canvas
 def create_logo(PATH_UTILS):
     LOGO_PATH = "LogoBajando.png"
@@ -301,66 +376,57 @@ def create_logo(PATH_UTILS):
     )
 
     return logo_rotado
-def create_botton(canvas,cards,peor,corner_card, IMAGES_TEAMS_DIR, DEFAULT_TEAM_IMAGE):
-    peorcard = create_card(peor[0], IMAGES_TEAMS_DIR, DEFAULT_TEAM_IMAGE,"standard")
-    
-    if corner_card is None:
-        mvps1 = create_card(cards[0], IMAGES_TEAMS_DIR, DEFAULT_TEAM_IMAGE,"standard")
-        mvps2 = create_card(cards[1], IMAGES_TEAMS_DIR, DEFAULT_TEAM_IMAGE,"standard")
-        corner = create_card(cards[2], IMAGES_TEAMS_DIR, DEFAULT_TEAM_IMAGE,"standard")
-    else:
-        mvps1 = create_card(cards[1], IMAGES_TEAMS_DIR, DEFAULT_TEAM_IMAGE,"standard")
-        mvps2 = create_card(cards[2], IMAGES_TEAMS_DIR, DEFAULT_TEAM_IMAGE,"standard")
-        corner = create_card(corner_card, IMAGES_TEAMS_DIR, DEFAULT_TEAM_IMAGE,"standard")
-    canvas.alpha_composite(peorcard, (0,1100))
-    canvas.alpha_composite(mvps1, (270,1100))
-    canvas.alpha_composite(mvps2, (540,1100))
-    canvas.alpha_composite(corner, (810,1100))
+def create_botton(canvas,botton_cards, IMAGES_TEAMS_DIR, DEFAULT_TEAM_IMAGE, PATH_UTILS):
+    botton1 = create_card(botton_cards[1], IMAGES_TEAMS_DIR, DEFAULT_TEAM_IMAGE,"standard", PATH_UTILS)
+    botton2 = create_card(botton_cards[2], IMAGES_TEAMS_DIR, DEFAULT_TEAM_IMAGE,"standard", PATH_UTILS)
+    botton3 = create_card(botton_cards[3], IMAGES_TEAMS_DIR, DEFAULT_TEAM_IMAGE,"standard", PATH_UTILS)
+    canvas.alpha_composite(botton1, (0,1000))
+    canvas.alpha_composite(botton2, (360,1000))
+    canvas.alpha_composite(botton3, (720,1000))
     return canvas
-def create_columns(canvas,columns, IMAGES_TEAMS_DIR, DEFAULT_TEAM_IMAGE):
-    big1 = create_card(columns[1], IMAGES_TEAMS_DIR, DEFAULT_TEAM_IMAGE,"standard")
-    canvas.alpha_composite(big1, (810, 75))
+def create_columns(canvas,columns, IMAGES_TEAMS_DIR, DEFAULT_TEAM_IMAGE, PATH_UTILS):
+    COLUMN_PATH = "Column.png"
+    image_path_column = os.path.join(PATH_UTILS, COLUMN_PATH)
+    topbar = Image.open(image_path_column).convert("RGBA")
+    cards = []
 
-    if len(columns) > 6:
-        reduced1 = create_card(columns[2], IMAGES_TEAMS_DIR, DEFAULT_TEAM_IMAGE,"reduced")
-        reduced2 = create_card(columns[3], IMAGES_TEAMS_DIR, DEFAULT_TEAM_IMAGE,"reduced")
-        reduced3 = create_card(columns[4], IMAGES_TEAMS_DIR, DEFAULT_TEAM_IMAGE,"reduced")
-        reduced4 = create_card(columns[5], IMAGES_TEAMS_DIR, DEFAULT_TEAM_IMAGE,"reduced")
-        reduced5 = create_card(columns[6], IMAGES_TEAMS_DIR, DEFAULT_TEAM_IMAGE,"reduced")
-        canvas.alpha_composite(reduced1, (810, 325))
-        canvas.alpha_composite(reduced2, (810, 475))
-        canvas.alpha_composite(reduced3, (810, 625))
-        canvas.alpha_composite(reduced4, (810, 775))
-        canvas.alpha_composite(reduced5, (810, 925))
-    elif len(columns) > 5:
-        big2 = create_card(columns[2], IMAGES_TEAMS_DIR, DEFAULT_TEAM_IMAGE,"standard")
-        reduced1 = create_card(columns[3], IMAGES_TEAMS_DIR, DEFAULT_TEAM_IMAGE,"reduced")
-        reduced2 = create_card(columns[4], IMAGES_TEAMS_DIR, DEFAULT_TEAM_IMAGE,"reduced")
-        reduced3 = create_card(columns[5], IMAGES_TEAMS_DIR, DEFAULT_TEAM_IMAGE,"reduced")
-        canvas.alpha_composite(big2, (810, 325))
-        canvas.alpha_composite(reduced1, (810, 575))
-        canvas.alpha_composite(reduced2, (810, 725))
-        canvas.alpha_composite(reduced3, (810, 875))
-    elif len(columns) > 4:
-        big2 = create_card(columns[2], IMAGES_TEAMS_DIR, DEFAULT_TEAM_IMAGE,"standard")
-        big3 = create_card(columns[3], IMAGES_TEAMS_DIR, DEFAULT_TEAM_IMAGE,"standard")
-        reduced1 = create_card(columns[4], IMAGES_TEAMS_DIR, DEFAULT_TEAM_IMAGE,"reduced")
-        canvas.alpha_composite(big2, (810, 325))
-        canvas.alpha_composite(big3, (810, 575))
-        canvas.alpha_composite(reduced1, (810, 825))
-    else:
-        big2 = create_card(columns[2], IMAGES_TEAMS_DIR, DEFAULT_TEAM_IMAGE,"standard")
-        big3 = create_card(columns[3], IMAGES_TEAMS_DIR, DEFAULT_TEAM_IMAGE,"standard")
-        canvas.alpha_composite(big2, (810, 425))
-        canvas.alpha_composite(big3, (810, 775))
+    # construir lista lógica
+    for c in columns:
+        cards.append(("reduced", c))
+
+    measured = []
+
+    for tipo, data in cards:
+        h = create_card(data, IMAGES_TEAMS_DIR, DEFAULT_TEAM_IMAGE, tipo, PATH_UTILS, measure_only=True)
+        measured.append((tipo, data, h))
+
+    cursor_y = 1000   # margen inferior
+    GAP = 0
+
+    for tipo, data, h in reversed(measured):
+        y = cursor_y - h
+
+        card_img = create_card(data, IMAGES_TEAMS_DIR, DEFAULT_TEAM_IMAGE, tipo, PATH_UTILS)
+        canvas.alpha_composite(card_img, (810, y))
+
+        cursor_y = y - GAP
+
+    canvas.alpha_composite(topbar, (810, cursor_y-70))
+
     return canvas
-def create_pdf(cards, PATH_UTILS,IMAGES_TEAMS_DIR, DEFAULT_TEAM_IMAGE):
+def create_pdf(tipo,cards,clasificacion_json, PATH_UTILS,IMAGES_TEAMS_DIR, DEFAULT_TEAM_IMAGE):
    # --- CONFIG ---
-    fichajes = get_cards_by_tipo(cards,["Fichaje destacado"])
-    mvps = get_cards_by_tipo(cards,["MVP de la jornada"]) 
-    peor = get_cards_by_tipo(cards,["Peor actuación de la jornada"])
-    column_cards =get_cards_by_tipo(cards,["Fichaje destacado","Venta récord","Expulsión","Héroe bajo palos","Gol en propia"])
-    
+    if tipo == "Jornada":
+        botton_cards = get_cards_by_tipo(cards,["MVP de la jornada","Peor actuación de la jornada"])
+        right_card = get_cards_by_tipo(cards,["clasificacion"])
+    else: 
+        botton_cards = get_cards_by_tipo(cards,["Fichaje destacado","Venta récord"])
+        right_card = get_cards_by_tipo(cards,["rumor"])
+
+    column_cards =get_cards_by_tipo(cards,["Expulsión","Héroe bajo palos","Gol en propia"])
+
+    RIGHT_PATH = "Right_"+tipo+".png"
+    image_path_right = os.path.join(PATH_UTILS, RIGHT_PATH)
     # --- 1. Crear canvas base ---
     canvas = Image.new(
         "RGBA",
@@ -368,30 +434,30 @@ def create_pdf(cards, PATH_UTILS,IMAGES_TEAMS_DIR, DEFAULT_TEAM_IMAGE):
         (255, 255, 255, 255)
     )
     # --- 2. Creo Portada y botton ---
-    if fichajes[0].get("dinero")> 40:
-        create_portada(canvas,fichajes[0],PATH_UTILS)
-        create_template(canvas,PATH_UTILS)
-        portada_text = create_card(fichajes[0], IMAGES_TEAMS_DIR, DEFAULT_TEAM_IMAGE,"Portada")
-        create_botton(canvas,mvps,peor,None, IMAGES_TEAMS_DIR, DEFAULT_TEAM_IMAGE)
-    else:
-        create_portada(canvas,mvps[0],PATH_UTILS)
-        create_template(canvas,PATH_UTILS)
-        portada_text = create_card(mvps[0], IMAGES_TEAMS_DIR, DEFAULT_TEAM_IMAGE,"Portada")
-        create_botton(canvas,mvps,peor,fichajes[0], IMAGES_TEAMS_DIR, DEFAULT_TEAM_IMAGE)    
-    
-    
-    canvas.alpha_composite(portada_text, (0,550))
+    create_portada(tipo,canvas,botton_cards[0],PATH_UTILS)
+    create_template(canvas,tipo,PATH_UTILS)
+    portada_text = create_card(botton_cards[0], IMAGES_TEAMS_DIR, DEFAULT_TEAM_IMAGE,"Portada", PATH_UTILS)
+
+
+    create_botton(canvas,botton_cards, IMAGES_TEAMS_DIR, DEFAULT_TEAM_IMAGE, PATH_UTILS)    
 
     
+    canvas.alpha_composite(portada_text, (0,400))
+
+    card_general = create_clasification_card_horizontal(clasificacion_json["general"],PATH_UTILS,width=600,height=75,IMAGES_TEAMS_DIR=IMAGES_TEAMS_DIR,DEFAULT_TEAM_IMAGE=DEFAULT_TEAM_IMAGE)
+    canvas.alpha_composite(card_general, (490, 0))
+    card_jornada = create_clasification_card_horizontal(clasificacion_json["jornada"],PATH_UTILS,width=600,height=75,IMAGES_TEAMS_DIR=IMAGES_TEAMS_DIR,DEFAULT_TEAM_IMAGE=DEFAULT_TEAM_IMAGE)
+    canvas.alpha_composite(card_jornada, (490, 75))
+
     # --- 3. Creo Rumores ---
-    rumores = create_card(get_cards_by_tipo(cards,["rumor"])[0], IMAGES_TEAMS_DIR, DEFAULT_TEAM_IMAGE,"rumores")
-    canvas.alpha_composite(rumores, (400,30))
+    rumores = create_card(right_card[0], IMAGES_TEAMS_DIR, DEFAULT_TEAM_IMAGE,"Right_box", PATH_UTILS)
+    canvas.alpha_composite(rumores, (720,200))
 
-    # --- 4. Creo Clasificacion ---
-    clasificacion = create_card(get_cards_by_tipo(cards,["clasificacion"])[0], IMAGES_TEAMS_DIR, DEFAULT_TEAM_IMAGE,"Clasificacion")
-    canvas.alpha_composite(clasificacion, (525,150))
+    rightbar = Image.open(image_path_right).convert("RGBA")
+    canvas.alpha_composite(rightbar, (675, 155))
 
     # --- 5. Creo Columna Izquierda ---
-    create_columns(canvas,column_cards, IMAGES_TEAMS_DIR, DEFAULT_TEAM_IMAGE)
+    if(tipo == "Jornada"):
+        create_columns(canvas,column_cards, IMAGES_TEAMS_DIR, DEFAULT_TEAM_IMAGE, PATH_UTILS)
     
     return canvas
