@@ -35,8 +35,14 @@ def create_groq_model() -> LiteLLMModel:
     )
 
 
-def _make_run_writer_tool(prompt: str):
-    """Devuelve un tool de strands con el prompt capturado en el closure."""
+def _make_run_writer_tool(prompt: str) -> tuple:
+    """
+    Devuelve (tool, cache) donde cache es un dict compartido.
+    Cuando run_writer ejecuta con éxito, guarda las cards en cache['cards'].
+    Esto permite que run_orchestrator recupere el resultado sin un segundo
+    llamado a Gemini aunque Groq no reproduzca el JSON en su respuesta final.
+    """
+    cache: dict = {}
 
     def run_writer(prompt_ref: str) -> str:
         """
@@ -57,9 +63,10 @@ def _make_run_writer_tool(prompt: str):
             return json.dumps({"success": False, "error": "WriterAgent no genero cards validas"})
 
         logger.info("[Orchestrator] <- WriterAgent OK (%s cards)", len(result.get("cards", [])))
+        cache["cards"] = result  # guardar para recuperación sin segundo llamado
         return json.dumps({"success": True, "cards": result}, ensure_ascii=False)
 
-    return tool(run_writer)
+    return tool(run_writer), cache
 
 
 def run_orchestrator(
@@ -78,7 +85,7 @@ def run_orchestrator(
     logger.info("[Orchestrator] Iniciando pipeline con Groq...")
     logger.info("[Orchestrator] Prompt: %s chars", len(prompt))
 
-    run_writer_tool = _make_run_writer_tool(prompt)
+    run_writer_tool, writer_cache = _make_run_writer_tool(prompt)
     agent = Agent(
         model=create_groq_model(),
         system_prompt=ORCHESTRATOR_PROMPT,
@@ -104,8 +111,14 @@ IMPORTANTE:
         logger.info("[Orchestrator] Pipeline completo - %s cards", len(cards_payload["cards"]))
         return cards_payload
 
-    logger.warning("[Orchestrator] No se pudieron extraer las cards, intentando fallback directo...")
+    # Groq a veces responde en texto plano sin reproducir el JSON de las tools.
+    # Antes de llamar a Gemini de nuevo, comprobamos si run_writer ya guardó las cards.
+    if writer_cache.get("cards"):
+        logger.info("[Orchestrator] Cards recuperadas del cache del tool (sin segundo llamado a Gemini)")
+        return writer_cache["cards"]
 
+    # Fallback real: solo si run_writer nunca llegó a ejecutarse
+    logger.warning("[Orchestrator] No se pudieron extraer las cards, intentando fallback directo...")
     cards = run_writer_agent(prompt)
     if cards:
         run_image_agent(jugador_fichajes, equipo_fichajes, path_fichajes)
