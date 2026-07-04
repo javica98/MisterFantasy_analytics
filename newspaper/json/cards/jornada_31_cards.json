@@ -1,0 +1,144 @@
+{
+  "cards": [
+    {
+      "tipo": "clasificacion",
+      "jugador": null,
+      "manager": null,
+      "puntos": null,
+      "dinero": null,
+      "equipo": null,
+      "titulo": "¡MALDINILLO GANA LA JORNADA Y ACECHA A DANI!",
+      "subtitulo": "Solo 34 puntos separan a los dos gigantes del Sótano",
+      "texto": [
+        "Maldinillo se lleva la J31 con 57 puntos y recorta distancias: Dani lidera con 1465 frente a los 1431 del perseguidor.",
+        "Dani responde con 50 puntos pero no es suficiente para alejarse. El título se decidirá en las últimas jornadas.",
+        "Juanba firma 11 puntos en su habitual actuación discreta. La regularidad del octavo puesto."
+      ]
+    },
+    {
+      "tipo": "rumor",
+      "jugador": null,
+      "manager": null,
+      "puntos": null,
+      "dinero": null,
+      "equipo": null,
+      "titulo": "¡NOTICIA DE ÚLTIMA HORA EN EL SÓTANO!",
+      "subtitulo": "Lo que todos piensan pero nadie dice",
+      "texto": [
+        "Según fuentes cercanas a la liga, Dani ha empezado a dormir con el teléfono en la mano para no perderse ningún movimiento de Maldinillo en el mercado."
+      ]
+    },
+    {
+      "tipo": "Fichaje destacado",
+      "jugador": "Frenkie De Jong",
+      "manager": "Maldinillo",
+      "puntos": null,
+      "dinero": 15.396,
+      "equipo": "FC Barcelona",
+      "titulo": "¡MALDINILLO VUELVE A FICHAR A DE JONG!",
+      "subtitulo": "El holandés regresa al proyecto del perseguidor por 15,40 millones",
+      "texto": [
+        "Maldinillo recupera a Frenkie De Jong por 15,40 millones en un movimiento que sorprende al mercado.",
+        "El holandés del Barcelona vuelve a un equipo que no puede vivir sin él."
+      ]
+    },
+    {
+      "tipo": "Fichaje destacado",
+      "jugador": "Carlos Romero",
+      "manager": "Maldinillo",
+      "puntos": null,
+      "dinero": 15.05,
+      "equipo": "RCD Espanyol",
+      "titulo": "¡ROMERO VUELVE A MALDINILLO POR 15,05 MILLONES!",
+      "subtitulo": "El central del Espanyol regresa al equipo del perseguidor",
+      "texto": [
+        "Carlos Romero también regresa al proyecto de Maldinillo por 15,05 millones.",
+        "El perseguidor recupera a sus piezas de confianza en el momento más importante de la temporada."
+      ]
+    },
+    {
+      "tipo": "Fichaje destacado",
+      "jugador": "Takefusa Kubo",
+      "manager": "Maldinillo",
+      "puntos": null,
+      "dinero": 6.972,
+      "equipo": "Real Sociedad",
+      "titulo": "¡TAKE KUBO FICHA POR MALDINILLO!",
+      "subtitulo": "El japonés de la Real Sociedad llega por 6,97 millones",
+      "texto": [
+        "Takefusa Kubo aporta velocidad y calidad técnica al equipo de Maldinillo por 6,97 millones.",
+        "El japonés de la Real Sociedad es una apuesta inteligente para las últimas jornadas."
+      ]
+    },
+    {
+      "tipo": "Venta récord",
+      "jugador": "Carlos Romero",
+      "manager": "Maldinillo",
+      "puntos": null,
+      "dinero": 14.921,
+      "equipo": "RCD Espanyol",
+      "titulo": "¡MALDINILLO VENDE A ROMERO POR 14,92 MILLONES!",
+      "subtitulo": "El central sale y vuelve en tiempo récord",
+      "texto": [
+        "Carlos Romero entra y sale de Maldinillo en tiempo récord: vendido por 14,92 millones.",
+        "Maldinillo hace girar la rueda del mercado con una velocidad que nadie más puede igualar."
+      ]
+    },
+    {
+      "tipo": "MVP de la jornada",
+      "jugador": "V. Muriqi",
+      "manager": "Chamacónicos",
+      "puntos": 17,
+      "dinero": null,
+      "equipo": "RCD Mallorca",
+      "titulo": "¡MURIQI HISTÓRICO CON 17 PUNTOS! EL MEJOR DEL SÓTANO",
+      "subtitulo": "El kosovaro sigue siendo el hombre de los grandes partidos",
+      "texto": [
+        "Vedat Muriqi repite como el jugador más brillante de la jornada con 17 puntos para los Chamacónicos.",
+        "El delantero del Mallorca es un fenómeno: en el Sótano siempre aparece cuando más se le necesita."
+      ]
+    },
+    {
+      "tipo": "MVP de la jornada",
+      "jugador": "L. Yamal",
+      "manager": "Dani",
+      "puntos": 15,
+      "dinero": null,
+      "equipo": "FC Barcelona",
+      "titulo": "¡YAMAL RESPONDE CON 15 PUNTOS PARA DANI!",
+      "subtitulo": "El joven del Barça no deja caer a su manager en el momento crucial",
+      "texto": [
+        "Lamine Yamal apareció en el momento más importante con 15 puntos que mantienen vivo a Dani.",
+        "El niño prodigio del Barcelona es la mayor inversión que ha hecho Dani en esta temporada."
+      ]
+    },
+    {
+      "tipo": "Peor actuación de la jornada",
+      "jugador": "K. Mbappe",
+      "manager": "Chamacónicos",
+      "puntos": 0,
+      "dinero": null,
+      "equipo": "Real Madrid",
+      "titulo": "¡MBAPPÉ DESAPARECE! CERO PUNTOS Y VERGÜENZA PARA LOS CHAMACÓNICOS",
+      "subtitulo": "El francés del Madrid firma la peor actuación de la jornada",
+      "texto": [
+        "Kylian Mbappé tuvo una noche en blanco con cero puntos en la actuación más decepcionante de la J31.",
+        "Lo que da Muriqi lo quita Mbappé. Los Chamacónicos viven en la montaña rusa."
+      ]
+    },
+    {
+      "tipo": "Héroe bajo palos",
+      "jugador": "D. Soria",
+      "manager": "MuchaSalsa",
+      "puntos": 10,
+      "dinero": null,
+      "equipo": "Getafe CF",
+      "titulo": "¡SORIA SE REDIME CON 10 PUNTOS PARA MUCHASALSA!",
+      "subtitulo": "El portero del Getafe salva lo poco que queda en MuchaSalsa",
+      "texto": [
+        "David Soria borró las malas actuaciones anteriores con 10 puntos cruciales para MuchaSalsa.",
+        "El portero del Getafe es el héroe bajo palos de la J31. Cuando menos se esperaba."
+      ]
+    }
+  ]
+}

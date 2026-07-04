@@ -1,0 +1,144 @@
+{
+  "cards": [
+    {
+      "tipo": "clasificacion",
+      "jugador": null,
+      "manager": null,
+      "puntos": null,
+      "dinero": null,
+      "equipo": null,
+      "titulo": "¡DANI SE ESCAPA! 70 PUNTOS EN LA JORNADA Y MANDA CON 1073",
+      "subtitulo": "Libre sorprende a todos siendo segundo en la jornada",
+      "texto": [
+        "Dani firma 70 puntos en la J23 y amplía su ventaja en la general hasta los 1073 puntos totales.",
+        "Libre es segundo en la jornada con 65 puntos. El equipo sin manager sigue haciendo el ridículo de los listos.",
+        "Juanba solo suma 20 puntos. Sin comentarios."
+      ]
+    },
+    {
+      "tipo": "rumor",
+      "jugador": null,
+      "manager": null,
+      "puntos": null,
+      "dinero": null,
+      "equipo": null,
+      "titulo": "¡EXCLUSIVA DESDE LAS ENTRAÑAS DEL SÓTANO!",
+      "subtitulo": "El mercado tiene orejas",
+      "texto": [
+        "Se rumorea que Dani ha instalado una alarma en el móvil cada 15 minutos para revisar el mercado. Su familia ya no le habla."
+      ]
+    },
+    {
+      "tipo": "Fichaje destacado",
+      "jugador": "Axel Witsel",
+      "manager": "Jotabetrbb",
+      "puntos": null,
+      "dinero": 1.36,
+      "equipo": "Girona FC",
+      "titulo": "¡CHOLLO! JOTABETRBB FICHA A WITSEL POR SOLO 1,36 MILLONES",
+      "subtitulo": "El belga del Girona llega a precio de saldo",
+      "texto": [
+        "Jotabetrbb encuentra una ganga histórica: Axel Witsel por apenas 1,36 millones.",
+        "El belga del Girona puede ser el fichaje más rentable de la temporada. El mercado tiene sus joyas."
+      ]
+    },
+    {
+      "tipo": "Fichaje destacado",
+      "jugador": "Clement Lenglet",
+      "manager": "Dani",
+      "puntos": null,
+      "dinero": 0.16,
+      "equipo": "Atlético de Madrid",
+      "titulo": "¡DANI FICHA A LENGLET POR 0,16 MILLONES! OPERACIÓN GRATUITA",
+      "subtitulo": "El defensa del Atleti llega casi regalado al equipo del líder",
+      "texto": [
+        "El líder hace una operación de bajo coste y se lleva a Clement Lenglet por 0,16 millones.",
+        "No todo tiene que ser caro: Dani sabe aprovechar las oportunidades del mercado."
+      ]
+    },
+    {
+      "tipo": "Fichaje destacado",
+      "jugador": "Axel Witsel",
+      "manager": "Dani",
+      "puntos": null,
+      "dinero": 0.0,
+      "equipo": "Girona FC",
+      "titulo": "¡DANI TAMBIÉN FICHA A WITSEL! ¡Y GRATIS!",
+      "subtitulo": "El belga recala también en el equipo del líder",
+      "texto": [
+        "Dani ficha a Witsel de forma gratuita. Cero euros. Nada. El mejor precio del mercado.",
+        "El líder no pierde la ocasión de reforzarse aunque sea a coste cero."
+      ]
+    },
+    {
+      "tipo": "Venta récord",
+      "jugador": "Jules Kounde",
+      "manager": "Maldinillo",
+      "puntos": null,
+      "dinero": 15.627,
+      "equipo": "FC Barcelona",
+      "titulo": "¡MALDINILLO VENDE A KOUNDE POR 15,63 MILLONES!",
+      "subtitulo": "El defensa del Barça cambia de aires",
+      "texto": [
+        "Jules Koundé deja el proyecto de Maldinillo a cambio de 15,63 millones.",
+        "El segundo clasificado sigue rotando su plantilla con golpes de mercado certeros."
+      ]
+    },
+    {
+      "tipo": "MVP de la jornada",
+      "jugador": "J. de Frutos",
+      "manager": "Maldinillo",
+      "puntos": 16,
+      "dinero": null,
+      "equipo": "Rayo Vallecano",
+      "titulo": "¡DE FRUTOS ESTALLA CON 16 PUNTOS PARA MALDINILLO!",
+      "subtitulo": "El rayista firma una actuación sensacional",
+      "texto": [
+        "Jorge de Frutos tomó el partido por los cuernos y entregó 16 puntos a un Maldinillo que los necesitaba.",
+        "El extremo del Rayo Vallecano fue el mejor de la jornada. Nadie le discute ese título."
+      ]
+    },
+    {
+      "tipo": "MVP de la jornada",
+      "jugador": "A. Moleiro",
+      "manager": "Dani",
+      "puntos": 14,
+      "dinero": null,
+      "equipo": "Villarreal CF",
+      "titulo": "¡MOLEIRO VUELVE A DEMOSTRAR SU CLASE!",
+      "subtitulo": "14 puntos del villarrealense para el líder",
+      "texto": [
+        "Alberto Moleiro sigue siendo uno de los jugadores más en forma del Sótano con 14 puntos.",
+        "Dani sabe lo que tiene: Moleiro es pieza clave del equipo que lidera la general."
+      ]
+    },
+    {
+      "tipo": "Peor actuación de la jornada",
+      "jugador": "R. Fernandez",
+      "manager": "Los marinero",
+      "puntos": -1,
+      "dinero": null,
+      "equipo": "RCD Espanyol",
+      "titulo": "¡FERNÁNDEZ EN NEGATIVO HUNDE A LOS MARINERO!",
+      "subtitulo": "El jugador del Espanyol firma -1 punto en la peor actuación",
+      "texto": [
+        "R. Fernández tuvo la peor noche posible con -1 punto que penaliza las aspiraciones de Los marinero.",
+        "El Espanyol tenía que haber guardado a este jugador en casa."
+      ]
+    },
+    {
+      "tipo": "Héroe bajo palos",
+      "jugador": "O. Vlachodimos",
+      "manager": "Los marinero",
+      "puntos": 9,
+      "dinero": null,
+      "equipo": "Sevilla FC",
+      "titulo": "¡VLACHODIMOS AL RESCATE CON 9 PUNTOS!",
+      "subtitulo": "El portero griego salva lo salvable para Los marinero",
+      "texto": [
+        "Odysseas Vlachodimos fue la muralla del Sevilla y sumó 9 puntos decisivos para Los marinero.",
+        "El portero griego compensó el desastre de Fernández. El equilibrio del karma existe."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "cards": [
+    {
+      "tipo": "clasificacion",
+      "jugador": null,
+      "manager": null,
+      "puntos": null,
+      "dinero": null,
+      "equipo": null,
+      "titulo": "¡DE LA GUETTIR FC GANA LA JORNADA! DANI A SOLO 19 PUNTOS DE MALDINILLO",
+      "subtitulo": "El título se decidirá en la última jornada. La tensión es insoportable",
+      "texto": [
+        "De la Guettir FC gana la J36 con 59 puntos en la mejor semana del equipo en toda la temporada.",
+        "Dani suma 30 puntos y tiene 1726 en la general. Maldinillo firma 41 y acorta hasta los 1707. Solo 19 puntos de diferencia.",
+        "Juanba cierra con apenas 5 puntos en la jornada. La tristeza en sus filas es ya endémica."
+      ]
+    },
+    {
+      "tipo": "rumor",
+      "jugador": null,
+      "manager": null,
+      "puntos": null,
+      "dinero": null,
+      "equipo": null,
+      "titulo": "¡19 PUNTOS Y DOS JORNADAS! EL SÓTANO ESTÁ EN LLAMAS",
+      "subtitulo": "El rumor que todos esperaban",
+      "texto": [
+        "Según fuentes absolutamente fiables, Maldinillo tiene guardado en el móvil un meme de victoria desde hace 3 semanas. Aún no lo ha enviado. Aún."
+      ]
+    },
+    {
+      "tipo": "Fichaje destacado",
+      "jugador": "Luis Milla",
+      "manager": "Maldinillo",
+      "puntos": null,
+      "dinero": 25.284,
+      "equipo": "Getafe CF",
+      "titulo": "¡MALDINILLO FICHA A LUIS MILLA POR 25,28 MILLONES!",
+      "subtitulo": "El centrocampista del Getafe refuerza al perseguidor en el sprint final",
+      "texto": [
+        "Maldinillo no frena y ficha a Luis Milla del Getafe por 25,28 millones a dos jornadas del final.",
+        "El centrocampista llega con la misión de sumar los puntos que den el título al equipo."
+      ]
+    },
+    {
+      "tipo": "Fichaje destacado",
+      "jugador": "Antoine Griezmann",
+      "manager": "Maldinillo",
+      "puntos": null,
+      "dinero": 17.532,
+      "equipo": "Atlético de Madrid",
+      "titulo": "¡GRIEZMANN FICHA POR MALDINILLO A DOS JORNADAS DEL FINAL!",
+      "subtitulo": "17,53 millones por el francés del Atlético",
+      "texto": [
+        "Antoine Griezmann se suma al proyecto de Maldinillo por 17,53 millones en el mercado de las últimas semanas.",
+        "El francés del Atlético llega para ser el diferencial que le dé el campeonato al perseguidor."
+      ]
+    },
+    {
+      "tipo": "Fichaje destacado",
+      "jugador": "Carlos Espi",
+      "manager": "Dani",
+      "puntos": null,
+      "dinero": 14.46,
+      "equipo": "Levante UD",
+      "titulo": "¡DANI FICHA A CARLOS ESPÍ DEL LEVANTE!",
+      "subtitulo": "14,46 millones por el central del equipo valenciano",
+      "texto": [
+        "Dani refuerza la defensa con Carlos Espí del Levante por 14,46 millones.",
+        "El líder no da ni un paso atrás: con Espí atrás, el equipo está más blindado que nunca."
+      ]
+    },
+    {
+      "tipo": "Venta récord",
+      "jugador": "Joan Garcia",
+      "manager": "Dani",
+      "puntos": null,
+      "dinero": 20.416,
+      "equipo": "FC Barcelona",
+      "titulo": "¡DANI VENDE A JOAN GARCIA POR 20,42 MILLONES!",
+      "subtitulo": "El portero del Barça sale del equipo del líder en la recta final",
+      "texto": [
+        "Joan García deja el equipo de Dani a cambio de 20,42 millones en la mayor venta de la jornada.",
+        "Con ese dinero se financia la llegada de Carlos Espí. La rueda del mercado no para."
+      ]
+    },
+    {
+      "tipo": "MVP de la jornada",
+      "jugador": "M. Satriano",
+      "manager": "De la Guettir FC",
+      "puntos": 16,
+      "dinero": null,
+      "equipo": "Getafe CF",
+      "titulo": "¡SATRIANO IMPARABLE CON 16 PUNTOS PARA DE LA GUETTIR FC!",
+      "subtitulo": "El uruguayo lidera la jornada del equipo revelación",
+      "texto": [
+        "Martín Satriano firma 16 puntos en la mejor actuación de la jornada para un De la Guettir FC que gana la semana.",
+        "El delantero uruguayo del Getafe está en estado de forma absoluta. ¡Qué final de temporada!"
+      ]
+    },
+    {
+      "tipo": "MVP de la jornada",
+      "jugador": "F. Jutgla",
+      "manager": "De la Guettir FC",
+      "puntos": 15,
+      "dinero": null,
+      "equipo": "RC Celta de Vigo",
+      "titulo": "¡JUTGLÀ TAMBIÉN EXPLOTA CON 15 PUNTOS!",
+      "subtitulo": "El delantero del Celta suma para ganar la jornada",
+      "texto": [
+        "Ferran Jutglà completa el doblete de De la Guettir FC en el top con 15 puntos impresionantes.",
+        "Dos delanteros de De la Guettir FC en los primeros puestos. La jornada perfecta del sexto clasificado."
+      ]
+    },
+    {
+      "tipo": "Peor actuación de la jornada",
+      "jugador": "I. Radu",
+      "manager": "Juanba",
+      "puntos": -2,
+      "dinero": null,
+      "equipo": "RC Celta de Vigo",
+      "titulo": "¡RADU EN -2! EL PORTERO HUNDE A JUANBA",
+      "subtitulo": "El guardameta del Celta firma la peor actuación de la jornada",
+      "texto": [
+        "I. Radu que fue héroe en la J16, vuelve a hundirse con -2 puntos en la peor actuación de la J36.",
+        "Juanba no puede terminar la temporada peor: 5 puntos en la jornada y su portero en negativo."
+      ]
+    }
+  ]
+}

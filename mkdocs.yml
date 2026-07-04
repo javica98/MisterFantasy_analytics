@@ -1,0 +1,104 @@
+site_name: MisterFantasy Analytics
+site_description: Sistema de análisis, IA y visualización para la Sotano League
+site_author: Maldinillo
+
+theme:
+  name: material
+  language: es
+  palette:
+    - scheme: default
+      primary: green
+      accent: light green
+      toggle:
+        icon: material/brightness-7
+        name: Cambiar a modo oscuro
+    - scheme: slate
+      primary: green
+      accent: light green
+      toggle:
+        icon: material/brightness-4
+        name: Cambiar a modo claro
+  font:
+    text: Inter
+    code: JetBrains Mono
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.highlight
+    - search.suggest
+    - content.code.copy
+    - content.code.annotate
+    - toc.follow
+  icon:
+    repo: fontawesome/brands/github
+
+nav:
+  - Inicio: index.md
+  - Pipeline:
+    - Visión general: pipeline/overview.md
+    - Extracción de datos: pipeline/extraction.md
+    - Preprocesado: pipeline/preprocessing.md
+    - Periódico IA: pipeline/newspaper.md
+    - Web App: pipeline/webapp.md
+  - Módulos:
+    - Agentes LLM: modulos/agents.md
+    - AI Newspaper: modulos/ai_newspaper.md
+    - Sistema de Memoria: modulos/memory.md
+    - Utilidades: modulos/utils.md
+  - Scripts: scripts.md
+  - Tests: tests.md
+  - Web App: webapp.md
+  - "Fantasy Bidding Intelligence":
+    - Introducción: eda/index.md
+    - "01 · Auditoría del dataset": eda/01_auditoria_dataset.ipynb
+    - "02 · EDA exploratoria": eda/02_eda_exploratoria.ipynb
+    - "03 · Feature Engineering": eda/03_feature_engineering.ipynb
+    - "04 · Modelado predictivo": eda/04_modelos.ipynb
+  - Decisiones de arquitectura:
+    - ADR-001 · CLIP para fotos: adr/001-clip-clasificacion-fotos.md
+    - ADR-002 · Multi-agente Strands: adr/002-strands-multi-agente.md
+    - ADR-003 · Pydantic v2 schema: adr/003-pydantic-v2-schema-validacion.md
+    - ADR-004 · RAG local: adr/004-rag-memoria-periodico.md
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+
+plugins:
+  - search:
+      lang: es
+  - mkdocs-jupyter:
+      execute: false
+      include_source: true
+      ignore_h1_titles: true
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com
+  generator: false
+
+docs_dir: docs
+site_dir: site

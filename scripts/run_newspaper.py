@@ -98,13 +98,40 @@ csv_notificaciones = safe_read_csv(CSV_NOTIFICACIONES_CLEAN)
 csv_clasificacion = safe_read_csv(CSV_CLASIFICACIONES)
 csv_quinielas = safe_read_csv(CSV_QUINIELAS)
 
-if (csv_gameweek is None)and (csv_notificaciones is None):
-    logger.warning("⏭️ Saltando csvs .csv no existe.")
-else:
-    daily_json = generate_json(3,csv_notificaciones[csv_notificaciones['type'] == 'transfer'],csv_gameweek,csv_clasificacion,csv_quinielas)
-    logger.info("✅ Json creado.")
-    json_final_path = os.path.join(JSON_NEWS, f"news_json.json")
-    daily_json = safe_save_json(daily_json,json_final_path)
+if csv_gameweek is None or csv_notificaciones is None:
+    logger.error("CSVs de gameweek o notificaciones no encontrados. Abortando.")
+    sys.exit(1)
+
+if csv_clasificacion is None or csv_quinielas is None:
+    logger.error("CSVs de clasificacion o quinielas no encontrados. Abortando.")
+    sys.exit(1)
+
+daily_json = generate_json(
+    3,
+    csv_notificaciones[csv_notificaciones["type"] == "transfer"],
+    csv_gameweek,
+    csv_clasificacion,
+    csv_quinielas,
+)
+
+n_transfers = len(daily_json.get("transfers", []))
+n_gameweek = len(daily_json.get("gameweek", []))
+
+if n_transfers == 0 and n_gameweek == 0:
+    logger.error(
+        "No hay transfers ni gameweek en los ultimos 3 dias. "
+        "Comprueba que los datos esten actualizados o amplia el rango de dias."
+    )
+    sys.exit(1)
+
+if n_transfers == 0:
+    logger.warning("Sin transfers en los ultimos 3 dias — el periodico no tendra noticias de mercado.")
+if n_gameweek == 0:
+    logger.warning("Sin gameweek en los ultimos 3 dias — el periodico no tendra MVPs ni resultados.")
+
+logger.info("Json creado: %d transfers, %d entradas de gameweek.", n_transfers, n_gameweek)
+json_final_path = os.path.join(JSON_NEWS, "articles", "news_json.json")
+daily_json = safe_save_json(daily_json, json_final_path)
     
 # --- 2. Crear prompt ---
 logger.info("Creando prompt...")
@@ -119,7 +146,7 @@ else:
     logger.info("🧠 Memoria recuperada para el prompt: %s recuerdos.", len(relevant_memories))
     commun_prompt_json = build_final_prompt(prompt_json["bloques"],json_new,memory_context)
     logger.info("✅ Prompt Json creado.")
-    prompt_final_path = os.path.join(JSON_NEWS, f"news_prompt.txt")
+    prompt_final_path = os.path.join(JSON_NEWS, "prompts", "news_prompt.txt")
     prompt_saved = safe_save_text(commun_prompt_json,prompt_final_path)
 
 # --- 3. Orquestador: genera cards + descarga fotos de portada ---
@@ -153,8 +180,8 @@ if texto_generado is None:
     sys.exit(1)
 
 logger.info("✅ Todo el contenido creado.")
-cards_json_path = os.path.join(JSON_NEWS, f"news_cards.json")
-json_weekly_path = os.path.join(JSON_NEWS, f"{fecha_hoy}_json.json")
+cards_json_path = os.path.join(JSON_NEWS, "cards", "news_cards.json")
+json_weekly_path = os.path.join(JSON_NEWS, "articles", f"{fecha_hoy}_json.json")
 article = safe_save_json(texto_generado,cards_json_path)
 article = safe_save_json(texto_generado,json_weekly_path)
 

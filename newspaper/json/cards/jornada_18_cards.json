@@ -1,0 +1,130 @@
+{
+  "cards": [
+    {
+      "tipo": "clasificacion",
+      "jugador": null,
+      "manager": null,
+      "puntos": null,
+      "dinero": null,
+      "equipo": null,
+      "titulo": "¡DANI SE ESCAPA! MALDINILLO SUBE AL SEGUNDO PUESTO",
+      "subtitulo": "Los Chamacónicos ganan la jornada pero no escalan lo suficiente",
+      "texto": [
+        "Dani domina la general con 788 puntos, pero Maldinillo ha trepado al segundo puesto con 716.",
+        "Los Chamacónicos ganaron la J18 con 51 puntos y demuestran que están en el momento más dulce.",
+        "MuchaSalsa cierra la jornada con solo 15 puntos. Un naufragio total."
+      ]
+    },
+    {
+      "tipo": "rumor",
+      "jugador": null,
+      "manager": null,
+      "puntos": null,
+      "dinero": null,
+      "equipo": null,
+      "titulo": "¡EXCLUSIVA DEL SÓTANO!",
+      "subtitulo": "Se cuece algo muy gordo",
+      "texto": [
+        "Dicen que MuchaSalsa eligió a su portero tirando una moneda al aire. Y salió cruz."
+      ]
+    },
+    {
+      "tipo": "Fichaje destacado",
+      "jugador": "Koke",
+      "manager": "Maldinillo",
+      "puntos": null,
+      "dinero": 16.941,
+      "equipo": "Atlético de Madrid",
+      "titulo": "¡MALDINILLO ROBA A KOKE DEL MERCADO!",
+      "subtitulo": "16,94 millones por el capitán colchonero",
+      "texto": [
+        "Maldinillo se mueve con rapidez y ficha a Koke por 16,94 millones, reforzando el centro del campo.",
+        "El segundo clasificado sigue construyendo un equipo que huele a campeón."
+      ]
+    },
+    {
+      "tipo": "Fichaje destacado",
+      "jugador": "Marcos Llorente",
+      "manager": "Maldinillo",
+      "puntos": null,
+      "dinero": 13.59,
+      "equipo": "Atlético de Madrid",
+      "titulo": "¡LLORENTE SE SUMA AL PROYECTO MALDINILLO!",
+      "subtitulo": "13,59 millones por el polivalente del Atleti",
+      "texto": [
+        "No contento con Koke, Maldinillo también se lleva a Llorente por 13,59 millones.",
+        "Dos fichajes del Atlético en la misma jornada: el Sótano tiembla ante la ambición de Maldinillo."
+      ]
+    },
+    {
+      "tipo": "Fichaje destacado",
+      "jugador": "Thibaut Courtois",
+      "manager": "Maldinillo",
+      "puntos": null,
+      "dinero": 12.557,
+      "equipo": "Real Madrid",
+      "titulo": "¡COURTOIS ELIGE A MALDINILLO!",
+      "subtitulo": "El portero del Madrid llega por 12,56 millones",
+      "texto": [
+        "Maldinillo cierra un mercado de infarto y añade a Courtois por 12,56 millones para blindar la portería.",
+        "Tres fichajes en una jornada. Maldinillo está jugando en otra dimensión."
+      ]
+    },
+    {
+      "tipo": "Venta récord",
+      "jugador": "Isco",
+      "manager": "Maldinillo",
+      "puntos": null,
+      "dinero": 12.432,
+      "equipo": "Real Betis",
+      "titulo": "¡ADIÓS ISCO! MALDINILLO RECAUDA 12,43 MILLONES",
+      "subtitulo": "El andaluz sale para financiar los nuevos refuerzos",
+      "texto": [
+        "Maldinillo vende a Isco por 12,43 millones y usa ese dinero para construir su nuevo proyecto.",
+        "La salida del malagueño es el precio necesario para dar entrada a los tres nuevos refuerzos."
+      ]
+    },
+    {
+      "tipo": "MVP de la jornada",
+      "jugador": "A. Moleiro",
+      "manager": "Dani",
+      "puntos": 11,
+      "dinero": null,
+      "equipo": "Villarreal CF",
+      "titulo": "¡MOLEIRO DISPARA A DANI HACIA EL TÍTULO!",
+      "subtitulo": "11 puntos del villarrealense para el líder",
+      "texto": [
+        "Moleiro firmó una actuación sobresaliente con 11 puntos que catapultaron a Dani al segundo puesto de la jornada.",
+        "El joven del Villarreal sigue creciendo y se convierte en una pieza clave del equipo del líder."
+      ]
+    },
+    {
+      "tipo": "MVP de la jornada",
+      "jugador": "C. Hernandez",
+      "manager": "Chamacónicos",
+      "puntos": 10,
+      "dinero": null,
+      "equipo": "Real Betis",
+      "titulo": "¡HERNÁNDEZ LIDERA A LOS CHAMACÓNICOS!",
+      "subtitulo": "10 puntos del bético para ganar la jornada",
+      "texto": [
+        "C. Hernández fue determinante para que los Chamacónicos se llevaran la jornada con 10 puntos.",
+        "El jugador del Betis demostró que está en estado de gracia en el momento más importante."
+      ]
+    },
+    {
+      "tipo": "Peor actuación de la jornada",
+      "jugador": "D. Soria",
+      "manager": "MuchaSalsa",
+      "puntos": -2,
+      "dinero": null,
+      "equipo": "Getafe CF",
+      "titulo": "¡SORIA EN NEGATIVO! CATÁSTROFE EN MUCHASALSA",
+      "subtitulo": "El portero del Getafe firma -2 puntos en la peor actuación",
+      "texto": [
+        "D. Soria encajó goles como si fueran gratis y acabó con -2 puntos que hunden a MuchaSalsa.",
+        "15 puntos en jornada para MuchaSalsa: cuando el portero suma negativo, no hay milagro posible."
+      ]
+    }
+  ]
+}

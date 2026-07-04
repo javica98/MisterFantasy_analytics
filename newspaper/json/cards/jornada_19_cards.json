@@ -1,0 +1,130 @@
+{
+  "cards": [
+    {
+      "tipo": "clasificacion",
+      "jugador": null,
+      "manager": null,
+      "puntos": null,
+      "dinero": null,
+      "equipo": null,
+      "titulo": "¡DANI Y DE LA GUETTIR EMPATAN EN LA JORNADA!",
+      "subtitulo": "Maldinillo aprieta desde el segundo puesto",
+      "texto": [
+        "Dani y De la Guettir FC empatan en la jornada con 54 puntos cada uno, pero el líder se mantiene primero con 842.",
+        "Maldinillo suma 50 puntos en la J19 y consolida el segundo puesto general con 766 puntos.",
+        "Juanba vuelve a decepcionar con solo 21 puntos en la jornada. El sótano del sótano."
+      ]
+    },
+    {
+      "tipo": "rumor",
+      "jugador": null,
+      "manager": null,
+      "puntos": null,
+      "dinero": null,
+      "equipo": null,
+      "titulo": "¡LOS RUMORES VUELAN EN EL SÓTANO!",
+      "subtitulo": "Nadie sabe nada pero todos hablan",
+      "texto": [
+        "Se dice que Juanba tiene el mercado abierto las 24 horas pero solo lo cierra cuando los jugadores bajan de precio."
+      ]
+    },
+    {
+      "tipo": "Fichaje destacado",
+      "jugador": "Eric Garcia",
+      "manager": "Dani",
+      "puntos": null,
+      "dinero": 23.128,
+      "equipo": "FC Barcelona",
+      "titulo": "¡DANI FICHA A ERIC GARCIA POR TODO LO ALTO!",
+      "subtitulo": "23,13 millones por el central del Barcelona",
+      "texto": [
+        "El líder de la Sótano League refuerza la defensa con Eric Garcia y suelta 23,13 millones sin dudarlo.",
+        "Un central del Barça para un líder del Sótano: Dani solo piensa en grande."
+      ]
+    },
+    {
+      "tipo": "Fichaje destacado",
+      "jugador": "Antony Santos",
+      "manager": "Libre",
+      "puntos": null,
+      "dinero": 20.0,
+      "equipo": "Real Betis",
+      "titulo": "¡ANTONY LLEGA AL SÓTANO POR 20 MILLONES!",
+      "subtitulo": "Libre se mueve en el mercado con un fichaje sorpresa",
+      "texto": [
+        "Libre rompe su silencio y desembolsa 20 millones por Antony Santos, cedido en el Betis.",
+        "Una inversión que sorprende a todos en el Sótano. ¿Será el fichaje que lo cambia todo?"
+      ]
+    },
+    {
+      "tipo": "Fichaje destacado",
+      "jugador": "Borja Iglesias",
+      "manager": "Maldinillo",
+      "puntos": null,
+      "dinero": 16.592,
+      "equipo": "RC Celta de Vigo",
+      "titulo": "¡MALDINILLO APUESTA POR BORJA IGLESIAS!",
+      "subtitulo": "El Panda llega al equipo del perseguidor por 16,59 millones",
+      "texto": [
+        "Maldinillo da otro golpe de mercado y se lleva a Borja Iglesias del Celta por 16,59 millones.",
+        "Un delantero de garantías para un equipo que cada jornada está más cerca del liderato."
+      ]
+    },
+    {
+      "tipo": "Venta récord",
+      "jugador": "Marcus Rashford",
+      "manager": "Maldinillo",
+      "puntos": null,
+      "dinero": 14.591,
+      "equipo": "FC Barcelona",
+      "titulo": "¡RASHFORD SALE! MALDINILLO INGRESA 14,59 MILLONES",
+      "subtitulo": "El inglés abandona el proyecto del segundo clasificado",
+      "texto": [
+        "Marcus Rashford hace las maletas y Maldinillo se embolsa 14,59 millones por su traspaso.",
+        "Con ese dinero llega Borja Iglesias. El mercado de Maldinillo no para."
+      ]
+    },
+    {
+      "tipo": "MVP de la jornada",
+      "jugador": "K. Mbappe",
+      "manager": "Chamacónicos",
+      "puntos": 17,
+      "dinero": null,
+      "equipo": "Real Madrid",
+      "titulo": "¡MBAPPÉ EXPLOTA Y DA 17 PUNTOS A LOS CHAMACÓNICOS!",
+      "subtitulo": "El francés fue el mejor jugador de la J19",
+      "texto": [
+        "Kylian Mbappé se acordó de que es el mejor del mundo y firmó 17 puntos para los Chamacónicos.",
+        "Con actuaciones así, los Chamacónicos tienen opciones de soñar con el título."
+      ]
+    },
+    {
+      "tipo": "MVP de la jornada",
+      "jugador": "C. Romero",
+      "manager": "Maldinillo",
+      "puntos": 14,
+      "dinero": null,
+      "equipo": "RCD Espanyol",
+      "titulo": "¡ROMERO ARMA A MALDINILLO CON 14 PUNTOS!",
+      "subtitulo": "El central del Espanyol firma una actuación sobresaliente",
+      "texto": [
+        "Carlos Romero fue una pesadilla para los atacantes rivales y sumó 14 puntos para Maldinillo.",
+        "Un central en estado de gracia para un equipo que sueña con destronar a Dani."
+      ]
+    },
+    {
+      "tipo": "Peor actuación de la jornada",
+      "jugador": "D. Vivian",
+      "manager": "Los marinero",
+      "puntos": 0,
+      "dinero": null,
+      "equipo": "Athletic Club",
+      "titulo": "¡VIVIAN DESAPARECE! CERO PUNTOS EN LA PEOR NOCHE",
+      "subtitulo": "El defensa del Athletic no existió para Los marinero",
+      "texto": [
+        "D. Vivian tuvo una noche para olvidar: cero puntos y el bochorno de ser lo peor de la jornada.",
+        "Los marinero esperaban más del central del Athletic Club en un partido que necesitaban puntuar."
+      ]
+    }
+  ]
+}

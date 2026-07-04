@@ -176,7 +176,7 @@ def monthly_dashboard(df_jornadas: pd.DataFrame,
         top3 = top3[["jugador", "equipo", "Diff"]].rename(columns={
             "jugador": "Jugador",
             "equipo": "Equipo",
-            "ganaDiffncias": "€"
+            "Diff": "€"
         })
         top3 = top3.reset_index(drop=True)
         return top3

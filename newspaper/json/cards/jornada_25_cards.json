@@ -1,0 +1,130 @@
+{
+  "cards": [
+    {
+      "tipo": "clasificacion",
+      "jugador": null,
+      "manager": null,
+      "puntos": null,
+      "dinero": null,
+      "equipo": null,
+      "titulo": "¡LOS MARINERO GANAN LA JORNADA! MALDINILLO APRIETA A DANI",
+      "subtitulo": "MuchaSalsa firma la jornada más negra de la temporada",
+      "texto": [
+        "Dani mantiene el liderato con 1138 puntos pero Maldinillo se acerca a solo 51 puntos de distancia con 1087.",
+        "Los marinero ganan la J25 con 55 puntos y Maldinillo es segundo con 49. La lucha por el título se calienta.",
+        "MuchaSalsa cierra con apenas 1 punto en la jornada. Uno. Un solo punto. El año más difícil del Sótano."
+      ]
+    },
+    {
+      "tipo": "rumor",
+      "jugador": null,
+      "manager": null,
+      "puntos": null,
+      "dinero": null,
+      "equipo": null,
+      "titulo": "¡NOTICIA DE ÚLTIMA HORA!",
+      "subtitulo": "El mercado habla",
+      "texto": [
+        "Se dice que MuchaSalsa fichó a un jugador pensando que era Raphinha y era el Raphinha de la Segunda División portuguesa."
+      ]
+    },
+    {
+      "tipo": "Fichaje destacado",
+      "jugador": "Abde Ezzalzouli",
+      "manager": "Libre",
+      "puntos": null,
+      "dinero": 29.95,
+      "equipo": "Real Betis",
+      "titulo": "¡LIBRE SE LLEVA A ABDE POR 29,95 MILLONES!",
+      "subtitulo": "El marroquí del Betis, el fichaje estrella de la jornada para Libre",
+      "texto": [
+        "Libre sigue sorprendiendo al mercado y firma a Abde Ezzalzouli por 29,95 millones.",
+        "El extremo del Betis llega a un equipo que cada jornada es menos 'libre' y más ambicioso."
+      ]
+    },
+    {
+      "tipo": "Fichaje destacado",
+      "jugador": "Arda Guler",
+      "manager": "Maldinillo",
+      "puntos": null,
+      "dinero": 25.232,
+      "equipo": "Real Madrid",
+      "titulo": "¡MALDINILLO RECUPERA A ARDA GULER POR 25,23 MILLONES!",
+      "subtitulo": "El turco del Madrid regresa al Sótano con Maldinillo",
+      "texto": [
+        "Maldinillo apuesta por la calidad turca y ficha a Arda Guler por 25,23 millones del Real Madrid.",
+        "El ex jugador de Dani ahora viste los colores del perseguidor. El mercado tiene su ironía."
+      ]
+    },
+    {
+      "tipo": "Fichaje destacado",
+      "jugador": "Marcus Rashford",
+      "manager": "Libre",
+      "puntos": null,
+      "dinero": 22.212,
+      "equipo": "FC Barcelona",
+      "titulo": "¡RASHFORD TAMBIÉN FICHA POR LIBRE!",
+      "subtitulo": "22,21 millones por el inglés cedido en el Barça",
+      "texto": [
+        "Libre continúa su política de grandes fichajes y suma a Rashford por 22,21 millones.",
+        "Dos fichajes millonarios en una jornada para un Libre que ya no tiene nada de libre."
+      ]
+    },
+    {
+      "tipo": "Venta récord",
+      "jugador": "Jorge de Frutos",
+      "manager": "Maldinillo",
+      "puntos": null,
+      "dinero": 13.785,
+      "equipo": "Rayo Vallecano",
+      "titulo": "¡MALDINILLO VENDE A DE FRUTOS POR 13,79 MILLONES!",
+      "subtitulo": "El extremo del Rayo sale para financiar la llegada de Guler",
+      "texto": [
+        "Jorge de Frutos abandona el proyecto de Maldinillo embolsando 13,79 millones.",
+        "El que fue MVP de la jornada hace semanas, ahora sale. Maldinillo no tiene sentimentalismo."
+      ]
+    },
+    {
+      "tipo": "MVP de la jornada",
+      "jugador": "M. Bernal",
+      "manager": "Maldinillo",
+      "puntos": 13,
+      "dinero": null,
+      "equipo": "FC Barcelona",
+      "titulo": "¡BERNAL SORPRENDE CON 13 PUNTOS PARA MALDINILLO!",
+      "subtitulo": "El joven del Barça firma la mejor actuación de la jornada",
+      "texto": [
+        "Marc Bernal protagonizó una actuación brillante con 13 puntos que catapultan a Maldinillo.",
+        "El centrocampista del Barcelona sigue creciendo y se convierte en pieza fundamental del equipo."
+      ]
+    },
+    {
+      "tipo": "MVP de la jornada",
+      "jugador": "F. Lopez",
+      "manager": "Los marinero",
+      "puntos": 12,
+      "dinero": null,
+      "equipo": "FC Barcelona",
+      "titulo": "¡FERMÍN LÓPEZ LIDERA A LOS MARINERO!",
+      "subtitulo": "12 puntos del centrocampista culé para ganar la jornada",
+      "texto": [
+        "Fermín López justificó cada céntimo de los 23,67 millones que costó con 12 puntos de clase.",
+        "Los marinero tienen en Fermín a uno de los jugadores más en forma del Sótano."
+      ]
+    },
+    {
+      "tipo": "Peor actuación de la jornada",
+      "jugador": "C. Romero",
+      "manager": "Maldinillo",
+      "puntos": -1,
+      "dinero": null,
+      "equipo": "RCD Espanyol",
+      "titulo": "¡ROMERO EN NEGATIVO! UN FALLO QUE DUELE A MALDINILLO",
+      "subtitulo": "El central del Espanyol firma -1 punto en la peor actuación",
+      "texto": [
+        "Carlos Romero tuvo una noche horrible con -1 punto que lastra al segundo clasificado.",
+        "Maldinillo necesita más regularidad de Romero si quiere ganarle el título a Dani."
+      ]
+    }
+  ]
+}

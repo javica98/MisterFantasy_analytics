@@ -1,0 +1,130 @@
+{
+  "cards": [
+    {
+      "tipo": "clasificacion",
+      "jugador": null,
+      "manager": null,
+      "puntos": null,
+      "dinero": null,
+      "equipo": null,
+      "titulo": "¡LOS MARINERO ASALTAN EL TRONO DE LA JORNADA!",
+      "subtitulo": "Dani aguanta líder pero sangra en la clasificación semanal",
+      "texto": [
+        "Dani sigue mandando con 738 puntos en la general, pero su jornada fue un desastre: séptimo con 37 puntos.",
+        "Los marinero ganaron la J17 con 56 puntos y amenazan seriamente el liderato general.",
+        "Libre cierra con 0 puntos en la jornada. Cero. Un fantasma en el Sótano."
+      ]
+    },
+    {
+      "tipo": "rumor",
+      "jugador": null,
+      "manager": null,
+      "puntos": null,
+      "dinero": null,
+      "equipo": null,
+      "titulo": "¡SE HABLA DE TODO EN EL SÓTANO!",
+      "subtitulo": "Los rumores no descansan",
+      "texto": [
+        "Se rumorea que Jotabetrbb tiene un algoritmo secreto para fichar... y que el algoritmo también pierde dinero."
+      ]
+    },
+    {
+      "tipo": "Fichaje destacado",
+      "jugador": "Pedri",
+      "manager": "Los marinero",
+      "puntos": null,
+      "dinero": 60.295,
+      "equipo": "FC Barcelona",
+      "titulo": "¡BOMBAZO! PEDRI SE VA CON LOS MARINERO",
+      "subtitulo": "60,30 millones por el centrocampista del Barça",
+      "texto": [
+        "Los marinero abren la billetera y se llevan a Pedri por 60,30 millones. Un fichaje de infarto.",
+        "El crack del Barcelona llega para liderar las aspiraciones de un equipo que pelea por el título."
+      ]
+    },
+    {
+      "tipo": "Fichaje destacado",
+      "jugador": "Lamine Yamal",
+      "manager": "Dani",
+      "puntos": null,
+      "dinero": 46.551,
+      "equipo": "FC Barcelona",
+      "titulo": "¡DANI FICHA A YAMAL! ¡EL NIÑO PRODIGIO!",
+      "subtitulo": "46,55 millones por la perla del Barcelona",
+      "texto": [
+        "El líder de la Sótano League va al mercado y se lleva al mejor joven del mundo por 46,55 millones.",
+        "Dani apuesta por el futuro. Con Yamal en el equipo, el trono está más seguro que nunca."
+      ]
+    },
+    {
+      "tipo": "Fichaje destacado",
+      "jugador": "Raphinha",
+      "manager": "Maldinillo",
+      "puntos": null,
+      "dinero": 40.65,
+      "equipo": "FC Barcelona",
+      "titulo": "¡MALDINILLO SE LLEVA A RAPHINHA!",
+      "subtitulo": "El brasileño llega al equipo del Sótano por 40,65 millones",
+      "texto": [
+        "Maldinillo sigue construyendo un equipo de élite y firma a Raphinha por 40,65 millones.",
+        "Con este fichaje, el tercer clasificado lanza un mensaje claro: viene a por Dani."
+      ]
+    },
+    {
+      "tipo": "Venta récord",
+      "jugador": "Arda Guler",
+      "manager": "Dani",
+      "puntos": null,
+      "dinero": 18.9,
+      "equipo": "Real Madrid",
+      "titulo": "¡GULER SE VA! DANI RECAUDA 18,90 MILLONES",
+      "subtitulo": "El turco del Madrid sale del equipo del líder",
+      "texto": [
+        "Dani vende a Arda Guler por 18,90 millones para financiar la llegada de Yamal.",
+        "La operación es redonda: vende potencial turco y compra genio catalán."
+      ]
+    },
+    {
+      "tipo": "MVP de la jornada",
+      "jugador": "A. Ruibal",
+      "manager": "Libre",
+      "puntos": 21,
+      "dinero": null,
+      "equipo": "Real Betis",
+      "titulo": "¡RUIBAL LEVANTA A LIBRE DE LA NADA!",
+      "subtitulo": "21 puntos del bético en la mejor actuación de la jornada",
+      "texto": [
+        "Cuando nadie esperaba nada de Libre, A. Ruibal apareció con 21 puntos descomunales.",
+        "El jugador del Betis fue el mejor de toda la jornada. ¡Lástima que el resto del equipo no acompañara!"
+      ]
+    },
+    {
+      "tipo": "MVP de la jornada",
+      "jugador": "Koke",
+      "manager": "MuchaSalsa",
+      "puntos": 14,
+      "dinero": null,
+      "equipo": "Atlético de Madrid",
+      "titulo": "¡KOKE VUELVE A BRILLAR!",
+      "subtitulo": "14 puntos del capitán del Atleti para MuchaSalsa",
+      "texto": [
+        "Koke sigue siendo el salvavidas de MuchaSalsa: 14 puntos que mantienen vivo al equipo.",
+        "El veterano del Atlético demuestra que la experiencia siempre da réditos en el Sótano."
+      ]
+    },
+    {
+      "tipo": "Peor actuación de la jornada",
+      "jugador": "N. Mendy",
+      "manager": "Chamacónicos",
+      "puntos": -1,
+      "dinero": null,
+      "equipo": "Rayo Vallecano",
+      "titulo": "¡MENDY EN NEGATIVO! VERGÜENZA PARA LOS CHAMACÓNICOS",
+      "subtitulo": "El lateral del Rayo firma -1 punto en la jornada",
+      "texto": [
+        "N. Mendy se apuntó a la lista negra con -1 punto. Un insulto a la inteligencia táctica de los Chamacónicos.",
+        "El lateral del Rayo Vallecano regaló puntos al enemigo en la actuación más bochornosa de la J17."
+      ]
+    }
+  ]
+}

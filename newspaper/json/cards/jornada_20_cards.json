@@ -1,0 +1,158 @@
+{
+  "cards": [
+    {
+      "tipo": "clasificacion",
+      "jugador": null,
+      "manager": null,
+      "puntos": null,
+      "dinero": null,
+      "equipo": null,
+      "titulo": "¡LOS CHAMACÓNICOS ARRASAN EN LA JORNADA!",
+      "subtitulo": "Dani mantiene el liderato pero empieza a sufrir",
+      "texto": [
+        "Dani aguanta en lo más alto con 887 puntos, pero los Chamacónicos le pisaron los talones ganando la J20 con 58 puntos.",
+        "Maldinillo sube al tercer puesto con 812 y los Chamacónicos al segundo con 817. ¡Está todo por decidir!",
+        "MuchaSalsa firma la peor jornada de la temporada con solo 7 puntos. Un escándalo."
+      ]
+    },
+    {
+      "tipo": "rumor",
+      "jugador": null,
+      "manager": null,
+      "puntos": null,
+      "dinero": null,
+      "equipo": null,
+      "titulo": "¡EL SÓTANO NUNCA DUERME!",
+      "subtitulo": "Los rumores más sórdidos del mercado",
+      "texto": [
+        "Se rumorea que MuchaSalsa alineó a su portero con gripe, su defensa central de vacaciones y su delantero en modo siesta."
+      ]
+    },
+    {
+      "tipo": "Fichaje destacado",
+      "jugador": "Joan Garcia",
+      "manager": "Libre",
+      "puntos": null,
+      "dinero": 15.754,
+      "equipo": "FC Barcelona",
+      "titulo": "¡LIBRE FICHA A JOAN GARCIA POR 15,75 MILLONES!",
+      "subtitulo": "El portero del Barcelona aterriza en el equipo sin manager",
+      "texto": [
+        "Libre se hace con Joan Garcia por 15,75 millones en un fichaje que sorprende al Sótano.",
+        "Un portero del Barça para un equipo que necesita urgentemente estabilidad entre palos."
+      ]
+    },
+    {
+      "tipo": "Fichaje destacado",
+      "jugador": "Georges Mikautadze",
+      "manager": "Dani",
+      "puntos": null,
+      "dinero": 14.128,
+      "equipo": "Villarreal CF",
+      "titulo": "¡DANI VUELVE A POR MIKAUTADZE!",
+      "subtitulo": "El georgiano regresa al equipo del líder por 14,13 millones",
+      "texto": [
+        "Dani recupera a Mikautadze por 14,13 millones. El georgiano del Villarreal sigue siendo su objetivo prioritario.",
+        "El líder sabe lo que quiere y no para hasta conseguirlo."
+      ]
+    },
+    {
+      "tipo": "Fichaje destacado",
+      "jugador": "Rodrygo",
+      "manager": "Jotabetrbb",
+      "puntos": null,
+      "dinero": 12.225,
+      "equipo": "Real Madrid",
+      "titulo": "¡RODRYGO ELIGE A JOTABETRBB!",
+      "subtitulo": "El brasileño del Madrid llega por 12,23 millones",
+      "texto": [
+        "Jotabetrbb da un golpe de efecto y ficha a Rodrygo por 12,23 millones del Real Madrid.",
+        "Un jugador de primer nivel para un equipo que necesita refuerzos de garantía."
+      ]
+    },
+    {
+      "tipo": "Venta récord",
+      "jugador": "Joan Garcia",
+      "manager": "Libre",
+      "puntos": null,
+      "dinero": 15.159,
+      "equipo": "FC Barcelona",
+      "titulo": "¡JOAN GARCIA SALE EL MISMO DÍA QUE LLEGA!",
+      "subtitulo": "Libre lo vende por 15,16 millones en la operación más rápida del Sótano",
+      "texto": [
+        "Libre compra y vende a Joan Garcia en tiempo récord, embolsándose 15,16 millones.",
+        "Una operación de mercado instantánea que deja a todos boquiabiertos en el Sótano."
+      ]
+    },
+    {
+      "tipo": "MVP de la jornada",
+      "jugador": "V. Muriqi",
+      "manager": "Chamacónicos",
+      "puntos": 19,
+      "dinero": null,
+      "equipo": "RCD Mallorca",
+      "titulo": "¡MURIQI ES IMPARABLE! 19 PUNTOS HISTÓRICOS",
+      "subtitulo": "El kosovaro del Mallorca lidera la jornada para los Chamacónicos",
+      "texto": [
+        "Vedat Muriqi firmó la actuación individual más brillante de la jornada con 19 puntos descomunales.",
+        "Los Chamacónicos pueden dar gracias al delantero del Mallorca: sin él no existirían."
+      ]
+    },
+    {
+      "tipo": "MVP de la jornada",
+      "jugador": "A. Ruibal",
+      "manager": "Libre",
+      "puntos": 15,
+      "dinero": null,
+      "equipo": "Real Betis",
+      "titulo": "¡RUIBAL VUELVE A SALVAR A LIBRE!",
+      "subtitulo": "15 puntos del extremo bético para el equipo revelación",
+      "texto": [
+        "A. Ruibal sigue siendo el salvavidas de Libre con 15 puntos en otra actuación de primer nivel.",
+        "Libre sin Ruibal sería el farolillo rojo. Con Ruibal, es una amenaza."
+      ]
+    },
+    {
+      "tipo": "MVP de la jornada",
+      "jugador": "R. Asencio",
+      "manager": "Los marinero",
+      "puntos": 13,
+      "dinero": null,
+      "equipo": "Real Madrid",
+      "titulo": "¡ASENCIO BRILLA PARA LOS MARINERO!",
+      "subtitulo": "El joven del Madrid aporta 13 puntos cruciales",
+      "texto": [
+        "Raúl Asencio demostró que tiene clase suficiente para brillar en el Sótano con 13 puntos.",
+        "Los marinero cuentan con él para seguir escalando posiciones en la general."
+      ]
+    },
+    {
+      "tipo": "Peor actuación de la jornada",
+      "jugador": "N. Mendy",
+      "manager": "Chamacónicos",
+      "puntos": -8,
+      "dinero": null,
+      "equipo": "Rayo Vallecano",
+      "titulo": "¡MENDY DESTROZA A LOS CHAMACÓNICOS CON -8 PUNTOS!",
+      "subtitulo": "La peor actuación de la jornada en el peor momento",
+      "texto": [
+        "N. Mendy firmó un recital de desastres y acabó con -8 puntos. Una vergüenza histórica para los Chamacónicos.",
+        "Lo que gana con Muriqi, lo pierde con Mendy. El karma del Sótano existe."
+      ]
+    },
+    {
+      "tipo": "Expulsión",
+      "jugador": "N. Mendy",
+      "manager": "Chamacónicos",
+      "puntos": -8,
+      "dinero": null,
+      "equipo": "Rayo Vallecano",
+      "titulo": "¡MENDY EXPULSADO! DOBLE CASTIGO PARA LOS CHAMACÓNICOS",
+      "subtitulo": "Tarjeta roja que hunde aún más a Rayo Vallecano",
+      "texto": [
+        "Como si los -8 puntos no fueran suficiente, Mendy recibió la tarjeta roja dejando al equipo con diez.",
+        "Una expulsión que resume toda la noche catastrófica del lateral del Rayo."
+      ]
+    }
+  ]
+}

@@ -13,6 +13,38 @@ from src.utils.photo_utils import manager_photo
 
 logger = logging.getLogger(__name__)
 
+
+def _detect_face_center_y(pil_image: Image.Image) -> float | None:
+    """
+    Detecta caras en la imagen con OpenCV Haar y devuelve el centro Y medio
+    de todas las caras encontradas (ratio 0-1 sobre la altura total).
+    Devuelve None si no se detecta ninguna cara.
+    """
+    try:
+        import cv2
+        import numpy as np
+
+        img_rgb = np.array(pil_image.convert("RGB"))
+        gray = cv2.cvtColor(img_rgb, cv2.COLOR_RGB2GRAY)
+        detector = cv2.CascadeClassifier(
+            cv2.data.haarcascades + "haarcascade_frontalface_default.xml"
+        )
+        faces = detector.detectMultiScale(gray, scaleFactor=1.1, minNeighbors=5, minSize=(30, 30))
+
+        if len(faces) == 0:
+            return None
+
+        # Media del centro Y de todas las caras detectadas
+        centers_y = [y + h / 2 for (_, y, _, h) in faces]
+        mean_center_y = sum(centers_y) / len(centers_y)
+        ratio = mean_center_y / pil_image.height
+        logger.info(f"[FaceDetect] {len(faces)} cara(s) detectada(s), centro Y ratio={ratio:.2f}")
+        return ratio
+
+    except Exception as e:
+        logger.warning(f"[FaceDetect] Error: {e}")
+        return None
+
 IMG_WIDTH = 1080 
 IMG_HEIGHT = 1350
 def create_clasification_card_horizontal(clasificacion_json,PATH_UTILS,width,height,IMAGES_TEAMS_DIR,DEFAULT_TEAM_IMAGE,font="Oswald-Bold.otf"):
@@ -176,7 +208,20 @@ def paste_center_background(base_img: Image.Image, bg_path: str, opacity: float 
     # Pegar
     base_img.alpha_composite(bg, (0, y))
     return base_img
-def draw_multiline_text(tipo,draw, text, x, y, font, max_width, measure_only=False, line_spacing=3, paragraph_spacing=0, fill="#ff751f", stroke_fill="black", stroke_width=2,titulo=False):
+def _draw_line_mixed(draw, line, x, y, font, number_font, fill, stroke_width, stroke_fill):
+    """Renderiza una línea carácter a carácter alternando font/number_font para dígitos."""
+    import re
+    cursor_x = x
+    for segment, is_digit in [(m.group(), m.group().isdigit())
+                               for m in re.finditer(r'\d+|\D+', line)]:
+        f = number_font if is_digit else font
+        draw.text((cursor_x, y), segment, font=f, fill=fill,
+                  stroke_width=stroke_width, stroke_fill=stroke_fill)
+        bbox = f.getbbox(segment)
+        cursor_x += bbox[2] - bbox[0]
+
+
+def draw_multiline_text(tipo, draw, text, x, y, font, max_width, measure_only=False, line_spacing=3, paragraph_spacing=0, fill="#ff751f", stroke_fill="black", stroke_width=2, titulo=False, number_font=None):
     """
     Dibuja texto multilínea con ajuste de ancho, contorno y espaciado.
     - fill: color del texto
@@ -203,7 +248,10 @@ def draw_multiline_text(tipo,draw, text, x, y, font, max_width, measure_only=Fal
     if ((tipo == "Portada") or (tipo == "Right_box") or titulo):
         for line in lines:
             if not measure_only:
-                draw.text((x, y), line, font=font, fill=fill, stroke_width=stroke_width, stroke_fill=stroke_fill)
+                if number_font is not None:
+                    _draw_line_mixed(draw, line, x, y, font, number_font, fill, stroke_width, stroke_fill)
+                else:
+                    draw.text((x, y), line, font=font, fill=fill, stroke_width=stroke_width, stroke_fill=stroke_fill)
             bbox = font.getbbox(line)
             y += bbox[3] - bbox[1] + line_spacing
         y += paragraph_spacing - line_spacing
@@ -239,24 +287,29 @@ def create_template(canvas,tipo,PATH_UTILS):
     return canvas
 def create_card(card_info, IMAGES_TEAMS_DIR, DEFAULT_TEAM_IMAGE,tipo, PATH_UTILS, measure_only=False):
     FONT_PATH = "Extenda.ttf"
+    NUM_FONT_PATH = "Oswald-Bold.otf"
     font_title_path = os.path.join(PATH_UTILS, FONT_PATH)
+    num_font_path = os.path.join(PATH_UTILS, NUM_FONT_PATH)
     # Fuentes
     title_font = ImageFont.truetype(font_title_path, 50)
+    title_num_font = ImageFont.truetype(num_font_path, 50)
     subtitle_font = ImageFont.truetype("arial.ttf", 25)
-    text_font = ImageFont.truetype("arial.ttf", 16) 
+    text_font = ImageFont.truetype("arial.ttf", 16)
     card_width = IMG_WIDTH/3
     if (tipo == "reduced"):
         title_font = ImageFont.truetype(font_title_path, 30)
+        title_num_font = ImageFont.truetype(num_font_path, 30)
         subtitle_font = ImageFont.truetype("arial.ttf", 15)
-        text_font = ImageFont.truetype("arial.ttf", 10) 
+        text_font = ImageFont.truetype("arial.ttf", 10)
         card_width = IMG_WIDTH/4
     if (tipo == "Right_box"):
         card_width = IMG_WIDTH/3
         text_font = ImageFont.truetype("arial.ttf", 20)
     if tipo == "Portada":
         title_font = ImageFont.truetype(font_title_path, 135)
+        title_num_font = ImageFont.truetype(num_font_path, 135)
         subtitle_font = ImageFont.truetype("arial.ttf", 25)
-        text_font = ImageFont.truetype("arial.ttf", 20) 
+        text_font = ImageFont.truetype("arial.ttf", 20)
         card_width = IMG_WIDTH *0.68
     x_margin = 10
     max_width = card_width - 2 * x_margin
@@ -264,7 +317,7 @@ def create_card(card_info, IMAGES_TEAMS_DIR, DEFAULT_TEAM_IMAGE,tipo, PATH_UTILS
     # --- 1. Calcular altura total ---
     y = 10
     if (tipo != "Right_box"):
-        y = draw_multiline_text(tipo,None, card_info["titulo"], x_margin, y, title_font, max_width, measure_only=True,titulo = True)
+        y = draw_multiline_text(tipo,None, card_info["titulo"], x_margin, y, title_font, max_width, measure_only=True, titulo=True, number_font=title_num_font)
         y += 15
     y = draw_multiline_text(tipo,None, card_info["subtitulo"], x_margin, y, subtitle_font, max_width, measure_only=True)
     
@@ -291,7 +344,7 @@ def create_card(card_info, IMAGES_TEAMS_DIR, DEFAULT_TEAM_IMAGE,tipo, PATH_UTILS
     draw = ImageDraw.Draw(img)
     y = 10
     if (tipo != "Right_box"):
-        y = draw_multiline_text(tipo,draw, card_info["titulo"], x_margin, y, title_font, max_width,titulo = True)
+        y = draw_multiline_text(tipo,draw, card_info["titulo"], x_margin, y, title_font, max_width, titulo=True, number_font=title_num_font)
         y += 20
         y = draw_multiline_text(tipo,draw, card_info["subtitulo"], x_margin, y, subtitle_font, max_width)
     y += 25
@@ -326,30 +379,32 @@ def create_portada(tipo, canvas, card_info, PATH_UTILS):
     # --- 2. Pegar foto portada ---
     portada = Image.open(image_path_portada).convert("RGBA")
 
-    min_width = IMG_WIDTH
-    min_height = IMG_HEIGHT * 0.8
+    # Área objetivo: mitad izquierda del canvas, altura completa
+    target_w = int(IMG_WIDTH * 0.75)
+    target_h = IMG_HEIGHT
+
     w, h = portada.size
 
-    if w < min_width:
-        scale = min_width / w
-        portada = portada.resize(
-            (int(w * scale), int(h * scale)),
-            Image.LANCZOS
-        )
-    w, h = portada.size
-    if h < min_height:
-        scale = min_height / h
-        portada = portada.resize(
-            (int(w * scale), int(h * scale)),
-            Image.LANCZOS
-        )
+    # "Cover": escalar para cubrir target_w Y target_h (nunca más pequeña que ninguno)
+    scale = max(target_w / w, target_h / h)
+    portada = portada.resize((int(w * scale), int(h * scale)), Image.LANCZOS)
 
+    # Paso 3: si sigue siendo más alta que el canvas, centrar sobre la cara
+    w, h = portada.size
+    if h > target_h:
+        face_ratio = _detect_face_center_y(portada)
+        if face_ratio is not None:
+            face_y = int(h * face_ratio)
+            crop_top = max(0, face_y - target_h // 2)
+            crop_top = min(crop_top, h - target_h)
+        else:
+            crop_top = int(h * 0.10)
+        portada = portada.crop((0, crop_top, w, min(crop_top + target_h, h)))
 
     target_center_x = IMG_WIDTH * 3 / 8
     w, h = portada.size
-
-    x = int(target_center_x - w / 2)   
-    canvas.alpha_composite(portada, (x, 0))    
+    x = int(target_center_x - w / 2)
+    canvas.alpha_composite(portada, (x, 0))
     return canvas
 def create_logo(PATH_UTILS):
     LOGO_PATH = "LogoBajando.png"
@@ -377,9 +432,10 @@ def create_logo(PATH_UTILS):
 
     return logo_rotado
 def create_botton(canvas,botton_cards, IMAGES_TEAMS_DIR, DEFAULT_TEAM_IMAGE, PATH_UTILS):
-    botton1 = create_card(botton_cards[1], IMAGES_TEAMS_DIR, DEFAULT_TEAM_IMAGE,"standard", PATH_UTILS)
-    botton2 = create_card(botton_cards[2], IMAGES_TEAMS_DIR, DEFAULT_TEAM_IMAGE,"standard", PATH_UTILS)
-    botton3 = create_card(botton_cards[3], IMAGES_TEAMS_DIR, DEFAULT_TEAM_IMAGE,"standard", PATH_UTILS)
+    slots = [botton_cards[i] if i < len(botton_cards) else botton_cards[-1] for i in [1, 2, 3]]
+    botton1 = create_card(slots[0], IMAGES_TEAMS_DIR, DEFAULT_TEAM_IMAGE,"standard", PATH_UTILS)
+    botton2 = create_card(slots[1], IMAGES_TEAMS_DIR, DEFAULT_TEAM_IMAGE,"standard", PATH_UTILS)
+    botton3 = create_card(slots[2], IMAGES_TEAMS_DIR, DEFAULT_TEAM_IMAGE,"standard", PATH_UTILS)
     canvas.alpha_composite(botton1, (0,1000))
     canvas.alpha_composite(botton2, (360,1000))
     canvas.alpha_composite(botton3, (720,1000))

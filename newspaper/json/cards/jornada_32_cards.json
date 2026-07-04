@@ -1,0 +1,144 @@
+{
+  "cards": [
+    {
+      "tipo": "clasificacion",
+      "jugador": null,
+      "manager": null,
+      "puntos": null,
+      "dinero": null,
+      "equipo": null,
+      "titulo": "¡MALDINILLO A SOLO 28 PUNTOS DE DANI! EL TÍTULO TIEMBLA",
+      "subtitulo": "Maldinillo gana la jornada con 69 puntos. La remontada es posible",
+      "texto": [
+        "Maldinillo firma 69 puntos en la J32 y se coloca a solo 28 del líder Dani, que tiene 1528 frente a los 1500 del perseguidor.",
+        "Dani responde con 63 puntos pero no es suficiente para frenar la remontada de Maldinillo.",
+        "La expulsión de Palazón hunde a Los marinero en la jornada con -4 puntos que penalizan su balance."
+      ]
+    },
+    {
+      "tipo": "rumor",
+      "jugador": null,
+      "manager": null,
+      "puntos": null,
+      "dinero": null,
+      "equipo": null,
+      "titulo": "¡BOMBA NUCLEAR EN EL SÓTANO!",
+      "subtitulo": "28 puntos de diferencia y los nervios al rojo vivo",
+      "texto": [
+        "Fuentes de máxima confianza aseguran que Dani ya ha calculado cuántos puntos necesita por jornada para mantener el liderato. El número le provoca pesadillas."
+      ]
+    },
+    {
+      "tipo": "Fichaje destacado",
+      "jugador": "Arda Guler",
+      "manager": "Maldinillo",
+      "puntos": null,
+      "dinero": 19.024,
+      "equipo": "Real Madrid",
+      "titulo": "¡MALDINILLO VUELVE A FICHAR A ARDA GÜLER!",
+      "subtitulo": "El turco regresa al equipo del perseguidor por 19,02 millones",
+      "texto": [
+        "Maldinillo recupera a Arda Güler por 19,02 millones en un movimiento que ya no sorprende a nadie.",
+        "El turco del Real Madrid es el jugador fetiche de Maldinillo: siempre vuelve."
+      ]
+    },
+    {
+      "tipo": "Fichaje destacado",
+      "jugador": "Aurelien Tchouameni",
+      "manager": "Maldinillo",
+      "puntos": null,
+      "dinero": 17.419,
+      "equipo": "Real Madrid",
+      "titulo": "¡MALDINILLO FICHA A TCHOUAMENI DEL MADRID!",
+      "subtitulo": "17,42 millones por el francés en uno de los mercados más activos de la temporada",
+      "texto": [
+        "Aurélien Tchouameni refuerza el centro del campo de Maldinillo por 17,42 millones.",
+        "El francés del Real Madrid llega para hacer aún más sólido al equipo que persigue el liderato."
+      ]
+    },
+    {
+      "tipo": "Fichaje destacado",
+      "jugador": "Robert Lewandowski",
+      "manager": "Maldinillo",
+      "puntos": null,
+      "dinero": 14.405,
+      "equipo": "FC Barcelona",
+      "titulo": "¡LEWANDOWSKI ELIGE A MALDINILLO! BOMBAZO MAYÚSCULO",
+      "subtitulo": "14,41 millones por el polaco del Barcelona",
+      "texto": [
+        "Robert Lewandowski llega al proyecto de Maldinillo por 14,41 millones. Un nombre de leyenda en el Sótano.",
+        "Tres fichajes en la misma jornada para el perseguidor. La ambición de Maldinillo no tiene límites."
+      ]
+    },
+    {
+      "tipo": "Venta récord",
+      "jugador": "Lamine Yamal",
+      "manager": "Maldinillo",
+      "puntos": null,
+      "dinero": 27.441,
+      "equipo": "FC Barcelona",
+      "titulo": "¡MALDINILLO VENDE A YAMAL POR 27,44 MILLONES! INGRESO HISTÓRICO",
+      "subtitulo": "El joven del Barça sale del equipo del perseguidor en la mayor venta de la jornada",
+      "texto": [
+        "Lamine Yamal sale de Maldinillo por 27,44 millones en la venta más lucrativa de la temporada.",
+        "Con ese dinero entran Güler, Tchouameni y Lewandowski. El mercado de Maldinillo no tiene rival."
+      ]
+    },
+    {
+      "tipo": "MVP de la jornada",
+      "jugador": "M. Oyarzabal",
+      "manager": "Libre",
+      "puntos": 15,
+      "dinero": null,
+      "equipo": "Real Sociedad",
+      "titulo": "¡OYARZABAL VUELVE A REINAR CON 15 PUNTOS PARA LIBRE!",
+      "subtitulo": "El capitán de la Real Sociedad es el mejor de la jornada",
+      "texto": [
+        "Mikel Oyarzabal sigue siendo el amo y señor del Sótano cuando aparece: 15 puntos para Libre.",
+        "El capitán de la Real Sociedad brilla siempre. Lástima que no tenga más compañeros a su nivel."
+      ]
+    },
+    {
+      "tipo": "MVP de la jornada",
+      "jugador": "P. Bigas",
+      "manager": "MuchaSalsa",
+      "puntos": 15,
+      "dinero": null,
+      "equipo": "Elche CF",
+      "titulo": "¡BIGAS SE REDIME CON 15 PUNTOS! MUCHASALSA NO SE LO CREE",
+      "subtitulo": "El defensa del Elche pasa de villano a héroe en una semana",
+      "texto": [
+        "P. Bigas borró la pesadilla de la J30 con -4 puntos y reapareció con 15 puntos de lujo.",
+        "MuchaSalsa tiene en Bigas el jugador más impredecible del Sótano. O lo peor o lo mejor."
+      ]
+    },
+    {
+      "tipo": "Peor actuación de la jornada",
+      "jugador": "G. Valera",
+      "manager": "De la Guettir FC",
+      "puntos": -5,
+      "dinero": null,
+      "equipo": "Elche CF",
+      "titulo": "¡VALERA EN -5! DE LA GUETTIR FC SUFRE LO INDECIBLE",
+      "subtitulo": "El jugador del Elche firma la peor actuación de la jornada",
+      "texto": [
+        "G. Valera regaló -5 puntos a De la Guettir FC en la actuación más penosa de la J32.",
+        "El equipo que ganó la jornada pasada sufre ahora el peor batacazo individual de la semana."
+      ]
+    },
+    {
+      "tipo": "Expulsión",
+      "jugador": "I. Palazon",
+      "manager": "Los marinero",
+      "puntos": -4,
+      "dinero": null,
+      "equipo": "Rayo Vallecano",
+      "titulo": "¡PALAZÓN EXPULSADO Y CON -4! LOS MARINERO SE HUNDEN",
+      "subtitulo": "La roja del rayista daña la jornada del tercero clasificado",
+      "texto": [
+        "Isi Palazón vio la tarjeta roja y dejó al equipo con diez mientras acumulaba -4 puntos para Los marinero.",
+        "Una expulsión que llega en el peor momento para un equipo que necesita puntos para acercarse al podio."
+      ]
+    }
+  ]
+}

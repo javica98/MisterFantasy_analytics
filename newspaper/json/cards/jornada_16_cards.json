@@ -1,0 +1,158 @@
+{
+  "cards": [
+    {
+      "tipo": "clasificacion",
+      "jugador": null,
+      "manager": null,
+      "puntos": null,
+      "dinero": null,
+      "equipo": null,
+      "titulo": "¡DANI AGUANTA EL TIPO EN LO ALTO!",
+      "subtitulo": "Los Chamaconicos arrasan en la jornada pero no escalan",
+      "texto": [
+        "Dani sigue líder con 701 puntos, pero la distancia con Los marinero se acorta jornada tras jornada.",
+        "Los Chamacónicos fueron los amos de la J16 con 57 puntos, pero en la general siguen cuartos.",
+        "Juanba firma su peor jornada con solo 15 puntos. ¿Habrá tocado fondo?"
+      ]
+    },
+    {
+      "tipo": "rumor",
+      "jugador": null,
+      "manager": null,
+      "puntos": null,
+      "dinero": null,
+      "equipo": null,
+      "titulo": "¡EXCLUSIVA BOMBA!",
+      "subtitulo": "Los pasillos del Sótano hablan",
+      "texto": [
+        "Fuentes cercanas al vestuario aseguran que Dani consulta el mercado más veces al día que el WhatsApp de su madre."
+      ]
+    },
+    {
+      "tipo": "Fichaje destacado",
+      "jugador": "Georges Mikautadze",
+      "manager": "Dani",
+      "puntos": null,
+      "dinero": 25.308,
+      "equipo": "Villarreal CF",
+      "titulo": "¡MIKAUTADZE ATERRIZA EN EL SÓTANO!",
+      "subtitulo": "Dani desembolsa 25,31 millones por el georgiano",
+      "texto": [
+        "El líder de la liga no se conforma con liderar: Dani se mete la mano en el bolsillo y firma a Mikautadze por 25,31M.",
+        "El delantero del Villarreal llega para reforzar un equipo que ya domina la general."
+      ]
+    },
+    {
+      "tipo": "Fichaje destacado",
+      "jugador": "Antonio Rüdiger",
+      "manager": "Jotabetrbb",
+      "puntos": null,
+      "dinero": 6.301,
+      "equipo": "Real Madrid",
+      "titulo": "¡RÜDIGER FICHA POR JOTABETRBB!",
+      "subtitulo": "El defensa del Madrid, nuevo refuerzo del quinto clasificado",
+      "texto": [
+        "Jotabetrbb apuesta por la solidez defensiva y se hace con Rüdiger por 6,30 millones.",
+        "El alemán del Real Madrid llega para blindar la retaguardia de un equipo que escala posiciones."
+      ]
+    },
+    {
+      "tipo": "Fichaje destacado",
+      "jugador": "Alfonso Pedraza",
+      "manager": "Dani",
+      "puntos": null,
+      "dinero": 4.0834,
+      "equipo": "Villarreal CF",
+      "titulo": "¡PEDRAZA, OTRO GOLPE DE DANI!",
+      "subtitulo": "El líder sigue moviendo fichas en el mercado",
+      "texto": [
+        "No contento con Mikautadze, Dani añade a Pedraza por 4,08 millones en la misma ventana.",
+        "Dos fichajes del Villarreal CF en una sola jornada: el líder va a por todas."
+      ]
+    },
+    {
+      "tipo": "Venta récord",
+      "jugador": "Koke",
+      "manager": "Dani",
+      "puntos": null,
+      "dinero": 12.15939,
+      "equipo": "Atlético de Madrid",
+      "titulo": "¡KOKE SALE POR LA PUERTA GRANDE!",
+      "subtitulo": "Dani ingresa 12,16 millones por el colchonero",
+      "texto": [
+        "El veterano del Atlético de Madrid genera una plusvalía más que interesante en las arcas de Dani.",
+        "12,16 millones en el bolsillo para financiar la operación Mikautadze. El líder no deja de maniobrar."
+      ]
+    },
+    {
+      "tipo": "MVP de la jornada",
+      "jugador": "Raphinha",
+      "manager": "MuchaSalsa",
+      "puntos": 15,
+      "dinero": null,
+      "equipo": "FC Barcelona",
+      "titulo": "¡RAPHINHA ES UN MONSTRUO!",
+      "subtitulo": "15 puntos del brasileño salvan a MuchaSalsa",
+      "texto": [
+        "Raphinha decidió aparecer en el momento más importante y se marchó con 15 puntos bajo el brazo.",
+        "MuchaSalsa no merece a Raphinha, pero Raphinha merece a MuchaSalsa."
+      ]
+    },
+    {
+      "tipo": "MVP de la jornada",
+      "jugador": "Koke",
+      "manager": "MuchaSalsa",
+      "puntos": 12,
+      "dinero": null,
+      "equipo": "Atlético de Madrid",
+      "titulo": "¡KOKE LE DA LA VIDA A MUCHASALSA!",
+      "subtitulo": "El capitán rojiblanco firma 12 puntos históricos",
+      "texto": [
+        "Koke puso toda la carne en el asador y repartió 12 puntos para el equipo de MuchaSalsa.",
+        "Irónico que justo antes de ser vendido por Dani, Koke brille más que nunca."
+      ]
+    },
+    {
+      "tipo": "MVP de la jornada",
+      "jugador": "A. Griezmann",
+      "manager": "De la Guettir FC",
+      "puntos": 11,
+      "dinero": null,
+      "equipo": "Atlético de Madrid",
+      "titulo": "¡GRIEZMANN NO FALLA NUNCA!",
+      "subtitulo": "El francés aporta 11 puntos a De la Guettir FC",
+      "texto": [
+        "Griezmann sigue siendo el seguro de vida de De la Guettir FC: 11 puntos de calidad pura.",
+        "El francés demuestra que los grandes jugadores aparecen cuando el equipo los necesita."
+      ]
+    },
+    {
+      "tipo": "Peor actuación de la jornada",
+      "jugador": "Á. Núñez",
+      "manager": "MuchaSalsa",
+      "puntos": 0,
+      "dinero": null,
+      "equipo": "Elche CF",
+      "titulo": "¡NÚÑEZ DESAPARECE DEL MAPA!",
+      "subtitulo": "Cero puntos del jugador del Elche en la peor actuación de la jornada",
+      "texto": [
+        "Á. Núñez firmó una actuación para el olvido: cero puntos en toda la jornada.",
+        "MuchaSalsa lo que gana con Raphinha lo pierde con Núñez. El equilibrio del universo."
+      ]
+    },
+    {
+      "tipo": "Héroe bajo palos",
+      "jugador": "I. Radu",
+      "manager": "Juanba",
+      "puntos": 7,
+      "dinero": null,
+      "equipo": "RC Celta de Vigo",
+      "titulo": "¡RADU PARA UN PENALTI Y SALVA A JUANBA!",
+      "subtitulo": "El portero del Celta firma 7 puntos bajo palos",
+      "texto": [
+        "I. Radu detuvo un penalti decisivo y se convirtió en el héroe inesperado de la jornada.",
+        "7 puntos que son un bálsamo para Juanba, que cerró la jornada en último lugar."
+      ]
+    }
+  ]
+}

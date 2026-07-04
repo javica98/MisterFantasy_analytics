@@ -41,15 +41,35 @@ def build_classification_text(clasificacion: dict) -> str:
 
     return "\\n".join(lines)
 
-def get_top_signings(transfers: List[dict], top_n: int = 3):
+def get_top_signings(transfers: List[dict], top_n: int = 3) -> List[dict]:
+    """
+    Devuelve los ``top_n`` fichajes más caros del periodo.
+
+    Filtra solo compras (``compra_venta == "compra"``) y ordena por
+    ``abs(ganancias)`` descendente. Las ganancias de compras son negativas
+    en los datos (el dinero sale), por eso se usa el valor absoluto.
+
+    Args:
+        transfers: lista de dicts con campos ``compra_venta`` y ``ganancias``.
+        top_n: número máximo de fichajes a devolver.
+
+    Returns:
+        Lista de hasta ``top_n`` dicts de transfer ordenados por importe.
+    """
     compras = [
         t for t in transfers
         if t["compra_venta"] == "compra"
     ]
-    compras.sort(key=lambda x: x["ganancias"], reverse=False)
+    compras.sort(key=lambda x: abs(x["ganancias"]), reverse=True)
     return compras[:top_n]
 
-def get_top_sale(transfers: List[dict]):
+def get_top_sale(transfers: List[dict]) -> dict | None:
+    """
+    Devuelve la mayor venta en mercado libre (``subtype == "mercado"``).
+
+    Returns:
+        El dict de transfer con mayor ``ganancias``, o ``None`` si no hay ventas.
+    """
     ventas = [
         t for t in transfers
         if t["subtype"] == "mercado" 
@@ -58,7 +78,8 @@ def get_top_sale(transfers: List[dict]):
         return None
     return max(ventas, key=lambda x: x["ganancias"])
 
-def get_mvps(gameweek: List[dict], top_n: int = 3):
+def get_mvps(gameweek: List[dict], top_n: int = 3) -> List[dict]:
+    """Devuelve los ``top_n`` jugadores con más puntos de la jornada."""
     ordered = sorted(
         gameweek,
         key=lambda x: x["puntos"],
@@ -66,7 +87,8 @@ def get_mvps(gameweek: List[dict], top_n: int = 3):
     )
     return ordered[:top_n]
 
-def get_worst_player(gameweek: List[dict]):
+def get_worst_player(gameweek: List[dict]) -> dict | None:
+    """Devuelve el jugador con menos puntos de la jornada, o ``None`` si la lista está vacía."""
     if not gameweek:
         return None
     return min(gameweek, key=lambda x: x["puntos"])
@@ -109,7 +131,21 @@ def build_player_block(jugador: str,manager: str, equipo: str, evento: str, cont
         "dinero": dinero
     }
 
-def generate_prompts(events_json: Dict):
+def generate_prompts(events_json: Dict) -> Dict:
+    """
+    Selecciona los eventos más relevantes del periodo y construye los bloques
+    estructurados que se incluirán en el prompt del LLM.
+
+    Args:
+        events_json: dict con claves ``transfers`` y ``gameweek`` generado
+                     por ``generate_json.generate_json()``.
+
+    Returns:
+        Dict con:
+        - ``bloques``: lista de dicts de evento (jugador, manager, equipo, evento, contexto, puntos, dinero)
+        - ``jugadores_mencionados``: lista de nombres únicos de jugadores
+        - ``managers_mencionados``: lista de nombres únicos de managers
+    """
 
     transfers = events_json.get("transfers", [])
     gameweek = events_json.get("gameweek", [])
@@ -242,7 +278,7 @@ def generate_prompts(events_json: Dict):
         "managers_mencionados": list(managers_mencionados)
     }
 
-def build_final_prompt(bloques: List[Dict], events_json) -> str:
+def build_final_prompt(bloques: List[Dict], events_json, memory_context: str = "") -> str:
     """
     Construye el prompt final para generar el JSON completo del periódico.
     FUERZA salida compatible con el schema.
@@ -387,6 +423,12 @@ CONTEXTO DE LIGA
 ========================
 
 {LEAGUE_CONTEXT}
+
+========================
+MEMORIA HISTORICA RELEVANTE
+========================
+
+{memory_context if memory_context else "Sin recuerdos historicos relevantes para esta edicion."}
 
 ========================
 CLASIFICACION

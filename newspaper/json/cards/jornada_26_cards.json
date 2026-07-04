@@ -1,0 +1,144 @@
+{
+  "cards": [
+    {
+      "tipo": "clasificacion",
+      "jugador": null,
+      "manager": null,
+      "puntos": null,
+      "dinero": null,
+      "equipo": null,
+      "titulo": "¡DANI ARRASA CON 75 PUNTOS EN LA JORNADA! RÉCORD PERSONAL",
+      "subtitulo": "Maldinillo segundo con 57, pero Dani vuela",
+      "texto": [
+        "Dani firma 75 puntos en la J26 y amplía su ventaja hasta los 1213 puntos en la general.",
+        "Maldinillo responde con 57 puntos pero la diferencia sube a 69. El líder está intocable.",
+        "Libre queda con 0 puntos en la jornada. Otra vez. La racha negativa del equipo sin manager no tiene fin."
+      ]
+    },
+    {
+      "tipo": "rumor",
+      "jugador": null,
+      "manager": null,
+      "puntos": null,
+      "dinero": null,
+      "equipo": null,
+      "titulo": "¡ESCÁNDALO EN EL SÓTANO!",
+      "subtitulo": "Nadie sabe nada pero todos saben algo",
+      "texto": [
+        "Insiders del mercado confirman que Libre tiene activada la renovación automática de jugadores lesionados. Es un fenómeno de la naturaleza."
+      ]
+    },
+    {
+      "tipo": "Fichaje destacado",
+      "jugador": "Pablo Fornals",
+      "manager": "Chamacónicos",
+      "puntos": null,
+      "dinero": 25.381,
+      "equipo": "Real Betis",
+      "titulo": "¡LOS CHAMACÓNICOS SE HACEN CON PABLO FORNALS!",
+      "subtitulo": "25,38 millones por el centrocampista del Betis",
+      "texto": [
+        "Los Chamacónicos entran en el mercado con fuerza y fichan a Pablo Fornals por 25,38 millones.",
+        "El centrocampista del Betis llega para elevar el nivel de un equipo que quiere acercarse al podio."
+      ]
+    },
+    {
+      "tipo": "Fichaje destacado",
+      "jugador": "Joan Garcia",
+      "manager": "Dani",
+      "puntos": null,
+      "dinero": 25.311,
+      "equipo": "FC Barcelona",
+      "titulo": "¡DANI VUELVE A FICHAR A JOAN GARCIA!",
+      "subtitulo": "El portero del Barça regresa al equipo del líder por 25,31 millones",
+      "texto": [
+        "Dani demuestra que sabe lo que quiere: Joan Garcia regresa a su equipo por 25,31 millones.",
+        "El mejor portero del mercado vuelve a vestir los colores del líder de la Sótano League."
+      ]
+    },
+    {
+      "tipo": "Fichaje destacado",
+      "jugador": "Nicolas Pepe",
+      "manager": "Los marinero",
+      "puntos": null,
+      "dinero": 11.905,
+      "equipo": "Villarreal CF",
+      "titulo": "¡LOS MARINERO FICHAN A NICOLÁS PEPÉ!",
+      "subtitulo": "El marfileño del Villarreal llega por 11,91 millones",
+      "texto": [
+        "Los marinero refuerzan el ataque con Nicolás Pepé del Villarreal por 11,91 millones.",
+        "El extremo marfileño aporta velocidad y profundidad a un equipo con aspiraciones."
+      ]
+    },
+    {
+      "tipo": "Venta récord",
+      "jugador": "Frenkie De Jong",
+      "manager": "Maldinillo",
+      "puntos": null,
+      "dinero": 17.152,
+      "equipo": "FC Barcelona",
+      "titulo": "¡MALDINILLO VENDE A FRENKIE DE JONG POR 17,15 MILLONES!",
+      "subtitulo": "El holandés sale del equipo del perseguidor",
+      "texto": [
+        "Frenkie De Jong apenas duró una temporada en el equipo de Maldinillo antes de ser vendido por 17,15 millones.",
+        "El mercado de Maldinillo nunca para: compra, vende y sigue siendo el eterno perseguidor."
+      ]
+    },
+    {
+      "tipo": "MVP de la jornada",
+      "jugador": "L. Yamal",
+      "manager": "Dani",
+      "puntos": 21,
+      "dinero": null,
+      "equipo": "FC Barcelona",
+      "titulo": "¡YAMAL MARCA 21 PUNTOS! LA ACTUACIÓN DEL AÑO",
+      "subtitulo": "El niño prodigio del Barça firma el registro más alto de la temporada",
+      "texto": [
+        "Lamine Yamal explota con 21 puntos en una actuación que ya es historia del Sótano League.",
+        "Dani invirtió 46,55 millones en Yamal. Con jornadas así, pagó de sobra."
+      ]
+    },
+    {
+      "tipo": "MVP de la jornada",
+      "jugador": "C. Soler",
+      "manager": "Dani",
+      "puntos": 12,
+      "dinero": null,
+      "equipo": "Real Sociedad",
+      "titulo": "¡SOLER TAMBIÉN SE APUNTA A LA FIESTA CON 12 PUNTOS!",
+      "subtitulo": "El centrocampista de la Real suma para el líder",
+      "texto": [
+        "Carlos Soler contribuye con 12 puntos a la mejor jornada de Dani en lo que llevamos de temporada.",
+        "Dos MVPs en el mismo equipo en la misma jornada. Así se domina una liga fantasy."
+      ]
+    },
+    {
+      "tipo": "Peor actuación de la jornada",
+      "jugador": "A. Rudiger",
+      "manager": "Jotabetrbb",
+      "puntos": -1,
+      "dinero": null,
+      "equipo": "Real Madrid",
+      "titulo": "¡RÜDIGER EN NEGATIVO PARA JOTABETRBB!",
+      "subtitulo": "El defensa del Madrid firma -1 punto en la jornada más negra",
+      "texto": [
+        "Antonio Rüdiger tuvo una actuación vergonzosa con -1 punto que penaliza a Jotabetrbb.",
+        "El alemán del Real Madrid necesita recuperar la forma urgentemente."
+      ]
+    },
+    {
+      "tipo": "Gol en propia",
+      "jugador": "V. Reis",
+      "manager": "MuchaSalsa",
+      "puntos": 3,
+      "dinero": null,
+      "equipo": "Girona FC",
+      "titulo": "¡GOL EN PROPIA DE VÍCTOR REIS! KARMA DEL SÓTANO",
+      "subtitulo": "El defensa del Girona se hace el gol y suma 3 puntos para MuchaSalsa",
+      "texto": [
+        "Víctor Reis se marcó un gol en propia y en el Sótano eso se convierte en 3 puntos para MuchaSalsa.",
+        "MuchaSalsa empieza a puntuar gracias a los errores ajenos. Toda una filosofía de vida."
+      ]
+    }
+  ]
+}

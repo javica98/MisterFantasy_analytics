@@ -1,0 +1,144 @@
+{
+  "cards": [
+    {
+      "tipo": "clasificacion",
+      "jugador": null,
+      "manager": null,
+      "puntos": null,
+      "dinero": null,
+      "equipo": null,
+      "titulo": "¡MALDINILLO Y DANI AL SPRINT FINAL! SOLO 30 PUNTOS LES SEPARAN",
+      "subtitulo": "Maldinillo gana la jornada con 58 puntos. El título se decide en los últimos metros",
+      "texto": [
+        "Maldinillo lidera la jornada con 58 puntos y recorta distancias: Dani tiene 1696 y Maldinillo 1666. Solo 30 puntos.",
+        "Dani responde con 56 puntos pero no es suficiente para frenar la remontada. El título pende de un hilo.",
+        "MuchaSalsa cierra con 9 puntos. La temporada más larga e injusta del Sótano League."
+      ]
+    },
+    {
+      "tipo": "rumor",
+      "jugador": null,
+      "manager": null,
+      "puntos": null,
+      "dinero": null,
+      "equipo": null,
+      "titulo": "¡ALERTA MÁXIMA EN EL SÓTANO! 30 PUNTOS DE DIFERENCIA",
+      "subtitulo": "Quedan 3 jornadas y todo está en juego",
+      "texto": [
+        "Fuentes del Sótano profundo revelan que Maldinillo ha memorizado el calendario de fixtures de las últimas 3 jornadas. Dani también. Y los dos están muy nerviosos."
+      ]
+    },
+    {
+      "tipo": "Fichaje destacado",
+      "jugador": "Isco",
+      "manager": "Dani",
+      "puntos": null,
+      "dinero": 11.279,
+      "equipo": "Real Betis",
+      "titulo": "¡DANI FICHA A ISCO DEL BETIS POR 11,28 MILLONES!",
+      "subtitulo": "El malagueño se une al proyecto del líder en la recta final",
+      "texto": [
+        "Dani apuesta por la experiencia y ficha a Isco del Betis por 11,28 millones en el sprint final.",
+        "El malagueño es uno de los jugadores más inteligentes del mercado. El líder no se equivoca."
+      ]
+    },
+    {
+      "tipo": "Fichaje destacado",
+      "jugador": "Brahim Diaz",
+      "manager": "Dani",
+      "puntos": null,
+      "dinero": 8.556,
+      "equipo": "Real Madrid",
+      "titulo": "¡BRAHIM DIAZ FICHA POR DANI! UN JOKER PARA EL FINAL",
+      "subtitulo": "8,56 millones por el marroquí del Real Madrid",
+      "texto": [
+        "Dani añade creatividad con Brahim Díaz del Real Madrid por 8,56 millones.",
+        "Dos incorporaciones del líder en la misma jornada. La última oportunidad de marcar diferencias."
+      ]
+    },
+    {
+      "tipo": "Fichaje destacado",
+      "jugador": "Matias Dituro",
+      "manager": "Maldinillo",
+      "puntos": null,
+      "dinero": 7.333,
+      "equipo": "Elche CF",
+      "titulo": "¡MALDINILLO FICHA A DITURO DEL ELCHE COMO COMODÍN!",
+      "subtitulo": "7,33 millones por el portero argentino",
+      "texto": [
+        "Maldinillo busca solidez bajo palos y ficha a Matías Dituro del Elche por 7,33 millones.",
+        "El perseguidor no deja ningún detalle al azar en las últimas jornadas de la temporada."
+      ]
+    },
+    {
+      "tipo": "Venta récord",
+      "jugador": "Fede Valverde",
+      "manager": "Maldinillo",
+      "puntos": null,
+      "dinero": 21.152,
+      "equipo": "Real Madrid",
+      "titulo": "¡MALDINILLO VENDE A VALVERDE POR 21,15 MILLONES!",
+      "subtitulo": "El uruguayo del Madrid sale del equipo del perseguidor",
+      "texto": [
+        "Federico Valverde deja Maldinillo a cambio de 21,15 millones. Una venta sorprendente en pleno sprint final.",
+        "El dinero de Valverde se reinvierte en refuerzos para las tres últimas jornadas."
+      ]
+    },
+    {
+      "tipo": "MVP de la jornada",
+      "jugador": "F. Torres",
+      "manager": "De la Guettir FC",
+      "puntos": 11,
+      "dinero": null,
+      "equipo": "FC Barcelona",
+      "titulo": "¡FERRAN TORRES BRILLA CON 11 PUNTOS PARA DE LA GUETTIR FC!",
+      "subtitulo": "El delantero del Barça lidera la jornada del equipo revelación",
+      "texto": [
+        "Ferran Torres firmó una actuación brillante con 11 puntos que sitúan a De la Guettir FC en el top de la jornada.",
+        "El valenciano del Barcelona sigue creciendo y se consolida como pieza clave del equipo."
+      ]
+    },
+    {
+      "tipo": "MVP de la jornada",
+      "jugador": "A. Santos",
+      "manager": "Libre",
+      "puntos": 10,
+      "dinero": null,
+      "equipo": "Real Betis",
+      "titulo": "¡ANTONY SANTOS REAPARECE CON 10 PUNTOS PARA LIBRE!",
+      "subtitulo": "El brasileño del Betis se redime tras semanas en blanco",
+      "texto": [
+        "Antony Santos borró la pesadilla de las últimas semanas y regresó con 10 puntos para Libre.",
+        "El equipo sin manager tiene en Santos a un jugador capaz de aparecer en el momento menos esperado."
+      ]
+    },
+    {
+      "tipo": "Peor actuación de la jornada",
+      "jugador": "S. Herrera",
+      "manager": "Chamacónicos",
+      "puntos": -7,
+      "dinero": null,
+      "equipo": "CA Osasuna",
+      "titulo": "¡HERRERA EN -7! LA PEOR ACTUACIÓN DEL SÓTANO EN SEMANAS",
+      "subtitulo": "El jugador del Osasuna hunde a los Chamacónicos",
+      "texto": [
+        "S. Herrera firmó la actuación más catastrófica de las últimas jornadas con -7 puntos.",
+        "Los Chamacónicos pierden posiciones por culpa de una actuación que ningún manager del Sótano olvidará."
+      ]
+    },
+    {
+      "tipo": "Expulsión",
+      "jugador": "S. Herrera",
+      "manager": "Chamacónicos",
+      "puntos": -7,
+      "dinero": null,
+      "equipo": "CA Osasuna",
+      "titulo": "¡EXPULSADO CON -7! HERRERA HACE HISTORIA POR LO PEOR",
+      "subtitulo": "La roja más cara de la temporada para los Chamacónicos",
+      "texto": [
+        "S. Herrera no solo jugó mal: también fue expulsado, acumulando -7 puntos en una noche de pesadilla.",
+        "Una expulsión que puede costar muy caro a los Chamacónicos en la clasificación final."
+      ]
+    }
+  ]
+}

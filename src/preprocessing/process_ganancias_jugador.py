@@ -3,37 +3,56 @@ import numpy as np
 
 def procesar_ganancias_jugador(df: pd.DataFrame) -> pd.DataFrame:
     """
-    Filtra el DataFrame para operaciones de 'transfer' o 'venta',
-    elimina columnas innecesarias y calcula la columna 'Diff' 
-    como diferencia de ganancias con filas relacionadas.
+    Filtra el DataFrame para operaciones de 'transfer' de venta (no Puja),
+    y calcula la columna 'Diff' como la ganancia neta de cada operación
+    (precio de venta + precio de compra, donde compra es negativo).
+
+    La compra de referencia es la primera compra del mismo jugador/equipo
+    con id mayor que la venta (la compra más reciente en el historial).
     """
-    # Filtrar filas relevantes
-    df_filtrado = df[(df['type'] == 'transfer') & (df['compra-venta'] == 'venta') & (df['subtype'] != 'Puja')].copy()
+    # Ventas relevantes
+    df_ventas = df[
+        (df['type'] == 'transfer') &
+        (df['compra-venta'] == 'venta') &
+        (df['subtype'] != 'Puja')
+    ].copy()
 
-    # Crear columna 'Diff' inicialmente vacía
-    df_filtrado["Diff"] = np.nan
+    # Compras relevantes
+    df_compras = df[
+        (df['type'] == 'transfer') &
+        (df['compra-venta'] == 'compra')
+    ][['id', 'equipo', 'jugador', 'ganancias']].copy()
+    df_compras = df_compras.rename(columns={'id': 'id_compra', 'ganancias': 'ganancias_compra'})
 
-    # Función para calcular Diff para cada fila
-    def calcular_diff(row):
-        # Filtrar filas relacionadas en df original
-        df_row = df[
-            (df['type'] == 'transfer') &
-            (df['id'] > row['id']) &
-            (df['equipo'] == row['equipo']) &
-            (df['jugador'] == row['jugador']) &
-            (df['compra-venta'] == 'compra')
-        ]
-        if df_row.empty:
-            return np.nan
-        # Ejemplo de cálculo: diferencia entre la suma de ganancias de df_row y la fila actual
+    # Para cada venta, buscar la compra del mismo jugador/equipo con id_compra > id_venta.
+    # Hacemos un merge cruzado por jugador+equipo y luego filtramos y cogemos el mínimo id_compra.
+    merged = df_ventas[['id', 'equipo', 'jugador', 'ganancias']].merge(
+        df_compras,
+        on=['equipo', 'jugador'],
+        how='left'
+    )
+    # Solo compras posteriores a la venta (id mayor = más antiguo en el historial)
+    merged = merged[merged['id_compra'] > merged['id']]
 
-        return row['ganancias'] + df_row['ganancias'].iloc[0]
+    # La compra de referencia es la primera (id_compra mínimo entre las válidas)
+    merged = (
+        merged.sort_values('id_compra')
+        .groupby(['id', 'equipo', 'jugador'], as_index=False)
+        .first()
+    )
 
-    # Aplicar la función fila por fila
-    df_filtrado['Diff'] = df_filtrado.apply(calcular_diff, axis=1)
+    # Calcular Diff = ganancia_venta + ganancia_compra (compra es negativa, así que suma)
+    merged['Diff'] = merged['ganancias'] + merged['ganancias_compra']
 
-    # Eliminar columnas innecesarias
-    df_filtrado = df_filtrado.drop(["id","type","ganancias","compra-venta"], axis=1, errors='ignore')
-    df_filtrado = df_filtrado.dropna(subset=['Diff'])
+    # Unir Diff al DataFrame de ventas original
+    df_ventas = df_ventas.merge(
+        merged[['id', 'equipo', 'jugador', 'Diff']],
+        on=['id', 'equipo', 'jugador'],
+        how='left'
+    )
 
-    return df_filtrado
+    # Eliminar columnas innecesarias y filas sin Diff
+    df_ventas = df_ventas.drop(["id", "type", "ganancias", "compra-venta"], axis=1, errors='ignore')
+    df_ventas = df_ventas.dropna(subset=['Diff'])
+
+    return df_ventas

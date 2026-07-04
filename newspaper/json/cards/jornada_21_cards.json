@@ -1,0 +1,130 @@
+{
+  "cards": [
+    {
+      "tipo": "clasificacion",
+      "jugador": null,
+      "manager": null,
+      "puntos": null,
+      "dinero": null,
+      "equipo": null,
+      "titulo": "¡DANI LLEGA A LOS 947 PUNTOS! IMPARABLE",
+      "subtitulo": "Maldinillo y los Chamacónicos intentan seguirle el ritmo",
+      "texto": [
+        "Dani lidera la general con 947 puntos tras ganar la jornada con 60 puntos. Un recital.",
+        "Maldinillo es segundo con 869 y fue segundo en la jornada con 57. La batalla por el título está servida.",
+        "Juanba sigue en el sótano del Sótano con 21 puntos en la jornada. La temporada se le hace muy larga."
+      ]
+    },
+    {
+      "tipo": "rumor",
+      "jugador": null,
+      "manager": null,
+      "puntos": null,
+      "dinero": null,
+      "equipo": null,
+      "titulo": "¡ALERTA ROJA EN EL SÓTANO!",
+      "subtitulo": "Lo que nadie se atreve a decir en voz alta",
+      "texto": [
+        "Fuentes anónimas aseguran que Libre tiene el mercado configurado en modo automático. El problema es que el automático lleva 3 jornadas roto."
+      ]
+    },
+    {
+      "tipo": "Fichaje destacado",
+      "jugador": "Etta Eyong",
+      "manager": "Chamacónicos",
+      "puntos": null,
+      "dinero": 13.949,
+      "equipo": "Levante UD",
+      "titulo": "¡LOS CHAMACÓNICOS APUESTAN POR EYONG!",
+      "subtitulo": "El delantero del Levante aterriza por 13,95 millones",
+      "texto": [
+        "Los Chamacónicos se meten en el mercado y fichan a Etta Eyong del Levante por 13,95 millones.",
+        "Una apuesta por el talento emergente de la liga española para reforzar el ataque."
+      ]
+    },
+    {
+      "tipo": "Fichaje destacado",
+      "jugador": "Alvaro Carreras",
+      "manager": "Libre",
+      "puntos": null,
+      "dinero": 12.819,
+      "equipo": "Real Madrid",
+      "titulo": "¡LIBRE FICHA A CARRERAS DEL REAL MADRID!",
+      "subtitulo": "12,82 millones por el lateral merengue",
+      "texto": [
+        "Libre sorprende al mercado y se hace con Álvaro Carreras del Real Madrid por 12,82 millones.",
+        "El equipo libre de manager sigue moviéndose con más astucia de la esperada."
+      ]
+    },
+    {
+      "tipo": "Fichaje destacado",
+      "jugador": "Georges Mikautadze",
+      "manager": "Libre",
+      "puntos": null,
+      "dinero": 11.619,
+      "equipo": "Villarreal CF",
+      "titulo": "¡LIBRE TAMBIÉN QUIERE A MIKAUTADZE!",
+      "subtitulo": "11,62 millones por el georgiano del Villarreal",
+      "texto": [
+        "Libre compite con Dani por los mismos jugadores: ahora ficha a Mikautadze por 11,62 millones.",
+        "El equipo sin manager hace movimientos de equipo con manager. Paradojas del Sótano."
+      ]
+    },
+    {
+      "tipo": "Venta récord",
+      "jugador": "Aurelien Tchouameni",
+      "manager": "Libre",
+      "puntos": null,
+      "dinero": 15.781,
+      "equipo": "Real Madrid",
+      "titulo": "¡LIBRE VENDE A TCHOUAMENI POR 15,78 MILLONES!",
+      "subtitulo": "El francés del Madrid sale del equipo sin manager",
+      "texto": [
+        "Aurelien Tchouameni abandona Libre por 15,78 millones en la venta más importante de la jornada.",
+        "El dinero de Tchouameni financia los fichajes de Carreras y Mikautadze. Matemática perfecta."
+      ]
+    },
+    {
+      "tipo": "MVP de la jornada",
+      "jugador": "M. Oyarzabal",
+      "manager": "Libre",
+      "puntos": 17,
+      "dinero": null,
+      "equipo": "Real Sociedad",
+      "titulo": "¡OYARZABAL HACE MAGIA PARA LIBRE CON 17 PUNTOS!",
+      "subtitulo": "El capitán de la Real Sociedad, el mejor de la jornada",
+      "texto": [
+        "Mikel Oyarzabal no entiende de clasificaciones y firmó 17 puntos para un Libre que se lo merece.",
+        "El mejor jugador de la J21. Y está en Libre. El universo tiene sentido del humor."
+      ]
+    },
+    {
+      "tipo": "MVP de la jornada",
+      "jugador": "K. Mbappe",
+      "manager": "Chamacónicos",
+      "puntos": 14,
+      "dinero": null,
+      "equipo": "Real Madrid",
+      "titulo": "¡MBAPPÉ VUELVE A SALVAR A LOS CHAMACÓNICOS!",
+      "subtitulo": "14 puntos del galo para mantener vivo el sueño del título",
+      "texto": [
+        "Kylian Mbappé sigue siendo el As bajo la manga de los Chamacónicos: 14 puntos de clase mundial.",
+        "Con Mbappé en forma, los Chamacónicos son un equipo temible para cualquiera."
+      ]
+    },
+    {
+      "tipo": "Peor actuación de la jornada",
+      "jugador": "E. Eyong",
+      "manager": "Chamacónicos",
+      "puntos": -1,
+      "dinero": null,
+      "equipo": "Levante UD",
+      "titulo": "¡EYONG EN NEGATIVO EL MISMO DÍA DE SU DEBUT!",
+      "subtitulo": "El fichaje nuevo de los Chamacónicos marca -1 punto",
+      "texto": [
+        "Recién fichado y ya en negativo: Etta Eyong debuta con -1 punto en el Sótano League.",
+        "Los Chamacónicos ficharon a Eyong y ya se preguntan si fue buena idea. La respuesta es no."
+      ]
+    }
+  ]
+}

@@ -1,37 +1,29 @@
 import pandas as pd
 from datetime import datetime, timedelta
-TEAM_POSICION = {
-    1: "Portero",
-    2: "Defensa",
-    3: "Mediocentro",
-    4: "Delantero"
-}
+
+from src.utils.team_map import TEAM_MAP, TEAM_POSICION, map_team, map_position
 
 
-TEAM_MAP = {
-    15: "Real Madrid",
-    3: "FC Barcelona",
-    2: "Atlético de Madrid",
-    17: "Sevilla FC",
-    4: "Real Betis Balompié",
-    16: "Real Sociedad",
-    20: "Villarreal CF",
-    1: "Athletic Club",
-    19: "Valencia CF",
-    50: "CA Osasuna",
-    5: "RC Celta de Vigo",
-    14: "Rayo Vallecano",
-    48: "Deportivo Alavés",
-    8: "RCD Espanyol",
-    23: "Elche CF",
-    9: "Getafe CF",
-    222: "Girona FC",
-    12: "Levante UD",
-    408: "RCD Mallorca",
-    1370: "Real Oviedo"
-}
+def clasificacion_dict(df: pd.DataFrame) -> dict:
+    """
+    Convierte un DataFrame de clasificación en un dict indexado por manager.
 
-def clasificacion_dict(df):
+    Args:
+        df: DataFrame con columnas ``nombre`` y ``puntos``. Puede contener
+            varias filas por manager (una por jornada); los puntos se acumulan.
+
+    Returns:
+        ``{manager: {"puntos": int, "posicion": int}}`` ordenado por puntos
+        descendentes (posición 1 = líder).
+
+    Example:
+        >>> import pandas as pd
+        >>> df = pd.DataFrame([{"nombre": "Maldinillo", "puntos": 120},
+        ...                    {"nombre": "Dani", "puntos": 100}])
+        >>> result = clasificacion_dict(df)
+        >>> result["Maldinillo"]["posicion"]
+        1
+    """
     out = (
         df.groupby("nombre", as_index=False)["puntos"]
           .sum()
@@ -39,13 +31,6 @@ def clasificacion_dict(df):
     )
     out["posicion"] = range(1, len(out) + 1)
     return out.set_index("nombre")[["puntos", "posicion"]].to_dict("index")
-
-def map_team(team_name):
-    return TEAM_MAP.get(team_name, team_name)
-
-
-def map_position(position):
-    return TEAM_POSICION.get(position, position)
 
 def generate_json_for_jornada(
     jornada_num: int,

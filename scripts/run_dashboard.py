@@ -1,32 +1,20 @@
-import sys
-import pandas as pd
 import logging
-
-from pathlib import Path
-import os, sys
-
-# --- 🔧 Ajuste de ruta raíz del proyecto ---
-import sys
 import os
+import sys
 from pathlib import Path
 
-# --- 🔧 Ajuste del entorno de ejecución ---
-# Detectar raíz del proyecto automáticamente
+import pandas as pd
+
+# ── Ajuste de entorno ─────────────────────────────────────────────────────────
 CURRENT_FILE = Path(__file__).resolve()
-ROOT_DIR = CURRENT_FILE.parent.parent  # sube desde /scripts hasta la raíz
+ROOT_DIR = CURRENT_FILE.parent.parent
 SRC_DIR = ROOT_DIR / "src"
 
-# Asegurar que la raíz y src están en el sys.path
 for p in (ROOT_DIR, SRC_DIR):
     if str(p) not in sys.path:
         sys.path.insert(0, str(p))
 
-# Cambiar el directorio de trabajo a la raíz del proyecto
 os.chdir(ROOT_DIR)
-
-print("📂 Directorio raíz:", ROOT_DIR)
-print("📁 SRC añadido:", SRC_DIR)
-print("📁 sys.path[0]:", sys.path[0])
 
 from src.visualization.dashboard_por_manager import dashboard_por_manager
 
@@ -76,7 +64,7 @@ csv_clasificaciones = safe_read_csv(CSV_CLASIFICACIONES)
 csv_jugadores = safe_read_csv(CSV_NOTIFICACIONES_JUGADOR)
 csv_clausulas = safe_read_csv(CSV_NOTIFICACIONES_CLAUSULA_ACUERDO)
 
-if (csv_notificaciones_clean is None) or (csv_notificaciones_clean is None):
+if (csv_notificaciones_clean is None) or (csv_clasificaciones is None):
     logger.warning("⏭️ Saltando sección de notificaciones y clasificaciones (no hay CSV disponible).")
 else:
     app = dashboard_por_manager(csv_notificaciones_clean,csv_clasificaciones,csv_jugadores,csv_clausulas)

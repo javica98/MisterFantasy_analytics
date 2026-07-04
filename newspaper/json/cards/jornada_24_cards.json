@@ -1,0 +1,130 @@
+{
+  "cards": [
+    {
+      "tipo": "clasificacion",
+      "jugador": null,
+      "manager": null,
+      "puntos": null,
+      "dinero": null,
+      "equipo": null,
+      "titulo": "¡LOS CHAMACÓNICOS GANAN LA JORNADA! DANI TROPIEZA",
+      "subtitulo": "Maldinillo acorta distancias en la general",
+      "texto": [
+        "Dani vive su peor jornada reciente con solo 26 puntos y cae al séptimo lugar en la clasificación semanal.",
+        "Los Chamacónicos se llevan la J24 con 56 puntos, mientras Maldinillo suma 50 y ya está a solo 61 de Dani.",
+        "Juanba solo firma 7 puntos en la jornada. Una cifra que ya ni sorprende."
+      ]
+    },
+    {
+      "tipo": "rumor",
+      "jugador": null,
+      "manager": null,
+      "puntos": null,
+      "dinero": null,
+      "equipo": null,
+      "titulo": "¡RUMOR EXCLUSIVO DEL SÓTANO PROFUNDO!",
+      "subtitulo": "Noticias que no te puedes perder",
+      "texto": [
+        "Según fuentes no verificadas, Juanba ya tiene preparada la camiseta de campeón para la próxima temporada. Con su nombre. Y de la talla incorrecta."
+      ]
+    },
+    {
+      "tipo": "Fichaje destacado",
+      "jugador": "Dani Olmo",
+      "manager": "Jotabetrbb",
+      "puntos": null,
+      "dinero": 30.215,
+      "equipo": "FC Barcelona",
+      "titulo": "¡JOTABETRBB DESEMBOLSA 30 MILLONES POR DANI OLMO!",
+      "subtitulo": "El fichaje más caro de la jornada llega a Jotabetrbb",
+      "texto": [
+        "Jotabetrbb lanza una señal al mercado y ficha a Dani Olmo por 30,22 millones del Barcelona.",
+        "Con este movimiento, Jotabetrbb aspira a escalar posiciones en la segunda mitad de la temporada."
+      ]
+    },
+    {
+      "tipo": "Fichaje destacado",
+      "jugador": "Abde Ezzalzouli",
+      "manager": "Dani",
+      "puntos": null,
+      "dinero": 19.967,
+      "equipo": "Real Betis",
+      "titulo": "¡DANI FICHA A ABDE DEL BETIS POR 19,97 MILLONES!",
+      "subtitulo": "El marroquí se suma al equipo del líder",
+      "texto": [
+        "Abde Ezzalzouli deja el Betis para incorporarse al proyecto del líder Dani por 19,97 millones.",
+        "El extremo marroquí aporta velocidad y desborde al equipo más puntero del Sótano."
+      ]
+    },
+    {
+      "tipo": "Fichaje destacado",
+      "jugador": "Frenkie De Jong",
+      "manager": "Maldinillo",
+      "puntos": null,
+      "dinero": 18.593,
+      "equipo": "FC Barcelona",
+      "titulo": "¡MALDINILLO FICHA A FRENKIE DE JONG! MERCADO BOMBA",
+      "subtitulo": "18,59 millones por el holandés del Barça",
+      "texto": [
+        "Maldinillo ejecuta otra operación de lujo y se lleva a Frenkie De Jong por 18,59 millones.",
+        "El holandés del Barcelona llega para elevar la calidad de un equipo que aspira a todo."
+      ]
+    },
+    {
+      "tipo": "Venta récord",
+      "jugador": "Julian Alvarez",
+      "manager": "Jotabetrbb",
+      "puntos": null,
+      "dinero": 18.941,
+      "equipo": "Atlético de Madrid",
+      "titulo": "¡JOTABETRBB VENDE A JULIAN ALVAREZ POR 18,94 MILLONES!",
+      "subtitulo": "La Araña sale del equipo en la mayor venta de la jornada",
+      "texto": [
+        "Julián Álvarez hace las maletas y Jotabetrbb ingresa 18,94 millones en la operación del día.",
+        "Con ese dinero se financia parte de la llegada de Dani Olmo. Negocio redondo."
+      ]
+    },
+    {
+      "tipo": "MVP de la jornada",
+      "jugador": "V. Junior",
+      "manager": "Jotabetrbb",
+      "puntos": 15,
+      "dinero": null,
+      "equipo": "Real Madrid",
+      "titulo": "¡VINICIUS JR. DESLUMBRA CON 15 PUNTOS!",
+      "subtitulo": "El brasileño del Madrid, el mejor de la jornada para Jotabetrbb",
+      "texto": [
+        "Vinicius Jr. firmó 15 puntos que valen oro para Jotabetrbb en una jornada clave.",
+        "Con el brasileño del Real Madrid en forma, cualquier equipo puede ganar la jornada."
+      ]
+    },
+    {
+      "tipo": "MVP de la jornada",
+      "jugador": "T. Lemar",
+      "manager": "Los marinero",
+      "puntos": 13,
+      "dinero": null,
+      "equipo": "Girona FC",
+      "titulo": "¡LEMAR SORPRENDE CON 13 PUNTOS PARA LOS MARINERO!",
+      "subtitulo": "El francés del Girona firma una actuación de primera",
+      "texto": [
+        "Thomas Lemar apareció cuando más se le necesitaba y aportó 13 puntos cruciales para Los marinero.",
+        "El francés del Girona es uno de esos jugadores que no se ven venir y siempre sorprenden."
+      ]
+    },
+    {
+      "tipo": "Peor actuación de la jornada",
+      "jugador": "J. Sanchez",
+      "manager": "Los marinero",
+      "puntos": -6,
+      "dinero": null,
+      "equipo": "Sevilla FC",
+      "titulo": "¡ESCÁNDALO! JESÚS SÁNCHEZ ACABA CON -6 PUNTOS",
+      "subtitulo": "La peor actuación de la jornada hunde a Los marinero",
+      "texto": [
+        "Jesús Sánchez vivió una pesadilla y firmó -6 puntos en la actuación más bochornosa de la jornada.",
+        "Lo que gana Lemar lo destruye Sánchez. Los marinero no pueden permitirse este tipo de actuaciones."
+      ]
+    }
+  ]
+}

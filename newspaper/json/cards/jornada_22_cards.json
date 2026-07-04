@@ -1,0 +1,130 @@
+{
+  "cards": [
+    {
+      "tipo": "clasificacion",
+      "jugador": null,
+      "manager": null,
+      "puntos": null,
+      "dinero": null,
+      "equipo": null,
+      "titulo": "¡DANI SUPERA LOS 1000 PUNTOS! UNA MARCA HISTÓRICA",
+      "subtitulo": "Maldinillo gana la jornada pero no alcanza al líder",
+      "texto": [
+        "Dani alcanza los 1003 puntos en la general y se convierte en el primero en superar el millar en el Sótano.",
+        "Maldinillo ganó la J22 con 58 puntos y acorta distancias, pero Dani sigue mandando con 76 de ventaja.",
+        "Juanba vuelve a firmar una jornada miserable con solo 15 puntos. La resignación ya se huele."
+      ]
+    },
+    {
+      "tipo": "rumor",
+      "jugador": null,
+      "manager": null,
+      "puntos": null,
+      "dinero": null,
+      "equipo": null,
+      "titulo": "¡BOMBA INFORMATIVA DEL SÓTANO!",
+      "subtitulo": "Lo que se cuece entre bastidores",
+      "texto": [
+        "Testigos presenciales aseguran haber visto a MuchaSalsa buscar en Google 'cómo mejorar en fantasy fútbol'. La búsqueda duró 3 minutos y luego cerró la pestaña."
+      ]
+    },
+    {
+      "tipo": "Fichaje destacado",
+      "jugador": "Fermin Lopez",
+      "manager": "Los marinero",
+      "puntos": null,
+      "dinero": 23.667,
+      "equipo": "FC Barcelona",
+      "titulo": "¡LOS MARINERO SE LLEVAN A FERMÍN LÓPEZ!",
+      "subtitulo": "23,67 millones por el centrocampista del Barça",
+      "texto": [
+        "Los marinero apostaron fuerte y ficharon a Fermín López del Barcelona por 23,67 millones.",
+        "Una incorporación de lujo para un equipo que quiere escalar en la segunda vuelta de la temporada."
+      ]
+    },
+    {
+      "tipo": "Fichaje destacado",
+      "jugador": "Dani Olmo",
+      "manager": "De la Guettir FC",
+      "puntos": null,
+      "dinero": 20.144,
+      "equipo": "FC Barcelona",
+      "titulo": "¡DE LA GUETTIR SE LLEVA A DANI OLMO!",
+      "subtitulo": "20,14 millones por el mediocampista del Barça",
+      "texto": [
+        "De la Guettir FC da un golpe de efecto y firma a Dani Olmo por 20,14 millones.",
+        "El español del Barcelona llega para darle creatividad y profundidad al juego del equipo."
+      ]
+    },
+    {
+      "tipo": "Fichaje destacado",
+      "jugador": "Joan Garcia",
+      "manager": "Dani",
+      "puntos": null,
+      "dinero": 16.708,
+      "equipo": "FC Barcelona",
+      "titulo": "¡JOAN GARCIA RECALA EN EL EQUIPO DEL LÍDER!",
+      "subtitulo": "Dani desembolsa 16,71 millones por el portero del Barça",
+      "texto": [
+        "Dani refuerza la portería con Joan Garcia del Barcelona por 16,71 millones.",
+        "El líder no descuida ninguna posición: con Garcia bajo palos, el equipo está completo."
+      ]
+    },
+    {
+      "tipo": "Venta récord",
+      "jugador": "Antoine Griezmann",
+      "manager": "De la Guettir FC",
+      "puntos": null,
+      "dinero": 12.776,
+      "equipo": "Atlético de Madrid",
+      "titulo": "¡GRIEZMANN SALE DE DE LA GUETTIR! 12,78 MILLONES",
+      "subtitulo": "El francés del Atleti hace las maletas",
+      "texto": [
+        "De la Guettir FC vende a Antoine Griezmann por 12,78 millones para financiar la llegada de Dani Olmo.",
+        "Una operación de equilibrio que mantiene las cuentas en verde."
+      ]
+    },
+    {
+      "tipo": "MVP de la jornada",
+      "jugador": "G. Moreno",
+      "manager": "Maldinillo",
+      "puntos": 15,
+      "dinero": null,
+      "equipo": "Villarreal CF",
+      "titulo": "¡GERARD MORENO FIRMA 15 PUNTOS PARA MALDINILLO!",
+      "subtitulo": "El delantero del Villarreal lidera la jornada",
+      "texto": [
+        "Gerard Moreno recordó al mundo por qué es uno de los mejores delanteros de LaLiga con 15 puntos.",
+        "Maldinillo ganó la jornada gracias a actuaciones como esta. El proyecto está en plena ebullición."
+      ]
+    },
+    {
+      "tipo": "MVP de la jornada",
+      "jugador": "L. Yamal",
+      "manager": "Dani",
+      "puntos": 14,
+      "dinero": null,
+      "equipo": "FC Barcelona",
+      "titulo": "¡YAMAL BRILLA Y JUSTIFICA SU PRECIO!",
+      "subtitulo": "14 puntos del joven del Barça para el líder",
+      "texto": [
+        "Lamine Yamal demostró que los 46,55 millones que pagó Dani fueron una inversión perfecta con 14 puntos.",
+        "El niño prodigio del Barcelona sigue haciendo historia en el Sótano."
+      ]
+    },
+    {
+      "tipo": "Peor actuación de la jornada",
+      "jugador": "F. Mastantuono",
+      "manager": "Jotabetrbb",
+      "puntos": -1,
+      "dinero": null,
+      "equipo": "Real Madrid",
+      "titulo": "¡MASTANTUONO EN NEGATIVO! JOTABETRBB NO DA CRÉDITO",
+      "subtitulo": "El argentino del Madrid firma -1 punto en la peor actuación",
+      "texto": [
+        "Franco Mastantuono tuvo una noche para olvidar: -1 punto y la vergüenza de ser lo peor de la jornada.",
+        "Jotabetrbb esperaba mucho más del joven argentino. El Sótano no perdona."
+      ]
+    }
+  ]
+}

@@ -11,3 +11,21 @@ data/raw/
 
 # Config y logs locales
 *.log
+
+# IDE y herramientas locales
+.vscode/
+.claude/
+.cache/
+
+# Imágenes generadas (pesan demasiado para git)
+newspaper/new/
+newspaper/photos/Portada_Fichajes.jpg
+newspaper/photos/Portada_Jornada.jpg
+
+# Artefactos generados — reproducibles, no subir
+newspaper/json/prompts/
+newspaper/memory/
+site/
+
+# Assets originales en alta resolución (pesan ~10MB, no necesarios para ejecutar)
+assets/*.png

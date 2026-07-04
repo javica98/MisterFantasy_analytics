@@ -1,0 +1,144 @@
+{
+  "cards": [
+    {
+      "tipo": "clasificacion",
+      "jugador": null,
+      "manager": null,
+      "puntos": null,
+      "dinero": null,
+      "equipo": null,
+      "titulo": "¡MALDINILLO ARRASA CON 85 PUNTOS! MARCA HISTÓRICA DEL SÓTANO",
+      "subtitulo": "Dani aguanta el liderato pero tiembla ante el récord del perseguidor",
+      "texto": [
+        "Maldinillo firma 85 puntos en la J28, la mayor puntuación en una sola jornada de toda la historia del Sótano League.",
+        "A pesar del récord de Maldinillo, Dani sigue líder con 1306 puntos frente a los 1273 del segundo.",
+        "Libre sigue a cero en la jornada. Tres jornadas consecutivas sin puntuar. Una cifra que ya asusta."
+      ]
+    },
+    {
+      "tipo": "rumor",
+      "jugador": null,
+      "manager": null,
+      "puntos": null,
+      "dinero": null,
+      "equipo": null,
+      "titulo": "¡FUENTE EXCLUSIVA DEL SÓTANO PROFUNDO!",
+      "subtitulo": "Lo que no sale en ningún otro medio",
+      "texto": [
+        "Según testigos presentes en el chat de la liga, Dani tardó exactamente 4 segundos en revisar la clasificación tras los 85 puntos de Maldinillo. Los 4 segundos más tensos del año."
+      ]
+    },
+    {
+      "tipo": "Fichaje destacado",
+      "jugador": "Jorge de Frutos",
+      "manager": "Jotabetrbb",
+      "puntos": null,
+      "dinero": 15.5,
+      "equipo": "Rayo Vallecano",
+      "titulo": "¡JOTABETRBB FICHA A DE FRUTOS POR 15,50 MILLONES!",
+      "subtitulo": "El rayista que fue MVP llega al quinto clasificado",
+      "texto": [
+        "Jotabetrbb se hace con Jorge de Frutos por 15,50 millones, un jugador que conoce bien el Sótano.",
+        "El extremo del Rayo Vallecano aporta experiencia y gol a un equipo que aspira al podio."
+      ]
+    },
+    {
+      "tipo": "Fichaje destacado",
+      "jugador": "Jorge de Frutos",
+      "manager": "Maldinillo",
+      "puntos": null,
+      "dinero": 15.297,
+      "equipo": "Rayo Vallecano",
+      "titulo": "¡MALDINILLO TAMBIÉN QUIERE A DE FRUTOS! GUERRA DE PUJAS",
+      "subtitulo": "El perseguidor ficha al mismo jugador que Jotabetrbb",
+      "texto": [
+        "Maldinillo y Jotabetrbb han fichado al mismo jugador. La competencia en el mercado es absoluta.",
+        "15,30 millones por De Frutos para un Maldinillo que sigue creciendo jornada a jornada."
+      ]
+    },
+    {
+      "tipo": "Fichaje destacado",
+      "jugador": "Aymeric Laporte",
+      "manager": "Dani",
+      "puntos": null,
+      "dinero": 7.485,
+      "equipo": "Athletic Club",
+      "titulo": "¡DANI FICHA A LAPORTE DEL ATHLETIC POR 7,49 MILLONES!",
+      "subtitulo": "El central francés refuerza la defensa del líder",
+      "texto": [
+        "Dani añade solidez defensiva con Aymeric Laporte del Athletic Club por 7,49 millones.",
+        "El líder no descuida ninguna línea: con Laporte atrás, el equipo es aún más difícil de batir."
+      ]
+    },
+    {
+      "tipo": "Venta récord",
+      "jugador": "Leandro Cabrera",
+      "manager": "Maldinillo",
+      "puntos": null,
+      "dinero": 12.641,
+      "equipo": "RCD Espanyol",
+      "titulo": "¡CABRERA SE VA! MALDINILLO INGRESA 12,64 MILLONES",
+      "subtitulo": "El central del Espanyol sale del equipo del perseguidor",
+      "texto": [
+        "Leandro Cabrera abandona Maldinillo a cambio de 12,64 millones en la mayor venta de la jornada.",
+        "El dinero del uruguayo sirve para financiar la llegada de De Frutos y otros refuerzos."
+      ]
+    },
+    {
+      "tipo": "MVP de la jornada",
+      "jugador": "Raphinha",
+      "manager": "Maldinillo",
+      "puntos": 21,
+      "dinero": null,
+      "equipo": "FC Barcelona",
+      "titulo": "¡RAPHINHA SUBLIME CON 21 PUNTOS! EL MEJOR DEL SÓTANO",
+      "subtitulo": "El brasileño lidera el récord histórico de Maldinillo",
+      "texto": [
+        "Raphinha firmó 21 puntos que son parte clave de los históricos 85 puntos de Maldinillo en la jornada.",
+        "El brasileño del Barcelona está en el mejor momento de su carrera en el Sótano. Nadie le para."
+      ]
+    },
+    {
+      "tipo": "MVP de la jornada",
+      "jugador": "F. Valverde",
+      "manager": "Maldinillo",
+      "puntos": 14,
+      "dinero": null,
+      "equipo": "Real Madrid",
+      "titulo": "¡VALVERDE TAMBIÉN EXPLOSIONA CON 14 PUNTOS!",
+      "subtitulo": "El uruguayo justifica su fichaje desde el primer día",
+      "texto": [
+        "Federico Valverde tardó exactamente una jornada en justificar los 25,62 millones que costó: 14 puntos.",
+        "Maldinillo tiene en Valverde al motor de un equipo que vuela alto."
+      ]
+    },
+    {
+      "tipo": "MVP de la jornada",
+      "jugador": "A. Guler",
+      "manager": "Maldinillo",
+      "puntos": 13,
+      "dinero": null,
+      "equipo": "Real Madrid",
+      "titulo": "¡GÜLER SE SUMA A LA FIESTA CON 13 PUNTOS!",
+      "subtitulo": "Tres MVPs de Maldinillo en la misma jornada: récord absoluto",
+      "texto": [
+        "Arda Güler completa el trío de MVPs de Maldinillo con 13 puntos de calidad turca.",
+        "Tres jugadores de Maldinillo en el top de la jornada. Así se hacen los 85 puntos históricos."
+      ]
+    },
+    {
+      "tipo": "Gol en propia",
+      "jugador": "R. Marin",
+      "manager": "Dani",
+      "puntos": 2,
+      "dinero": null,
+      "equipo": "Villarreal CF",
+      "titulo": "¡GOL EN PROPIA DE MARIN! 2 PUNTOS PARA DANI",
+      "subtitulo": "El defensa del Villarreal ayuda involuntariamente al líder",
+      "texto": [
+        "R. Marin se marcó un gol en propia y en el Sótano eso se traduce en 2 puntos para el equipo de Dani.",
+        "El líder suma hasta los goles en contra de sus propios jugadores. Eso se llama dominar la liga."
+      ]
+    }
+  ]
+}

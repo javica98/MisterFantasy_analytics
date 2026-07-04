@@ -1,0 +1,144 @@
+{
+  "cards": [
+    {
+      "tipo": "clasificacion",
+      "jugador": null,
+      "manager": null,
+      "puntos": null,
+      "dinero": null,
+      "equipo": null,
+      "titulo": "¡DE LA GUETTIR FC GANA LA JORNADA! SORPRESA MAYÚSCULA",
+      "subtitulo": "Dani y Maldinillo siguen en cabeza pero la distancia se mantiene",
+      "texto": [
+        "De la Guettir FC se lleva la jornada con 50 puntos en la mejor semana de la temporada para el sexto clasificado.",
+        "Dani suma 41 puntos y mantiene el liderato con 1415. Maldinillo se acerca a solo 41 puntos con 1374.",
+        "MuchaSalsa cierra con apenas 1 punto en la jornada. La racha más negativa de todo el Sótano League."
+      ]
+    },
+    {
+      "tipo": "rumor",
+      "jugador": null,
+      "manager": null,
+      "puntos": null,
+      "dinero": null,
+      "equipo": null,
+      "titulo": "¡EL SÓTANO ARDE CON ESTOS RUMORES!",
+      "subtitulo": "Noticias de primera mano",
+      "texto": [
+        "Fuentes del mercado confirman que MuchaSalsa ha empezado a seleccionar jugadores por el color de su equipación. El método no está funcionando."
+      ]
+    },
+    {
+      "tipo": "Fichaje destacado",
+      "jugador": "Marcus Rashford",
+      "manager": "Maldinillo",
+      "puntos": null,
+      "dinero": 33.318,
+      "equipo": "FC Barcelona",
+      "titulo": "¡MALDINILLO SE LLEVA A RASHFORD POR 33,32 MILLONES!",
+      "subtitulo": "El inglés del Barça, el fichaje más caro de la jornada",
+      "texto": [
+        "Maldinillo abre la billetera a tope y ficha a Marcus Rashford por 33,32 millones en el mayor desembolso de la jornada.",
+        "El inglés cedido en el Barcelona llega para ser la punta de lanza de un equipo que persigue a Dani."
+      ]
+    },
+    {
+      "tipo": "Fichaje destacado",
+      "jugador": "Aurelien Tchouameni",
+      "manager": "Dani",
+      "puntos": null,
+      "dinero": 17.438,
+      "equipo": "Real Madrid",
+      "titulo": "¡DANI FICHA A TCHOUAMENI DEL MADRID!",
+      "subtitulo": "17,44 millones por el francés del Real Madrid",
+      "texto": [
+        "El líder refuerza el centro del campo con Aurélien Tchouameni del Real Madrid por 17,44 millones.",
+        "Tchouameni llega para blindar el centro del campo del mejor equipo del Sótano."
+      ]
+    },
+    {
+      "tipo": "Fichaje destacado",
+      "jugador": "Jules Kounde",
+      "manager": "Dani",
+      "puntos": null,
+      "dinero": 13.54,
+      "equipo": "FC Barcelona",
+      "titulo": "¡DANI TAMBIÉN FICHA A KOUNDÉ DEL BARÇA!",
+      "subtitulo": "El francés llega por 13,54 millones al equipo del líder",
+      "texto": [
+        "Jules Koundé refuerza la defensa de Dani por 13,54 millones en la jornada de las grandes operaciones.",
+        "El líder construye un equipo de primer nivel en todas las líneas. La diferencia se nota."
+      ]
+    },
+    {
+      "tipo": "Venta récord",
+      "jugador": "Raphinha",
+      "manager": "Maldinillo",
+      "puntos": null,
+      "dinero": 24.988,
+      "equipo": "FC Barcelona",
+      "titulo": "¡MALDINILLO VENDE A RAPHINHA POR 24,99 MILLONES!",
+      "subtitulo": "El brasileño sale del equipo del perseguidor",
+      "texto": [
+        "Raphinha deja Maldinillo y el equipo ingresa 24,99 millones para financiar la llegada de Rashford.",
+        "El mercado de Maldinillo sigue siendo el más activo del Sótano. Nunca para."
+      ]
+    },
+    {
+      "tipo": "MVP de la jornada",
+      "jugador": "J. Martin",
+      "manager": "De la Guettir FC",
+      "puntos": 12,
+      "dinero": null,
+      "equipo": "Real Sociedad",
+      "titulo": "¡JAVI MARTÍN LIDERA A DE LA GUETTIR FC CON 12 PUNTOS!",
+      "subtitulo": "El jugador de la Real Sociedad firma la mejor actuación",
+      "texto": [
+        "Javi Martín fue el motor de la victoria de De la Guettir FC en la jornada con 12 puntos.",
+        "El jugador de la Real Sociedad justifica por qué De la Guettir FC confía en él."
+      ]
+    },
+    {
+      "tipo": "MVP de la jornada",
+      "jugador": "M. Satriano",
+      "manager": "De la Guettir FC",
+      "puntos": 11,
+      "dinero": null,
+      "equipo": "Getafe CF",
+      "titulo": "¡SATRIANO APORTA 11 PUNTOS AL EQUIPO REVELACIÓN!",
+      "subtitulo": "El uruguayo del Getafe sigue en forma para De la Guettir FC",
+      "texto": [
+        "Martín Satriano suma 11 puntos y confirma que De la Guettir FC tiene algo muy especial en el ataque.",
+        "Dos delanteros del mismo equipo en el top de la jornada. La tarde perfecta del sexto clasificado."
+      ]
+    },
+    {
+      "tipo": "Peor actuación de la jornada",
+      "jugador": "P. Bigas",
+      "manager": "MuchaSalsa",
+      "puntos": -4,
+      "dinero": null,
+      "equipo": "Elche CF",
+      "titulo": "¡BIGAS EN -4! MUCHASALSA TOCA FONDO",
+      "subtitulo": "El defensa del Elche firma la peor actuación de la jornada",
+      "texto": [
+        "P. Bigas completó la ruina de MuchaSalsa con -4 puntos en una actuación para olvidar.",
+        "Un punto en la jornada para MuchaSalsa. Con actuaciones como la de Bigas, ni ese punto merece."
+      ]
+    },
+    {
+      "tipo": "Gol en propia",
+      "jugador": "P. Navarro",
+      "manager": "Chamacónicos",
+      "puntos": 1,
+      "dinero": null,
+      "equipo": "Villarreal CF",
+      "titulo": "¡NAVARRO MARCA EN PROPIA Y LOS CHAMACÓNICOS AGRADECEN!",
+      "subtitulo": "1 punto del gol en contra para el cuarto clasificado",
+      "texto": [
+        "P. Navarro del Villarreal se marcó un gol en propia y los Chamacónicos se apuntan 1 punto de regalo.",
+        "En el Sótano todo suma. Hasta los goles en contra del rival."
+      ]
+    }
+  ]
+}

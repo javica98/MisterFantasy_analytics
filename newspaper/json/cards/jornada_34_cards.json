@@ -1,0 +1,144 @@
+{
+  "cards": [
+    {
+      "tipo": "clasificacion",
+      "jugador": null,
+      "manager": null,
+      "puntos": null,
+      "dinero": null,
+      "equipo": null,
+      "titulo": "¡LOS MARINERO GANAN LA JORNADA! DANI AMPLÍA VENTAJA",
+      "subtitulo": "Maldinillo firma 50 puntos pero no recorta distancias al líder",
+      "texto": [
+        "Los marinero se llevan la J34 con 69 puntos en su mejor jornada de las últimas semanas.",
+        "Dani suma 57 puntos y amplía la ventaja sobre Maldinillo hasta los 32 puntos. El título se complica para el perseguidor.",
+        "MuchaSalsa cierra con 11 puntos en otra jornada olvidable para el octavo clasificado."
+      ]
+    },
+    {
+      "tipo": "rumor",
+      "jugador": null,
+      "manager": null,
+      "puntos": null,
+      "dinero": null,
+      "equipo": null,
+      "titulo": "¡EXCLUSIVA TOTAL DEL SÓTANO!",
+      "subtitulo": "Los rumores de la recta final",
+      "texto": [
+        "Insiders del Sótano afirman que Maldinillo ha contratado a un vidente para predecir los resultados de las últimas jornadas. El vidente también juega en la liga y está octavo."
+      ]
+    },
+    {
+      "tipo": "Fichaje destacado",
+      "jugador": "Mikel Oyarzabal",
+      "manager": "Dani",
+      "puntos": null,
+      "dinero": 40.168,
+      "equipo": "Real Sociedad",
+      "titulo": "¡DANI FICHA A OYARZABAL POR 40,17 MILLONES! INVERSIÓN DE CAMPEÓN",
+      "subtitulo": "El capitán de la Real Sociedad llega al equipo del líder",
+      "texto": [
+        "Dani da el golpe del mercado y se lleva a Mikel Oyarzabal por 40,17 millones en la recta final.",
+        "El capitán de la Real Sociedad llega para ser el líder ofensivo del equipo que quiere ganar el título."
+      ]
+    },
+    {
+      "tipo": "Fichaje destacado",
+      "jugador": "Gerard Moreno",
+      "manager": "Maldinillo",
+      "puntos": null,
+      "dinero": 26.729,
+      "equipo": "Villarreal CF",
+      "titulo": "¡MALDINILLO FICHA A GERARD MORENO POR 26,73 MILLONES!",
+      "subtitulo": "El delantero del Villarreal vuelve al Sótano con el perseguidor",
+      "texto": [
+        "Maldinillo recupera a Gerard Moreno del Villarreal por 26,73 millones para reforzar el ataque.",
+        "El delantero español llega en el mejor momento: las últimas jornadas son ahora o nunca."
+      ]
+    },
+    {
+      "tipo": "Fichaje destacado",
+      "jugador": "Nico Williams",
+      "manager": "Dani",
+      "puntos": null,
+      "dinero": 16.358,
+      "equipo": "Athletic Club",
+      "titulo": "¡NICO WILLIAMS SE SUMA AL EQUIPO DE DANI!",
+      "subtitulo": "16,36 millones por el extremo del Athletic Club",
+      "texto": [
+        "Dani refuerza las bandas con Nico Williams del Athletic Club por 16,36 millones.",
+        "Con Oyarzabal y Williams, el ataque del líder es imparable en la recta final."
+      ]
+    },
+    {
+      "tipo": "Venta récord",
+      "jugador": "Victor Munoz",
+      "manager": "Dani",
+      "puntos": null,
+      "dinero": 16.394,
+      "equipo": "CA Osasuna",
+      "titulo": "¡DANI VENDE A VÍCTOR MUÑOZ POR 16,39 MILLONES!",
+      "subtitulo": "El navarro sale del equipo del líder para financiar los nuevos fichajes",
+      "texto": [
+        "Víctor Muñoz deja el proyecto de Dani a cambio de 16,39 millones.",
+        "La venta del navarro del Osasuna financia los fichajes de Oyarzabal y Williams. Negocio redondo."
+      ]
+    },
+    {
+      "tipo": "MVP de la jornada",
+      "jugador": "V. Junior",
+      "manager": "Jotabetrbb",
+      "puntos": 17,
+      "dinero": null,
+      "equipo": "Real Madrid",
+      "titulo": "¡VINICIUS JR. EN MODO DIOS CON 17 PUNTOS!",
+      "subtitulo": "El brasileño del Madrid lidera la jornada para Jotabetrbb",
+      "texto": [
+        "Vinicius Jr. firmó su mejor actuación de las últimas semanas con 17 puntos descomunales.",
+        "Jotabetrbb tiene en el brasileño del Real Madrid a su jugador más determinante."
+      ]
+    },
+    {
+      "tipo": "MVP de la jornada",
+      "jugador": "C. Hernandez",
+      "manager": "Chamacónicos",
+      "puntos": 15,
+      "dinero": null,
+      "equipo": "Real Betis",
+      "titulo": "¡HERNÁNDEZ VUELVE A BRILLAR CON 15 PUNTOS!",
+      "subtitulo": "El jugador del Betis es un fijo en el top de la jornada",
+      "texto": [
+        "C. Hernández sigue siendo el elemento más fiable de los Chamacónicos con 15 puntos de alta calidad.",
+        "El bético demuestra que en los momentos importantes, siempre está ahí."
+      ]
+    },
+    {
+      "tipo": "Peor actuación de la jornada",
+      "jugador": "J. Vazquez",
+      "manager": "MuchaSalsa",
+      "puntos": 1,
+      "dinero": null,
+      "equipo": "Valencia CF",
+      "titulo": "¡VÁZQUEZ DESAPARECE PARA MUCHASALSA CON SOLO 1 PUNTO!",
+      "subtitulo": "La peor actuación de la jornada para el equipo de la temporada negra",
+      "texto": [
+        "J. Vázquez del Valencia CF no existió en la jornada y apenas aportó 1 punto para MuchaSalsa.",
+        "La temporada de MuchaSalsa no tiene rescate posible. Ni los jugadores ni los resultados acompañan."
+      ]
+    },
+    {
+      "tipo": "Héroe bajo palos",
+      "jugador": "A. Batalla",
+      "manager": "De la Guettir FC",
+      "puntos": 7,
+      "dinero": null,
+      "equipo": "Rayo Vallecano",
+      "titulo": "¡BATALLA SALVA A DE LA GUETTIR FC CON 7 PUNTOS!",
+      "subtitulo": "El portero del Rayo firma una actuación heroica",
+      "texto": [
+        "A. Batalla fue la muralla del Rayo Vallecano y sumó 7 puntos decisivos para De la Guettir FC.",
+        "El portero del equipo madrileño es uno de los más fiables del Sótano cuando hay que parar balones."
+      ]
+    }
+  ]
+}

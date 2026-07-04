@@ -1,0 +1,130 @@
+{
+  "cards": [
+    {
+      "tipo": "clasificacion",
+      "jugador": null,
+      "manager": null,
+      "puntos": null,
+      "dinero": null,
+      "equipo": null,
+      "titulo": "¡MALDINILLO FICHA A YAMAL POR 69,83 MILLONES! EL MÁS CARO DE LA HISTORIA",
+      "subtitulo": "Dani sigue líder con 25 puntos de ventaja sobre el perseguidor",
+      "texto": [
+        "Dani mantiene el liderato con 1583 puntos frente a los 1558 de Maldinillo. Solo 25 puntos de diferencia.",
+        "Maldinillo gana la jornada con 58 puntos y sigue acortando distancias en la recta final de la temporada.",
+        "MuchaSalsa firma solo 6 puntos en la jornada. La temporada más oscura del Sótano continúa."
+      ]
+    },
+    {
+      "tipo": "rumor",
+      "jugador": null,
+      "manager": null,
+      "puntos": null,
+      "dinero": null,
+      "equipo": null,
+      "titulo": "¡ALERTA ROJA EN EL SÓTANO! 25 PUNTOS DE DIFERENCIA",
+      "subtitulo": "El título en juego hasta el final",
+      "texto": [
+        "Maldinillo ha fichado a Yamal por 69,83 millones. Dani ha cerrado el mercado y se ha ido a rezar. El desenlace promete."
+      ]
+    },
+    {
+      "tipo": "Fichaje destacado",
+      "jugador": "Lamine Yamal",
+      "manager": "Maldinillo",
+      "puntos": null,
+      "dinero": 69.826,
+      "equipo": "FC Barcelona",
+      "titulo": "¡BOMBA HISTÓRICA! MALDINILLO FICHA A YAMAL POR 69,83 MILLONES",
+      "subtitulo": "El fichaje más caro de toda la historia del Sótano League",
+      "texto": [
+        "Maldinillo rompe todos los récords del mercado y se lleva a Lamine Yamal por 69,83 millones. Una cifra nunca vista.",
+        "El joven prodigio del Barcelona llega para ser el arma definitiva de Maldinillo en la carrera por el título."
+      ]
+    },
+    {
+      "tipo": "Fichaje destacado",
+      "jugador": "Pau Cubarsi",
+      "manager": "Dani",
+      "puntos": null,
+      "dinero": 27.81,
+      "equipo": "FC Barcelona",
+      "titulo": "¡DANI RESPONDE CON CUBARSÍ POR 27,81 MILLONES!",
+      "subtitulo": "El central del Barça llega al equipo del líder",
+      "texto": [
+        "Dani no se queda atrás en el mercado y ficha a Pau Cubarsí por 27,81 millones del Barcelona.",
+        "El central catalán llega para reforzar la defensa del líder en la recta final de la temporada."
+      ]
+    },
+    {
+      "tipo": "Fichaje destacado",
+      "jugador": "Aleix Febas",
+      "manager": "Dani",
+      "puntos": null,
+      "dinero": 24.326,
+      "equipo": "Elche CF",
+      "titulo": "¡DANI APUESTA POR ALEIX FEBAS DEL ELCHE!",
+      "subtitulo": "24,33 millones por el centrocampista ilicitano",
+      "texto": [
+        "Dani añade a Aleix Febas del Elche por 24,33 millones en la jornada de los grandes movimientos.",
+        "El líder diversifica su plantilla y no depende de un solo equipo. Estrategia inteligente."
+      ]
+    },
+    {
+      "tipo": "Venta récord",
+      "jugador": "Julian Alvarez",
+      "manager": "Dani",
+      "puntos": null,
+      "dinero": 17.009,
+      "equipo": "Atlético de Madrid",
+      "titulo": "¡DANI VENDE A JULIÁN ÁLVAREZ POR 17,01 MILLONES!",
+      "subtitulo": "La Araña sale del equipo del líder para financiar nuevas incorporaciones",
+      "texto": [
+        "Julián Álvarez abandona el equipo de Dani a cambio de 17,01 millones.",
+        "El dinero del argentino financia parte de los fichajes de Cubarsí y Febas. El ciclo del mercado continúa."
+      ]
+    },
+    {
+      "tipo": "MVP de la jornada",
+      "jugador": "A. Silva",
+      "manager": "Juanba",
+      "puntos": 14,
+      "dinero": null,
+      "equipo": "Elche CF",
+      "titulo": "¡SILVA BRILLA CON 14 PUNTOS Y SALVA A JUANBA!",
+      "subtitulo": "El jugador del Elche firma la mejor actuación de la jornada",
+      "texto": [
+        "A. Silva fue el héroe inesperado de la J33 con 14 puntos para un Juanba que los necesitaba.",
+        "El jugador del Elche demostró que en el Sótano cualquiera puede ser MVP en cualquier momento."
+      ]
+    },
+    {
+      "tipo": "MVP de la jornada",
+      "jugador": "L. Yamal",
+      "manager": "Maldinillo",
+      "puntos": 11,
+      "dinero": null,
+      "equipo": "FC Barcelona",
+      "titulo": "¡YAMAL DEBUTA CON 11 PUNTOS PARA MALDINILLO!",
+      "subtitulo": "El fichaje más caro de la historia justifica su precio desde el primer día",
+      "texto": [
+        "Lamine Yamal tardó exactamente una jornada en demostrar por qué costó 69,83 millones: 11 puntos en su debut.",
+        "Maldinillo pagó una fortuna y ya tiene el primer retorno. El proyecto sigue adelante."
+      ]
+    },
+    {
+      "tipo": "Peor actuación de la jornada",
+      "jugador": "M. Jauregizar",
+      "manager": "Chamacónicos",
+      "puntos": -1,
+      "dinero": null,
+      "equipo": "Athletic Club",
+      "titulo": "¡JAUREGIZAR EN NEGATIVO! LOS CHAMACÓNICOS SUFREN",
+      "subtitulo": "El jugador del Athletic firma -1 punto en la peor actuación",
+      "texto": [
+        "M. Jauregizar no apareció en el partido y se marchó con -1 punto en la peor actuación de la jornada.",
+        "Los Chamacónicos no pueden permitirse este tipo de actuaciones en la recta final de la temporada."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,144 @@
+{
+  "cards": [
+    {
+      "tipo": "clasificacion",
+      "jugador": null,
+      "manager": null,
+      "puntos": null,
+      "dinero": null,
+      "equipo": null,
+      "titulo": "¡DANI GANA LA JORNADA Y MANTIENE SU VENTAJA!",
+      "subtitulo": "Maldinillo responde con 54 puntos pero no alcanza al líder",
+      "texto": [
+        "Dani lidera la J29 con 68 puntos y amplía su ventaja en la general hasta los 1374 puntos totales.",
+        "Maldinillo firma 54 puntos y se mantiene a 47 del líder. La carrera está más emocionante que nunca.",
+        "Libre sigue con 0 puntos en la jornada. Cuatro semanas consecutivas sin puntuar. El silencio que aterra."
+      ]
+    },
+    {
+      "tipo": "rumor",
+      "jugador": null,
+      "manager": null,
+      "puntos": null,
+      "dinero": null,
+      "equipo": null,
+      "titulo": "¡ALERTA MÁXIMA EN EL SÓTANO!",
+      "subtitulo": "Los rumores no paran",
+      "texto": [
+        "Insiders de la liga aseguran que Libre tiene un plan maestro para las últimas jornadas. El plan consiste en rezar."
+      ]
+    },
+    {
+      "tipo": "Fichaje destacado",
+      "jugador": "Julian Alvarez",
+      "manager": "Maldinillo",
+      "puntos": null,
+      "dinero": 17.444,
+      "equipo": "Atlético de Madrid",
+      "titulo": "¡MALDINILLO FICHA A JULIÁN ÁLVAREZ! LA ARAÑA EN EL SÓTANO",
+      "subtitulo": "17,44 millones por el argentino del Atlético",
+      "texto": [
+        "Maldinillo da otro golpe de mercado y se lleva a Julián Álvarez por 17,44 millones del Atlético.",
+        "La Araña llega para ser el punto de referencia ofensivo del segundo clasificado."
+      ]
+    },
+    {
+      "tipo": "Fichaje destacado",
+      "jugador": "Victor Munoz",
+      "manager": "Dani",
+      "puntos": null,
+      "dinero": 14.021,
+      "equipo": "CA Osasuna",
+      "titulo": "¡DANI FICHA A VÍCTOR MUÑOZ DEL OSASUNA!",
+      "subtitulo": "14,02 millones por el centrocampista navarro",
+      "texto": [
+        "El líder sigue reforzándose y ficha a Víctor Muñoz del Osasuna por 14,02 millones.",
+        "El navarro llega para aportar energía y trabajo al centro del campo del mejor equipo del Sótano."
+      ]
+    },
+    {
+      "tipo": "Fichaje destacado",
+      "jugador": "Samuel Costa",
+      "manager": "Dani",
+      "puntos": null,
+      "dinero": 9.262,
+      "equipo": "RCD Mallorca",
+      "titulo": "¡DANI TAMBIÉN FICHA A SAMUEL COSTA DEL MALLORCA!",
+      "subtitulo": "9,26 millones por el centrocampista del equipo balear",
+      "texto": [
+        "Dani no para de mover el mercado y añade a Samuel Costa del Mallorca por 9,26 millones.",
+        "Dos fichajes en la misma jornada para un líder que no quiere perder el ritmo."
+      ]
+    },
+    {
+      "tipo": "Venta récord",
+      "jugador": "Julian Alvarez",
+      "manager": "Maldinillo",
+      "puntos": null,
+      "dinero": 18.096,
+      "equipo": "Atlético de Madrid",
+      "titulo": "¡MALDINILLO VENDE A ÁLVAREZ EL MISMO DÍA QUE LO FICHA!",
+      "subtitulo": "18,10 millones en la operación más rápida de la temporada",
+      "texto": [
+        "Maldinillo compra y vende a Julián Álvarez en tiempo récord, ganando 0,65 millones en la operación.",
+        "Un movimiento de mercado que deja a todos boquiabiertos. La mente de Maldinillo es insondable."
+      ]
+    },
+    {
+      "tipo": "MVP de la jornada",
+      "jugador": "V. Junior",
+      "manager": "Jotabetrbb",
+      "puntos": 14,
+      "dinero": null,
+      "equipo": "Real Madrid",
+      "titulo": "¡VINICIUS JR. VUELVE A BRILLAR CON 14 PUNTOS!",
+      "subtitulo": "El brasileño del Madrid lidera la jornada para Jotabetrbb",
+      "texto": [
+        "Vinicius Jr. sigue en estado de gracia con 14 puntos que mantienen vivo a Jotabetrbb en la carrera.",
+        "El brasileño del Real Madrid es uno de los jugadores más valiosos del Sótano League."
+      ]
+    },
+    {
+      "tipo": "MVP de la jornada",
+      "jugador": "D. Vivian",
+      "manager": "Dani",
+      "puntos": 12,
+      "dinero": null,
+      "equipo": "Athletic Club",
+      "titulo": "¡VIVIAN SE REDIME CON 12 PUNTOS PARA DANI!",
+      "subtitulo": "El central del Athletic aporta solidez al equipo del líder",
+      "texto": [
+        "Dani Vivian borró su actuación en blanco de anteriores semanas con 12 puntos impecables.",
+        "El central del Athletic Club es un seguro de vida para el líder cuando está en forma."
+      ]
+    },
+    {
+      "tipo": "Peor actuación de la jornada",
+      "jugador": "A. Santos",
+      "manager": "Libre",
+      "puntos": -1,
+      "dinero": null,
+      "equipo": "Real Betis",
+      "titulo": "¡ANTONY SANTOS EN NEGATIVO! LIBRE SIGUE EN EL POZO",
+      "subtitulo": "El brasileño del Betis firma -1 punto en la actuación más bochornosa",
+      "texto": [
+        "Antony Santos completó la ruina de Libre con -1 punto en la jornada más oscura del equipo.",
+        "Cuatro jornadas a cero y encima el jugador estrella en negativo. La tormenta perfecta."
+      ]
+    },
+    {
+      "tipo": "Expulsión",
+      "jugador": "F. Valverde",
+      "manager": "Maldinillo",
+      "puntos": 3,
+      "dinero": null,
+      "equipo": "Real Madrid",
+      "titulo": "¡VALVERDE EXPULSADO! MALDINILLO PIERDE A SU MOTOR",
+      "subtitulo": "El uruguayo ve la roja pero suma 3 puntos antes de salir",
+      "texto": [
+        "Federico Valverde fue expulsado pero aun así sumó 3 puntos para Maldinillo antes de ver la roja.",
+        "La expulsión preocupa de cara a las próximas jornadas: Maldinillo no puede permitirse perder a Valverde."
+      ]
+    }
+  ]
+}

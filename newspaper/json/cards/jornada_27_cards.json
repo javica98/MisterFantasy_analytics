@@ -1,0 +1,144 @@
+{
+  "cards": [
+    {
+      "tipo": "clasificacion",
+      "jugador": null,
+      "manager": null,
+      "puntos": null,
+      "dinero": null,
+      "equipo": null,
+      "titulo": "¡DANI SUPERA LOS 1.269 PUNTOS! MALDINILLO NO CEDE",
+      "subtitulo": "Libre y MuchaSalsa empatan a 766 en el furgón de cola",
+      "texto": [
+        "Dani lidera con 1269 puntos tras ganar la jornada con 56. Maldinillo es segundo con 1188 puntos.",
+        "Juanba y De la Guettir FC se cuelan en el top 6 gracias a una buena semana. La clasificación se mueve.",
+        "Libre y MuchaSalsa empatan a 766 puntos en la parte baja. El duelo por no ser el último."
+      ]
+    },
+    {
+      "tipo": "rumor",
+      "jugador": null,
+      "manager": null,
+      "puntos": null,
+      "dinero": null,
+      "equipo": null,
+      "titulo": "¡PRIMICIA DEL SÓTANO LEAGUE!",
+      "subtitulo": "El mercado nunca miente",
+      "texto": [
+        "Se rumorea que Chamaconicos fichó a Olasagasti tras verle en un vídeo de TikTok. El vídeo era de cosina. Nadie sabe cómo pasó."
+      ]
+    },
+    {
+      "tipo": "Fichaje destacado",
+      "jugador": "Fede Valverde",
+      "manager": "Maldinillo",
+      "puntos": null,
+      "dinero": 25.622,
+      "equipo": "Real Madrid",
+      "titulo": "¡BOMBAZO! MALDINILLO FICHA A FEDE VALVERDE",
+      "subtitulo": "25,62 millones por el uruguayo del Real Madrid",
+      "texto": [
+        "Maldinillo da el golpe del mercado y se lleva a Federico Valverde por 25,62 millones.",
+        "El uruguayo del Madrid es uno de los mejores del mundo en su posición. El perseguidor va en serio."
+      ]
+    },
+    {
+      "tipo": "Fichaje destacado",
+      "jugador": "Ante Budimir",
+      "manager": "Dani",
+      "puntos": null,
+      "dinero": 24.078,
+      "equipo": "CA Osasuna",
+      "titulo": "¡DANI APUESTA POR BUDIMIR! 24 MILLONES POR EL CROATA",
+      "subtitulo": "El delantero de Osasuna refuerza el ataque del líder",
+      "texto": [
+        "Dani añade músculo al ataque con Ante Budimir del Osasuna por 24,08 millones.",
+        "El líder nunca descansa: fichaje tras fichaje para mantener la distancia con Maldinillo."
+      ]
+    },
+    {
+      "tipo": "Fichaje destacado",
+      "jugador": "Pablo Barrios",
+      "manager": "Maldinillo",
+      "puntos": null,
+      "dinero": 20.743,
+      "equipo": "Atlético de Madrid",
+      "titulo": "¡MALDINILLO TAMBIÉN FICHA A PABLO BARRIOS!",
+      "subtitulo": "El centrocampista del Atleti llega por 20,74 millones",
+      "texto": [
+        "No contento con Valverde, Maldinillo ficha también a Pablo Barrios por 20,74 millones.",
+        "Dos fichajes de primer nivel en la misma jornada. El perseguidor no da respiro."
+      ]
+    },
+    {
+      "tipo": "Venta récord",
+      "jugador": "Thibaut Courtois",
+      "manager": "Maldinillo",
+      "puntos": null,
+      "dinero": 14.902,
+      "equipo": "Real Madrid",
+      "titulo": "¡COURTOIS ABANDONA A MALDINILLO POR 14,90 MILLONES!",
+      "subtitulo": "El portero belga sale para financiar los nuevos fichajes",
+      "texto": [
+        "Thibaut Courtois deja el proyecto de Maldinillo a cambio de 14,90 millones.",
+        "El dinero del portero belga financia a Valverde y Barrios. Operación maestra."
+      ]
+    },
+    {
+      "tipo": "MVP de la jornada",
+      "jugador": "V. Muriqi",
+      "manager": "Chamacónicos",
+      "puntos": 16,
+      "dinero": null,
+      "equipo": "RCD Mallorca",
+      "titulo": "¡MURIQI VUELVE A HACER HISTORIA CON 16 PUNTOS!",
+      "subtitulo": "El kosovaro del Mallorca sigue siendo el arma secreta de los Chamacónicos",
+      "texto": [
+        "Vedat Muriqi repite como mejor jugador de la jornada con 16 puntos descomunales para los Chamacónicos.",
+        "El kosovaro del Mallorca es un fenómeno. Con él en el equipo, siempre hay esperanza."
+      ]
+    },
+    {
+      "tipo": "MVP de la jornada",
+      "jugador": "T. Buchanan",
+      "manager": "Juanba",
+      "puntos": 13,
+      "dinero": null,
+      "equipo": "Villarreal CF",
+      "titulo": "¡BUCHANAN REGALA 13 PUNTOS A JUANBA!",
+      "subtitulo": "El canadiense del Villarreal salva la dignidad del octavo clasificado",
+      "texto": [
+        "Tajon Buchanan fue la alegría de Juanba en la J27 con 13 puntos que saben a gloria.",
+        "Juanba tiene en el canadiense del Villarreal a uno de sus pocos jugadores de confianza."
+      ]
+    },
+    {
+      "tipo": "Peor actuación de la jornada",
+      "jugador": "J. Ander Olasagasti",
+      "manager": "Chamacónicos",
+      "puntos": -6,
+      "dinero": null,
+      "equipo": "Levante UD",
+      "titulo": "¡OLASAGASTI EN -6! EL PEOR DE LA JORNADA",
+      "subtitulo": "El jugador del Levante destroza los sueños de los Chamacónicos",
+      "texto": [
+        "J. Ander Olasagasti firmó la actuación más catastrófica de la jornada con -6 puntos.",
+        "Los Chamacónicos ganaron con Muriqi y perdieron con Olasagasti. El eterno equilibrio del Sótano."
+      ]
+    },
+    {
+      "tipo": "Expulsión",
+      "jugador": "J. Ander Olasagasti",
+      "manager": "Chamacónicos",
+      "puntos": -6,
+      "dinero": null,
+      "equipo": "Levante UD",
+      "titulo": "¡EXPULSADO Y CON -6! OLASAGASTI HACE HISTORIA POR LO PEOR",
+      "subtitulo": "Tarjeta roja que condena a los Chamacónicos al desastre",
+      "texto": [
+        "Olasagasti recibió la tarjeta roja más rápida de la jornada y se marchó con -6 puntos.",
+        "Una expulsión que resume todo lo malo de la noche del Levante UD."
+      ]
+    }
+  ]
+}

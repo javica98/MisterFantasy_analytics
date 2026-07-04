@@ -1,0 +1,130 @@
+{
+  "cards": [
+    {
+      "tipo": "clasificacion",
+      "jugador": null,
+      "manager": null,
+      "puntos": null,
+      "dinero": null,
+      "equipo": null,
+      "titulo": "¡DANI CAMPEÓN DEL SÓTANO LEAGUE! 11 PUNTOS LO DECIDEN TODO",
+      "subtitulo": "Dani y Maldinillo empatan en la última jornada. El título es del líder",
+      "texto": [
+        "Dani y Maldinillo empatan en la J38 con 55 puntos cada uno, pero Dani se proclama campeón con 1836 frente a los 1825 de Maldinillo.",
+        "Solo 11 puntos separan a los dos titanes del Sótano en el final más emocionante de la historia de la liga.",
+        "MuchaSalsa cierra la temporada con 9 puntos en la última jornada y 892 en la general. Un año para olvidar."
+      ]
+    },
+    {
+      "tipo": "rumor",
+      "jugador": null,
+      "manager": null,
+      "puntos": null,
+      "dinero": null,
+      "equipo": null,
+      "titulo": "¡FIN DE TEMPORADA! EL RUMOR QUE LO CIERRA TODO",
+      "subtitulo": "La última exclusiva del Sótano League",
+      "texto": [
+        "Maldinillo ya tiene el meme de venganza preparado para la próxima temporada. Y Dani ya tiene el meme de celebración enviado. El círculo de la vida del Sótano."
+      ]
+    },
+    {
+      "tipo": "Fichaje destacado",
+      "jugador": "Kylian Mbappe",
+      "manager": "MuchaSalsa",
+      "puntos": null,
+      "dinero": 131.4,
+      "equipo": "Real Madrid",
+      "titulo": "¡MBAPPÉ POR 131,40 MILLONES! EL FICHAJE MÁS CARO DE LA HISTORIA",
+      "subtitulo": "MuchaSalsa rompe todos los récords con el fichaje del año",
+      "texto": [
+        "MuchaSalsa cierra la temporada con el fichaje más caro de toda la historia del Sótano League: Kylian Mbappé por 131,40 millones.",
+        "El gasto más grande de la liga en la última jornada. Una declaración de intenciones para la próxima temporada."
+      ]
+    },
+    {
+      "tipo": "Fichaje destacado",
+      "jugador": "Kylian Mbappe",
+      "manager": "Jotabetrbb",
+      "puntos": null,
+      "dinero": 87.6,
+      "equipo": "Real Madrid",
+      "titulo": "¡JOTABETRBB TAMBIÉN FICHA A MBAPPÉ! 87,60 MILLONES",
+      "subtitulo": "El francés del Madrid recala también en el quinto clasificado",
+      "texto": [
+        "Jotabetrbb se gasta 87,60 millones en Kylian Mbappé en la última jornada de la temporada.",
+        "Dos equipos fichando al mismo jugador en la última jornada. El Sótano termina por todo lo alto."
+      ]
+    },
+    {
+      "tipo": "Fichaje destacado",
+      "jugador": "Raphinha",
+      "manager": "Jotabetrbb",
+      "puntos": null,
+      "dinero": 56.221,
+      "equipo": "FC Barcelona",
+      "titulo": "¡JOTABETRBB TAMBIÉN FICHA A RAPHINHA POR 56,22 MILLONES!",
+      "subtitulo": "El brasileño del Barça completa el mercado más loco de la temporada",
+      "texto": [
+        "Jotabetrbb no tiene bastante con Mbappé y añade a Raphinha por 56,22 millones. Un mercado de película.",
+        "La última jornada de la temporada tiene los fichajes más caros de la historia del Sótano League."
+      ]
+    },
+    {
+      "tipo": "Venta récord",
+      "jugador": "Mikel Oyarzabal",
+      "manager": "Dani",
+      "puntos": null,
+      "dinero": 21.233,
+      "equipo": "Real Sociedad",
+      "titulo": "¡DANI VENDE A OYARZABAL EN LA ÚLTIMA JORNADA POR 21,23 MILLONES!",
+      "subtitulo": "El campeón cierra el mercado con una venta estratégica",
+      "texto": [
+        "Dani vende a Mikel Oyarzabal por 21,23 millones en la última jornada. El campeón no deja de maniobrar.",
+        "Con el título ya asegurado, Dani cierra la temporada con una plusvalía más que interesante."
+      ]
+    },
+    {
+      "tipo": "MVP de la jornada",
+      "jugador": "L. Milla",
+      "manager": "Maldinillo",
+      "puntos": 14,
+      "dinero": null,
+      "equipo": "Getafe CF",
+      "titulo": "¡LUIS MILLA CIERRA LA TEMPORADA CON 14 PUNTOS!",
+      "subtitulo": "El centrocampista del Getafe lidera la última jornada para Maldinillo",
+      "texto": [
+        "Luis Milla firma 14 puntos en el último partido de la temporada para un Maldinillo que no se rinde.",
+        "El centrocampista del Getafe demostró que fue un fichaje acertado hasta el último momento."
+      ]
+    },
+    {
+      "tipo": "MVP de la jornada",
+      "jugador": "I. Moriba",
+      "manager": "Juanba",
+      "puntos": 13,
+      "dinero": null,
+      "equipo": "RC Celta de Vigo",
+      "titulo": "¡MORIBA DA UNA ALEGRÍA FINAL A JUANBA CON 13 PUNTOS!",
+      "subtitulo": "El centrocampista del Celta brilla en el último partido de temporada",
+      "texto": [
+        "Ilaix Moriba cierra la temporada con 13 puntos que son un bálsamo para Juanba en una temporada difícil.",
+        "El centrocampista del Celta demostró su potencial justo cuando la temporada llegaba a su fin."
+      ]
+    },
+    {
+      "tipo": "Peor actuación de la jornada",
+      "jugador": "A. Baena",
+      "manager": "De la Guettir FC",
+      "puntos": -1,
+      "dinero": null,
+      "equipo": "Atletico de Madrid",
+      "titulo": "¡BAENA EN NEGATIVO CIERRA LA TEMPORADA CON -1 PARA DE LA GUETTIR FC!",
+      "subtitulo": "El jugador del Atleti firma la peor actuación de la última jornada",
+      "texto": [
+        "A. Baena cerró la temporada con -1 punto en la actuación más bochornosa de la jornada final.",
+        "De la Guettir FC merecía un mejor broche de temporada. El Atlético le ha fallado al último."
+      ]
+    }
+  ]
+}
