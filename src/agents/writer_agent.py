@@ -163,41 +163,31 @@ def run_writer_agent(prompt: str) -> dict | None:
     """
     Función de conveniencia para llamar al WriterAgent desde run_newspaper.py.
 
+    Usa Agent.structured_output(FinalJSON, ...) para que Strands devuelva
+    directamente un objeto validado por Pydantic, en vez de tener que
+    extraer el JSON del texto de respuesta con regex.
+
     Args:
         prompt: El prompt completo construido por build_final_prompt()
 
     Returns:
         dict con las cards validadas, o None si falló tras los reintentos.
     """
-    import re
-
     agent = create_writer_agent()
-    response = agent(
-        f"Genera las cards del periódico con este prompt:\n\n{prompt}"
-    )
 
-    response_str = str(response)
-
-    # El agente devuelve el JSON de cards en su respuesta final.
-    # Buscamos el primer bloque JSON que contenga "cards".
-    # Usamos un regex greedy que capture desde {"cards" hasta el final del JSON.
-    match = re.search(r'(\{"cards"\s*:[\s\S]*\})', response_str)
-    if match:
-        try:
-            data = json.loads(match.group(1))
-            if "cards" in data and data["cards"]:
-                logger.info(f"[WriterAgent] {len(data['cards'])} cards extraídas correctamente")
-                return data
-        except json.JSONDecodeError:
-            pass
-
-    # Fallback: intentar parsear la respuesta completa
     try:
-        data = json.loads(response_str)
-        if "cards" in data and data["cards"]:
-            return data
-    except json.JSONDecodeError:
-        pass
+        result = agent.structured_output(
+            FinalJSON,
+            f"Genera las cards del periódico con este prompt:\n\n{prompt}",
+        )
+    except Exception as e:
+        logger.warning(f"[WriterAgent] structured_output falló: {e}")
+        return None
 
-    logger.warning(f"[WriterAgent] No se pudo extraer JSON. Respuesta: {response_str[:300]}")
-    return None
+    data = result.model_dump()
+    if not data.get("cards"):
+        logger.warning("[WriterAgent] structured_output devolvió cards vacías")
+        return None
+
+    logger.info(f"[WriterAgent] {len(data['cards'])} cards extraídas correctamente")
+    return data

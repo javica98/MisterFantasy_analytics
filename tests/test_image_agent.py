@@ -283,3 +283,134 @@ class TestSearchCandidateImagesTool:
 
         # Al menos una query debe contener "Mbappé" (sin la inicial)
         assert any("Mbappé" in q for q in queries_usadas)
+
+
+# ─────────────────────────────────────────────
+# run_image_agent — camino real usado por el Orchestrator (Agent/Gemini mockeado)
+# ─────────────────────────────────────────────
+
+class TestRunImageAgent:
+    def test_extrae_success_true_de_la_respuesta(self, tmp_path):
+        from src.agents.image_agent import run_image_agent
+
+        save_path = str(tmp_path / "Portada.jpg")
+        fake_response = f'He terminado. {{"success": true, "path": "{save_path}", "score": 9.5}}'
+
+        with patch("src.agents.image_agent.Agent") as mock_agent_cls:
+            mock_instance = MagicMock()
+            mock_instance.return_value = MagicMock(__str__=lambda self: fake_response)
+            mock_agent_cls.return_value = mock_instance
+
+            result = run_image_agent("Mbappé", "Real Madrid", save_path)
+
+        assert result is True
+
+    def test_extrae_success_false_aunque_el_archivo_exista(self, tmp_path):
+        """El JSON de la respuesta manda sobre la existencia del archivo en disco."""
+        from src.agents.image_agent import run_image_agent
+
+        save_path = tmp_path / "Portada.jpg"
+        save_path.write_bytes(b"fake-image-bytes")
+        fake_response = '{"success": false, "error": "sin candidatas validas"}'
+
+        with patch("src.agents.image_agent.Agent") as mock_agent_cls:
+            mock_instance = MagicMock()
+            mock_instance.return_value = MagicMock(__str__=lambda self: fake_response)
+            mock_agent_cls.return_value = mock_instance
+
+            result = run_image_agent("Mbappé", "Real Madrid", str(save_path))
+
+        assert result is False
+
+    def test_sin_json_en_la_respuesta_cae_a_comprobar_el_archivo(self, tmp_path):
+        from src.agents.image_agent import run_image_agent
+
+        save_path = tmp_path / "Portada.jpg"
+        save_path.write_bytes(b"fake-image-bytes")
+
+        with patch("src.agents.image_agent.Agent") as mock_agent_cls:
+            mock_instance = MagicMock()
+            mock_instance.return_value = MagicMock(__str__=lambda self: "Foto descargada correctamente.")
+            mock_agent_cls.return_value = mock_instance
+
+            result = run_image_agent("Mbappé", "Real Madrid", str(save_path))
+
+        assert result is True
+
+    def test_sin_json_ni_archivo_devuelve_false(self, tmp_path):
+        from src.agents.image_agent import run_image_agent
+
+        save_path = tmp_path / "no_existe.jpg"
+
+        with patch("src.agents.image_agent.Agent") as mock_agent_cls:
+            mock_instance = MagicMock()
+            mock_instance.return_value = MagicMock(__str__=lambda self: "No se encontraron fotos.")
+            mock_agent_cls.return_value = mock_instance
+
+            result = run_image_agent("Mbappé", "Real Madrid", str(save_path))
+
+        assert result is False
+
+
+# ─────────────────────────────────────────────
+# run_image_pipeline — flujo sin LLM (search -> evaluate -> download)
+# ─────────────────────────────────────────────
+
+class TestRunImagePipeline:
+    def test_camino_feliz_encadena_las_tres_funciones(self, tmp_path):
+        from src.agents.image_agent import run_image_pipeline
+
+        save_path = str(tmp_path / "Portada.jpg")
+        candidates_json = json.dumps({
+            "candidates": ["https://example.com/a.jpg"], "jugador": "Mbappé", "equipo": "Real Madrid",
+        })
+        evaluation_json = json.dumps({"best_url": "https://example.com/a.jpg", "best_score": 9.0, "scores": []})
+        download_json = json.dumps({"success": True, "path": save_path, "score": 9.0})
+
+        with patch("src.agents.image_agent._search_candidates", return_value=candidates_json) as mock_search, \
+             patch("src.agents.image_agent._evaluate_candidates", return_value=evaluation_json) as mock_eval, \
+             patch("src.agents.image_agent._download_best", return_value=download_json) as mock_download:
+
+            result = run_image_pipeline("Mbappé", "Real Madrid", save_path)
+
+        assert result is True
+        mock_search.assert_called_once_with("Mbappé", "Real Madrid")
+        mock_eval.assert_called_once_with(candidates_json)
+        mock_download.assert_called_once_with(evaluation_json, save_path)
+
+    def test_download_fallido_devuelve_false(self, tmp_path):
+        from src.agents.image_agent import run_image_pipeline
+
+        save_path = str(tmp_path / "no_existe.jpg")
+
+        with patch("src.agents.image_agent._search_candidates", return_value=json.dumps({"candidates": []})), \
+             patch("src.agents.image_agent._evaluate_candidates",
+                   return_value=json.dumps({"best_url": None, "best_score": 0, "scores": []})), \
+             patch("src.agents.image_agent._download_best",
+                   return_value=json.dumps({"success": False, "error": "No hay URL válida para descargar"})):
+
+            result = run_image_pipeline("Mbappé", "Real Madrid", save_path)
+
+        assert result is False
+
+    def test_excepcion_con_archivo_previo_devuelve_true(self, tmp_path):
+        """Si algo revienta a mitad del pipeline, se recurre a comprobar si el archivo ya existe."""
+        from src.agents.image_agent import run_image_pipeline
+
+        save_path = tmp_path / "Portada.jpg"
+        save_path.write_bytes(b"fake-image-bytes")
+
+        with patch("src.agents.image_agent._search_candidates", side_effect=Exception("red caida")):
+            result = run_image_pipeline("Mbappé", "Real Madrid", str(save_path))
+
+        assert result is True
+
+    def test_excepcion_sin_archivo_previo_devuelve_false(self, tmp_path):
+        from src.agents.image_agent import run_image_pipeline
+
+        save_path = tmp_path / "no_existe.jpg"
+
+        with patch("src.agents.image_agent._search_candidates", side_effect=Exception("red caida")):
+            result = run_image_pipeline("Mbappé", "Real Madrid", str(save_path))
+
+        assert result is False

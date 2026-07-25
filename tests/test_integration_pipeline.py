@@ -297,19 +297,19 @@ class TestAIPipeline:
         validated = FinalJSON(**result)
         assert len(validated.cards) == len(FAKE_CARDS["cards"])
 
-    def test_writer_agent_extrae_json_de_respuesta_con_texto_extra(self):
-        """run_writer_agent extrae el JSON aunque la respuesta lleve texto adicional."""
+    def test_writer_agent_devuelve_cards_via_structured_output(self):
+        """
+        run_writer_agent usa Agent.structured_output(FinalJSON, ...) y devuelve
+        directamente las cards ya validadas, sin parsear texto con regex.
+        """
         from src.agents.writer_agent import run_writer_agent
+        from src.AI_newspaper.SchemeValidator import FinalJSON
 
-        fake_response = (
-            "He generado las cards del periódico.\n\n"
-            + json.dumps(FAKE_CARDS)
-            + "\n\nEspero que sean correctas."
-        )
+        fake_result = FinalJSON(**FAKE_CARDS)
 
         with patch("src.agents.writer_agent.Agent") as mock_agent_cls:
             mock_instance = MagicMock()
-            mock_instance.return_value = MagicMock(__str__=lambda self: fake_response)
+            mock_instance.structured_output.return_value = fake_result
             mock_agent_cls.return_value = mock_instance
 
             result = run_writer_agent("prompt de prueba")
@@ -317,16 +317,17 @@ class TestAIPipeline:
         assert result is not None
         assert "cards" in result
         assert len(result["cards"]) == len(FAKE_CARDS["cards"])
+        # structured_output se llama con el schema y el prompt construido
+        args, _ = mock_instance.structured_output.call_args
+        assert args[0] is FinalJSON
 
-    def test_writer_agent_devuelve_none_si_no_hay_json(self):
-        """run_writer_agent devuelve None si la respuesta no contiene JSON válido."""
+    def test_writer_agent_devuelve_none_si_structured_output_falla(self):
+        """Si Agent.structured_output no puede producir un output válido, se devuelve None."""
         from src.agents.writer_agent import run_writer_agent
 
         with patch("src.agents.writer_agent.Agent") as mock_agent_cls:
             mock_instance = MagicMock()
-            mock_instance.return_value = MagicMock(
-                __str__=lambda self: "Lo siento, no pude generar el periódico."
-            )
+            mock_instance.structured_output.side_effect = Exception("output no valido")
             mock_agent_cls.return_value = mock_instance
 
             result = run_writer_agent("prompt de prueba")

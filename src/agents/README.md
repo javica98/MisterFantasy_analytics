@@ -90,5 +90,5 @@ Ver `config/.env`
 
 ## Issues conocidos
 
-- **Thread safety:** llamar múltiples tools globales en paralelo puede causar conflictos con el registro global de tools de Strands (Fix pendiente #7)
+- **Thread safety:** llamar múltiples tools globales en paralelo puede causar conflictos con el registro global de tools de Strands ([issue #2](https://github.com/javica98/MisterFantasy_analytics/issues/2))
 - **Rate limits:** Gemini 2.5 Flash tiene límite de tokens por minuto — el backfill de muchas jornadas puede saturarlo
