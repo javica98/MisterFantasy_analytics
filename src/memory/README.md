@@ -76,4 +76,4 @@ rebuild_embedding_index()
 
 - El índice se reconstruye automáticamente en cada ejecución de `run_newspaper.py`
 - Para añadir memorias manualmente: editar `memories.jsonl` y ejecutar `scripts/rebuild_memory_embeddings.py`
-- Para limpiar memorias incorrectas: editar `memories.jsonl` directamente (es texto plano)
+- Para listar, inspeccionar o borrar memorias incorrectas: `python scripts/manage_memories.py list|show|delete` (ver `scripts/README.md`)

@@ -424,17 +424,39 @@ def build_news(news_json_dir: Path) -> list:
             ]
 
             news.append({
-                "date":     jornada_label,
-                "title":    portada.get("titulo", ""),
-                "subtitle": portada.get("subtitulo", ""),
-                "summary":  " ".join(portada.get("texto", [])),
-                "cards":    web_cards,
+                "date":            jornada_label,
+                "title":           portada.get("titulo", ""),
+                "subtitle":        portada.get("subtitulo", ""),
+                "summary":         " ".join(portada.get("texto", [])),
+                "cards":           web_cards,
+                "standingsAtIssue": _load_standings_snapshot(jf),
             })
         except Exception as e:
             logger.warning("Error leyendo %s: %s", cards_file.name, e)
 
     logger.info("News cargadas: %d periodicos", len(news))
     return news
+
+
+def _load_standings_snapshot(articles_file: Path) -> list:
+    """
+    Extrae clasificacion.general del articles/jornada_N_json.json de esa
+    edición, para poder mostrar cómo estaba la tabla en ese momento (no solo
+    la clasificación acumulada actual).
+    """
+    try:
+        events_data = json.loads(articles_file.read_text(encoding="utf-8"))
+    except Exception as e:
+        logger.warning("No se pudo leer clasificación histórica de %s: %s", articles_file.name, e)
+        return []
+
+    general = (events_data.get("clasificacion") or {}).get("general") or {}
+    rows = [
+        {"rank": stats.get("posicion"), "manager": manager, "points": stats.get("puntos")}
+        for manager, stats in general.items()
+    ]
+    rows.sort(key=lambda row: row["rank"] if row["rank"] is not None else 999)
+    return rows
 
 
 def _get_latest_headline(news: list) -> dict | None:

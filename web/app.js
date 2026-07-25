@@ -445,6 +445,8 @@ function renderNews() {
           <p>${escapeHtml(selected.summary || selected.subtitle)}</p>
         </article>
 
+        ${renderStandingsAtIssue(selected)}
+
         <div class="news-grid" style="margin-top:16px">
           ${selected.cards.map(card => `
             <article class="article-card">
@@ -465,6 +467,34 @@ function renderNews() {
       renderNews();
     });
   });
+}
+
+function renderStandingsAtIssue(issue) {
+  const rows = issue.standingsAtIssue;
+  if (!rows || !rows.length) return "";
+
+  return `
+    <section class="card" style="margin-top:16px">
+      <div class="card-header">
+        <h3>Clasificación en ${escapeHtml(issue.date)}</h3>
+      </div>
+      <div class="table">
+        <div class="table-row table-head">
+          <span>Rango</span><span>Manager</span><span>Puntos</span>
+        </div>
+        ${rows.map(row => `
+          <div class="table-row">
+            <span class="rank">#${row.rank ?? "?"}</span>
+            <div class="team-cell">
+              ${managerAvatar(row.manager)}
+              <strong>${escapeHtml(row.manager)}</strong>
+            </div>
+            <span class="data">${row.points ?? 0}</span>
+          </div>
+        `).join("")}
+      </div>
+    </section>
+  `;
 }
 
 function statCard(label, value, meta) {

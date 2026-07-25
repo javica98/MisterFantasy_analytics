@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-04T18:31:16",
+  "generatedAt": "2026-07-25T09:38:07",
   "league": {
     "name": "Sotano League",
     "season": "Temporada 2026",
@@ -751,6 +751,53 @@
           "puntos": -1,
           "dinero": null
         }
+      ],
+      "standingsAtIssue": [
+        {
+          "rank": 1,
+          "manager": "Dani",
+          "points": 1836
+        },
+        {
+          "rank": 2,
+          "manager": "Maldinillo 💥",
+          "points": 1825
+        },
+        {
+          "rank": 3,
+          "manager": "Los marinero",
+          "points": 1579
+        },
+        {
+          "rank": 4,
+          "manager": "Chamacónicos",
+          "points": 1453
+        },
+        {
+          "rank": 5,
+          "manager": "Jotabetrbb",
+          "points": 1431
+        },
+        {
+          "rank": 6,
+          "manager": "De la Guettir FC",
+          "points": 1353
+        },
+        {
+          "rank": 7,
+          "manager": "Libre",
+          "points": 951
+        },
+        {
+          "rank": 8,
+          "manager": "MuchaSalsa",
+          "points": 892
+        },
+        {
+          "rank": 9,
+          "manager": "Juanba",
+          "points": 890
+        }
       ]
     },
     {
@@ -875,6 +922,53 @@
           "manager": "Juanba",
           "puntos": -2,
           "dinero": null
+        }
+      ],
+      "standingsAtIssue": [
+        {
+          "rank": 1,
+          "manager": "Dani",
+          "points": 1726
+        },
+        {
+          "rank": 2,
+          "manager": "Maldinillo 💥",
+          "points": 1707
+        },
+        {
+          "rank": 3,
+          "manager": "Los marinero",
+          "points": 1506
+        },
+        {
+          "rank": 4,
+          "manager": "Chamacónicos",
+          "points": 1417
+        },
+        {
+          "rank": 5,
+          "manager": "Jotabetrbb",
+          "points": 1360
+        },
+        {
+          "rank": 6,
+          "manager": "De la Guettir FC",
+          "points": 1291
+        },
+        {
+          "rank": 7,
+          "manager": "Libre",
+          "points": 914
+        },
+        {
+          "rank": 8,
+          "manager": "MuchaSalsa",
+          "points": 876
+        },
+        {
+          "rank": 9,
+          "manager": "Juanba",
+          "points": 847
         }
       ]
     },
@@ -1014,6 +1108,53 @@
           "puntos": -7,
           "dinero": null
         }
+      ],
+      "standingsAtIssue": [
+        {
+          "rank": 1,
+          "manager": "Dani",
+          "points": 1696
+        },
+        {
+          "rank": 2,
+          "manager": "Maldinillo 💥",
+          "points": 1666
+        },
+        {
+          "rank": 3,
+          "manager": "Los marinero",
+          "points": 1479
+        },
+        {
+          "rank": 4,
+          "manager": "Chamacónicos",
+          "points": 1367
+        },
+        {
+          "rank": 5,
+          "manager": "Jotabetrbb",
+          "points": 1324
+        },
+        {
+          "rank": 6,
+          "manager": "De la Guettir FC",
+          "points": 1232
+        },
+        {
+          "rank": 7,
+          "manager": "Libre",
+          "points": 894
+        },
+        {
+          "rank": 8,
+          "manager": "MuchaSalsa",
+          "points": 860
+        },
+        {
+          "rank": 9,
+          "manager": "Juanba",
+          "points": 842
+        }
       ]
     },
     {
@@ -1152,6 +1293,53 @@
           "puntos": 7,
           "dinero": null
         }
+      ],
+      "standingsAtIssue": [
+        {
+          "rank": 1,
+          "manager": "Dani",
+          "points": 1640
+        },
+        {
+          "rank": 2,
+          "manager": "Maldinillo 💥",
+          "points": 1608
+        },
+        {
+          "rank": 3,
+          "manager": "Los marinero",
+          "points": 1437
+        },
+        {
+          "rank": 4,
+          "manager": "Chamacónicos",
+          "points": 1343
+        },
+        {
+          "rank": 5,
+          "manager": "Jotabetrbb",
+          "points": 1292
+        },
+        {
+          "rank": 6,
+          "manager": "De la Guettir FC",
+          "points": 1193
+        },
+        {
+          "rank": 7,
+          "manager": "Libre",
+          "points": 876
+        },
+        {
+          "rank": 8,
+          "manager": "MuchaSalsa",
+          "points": 851
+        },
+        {
+          "rank": 9,
+          "manager": "Juanba",
+          "points": 823
+        }
       ]
     },
     {
@@ -1276,6 +1464,53 @@
           "manager": "Chamacónicos",
           "puntos": -1,
           "dinero": null
+        }
+      ],
+      "standingsAtIssue": [
+        {
+          "rank": 1,
+          "manager": "Dani",
+          "points": 1583
+        },
+        {
+          "rank": 2,
+          "manager": "Maldinillo 💥",
+          "points": 1558
+        },
+        {
+          "rank": 3,
+          "manager": "Los marinero",
+          "points": 1368
+        },
+        {
+          "rank": 4,
+          "manager": "Chamacónicos",
+          "points": 1298
+        },
+        {
+          "rank": 5,
+          "manager": "Jotabetrbb",
+          "points": 1240
+        },
+        {
+          "rank": 6,
+          "manager": "De la Guettir FC",
+          "points": 1151
+        },
+        {
+          "rank": 7,
+          "manager": "Libre",
+          "points": 848
+        },
+        {
+          "rank": 8,
+          "manager": "MuchaSalsa",
+          "points": 840
+        },
+        {
+          "rank": 9,
+          "manager": "Juanba",
+          "points": 792
         }
       ]
     },
@@ -1415,6 +1650,53 @@
           "puntos": -4,
           "dinero": null
         }
+      ],
+      "standingsAtIssue": [
+        {
+          "rank": 1,
+          "manager": "Dani",
+          "points": 1528
+        },
+        {
+          "rank": 2,
+          "manager": "Maldinillo 💥",
+          "points": 1500
+        },
+        {
+          "rank": 3,
+          "manager": "Los marinero",
+          "points": 1319
+        },
+        {
+          "rank": 4,
+          "manager": "Chamacónicos",
+          "points": 1259
+        },
+        {
+          "rank": 5,
+          "manager": "Jotabetrbb",
+          "points": 1207
+        },
+        {
+          "rank": 6,
+          "manager": "De la Guettir FC",
+          "points": 1123
+        },
+        {
+          "rank": 7,
+          "manager": "MuchaSalsa",
+          "points": 834
+        },
+        {
+          "rank": 8,
+          "manager": "Libre",
+          "points": 824
+        },
+        {
+          "rank": 9,
+          "manager": "Juanba",
+          "points": 765
+        }
       ]
     },
     {
@@ -1552,6 +1834,53 @@
           "manager": "MuchaSalsa",
           "puntos": 10,
           "dinero": null
+        }
+      ],
+      "standingsAtIssue": [
+        {
+          "rank": 1,
+          "manager": "Dani",
+          "points": 1465
+        },
+        {
+          "rank": 2,
+          "manager": "Maldinillo 💥",
+          "points": 1431
+        },
+        {
+          "rank": 3,
+          "manager": "Los marinero",
+          "points": 1261
+        },
+        {
+          "rank": 4,
+          "manager": "Chamacónicos",
+          "points": 1229
+        },
+        {
+          "rank": 5,
+          "manager": "Jotabetrbb",
+          "points": 1166
+        },
+        {
+          "rank": 6,
+          "manager": "De la Guettir FC",
+          "points": 1103
+        },
+        {
+          "rank": 7,
+          "manager": "MuchaSalsa",
+          "points": 810
+        },
+        {
+          "rank": 8,
+          "manager": "Libre",
+          "points": 791
+        },
+        {
+          "rank": 9,
+          "manager": "Juanba",
+          "points": 752
         }
       ]
     },
@@ -1691,6 +2020,53 @@
           "puntos": 1,
           "dinero": null
         }
+      ],
+      "standingsAtIssue": [
+        {
+          "rank": 1,
+          "manager": "Dani",
+          "points": 1415
+        },
+        {
+          "rank": 2,
+          "manager": "Maldinillo 💥",
+          "points": 1374
+        },
+        {
+          "rank": 3,
+          "manager": "Los marinero",
+          "points": 1224
+        },
+        {
+          "rank": 4,
+          "manager": "Chamacónicos",
+          "points": 1192
+        },
+        {
+          "rank": 5,
+          "manager": "Jotabetrbb",
+          "points": 1142
+        },
+        {
+          "rank": 6,
+          "manager": "De la Guettir FC",
+          "points": 1068
+        },
+        {
+          "rank": 7,
+          "manager": "MuchaSalsa",
+          "points": 797
+        },
+        {
+          "rank": 8,
+          "manager": "Libre",
+          "points": 781
+        },
+        {
+          "rank": 9,
+          "manager": "Juanba",
+          "points": 741
+        }
       ]
     },
     {
@@ -1828,6 +2204,53 @@
           "manager": "Maldinillo",
           "puntos": 3,
           "dinero": null
+        }
+      ],
+      "standingsAtIssue": [
+        {
+          "rank": 1,
+          "manager": "Dani",
+          "points": 1374
+        },
+        {
+          "rank": 2,
+          "manager": "Maldinillo 💥",
+          "points": 1327
+        },
+        {
+          "rank": 3,
+          "manager": "Los marinero",
+          "points": 1191
+        },
+        {
+          "rank": 4,
+          "manager": "Chamacónicos",
+          "points": 1155
+        },
+        {
+          "rank": 5,
+          "manager": "Jotabetrbb",
+          "points": 1107
+        },
+        {
+          "rank": 6,
+          "manager": "De la Guettir FC",
+          "points": 1018
+        },
+        {
+          "rank": 7,
+          "manager": "MuchaSalsa",
+          "points": 796
+        },
+        {
+          "rank": 8,
+          "manager": "Libre",
+          "points": 766
+        },
+        {
+          "rank": 9,
+          "manager": "Juanba",
+          "points": 709
         }
       ]
     },
@@ -1967,6 +2390,53 @@
           "puntos": 2,
           "dinero": null
         }
+      ],
+      "standingsAtIssue": [
+        {
+          "rank": 1,
+          "manager": "Dani",
+          "points": 1306
+        },
+        {
+          "rank": 2,
+          "manager": "Maldinillo 💥",
+          "points": 1273
+        },
+        {
+          "rank": 3,
+          "manager": "Los marinero",
+          "points": 1139
+        },
+        {
+          "rank": 4,
+          "manager": "Chamacónicos",
+          "points": 1114
+        },
+        {
+          "rank": 5,
+          "manager": "Jotabetrbb",
+          "points": 1071
+        },
+        {
+          "rank": 6,
+          "manager": "De la Guettir FC",
+          "points": 981
+        },
+        {
+          "rank": 7,
+          "manager": "MuchaSalsa",
+          "points": 775
+        },
+        {
+          "rank": 8,
+          "manager": "Libre",
+          "points": 766
+        },
+        {
+          "rank": 9,
+          "manager": "Juanba",
+          "points": 701
+        }
       ]
     },
     {
@@ -2104,6 +2574,53 @@
           "manager": "Chamacónicos",
           "puntos": -6,
           "dinero": null
+        }
+      ],
+      "standingsAtIssue": [
+        {
+          "rank": 1,
+          "manager": "Dani",
+          "points": 1269
+        },
+        {
+          "rank": 2,
+          "manager": "Maldinillo 💥",
+          "points": 1188
+        },
+        {
+          "rank": 3,
+          "manager": "Los marinero",
+          "points": 1095
+        },
+        {
+          "rank": 4,
+          "manager": "Chamacónicos",
+          "points": 1084
+        },
+        {
+          "rank": 5,
+          "manager": "Jotabetrbb",
+          "points": 1018
+        },
+        {
+          "rank": 6,
+          "manager": "De la Guettir FC",
+          "points": 960
+        },
+        {
+          "rank": 7,
+          "manager": "Libre",
+          "points": 766
+        },
+        {
+          "rank": 8,
+          "manager": "MuchaSalsa",
+          "points": 766
+        },
+        {
+          "rank": 9,
+          "manager": "Juanba",
+          "points": 683
         }
       ]
     },
@@ -2243,6 +2760,53 @@
           "puntos": 3,
           "dinero": null
         }
+      ],
+      "standingsAtIssue": [
+        {
+          "rank": 1,
+          "manager": "Dani",
+          "points": 1213
+        },
+        {
+          "rank": 2,
+          "manager": "Maldinillo 💥",
+          "points": 1144
+        },
+        {
+          "rank": 3,
+          "manager": "Los marinero",
+          "points": 1057
+        },
+        {
+          "rank": 4,
+          "manager": "Chamacónicos",
+          "points": 1044
+        },
+        {
+          "rank": 5,
+          "manager": "Jotabetrbb",
+          "points": 990
+        },
+        {
+          "rank": 6,
+          "manager": "De la Guettir FC",
+          "points": 941
+        },
+        {
+          "rank": 7,
+          "manager": "Libre",
+          "points": 766
+        },
+        {
+          "rank": 8,
+          "manager": "MuchaSalsa",
+          "points": 760
+        },
+        {
+          "rank": 9,
+          "manager": "Juanba",
+          "points": 655
+        }
       ]
     },
     {
@@ -2368,6 +2932,53 @@
           "puntos": -1,
           "dinero": null
         }
+      ],
+      "standingsAtIssue": [
+        {
+          "rank": 1,
+          "manager": "Dani",
+          "points": 1138
+        },
+        {
+          "rank": 2,
+          "manager": "Maldinillo 💥",
+          "points": 1087
+        },
+        {
+          "rank": 3,
+          "manager": "Chamacónicos",
+          "points": 1025
+        },
+        {
+          "rank": 4,
+          "manager": "Los marinero",
+          "points": 1011
+        },
+        {
+          "rank": 5,
+          "manager": "Jotabetrbb",
+          "points": 958
+        },
+        {
+          "rank": 6,
+          "manager": "De la Guettir FC",
+          "points": 915
+        },
+        {
+          "rank": 7,
+          "manager": "Libre",
+          "points": 766
+        },
+        {
+          "rank": 8,
+          "manager": "MuchaSalsa",
+          "points": 744
+        },
+        {
+          "rank": 9,
+          "manager": "Juanba",
+          "points": 626
+        }
       ]
     },
     {
@@ -2492,6 +3103,53 @@
           "manager": "Los marinero",
           "puntos": -6,
           "dinero": null
+        }
+      ],
+      "standingsAtIssue": [
+        {
+          "rank": 1,
+          "manager": "Dani",
+          "points": 1099
+        },
+        {
+          "rank": 2,
+          "manager": "Maldinillo 💥",
+          "points": 1038
+        },
+        {
+          "rank": 3,
+          "manager": "Chamacónicos",
+          "points": 993
+        },
+        {
+          "rank": 4,
+          "manager": "Los marinero",
+          "points": 956
+        },
+        {
+          "rank": 5,
+          "manager": "Jotabetrbb",
+          "points": 913
+        },
+        {
+          "rank": 6,
+          "manager": "De la Guettir FC",
+          "points": 880
+        },
+        {
+          "rank": 7,
+          "manager": "MuchaSalsa",
+          "points": 743
+        },
+        {
+          "rank": 8,
+          "manager": "Libre",
+          "points": 735
+        },
+        {
+          "rank": 9,
+          "manager": "Juanba",
+          "points": 602
         }
       ]
     },
@@ -2631,6 +3289,53 @@
           "puntos": 9,
           "dinero": null
         }
+      ],
+      "standingsAtIssue": [
+        {
+          "rank": 1,
+          "manager": "Dani",
+          "points": 1073
+        },
+        {
+          "rank": 2,
+          "manager": "Maldinillo 💥",
+          "points": 988
+        },
+        {
+          "rank": 3,
+          "manager": "Chamacónicos",
+          "points": 937
+        },
+        {
+          "rank": 4,
+          "manager": "Los marinero",
+          "points": 922
+        },
+        {
+          "rank": 5,
+          "manager": "Jotabetrbb",
+          "points": 870
+        },
+        {
+          "rank": 6,
+          "manager": "De la Guettir FC",
+          "points": 857
+        },
+        {
+          "rank": 7,
+          "manager": "MuchaSalsa",
+          "points": 713
+        },
+        {
+          "rank": 8,
+          "manager": "Libre",
+          "points": 702
+        },
+        {
+          "rank": 9,
+          "manager": "Juanba",
+          "points": 595
+        }
       ]
     },
     {
@@ -2756,6 +3461,53 @@
           "puntos": -1,
           "dinero": null
         }
+      ],
+      "standingsAtIssue": [
+        {
+          "rank": 1,
+          "manager": "Dani",
+          "points": 1003
+        },
+        {
+          "rank": 2,
+          "manager": "Maldinillo 💥",
+          "points": 927
+        },
+        {
+          "rank": 3,
+          "manager": "Chamacónicos",
+          "points": 900
+        },
+        {
+          "rank": 4,
+          "manager": "Los marinero",
+          "points": 875
+        },
+        {
+          "rank": 5,
+          "manager": "Jotabetrbb",
+          "points": 833
+        },
+        {
+          "rank": 6,
+          "manager": "De la Guettir FC",
+          "points": 820
+        },
+        {
+          "rank": 7,
+          "manager": "MuchaSalsa",
+          "points": 688
+        },
+        {
+          "rank": 8,
+          "manager": "Libre",
+          "points": 637
+        },
+        {
+          "rank": 9,
+          "manager": "Juanba",
+          "points": 575
+        }
       ]
     },
     {
@@ -2880,6 +3632,53 @@
           "manager": "Chamacónicos",
           "puntos": -1,
           "dinero": null
+        }
+      ],
+      "standingsAtIssue": [
+        {
+          "rank": 1,
+          "manager": "Dani",
+          "points": 947
+        },
+        {
+          "rank": 2,
+          "manager": "Maldinillo 💥",
+          "points": 869
+        },
+        {
+          "rank": 3,
+          "manager": "Chamacónicos",
+          "points": 858
+        },
+        {
+          "rank": 4,
+          "manager": "Los marinero",
+          "points": 838
+        },
+        {
+          "rank": 5,
+          "manager": "Jotabetrbb",
+          "points": 797
+        },
+        {
+          "rank": 6,
+          "manager": "De la Guettir FC",
+          "points": 778
+        },
+        {
+          "rank": 7,
+          "manager": "MuchaSalsa",
+          "points": 661
+        },
+        {
+          "rank": 8,
+          "manager": "Libre",
+          "points": 597
+        },
+        {
+          "rank": 9,
+          "manager": "Juanba",
+          "points": 560
         }
       ]
     },
@@ -3032,6 +3831,53 @@
           "puntos": -8,
           "dinero": null
         }
+      ],
+      "standingsAtIssue": [
+        {
+          "rank": 1,
+          "manager": "Dani",
+          "points": 887
+        },
+        {
+          "rank": 2,
+          "manager": "Chamacónicos",
+          "points": 817
+        },
+        {
+          "rank": 3,
+          "manager": "Maldinillo 💥",
+          "points": 812
+        },
+        {
+          "rank": 4,
+          "manager": "Los marinero",
+          "points": 805
+        },
+        {
+          "rank": 5,
+          "manager": "Jotabetrbb",
+          "points": 755
+        },
+        {
+          "rank": 6,
+          "manager": "De la Guettir FC",
+          "points": 754
+        },
+        {
+          "rank": 7,
+          "manager": "MuchaSalsa",
+          "points": 634
+        },
+        {
+          "rank": 8,
+          "manager": "Libre",
+          "points": 553
+        },
+        {
+          "rank": 9,
+          "manager": "Juanba",
+          "points": 539
+        }
       ]
     },
     {
@@ -3156,6 +4002,53 @@
           "manager": "Los marinero",
           "puntos": 0,
           "dinero": null
+        }
+      ],
+      "standingsAtIssue": [
+        {
+          "rank": 1,
+          "manager": "Dani",
+          "points": 842
+        },
+        {
+          "rank": 2,
+          "manager": "Maldinillo 💥",
+          "points": 766
+        },
+        {
+          "rank": 3,
+          "manager": "Chamacónicos",
+          "points": 759
+        },
+        {
+          "rank": 4,
+          "manager": "Los marinero",
+          "points": 757
+        },
+        {
+          "rank": 5,
+          "manager": "Jotabetrbb",
+          "points": 717
+        },
+        {
+          "rank": 6,
+          "manager": "De la Guettir FC",
+          "points": 714
+        },
+        {
+          "rank": 7,
+          "manager": "MuchaSalsa",
+          "points": 627
+        },
+        {
+          "rank": 8,
+          "manager": "Juanba",
+          "points": 511
+        },
+        {
+          "rank": 9,
+          "manager": "Libre",
+          "points": 507
         }
       ]
     },
@@ -3282,6 +4175,53 @@
           "puntos": -2,
           "dinero": null
         }
+      ],
+      "standingsAtIssue": [
+        {
+          "rank": 1,
+          "manager": "Dani",
+          "points": 788
+        },
+        {
+          "rank": 2,
+          "manager": "Maldinillo 💥",
+          "points": 716
+        },
+        {
+          "rank": 3,
+          "manager": "Chamacónicos",
+          "points": 714
+        },
+        {
+          "rank": 4,
+          "manager": "Los marinero",
+          "points": 712
+        },
+        {
+          "rank": 5,
+          "manager": "Jotabetrbb",
+          "points": 671
+        },
+        {
+          "rank": 6,
+          "manager": "De la Guettir FC",
+          "points": 660
+        },
+        {
+          "rank": 7,
+          "manager": "MuchaSalsa",
+          "points": 587
+        },
+        {
+          "rank": 8,
+          "manager": "Juanba",
+          "points": 490
+        },
+        {
+          "rank": 9,
+          "manager": "Libre",
+          "points": 458
+        }
       ]
     },
     {
@@ -3406,6 +4346,53 @@
           "manager": "Chamacónicos",
           "puntos": -1,
           "dinero": null
+        }
+      ],
+      "standingsAtIssue": [
+        {
+          "rank": 1,
+          "manager": "Dani",
+          "points": 738
+        },
+        {
+          "rank": 2,
+          "manager": "Los marinero",
+          "points": 694
+        },
+        {
+          "rank": 3,
+          "manager": "Maldinillo 💥",
+          "points": 671
+        },
+        {
+          "rank": 4,
+          "manager": "Chamacónicos",
+          "points": 663
+        },
+        {
+          "rank": 5,
+          "manager": "De la Guettir FC",
+          "points": 636
+        },
+        {
+          "rank": 6,
+          "manager": "Jotabetrbb",
+          "points": 636
+        },
+        {
+          "rank": 7,
+          "manager": "MuchaSalsa",
+          "points": 572
+        },
+        {
+          "rank": 8,
+          "manager": "Juanba",
+          "points": 468
+        },
+        {
+          "rank": 9,
+          "manager": "Libre",
+          "points": 423
         }
       ]
     },
@@ -3557,6 +4544,53 @@
           "manager": "Juanba",
           "puntos": 7,
           "dinero": null
+        }
+      ],
+      "standingsAtIssue": [
+        {
+          "rank": 1,
+          "manager": "Dani",
+          "points": 701
+        },
+        {
+          "rank": 2,
+          "manager": "Los marinero",
+          "points": 638
+        },
+        {
+          "rank": 3,
+          "manager": "Maldinillo 💥",
+          "points": 627
+        },
+        {
+          "rank": 4,
+          "manager": "Chamacónicos",
+          "points": 623
+        },
+        {
+          "rank": 5,
+          "manager": "Jotabetrbb",
+          "points": 590
+        },
+        {
+          "rank": 6,
+          "manager": "De la Guettir FC",
+          "points": 583
+        },
+        {
+          "rank": 7,
+          "manager": "MuchaSalsa",
+          "points": 517
+        },
+        {
+          "rank": 8,
+          "manager": "Juanba",
+          "points": 447
+        },
+        {
+          "rank": 9,
+          "manager": "Libre",
+          "points": 423
         }
       ]
     }
