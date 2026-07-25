@@ -197,7 +197,6 @@ if changed_memories:
 json= safe_read_json(json_final_path)
 clasificacion_json= json["clasificacion"]
 quiniela_json= json["quinielas"]
-cards_json_path = os.path.join(JSON_NEWS, f"news_cards.json")
 cards = safe_read_json(cards_json_path)
 portada_fichajes = create_pdf("Fichajes",cards,quiniela_json,NEWS_UTILS,IMAGES_TEAMS_DIR,DEFAULT_TEAM_IMAGE)
 portada_jornada = create_pdf("Jornada",cards,clasificacion_json,NEWS_UTILS,IMAGES_TEAMS_DIR,DEFAULT_TEAM_IMAGE)

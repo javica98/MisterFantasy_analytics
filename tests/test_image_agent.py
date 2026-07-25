@@ -52,67 +52,99 @@ class TestExpandPlayerName:
 
 
 # ─────────────────────────────────────────────
-# _bing_candidates — HTTP mockeado
+# _bing_candidates — Playwright mockeado
 # ─────────────────────────────────────────────
+# _bing_candidates ya no parsea HTML en Python (ver ADR-001): abre un
+# Chromium headless con Playwright y extrae los `murl` mediante JS
+# (`page.evaluate`), que se ejecuta dentro del navegador. Por eso aquí
+# mockeamos `playwright.sync_api.sync_playwright` y simulamos el valor
+# que devolvería ese `page.evaluate` (la lista de murls ya extraída),
+# en vez de servir HTML crudo a `requests.get` (que la función ya no usa).
 
-BING_HTML_IUSC = (
-    '<html><body>'
-    '<a class="iusc" m=\'{"murl":"https://img1.example.com/mbappe.jpg","turl":"thumb1"}\'></a>'
-    '<a class="iusc" m=\'{"murl":"https://img2.example.com/real_madrid.png","turl":"thumb2"}\'></a>'
-    '<a class="iusc" m=\'{"murl":"https://img3.example.com/photo.gif","turl":"thumb3"}\'></a>'
-    '</body></html>'
-)
 
-BING_HTML_EMPTY = "<html><body></body></html>"
+def _mock_sync_playwright(evaluate_return=None, evaluate_side_effect=None, goto_side_effect=None):
+    """
+    Devuelve un patcher de `playwright.sync_api.sync_playwright` que simula:
+        with sync_playwright() as p:
+            browser = p.chromium.launch(headless=True)
+            page = browser.new_page()
+            page.goto(url, timeout=...)
+            page.wait_for_timeout(...)
+            murls = page.evaluate(js)
+            browser.close()
+    """
+    fake_page = MagicMock()
+    if goto_side_effect is not None:
+        fake_page.goto.side_effect = goto_side_effect
+    if evaluate_side_effect is not None:
+        fake_page.evaluate.side_effect = evaluate_side_effect
+    else:
+        fake_page.evaluate.return_value = evaluate_return or []
+
+    fake_browser = MagicMock()
+    fake_browser.new_page.return_value = fake_page
+
+    fake_p = MagicMock()
+    fake_p.chromium.launch.return_value = fake_browser
+
+    fake_context_manager = MagicMock()
+    fake_context_manager.__enter__.return_value = fake_p
+    fake_context_manager.__exit__.return_value = False
+
+    return patch(
+        "playwright.sync_api.sync_playwright",
+        return_value=fake_context_manager,
+    ), fake_page
 
 
 class TestBingCandidates:
     def test_extrae_murls_correctamente(self):
-        with patch("src.agents.image_agent.requests.get") as mock_get:
-            mock_resp = MagicMock()
-            mock_resp.text = BING_HTML_IUSC
-            mock_get.return_value = mock_resp
-
+        """page.evaluate ya devuelve los murls extraídos por el JS del navegador."""
+        patcher, _ = _mock_sync_playwright(evaluate_return=[
+            "https://img1.example.com/mbappe.jpg",
+            "https://img2.example.com/real_madrid.png",
+        ])
+        with patcher:
             result = _bing_candidates("Mbappé Real Madrid futbolista", max_results=10)
 
-        # El .gif no debe incluirse
         assert "https://img1.example.com/mbappe.jpg" in result
         assert "https://img2.example.com/real_madrid.png" in result
+
+    def test_filtra_urls_con_extension_no_valida(self):
+        """Los murls con extensión no-imagen se descartan vía _is_bad_url, aunque el JS los devuelva."""
+        patcher, _ = _mock_sync_playwright(evaluate_return=[
+            "https://img1.example.com/mbappe.jpg",
+            "https://img3.example.com/photo.gif",
+        ])
+        with patcher:
+            result = _bing_candidates("query", max_results=10)
+
+        assert "https://img1.example.com/mbappe.jpg" in result
         assert not any(u.endswith(".gif") for u in result)
 
-    def test_respeta_max_results(self):
-        with patch("src.agents.image_agent.requests.get") as mock_get:
-            mock_resp = MagicMock()
-            mock_resp.text = BING_HTML_IUSC
-            mock_get.return_value = mock_resp
+    def test_max_results_se_incluye_en_el_js_evaluado(self):
+        """
+        max_results se pasa embebido en el string JS de page.evaluate
+        (el corte real de resultados ocurre en el navegador, no en Python).
+        """
+        patcher, fake_page = _mock_sync_playwright(evaluate_return=["https://img1.example.com/a.jpg"])
+        with patcher:
+            _bing_candidates("query", max_results=3)
 
-            result = _bing_candidates("query", max_results=1)
+        js_arg = fake_page.evaluate.call_args[0][0]
+        assert "urls.length >= 3" in js_arg
 
-        assert len(result) <= 1
-
-    def test_html_vacio_devuelve_lista_vacia(self):
-        with patch("src.agents.image_agent.requests.get") as mock_get:
-            mock_resp = MagicMock()
-            mock_resp.text = BING_HTML_EMPTY
-            mock_get.return_value = mock_resp
-
+    def test_evaluate_devuelve_lista_vacia(self):
+        patcher, _ = _mock_sync_playwright(evaluate_return=[])
+        with patcher:
             result = _bing_candidates("query", max_results=5)
 
         assert result == []
 
-    def test_error_de_red_devuelve_lista_vacia(self):
-        with patch("src.agents.image_agent.requests.get", side_effect=Exception("timeout")):
-            result = _bing_candidates("query", max_results=5)
-
-        assert result == []
-
-    def test_json_malformado_en_m_attr_se_ignora(self):
-        html = '<html><body><a class="iusc" m="no-es-json"></a></body></html>'
-        with patch("src.agents.image_agent.requests.get") as mock_get:
-            mock_resp = MagicMock()
-            mock_resp.text = html
-            mock_get.return_value = mock_resp
-
+    def test_error_de_navegador_devuelve_lista_vacia(self):
+        """Si Playwright falla (timeout, navegador no disponible, etc.), se captura y devuelve []."""
+        patcher, _ = _mock_sync_playwright(goto_side_effect=Exception("timeout"))
+        with patcher:
             result = _bing_candidates("query", max_results=5)
 
         assert result == []
