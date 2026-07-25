@@ -106,18 +106,22 @@ IMPORTANTE:
     )
 
     response_str = str(response)
-    cards_payload = _extract_cards_payload(response_str)
-    if cards_payload:
-        logger.info("[Orchestrator] Pipeline completo - %s cards", len(cards_payload["cards"]))
-        return cards_payload
 
-    # Groq a veces responde en texto plano sin reproducir el JSON de las tools.
-    # Antes de llamar a Gemini de nuevo, comprobamos si run_writer ya guardó las cards.
+    # El cache del tool run_writer es la fuente más fiable: se rellena
+    # directamente cuando el WriterAgent tiene éxito, sin depender de que
+    # Groq reproduzca el JSON literalmente en su respuesta final de texto.
     if writer_cache.get("cards"):
         logger.info("[Orchestrator] Cards recuperadas del cache del tool (sin segundo llamado a Gemini)")
         return writer_cache["cards"]
 
-    # Fallback real: solo si run_writer nunca llegó a ejecutarse
+    # Fallback: Groq a veces incluye el JSON de las tools en su respuesta
+    # de texto aunque el cache no se haya rellenado; lo intentamos extraer.
+    cards_payload = _extract_cards_payload(response_str)
+    if cards_payload:
+        logger.info("[Orchestrator] Pipeline completo - %s cards (extraídas de la respuesta)", len(cards_payload["cards"]))
+        return cards_payload
+
+    # Último recurso: run_writer nunca llegó a ejecutarse, reintentamos directo
     logger.warning("[Orchestrator] No se pudieron extraer las cards, intentando fallback directo...")
     cards = run_writer_agent(prompt)
     if cards:

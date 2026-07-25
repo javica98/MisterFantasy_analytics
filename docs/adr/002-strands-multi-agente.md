@@ -40,7 +40,7 @@ El `OrchestratorAgent` expone `WriterAgent` e `ImageAgent` como **tools** de Str
 
 **Negativas:**
 - Strands es un framework relativamente nuevo con documentación limitada
-- Hay un problema conocido con threads cuando se llaman múltiples tools globales en paralelo (ver Fix pendiente #7)
+- Hay un problema conocido con threads cuando se llaman múltiples tools globales en paralelo (ver [issue #2](https://github.com/javica98/MisterFantasy_analytics/issues/2))
 - Los errores de API (rate limits) del writer llegan envueltos en el output del orchestrator
 
 ## Alternativas consideradas
