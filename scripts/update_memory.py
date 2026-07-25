@@ -22,7 +22,7 @@ from src.utils.file_utils import safe_read_json
 
 def main() -> None:
     events_json = safe_read_json("newspaper/json/news_json.json")
-    cards_json = safe_read_json("newspaper/json/news_cards.json")
+    cards_json = safe_read_json("newspaper/json/cards/news_cards.json")
 
     memories = build_memories(events_json, cards_json)
     changed = upsert_memories(memories, DEFAULT_MEMORY_PATH)

@@ -289,7 +289,7 @@ top_transfers = [
 # ── 6. Titular de la última noticia ──────────────────────────────────────────
 
 latest_headline = {}
-news_path = ROOT_DIR / json_news_dir / "news_cards.json"
+news_path = ROOT_DIR / json_news_dir / "cards" / "news_cards.json"
 if news_path.exists():
     cards_data = safe_read_json(str(news_path))
     if cards_data and "cards" in cards_data:
