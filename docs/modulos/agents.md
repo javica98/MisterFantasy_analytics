@@ -41,8 +41,18 @@ Genera el contenido textual del periódico en JSON.
 **Función principal:** `run_writer_agent(prompt)`
 
 - Usa Gemini 2.5 Flash para mejor calidad narrativa en español
-- El output se valida con `SchemeValidator.FinalJSON`
+- Invoca al agente con `structured_output_model=FinalJSON` (no el método
+  `Agent.structured_output()` aparte, que se salta el bucle de tools) — así
+  el agente sigue pudiendo usar sus tools y el resultado final ya viene
+  validado por Pydantic sin necesidad de parsear texto.
 - Hace hasta 3 reintentos si la validación falla
+
+**Tools:**
+- `generate_cards(prompt)` — llama a Gemini y devuelve las cards en bruto
+- `validate_cards(cards_json)` — valida contra `SchemeValidator.FinalJSON`
+- `retrieve_memory_context(query, top_k=5)` — RAG bajo demanda: memoria
+  histórica adicional sobre algo puntual (una rivalidad, un jugador) más
+  allá del contexto general que ya trae el prompt
 
 ### `image_agent.py`
 Busca, puntúa y descarga la mejor foto para cada jugador mencionado.
@@ -90,5 +100,5 @@ Ver `config/.env`
 
 ## Issues conocidos
 
-- **Thread safety:** llamar múltiples tools globales en paralelo puede causar conflictos con el registro global de tools de Strands (Fix pendiente #7)
+- **Thread safety:** llamar múltiples tools globales en paralelo puede causar conflictos con el registro global de tools de Strands ([issue #2](https://github.com/javica98/MisterFantasy_analytics/issues/2))
 - **Rate limits:** Gemini 2.5 Flash tiene límite de tokens por minuto — el backfill de muchas jornadas puede saturarlo

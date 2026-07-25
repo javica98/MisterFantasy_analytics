@@ -22,6 +22,7 @@ from pydantic import ValidationError
 
 from src.AI_newspaper.generate_article import generate_articles
 from src.AI_newspaper.SchemeValidator import FinalJSON
+from src.memory.memory_store import format_memory_context, retrieve_relevant_memories
 from src.utils.config_loader import load_config
 
 logger = logging.getLogger(__name__)
@@ -127,6 +128,33 @@ def validate_cards(cards_json: str) -> str:
 
 
 # ─────────────────────────────────────────────
+# TOOL 3 — Memoria histórica bajo demanda
+# ─────────────────────────────────────────────
+
+@tool
+def retrieve_memory_context(query: str, top_k: int = 5) -> str:
+    """
+    Busca memorias históricas relevantes para una consulta concreta (una
+    rivalidad, un jugador, un manager...) y devuelve el contexto en texto.
+
+    El prompt ya incluye un contexto histórico general, pero esta tool
+    sirve para pedir memorias más específicas sobre algo puntual que vayas
+    a escribir en una card (ej. la rivalidad entre dos managers concretos).
+
+    Args:
+        query: Texto de búsqueda (ej. "rivalidad Dani Maldinillo", "Mbappé MVP").
+        top_k: Número máximo de memorias a devolver (por defecto 5).
+    """
+    logger.info(f"[Tool 3/3] retrieve_memory_context — query={query!r} top_k={top_k}")
+
+    memories = retrieve_relevant_memories(query, top_k=top_k)
+    if not memories:
+        return "Sin memorias relevantes encontradas para esa búsqueda."
+
+    return format_memory_context(memories)
+
+
+# ─────────────────────────────────────────────
 # AGENTE
 # ─────────────────────────────────────────────
 
@@ -143,19 +171,25 @@ Si validate_cards devuelve {"valid": false}:
 - Vuelve a validar
 - Máximo 2 reintentos
 
+Si al escribir una card concreta necesitas más contexto histórico sobre un
+jugador, manager o rivalidad puntual (más allá del contexto general que ya
+viene incluido en el prompt), llama a retrieve_memory_context(query) en
+cualquier momento antes de generar tu respuesta final.
+
 Tu output final es el JSON de cards del campo "cards" devuelto por validate_cards.
 """.strip()
 
 
 def create_writer_agent() -> Agent:
     """
-    WriterAgent simplificado: recibe un prompt, genera cards, valida.
-    Todo el procesamiento de datos ocurre fuera, en código Python puro.
+    WriterAgent: recibe un prompt, genera cards, valida y puede pedir
+    memoria histórica adicional bajo demanda. El procesamiento de datos
+    y la memoria general ya recuperada ocurren fuera, en código Python puro.
     """
     return Agent(
         model=create_gemini_model(),
         system_prompt=WRITER_AGENT_PROMPT,
-        tools=[generate_cards, validate_cards],
+        tools=[generate_cards, validate_cards, retrieve_memory_context],
     )
 
 
@@ -163,9 +197,13 @@ def run_writer_agent(prompt: str) -> dict | None:
     """
     Función de conveniencia para llamar al WriterAgent desde run_newspaper.py.
 
-    Usa Agent.structured_output(FinalJSON, ...) para que Strands devuelva
-    directamente un objeto validado por Pydantic, en vez de tener que
-    extraer el JSON del texto de respuesta con regex.
+    Usa agent(prompt, structured_output_model=FinalJSON) — NO el método
+    Agent.structured_output() aparte, que llama al modelo directamente y se
+    salta por completo el bucle de tools del agente (generate_cards,
+    validate_cards y retrieve_memory_context nunca se ejecutarían). Pasando
+    structured_output_model en la invocación normal, el agente sigue
+    pudiendo usar sus tools y, al final, Strands valida la respuesta contra
+    el schema sin necesidad de parsear el texto con regex.
 
     Args:
         prompt: El prompt completo construido por build_final_prompt()
@@ -176,15 +214,20 @@ def run_writer_agent(prompt: str) -> dict | None:
     agent = create_writer_agent()
 
     try:
-        result = agent.structured_output(
-            FinalJSON,
+        result = agent(
             f"Genera las cards del periódico con este prompt:\n\n{prompt}",
+            structured_output_model=FinalJSON,
         )
     except Exception as e:
-        logger.warning(f"[WriterAgent] structured_output falló: {e}")
+        logger.warning(f"[WriterAgent] Ejecución del agente falló: {e}")
         return None
 
-    data = result.model_dump()
+    structured = result.structured_output
+    if structured is None:
+        logger.warning("[WriterAgent] El agente no produjo structured_output")
+        return None
+
+    data = structured.model_dump()
     if not data.get("cards"):
         logger.warning("[WriterAgent] structured_output devolvió cards vacías")
         return None

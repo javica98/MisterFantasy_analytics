@@ -297,10 +297,11 @@ class TestAIPipeline:
         validated = FinalJSON(**result)
         assert len(validated.cards) == len(FAKE_CARDS["cards"])
 
-    def test_writer_agent_devuelve_cards_via_structured_output(self):
+    def test_writer_agent_devuelve_cards_via_structured_output_model(self):
         """
-        run_writer_agent usa Agent.structured_output(FinalJSON, ...) y devuelve
-        directamente las cards ya validadas, sin parsear texto con regex.
+        run_writer_agent llama al agente con structured_output_model=FinalJSON
+        (NO con el método Agent.structured_output() aparte, que se salta el
+        bucle de tools) y lee el resultado de AgentResult.structured_output.
         """
         from src.agents.writer_agent import run_writer_agent
         from src.AI_newspaper.SchemeValidator import FinalJSON
@@ -309,7 +310,7 @@ class TestAIPipeline:
 
         with patch("src.agents.writer_agent.Agent") as mock_agent_cls:
             mock_instance = MagicMock()
-            mock_instance.structured_output.return_value = fake_result
+            mock_instance.return_value = MagicMock(structured_output=fake_result)
             mock_agent_cls.return_value = mock_instance
 
             result = run_writer_agent("prompt de prueba")
@@ -317,17 +318,31 @@ class TestAIPipeline:
         assert result is not None
         assert "cards" in result
         assert len(result["cards"]) == len(FAKE_CARDS["cards"])
-        # structured_output se llama con el schema y el prompt construido
-        args, _ = mock_instance.structured_output.call_args
-        assert args[0] is FinalJSON
+        # se invoca el agente normal (__call__), no el método structured_output() aparte
+        mock_instance.structured_output.assert_not_called()
+        _, kwargs = mock_instance.call_args
+        assert kwargs.get("structured_output_model") is FinalJSON
 
-    def test_writer_agent_devuelve_none_si_structured_output_falla(self):
-        """Si Agent.structured_output no puede producir un output válido, se devuelve None."""
+    def test_writer_agent_devuelve_none_si_la_invocacion_falla(self):
+        """Si la invocación del agente lanza una excepción, se devuelve None."""
         from src.agents.writer_agent import run_writer_agent
 
         with patch("src.agents.writer_agent.Agent") as mock_agent_cls:
             mock_instance = MagicMock()
-            mock_instance.structured_output.side_effect = Exception("output no valido")
+            mock_instance.side_effect = Exception("fallo de invocación")
+            mock_agent_cls.return_value = mock_instance
+
+            result = run_writer_agent("prompt de prueba")
+
+        assert result is None
+
+    def test_writer_agent_devuelve_none_si_no_hay_structured_output(self):
+        """Si el agente responde pero no produce structured_output, se devuelve None."""
+        from src.agents.writer_agent import run_writer_agent
+
+        with patch("src.agents.writer_agent.Agent") as mock_agent_cls:
+            mock_instance = MagicMock()
+            mock_instance.return_value = MagicMock(structured_output=None)
             mock_agent_cls.return_value = mock_instance
 
             result = run_writer_agent("prompt de prueba")
