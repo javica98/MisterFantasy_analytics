@@ -47,6 +47,23 @@ def upsert_memories(memories: Iterable[dict], path: str | Path = DEFAULT_MEMORY_
     return changed
 
 
+def delete_memories(ids: Iterable[str], path: str | Path = DEFAULT_MEMORY_PATH) -> int:
+    """Remove memories by id. Returns how many were actually removed."""
+    memory_path = Path(path)
+    ids_to_remove = set(ids)
+
+    memories = read_memories(memory_path)
+    kept = [memory for memory in memories if memory.get("id") not in ids_to_remove]
+    removed = len(memories) - len(kept)
+
+    if removed:
+        with memory_path.open("w", encoding="utf-8") as handle:
+            for memory in kept:
+                handle.write(json.dumps(memory, ensure_ascii=False, sort_keys=True) + "\n")
+
+    return removed
+
+
 def retrieve_by_keywords(
     query: str,
     *,

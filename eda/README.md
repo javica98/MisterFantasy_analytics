@@ -2,6 +2,12 @@
 
 Subproyecto de Machine Learning para predecir el comportamiento del mercado de jugadores.
 
+> **Nota:** estos notebooks también existen (copiados) en `docs/eda/`, porque
+> MkDocs (`mkdocs-jupyter`) solo puede renderizar archivos dentro de `docs_dir`.
+> Las dos copias pueden divergir si se re-ejecuta uno sin actualizar el otro
+> (ya ha pasado). Antes de publicar la documentación, copia la versión
+> re-ejecutada de `eda/` a `docs/eda/` para mantenerlas sincronizadas.
+
 ## Notebooks (ejecutar en orden)
 
 | Notebook | Descripción | Estado |

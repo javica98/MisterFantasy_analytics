@@ -88,6 +88,21 @@ Añade nuevas memorias al sistema RAG y regenera el índice.
 
 ---
 
+### `manage_memories.py`
+CLI de mantenimiento para `newspaper/memory/memories.jsonl`: listar (con filtros por
+categoría/manager/jugador o búsqueda de texto), ver el detalle de una memoria y
+borrar las incorrectas sin tener que editar el JSONL a mano.
+
+```bash
+python scripts/manage_memories.py list --category "MVP de la jornada"
+python scripts/manage_memories.py show <id>
+python scripts/manage_memories.py delete <id> [<id> ...] --rebuild-index
+```
+
+- **No requiere** API keys (solo `--rebuild-index` necesita `sentence-transformers`)
+
+---
+
 ### `run_modelprocess.py`
 Genera `data/processed/data_model.csv` con features para análisis predictivo.
 
