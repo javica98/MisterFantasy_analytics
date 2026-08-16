@@ -26,7 +26,7 @@ from src.utils.data_utils import normalize_date_column
 from src.utils.file_utils import safe_read_html, safe_read_csv, safe_save_csv
 
 
-cfg = load_config()
+cfg = load_config(validate_env=False)
 
 # --- Configurar logging ---
 log_level = getattr(logging, cfg.get("logging", {}).get("level", "INFO").upper(), logging.INFO)
