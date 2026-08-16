@@ -64,7 +64,7 @@ def login():
     Devuelve un dict con las rutas guardadas.
     Lanza excepción si el login falla críticamente.
     """
-    cfg = load_config()
+    cfg = load_config(validate_env=False)
     base_url = cfg["env"].get("MISTER_BASE_URL", "https://mister.mundodeportivo.com")
     email = cfg["env"].get("MISTER_USERNAME")
     password = cfg["env"].get("MISTER_PASSWORD")
