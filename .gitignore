@@ -27,5 +27,10 @@ newspaper/json/prompts/
 newspaper/memory/
 site/
 
+# Temporadas archivadas: mismas reglas que las carpetas de trabajo
+archive/*/newspaper/new/
+archive/*/newspaper/json/prompts/
+archive/*/newspaper/memory/
+
 # Assets originales en alta resolución (pesan ~10MB, no necesarios para ejecutar)
 assets/*.png
