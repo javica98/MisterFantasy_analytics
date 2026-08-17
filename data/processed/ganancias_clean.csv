@@ -1,86 +1,89 @@
 fecha,id,type,subtype,equipo,jugador,compra-venta,equipoLiga,ganancias
-2026-08-16,0,transfer,mercado,Los marinero,Adrià Pedrosa,venta,17.0,0.35638
-2026-08-16,0,transfer,mercado,Los marinero,Abdoulaye Faye,venta,5.0,1.084
-2026-08-16,0,transfer,clausula,Jotabetrbb,Sergio Martinez,venta,1490.0,1.0
-2026-08-16,0,transfer,clausula,Los marinero,Sergio Martinez,compra,1490.0,-1.0
-2026-08-16,0,transfer,mercado,Chamacónicos,Damián Cáceres,venta,9.0,0.1691
-2026-08-16,0,transfer,mercado,Chamacónicos,Saba Sazonov,venta,9.0,0.58275
-2026-08-16,0,marks,start_mercado,Mercado diario,,,,0.0
-2026-08-16,0,transfer,mercado,Los marinero,José Luis Gayà,compra,19.0,-2.37002
-2026-08-16,0,transfer,Puja,Chamacónicos,José Luis Gayà,compra,19.0,0.0
-2026-08-16,0,transfer,mercado,Los marinero,Dakonam Djené,compra,9.0,-2.253
-2026-08-16,0,transfer,Puja,Libre,Dakonam Djené,compra,9.0,0.0
-2026-08-16,1,transfer,mercado,Dani,Álvaro Djaló,venta,1.0,0.27248
-2026-08-16,1,transfer,mercado,Dani,Jeremy Toljan,venta,12.0,1.56624
-2026-08-16,1,marks,start_jornada,1.0,,,,0.0
-2026-08-16,1,transfer,mercado,Maldinillo 💥,Miguel Rodríguez,venta,48.0,1.04624
+2026-08-17,0,transfer,mercado,Dani,Leandro Cabrera,venta,8.0,9.1476
+2026-08-17,0,marks,start_mercado,Mercado diario,,,,0.0
+2026-08-17,0,transfer,mercado,Chamacónicos,Urko González,compra,8.0,-1.995
+2026-08-16,1,transfer,mercado,Los marinero,Adrià Pedrosa,venta,17.0,0.35638
+2026-08-16,1,transfer,mercado,Los marinero,Abdoulaye Faye,venta,5.0,1.084
+2026-08-16,1,transfer,clausula,Jotabetrbb,Sergio Martinez,venta,1490.0,1.0
+2026-08-16,1,transfer,clausula,Los marinero,Sergio Martinez,compra,1490.0,-1.0
+2026-08-16,1,transfer,mercado,Chamacónicos,Damián Cáceres,venta,9.0,0.1691
+2026-08-16,1,transfer,mercado,Chamacónicos,Saba Sazonov,venta,9.0,0.58275
 2026-08-16,1,marks,start_mercado,Mercado diario,,,,0.0
-2026-08-16,1,transfer,mercado,MuchaSalsa,Maguette Gueye,compra,1490.0,-2.645
-2026-08-16,1,transfer,Puja,Dani,Maguette Gueye,compra,1490.0,0.0
-2026-08-16,1,transfer,Puja,Chamacónicos,Maguette Gueye,compra,1490.0,0.0
-2026-08-16,1,transfer,mercado,MuchaSalsa,Borja Mayoral,compra,9.0,-2.201
-2026-08-16,1,transfer,Puja,Maldinillo 💥,Borja Mayoral,compra,9.0,0.0
-2026-08-16,1,transfer,mercado,Chamacónicos,Justin De Haas,compra,19.0,-4.336
-2026-08-16,1,transfer,Puja,Dani,Justin De Haas,compra,19.0,0.0
-2026-08-16,1,transfer,mercado,Dani,Lucas Noubi,compra,6.0,-2.2065
-2026-08-16,1,transfer,Puja,Libre,Lucas Noubi,compra,6.0,0.0
-2026-08-16,1,transfer,mercado,Maldinillo 💥,Alejandro Balde,compra,3.0,-6.34581
-2026-08-16,2,transfer,mercado,MuchaSalsa,Christantus Uche,venta,9.0,8.26404
-2026-08-16,2,transfer,acuerdo,Los marinero,Iñaki Williams,venta,1.0,7.06024
-2026-08-16,2,transfer,acuerdo,Maldinillo 💥,Iñaki Williams,compra,1.0,-7.06024
-2026-08-16,2,transfer,clausula,Maldinillo 💥,Sergio Canales,venta,1490.0,6.2055
-2026-08-16,2,transfer,clausula,Chamacónicos,Sergio Canales,compra,1490.0,-6.2055
-2026-08-16,2,transfer,clausula,MuchaSalsa,Ramón Terrats,venta,9.0,2.508
-2026-08-16,2,transfer,clausula,Dani,Ramón Terrats,compra,9.0,-2.508
-2026-08-16,2,transfer,mercado,Dani,Ángel Recio,venta,13.0,0.20907
-2026-08-16,2,transfer,mercado,Jotabetrbb,Cristian Rivero,venta,19.0,0.23616
+2026-08-16,1,transfer,mercado,Los marinero,José Luis Gayà,compra,19.0,-2.37002
+2026-08-16,1,transfer,Puja,Chamacónicos,José Luis Gayà,compra,19.0,0.0
+2026-08-16,1,transfer,mercado,Los marinero,Dakonam Djené,compra,9.0,-2.253
+2026-08-16,1,transfer,Puja,Libre,Dakonam Djené,compra,9.0,0.0
+2026-08-16,2,transfer,mercado,Dani,Álvaro Djaló,venta,1.0,0.27248
+2026-08-16,2,transfer,mercado,Dani,Jeremy Toljan,venta,12.0,1.56624
+2026-08-16,2,marks,start_jornada,1.0,,,,0.0
+2026-08-16,2,transfer,mercado,Maldinillo 💥,Miguel Rodríguez,venta,48.0,1.04624
 2026-08-16,2,marks,start_mercado,Mercado diario,,,,0.0
-2026-08-16,2,transfer,mercado,Libre,Lamine Yamal,compra,3.0,-25.282049
-2026-08-16,2,transfer,mercado,MuchaSalsa,Clemens Riedel,compra,8.0,-1.705
-2026-08-16,2,transfer,Puja,Chamacónicos,Clemens Riedel,compra,8.0,0.0
-2026-08-16,2,transfer,mercado,Los marinero,Yan Diomande,compra,15.0,-20.672566
-2026-08-16,2,transfer,Puja,Chamacónicos,Yan Diomande,compra,15.0,0.0
-2026-08-16,2,transfer,mercado,Dani,Buba Sangaré,compra,23.0,-1.72325
-2026-08-16,2,transfer,Puja,MuchaSalsa,Buba Sangaré,compra,23.0,0.0
-2026-08-16,2,transfer,Puja,Chamacónicos,Buba Sangaré,compra,23.0,0.0
-2026-08-16,2,transfer,Puja,Maldinillo 💥,Buba Sangaré,compra,23.0,0.0
-2026-08-16,3,transfer,mercado,Chamacónicos,Antonio Sivera,venta,48.0,7.8846
-2026-08-16,3,transfer,mercado,Dani,Jairo Noriega,venta,6.0,0.16562
-2026-08-16,3,transfer,mercado,Dani,Iñaki Rupérez,venta,16.0,0.16896
-2026-08-16,3,transfer,clausula,MuchaSalsa,Manu Sánchez,venta,12.0,1.9875
-2026-08-16,3,transfer,clausula,Dani,Manu Sánchez,compra,12.0,-1.9875
-2026-08-16,3,transfer,mercado,Jotabetrbb,Maroan Sannadi,venta,1.0,0.60255
-2026-08-16,3,transfer,mercado,Jotabetrbb,Denis Suárez,venta,48.0,1.14608
+2026-08-16,2,transfer,mercado,MuchaSalsa,Maguette Gueye,compra,1490.0,-2.645
+2026-08-16,2,transfer,Puja,Dani,Maguette Gueye,compra,1490.0,0.0
+2026-08-16,2,transfer,Puja,Chamacónicos,Maguette Gueye,compra,1490.0,0.0
+2026-08-16,2,transfer,mercado,MuchaSalsa,Borja Mayoral,compra,9.0,-2.201
+2026-08-16,2,transfer,Puja,Maldinillo 💥,Borja Mayoral,compra,9.0,0.0
+2026-08-16,2,transfer,mercado,Chamacónicos,Justin De Haas,compra,19.0,-4.336
+2026-08-16,2,transfer,Puja,Dani,Justin De Haas,compra,19.0,0.0
+2026-08-16,2,transfer,mercado,Dani,Lucas Noubi,compra,6.0,-2.2065
+2026-08-16,2,transfer,Puja,Libre,Lucas Noubi,compra,6.0,0.0
+2026-08-16,2,transfer,mercado,Maldinillo 💥,Alejandro Balde,compra,3.0,-6.34581
+2026-08-16,3,transfer,mercado,MuchaSalsa,Christantus Uche,venta,9.0,8.26404
+2026-08-16,3,transfer,acuerdo,Los marinero,Iñaki Williams,venta,1.0,7.06024
+2026-08-16,3,transfer,acuerdo,Maldinillo 💥,Iñaki Williams,compra,1.0,-7.06024
+2026-08-16,3,transfer,clausula,Maldinillo 💥,Sergio Canales,venta,1490.0,6.2055
+2026-08-16,3,transfer,clausula,Chamacónicos,Sergio Canales,compra,1490.0,-6.2055
+2026-08-16,3,transfer,clausula,MuchaSalsa,Ramón Terrats,venta,9.0,2.508
+2026-08-16,3,transfer,clausula,Dani,Ramón Terrats,compra,9.0,-2.508
+2026-08-16,3,transfer,mercado,Dani,Ángel Recio,venta,13.0,0.20907
+2026-08-16,3,transfer,mercado,Jotabetrbb,Cristian Rivero,venta,19.0,0.23616
 2026-08-16,3,marks,start_mercado,Mercado diario,,,,0.0
-2026-08-16,3,transfer,mercado,Jotabetrbb,Ademola Lookman,compra,2.0,-11.816
-2026-08-16,3,transfer,Puja,Los marinero,Ademola Lookman,compra,2.0,0.0
-2026-08-16,3,transfer,Puja,Dani,Ademola Lookman,compra,2.0,0.0
-2026-08-16,3,transfer,Puja,Chamacónicos,Ademola Lookman,compra,2.0,0.0
-2026-08-16,3,transfer,mercado,Jotabetrbb,Abel Bretones,compra,50.0,-1.896
-2026-08-16,3,transfer,Puja,Chamacónicos,Abel Bretones,compra,50.0,0.0
-2026-08-16,3,transfer,Puja,Maldinillo 💥,Abel Bretones,compra,50.0,0.0
-2026-08-16,3,transfer,Puja,Dani,Abel Bretones,compra,50.0,0.0
-2026-08-16,3,transfer,mercado,De la Guettir FC,Álex Calatrava,compra,8.0,-3.343434
-2026-08-16,3,transfer,Puja,Dani,Álex Calatrava,compra,8.0,0.0
-2026-08-16,3,transfer,Puja,Los marinero,Álex Calatrava,compra,8.0,0.0
-2026-08-16,3,transfer,mercado,Maldinillo 💥,Einar Galilea,compra,13.0,-1.37773
-2026-08-16,3,transfer,Puja,Chamacónicos,Einar Galilea,compra,13.0,0.0
-2026-08-16,4,transfer,mercado,Los marinero,Juan Musso,venta,2.0,1.11201
-2026-08-16,4,transfer,clausula,De la Guettir FC,Endrick,venta,15.0,2.6475
-2026-08-16,4,transfer,clausula,Maldinillo 💥,Endrick,compra,15.0,-2.6475
-2026-08-16,4,transfer,mercado,Dani,Pablo Marín,venta,16.0,0.66538
-2026-08-16,4,transfer,mercado,Dani,Alejandro Iturbe,venta,23.0,0.42
-2026-08-16,4,transfer,mercado,Dani,Thomas Lemar,venta,2.0,0.47824
-2026-08-16,4,transfer,clausula,Juanba,Julen Agirrezabala,venta,1490.0,1.7085
-2026-08-16,4,transfer,clausula,Chamacónicos,Julen Agirrezabala,compra,1490.0,-1.7085
-2026-08-16,4,transfer,mercado,Chamacónicos,Thiago Pitarch,venta,15.0,0.323
-2026-08-16,4,transfer,mercado,Chamacónicos,Kike García,venta,8.0,2.2224
-2026-08-16,4,transfer,mercado,Jotabetrbb,Aarón Ochoa,venta,13.0,0.17576
+2026-08-16,3,transfer,mercado,Libre,Lamine Yamal,compra,3.0,-25.282049
+2026-08-16,3,transfer,mercado,MuchaSalsa,Clemens Riedel,compra,8.0,-1.705
+2026-08-16,3,transfer,Puja,Chamacónicos,Clemens Riedel,compra,8.0,0.0
+2026-08-16,3,transfer,mercado,Los marinero,Yan Diomande,compra,15.0,-20.672566
+2026-08-16,3,transfer,Puja,Chamacónicos,Yan Diomande,compra,15.0,0.0
+2026-08-16,3,transfer,mercado,Dani,Buba Sangaré,compra,23.0,-1.72325
+2026-08-16,3,transfer,Puja,MuchaSalsa,Buba Sangaré,compra,23.0,0.0
+2026-08-16,3,transfer,Puja,Chamacónicos,Buba Sangaré,compra,23.0,0.0
+2026-08-16,3,transfer,Puja,Maldinillo 💥,Buba Sangaré,compra,23.0,0.0
+2026-08-16,4,transfer,mercado,Chamacónicos,Antonio Sivera,venta,48.0,7.8846
+2026-08-16,4,transfer,mercado,Dani,Jairo Noriega,venta,6.0,0.16562
+2026-08-16,4,transfer,mercado,Dani,Iñaki Rupérez,venta,16.0,0.16896
+2026-08-16,4,transfer,clausula,MuchaSalsa,Manu Sánchez,venta,12.0,1.9875
+2026-08-16,4,transfer,clausula,Dani,Manu Sánchez,compra,12.0,-1.9875
+2026-08-16,4,transfer,mercado,Jotabetrbb,Maroan Sannadi,venta,1.0,0.60255
+2026-08-16,4,transfer,mercado,Jotabetrbb,Denis Suárez,venta,48.0,1.14608
 2026-08-16,4,marks,start_mercado,Mercado diario,,,,0.0
-2026-08-16,4,transfer,mercado,Jotabetrbb,Karim Adeyemi,compra,3.0,-11.88
-2026-08-16,4,transfer,mercado,Jotabetrbb,Aimar Oroz,compra,50.0,-5.647
-2026-08-16,4,transfer,Puja,Dani,Aimar Oroz,compra,50.0,0.0
-2026-08-16,4,transfer,mercado,Jotabetrbb,Nelson Deossa,compra,4.0,-1.9
-2026-08-16,4,transfer,Puja,Los marinero,Nelson Deossa,compra,4.0,0.0
-2026-08-16,4,transfer,mercado,Los marinero,Aitor Paredes,compra,1.0,-1.189
-2026-08-16,4,transfer,mercado,Dani,Leandro Cabrera,compra,8.0,-8.71772
+2026-08-16,4,transfer,mercado,Jotabetrbb,Ademola Lookman,compra,2.0,-11.816
+2026-08-16,4,transfer,Puja,Los marinero,Ademola Lookman,compra,2.0,0.0
+2026-08-16,4,transfer,Puja,Dani,Ademola Lookman,compra,2.0,0.0
+2026-08-16,4,transfer,Puja,Chamacónicos,Ademola Lookman,compra,2.0,0.0
+2026-08-16,4,transfer,mercado,Jotabetrbb,Abel Bretones,compra,50.0,-1.896
+2026-08-16,4,transfer,Puja,Chamacónicos,Abel Bretones,compra,50.0,0.0
+2026-08-16,4,transfer,Puja,Maldinillo 💥,Abel Bretones,compra,50.0,0.0
+2026-08-16,4,transfer,Puja,Dani,Abel Bretones,compra,50.0,0.0
+2026-08-16,4,transfer,mercado,De la Guettir FC,Álex Calatrava,compra,8.0,-3.343434
+2026-08-16,4,transfer,Puja,Dani,Álex Calatrava,compra,8.0,0.0
+2026-08-16,4,transfer,Puja,Los marinero,Álex Calatrava,compra,8.0,0.0
+2026-08-16,4,transfer,mercado,Maldinillo 💥,Einar Galilea,compra,13.0,-1.37773
+2026-08-16,4,transfer,Puja,Chamacónicos,Einar Galilea,compra,13.0,0.0
+2026-08-16,5,transfer,mercado,Los marinero,Juan Musso,venta,2.0,1.11201
+2026-08-16,5,transfer,clausula,De la Guettir FC,Endrick,venta,15.0,2.6475
+2026-08-16,5,transfer,clausula,Maldinillo 💥,Endrick,compra,15.0,-2.6475
+2026-08-16,5,transfer,mercado,Dani,Pablo Marín,venta,16.0,0.66538
+2026-08-16,5,transfer,mercado,Dani,Alejandro Iturbe,venta,23.0,0.42
+2026-08-16,5,transfer,mercado,Dani,Thomas Lemar,venta,2.0,0.47824
+2026-08-16,5,transfer,clausula,Juanba,Julen Agirrezabala,venta,1490.0,1.7085
+2026-08-16,5,transfer,clausula,Chamacónicos,Julen Agirrezabala,compra,1490.0,-1.7085
+2026-08-16,5,transfer,mercado,Chamacónicos,Thiago Pitarch,venta,15.0,0.323
+2026-08-16,5,transfer,mercado,Chamacónicos,Kike García,venta,8.0,2.2224
+2026-08-16,5,transfer,mercado,Jotabetrbb,Aarón Ochoa,venta,13.0,0.17576
+2026-08-16,5,marks,start_mercado,Mercado diario,,,,0.0
+2026-08-16,5,transfer,mercado,Jotabetrbb,Karim Adeyemi,compra,3.0,-11.88
+2026-08-16,5,transfer,mercado,Jotabetrbb,Aimar Oroz,compra,50.0,-5.647
+2026-08-16,5,transfer,Puja,Dani,Aimar Oroz,compra,50.0,0.0
+2026-08-16,5,transfer,mercado,Jotabetrbb,Nelson Deossa,compra,4.0,-1.9
+2026-08-16,5,transfer,Puja,Los marinero,Nelson Deossa,compra,4.0,0.0
+2026-08-16,5,transfer,mercado,Los marinero,Aitor Paredes,compra,1.0,-1.189
+2026-08-16,5,transfer,mercado,Dani,Leandro Cabrera,compra,8.0,-8.71772
