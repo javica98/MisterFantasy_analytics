@@ -1,20 +1,57 @@
 type,subtype,mensaje,jugador,de_equipo,a_equipo,precio,posicionJugador,puntosJugador,equipoLiga,name,money,position,aciertos,points,jornada,date,idTransfer
+marks,start_mercado,,,,,,,,,,,,,,,2026-08-20,
+transfer,mercado,,Odysseas Vlachodimos,Maldinillo 💥,Mister,7.08084,1,3,17,,,,,,,2026-08-20,2db84ce0859fcb97b944a417cef77077
+marks,start_mercado,,,,,,,,,,,,,,,2026-08-20,
+transfer,mercado,,Jon Guridi,Mister,MuchaSalsa,3.267,3,8,17,,,,,,,2026-08-20,84df2fe69b9c9dd010160212842a2f2a
+transfer,Puja,,Jon Guridi,Mister,Maldinillo 💥,2.767,3,8,17,,,,,,,2026-08-20,353a1fc27e4217d8fb1d7eaf77e123e9
+transfer,Puja,,Jon Guridi,Mister,Chamacónicos,2.667,3,8,17,,,,,,,2026-08-20,c85f2cb67c54ee1b638288df65595688
+transfer,Puja,,Jon Guridi,Mister,Libre,2.26703,3,8,17,,,,,,,2026-08-20,326d6cd990cf05ded195ad8bbcea2012
+transfer,mercado,,Asier Villalibre,Mister,Chamacónicos,3.269,4,2,1490,,,,,,,2026-08-20,8a50b19e74b0eea893fe323c606bb1e8
+marks,start_mercado,,,,,,,,,,,,,,,2026-08-20,
+transfer,mercado,,Dimitri Foulquier,Libre,Mister,0.17136,2,0,19,,,,,,,2026-08-20,5e7b315eb196ae2e52cdd44c5c69f83b
+marks,start_mercado,,,,,,,,,,,,,,,2026-08-20,
+transfer,mercado,,David Mella,Chamacónicos,Mister,2.361,3,2,6,,,,,,,2026-08-20,fed3d02ca6a363b71ccbaa762fbc18d8
+marks,start_mercado,,,,,,,,,,,,,,,2026-08-20,
+transfer,mercado,,Diego Murillo,Maldinillo 💥,Mister,0.2121,2,0,13,,,,,,,2026-08-20,378142c09fb7632b28f08fd7044ccb19
+marks,start_mercado,,,,,,,,,,,,,,,2026-08-20,
+transfer,mercado,,Juan Carlos Arana,Maldinillo 💥,Mister,1.30046,4,0,1490,,,,,,,2026-08-20,4c57b7d111b64e2a5b1c512a36cc9e76
+marks,start_mercado,,,,,,,,,,,,,,,2026-08-20,
+transfer,mercado,,Georges Mikautadze,Mister,Dani,15.58948,4,4,20,,,,,,,2026-08-20,f8f62214fcf0c8532c829af18402217a
+transfer,mercado,,Odysseas Vlachodimos,Mister,Maldinillo 💥,6.8713,1,3,17,,,,,,,2026-08-20,b429cfb6c993b05733e6e99a1ac12c8f
+marks,start_mercado,,,,,,,,,,,,,,,2026-08-20,
+transfer,mercado,,Giorgi Guliashvili,Libre,Mister,0.21185,4,0,1490,,,,,,,2026-08-20,a49954de58135b9bccc6230d12895ad5
+marks,start_mercado,,,,,,,,,,,,,,,2026-08-20,
+transfer,mercado,,Fábio Cardoso,Libre,Mister,0.16684,2,0,17,,,,,,,2026-08-20,d3a552717d71e28f965568c328f17fe9
+marks,start_mercado,,,,,,,,,,,,,,,2026-08-20,
+transfer,mercado,,Yago Santiago,Libre,Mister,0.17945,3,0,23,,,,,,,2026-08-20,dfe8e11c5fbb51661b1dfaa0912f93fe
+marks,start_mercado,,,,,,,,,,,,,,,2026-08-20,
+transfer,mercado,,Diego López,Libre,Mister,0.1881,3,0,19,,,,,,,2026-08-20,7ffbd264523c49fe71eaac2089f2bc82
+marks,start_mercado,,,,,,,,,,,,,,,2026-08-20,
+transfer,mercado,,Dani Cárdenas,Libre,Mister,0.35625,1,0,14,,,,,,,2026-08-20,4ddd15a79c99d7eddea043aca0db14bd
+marks,start_mercado,,,,,,,,,,,,,,,2026-08-20,
+transfer,mercado,,Dakonam Djené,Los marinero,Mister,2.10326,2,2,9,,,,,,,2026-08-20,9cab9dd848f9f0e616249a08a2d3b0d1
+marks,start_mercado,,,,,,,,,,,,,,,2026-08-20,
+transfer,mercado,,José Luis Gayà,Los marinero,Mister,2.178,2,0,19,,,,,,,2026-08-20,c01d0ed352f8237c40ce43af4f99fbe9
+marks,start_mercado,,,,,,,,,,,,,,,2026-08-20,
+transfer,mercado,,José Ángel Jurado,Chamacónicos,Mister,0.1616,3,0,6,,,,,,,2026-08-20,86b55bb6818adb16d205ad1413cc533f
+marks,start_mercado,,,,,,,,,,,,,,,2026-08-20,
+transfer,mercado,,Tani Oluwaseyi,Los marinero,Mister,1.1382,4,0,20,,,,,,,2026-08-20,9e249cc37eb21723e841ddf011db877a
+marks,start_mercado,,,,,,,,,,,,,,,2026-08-20,
+transfer,mercado,,Pau Navarro,Mister,Libre,2.169,2.0,0.0,20.0,,,,,,,2026-08-18,42172c0fd5580ca20881e21566dbb227
+transfer,mercado,,Álvaro García,Mister,Dani,7.54376,3.0,10.0,14.0,,,,,,,2026-08-18,b2e9dbc5df1c1f25ce5676cc8afd77be
+transfer,Puja,,Álvaro García,Mister,Chamacónicos,7.446,3.0,10.0,14.0,,,,,,,2026-08-18,9074617a3a2625d7d1584026bf1f66bc
+transfer,Puja,,Álvaro García,Mister,Maldinillo 💥,6.86878,3.0,10.0,14.0,,,,,,,2026-08-18,94e5c686dccc17947767cb9309b47ef4
+transfer,Puja,,Álvaro García,Mister,Libre,6.846,3.0,10.0,14.0,,,,,,,2026-08-18,54c1d06b75bc17127f971166cc2e959d
+transfer,mercado,,Arda Güler,Mister,Maldinillo 💥,15.01176,3.0,0.0,15.0,,,,,,,2026-08-18,5ec674d2827c0d3bab253ee1898ea2d3
+transfer,Puja,,Arda Güler,Mister,Chamacónicos,13.709,3.0,0.0,15.0,,,,,,,2026-08-18,8e2fe169415d411f1f4d9954bcace833
+transfer,mercado,,Juan Cruz,Mister,Maldinillo 💥,2.84608,3.0,0.0,13.0,,,,,,,2026-08-18,8d9091996d30c339ea1c4584ac7093d1
+transfer,Puja,,Juan Cruz,Mister,Dani,2.64817,3.0,0.0,13.0,,,,,,,2026-08-18,37c27482a745a737c927a09be2f318c3
 marks,start_mercado,,,,,,,,,,,,,,,2026-08-18,
-transfer,mercado,,Pau Navarro,Mister,Libre,2.169,2,0,20,,,,,,,2026-08-18,42172c0fd5580ca20881e21566dbb227
-transfer,mercado,,Álvaro García,Mister,Dani,7.54376,3,10,14,,,,,,,2026-08-18,b2e9dbc5df1c1f25ce5676cc8afd77be
-transfer,Puja,,Álvaro García,Mister,Chamacónicos,7.446,3,10,14,,,,,,,2026-08-18,9074617a3a2625d7d1584026bf1f66bc
-transfer,Puja,,Álvaro García,Mister,Maldinillo 💥,6.86878,3,10,14,,,,,,,2026-08-18,94e5c686dccc17947767cb9309b47ef4
-transfer,Puja,,Álvaro García,Mister,Libre,6.846,3,10,14,,,,,,,2026-08-18,54c1d06b75bc17127f971166cc2e959d
-transfer,mercado,,Arda Güler,Mister,Maldinillo 💥,15.01176,3,0,15,,,,,,,2026-08-18,5ec674d2827c0d3bab253ee1898ea2d3
-transfer,Puja,,Arda Güler,Mister,Chamacónicos,13.709,3,0,15,,,,,,,2026-08-18,8e2fe169415d411f1f4d9954bcace833
-transfer,mercado,,Juan Cruz,Mister,Maldinillo 💥,2.84608,3,0,13,,,,,,,2026-08-18,8d9091996d30c339ea1c4584ac7093d1
-transfer,Puja,,Juan Cruz,Mister,Dani,2.64817,3,0,13,,,,,,,2026-08-18,37c27482a745a737c927a09be2f318c3
+transfer,mercado,,Abiel Osorio,Dani,Mister,0.5782,4.0,0.0,23.0,,,,,,,2026-08-18,a758d4e851f8f6fbd24c10aa78b1f80b
 marks,start_mercado,,,,,,,,,,,,,,,2026-08-18,
-transfer,mercado,,Abiel Osorio,Dani,Mister,0.5782,4,0,23,,,,,,,2026-08-18,a758d4e851f8f6fbd24c10aa78b1f80b
+transfer,mercado,,Iñigo Ruiz De Galarreta,Maldinillo 💥,Mister,6.18576,3.0,0.0,1.0,,,,,,,2026-08-18,4a42482c9a42b6022b9efccb451c63c2
 marks,start_mercado,,,,,,,,,,,,,,,2026-08-18,
-transfer,mercado,,Iñigo Ruiz De Galarreta,Maldinillo 💥,Mister,6.18576,3,0,1,,,,,,,2026-08-18,4a42482c9a42b6022b9efccb451c63c2
-marks,start_mercado,,,,,,,,,,,,,,,2026-08-18,
-transfer,mercado,,Lucas Boyé,Maldinillo 💥,Mister,6.79291,4,0,48,,,,,,,2026-08-18,ea9dbfa78c92d1f57789d00a9293de7d
+transfer,mercado,,Lucas Boyé,Maldinillo 💥,Mister,6.79291,4.0,0.0,48.0,,,,,,,2026-08-18,ea9dbfa78c92d1f57789d00a9293de7d
 marks,start_mercado,,,,,,,,,,,,,,,2026-08-18,
 transfer,mercado,,Leandro Cabrera,Dani,Mister,9.1476,2.0,0.0,8.0,,,,,,,2026-08-17,60e8257d16ee4cc79663cec986ffad20
 marks,start_mercado,,,,,,,,,,,,,,,2026-08-17,
