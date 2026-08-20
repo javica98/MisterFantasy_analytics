@@ -27,6 +27,7 @@ for p in (ROOT, SRC):
         sys.path.insert(0, str(p))
 
 from src.utils.config_loader import load_config
+from src.utils.file_utils import safe_read_csv
 from src.utils.team_map import map_team
 
 
@@ -52,17 +53,17 @@ logger = logging.getLogger(__name__)
 # ── Config ────────────────────────────────────────────────────────────────────
 cfg = load_config(validate_env=False)
 
-CSV_GAMEWEEK      = ROOT / cfg["paths"]["csv"]["gameweek"]
-CSV_CLASIFICACION = ROOT / cfg["paths"]["csv"]["clasificaciones"]
-CSV_QUINIELAS     = ROOT / cfg["paths"]["csv"]["quiniela"]
-CSV_MERCADO       = ROOT / cfg["paths"]["csv"]["notificaciones_clean"]
-CSV_JUGADORES     = ROOT / "data" / "processed" / "jugadores.csv"
+CSV_GAMEWEEK      = cfg["paths"]["csv"]["gameweek"]
+CSV_CLASIFICACION = cfg["paths"]["csv"]["clasificaciones"]
+CSV_QUINIELAS     = cfg["paths"]["csv"]["quiniela"]
+CSV_MERCADO       = cfg["paths"]["csv"]["notificaciones_clean"]
+CSV_JUGADORES     = cfg["paths"]["csv"]["jugadores"]
 NEWS_JSON_DIR     = ROOT / "newspaper" / "json"
 OUTPUT_PATH       = ROOT / "web" / "data" / "app-data.json"
 OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
 
 LEAGUE_NAME   = "Sotano League"
-SEASON        = "Temporada 2026"
+SEASON        = cfg["season"]["current"]
 N_FORM_ROUNDS = 8   # últimas N jornadas para calcular el form
 
 
@@ -70,11 +71,13 @@ N_FORM_ROUNDS = 8   # últimas N jornadas para calcular el form
 # Helpers
 # ─────────────────────────────────────────────────────────────────────────────
 
-def _load_csv(path: Path, name: str) -> pd.DataFrame:
-    if not path.exists():
-        logger.error("CSV no encontrado: %s", path)
+def _load_csv(path: str, name: str) -> pd.DataFrame:
+    """Lee `name` (CSV en disco o tabla de BD según config.yaml) vía
+    safe_read_csv, que resuelve la temporada activa automáticamente."""
+    df = safe_read_csv(path)
+    if df.empty:
+        logger.error("Sin datos para %s (%s)", name, path)
         sys.exit(1)
-    df = pd.read_csv(path)
     logger.info("  %s: %d filas", name, len(df))
     return df
 

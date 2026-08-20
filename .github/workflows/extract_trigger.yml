@@ -43,8 +43,8 @@ jobs:
       - name: Run preprocessing
         run: python scripts/run_preprocess.py
 
-      # 6️⃣ Commit y push de CSV automáticamente usando PAT
-      - name: Commit and push CSVs
+      # 6️⃣ Commit y push de la base de datos automáticamente usando PAT
+      - name: Commit and push database
         env:
           PAT_TOKEN: ${{ secrets.PAT_TOKEN }}
         run: |
@@ -54,11 +54,11 @@ jobs:
           # Cambiar remote para usar PAT
           git remote set-url origin https://x-access-token:${PAT_TOKEN}@github.com/${{ github.repository }}.git
 
-          git add data/processed/*.csv
+          git add data/mister.db
 
           # Solo commit si hay cambios
           if ! git diff --cached --quiet; then
-            git commit -m "Auto-update CSV data [skip ci]"
+            git commit -m "Auto-update season data [skip ci]"
             git push origin main
           else
             echo "No changes to commit."

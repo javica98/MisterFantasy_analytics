@@ -1,6 +1,9 @@
+season:
+  current: "2026-27"
 data:
   raw_dir: "data/raw"
   processed_dir: "data/processed"
+  db_path: "data/mister.db"
 paths:
   html:
     main: "data/raw/dataMister.html"
@@ -12,6 +15,7 @@ paths:
     subidas_bajadas: "data/raw/MarketSubidasBajadas.html"
     gameweek: "data/raw/gameweek.html"
     quiniela: "data/raw/quiniela.html"
+    players: "data/raw/players_raw.html"
 
   csv:
     notificaciones: "data/processed/ganancias.csv"
@@ -25,6 +29,7 @@ paths:
     model: "data/processed/data_model.csv"
     gameweek: "data/processed/gameweek.csv"
     quiniela: "data/processed/quiniela.csv"
+    jugadores: "data/processed/jugadores.csv"
 
     test: "data/processed/test.csv"
   json:

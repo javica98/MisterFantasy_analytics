@@ -1,10 +1,26 @@
 import json
 import os
+from pathlib import Path
+
 import pandas as pd
 import logging
 from PIL import Image
 
+from src.utils import db as db_utils
+
 logger = logging.getLogger(__name__)
+
+_known_tables_cache = None
+
+
+def _resolve_table_name(path: str):
+    """Si `path` corresponde a un CSV conocido de config.yaml, devuelve el
+    nombre de tabla de BD equivalente (stem del archivo); si no, None."""
+    global _known_tables_cache
+    if _known_tables_cache is None:
+        _known_tables_cache = db_utils.known_tables()
+    stem = Path(path).stem
+    return stem if stem in _known_tables_cache else None
 
 def safe_read_html(path: str):
     """Lee un archivo HTML si existe; de lo contrario, devuelve None."""
@@ -20,7 +36,13 @@ def safe_read_html(path: str):
 
 
 def safe_read_csv(path: str):
-    """Lee un CSV si existe; de lo contrario, devuelve un DataFrame vacío."""
+    """Lee los datos de `path`. Si corresponde a una tabla de temporada
+    conocida, lee de la BD (data/mister.db) filtrado por la temporada activa;
+    si no, lee el CSV en disco. Devuelve DataFrame vacío si no hay datos."""
+    table = _resolve_table_name(path)
+    if table:
+        return db_utils.read_table(table, temporada=db_utils.get_active_season())
+
     if not os.path.exists(path):
         logger.warning(f"CSV no encontrado, creando vacío: {path}")
         return pd.DataFrame()
@@ -32,7 +54,14 @@ def safe_read_csv(path: str):
 
 
 def safe_save_csv(df: pd.DataFrame, path: str):
-    """Guarda un DataFrame en CSV de forma segura."""
+    """Guarda `df` en los datos de `path`. Si corresponde a una tabla de
+    temporada conocida, guarda en la BD (data/mister.db) etiquetado con la
+    temporada activa; si no, guarda el CSV en disco."""
+    table = _resolve_table_name(path)
+    if table:
+        db_utils.write_table(df, table, temporada=db_utils.get_active_season())
+        return
+
     try:
         os.makedirs(os.path.dirname(path), exist_ok=True)
         df.to_csv(path, index=False)

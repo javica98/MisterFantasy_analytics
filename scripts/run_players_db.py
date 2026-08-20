@@ -26,13 +26,16 @@ os.chdir(ROOT_DIR)
 
 from src.data.extract_players import extraer_jugadores
 from src.AI_newspaper.generate_json import TEAM_MAP
+from src.utils.config_loader import load_config
 from src.utils.file_utils import safe_read_html, safe_read_csv, safe_save_csv
 
 logging.basicConfig(level=logging.INFO, format="%(levelname)s | %(message)s")
 logger = logging.getLogger(__name__)
 
-HTML_PATH = "data/raw/players_raw.html"
-CSV_PATH  = "data/processed/jugadores.csv"
+cfg = load_config(validate_env=False)
+
+HTML_PATH = cfg["paths"]["html"].get("players", "data/raw/players_raw.html")
+CSV_PATH  = cfg["paths"]["csv"]["jugadores"]
 
 
 def main():

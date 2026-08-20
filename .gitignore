@@ -9,6 +9,12 @@ config/.env
 data/raw/
 *.html
 
+# CSVs de temporada: la fuente de verdad es data/mister.db (SQLite,
+# particionado por columna `temporada`). Los CSVs son ahora un artefacto
+# local regenerable (ver scripts/export_db_to_csv.py para exportarlos a mano).
+data/processed/
+data/export/
+
 # Config y logs locales
 *.log
 
