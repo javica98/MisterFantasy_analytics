@@ -12,6 +12,8 @@ Sistema de análisis, generación de contenido y visualización para la **Sotano
 4. **Dashboards PDF** — Informes mensuales visuales por manager
 5. **Web App** — Estadísticas en tiempo real accesibles desde el navegador
 
+**Persistencia de datos**: la fuente de verdad es `data/mister.db` (SQLite), no CSVs sueltos. Cada tabla lleva una columna `temporada`, así que varias temporadas conviven en la misma base de datos sin colisionar (la jornada 1 de una temporada nueva no pisa a la de la anterior). La temporada activa se define en `config/config.yaml` (`season.current`). El histórico anterior a esta migración vive en `archive/temporada_2025-26/` como copia de seguridad ya importada a la BD. Para exportar una temporada a CSV manualmente: `python scripts/export_db_to_csv.py [temporada]`.
+
 ---
 
 ## Flujo del sistema
@@ -19,8 +21,8 @@ Sistema de análisis, generación de contenido y visualización para la **Sotano
 ```mermaid
 graph TD
     A[HTML Mister Fantasy] -->|Playwright scraper| B[data/raw/*.html]
-    B -->|run_extraction.py| C[data/processed/*.csv]
-    C -->|run_preprocess.py| D[CSVs limpios]
+    B -->|run_extraction.py| C[(data/mister.db)]
+    C -->|run_preprocess.py| D[Tablas limpias, por temporada]
 
     D -->|run_newspaper.py| E{Multi-agente LLM}
     E -->|WriterAgent Gemini 2.5 Flash| F[newspaper/json/*.json]
@@ -40,10 +42,11 @@ graph TD
 ## Estructura del proyecto
 
 ```
-├── config/              # config.yaml + .env (API keys)
+├── config/              # config.yaml (incluye season.current) + .env (API keys)
 ├── data/
 │   ├── raw/             # HTMLs scrapeados (no commiteados)
-│   └── processed/       # CSVs limpios
+│   ├── processed/       # export local opcional de CSVs (no commiteado, ver export_db_to_csv.py)
+│   └── mister.db        # fuente de verdad — SQLite particionado por `temporada`
 ├── newspaper/
 │   ├── json/
 │   │   ├── articles/    # JSONs de datos de cada jornada
@@ -94,7 +97,7 @@ Variables necesarias: `GROQ_API_KEY`, `GEMINI_API_KEY`
 # Extraer datos del HTML (requiere HTML descargado manualmente)
 python scripts/run_extraction.py
 
-# Preprocesar CSVs
+# Limpiar y normalizar los datos extraídos
 python scripts/run_preprocess.py
 
 # Generar periódico IA (requiere API keys)

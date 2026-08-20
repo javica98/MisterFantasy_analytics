@@ -1,20 +1,21 @@
 # Extracción de datos
 
-Convierte los HTMLs de Mister Fantasy en CSVs estructurados.
+Convierte los HTMLs de Mister Fantasy en tablas estructuradas.
 
----
+!!! info "Dónde acaban los datos"
+    Cada dataset de la tabla de abajo es una tabla de `data/mister.db` (SQLite), no un CSV suelto — particionada por `temporada` (ver [ADR-005](../adr/005-sqlite-temporada-activa.md)). `run_extraction.py` sigue llamando a `safe_read_csv`/`safe_save_csv` con las mismas rutas de `config.yaml -> paths.csv.*`; esas funciones son las que resuelven contra la BD y la temporada activa por debajo, sin que el script lo sepa.
 
 ## Fuentes de datos
 
-| HTML de entrada | CSV de salida | Contenido |
+| HTML de entrada | Tabla de salida | Contenido |
 |----------------|---------------|-----------|
-| `dataMister.html` | `ganancias.csv` | Notificaciones de mercado (compras/ventas) |
-| `gameweek.html` | `gameweek.csv` | Puntuaciones de jugadores por jornada |
-| `ClassificationMister.html` | `clasificaciones.csv` | Clasificación general acumulada |
-| `mercado.html` | `mercado.csv` | Estado del mercado |
-| `quiniela.html` | `quiniela.csv` | Puntuaciones de quinielas |
-| `mi_equipo.html` | `jornadas.csv` | Alineaciones por jornada |
-| `MarketSubidasBajadas.html` | `subidasBajadas.csv` | Subidas y bajadas de valor |
+| `dataMister.html` | `ganancias` | Notificaciones de mercado (compras/ventas) |
+| `gameweek.html` | `gameweek` | Puntuaciones de jugadores por jornada |
+| `ClassificationMister.html` | `clasificaciones` | Clasificación general acumulada |
+| `mercado.html` | `mercado` | Estado del mercado |
+| `quiniela.html` | `quiniela` | Puntuaciones de quinielas |
+| `mi_equipo.html` | `jornadas` | Alineaciones por jornada |
+| `MarketSubidasBajadas.html` | `subidasBajadas` | Subidas y bajadas de valor |
 
 ---
 

@@ -14,10 +14,13 @@
 
 === "En detalle"
     1. **Scraping** — Extrae datos del HTML de Mister Fantasy (clasificación, jornadas, mercado, quinielas)
-    2. **Procesado** — Limpia y normaliza los CSVs extraídos
+    2. **Procesado** — Limpia y normaliza los datos extraídos
     3. **Periódico IA** — Genera una portada sensacionalista con multi-agentes LLM + fotos automáticas
     4. **Dashboards PDF** — Informes mensuales visuales por manager
     5. **Web App** — Estadísticas en tiempo real accesibles desde el navegador
+
+!!! info "Persistencia por temporada"
+    Los datos procesados viven en `data/mister.db` (SQLite), no en CSVs sueltos. Cada tabla lleva una columna `temporada`, así que varias temporadas conviven en la misma base de datos sin que la numeración de `jornada` colisione entre una y otra. La temporada activa se define en `config/config.yaml -> season.current`. Ver [ADR-005](adr/005-sqlite-temporada-activa.md).
 
 ---
 
@@ -26,8 +29,8 @@
 ```mermaid
 graph TD
     A[🌐 HTML Mister Fantasy] -->|Playwright scraper| B[data/raw/*.html]
-    B -->|run_extraction.py| C[data/processed/*.csv]
-    C -->|run_preprocess.py| D[CSVs limpios]
+    B -->|run_extraction.py| C[(data/mister.db)]
+    C -->|run_preprocess.py| D[Tablas limpias, por temporada]
 
     D -->|run_newspaper.py| E{🤖 Multi-agente LLM}
     E -->|WriterAgent · Gemini 2.5 Flash| F[newspaper/json/*.json]
@@ -78,7 +81,7 @@ python scripts/regenerate_app_data.py
 | Validación esquemas | Pydantic v2 |
 | Visualización | matplotlib · reportlab |
 | Web App | HTML/CSS/JS estático |
-| Tests | pytest · 140 tests |
+| Tests | pytest · 202 tests |
 
 ---
 
@@ -89,7 +92,7 @@ python scripts/regenerate_app_data.py
 - [x] CLIP zero-shot para fotos de jugadores
 - [x] Sistema RAG local para memoria histórica
 - [x] Web App estática
-- [x] Suite de 140 tests (unitarios + integración)
+- [x] Suite de 202 tests (unitarios + integración) — ver [fallos conocidos](tests.md#fallos-conocidos-no-relacionados-con-el-código) por datos de temporada aún no generados
 - [x] Documentación completa
 - [ ] Cache de fotos (no re-buscar si ya existe)
 - [ ] Retry automático en errores de API

@@ -1,6 +1,9 @@
 # Preprocesado
 
-Limpia y normaliza los CSVs brutos generados en la extracción.
+Limpia y normaliza los datos brutos generados en la extracción.
+
+!!! info "Dónde acaban los datos"
+    Al igual que en [Extracción](extraction.md), estas tablas viven en `data/mister.db`, particionadas por `temporada` — los nombres `*.csv` de abajo son el dataset lógico (mismo esquema de columnas que antes de la migración a SQLite), no ficheros físicos. Ver [ADR-005](../adr/005-sqlite-temporada-activa.md).
 
 ---
 

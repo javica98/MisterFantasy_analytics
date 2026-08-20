@@ -19,7 +19,18 @@ Subproyecto de Machine Learning para predecir el comportamiento del mercado de j
 
 ## Dataset de entrada
 
-`data/processed/data_model.csv` — generado por `scripts/run_modelprocess.py`
+Tabla `data_model` de `data/mister.db` (generada por `scripts/run_modelprocess.py`, temporada `2025-26`), exportada a CSV para que los notebooks la lean con `pandas.read_csv` normal:
+
+```bash
+python scripts/export_db_to_csv.py 2025-26
+# -> data/export/2025-26/data_model.csv
+```
+
+Los notebooks leen `../data/processed/data_model.csv` directamente (no pasan por `file_utils.py`/`db.py`), así que hay que copiar el export ahí antes de ejecutarlos:
+
+```bash
+cp data/export/2025-26/data_model.csv data/processed/data_model.csv
+```
 
 ## Dataset de salida
 

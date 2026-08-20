@@ -62,6 +62,7 @@ nav:
     - ADR-002 · Multi-agente Strands: adr/002-strands-multi-agente.md
     - ADR-003 · Pydantic v2 schema: adr/003-pydantic-v2-schema-validacion.md
     - ADR-004 · RAG local: adr/004-rag-memoria-periodico.md
+    - ADR-005 · SQLite por temporada: adr/005-sqlite-temporada-activa.md
 
 markdown_extensions:
   - admonition

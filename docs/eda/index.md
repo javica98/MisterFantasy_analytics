@@ -25,7 +25,14 @@ Dado que el mercado de la liga es competitivo y los buenos jugadores se van ráp
 
 ## Dataset
 
-**Fuente:** `data/processed/data_model.csv`
+**Fuente:** tabla `data_model` de `data/mister.db` (temporada `2025-26`), generada por `scripts/run_modelprocess.py`.
+
+!!! note "Los notebooks leen un CSV, no la BD"
+    Para ejecutarlos hay que exportar la tabla primero:
+    ```bash
+    python scripts/export_db_to_csv.py 2025-26
+    cp data/export/2025-26/data_model.csv data/processed/data_model.csv
+    ```
 
 | Característica | Valor |
 |---------------|-------|

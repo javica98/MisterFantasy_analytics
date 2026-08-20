@@ -63,7 +63,7 @@ Este es el contrato de datos entre el pipeline Python y la web app.
 ```jsonc
 {
   "name": "Sotano League",
-  "season": "Temporada 2026",
+  "season": "2026-27",           // ← config.yaml -> season.current, no un string fijo en código
   "dateRange": "2025-09-15 · 2026-06-09",
   "standings": [                          // Clasificación general
     { "rank": 1, "manager": "Dani", "points": 1450 }
@@ -168,4 +168,4 @@ Diccionario plano `{ nombre: url_foto }` para mostrar fotos de jugadores:
 }
 ```
 
-Contiene ~557 jugadores extraídos de `data/processed/jugadores.csv`.
+Contiene ~557 jugadores extraídos de la tabla `jugadores` (`data/mister.db`, temporada activa).

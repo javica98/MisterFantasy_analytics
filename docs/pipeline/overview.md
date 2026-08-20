@@ -1,6 +1,8 @@
 # Visión general del pipeline
 
-El sistema tiene **dos pipelines independientes** que comparten los mismos CSVs procesados como fuente de datos.
+El sistema tiene **dos pipelines independientes** que comparten las mismas tablas procesadas como fuente de datos.
+
+> **Persistencia**: desde la migración a SQLite, estas tablas viven en `data/mister.db` (particionado por columna `temporada`), no en archivos CSV sueltos. Los diagramas de abajo mantienen los nombres `*.csv` porque describen el mismo dataset lógico (mismo esquema de columnas); físicamente se leen/escriben vía `safe_read_csv`/`safe_save_csv` (`src/utils/file_utils.py`), que resuelven contra la BD y la temporada activa (`config.yaml -> season.current`) de forma transparente para el resto del pipeline. Ver [README.md](../../README.md#flujo-del-sistema) para el detalle.
 
 ---
 

@@ -31,6 +31,8 @@ pytest tests/ --cov=src --cov-report=term-missing
 tests/
 ├── conftest.py                    ← Fixtures compartidos (DataFrames de ejemplo)
 ├── test_config_loader.py          ← src/utils/config_loader.py
+├── test_db.py                     ← src/utils/db.py
+├── test_file_utils.py             ← src/utils/file_utils.py (routing CSV/BD)
 ├── test_generate_json.py          ← src/AI_newspaper/generate_json.py
 ├── test_generate_prompt.py        ← src/AI_newspaper/generate_prompt.py
 ├── test_scheme_validator.py       ← src/AI_newspaper/SchemeValidator.py
@@ -64,6 +66,26 @@ Tests destacados:
 - Carga correcta de `config.yaml`
 - `validate_env=False` no lanza error aunque falten API keys
 - `validate_env=True` lanza `EnvironmentError` con variables ausentes
+
+---
+
+### `test_db.py` — 13 tests
+Cubre `src/utils/db.py` contra un SQLite temporal (aislado de `data/mister.db` con `monkeypatch`).
+
+Tests destacados:
+- `read_table` de una tabla inexistente devuelve `DataFrame()` vacío (misma semántica que un CSV inexistente)
+- `write_table` filtra correctamente por `temporada` — escribir la 2026-27 no toca las filas de la 2025-26
+- `write_table` es idempotente: reejecutarlo con el mismo DataFrame no duplica filas
+- `known_tables()` deriva los nombres de `config.yaml -> paths.csv.*` y excluye `test.csv`
+
+---
+
+### `test_file_utils.py` — 5 tests
+Cubre el enrutado de `safe_read_csv`/`safe_save_csv` (`src/utils/file_utils.py`) hacia la BD o hacia CSV en disco.
+
+Tests destacados:
+- Una ruta que corresponde a una tabla conocida se lee/escribe en la BD aunque el fichero no exista en disco
+- Una ruta desconocida (ej. `test.csv`) sigue usando el CSV legacy en disco
 
 ---
 
@@ -130,7 +152,18 @@ Pipeline de punta a punta, organizado en 4 tramos.
 | Tramo 3 | 8 | Sistema RAG con modelo de embeddings falso |
 | Tramo 4 | 2 | Pipeline completo encadenado + idempotencia |
 
-> **Nota:** Los tests de Tramo 1 leen los CSVs reales de `data/processed/`. Si los ficheros no existen, estos tests se saltan automáticamente.
+> **Nota:** Los tests de Tramo 1 leen `data/processed/*.csv` directamente con `pd.read_csv` (no pasan por `safe_read_csv`/`db.py`, así que no ven los datos migrados a `data/mister.db`). Fallan si esos CSVs no existen o están vacíos — hoy es el caso de la temporada activa (`clasificaciones.csv`/`quiniela.csv` aún no se han generado esta temporada), lo que explica varios de los fallos conocidos de la sección siguiente. Para que pasen, exporta la temporada que quieras probar: `python scripts/export_db_to_csv.py 2025-26 data/processed` (o cambia `season.current` a una temporada con datos completos antes de exportar).
+
+---
+
+## Fallos conocidos (no relacionados con el código)
+
+A fecha de esta migración, `pytest tests/ -q` da **202 tests, 190 pasan, 12 fallan**. Los 12 son siempre los mismos y no son un bug: dependen de que `data/processed/clasificaciones.csv`/`quiniela.csv` tengan datos, y la temporada activa (`2026-27`) todavía no ha pasado por esa parte del pipeline de extracción. Afectan a:
+
+- `test_integration_pipeline.py` (11 tests — Tramo 1 y los que dependen de sus fixtures)
+- `test_image_agent.py::test_extrae_success_true_de_la_respuesta` (no relacionado con datos de temporada ni con esta migración — ya fallaba antes, pendiente de investigar aparte)
+
+Para verificarlos localmente con datos completos: `python scripts/export_db_to_csv.py 2025-26 data/processed` y vuelve a correr `pytest`.
 
 ---
 

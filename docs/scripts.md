@@ -8,6 +8,12 @@ python scripts/<nombre>.py
 
 ---
 
+## Persistencia de datos
+
+Desde la migración a SQLite ([ADR-005](adr/005-sqlite-temporada-activa.md)), los datos de temporada (gameweek, clasificaciones, mercado, jornadas, ganancias, jugadores...) viven en `data/mister.db`, particionados por columna `temporada` (`config.yaml -> season.current` define cuál está activa). Los scripts de abajo que antes "generaban CSVs" siguen llamando a `safe_read_csv`/`safe_save_csv` (`src/utils/file_utils.py`) exactamente igual que antes — es esa capa la que ahora resuelve contra la BD, sin que el script lo note.
+
+---
+
 ## Pipeline principal (orden de ejecución)
 
 ```
@@ -25,19 +31,19 @@ python scripts/<nombre>.py
 ## Descripción detallada
 
 ### `run_extraction.py`
-Parsea los HTMLs de `data/raw/` y genera los CSVs en `data/processed/`.
+Parsea los HTMLs de `data/raw/` y guarda los datos en `data/mister.db` (temporada activa).
 
-- **Input:** `data/raw/*.html` (descargados manualmente de Mister Fantasy)
-- **Output:** `data/processed/gameweek.csv`, `clasificaciones.csv`, `quiniela.csv`, `ganancias.csv`, etc.
+- **Input:** `data/raw/*.html` (descargados por el scraper de Playwright)
+- **Output:** tablas `gameweek`, `clasificaciones`, `quiniela`, `ganancias`, `mercado`, `jornadas`, `subidasBajadas`
 - **Requiere:** HTMLs actualizados en `data/raw/`
 
 ---
 
 ### `run_preprocess.py`
-Limpia y normaliza los CSVs brutos. Aplica filtros, merges y calcula ganancias netas.
+Limpia y normaliza los datos brutos. Aplica filtros, merges y calcula ganancias netas.
 
-- **Input:** CSVs de `data/processed/` (brutos)
-- **Output:** `ganancias_clean.csv`, `ganancias_jugador.csv`, `clausulas_acuerdos.csv`
+- **Input:** tabla `ganancias` (temporada activa)
+- **Output:** tablas `ganancias_clean`, `ganancias_jugador`, `clausulas_acuerdos`
 - **No requiere** conexión ni API keys
 
 ---
@@ -45,7 +51,7 @@ Limpia y normaliza los CSVs brutos. Aplica filtros, merges y calcula ganancias n
 ### `run_newspaper.py`
 Pipeline completo de generación de periódico IA para la última jornada disponible.
 
-1. Carga CSVs procesados
+1. Carga datos procesados (temporada activa)
 2. Lanza `OrchestratorAgent` (Groq) que coordina:
    - `WriterAgent` (Gemini 2.5 Flash) → genera el JSON del periódico
    - `ImageAgent` (Bing + CLIP) → descarga fotos de jugadores
@@ -58,17 +64,22 @@ Pipeline completo de generación de periódico IA para la última jornada dispon
 ---
 
 ### `regenerate_app_data.py`
-Regenera `web/data/app-data.json` a partir de los CSVs procesados y los JSONs de periódico.
+Regenera `web/data/app-data.json` a partir de los datos procesados (temporada activa) y los JSONs de periódico.
 
-- **Input:** CSVs procesados + `newspaper/json/articles/` + `newspaper/json/cards/`
-- **Output:** `web/data/app-data.json`
+- **Input:** tablas `gameweek`, `clasificaciones`, `quiniela`, `ganancias_clean`, `jugadores` + `newspaper/json/articles/` + `newspaper/json/cards/`
+- **Output:** `web/data/app-data.json` (`league.season` sale de `config.yaml -> season.current`)
 - **No requiere** conexión ni API keys
-- Ejecutar después de `run_newspaper.py` o cuando cambien los CSVs
+- Ejecutar después de `run_newspaper.py` o cuando cambien los datos
 
 ---
 
-### `run_dashboard.py` / `run_monthly_dashboard.py`
-Genera PDFs de estadísticas por manager.
+### `run_dashboard.py`
+Levanta un dashboard **interactivo** (Dash/Flask) en `http://127.0.0.1:8050` con estadísticas por manager. Proceso de servidor — no termina solo, hay que pararlo con Ctrl+C.
+
+- **No requiere** API keys
+
+### `run_monthly_dashboard.py`
+Genera el informe mensual en PDF (estático, un solo proceso que termina).
 
 - **Output:** `dashboards/reports/report_YYYY-MM-DD.pdf`
 - **No requiere** API keys
@@ -88,13 +99,44 @@ Añade nuevas memorias al sistema RAG y regenera el índice.
 
 ---
 
+### `manage_memories.py`
+CLI de mantenimiento para `newspaper/memory/memories.jsonl`: listar (con filtros por
+categoría/manager/jugador o búsqueda de texto), ver el detalle de una memoria y
+borrar las incorrectas sin tener que editar el JSONL a mano.
+
+```bash
+python scripts/manage_memories.py list --category "MVP de la jornada"
+python scripts/manage_memories.py show <id>
+python scripts/manage_memories.py delete <id> [<id> ...] --rebuild-index
+```
+
+- **No requiere** API keys (solo `--rebuild-index` necesita `sentence-transformers`)
+
+---
+
 ### `run_modelprocess.py`
-Genera `data/processed/data_model.csv` con features para análisis predictivo.
+Genera la tabla `data_model` (features para análisis predictivo, ver [Fantasy Bidding Intelligence](eda/index.md)) para la temporada activa.
 
 ---
 
 ### `run_players_db.py`
-Actualiza `data/processed/jugadores.csv` con jugadores y sus fotos desde el HTML de Mister Fantasy.
+Actualiza la tabla `jugadores` (nombre, posición, club, foto) desde el HTML de Mister Fantasy (`data/raw/players_raw.html`), de forma incremental.
+
+---
+
+### `migrate_csv_to_sqlite.py`
+Migración única: importa `archive/temporada_2025-26/data/processed/*.csv` (temporada `"2025-26"`) y `data/processed/*.csv` (temporada activa) a `data/mister.db`. Idempotente — se puede volver a ejecutar sin duplicar filas. Ya no hace falta para temporadas futuras (basta con cambiar `season.current`), solo se documenta como referencia de la migración inicial.
+
+---
+
+### `export_db_to_csv.py`
+Exporta las tablas de `data/mister.db` a CSV, filtradas por temporada, para inspección manual o para herramientas que solo leen CSV (ej. los notebooks de [Fantasy Bidding Intelligence](eda/index.md)). No forma parte del pipeline automático ni de CI.
+
+```bash
+python scripts/export_db_to_csv.py              # temporada activa -> data/export/<temporada>/
+python scripts/export_db_to_csv.py 2025-26       # temporada concreta
+python scripts/export_db_to_csv.py 2025-26 out/  # directorio de salida concreto
+```
 
 ---
 
