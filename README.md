@@ -24,9 +24,10 @@ graph TD
     B -->|run_extraction.py| C[(data/mister.db)]
     C -->|run_preprocess.py| D[Tablas limpias, por temporada]
 
-    D -->|run_newspaper.py| E{Multi-agente LLM}
+    D -->|run_newspaper.py| P[Portadas en paralelo: CLIP + Bing, con cache]
+    P --> G[newspaper/photos/*.jpg]
+    D -->|run_newspaper.py| E{OrchestratorAgent Groq}
     E -->|WriterAgent Gemini 2.5 Flash| F[newspaper/json/*.json]
-    E -->|ImageAgent CLIP + Bing| G[newspaper/photos/*.jpg]
     F & G -->|generate_pdf.py| H[newspaper/new/*.png]
 
     D -->|regenerate_app_data.py| I[web/data/app-data.json]
@@ -111,9 +112,11 @@ Ver [`scripts/README.md`](scripts/README.md) para la referencia completa de scri
 
 ---
 
-## Tests
+## Tests y linter
 
 ```bash
+pip install -r requirements-dev.txt   # añade ruff y pytest sobre requirements.txt
+
 # Todos los tests
 pytest tests/ -v
 
@@ -122,7 +125,12 @@ pytest tests/ -v -k "not integration"
 
 # Solo integración
 pytest tests/ -v -k "integration"
+
+# Lint (config en pyproject.toml)
+ruff check .
 ```
+
+Ver [`docs/tests.md`](docs/tests.md) para el detalle de cada fichero de test y los fallos conocidos.
 
 ---
 
@@ -142,6 +150,7 @@ pytest tests/ -v -k "integration"
 | Visualización | matplotlib, reportlab |
 | Web App | HTML/CSS/JS estático |
 | Tests | pytest |
+| Linter | ruff |
 
 ---
 

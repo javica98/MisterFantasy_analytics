@@ -3,7 +3,6 @@ import re
 import pandas as pd
 import logging
 from datetime import date
-from collections import Counter
 
 logger = logging.getLogger(__name__)
 

@@ -48,7 +48,7 @@ def extraer_jornadas(html: str) -> pd.DataFrame:
                     "jornada": jornada,
                     "detalles": detalles
                 })
-        
+
         logger.info(f"Extraídas {len(resultados)} jornadas correctamente.")
         return pd.DataFrame(resultados)
 

@@ -1,5 +1,5 @@
 from pydantic import BaseModel, Field, model_validator
-from typing import List, Literal, Optional, Union
+from typing import List, Literal, Optional
 
 TIPOS_CARD = Literal[
     "clasificacion",

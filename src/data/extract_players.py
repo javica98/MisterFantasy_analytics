@@ -74,7 +74,7 @@ def extraer_jugadores(html: str) -> pd.DataFrame:
                 "foto_url": foto_url,
             })
 
-        except Exception as e:
+        except Exception:
             continue
 
     df = pd.DataFrame(registros)

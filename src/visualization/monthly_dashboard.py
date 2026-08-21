@@ -1,5 +1,22 @@
 import pandas as pd
 
+
+def _top_n(df_mes, value_col, select_cols, rename_map, ascending=False, n=3):
+    """
+    Extrae las `n` filas con mayor (o menor, si ascending=True) valor en
+    `value_col`, lo formatea como "X.XXM€" y renombra columnas para mostrar
+    en el PDF. top3_clausulas/top3_fichajes/top3_ganancias repetían este
+    mismo patrón cambiando solo la columna de valor y el sentido del orden
+    (hallazgo WEB-07).
+    """
+    top = df_mes.sort_values(value_col, ascending=ascending).head(n)
+    top = top[select_cols].copy()
+    top[value_col] = top[value_col].astype(float).round(2)
+    top[value_col] = top.apply(lambda row: f"{row[value_col]:.2f}M€", axis=1)
+    top = top[select_cols].rename(columns=rename_map)
+    return top.reset_index(drop=True)
+
+
 def monthly_dashboard(df_jornadas: pd.DataFrame,
                       df_clas: pd.DataFrame,
                       df_clean: pd.DataFrame,
@@ -114,21 +131,11 @@ def monthly_dashboard(df_jornadas: pd.DataFrame,
     # 4️⃣ Top 3 cláusulas más caras
     # ========================
     def top3_clausulas(df_mes):
-        top3 = df_mes.sort_values("precio", ascending=False).head(3)
-        top3 = top3[["jugador", "de_equipo", "a_equipo", "precio"]].copy()
-        top3["precio"] = top3["precio"].astype(float).round(2)
-        top3["precio"] = top3.apply(
-            lambda row: f"{row['precio']:.2f}M€", axis=1
+        return _top_n(
+            df_mes, "precio", ["jugador", "de_equipo", "a_equipo", "precio"],
+            {"jugador": "Jugador", "de_equipo": "De", "a_equipo": "A", "precio": "€"},
+            ascending=False,
         )
-        top3 = top3[["jugador", "de_equipo", "a_equipo", "precio"]].rename(columns={
-            "jugador": "Jugador",
-            "de_equipo": "De",
-            "a_equipo": "A",
-            "precio": "€"
-        })
-            
-        top3 = top3.reset_index(drop=True)
-        return top3
     # ========================
     # 4  Fichajes top
     # ========================
@@ -140,22 +147,15 @@ def monthly_dashboard(df_jornadas: pd.DataFrame,
             (df["fecha"].dt.to_period("M") == ultimo_mes) &
             (df["subtype"] == "mercado")&
             (df["compra-venta"] == "compra")
-            
+
         ]
-        top3 = df_mes.sort_values("ganancias", ascending=True).head(3)
-        top3 = top3[["jugador", "equipo", "ganancias"]].copy()
-        top3["ganancias"] = top3["ganancias"].astype(float).round(2)
-        top3["ganancias"] = top3.apply(
-            lambda row: f"{row['ganancias']:.2f}M€", axis=1
+        # ascending=True: "ganancias" es negativo en las compras, así que el
+        # fichaje más caro es el valor más negativo (el primero al ordenar ascendente).
+        return _top_n(
+            df_mes, "ganancias", ["jugador", "equipo", "ganancias"],
+            {"jugador": "Jugador", "equipo": "Equipo", "ganancias": "€"},
+            ascending=True,
         )
-        
-        top3 = top3[["jugador", "equipo", "ganancias"]].rename(columns={
-            "jugador": "Jugador",
-            "equipo": "Equipo",
-            "ganancias": "€"
-        })
-        top3 = top3.reset_index(drop=True)
-        return top3
     # ========================
     # 4  Fichajes top
     # ========================
@@ -167,19 +167,11 @@ def monthly_dashboard(df_jornadas: pd.DataFrame,
             (df["fecha"].dt.to_period("M") == ultimo_mes)&
             (df["subtype"] == "mercado")
         ]
-        top3 = df_mes.sort_values("Diff", ascending=False).head(3)
-        top3 = top3[["jugador", "equipo", "Diff"]].copy()
-        top3["Diff"] = top3["Diff"].astype(float).round(2)
-        top3["Diff"] = top3.apply(
-            lambda row: f"{row['Diff']:.2f}M€", axis=1
+        return _top_n(
+            df_mes, "Diff", ["jugador", "equipo", "Diff"],
+            {"jugador": "Jugador", "equipo": "Equipo", "Diff": "€"},
+            ascending=False,
         )
-        top3 = top3[["jugador", "equipo", "Diff"]].rename(columns={
-            "jugador": "Jugador",
-            "equipo": "Equipo",
-            "Diff": "€"
-        })
-        top3 = top3.reset_index(drop=True)
-        return top3
     # ========================
     # Ejecutar submétodos
     # ========================
@@ -191,5 +183,5 @@ def monthly_dashboard(df_jornadas: pd.DataFrame,
     top3_gan = top3_ganancias(df_diff)
 
 
-    
+
     return clas_mensual,mejor_jornada,peor_jornada,tabla_clausulas,top3,top3_fich,top3_gan

@@ -4,7 +4,6 @@ Cubre: get_top_signings, get_top_sale, get_mvps, get_worst_player,
        get_red_cards, get_penalty_saves, get_own_goals,
        build_player_block, generate_prompts, build_final_prompt
 """
-import pytest
 
 from src.AI_newspaper.generate_prompt import (
     build_final_prompt,

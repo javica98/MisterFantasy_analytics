@@ -10,17 +10,38 @@ Cubren 4 tramos del pipeline, todos sin llamadas reales a APIs externas:
 """
 
 import json
-import tempfile
-from pathlib import Path
 from unittest.mock import MagicMock, patch
 
 import numpy as np
-import pandas as pd
 import pytest
+
+from src.utils.file_utils import safe_read_csv
 
 # ─────────────────────────────────────────────
 # Helpers compartidos
 # ─────────────────────────────────────────────
+
+
+@pytest.fixture
+def real_data():
+    """
+    Datos reales de la temporada activa, vía safe_read_csv (que resuelve
+    contra data/mister.db, no contra data/processed/*.csv directo).
+
+    Antes estos tests hacían pd.read_csv("data/processed/...") a pelo, así
+    que dejaron de ver ningún dato en cuanto la migración a SQLite hizo que
+    esos ficheros dejaran de ser la fuente de verdad (hallazgo WEB-04). Si
+    la temporada activa (config.yaml -> season.current) aún no tiene
+    clasificaciones/quinielas generadas, estos tests siguen fallando — pero
+    ahora por un motivo real (falta ese dato en la BD), no por leer el sitio
+    equivocado. Ver docs/tests.md.
+    """
+    return {
+        "gameweek": safe_read_csv("data/processed/gameweek.csv"),
+        "ganancias_clean": safe_read_csv("data/processed/ganancias_clean.csv"),
+        "clasificaciones": safe_read_csv("data/processed/clasificaciones.csv"),
+        "quiniela": safe_read_csv("data/processed/quiniela.csv"),
+    }
 
 FAKE_CARDS = {
     "cards": [
@@ -68,15 +89,15 @@ class TestDataPipeline:
     No llama a ninguna API externa.
     """
 
-    def test_cadena_completa_desde_csvs_reales(self):
-        """El pipeline de datos produce un prompt no vacío a partir de los CSVs reales."""
+    def test_cadena_completa_desde_csvs_reales(self, real_data):
+        """El pipeline de datos produce un prompt no vacío a partir de los datos reales."""
         from src.AI_newspaper.generate_json import generate_json
         from src.AI_newspaper.generate_prompt import build_final_prompt, generate_prompts
 
-        df_gw = pd.read_csv("data/processed/gameweek.csv")
-        df_clean = pd.read_csv("data/processed/ganancias_clean.csv")
-        df_clas = pd.read_csv("data/processed/clasificaciones.csv")
-        df_quin = pd.read_csv("data/processed/quiniela.csv")
+        df_gw = real_data["gameweek"]
+        df_clean = real_data["ganancias_clean"]
+        df_clas = real_data["clasificaciones"]
+        df_quin = real_data["quiniela"]
         df_transfers = df_clean[df_clean["type"] == "transfer"]
 
         # Paso 1: generar JSON
@@ -97,14 +118,14 @@ class TestDataPipeline:
         assert "cards" in prompt_text
         assert "SOTANO LEAGUE" in prompt_text
 
-    def test_equipo_jugador_siempre_es_string(self):
+    def test_equipo_jugador_siempre_es_string(self, real_data):
         """Ningún equipo_jugador debe llegar como número al JSON."""
         from src.AI_newspaper.generate_json import generate_json
 
-        df_gw = pd.read_csv("data/processed/gameweek.csv")
-        df_clean = pd.read_csv("data/processed/ganancias_clean.csv")
-        df_clas = pd.read_csv("data/processed/clasificaciones.csv")
-        df_quin = pd.read_csv("data/processed/quiniela.csv")
+        df_gw = real_data["gameweek"]
+        df_clean = real_data["ganancias_clean"]
+        df_clas = real_data["clasificaciones"]
+        df_quin = real_data["quiniela"]
         df_transfers = df_clean[df_clean["type"] == "transfer"]
 
         events = generate_json(365, df_transfers, df_gw, df_clas, df_quin)
@@ -116,14 +137,14 @@ class TestDataPipeline:
             assert isinstance(g["equipo_jugador"], str), \
                 f"equipo_jugador numerico en gameweek: {g['equipo_jugador']}"
 
-    def test_posicion_siempre_es_string(self):
+    def test_posicion_siempre_es_string(self, real_data):
         """La posición debe resolverse siempre a un nombre, nunca a número."""
         from src.AI_newspaper.generate_json import generate_json
 
-        df_gw = pd.read_csv("data/processed/gameweek.csv")
-        df_clean = pd.read_csv("data/processed/ganancias_clean.csv")
-        df_clas = pd.read_csv("data/processed/clasificaciones.csv")
-        df_quin = pd.read_csv("data/processed/quiniela.csv")
+        df_gw = real_data["gameweek"]
+        df_clean = real_data["ganancias_clean"]
+        df_clas = real_data["clasificaciones"]
+        df_quin = real_data["quiniela"]
         df_transfers = df_clean[df_clean["type"] == "transfer"]
 
         events = generate_json(365, df_transfers, df_gw, df_clas, df_quin)
@@ -131,29 +152,29 @@ class TestDataPipeline:
             assert isinstance(g["posicion"], str), \
                 f"posicion no resuelta: {g['posicion']}"
 
-    def test_clasificacion_contiene_todos_los_managers(self):
+    def test_clasificacion_contiene_todos_los_managers(self, real_data):
         """La clasificación general debe incluir los 9 managers de la liga."""
         from src.AI_newspaper.generate_json import generate_json
 
-        df_gw = pd.read_csv("data/processed/gameweek.csv")
-        df_clean = pd.read_csv("data/processed/ganancias_clean.csv")
-        df_clas = pd.read_csv("data/processed/clasificaciones.csv")
-        df_quin = pd.read_csv("data/processed/quiniela.csv")
+        df_gw = real_data["gameweek"]
+        df_clean = real_data["ganancias_clean"]
+        df_clas = real_data["clasificaciones"]
+        df_quin = real_data["quiniela"]
         df_transfers = df_clean[df_clean["type"] == "transfer"]
 
         events = generate_json(365, df_transfers, df_gw, df_clas, df_quin)
         n_managers = len(events["clasificacion"]["general"])
         assert n_managers == 9, f"Se esperaban 9 managers, hay {n_managers}"
 
-    def test_prompt_incluye_nombres_de_jugadores_reales(self):
-        """El prompt final debe contener jugadores reales del CSV."""
+    def test_prompt_incluye_nombres_de_jugadores_reales(self, real_data):
+        """El prompt final debe contener jugadores reales de los datos."""
         from src.AI_newspaper.generate_json import generate_json
         from src.AI_newspaper.generate_prompt import build_final_prompt, generate_prompts
 
-        df_gw = pd.read_csv("data/processed/gameweek.csv")
-        df_clean = pd.read_csv("data/processed/ganancias_clean.csv")
-        df_clas = pd.read_csv("data/processed/clasificaciones.csv")
-        df_quin = pd.read_csv("data/processed/quiniela.csv")
+        df_gw = real_data["gameweek"]
+        df_clean = real_data["ganancias_clean"]
+        df_clas = real_data["clasificaciones"]
+        df_quin = real_data["quiniela"]
         df_transfers = df_clean[df_clean["type"] == "transfer"]
 
         events = generate_json(365, df_transfers, df_gw, df_clas, df_quin)
@@ -186,7 +207,7 @@ class TestAIPipeline:
         from src.agents.orchestrator_agent import run_orchestrator
 
         with patch("src.agents.orchestrator_agent.run_writer_agent", return_value=FAKE_CARDS), \
-             patch("src.agents.orchestrator_agent.run_image_agent", return_value=True), \
+             patch("src.agents.orchestrator_agent.run_image_pipeline", return_value=True), \
              patch("src.agents.orchestrator_agent.Agent") as mock_agent_cls:
 
             # Simular que Groq llama a run_writer y devuelve el JSON en su respuesta
@@ -222,7 +243,7 @@ class TestAIPipeline:
             return FAKE_CARDS
 
         with patch("src.agents.orchestrator_agent.run_writer_agent", side_effect=fake_run_writer), \
-             patch("src.agents.orchestrator_agent.run_image_agent", return_value=True), \
+             patch("src.agents.orchestrator_agent.run_image_pipeline", return_value=True), \
              patch("src.agents.orchestrator_agent.Agent") as mock_agent_cls:
 
             # Simular que Groq responde en texto plano (sin JSON de cards)
@@ -253,7 +274,7 @@ class TestAIPipeline:
         from src.agents.orchestrator_agent import run_orchestrator
 
         with patch("src.agents.orchestrator_agent.run_writer_agent", return_value=None), \
-             patch("src.agents.orchestrator_agent.run_image_agent", return_value=False), \
+             patch("src.agents.orchestrator_agent.run_image_pipeline", return_value=False), \
              patch("src.agents.orchestrator_agent.Agent") as mock_agent_cls:
 
             mock_instance = MagicMock()
@@ -276,7 +297,7 @@ class TestAIPipeline:
         from src.AI_newspaper.SchemeValidator import FinalJSON
 
         with patch("src.agents.orchestrator_agent.run_writer_agent", return_value=FAKE_CARDS), \
-             patch("src.agents.orchestrator_agent.run_image_agent", return_value=True), \
+             patch("src.agents.orchestrator_agent.run_image_pipeline", return_value=True), \
              patch("src.agents.orchestrator_agent.Agent") as mock_agent_cls:
 
             mock_instance = MagicMock()
@@ -324,10 +345,11 @@ class TestAIPipeline:
         assert kwargs.get("structured_output_model") is FinalJSON
 
     def test_writer_agent_devuelve_none_si_la_invocacion_falla(self):
-        """Si la invocación del agente lanza una excepción, se devuelve None."""
+        """Si la invocación del agente falla en todos los intentos, se devuelve None."""
         from src.agents.writer_agent import run_writer_agent
 
-        with patch("src.agents.writer_agent.Agent") as mock_agent_cls:
+        with patch("src.agents.writer_agent.Agent") as mock_agent_cls, \
+             patch("src.agents.writer_agent.time.sleep"):
             mock_instance = MagicMock()
             mock_instance.side_effect = Exception("fallo de invocación")
             mock_agent_cls.return_value = mock_instance
@@ -335,12 +357,14 @@ class TestAIPipeline:
             result = run_writer_agent("prompt de prueba")
 
         assert result is None
+        assert mock_instance.call_count == 3  # hallazgo IA-08: reintenta en vez de rendirse al primer fallo
 
     def test_writer_agent_devuelve_none_si_no_hay_structured_output(self):
-        """Si el agente responde pero no produce structured_output, se devuelve None."""
+        """Si el agente responde pero no produce structured_output en ningún intento, se devuelve None."""
         from src.agents.writer_agent import run_writer_agent
 
-        with patch("src.agents.writer_agent.Agent") as mock_agent_cls:
+        with patch("src.agents.writer_agent.Agent") as mock_agent_cls, \
+             patch("src.agents.writer_agent.time.sleep"):
             mock_instance = MagicMock()
             mock_instance.return_value = MagicMock(structured_output=None)
             mock_agent_cls.return_value = mock_instance
@@ -348,6 +372,30 @@ class TestAIPipeline:
             result = run_writer_agent("prompt de prueba")
 
         assert result is None
+        assert mock_instance.call_count == 3
+
+    def test_writer_agent_reintenta_y_tiene_exito_en_el_segundo_intento(self):
+        """Si el primer intento falla pero el segundo produce cards válidas, no sigue reintentando."""
+        from src.agents.writer_agent import run_writer_agent
+        from src.AI_newspaper.SchemeValidator import FinalJSON
+
+        fake_result = FinalJSON(**FAKE_CARDS)
+
+        with patch("src.agents.writer_agent.Agent") as mock_agent_cls, \
+             patch("src.agents.writer_agent.time.sleep") as mock_sleep:
+            mock_instance = MagicMock()
+            mock_instance.side_effect = [
+                Exception("429 rate limited"),
+                MagicMock(structured_output=fake_result),
+            ]
+            mock_agent_cls.return_value = mock_instance
+
+            result = run_writer_agent("prompt de prueba")
+
+        assert result is not None
+        assert len(result["cards"]) == len(FAKE_CARDS["cards"])
+        assert mock_instance.call_count == 2
+        mock_sleep.assert_called_once()  # solo esperó entre el intento 1 y el 2
 
 
 # ─────────────────────────────────────────────
@@ -502,9 +550,9 @@ class TestFullPipeline:
     Todas las llamadas a APIs externas mockeadas.
     """
 
-    def test_pipeline_datos_to_memorias(self, tmp_path, monkeypatch):
+    def test_pipeline_datos_to_memorias(self, tmp_path, monkeypatch, real_data):
         """
-        CSV → JSON → prompt → (AI mockeada) → cards → memorias → embeddings.
+        Datos reales → JSON → prompt → (AI mockeada) → cards → memorias → embeddings.
         Verifica que toda la cadena funciona de punta a punta.
         """
         from src.AI_newspaper.generate_json import generate_json
@@ -515,10 +563,10 @@ class TestFullPipeline:
         from src.memory.memory_store import upsert_memories
 
         # ── Tramo 1: datos ──────────────────────────────────────────────
-        df_gw = pd.read_csv("data/processed/gameweek.csv")
-        df_clean = pd.read_csv("data/processed/ganancias_clean.csv")
-        df_clas = pd.read_csv("data/processed/clasificaciones.csv")
-        df_quin = pd.read_csv("data/processed/quiniela.csv")
+        df_gw = real_data["gameweek"]
+        df_clean = real_data["ganancias_clean"]
+        df_clas = real_data["clasificaciones"]
+        df_quin = real_data["quiniela"]
         df_transfers = df_clean[df_clean["type"] == "transfer"]
 
         events = generate_json(365, df_transfers, df_gw, df_clas, df_quin)
@@ -530,7 +578,7 @@ class TestFullPipeline:
 
         # ── Tramo 2: AI mockeada ────────────────────────────────────────
         with patch("src.agents.orchestrator_agent.run_writer_agent", return_value=FAKE_CARDS), \
-             patch("src.agents.orchestrator_agent.run_image_agent", return_value=True), \
+             patch("src.agents.orchestrator_agent.run_image_pipeline", return_value=True), \
              patch("src.agents.orchestrator_agent.Agent") as mock_agent_cls:
 
             mock_instance = MagicMock()
@@ -584,21 +632,20 @@ class TestFullPipeline:
         validated = FinalJSON(**cards)
         assert len(validated.cards) > 0
 
-    def test_pipeline_es_idempotente(self, tmp_path, monkeypatch):
+    def test_pipeline_es_idempotente(self, tmp_path, monkeypatch, real_data):
         """
         Ejecutar el pipeline dos veces con los mismos datos no duplica memorias
         ni genera errores.
         """
         from src.AI_newspaper.generate_json import generate_json
-        from src.AI_newspaper.generate_prompt import build_final_prompt, generate_prompts
         from src.memory.embedding_store import rebuild_embedding_index
         from src.memory.memory_builder import build_memories
         from src.memory.memory_store import upsert_memories
 
-        df_gw = pd.read_csv("data/processed/gameweek.csv")
-        df_clean = pd.read_csv("data/processed/ganancias_clean.csv")
-        df_clas = pd.read_csv("data/processed/clasificaciones.csv")
-        df_quin = pd.read_csv("data/processed/quiniela.csv")
+        df_gw = real_data["gameweek"]
+        df_clean = real_data["ganancias_clean"]
+        df_clas = real_data["clasificaciones"]
+        df_quin = real_data["quiniela"]
         df_transfers = df_clean[df_clean["type"] == "transfer"]
 
         events = generate_json(365, df_transfers, df_gw, df_clas, df_quin)

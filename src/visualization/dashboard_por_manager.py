@@ -131,7 +131,7 @@ def dashboard_por_manager(df: pd.DataFrame,df_clas: pd.DataFrame,df_diff: pd.Dat
                 html.H2("💸 Flujo de cláusulas entre managers"),
                 tabla_clausulas_dash
             ])
-    
+
    # === CALLBACK PRINCIPAL PARA ACTUALIZAR TODO EL DASHBOARD POR EQUIPO ===
     @app.callback(
         [
@@ -212,7 +212,7 @@ def dashboard_por_manager(df: pd.DataFrame,df_clas: pd.DataFrame,df_diff: pd.Dat
             fig_balance.add_vline(x=mark, line=dict(color="gray", dash="dot"), opacity=0.3)
         fig_balance.update_xaxes(autorange="reversed")
         fig_balance.update_layout(template="plotly_white", title=f"Evolución balance - {equipo}")
-    
+
 
         # === 💹 GRÁFICO DE VALOR DEL EQUIPO ===
         df_manager = df_clas[df_clas["nombre"] == equipo].copy()

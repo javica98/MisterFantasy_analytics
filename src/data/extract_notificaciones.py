@@ -67,7 +67,7 @@ def extraer_notificaciones(html: str) -> pd.DataFrame:
                 items = ul.find_all("li")
                 if not items:
                     continue
-                for item in items:    
+                for item in items:
                     title_div = item.find("div", class_="title")
                     price_div = item.find("div", class_="price")
                     team_div = item.find("div", class_="icons")
@@ -126,7 +126,7 @@ def extraer_notificaciones(html: str) -> pd.DataFrame:
                                 partes = texto.split("›")
                                 dinero = partes[-1].strip() if len(partes) > 1 else None
                                 id_puja = generar_id_transfer(jugador, de_equipo, nombre, dinero)
-                                
+
                                 notificaciones.append({
                                     "type": "transfer",
                                     "subtype": "Puja",

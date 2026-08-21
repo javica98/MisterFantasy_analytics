@@ -1,0 +1,22 @@
+[tool.ruff]
+line-length = 120
+target-version = "py311"
+# Los notebooks de eda/ tienen su propio idioma ("explica, luego importa"
+# en la misma celda) — no forma parte del código de producción.
+exclude = ["*.ipynb"]
+
+[tool.ruff.lint]
+# Selección modesta a propósito (hallazgo WEB-03): el repo tiene deuda de
+# estilo acumulada de antes de tener linter, así que se empieza por reglas
+# que señalan errores reales (F = pyflakes: imports/variables sin usar,
+# nombres indefinidos...) en vez de activar todo el catálogo de una vez y
+# generar cientos de avisos irrelevantes de golpe.
+select = ["E", "F", "W"]
+ignore = [
+    "E501",  # línea larga — ya limitado por line-length, no bloquea todavía
+]
+
+[tool.ruff.lint.per-file-ignores]
+# Los scripts hacen sys.path.insert(...) antes de poder importar src.*, así
+# que sus imports de src no pueden ir al principio del fichero.
+"scripts/*.py" = ["E402"]

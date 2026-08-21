@@ -16,7 +16,7 @@ def transformar_detalles(valor):
         if match:
             return int(match.group(1))
     # Para todo lo demás
-    return 0.5    
+    return 0.5
 
 def procesar_model_data(csv_mercado, csv_subidasBajadas, csv_jornada, csv_notificaciones_clean):
     # --- Normalizar fechas ---
@@ -24,7 +24,7 @@ def procesar_model_data(csv_mercado, csv_subidasBajadas, csv_jornada, csv_notifi
     csv_subidasBajadas["date"] = pd.to_datetime(csv_subidasBajadas["date"], errors="coerce")
     csv_jornada["date"] = pd.to_datetime(csv_jornada["date"], errors="coerce")
     csv_notificaciones_clean["fecha"] = pd.to_datetime(csv_notificaciones_clean["fecha"], errors="coerce")
-    
+
     # --- Normalizar nombres de jugadores ---
     csv_mercado["jugador"] = csv_mercado["jugador"].astype(str).str.strip().str.upper()
     csv_subidasBajadas["nombre"] = csv_subidasBajadas["nombre"].astype(str).str.strip().str.upper()

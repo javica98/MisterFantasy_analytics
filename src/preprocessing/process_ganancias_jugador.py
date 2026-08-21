@@ -1,5 +1,4 @@
 import pandas as pd
-import numpy as np
 
 def procesar_ganancias_jugador(df: pd.DataFrame) -> pd.DataFrame:
     """

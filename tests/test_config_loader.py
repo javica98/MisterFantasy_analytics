@@ -2,7 +2,6 @@
 Tests unitarios para src/utils/config_loader.py
 Cubre: get_base_dir, resolve_path, load_config (con env variables mockeadas)
 """
-import os
 from pathlib import Path
 from unittest.mock import patch
 

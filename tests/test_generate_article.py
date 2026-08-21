@@ -4,7 +4,6 @@ Cubre: retry con backoff exponencial ante rate limits (429) de Gemini.
 """
 from unittest.mock import MagicMock, patch
 
-import pytest
 from google.genai import errors as genai_errors
 
 from src.AI_newspaper.generate_article import generate_articles

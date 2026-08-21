@@ -72,7 +72,7 @@ def get_top_sale(transfers: List[dict]) -> dict | None:
     """
     ventas = [
         t for t in transfers
-        if t["subtype"] == "mercado" 
+        if t["subtype"] == "mercado"
     ]
     if not ventas:
         return None

@@ -29,7 +29,7 @@ def plot_balances_por_equipo(df_ganancias: pd.DataFrame, output_folder: str = "g
             ganancias = df_ganancias[(df_ganancias["equipo"] == equipo) & (df_ganancias["id"] == idx)]["ganancias"].sum()
             total += ganancias
             acumulado.append((idx, total))
-            if (idx in inicio_jornada) and (total < 0) and (total < error):    
+            if (idx in inicio_jornada) and (total < 0) and (total < error):
                 error = total
         ids = [x[0] for x in acumulado]
         balances = [x[1] for x in acumulado]

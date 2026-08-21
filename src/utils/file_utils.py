@@ -90,7 +90,7 @@ def safe_read_json(path: str):
     except Exception as e:
         logger.error(f"Error al leer JSON {path}: {e}")
         return {}
-    
+
 
 def safe_save_json(data: dict, path: str):
     """
@@ -144,7 +144,7 @@ def safe_save_text(data: str, path: str):
 
     except Exception as e:
         logger.error(f"Error al guardar archivo de texto {path}: {e}")
-       
+
 
 def safe_save_png(image: Image.Image, path: str):
     """

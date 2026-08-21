@@ -4,7 +4,7 @@ const state = {
   selectedManager: null,
   selectedIssue: 0,
   standingsTab: "league",
-  search: "",
+  usingFallback: false,
 };
 
 const app = document.querySelector("#app");
@@ -48,9 +48,15 @@ function injectWatermark() {
 async function loadData() {
   try {
     const response = await fetch("/web/data/app-data.json", { cache: "no-store" });
-    if (!response.ok) throw new Error("No app data");
+    if (!response.ok) throw new Error(`app-data.json respondió ${response.status}`);
     return await response.json();
   } catch (error) {
+    // Antes esto fallaba en silencio total: cualquier error (JSON corrupto,
+    // 500, CORS...) caía al mismo fallback sin dejar rastro de por qué
+    // (hallazgo WEB-09). Como mínimo lo dejamos en consola, y state.usingFallback
+    // hace que render() muestre un aviso discreto en vez de fingir que todo va bien.
+    console.warn("No se pudieron cargar los datos de la liga, usando fallback:", error);
+    state.usingFallback = true;
     return fallbackData;
   }
 }
@@ -66,19 +72,36 @@ function bindEvents() {
 }
 
 function render() {
-  navItems.forEach((item) => item.classList.toggle("active", item.dataset.view === state.view));
+  navItems.forEach((item) => {
+    const active = item.dataset.view === state.view;
+    item.classList.toggle("active", active);
+    item.setAttribute("aria-selected", String(active));
+  });
   const titles = { home: "Dashboard", stats: "Estadísticas", news: "Noticias" };
   pageTitle.textContent = titles[state.view];
 
   if (state.view === "home") renderHome();
   if (state.view === "stats") renderStats();
   if (state.view === "news") renderNews();
+
+  renderFallbackBanner();
+}
+
+function renderFallbackBanner() {
+  document.querySelector(".fallback-banner")?.remove();
+  if (!state.usingFallback) return;
+
+  const banner = document.createElement("div");
+  banner.className = "fallback-banner";
+  banner.setAttribute("role", "status");
+  banner.textContent = "No se pudieron cargar los datos de la liga — mostrando datos de respaldo.";
+  banner.style.cssText = "margin-bottom:16px;padding:10px 14px;border-radius:8px;background:rgba(255,183,126,0.12);border:1px solid rgba(255,183,126,0.3);color:var(--muted);font-size:13px";
+  app.insertBefore(banner, app.firstChild);
 }
 
 function renderHome() {
   const { league } = state.data;
-  const activeStandings = state.standingsTab === "pool" ? league.poolStandings : league.standings;
-  const standings = filterItems(activeStandings, ["manager"]);
+  const standings = (state.standingsTab === "pool" ? league.poolStandings : league.standings) || [];
   const tableTitle = state.standingsTab === "pool" ? "Clasificación de la porra" : "Clasificación de la liga";
   const pointsLabel = state.standingsTab === "pool" ? "Aciertos" : "Puntos";
   const headline = league.latestHeadline || {};
@@ -94,28 +117,13 @@ function renderHome() {
           <h2>${tableTitle}</h2>
         </div>
 
-        <div class="segmented">
-          <button class="${state.standingsTab === "league" ? "active" : ""}" data-standings-tab="league">Liga</button>
-          <button class="${state.standingsTab === "pool" ? "active" : ""}" data-standings-tab="pool">Porra</button>
+        <div class="segmented" role="tablist" aria-label="Tipo de clasificación">
+          <button class="${state.standingsTab === "league" ? "active" : ""}" data-standings-tab="league" role="tab" aria-selected="${state.standingsTab === "league"}">Liga</button>
+          <button class="${state.standingsTab === "pool" ? "active" : ""}" data-standings-tab="pool" role="tab" aria-selected="${state.standingsTab === "pool"}">Porra</button>
         </div>
       </div>
 
-      <div class="table">
-        <div class="table-row table-head">
-          <span>Rango</span><span>Manager</span><span>${pointsLabel}</span>
-        </div>
-
-        ${standings.map(row => `
-          <div class="table-row">
-            <span class="rank">#${row.rank ?? "?"}</span>
-            <div class="team-cell">
-              ${managerAvatar(row.manager)}
-              <strong>${escapeHtml(row.manager)}</strong>
-            </div>
-            <span class="data">${row.points ?? 0}</span>
-          </div>
-        `).join("") || emptyRow("Sin clasificación disponible")}
-      </div>
+      ${renderStandingsTable(standings, pointsLabel)}
     </section>
 
     <!-- COLUMNA DERECHA -->
@@ -272,7 +280,7 @@ function renderHome() {
 }
 
 function renderStats() {
-  const managers = filterItems(state.data.managers, ["name"]);
+  const managers = state.data.managers || [];
   const selected = state.data.managers.find(manager => manager.name === state.selectedManager) || managers[0] || state.data.managers[0];
   if (!selected) {
     app.innerHTML = `<div class="card pad"><h2>No hay datos de managers todavía</h2></div>`;
@@ -415,7 +423,7 @@ function renderStats() {
 }
 
 function renderNews() {
-  const issues = filterItems(state.data.news, ["title", "subtitle", "summary", "date"]);
+  const issues = state.data.news || [];
   const selected = issues[state.selectedIssue] || issues[0] || state.data.news[0];
   if (!selected) {
     app.innerHTML = `<div class="card pad"><h2>No hay noticias generadas todavía</h2><p class="muted">Cuando exista news_cards.json aparecerán aquí.</p></div>`;
@@ -427,9 +435,9 @@ function renderNews() {
       <aside class="card pad">
         <p class="label">Timeline</p>
         <h2>Jornadas</h2>
-        <div class="timeline">
+        <div class="timeline" role="tablist" aria-label="Ediciones del periódico">
           ${issues.map((issue, index) => `
-            <button class="issue-button ${issue.date === selected.date ? "active" : ""}" data-issue="${index}">
+            <button class="issue-button ${issue.date === selected.date ? "active" : ""}" data-issue="${index}" role="tab" aria-selected="${issue.date === selected.date}">
               <span class="chip">${escapeHtml(issue.date)}</span>
               <strong>${escapeHtml(issue.title)}</strong>
               <span class="muted">${escapeHtml(issue.subtitle)}</span>
@@ -478,22 +486,31 @@ function renderStandingsAtIssue(issue) {
       <div class="card-header">
         <h3>Clasificación en ${escapeHtml(issue.date)}</h3>
       </div>
-      <div class="table">
-        <div class="table-row table-head">
-          <span>Rango</span><span>Manager</span><span>Puntos</span>
-        </div>
-        ${rows.map(row => `
-          <div class="table-row">
-            <span class="rank">#${row.rank ?? "?"}</span>
-            <div class="team-cell">
-              ${managerAvatar(row.manager)}
-              <strong>${escapeHtml(row.manager)}</strong>
-            </div>
-            <span class="data">${row.points ?? 0}</span>
-          </div>
-        `).join("")}
-      </div>
+      ${renderStandingsTable(rows, "Puntos")}
     </section>
+  `;
+}
+
+// Compartida por renderHome() y renderStandingsAtIssue() — antes cada una
+// reescribía la misma tabla Rango/Manager/Puntos casi idéntica por su lado
+// (hallazgo WEB-08).
+function renderStandingsTable(rows, pointsLabel = "Puntos", emptyText = "Sin clasificación disponible") {
+  return `
+    <div class="table">
+      <div class="table-row table-head">
+        <span>Rango</span><span>Manager</span><span>${escapeHtml(pointsLabel)}</span>
+      </div>
+      ${(rows || []).map(row => `
+        <div class="table-row">
+          <span class="rank">#${row.rank ?? "?"}</span>
+          <div class="team-cell">
+            ${managerAvatar(row.manager)}
+            <strong>${escapeHtml(row.manager)}</strong>
+          </div>
+          <span class="data">${row.points ?? 0}</span>
+        </div>
+      `).join("") || emptyRow(emptyText)}
+    </div>
   `;
 }
 
@@ -538,13 +555,6 @@ function playerBox(label, player, tone) {
   `;
 }
 
-function filterItems(items, keys) {
-  if (!state.search) return items || [];
-  return (items || []).filter(item =>
-    keys.some(key => String(item[key] || "").toLowerCase().includes(state.search))
-  );
-}
-
 function emptyRow(text) {
   return `<div class="table-row"><span></span><strong>${escapeHtml(text)}</strong><span></span></div>`;
 }
@@ -559,21 +569,6 @@ function initials(name = "") {
     .join("")
     .toUpperCase() || "SL";
 }
-
-// Mapa de nombres de manager a su escudo en assets/
-const MANAGER_SHIELDS = {
-  "Chamacónicos":   "/assets/chamacónicos.png",
-  "Dani":           "/assets/dani.png",
-  "De la Guettir FC": "/assets/de_la_guettir_fc.png",
-  "Jotabetrbb":     "/assets/jotabetrbb.png",
-  "Juanba":         "/assets/juanba.png",
-  "Libre":          "/assets/libre.png",
-  "Los marinero":   "/assets/los_marinero.png",
-  "Maldinillo 💥":  "/assets/maldinillo.png",
-  "Maldinillo":     "/assets/maldinillo.png",
-  "MuchaSalsa":     "/assets/muchasalsa.png",
-  "muchasalsa":     "/assets/muchasalsa.png",
-};
 
 function playerAvatar(name, size = 36) {
   const map = state.data?.playersMap || {};

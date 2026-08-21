@@ -1,4 +1,3 @@
-import pandas as pd
 from datetime import datetime
 from reportlab.platypus import Table, TableStyle
 from reportlab.lib import colors
@@ -43,6 +42,32 @@ def df_to_wrapped_table_data(df, align="CENTER"):
         data.append([Paragraph(str(cell), style) for cell in row])
 
     return data
+
+
+# Estilo compartido por las 5 tablas del informe mensual — antes se repetía
+# literal 5 veces (una por tabla), con riesgo de dejar alguna desincronizada
+# si se cambiaba el color/fuente en las demás (hallazgo WEB-06).
+_TABLE_STYLE = TableStyle([
+    ('GRID', (0, 0), (-1, -1), 1, colors.black),
+    ('BACKGROUND', (0, 0), (-1, 0), colors.grey),
+    ('TEXTCOLOR', (0, 0), (-1, 0), colors.whitesmoke),
+    ('FONTNAME', (0, 0), (-1, 0), 'Helvetica-Bold'),
+    ('FONTNAME', (0, 1), (-1, -1), 'Helvetica'),
+])
+
+
+def crear_tabla_pdf(c, df, col_widths, position, align="CENTER"):
+    """Construye una Table de reportlab a partir de un DataFrame y la dibuja
+    en `position` (x, y) sobre el canvas `c`, con el estilo compartido."""
+    data = df_to_wrapped_table_data(df, align=align)
+    table = Table(data, colWidths=col_widths)
+    table.setStyle(_TABLE_STYLE)
+    x, y = position
+    table.wrapOn(c, 700, 200)
+    table.drawOn(c, x, y)
+    return table
+
+
 def create_report(dir_template,
                   dir_reports,
                   clas_mensual,
@@ -61,7 +86,7 @@ def create_report(dir_template,
                   table_top3_gan=(325, 100)):  # x, y de la tabla
     """
     Crea un PDF final fusionando una tabla sobre un template existente.
-    
+
     table_clas: tupla (x, y) indicando la posición exacta de la tabla
                   desde la esquina inferior izquierda
     """
@@ -77,39 +102,12 @@ def create_report(dir_template,
     # 1️⃣ Crear PDF temporal con canvas y tabla en coordenadas exactas
     # --------------------
     c = canvas.Canvas(pdf_temp_path, pagesize=A4)
-    
+
     #CLASIFICACION MENSUAL
-    data_clas = df_to_wrapped_table_data(clas_mensual)
-
-    t = Table(data_clas, colWidths=[25, 150, 50])
-    t.setStyle(TableStyle([
-        ('GRID', (0,0), (-1,-1), 1, colors.black),
-        ('BACKGROUND', (0,0), (-1,0), colors.grey),
-        ('TEXTCOLOR', (0,0), (-1,0), colors.whitesmoke),
-        ('FONTNAME', (0,0), (-1,0), 'Helvetica-Bold'),
-        ('FONTNAME', (0,1), (-1,-1), 'Helvetica'),
-    ]))
-
-    x, y = table_clas
-    t.wrapOn(c, 700, 200)
-    t.drawOn(c, x, y)
-
+    crear_tabla_pdf(c, clas_mensual, [25, 150, 50], table_clas)
 
     #TABLA CLAUSULAS
-    data_claus = df_to_wrapped_table_data(tabla_clausulas)
-
-    t2 = Table(data_claus, colWidths=[75, 75, 75])
-    t2.setStyle(TableStyle([
-        ('GRID', (0,0), (-1,-1), 1, colors.black),
-        ('BACKGROUND', (0,0), (-1,0), colors.grey),
-        ('TEXTCOLOR', (0,0), (-1,0), colors.whitesmoke),
-        ('FONTNAME', (0,0), (-1,0), 'Helvetica-Bold'),
-        ('FONTNAME', (0,1), (-1,-1), 'Helvetica'),
-    ]))
-
-    x, y = table_claus
-    t2.wrapOn(c, 700, 200)
-    t2.drawOn(c, x, y)
+    crear_tabla_pdf(c, tabla_clausulas, [75, 75, 75], table_claus)
 
     #MEJOR/PEOR
     escudo_path_mejor = manager_photo(mejor_jornada["equipo"],IMAGES_TEAMS_DIR,DEFAULT_TEAM_IMAGE)
@@ -139,55 +137,15 @@ def create_report(dir_template,
 
 
     #TOP CLAUSULAS
-    data_top3 = df_to_wrapped_table_data(top3)
-
-    t3 = Table(data_top3, colWidths=[70, 80, 80, 40])
-    t3.setStyle(TableStyle([
-        ('GRID', (0,0), (-1,-1), 1, colors.black),
-        ('BACKGROUND', (0,0), (-1,0), colors.grey),
-        ('TEXTCOLOR', (0,0), (-1,0), colors.whitesmoke),
-        ('FONTNAME', (0,0), (-1,0), 'Helvetica-Bold'),
-        ('FONTNAME', (0,1), (-1,-1), 'Helvetica'),
-    ]))
-
-    x, y = table_top3
-    t3.wrapOn(c, 700, 200)
-    t3.drawOn(c, x, y)
+    crear_tabla_pdf(c, top3, [70, 80, 80, 40], table_top3)
 
     #TOP FICHAJES
-    data_fich = df_to_wrapped_table_data(top3_fich)
-
-    t5 = Table(data_fich, colWidths=[100, 80, 45])
-    t5.setStyle(TableStyle([
-        ('GRID', (0,0), (-1,-1), 1, colors.black),
-        ('BACKGROUND', (0,0), (-1,0), colors.grey),
-        ('TEXTCOLOR', (0,0), (-1,0), colors.whitesmoke),
-        ('FONTNAME', (0,0), (-1,0), 'Helvetica-Bold'),
-        ('FONTNAME', (0,1), (-1,-1), 'Helvetica'),
-    ]))
-
-    x, y = table_top3_fich
-    t5.wrapOn(c, 700, 200)
-    t5.drawOn(c, x, y)
-
+    crear_tabla_pdf(c, top3_fich, [100, 80, 45], table_top3_fich)
 
     #TOP GANANCIAS
-    data_gan = df_to_wrapped_table_data(top3_gan)
+    crear_tabla_pdf(c, top3_gan, [100, 80, 45], table_top3_gan)
 
-    t4 = Table(data_gan, colWidths=[100, 80, 45])
-    t4.setStyle(TableStyle([
-        ('GRID', (0,0), (-1,-1), 1, colors.black),
-        ('BACKGROUND', (0,0), (-1,0), colors.grey),
-        ('TEXTCOLOR', (0,0), (-1,0), colors.whitesmoke),
-        ('FONTNAME', (0,0), (-1,0), 'Helvetica-Bold'),
-        ('FONTNAME', (0,1), (-1,-1), 'Helvetica'),
-    ]))
 
-    x, y = table_top3_gan
-    t4.wrapOn(c, 700, 200)
-    t4.drawOn(c, x, y)
-
-    
     mes_actual = datetime.today().strftime("%B %Y")  # Ej: "December 2025"
     x=299
     y=823

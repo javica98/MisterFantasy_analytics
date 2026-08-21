@@ -155,7 +155,6 @@ def build_managers(
 
     # Última jornada para weekPoints
     last_jornada = int(df_gw["Jornada"].max())
-    df_last = df_gw[df_gw["Jornada"] == last_jornada]
 
     # Jornadas para form (últimas N)
     all_jornadas = sorted(df_gw["Jornada"].unique())

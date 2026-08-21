@@ -1,0 +1,35 @@
+name: Lint & Test
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+      - name: Install ruff
+        run: pip install ruff==0.16.4
+      # Advisorio por ahora (WEB-03): el repo no tenía linter hasta este
+      # commit, así que no bloqueamos merges mientras se estabiliza. Quitar
+      # continue-on-error cuando se quiera hacerlo obligatorio de verdad.
+      - name: Ruff check
+        continue-on-error: true
+        run: ruff check .
+
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+      - name: Install dependencies
+        run: pip install -r requirements-dev.txt
+      - name: Run tests
+        run: pytest tests/ -q

@@ -17,7 +17,6 @@ import sys
 import logging
 from pathlib import Path
 
-import pandas as pd
 
 # ── Ajuste de rutas ──────────────────────────────────────────────────────────
 ROOT_DIR = Path(__file__).resolve().parent.parent

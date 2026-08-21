@@ -32,9 +32,10 @@ graph TD
     B -->|run_extraction.py| C[(data/mister.db)]
     C -->|run_preprocess.py| D[Tablas limpias, por temporada]
 
-    D -->|run_newspaper.py| E{🤖 Multi-agente LLM}
+    D -->|run_newspaper.py| P[Portadas en paralelo · CLIP + Bing, con cache]
+    P --> G[newspaper/photos/*.jpg]
+    D -->|run_newspaper.py| E{🤖 OrchestratorAgent · Groq}
     E -->|WriterAgent · Gemini 2.5 Flash| F[newspaper/json/*.json]
-    E -->|ImageAgent · CLIP + Bing| G[newspaper/photos/*.jpg]
     F & G -->|generate_pdf.py| H[newspaper/new/*.png]
 
     D -->|regenerate_app_data.py| I[web/data/app-data.json]
@@ -81,7 +82,7 @@ python scripts/regenerate_app_data.py
 | Validación esquemas | Pydantic v2 |
 | Visualización | matplotlib · reportlab |
 | Web App | HTML/CSS/JS estático |
-| Tests | pytest · 202 tests |
+| Tests | pytest · 241 tests |
 
 ---
 
@@ -92,7 +93,8 @@ python scripts/regenerate_app_data.py
 - [x] CLIP zero-shot para fotos de jugadores
 - [x] Sistema RAG local para memoria histórica
 - [x] Web App estática
-- [x] Suite de 202 tests (unitarios + integración) — ver [fallos conocidos](tests.md#fallos-conocidos-no-relacionados-con-el-código) por datos de temporada aún no generados
+- [x] Suite de 241 tests (unitarios + integración), 238 pasan — ver [fallos conocidos](tests.md#fallos-conocidos-no-relacionados-con-el-código)
+- [x] Linter (`ruff`) configurado, `pyproject.toml` limpio
 - [x] Documentación completa
 - [ ] Cache de fotos (no re-buscar si ya existe)
 - [ ] Retry automático en errores de API

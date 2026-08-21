@@ -1,10 +1,9 @@
 import pandas as pd
-import numpy as np
 
 def procesar_clausulas_acuerdos(df: pd.DataFrame) -> pd.DataFrame:
     """
     Filtra el DataFrame para operaciones de 'transfer' o 'venta',
-    elimina columnas innecesarias y calcula la columna 'Diff' 
+    elimina columnas innecesarias y calcula la columna 'Diff'
     como diferencia de ganancias con filas relacionadas.
     """
     # Filtrar filas relevantes

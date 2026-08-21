@@ -8,6 +8,11 @@ config/.env
 # Datos crudos (no subir)
 data/raw/
 *.html
+# La regla *.html de arriba también capturaba web/index.html por error —
+# es el HTML de entrada de la web app, no un HTML crudo scrapeado, y nunca
+# había estado en git (un clon nuevo del repo tenía la web rota, sin este
+# archivo). Se excluye explícitamente de la regla genérica.
+!web/index.html
 
 # CSVs de temporada: la fuente de verdad es data/mister.db (SQLite,
 # particionado por columna `temporada`). Los CSVs son ahora un artefacto
