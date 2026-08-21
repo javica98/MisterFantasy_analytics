@@ -16,6 +16,7 @@ Flujo:
 
 import json
 import logging
+import time
 from strands import Agent, tool
 from strands.models.gemini import GeminiModel
 from pydantic import ValidationError
@@ -26,6 +27,15 @@ from src.memory.memory_store import format_memory_context, retrieve_relevant_mem
 from src.utils.config_loader import load_config
 
 logger = logging.getLogger(__name__)
+
+# Reintentos explícitos en código de run_writer_agent (hallazgo IA-08).
+# WRITER_AGENT_PROMPT le pide al LLM que reintente generate_cards si
+# validate_cards falla, pero eso es una instrucción en lenguaje natural que
+# el modelo puede ignorar. Este retry en Python es la red de seguridad real:
+# si el agente entero falla o no produce cards válidas, se reintenta la
+# invocación completa con backoff, igual que ya hace generate_article.py.
+_MAX_ATTEMPTS = 3
+_BASE_DELAY_SECONDS = 5
 
 _cfg = load_config()
 _GEMINI_API_KEY = _cfg["env"].get("GEMINI_API_KEY")
@@ -205,32 +215,44 @@ def run_writer_agent(prompt: str) -> dict | None:
     pudiendo usar sus tools y, al final, Strands valida la respuesta contra
     el schema sin necesidad de parsear el texto con regex.
 
+    Reintenta la invocación completa hasta _MAX_ATTEMPTS veces con backoff
+    si el agente falla, no produce structured_output, o devuelve cards
+    vacías (hallazgo IA-08) — no depende de que el LLM seleccione seguir
+    la instrucción de reintento del propio WRITER_AGENT_PROMPT.
+
     Args:
         prompt: El prompt completo construido por build_final_prompt()
 
     Returns:
         dict con las cards validadas, o None si falló tras los reintentos.
     """
-    agent = create_writer_agent()
+    for attempt in range(1, _MAX_ATTEMPTS + 1):
+        agent = create_writer_agent()
 
-    try:
-        result = agent(
-            f"Genera las cards del periódico con este prompt:\n\n{prompt}",
-            structured_output_model=FinalJSON,
-        )
-    except Exception as e:
-        logger.warning(f"[WriterAgent] Ejecución del agente falló: {e}")
-        return None
+        try:
+            result = agent(
+                f"Genera las cards del periódico con este prompt:\n\n{prompt}",
+                structured_output_model=FinalJSON,
+            )
+        except Exception as e:
+            logger.warning(f"[WriterAgent] Intento {attempt}/{_MAX_ATTEMPTS} — ejecución del agente falló: {e}")
+            result = None
 
-    structured = result.structured_output
-    if structured is None:
-        logger.warning("[WriterAgent] El agente no produjo structured_output")
-        return None
+        if result is not None:
+            structured = result.structured_output
+            if structured is None:
+                logger.warning(f"[WriterAgent] Intento {attempt}/{_MAX_ATTEMPTS} — el agente no produjo structured_output")
+            else:
+                data = structured.model_dump()
+                if data.get("cards"):
+                    logger.info(f"[WriterAgent] {len(data['cards'])} cards extraídas correctamente (intento {attempt}/{_MAX_ATTEMPTS})")
+                    return data
+                logger.warning(f"[WriterAgent] Intento {attempt}/{_MAX_ATTEMPTS} — structured_output devolvió cards vacías")
 
-    data = structured.model_dump()
-    if not data.get("cards"):
-        logger.warning("[WriterAgent] structured_output devolvió cards vacías")
-        return None
+        if attempt < _MAX_ATTEMPTS:
+            delay = _BASE_DELAY_SECONDS * (2 ** (attempt - 1))
+            logger.info(f"[WriterAgent] Reintentando en {delay}s...")
+            time.sleep(delay)
 
-    logger.info(f"[WriterAgent] {len(data['cards'])} cards extraídas correctamente")
-    return data
+    logger.error(f"[WriterAgent] Sin cards válidas tras {_MAX_ATTEMPTS} intentos.")
+    return None

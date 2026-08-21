@@ -41,7 +41,7 @@ def memories_path(tmp_path):
 class TestCmdList:
     def test_lista_todas_sin_filtros(self, memories_path, capsys):
         args = argparse.Namespace(
-            path=str(memories_path), category=None, manager=None, player=None, query=None, limit=None
+            path=str(memories_path), temporada=None, category=None, manager=None, player=None, query=None, limit=None
         )
         cmd_list(args)
         out = capsys.readouterr().out
@@ -50,7 +50,7 @@ class TestCmdList:
 
     def test_filtra_por_category(self, memories_path, capsys):
         args = argparse.Namespace(
-            path=str(memories_path), category="clasificacion", manager=None, player=None, query=None, limit=None
+            path=str(memories_path), temporada=None, category="clasificacion", manager=None, player=None, query=None, limit=None
         )
         cmd_list(args)
         out = capsys.readouterr().out
@@ -59,16 +59,33 @@ class TestCmdList:
 
     def test_filtra_por_manager(self, memories_path, capsys):
         args = argparse.Namespace(
-            path=str(memories_path), category=None, manager="Maldinillo", player=None, query=None, limit=None
+            path=str(memories_path), temporada=None, category=None, manager="Maldinillo", player=None, query=None, limit=None
         )
         cmd_list(args)
         out = capsys.readouterr().out
         assert "mvp_1" in out
         assert "clasif_1" not in out
 
+    def test_filtra_por_temporada(self, tmp_path, capsys):
+        path = tmp_path / "memories.jsonl"
+        upsert_memories(
+            [
+                _memory("vieja", temporada="2025-26"),
+                _memory("nueva", temporada="2026-27"),
+            ],
+            path,
+        )
+        args = argparse.Namespace(
+            path=str(path), temporada="2026-27", category=None, manager=None, player=None, query=None, limit=None
+        )
+        cmd_list(args)
+        out = capsys.readouterr().out
+        assert "nueva" in out
+        assert "vieja" not in out
+
     def test_sin_resultados_imprime_mensaje(self, memories_path, capsys):
         args = argparse.Namespace(
-            path=str(memories_path), category="no_existe", manager=None, player=None, query=None, limit=None
+            path=str(memories_path), temporada=None, category="no_existe", manager=None, player=None, query=None, limit=None
         )
         cmd_list(args)
         out = capsys.readouterr().out

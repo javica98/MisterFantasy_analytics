@@ -4,7 +4,6 @@ Cubre: map_team, map_position, clasificacion_dict,
        generate_json, generate_json_for_jornada
 """
 import pandas as pd
-import pytest
 
 from src.AI_newspaper.generate_json import (
     clasificacion_dict,
@@ -158,6 +157,23 @@ class TestGenerateJson:
         result = generate_json(30, df_transfers, df_gameweek, df_clasificacion, df_quinielas)
         assert "general" in result["clasificacion"]
         assert "jornada" in result["clasificacion"]
+
+    def test_manager_ausente_de_clasificacion_no_revienta(self, df_gameweek, df_clasificacion, df_quinielas):
+        """
+        Si un manager aparece en transfers/gameweek pero no en la
+        clasificación acumulada (datos desincronizados, manager nuevo...),
+        no debe lanzar KeyError — debe usar un default (hallazgo IA-03).
+        """
+        from datetime import date
+        df_transfers_desincronizado = pd.DataFrame([{
+            "fecha": str(date.today()), "id": 0,
+            "type": "transfer", "subtype": "mercado",
+            "equipo": "Manager Fantasma", "ganancias": -10.0,
+            "jugador": "X", "compra-venta": "compra", "equipoLiga": 15,
+        }])
+        result = generate_json(30, df_transfers_desincronizado, df_gameweek, df_clasificacion, df_quinielas)
+        assert result["transfers"][0]["clasificacion_manager_general"] == {"puntos": 0, "posicion": 9}
+        assert result["transfers"][0]["clasificacion_manager_jornada"] == {"puntos": 0, "posicion": 9}
 
 
 # ─────────────────────────────────────────────

@@ -8,9 +8,17 @@ El módulo más complejo del sistema. Combina procesado de datos, multi-agente L
 
 ```mermaid
 graph TD
+    subgraph Parallel["📸 Portadas · Python plano, en paralelo (ThreadPoolExecutor)"]
+        P1["_fetch_portada_image() × 2"]
+        Cache{{"¿En cache por jugador+equipo?"}}
+        Pipe["run_image_pipeline(): search → evaluate+CLIP → download"]
+        P1 --> Cache
+        Cache -->|sí| Reuse[Copiar de cache]
+        Cache -->|no| Pipe
+    end
+
     subgraph Orchestrator["🎯 OrchestratorAgent · Groq Llama 3.3 70B"]
         T1["tool: run_writer"]
-        T2["tool: run_image"]
     end
 
     subgraph Writer["✍️ WriterAgent · Gemini 2.5 Flash"]
@@ -18,16 +26,15 @@ graph TD
         W2[Valida con Pydantic v2]
     end
 
-    subgraph Image["📸 ImageAgent · Python + CLIP"]
-        I1["1. search_candidate_images()"]
-        I2["2. evaluate_images() + CLIP"]
-        I3["3. download_best_image()"]
-        I1 --> I2 --> I3
-    end
-
+    Parallel -.antes de.-> Orchestrator
     T1 --> Writer
-    T2 --> Image
 ```
+
+Las fotos de portada ya no son un tool call que Groq deba decidir invocar
+— se buscan en paralelo antes de arrancar el `OrchestratorAgent`, con
+`run_image_pipeline()` (la misma cadena search→evaluate→download pero sin
+LLM), y se cachean por jugador+equipo para no repetir la búsqueda en Bing
+si el mismo MVP/fichaje vuelve a salir en portada otro día.
 
 ---
 

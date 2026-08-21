@@ -1,7 +1,7 @@
 import pandas as pd
 from datetime import datetime, timedelta
 
-from src.utils.team_map import TEAM_MAP, TEAM_POSICION, map_team, map_position
+from src.utils.team_map import map_team, map_position
 
 
 def clasificacion_dict(df: pd.DataFrame) -> dict:
@@ -153,14 +153,14 @@ def generate_json(last_days: int, df_clean: pd.DataFrame, df_gameweek: pd.DataFr
     df_gameweek_filtered = df_gameweek[pd.to_datetime(df_gameweek['Date']).dt.date >= cutoff_date]
 
     #Clasificacion general y jornada
-    
+
     jornadas=df_gameweek_filtered["Jornada"].unique()
     df_class_gen = clasificacion_dict(df_clasificacion)
     df_class_jor = clasificacion_dict(
         df_clasificacion[df_clasificacion["jornada"].isin(jornadas)]
     )
     #Quinielas general y jornada
-    
+
     df_quin_gen = clasificacion_dict(df_quinielas)
     df_quin_jor = clasificacion_dict(
         df_quinielas[df_quinielas["jornada"].isin(jornadas)]
@@ -180,8 +180,8 @@ def generate_json(last_days: int, df_clean: pd.DataFrame, df_gameweek: pd.DataFr
             "jugador": row['jugador'],
             "compra_venta": row['compra-venta'],
             "equipo_jugador": map_team(row["equipoLiga"]),
-            "clasificacion_manager_general": df_class_gen[row['equipo']],
-            "clasificacion_manager_jornada": df_class_jor[row['equipo']]
+            "clasificacion_manager_general": df_class_gen.get(row['equipo'], {"puntos": 0, "posicion": 9}),
+            "clasificacion_manager_jornada": df_class_jor.get(row['equipo'], {"puntos": 0, "posicion": 9})
         })
 
     # ---------------------
@@ -198,8 +198,8 @@ def generate_json(last_days: int, df_clean: pd.DataFrame, df_gameweek: pd.DataFr
             "resultado_visitante": row['ResultadoVisitante'],
             "equipo_jugador": map_team(row['EquipoJugador']),
             "manager": row['Manager'],
-            "clasificacion_manager_general": df_class_gen[row['Manager']],
-            "clasificacion_manager_jornada": df_class_jor[row['Manager']],
+            "clasificacion_manager_general": df_class_gen.get(row['Manager'], {"puntos": 0, "posicion": 9}),
+            "clasificacion_manager_jornada": df_class_jor.get(row['Manager'], {"puntos": 0, "posicion": 9}),
             "jugador": row['NombreJugador'],
             "posicion": map_position(row['Posicion']),
             "puntos": row['Puntos'],

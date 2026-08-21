@@ -4,18 +4,12 @@ import sys
 from datetime import datetime
 from pathlib import Path
 
-import pandas as pd
 
 # ── Ajuste de entorno ─────────────────────────────────────────────────────────
-CURRENT_FILE = Path(__file__).resolve()
-ROOT_DIR = CURRENT_FILE.parent.parent
-SRC_DIR = ROOT_DIR / "src"
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+from src.utils.bootstrap import setup_project_root
 
-for p in (ROOT_DIR, SRC_DIR):
-    if str(p) not in sys.path:
-        sys.path.insert(0, str(p))
-
-os.chdir(ROOT_DIR)
+ROOT_DIR = setup_project_root(__file__)
 
 
 from src.AI_newspaper.generate_json import generate_json
@@ -27,8 +21,8 @@ from src.memory.memory_builder import build_memories
 from src.memory.memory_store import DEFAULT_MEMORY_PATH, format_memory_context, retrieve_relevant_memories, upsert_memories
 # --- Cargar configuración ---
 from src.utils.config_loader import load_config
-from src.utils.data_utils import normalize_date_column
-from src.utils.file_utils import safe_read_html, safe_read_csv,safe_read_json, safe_save_csv,safe_save_json,safe_read_text, safe_save_text,safe_save_png
+from src.utils.file_utils import safe_read_csv,safe_read_json, safe_save_json,safe_read_text, safe_save_text,safe_save_png
+from src.utils import db as db_utils
 
 
 cfg = load_config()
@@ -98,12 +92,12 @@ csv_notificaciones = safe_read_csv(CSV_NOTIFICACIONES_CLEAN)
 csv_clasificacion = safe_read_csv(CSV_CLASIFICACIONES)
 csv_quinielas = safe_read_csv(CSV_QUINIELAS)
 
-if csv_gameweek is None or csv_notificaciones is None:
-    logger.error("CSVs de gameweek o notificaciones no encontrados. Abortando.")
+if csv_gameweek.empty or csv_notificaciones.empty:
+    logger.error("Sin datos de gameweek o notificaciones disponibles. Abortando.")
     sys.exit(1)
 
-if csv_clasificacion is None or csv_quinielas is None:
-    logger.error("CSVs de clasificacion o quinielas no encontrados. Abortando.")
+if csv_clasificacion.empty or csv_quinielas.empty:
+    logger.error("Sin datos de clasificacion o quinielas disponibles. Abortando.")
     sys.exit(1)
 
 daily_json = generate_json(
@@ -130,18 +124,41 @@ if n_gameweek == 0:
     logger.warning("Sin gameweek en los ultimos 3 dias — el periodico no tendra MVPs ni resultados.")
 
 logger.info("Json creado: %d transfers, %d entradas de gameweek.", n_transfers, n_gameweek)
+
+# Jornada real de esta edición — se usa para nombrar las copias de
+# articles/ y cards/ que regenerate_app_data.py::build_news() busca con el
+# patrón jornada_*_json.json / jornada_*_cards.json. Antes las copias se
+# nombraban por fecha de ejecución y nunca coincidían con ese patrón, así
+# que los artículos nuevos no aparecían en la web (ver ADR-005).
+if daily_json.get("gameweek"):
+    jornada_actual = int(max(g["jornada"] for g in daily_json["gameweek"]))
+elif not csv_gameweek.empty:
+    jornada_actual = int(csv_gameweek["Jornada"].max())
+else:
+    jornada_actual = None
+    logger.warning(
+        "⚠️ No se pudo determinar la jornada de esta edición; no se guardarán "
+        "las copias jornada_*_json.json / jornada_*_cards.json."
+    )
+
 json_final_path = os.path.join(JSON_NEWS, "articles", "news_json.json")
+daily_json_for_jornada = daily_json
 daily_json = safe_save_json(daily_json, json_final_path)
-    
+if jornada_actual is not None:
+    jornada_json_path = os.path.join(JSON_NEWS, "articles", f"jornada_{jornada_actual}_json.json")
+    safe_save_json(daily_json_for_jornada, jornada_json_path)
+
 # --- 2. Crear prompt ---
 logger.info("Creando prompt...")
 json_new = safe_read_json(json_final_path)
-if (json_new is None):
+if not json_new:
     logger.warning("⏭️ Saltando prompt .json no existe.")
 else:
     prompt_json = generate_prompts(json_new)
     memory_query = build_memory_query(json_new)
-    relevant_memories = retrieve_relevant_memories(memory_query, top_k=8)
+    relevant_memories = retrieve_relevant_memories(
+        memory_query, top_k=8, temporada=db_utils.get_active_season()
+    )
     memory_context = format_memory_context(relevant_memories)
     logger.info("🧠 Memoria recuperada para el prompt: %s recuerdos.", len(relevant_memories))
     commun_prompt_json = build_final_prompt(prompt_json["bloques"],json_new,memory_context)
@@ -153,7 +170,6 @@ else:
 prompt_txt = safe_read_text(prompt_final_path)
 
 # Determinar jugadores de portada (misma lógica que create_pdf)
-from src.AI_newspaper.generate_pdf import get_cards_by_tipo
 cards_preview = safe_read_json(json_final_path)  # usamos el json para preview
 # Leer prompt_json para obtener los bloques
 prompt_json_data = generate_prompts(json_new)
@@ -181,12 +197,13 @@ if texto_generado is None:
 
 logger.info("✅ Todo el contenido creado.")
 cards_json_path = os.path.join(JSON_NEWS, "cards", "news_cards.json")
-json_weekly_path = os.path.join(JSON_NEWS, "articles", f"{fecha_hoy}_json.json")
-article = safe_save_json(texto_generado,cards_json_path)
-article = safe_save_json(texto_generado,json_weekly_path)
+article = safe_save_json(texto_generado, cards_json_path)
+if jornada_actual is not None:
+    jornada_cards_path = os.path.join(JSON_NEWS, "cards", f"jornada_{jornada_actual}_cards.json")
+    safe_save_json(texto_generado, jornada_cards_path)
 
 # --- 3.1 Actualizar memoria historica para el futuro RAG ---
-memories = build_memories(json_new, texto_generado)
+memories = build_memories(json_new, texto_generado, temporada=db_utils.get_active_season())
 changed_memories = upsert_memories(memories, DEFAULT_MEMORY_PATH)
 logger.info("🧠 Memoria actualizada: %s recuerdos (%s nuevos/actualizados).", len(memories), changed_memories)
 if changed_memories:

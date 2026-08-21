@@ -4,11 +4,9 @@ Cubre: _load_cached_embeddings_by_id, build_memory_query,
        comportamiento incremental de rebuild_embedding_index
 """
 import json
-import tempfile
 from pathlib import Path
 
 import numpy as np
-import pytest
 
 from src.memory.embedding_store import (
     _load_cached_embeddings_by_id,
@@ -259,3 +257,66 @@ class TestRebuildEmbeddingIndexIncremental:
         ids_en_indice = [item["id"] for item in index["items"]]
         assert "mem_001" in ids_en_indice
         assert "mem_002" in ids_en_indice
+
+
+# ─────────────────────────────────────────────
+# retrieve_by_embedding — filtro por temporada (hallazgo IA-02)
+# ─────────────────────────────────────────────
+
+class TestRetrieveByEmbeddingTemporada:
+    """
+    Antes las memorias no tenían campo temporada y retrieve_by_embedding
+    devolvía resultados de cualquier temporada mezclados sin distinción.
+    Ahora, si se pasa `temporada`, se descartan los resultados de otras
+    temporadas.
+    """
+
+    def _setup(self, tmp_path, monkeypatch, memories):
+        mem_path = tmp_path / "memories.jsonl"
+        with mem_path.open("w", encoding="utf-8") as f:
+            for m in memories:
+                f.write(json.dumps(m, ensure_ascii=False) + "\n")
+
+        emb_path = tmp_path / "embeddings.npy"
+        idx_path = tmp_path / "index.json"
+        vecs = np.array([[1.0, 0.0]] * len(memories), dtype=np.float32)
+        np.save(emb_path, vecs)
+        idx_path.write_text(json.dumps({"model_name": "test"}), encoding="utf-8")
+
+        class FakeModel:
+            def encode(self, texts, **kwargs):
+                return np.array([[1.0, 0.0]], dtype=np.float32)
+
+        monkeypatch.setattr(
+            "src.memory.embedding_store._load_sentence_transformer",
+            lambda model_name: FakeModel(),
+        )
+        return mem_path, emb_path, idx_path
+
+    def _memorias(self):
+        return [
+            {"id": "a", "temporada": "2025-26", "query_text": "x", "fecha": "2026-01-01",
+             "category": "c", "summary": "s"},
+            {"id": "b", "temporada": "2026-27", "query_text": "x", "fecha": "2026-01-02",
+             "category": "c", "summary": "s"},
+        ]
+
+    def test_sin_filtro_devuelve_de_cualquier_temporada(self, tmp_path, monkeypatch):
+        from src.memory.embedding_store import retrieve_by_embedding
+
+        mem_path, emb_path, idx_path = self._setup(tmp_path, monkeypatch, self._memorias())
+
+        result = retrieve_by_embedding("x", memory_path=mem_path, embeddings_path=emb_path, index_path=idx_path)
+
+        assert {m["id"] for m in result} == {"a", "b"}
+
+    def test_con_filtro_solo_devuelve_la_temporada_pedida(self, tmp_path, monkeypatch):
+        from src.memory.embedding_store import retrieve_by_embedding
+
+        mem_path, emb_path, idx_path = self._setup(tmp_path, monkeypatch, self._memorias())
+
+        result = retrieve_by_embedding(
+            "x", memory_path=mem_path, embeddings_path=emb_path, index_path=idx_path, temporada="2026-27"
+        )
+
+        assert [m["id"] for m in result] == ["b"]

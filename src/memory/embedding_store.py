@@ -110,8 +110,14 @@ def retrieve_by_embedding(
     model_name: str | None = None,
     top_k: int = 8,
     min_score: float = 0.0,
+    temporada: str | None = None,
 ) -> list[dict]:
-    """Retrieve memories by semantic similarity against the local embedding index."""
+    """Retrieve memories by semantic similarity against the local embedding index.
+
+    Si se pasa `temporada`, se descartan los resultados de otras temporadas
+    (hallazgo IA-02) — el filtro se aplica después de puntuar por similitud,
+    no antes, para no tener que re-indexar embeddings.npy por temporada.
+    """
     memories = read_memories(memory_path)
     if not memories:
         return []
@@ -137,6 +143,8 @@ def retrieve_by_embedding(
         if score < min_score:
             continue
         memory = dict(memories[int(row)])
+        if temporada is not None and memory.get("temporada") != temporada:
+            continue
         memory["embedding_score"] = round(score, 4)
         results.append(memory)
         if len(results) >= top_k:

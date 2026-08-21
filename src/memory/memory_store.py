@@ -69,14 +69,22 @@ def retrieve_by_keywords(
     *,
     path: str | Path = DEFAULT_MEMORY_PATH,
     top_k: int = 8,
+    temporada: str | None = None,
 ) -> list[dict]:
-    """Tiny lexical retriever until the embedding index is added."""
+    """Tiny lexical retriever until the embedding index is added.
+
+    Si se pasa `temporada`, solo se consideran memorias de esa temporada —
+    evita que recuerdos de una temporada anterior contaminen las respuestas
+    de la actual (hallazgo IA-02).
+    """
     query_terms = _terms(query)
     if not query_terms:
         return []
 
     scored = []
     for memory in read_memories(path):
+        if temporada is not None and memory.get("temporada") != temporada:
+            continue
         text_terms = _terms(memory.get("query_text", ""))
         overlap = len(query_terms & text_terms)
         if overlap == 0:
@@ -108,14 +116,21 @@ def retrieve_relevant_memories(
     *,
     path: str | Path = DEFAULT_MEMORY_PATH,
     top_k: int = 8,
+    temporada: str | None = None,
 ) -> list[dict]:
-    """Use embeddings when available; fall back to lexical search."""
+    """Use embeddings when available; fall back to lexical search.
+
+    `temporada` filtra los recuerdos devueltos a los de esa temporada
+    (hallazgo IA-02) — pásala explícitamente (ej. desde
+    src.utils.db.get_active_season()) para no mezclar recuerdos de
+    temporadas distintas en el mismo periódico.
+    """
     try:
         from src.memory.embedding_store import retrieve_by_embedding
 
-        return retrieve_by_embedding(query, memory_path=path, top_k=top_k)
+        return retrieve_by_embedding(query, memory_path=path, top_k=top_k, temporada=temporada)
     except Exception:
-        return retrieve_by_keywords(query, path=path, top_k=top_k)
+        return retrieve_by_keywords(query, path=path, top_k=top_k, temporada=temporada)
 
 
 def _terms(text: str) -> set[str]:

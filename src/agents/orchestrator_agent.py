@@ -1,19 +1,29 @@
 """
-OrchestratorAgent - Coordina WriterAgent e ImageAgent.
+OrchestratorAgent - Coordina el WriterAgent (texto) y dispara en paralelo la
+búsqueda de las fotos de portada.
 
-Usa Groq (Llama 3.3 70B) como modelo barato para coordinacion.
+Usa Groq (Llama 3.3 70B) como modelo barato para coordinar el texto.
 Reserva Gemini para el WriterAgent, donde la calidad del texto importa.
+
+Las dos fotos de portada (fichajes/jornada) ya no se piden como tool calls
+que Groq deba secuenciar: se buscan con run_image_pipeline (sin LLM) en
+paralelo con ThreadPoolExecutor antes de invocar al agente de texto, y se
+cachean por jugador+equipo para no repetir la búsqueda en Bing si el mismo
+jugador vuelve a salir en portada otro día (hallazgo IA-07).
 """
 
 import json
 import logging
 import os
+import shutil
+from concurrent.futures import ThreadPoolExecutor
 from json import JSONDecodeError
+from pathlib import Path
 
 from strands import Agent, tool
 from strands.models.litellm import LiteLLMModel
 
-from src.agents.image_agent import run_image_agent
+from src.agents.image_agent import run_image_pipeline
 from src.agents.writer_agent import run_writer_agent
 from src.utils.config_loader import load_config
 
@@ -69,6 +79,43 @@ def _make_run_writer_tool(prompt: str) -> tuple:
     return tool(run_writer), cache
 
 
+def _cache_key(jugador: str, equipo: str) -> str:
+    raw = f"{jugador}_{equipo}".lower().strip()
+    return "".join(c if c.isalnum() else "_" for c in raw).strip("_") or "sin_nombre"
+
+
+def _fetch_portada_image(jugador: str, equipo: str, save_path: str, cache_dir: Path) -> bool:
+    """
+    Busca y guarda la foto de portada de un jugador, reutilizando una copia
+    en cache si ya se descargó antes para el mismo jugador+equipo (hallazgo
+    IA-07): evita repetir la búsqueda en Bing y el scoring con CLIP cuando
+    el mismo MVP/fichaje vuelve a salir en portada otro día.
+
+    Usa run_image_pipeline (sin LLM) en vez de run_image_agent: es la misma
+    cadena search -> evaluate -> download, pero invocada directamente en
+    Python, lo que permite llamarla en paralelo para las dos portadas sin
+    depender de que Groq orqueste correctamente dos tool calls a Gemini.
+    """
+    cache_path = cache_dir / f"{_cache_key(jugador, equipo)}.jpg"
+    if cache_path.exists():
+        try:
+            os.makedirs(os.path.dirname(save_path), exist_ok=True)
+            shutil.copyfile(cache_path, save_path)
+            logger.info("[Orchestrator] Portada de %s recuperada de cache (%s)", jugador, cache_path.name)
+            return True
+        except Exception as e:
+            logger.warning("[Orchestrator] No se pudo copiar desde cache (%s), se vuelve a descargar: %s", cache_path, e)
+
+    success = run_image_pipeline(jugador, equipo, save_path)
+    if success and os.path.exists(save_path):
+        try:
+            cache_dir.mkdir(parents=True, exist_ok=True)
+            shutil.copyfile(save_path, cache_path)
+        except Exception as e:
+            logger.debug("[Orchestrator] No se pudo guardar en cache %s: %s", cache_path, e)
+    return success
+
+
 def run_orchestrator(
     prompt: str,
     portada_fichajes: dict,
@@ -76,7 +123,9 @@ def run_orchestrator(
     path_fichajes: str,
     path_jornada: str,
 ) -> dict | None:
-    """Usa el OrchestratorAgent (Groq) para coordinar WriterAgent e ImageAgent."""
+    """Usa el OrchestratorAgent (Groq) para el texto; las dos fotos de
+    portada se buscan en paralelo con Python plano (ver _fetch_portada_image),
+    no como tool calls que Groq deba secuenciar (hallazgo IA-07)."""
     jugador_fichajes = portada_fichajes.get("jugador", "")
     equipo_fichajes = portada_fichajes.get("equipo", "")
     jugador_jornada = portada_jornada.get("jugador", "")
@@ -85,19 +134,28 @@ def run_orchestrator(
     logger.info("[Orchestrator] Iniciando pipeline con Groq...")
     logger.info("[Orchestrator] Prompt: %s chars", len(prompt))
 
+    cache_dir = Path(path_fichajes).resolve().parent / "cache"
+    with ThreadPoolExecutor(max_workers=2) as executor:
+        future_fichajes = executor.submit(_fetch_portada_image, jugador_fichajes, equipo_fichajes, path_fichajes, cache_dir)
+        future_jornada = executor.submit(_fetch_portada_image, jugador_jornada, equipo_jornada, path_jornada, cache_dir)
+        ok_fichajes = future_fichajes.result()
+        ok_jornada = future_jornada.result()
+    logger.info(
+        "[Orchestrator] Portadas listas (paralelo) — fichajes=%s jornada=%s",
+        "OK" if ok_fichajes else "FALLBACK", "OK" if ok_jornada else "FALLBACK",
+    )
+
     run_writer_tool, writer_cache = _make_run_writer_tool(prompt)
     agent = Agent(
         model=create_groq_model(),
         system_prompt=ORCHESTRATOR_PROMPT,
-        tools=[run_writer_tool, run_image],
+        tools=[run_writer_tool],
     )
 
     response = agent(
-        f"""Genera el periodico completo de la Sotano League ejecutando estas 3 tools:
+        f"""Genera el texto del periodico de la Sotano League ejecutando esta tool:
 
 1. run_writer con prompt_ref="current_prompt"
-2. run_image para portada Fichajes: jugador="{jugador_fichajes}", equipo="{equipo_fichajes}", save_path="{path_fichajes}"
-3. run_image para portada Jornada: jugador="{jugador_jornada}", equipo="{equipo_jornada}", save_path="{path_jornada}"
 
 IMPORTANTE:
 - El prompt completo ya esta capturado internamente en run_writer.
@@ -121,31 +179,16 @@ IMPORTANTE:
         logger.info("[Orchestrator] Pipeline completo - %s cards (extraídas de la respuesta)", len(cards_payload["cards"]))
         return cards_payload
 
-    # Último recurso: run_writer nunca llegó a ejecutarse, reintentamos directo
+    # Último recurso: run_writer nunca llegó a ejecutarse, reintentamos directo.
+    # Las portadas ya se buscaron en paralelo al principio de la función
+    # independientemente de este fallback, así que aquí solo hace falta
+    # reintentar el texto.
     logger.warning("[Orchestrator] No se pudieron extraer las cards, intentando fallback directo...")
     cards = run_writer_agent(prompt)
     if cards:
-        run_image_agent(jugador_fichajes, equipo_fichajes, path_fichajes)
-        run_image_agent(jugador_jornada, equipo_jornada, path_jornada)
         return cards
 
     return None
-
-
-@tool
-def run_image(jugador: str, equipo: str, save_path: str) -> str:
-    """
-    Ejecuta el ImageAgent para buscar y descargar la mejor foto del jugador.
-
-    Args:
-        jugador: Nombre del jugador de portada.
-        equipo: Equipo del jugador.
-        save_path: Ruta donde guardar la imagen.
-    """
-    logger.info("[Orchestrator] -> ImageAgent (%s)", jugador)
-    success = run_image_agent(jugador, equipo, save_path)
-    logger.info("[Orchestrator] <- ImageAgent %s", "OK" if success else "FALLBACK")
-    return json.dumps({"success": success, "path": save_path if success else None})
 
 
 def _extract_cards_payload(response_str: str) -> dict | None:
@@ -194,15 +237,13 @@ def _find_cards_payload(value) -> dict | None:
 ORCHESTRATOR_PROMPT = """
 Eres el OrchestratorAgent del periodico fantasy SOTANO LEAGUE.
 
-Coordinas dos agentes especializados:
-- run_writer: genera el contenido textual (cards del periodico)
-- run_image: busca y descarga la mejor foto de portada
+Coordinas al WriterAgent, que genera el contenido textual (cards del periodico).
+Las fotos de portada se buscan aparte, en paralelo, antes de llamarte a ti.
 
-Cuando se te pida generar el periodico completo:
+Cuando se te pida generar el texto del periodico:
 1. Llama a run_writer con prompt_ref="current_prompt"
-2. Llama a run_image para cada portada indicada
 
-Reporta el resultado de todas las llamadas al finalizar.
+Reporta el resultado al finalizar.
 """.strip()
 
 

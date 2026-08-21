@@ -7,7 +7,7 @@ una memoria y borrar las incorrectas, reconstruyendo el índice de embeddings
 si hace falta.
 
 Uso:
-    python scripts/manage_memories.py list [--category X] [--manager X] [--player X] [--query "texto"] [--limit N]
+    python scripts/manage_memories.py list [--temporada X] [--category X] [--manager X] [--player X] [--query "texto"] [--limit N]
     python scripts/manage_memories.py show <id> [<id> ...]
     python scripts/manage_memories.py delete <id> [<id> ...] [--yes] [--rebuild-index]
     python scripts/manage_memories.py rebuild-index
@@ -18,10 +18,10 @@ import json
 import sys
 from pathlib import Path
 
-CURRENT_FILE = Path(__file__).resolve()
-ROOT_DIR = CURRENT_FILE.parent.parent
-if str(ROOT_DIR) not in sys.path:
-    sys.path.insert(0, str(ROOT_DIR))
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+from src.utils.bootstrap import setup_project_root
+
+ROOT_DIR = setup_project_root(__file__)
 
 from src.memory.memory_store import (
     DEFAULT_MEMORY_PATH,
@@ -34,6 +34,8 @@ from src.memory.memory_store import (
 def cmd_list(args: argparse.Namespace) -> None:
     memories = read_memories(args.path)
 
+    if args.temporada:
+        memories = [m for m in memories if m.get("temporada") == args.temporada]
     if args.category:
         memories = [m for m in memories if m.get("category") == args.category]
     if args.manager:
@@ -114,6 +116,7 @@ def build_parser() -> argparse.ArgumentParser:
     subparsers = parser.add_subparsers(dest="command", required=True)
 
     p_list = subparsers.add_parser("list", help="Listar memorias (con filtros opcionales)")
+    p_list.add_argument("--temporada")
     p_list.add_argument("--category")
     p_list.add_argument("--manager")
     p_list.add_argument("--player")

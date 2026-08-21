@@ -498,14 +498,24 @@ def run_image_agent(jugador: str, equipo: str, save_path: str) -> bool:
     """
     Usa el ImageAgent con Gemini para buscar, evaluar y descargar la mejor foto.
     Para el batch sin LLM, usar run_image_pipeline().
+
+    Nunca propaga excepciones: si Gemini falla (429, timeout, respuesta
+    inválida), devuelve False en vez de tirar todo el pipeline del
+    periódico — el orchestrator ya tiene las cards de texto generadas en
+    ese punto y no deben perderse por un fallo que solo afecta a la
+    imagen (hallazgo IA-04).
     """
     import re
 
-    agent = create_image_agent()
-    response = agent(
-        f"Busca y descarga la mejor foto de {jugador} ({equipo}) "
-        f"y guárdala en: {save_path}"
-    )
+    try:
+        agent = create_image_agent()
+        response = agent(
+            f"Busca y descarga la mejor foto de {jugador} ({equipo}) "
+            f"y guárdala en: {save_path}"
+        )
+    except Exception as e:
+        logger.error(f"[ImageAgent] Error al invocar el agente para {jugador} ({equipo}): {e}")
+        return os.path.exists(save_path)
 
     response_str = str(response)
     match = re.search(r'\{"success":\s*(true|false)[^}]*\}', response_str)

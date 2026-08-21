@@ -4,11 +4,9 @@ Cubre: _expand_player_name, _bing_candidates (mock HTTP),
        _clip_footballer_score (mock modelo), search_candidate_images (mock)
 """
 import json
-from io import BytesIO
 from unittest.mock import MagicMock, patch
 
 import numpy as np
-import pytest
 from PIL import Image
 
 from src.agents.image_agent import (
@@ -350,6 +348,42 @@ class TestRunImageAgent:
             result = run_image_agent("Mbappé", "Real Madrid", str(save_path))
 
         assert result is False
+
+    def test_error_del_agente_no_propaga_la_excepcion(self, tmp_path):
+        """
+        Si Gemini falla (429, timeout, respuesta inválida), run_image_agent
+        debe devolver False en vez de propagar — un fallo de imagen no debe
+        tirar todo el pipeline y perder las cards de texto ya generadas
+        (hallazgo IA-04).
+        """
+        from src.agents.image_agent import run_image_agent
+
+        save_path = tmp_path / "no_existe.jpg"
+
+        with patch("src.agents.image_agent.Agent") as mock_agent_cls:
+            mock_instance = MagicMock()
+            mock_instance.side_effect = Exception("429 rate limited")
+            mock_agent_cls.return_value = mock_instance
+
+            result = run_image_agent("Mbappé", "Real Madrid", str(save_path))
+
+        assert result is False
+
+    def test_error_del_agente_con_archivo_ya_existente_devuelve_true(self, tmp_path):
+        """Si la excepción ocurre tras haber guardado la imagen, se detecta por disco."""
+        from src.agents.image_agent import run_image_agent
+
+        save_path = tmp_path / "Portada.jpg"
+        save_path.write_bytes(b"fake-image-bytes")
+
+        with patch("src.agents.image_agent.Agent") as mock_agent_cls:
+            mock_instance = MagicMock()
+            mock_instance.side_effect = Exception("timeout tras guardar")
+            mock_agent_cls.return_value = mock_instance
+
+            result = run_image_agent("Mbappé", "Real Madrid", str(save_path))
+
+        assert result is True
 
 
 # ─────────────────────────────────────────────

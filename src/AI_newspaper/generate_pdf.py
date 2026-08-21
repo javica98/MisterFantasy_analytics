@@ -2,13 +2,11 @@ import json
 import logging
 import os
 from io import BytesIO
-from urllib.parse import urljoin
 
 import requests
 from bs4 import BeautifulSoup
 from PIL import Image, ImageDraw, ImageFont
 
-from src.agents.image_agent import run_image_agent
 from src.utils.photo_utils import manager_photo
 
 logger = logging.getLogger(__name__)
@@ -45,7 +43,7 @@ def _detect_face_center_y(pil_image: Image.Image) -> float | None:
         logger.warning(f"[FaceDetect] Error: {e}")
         return None
 
-IMG_WIDTH = 1080 
+IMG_WIDTH = 1080
 IMG_HEIGHT = 1350
 def create_clasification_card_horizontal(clasificacion_json,PATH_UTILS,width,height,IMAGES_TEAMS_DIR,DEFAULT_TEAM_IMAGE,font="Oswald-Bold.otf"):
     """
@@ -75,7 +73,7 @@ def create_clasification_card_horizontal(clasificacion_json,PATH_UTILS,width,hei
     for i, (team, data) in enumerate(equipos):
         x = i * col_w
 
-        
+
         # --- ESCUDO ---
         logo_path=manager_photo(team, IMAGES_TEAMS_DIR, DEFAULT_TEAM_IMAGE)
         logo = Image.open(logo_path).convert("RGBA")
@@ -159,7 +157,7 @@ def download_player_image(tipo,player, team, save_dir="player_images"):
                 continue
 
             image = Image.open(BytesIO(resp.content)).convert("RGB")
-            save_path = os.path.join(save_dir, f"Portada_"+tipo+".jpg")
+            save_path = os.path.join(save_dir, "Portada_"+tipo+".jpg")
             image.save(save_path, "JPEG", quality=95)
             logger.info("Imagen descargada en: %s", save_path)
             return save_path
@@ -172,7 +170,7 @@ def download_player_image(tipo,player, team, save_dir="player_images"):
     return ""
 def get_cards_by_tipo(data: dict, tipos: list[str]) -> list:
     tipos_normalizados = {t.lower() for t in tipos}
-    
+
     return [
         card
         for card in data.get("cards", [])
@@ -261,7 +259,7 @@ def draw_multiline_text(tipo, draw, text, x, y, font, max_width, measure_only=Fa
                 draw.text((x, y), line, font=font, fill="black")
             bbox = font.getbbox(line)
             y += bbox[3] - bbox[1] + line_spacing
-        y += paragraph_spacing - line_spacing     
+        y += paragraph_spacing - line_spacing
     return y
 def create_template(canvas,tipo,PATH_UTILS):
     TOPBAR_PATH = "Top_"+tipo+".png"
@@ -269,7 +267,7 @@ def create_template(canvas,tipo,PATH_UTILS):
 
     image_path_topbar = os.path.join(PATH_UTILS, TOPBAR_PATH)
     image_path_bottonbar = os.path.join(PATH_UTILS, BOTTONBAR_PATH)
-    
+
 
     # --- 1. Pegar barra superior --
     topbar = Image.open(image_path_topbar).convert("RGBA")
@@ -282,9 +280,24 @@ def create_template(canvas,tipo,PATH_UTILS):
     #canvas.alpha_composite(columnbar, (810, 0))
     # --- 4. Pegar Po ---
     logo = create_logo(PATH_UTILS)
-    canvas.paste(logo, (-145, -200), logo)  
+    canvas.paste(logo, (-145, -200), logo)
 
     return canvas
+def _default_body_font_path() -> str:
+    """
+    Fuente de texto multiplataforma para subtítulos/cuerpo de las cards.
+
+    Antes se usaba "arial.ttf" confiando en que el SO la tuviera instalada
+    globalmente (típico en Windows, ausente en Linux/CI/Docker), lo que
+    rompía create_card() con OSError sin mensaje claro (hallazgo IA-05).
+    DejaVu Sans viene empaquetada con matplotlib —dependencia que el
+    proyecto ya requiere—, con licencia abierta (Bitstream Vera), así que
+    está siempre disponible sin añadir un asset binario nuevo al repo.
+    """
+    import matplotlib
+    return os.path.join(matplotlib.get_data_path(), "fonts", "ttf", "DejaVuSans.ttf")
+
+
 def create_card(card_info, IMAGES_TEAMS_DIR, DEFAULT_TEAM_IMAGE,tipo, PATH_UTILS, measure_only=False):
     FONT_PATH = "Extenda.ttf"
     NUM_FONT_PATH = "Oswald-Bold.otf"
@@ -293,23 +306,23 @@ def create_card(card_info, IMAGES_TEAMS_DIR, DEFAULT_TEAM_IMAGE,tipo, PATH_UTILS
     # Fuentes
     title_font = ImageFont.truetype(font_title_path, 50)
     title_num_font = ImageFont.truetype(num_font_path, 50)
-    subtitle_font = ImageFont.truetype("arial.ttf", 25)
-    text_font = ImageFont.truetype("arial.ttf", 16)
+    subtitle_font = ImageFont.truetype(_default_body_font_path(), 25)
+    text_font = ImageFont.truetype(_default_body_font_path(), 16)
     card_width = IMG_WIDTH/3
     if (tipo == "reduced"):
         title_font = ImageFont.truetype(font_title_path, 30)
         title_num_font = ImageFont.truetype(num_font_path, 30)
-        subtitle_font = ImageFont.truetype("arial.ttf", 15)
-        text_font = ImageFont.truetype("arial.ttf", 10)
+        subtitle_font = ImageFont.truetype(_default_body_font_path(), 15)
+        text_font = ImageFont.truetype(_default_body_font_path(), 10)
         card_width = IMG_WIDTH/4
     if (tipo == "Right_box"):
         card_width = IMG_WIDTH/3
-        text_font = ImageFont.truetype("arial.ttf", 20)
+        text_font = ImageFont.truetype(_default_body_font_path(), 20)
     if tipo == "Portada":
         title_font = ImageFont.truetype(font_title_path, 135)
         title_num_font = ImageFont.truetype(num_font_path, 135)
-        subtitle_font = ImageFont.truetype("arial.ttf", 25)
-        text_font = ImageFont.truetype("arial.ttf", 20)
+        subtitle_font = ImageFont.truetype(_default_body_font_path(), 25)
+        text_font = ImageFont.truetype(_default_body_font_path(), 20)
         card_width = IMG_WIDTH *0.68
     x_margin = 10
     max_width = card_width - 2 * x_margin
@@ -320,7 +333,7 @@ def create_card(card_info, IMAGES_TEAMS_DIR, DEFAULT_TEAM_IMAGE,tipo, PATH_UTILS
         y = draw_multiline_text(tipo,None, card_info["titulo"], x_margin, y, title_font, max_width, measure_only=True, titulo=True, number_font=title_num_font)
         y += 15
     y = draw_multiline_text(tipo,None, card_info["subtitulo"], x_margin, y, subtitle_font, max_width, measure_only=True)
-    
+
     if tipo != "reduced":
         y += 25
         for frase in card_info["texto"]:
@@ -333,7 +346,7 @@ def create_card(card_info, IMAGES_TEAMS_DIR, DEFAULT_TEAM_IMAGE,tipo, PATH_UTILS
         img = Image.new("RGBA", (int(card_width), int(final_height)), (255, 255, 255, 255))
     elif(tipo == "Right_box"):
         img = Image.new("RGBA", (int(card_width), int(final_height)), (0, 0, 0, 100))
-    else:    
+    else:
         img = Image.new("RGBA", (int(card_width), int(final_height)), (255, 255, 255, 0))
     # --- 3. Pegar imagen de fondo centrada ---
     escudo_manager = manager_photo(card_info.get("manager", ""), IMAGES_TEAMS_DIR, DEFAULT_TEAM_IMAGE)
@@ -410,7 +423,7 @@ def create_logo(PATH_UTILS):
     LOGO_PATH = "LogoBajando.png"
     image_path_logo = os.path.join(PATH_UTILS, LOGO_PATH)
     # --- 4. Pegar logo rotado ---
-    MAX_LOGO_WIDTH = 575 
+    MAX_LOGO_WIDTH = 575
 
     logo = Image.open(image_path_logo).convert("RGBA")
 
@@ -475,11 +488,31 @@ def create_pdf(tipo,cards,clasificacion_json, PATH_UTILS,IMAGES_TEAMS_DIR, DEFAU
     if tipo == "Jornada":
         botton_cards = get_cards_by_tipo(cards,["MVP de la jornada","Peor actuación de la jornada"])
         right_card = get_cards_by_tipo(cards,["clasificacion"])
-    else: 
+    else:
         botton_cards = get_cards_by_tipo(cards,["Fichaje destacado","Venta récord"])
         right_card = get_cards_by_tipo(cards,["rumor"])
 
     column_cards =get_cards_by_tipo(cards,["Expulsión","Héroe bajo palos","Gol en propia"])
+
+    # Validar antes de indexar: la validación de Pydantic solo exige >=1
+    # card en total, no por tipo — si el LLM omite un tipo concreto en una
+    # jornada, botton_cards[0]/right_card[0] lanzaban IndexError sin decir
+    # qué tipo faltaba (hallazgo IA-06).
+    if not botton_cards:
+        tipos_esperados = (
+            ["MVP de la jornada", "Peor actuación de la jornada"] if tipo == "Jornada"
+            else ["Fichaje destacado", "Venta récord"]
+        )
+        raise ValueError(
+            f"create_pdf(tipo={tipo!r}): el LLM no generó ninguna card de tipo {tipos_esperados} "
+            f"(de {len(cards.get('cards', []))} cards totales). No se puede construir la portada/bottom bar."
+        )
+    if not right_card:
+        tipo_esperado = "clasificacion" if tipo == "Jornada" else "rumor"
+        raise ValueError(
+            f"create_pdf(tipo={tipo!r}): el LLM no generó ninguna card de tipo {tipo_esperado!r} "
+            f"(de {len(cards.get('cards', []))} cards totales)."
+        )
 
     RIGHT_PATH = "Right_"+tipo+".png"
     image_path_right = os.path.join(PATH_UTILS, RIGHT_PATH)
@@ -495,9 +528,9 @@ def create_pdf(tipo,cards,clasificacion_json, PATH_UTILS,IMAGES_TEAMS_DIR, DEFAU
     portada_text = create_card(botton_cards[0], IMAGES_TEAMS_DIR, DEFAULT_TEAM_IMAGE,"Portada", PATH_UTILS)
 
 
-    create_botton(canvas,botton_cards, IMAGES_TEAMS_DIR, DEFAULT_TEAM_IMAGE, PATH_UTILS)    
+    create_botton(canvas,botton_cards, IMAGES_TEAMS_DIR, DEFAULT_TEAM_IMAGE, PATH_UTILS)
 
-    
+
     canvas.alpha_composite(portada_text, (0,400))
 
     card_general = create_clasification_card_horizontal(clasificacion_json["general"],PATH_UTILS,width=600,height=75,IMAGES_TEAMS_DIR=IMAGES_TEAMS_DIR,DEFAULT_TEAM_IMAGE=DEFAULT_TEAM_IMAGE)
@@ -515,5 +548,5 @@ def create_pdf(tipo,cards,clasificacion_json, PATH_UTILS,IMAGES_TEAMS_DIR, DEFAU
     # --- 5. Creo Columna Izquierda ---
     if(tipo == "Jornada"):
         create_columns(canvas,column_cards, IMAGES_TEAMS_DIR, DEFAULT_TEAM_IMAGE, PATH_UTILS)
-    
+
     return canvas

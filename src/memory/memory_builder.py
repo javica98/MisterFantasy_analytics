@@ -25,21 +25,33 @@ IMPORTANT_CARD_TYPES = {
 }
 
 
-def build_memories(events_json: dict[str, Any], cards_json: dict[str, Any] | None = None) -> list[dict[str, Any]]:
-    """Create factual and narrative memory records for one newspaper run."""
+def build_memories(
+    events_json: dict[str, Any],
+    cards_json: dict[str, Any] | None = None,
+    temporada: str | None = None,
+) -> list[dict[str, Any]]:
+    """Create factual and narrative memory records for one newspaper run.
+
+    `temporada` se guarda en cada memoria para poder filtrar la recuperación
+    por temporada activa (ver retrieve_relevant_memories) y evitar que
+    recuerdos de una temporada anterior contaminen el periódico de la
+    siguiente (hallazgo IA-02). Si se omite, la memoria queda sin
+    temporada — no colisiona con memorias etiquetadas, pero tampoco se
+    recupera cuando se filtra por una temporada concreta.
+    """
     cards_json = cards_json or {}
     fecha = _memory_date(events_json)
 
     memories: list[dict[str, Any]] = []
-    memories.extend(_classification_memories(events_json, fecha))
-    memories.extend(_transfer_memories(events_json, fecha))
-    memories.extend(_gameweek_memories(events_json, fecha))
-    memories.extend(_narrative_memories(cards_json, fecha))
+    memories.extend(_classification_memories(events_json, fecha, temporada))
+    memories.extend(_transfer_memories(events_json, fecha, temporada))
+    memories.extend(_gameweek_memories(events_json, fecha, temporada))
+    memories.extend(_narrative_memories(cards_json, fecha, temporada))
 
     return [_with_id(memory) for memory in memories]
 
 
-def _classification_memories(events_json: dict[str, Any], fecha: str) -> list[dict[str, Any]]:
+def _classification_memories(events_json: dict[str, Any], fecha: str, temporada: str | None = None) -> list[dict[str, Any]]:
     clasificacion = events_json.get("clasificacion", {})
     general = clasificacion.get("general", {})
     jornada = clasificacion.get("jornada", {})
@@ -101,11 +113,12 @@ def _classification_memories(events_json: dict[str, Any], fecha: str) -> list[di
             facts=facts,
             tags=tags,
             importance=5,
+            temporada=temporada,
         )
     ]
 
 
-def _transfer_memories(events_json: dict[str, Any], fecha: str) -> list[dict[str, Any]]:
+def _transfer_memories(events_json: dict[str, Any], fecha: str, temporada: str | None = None) -> list[dict[str, Any]]:
     memories = []
     for transfer in events_json.get("transfers", []):
         manager = transfer.get("equipo")
@@ -149,13 +162,14 @@ def _transfer_memories(events_json: dict[str, Any], fecha: str) -> list[dict[str
                 },
                 tags=_clean_list([label, subtipo, manager, jugador, equipo_jugador, "mercado"]),
                 importance=_money_importance(dinero, subtipo),
+                temporada=temporada,
             )
         )
 
     return memories
 
 
-def _gameweek_memories(events_json: dict[str, Any], fecha: str) -> list[dict[str, Any]]:
+def _gameweek_memories(events_json: dict[str, Any], fecha: str, temporada: str | None = None) -> list[dict[str, Any]]:
     gameweek = events_json.get("gameweek", [])
     if not gameweek:
         return []
@@ -209,13 +223,14 @@ def _gameweek_memories(events_json: dict[str, Any], fecha: str) -> list[dict[str
                 },
                 tags=_clean_list([category, manager, jugador, equipo_jugador, "jornada"]),
                 importance=4 if category in {"mvp", "peor_actuacion"} else 3,
+                temporada=temporada,
             )
         )
 
     return memories
 
 
-def _narrative_memories(cards_json: dict[str, Any], fecha: str) -> list[dict[str, Any]]:
+def _narrative_memories(cards_json: dict[str, Any], fecha: str, temporada: str | None = None) -> list[dict[str, Any]]:
     memories = []
     for card in cards_json.get("cards", []):
         tipo = card.get("tipo")
@@ -251,6 +266,7 @@ def _narrative_memories(cards_json: dict[str, Any], fecha: str) -> list[dict[str
                 },
                 tags=_clean_list([tipo, manager, jugador, equipo, "periodico", "titular"]),
                 importance=5 if tipo in {"clasificacion", "Fichaje destacado", "MVP de la jornada"} else 3,
+                temporada=temporada,
             )
         )
 
@@ -272,12 +288,14 @@ def _base_memory(
     team: str | None = None,
     title: str | None = None,
     subtitle: str | None = None,
+    temporada: str | None = None,
 ) -> dict[str, Any]:
     memory = {
         "schema_version": 1,
         "created_at": datetime.utcnow().isoformat(timespec="seconds") + "Z",
         "fecha": fecha,
         "jornada": jornada,
+        "temporada": temporada,
         "layer": layer,
         "category": category,
         "manager": manager,
@@ -295,9 +313,12 @@ def _base_memory(
 
 
 def _with_id(memory: dict[str, Any]) -> dict[str, Any]:
+    # temporada incluida en el hash: la misma combinación fecha/jornada/
+    # categoria/manager/jugador/titulo puede repetirse de una temporada a
+    # otra y no deben colisionar en el mismo id al hacer upsert (IA-02).
     raw = "|".join(
         str(memory.get(key) or "")
-        for key in ("fecha", "jornada", "layer", "category", "manager", "player", "title")
+        for key in ("temporada", "fecha", "jornada", "layer", "category", "manager", "player", "title")
     )
     memory["id"] = hashlib.sha1(raw.encode("utf-8")).hexdigest()[:16]
     return memory
