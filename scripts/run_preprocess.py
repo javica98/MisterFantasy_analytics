@@ -3,18 +3,12 @@ import os
 import sys
 from pathlib import Path
 
-import pandas as pd
 
 # ── Ajuste de entorno ─────────────────────────────────────────────────────────
-CURRENT_FILE = Path(__file__).resolve()
-ROOT_DIR = CURRENT_FILE.parent.parent
-SRC_DIR = ROOT_DIR / "src"
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+from src.utils.bootstrap import setup_project_root
 
-for p in (ROOT_DIR, SRC_DIR):
-    if str(p) not in sys.path:
-        sys.path.insert(0, str(p))
-
-os.chdir(ROOT_DIR)
+ROOT_DIR = setup_project_root(__file__)
 
 from src.preprocessing.process_ganancias import procesar_ganancias
 from src.preprocessing.process_ganancias_jugador import procesar_ganancias_jugador
@@ -22,8 +16,7 @@ from src.preprocessing.process_clausulas_acuerdos import procesar_clausulas_acue
 
 # --- Cargar configuración ---
 from src.utils.config_loader import load_config
-from src.utils.data_utils import normalize_date_column
-from src.utils.file_utils import safe_read_html, safe_read_csv, safe_save_csv
+from src.utils.file_utils import safe_read_csv, safe_save_csv
 
 
 cfg = load_config(validate_env=False)
@@ -63,8 +56,8 @@ CSV_NOTIFICACIONES_CLAUSULA_ACUERDO = cfg["paths"]["csv"]["clausulas_acuerdos"]
 # --- 1. CLEAN ---
 logger.info("Limpiando y estandarizando ganancias...")
 csv_notificaciones = safe_read_csv(CSV_NOTIFICACIONES)
-if csv_notificaciones is None:
-    logger.warning("⏭️ Saltando limpieza de ganancias (CSV no disponible).")
+if csv_notificaciones.empty:
+    logger.warning("⏭️ Saltando limpieza de ganancias (sin datos disponibles).")
 else:
     csv_notificaciones_clean = procesar_ganancias(csv_notificaciones)
     safe_save_csv(csv_notificaciones_clean, CSV_NOTIFICACIONES_CLEAN)
@@ -73,8 +66,8 @@ else:
 # --- 2. JUGADOR ---
 logger.info("Calculando ganancias netas por jugador (Diff compra/venta)...")
 csv_notificaciones_clean = safe_read_csv(CSV_NOTIFICACIONES_CLEAN)
-if csv_notificaciones_clean is None:
-    logger.warning("⏭️ Saltando cálculo por jugador (ganancias_clean.csv no disponible).")
+if csv_notificaciones_clean.empty:
+    logger.warning("⏭️ Saltando cálculo por jugador (sin datos de ganancias limpias disponibles).")
 else:
     csv_jugador = procesar_ganancias_jugador(csv_notificaciones_clean)
     safe_save_csv(csv_jugador, CSV_NOTIFICACIONES_JUGADOR)
@@ -83,8 +76,8 @@ else:
 # --- 3. CLAUSULAS ---
 logger.info("Extrayendo cláusulas y acuerdos...")
 csv_notificaciones = safe_read_csv(CSV_NOTIFICACIONES)
-if csv_notificaciones is None:
-    logger.warning("⏭️ Saltando extracción de cláusulas (ganancias.csv no disponible).")
+if csv_notificaciones.empty:
+    logger.warning("⏭️ Saltando extracción de cláusulas (sin datos disponibles).")
 else:
     csv_clausulas = procesar_clausulas_acuerdos(csv_notificaciones)
     safe_save_csv(csv_clausulas, CSV_NOTIFICACIONES_CLAUSULA_ACUERDO)

@@ -37,7 +37,6 @@ def extraer_subidas_bajadas(html: str) -> pd.DataFrame:
                         continue
 
                     variacion = td_valor.get_text(strip=True)
-                    clase = td_valor.get("class", [])
 
                     jugadores.append({
                         "date": today,
@@ -47,6 +46,18 @@ def extraer_subidas_bajadas(html: str) -> pd.DataFrame:
 
                 except Exception as row_e:
                     logger.debug(f"Error procesando fila de tabla: {row_e}")
+
+        if not jugadores:
+            # Distinguir "hoy legítimamente no hay subidas/bajadas" (contenedor
+            # presente, 0 filas) de "el selector ya no existe" (mensaje de
+            # arriba, líneas 18-20) — antes ambos caían en el mismo except
+            # genérico de abajo como un KeyError indistinguible (hallazgo DATA-05).
+            logger.warning(
+                "Se encontraron tablas 'thin-scrollbar' pero no se extrajo ningún "
+                "jugador (0 filas parseadas). Puede que hoy no haya subidas/bajadas, "
+                "o que la estructura interna de la fila haya cambiado."
+            )
+            return pd.DataFrame(columns=["date", "nombre", "variacion"])
 
         df = pd.DataFrame(jugadores)
         df['variacion'] = df['variacion'].astype(float) / 1_000

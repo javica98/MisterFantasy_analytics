@@ -64,6 +64,19 @@ def extraer_clasificaciones(html: str) -> pd.DataFrame:
                     "valor_equipo": valor_equipo
                 })
 
+        if not clasificaciones:
+            # Distinguir "0 filas porque la estructura interna cambió" de un
+            # fallo de red o de que no hubiera paneles en absoluto (mensaje
+            # de arriba, líneas 22-24) — antes ambos caían en el mismo
+            # except genérico de abajo como un KeyError indistinguible
+            # (hallazgo DATA-05).
+            logger.warning(
+                "Se encontraron paneles de jornada pero no se extrajo ningún "
+                "jugador (0 filas parseadas). Puede que la estructura interna de "
+                "'player-row' haya cambiado — revisa manualmente si persiste."
+            )
+            return pd.DataFrame(columns=["jornada", "nombre", "posicion", "puntos", "valor_equipo"])
+
         df = pd.DataFrame(clasificaciones)
         df['valor_equipo'] = df['valor_equipo'] / 1_000_000
         logger.info(f"Clasificaciones extraídas correctamente ({len(df)} registros).")

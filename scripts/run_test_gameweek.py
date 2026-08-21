@@ -1,50 +1,21 @@
-import sys
-import pandas as pd
-import logging
-
-from pathlib import Path
-import os, sys
-
-# --- 🔧 Ajuste de ruta raíz del proyecto ---
-import sys
 import os
+import sys
+import logging
 from pathlib import Path
 
-# --- 🔧 Ajuste del entorno de ejecución ---
-# Detectar raíz del proyecto automáticamente
-CURRENT_FILE = Path(__file__).resolve()
-ROOT_DIR = CURRENT_FILE.parent.parent  # sube desde /scripts hasta la raíz
-SRC_DIR = ROOT_DIR / "src"
 
-# Asegurar que la raíz y src están en el sys.path
-for p in (ROOT_DIR, SRC_DIR):
-    if str(p) not in sys.path:
-        sys.path.insert(0, str(p))
+# --- Ajuste del entorno de ejecución ---
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+from src.utils.bootstrap import setup_project_root
 
-# Cambiar el directorio de trabajo a la raíz del proyecto
-os.chdir(ROOT_DIR)
+ROOT_DIR = setup_project_root(__file__)
 
-print("📂 Directorio raíz:", ROOT_DIR)
-print("📁 SRC añadido:", SRC_DIR)
-print("📁 sys.path[0]:", sys.path[0])
-
-from src.data.merge_notifications import merge_feed_cards_until_match
-from src.data.merge_clasification import merge_clasifications
-from src.data.extract_notificaciones import extraer_notificaciones
-from src.data.extract_clasificacion import extraer_clasificaciones
-from src.data.extract_mercado import extraer_mercado
-from src.data.extract_jornadas import extraer_jornadas
-from src.data.extract_subidas_bajadas import extraer_subidas_bajadas
 from src.data.extract_gameweek import extraer_gameweek
 from src.data.merge_gameweek import merge_gameweek
-from src.data.extract_quinielas import extraer_quinielas
-from src.data.merge_quinielas import merge_quinielas
 
-from src.scraper.login import login
 
 # --- Cargar configuración ---
 from src.utils.config_loader import load_config
-from src.utils.data_utils import normalize_date_column
 from src.utils.file_utils import safe_read_html, safe_read_csv, safe_save_csv
 
 

@@ -94,6 +94,44 @@ class TestWriteTable:
         assert list(out.columns).count("temporada") == 1
         assert out["temporada"].tolist() == ["2026-27"]
 
+    def test_devuelve_true_si_escribe(self, db_path):
+        assert db_utils.write_table(pd.DataFrame([{"x": 1}]), "t", "2026-27") is True
+
+    def test_rechaza_escritura_si_el_df_nuevo_encoge_mucho(self, db_path):
+        # 20 filas existentes, reescribir con solo 2 (< 50%) debe rechazarse
+        df_lleno = pd.DataFrame([{"jornada": i} for i in range(20)])
+        db_utils.write_table(df_lleno, "gameweek", "2026-27")
+
+        df_vacio = pd.DataFrame([{"jornada": 1}, {"jornada": 2}])
+        result = db_utils.write_table(df_vacio, "gameweek", "2026-27")
+
+        assert result is False
+        out = db_utils.read_table("gameweek", temporada="2026-27")
+        assert len(out) == 20  # los datos originales no se tocaron
+
+    def test_allow_shrink_permite_la_escritura_igualmente(self, db_path):
+        df_lleno = pd.DataFrame([{"jornada": i} for i in range(20)])
+        db_utils.write_table(df_lleno, "gameweek", "2026-27")
+
+        df_vacio = pd.DataFrame([{"jornada": 1}])
+        result = db_utils.write_table(df_vacio, "gameweek", "2026-27", allow_shrink=True)
+
+        assert result is True
+        out = db_utils.read_table("gameweek", temporada="2026-27")
+        assert len(out) == 1
+
+    def test_no_bloquea_si_habia_pocas_filas(self, db_path):
+        # por debajo del umbral (_SHRINK_GUARD_MIN_ROWS=10), encoger es normal
+        df_pocas = pd.DataFrame([{"x": i} for i in range(5)])
+        db_utils.write_table(df_pocas, "clausulas_acuerdos", "2026-27")
+
+        df_menos = pd.DataFrame([{"x": 1}])
+        result = db_utils.write_table(df_menos, "clausulas_acuerdos", "2026-27")
+
+        assert result is True
+        out = db_utils.read_table("clausulas_acuerdos", temporada="2026-27")
+        assert len(out) == 1
+
 
 class TestKnownTables:
     def test_incluye_las_tablas_de_config_yaml(self):

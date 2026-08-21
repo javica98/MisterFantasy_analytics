@@ -61,18 +61,56 @@ def read_table(table: str, temporada: str | None = None) -> pd.DataFrame:
         )
 
 
-def write_table(df: pd.DataFrame, table: str, temporada: str) -> None:
+# Si una tabla ya tiene al menos este número de filas para la temporada,
+# una escritura nueva que traiga menos de MIN_KEEP_RATIO de esas filas se
+# rechaza por defecto (probable fallo silencioso aguas arriba, no una
+# reducción real de datos).
+_SHRINK_GUARD_MIN_ROWS = 10
+_SHRINK_GUARD_MIN_KEEP_RATIO = 0.5
+
+
+def write_table(df: pd.DataFrame, table: str, temporada: str, allow_shrink: bool = False) -> bool:
     """Sobreescribe las filas de una temporada en una tabla.
 
     Reproduce el patrón actual de los scripts (leer todo, concatenar/deduplicar
     en pandas, sobreescribir el archivo entero) pero acotado a la temporada,
     en vez de al fichero completo. Idempotente: se puede volver a llamar sin
     duplicar filas.
+
+    Antes de borrar y reescribir, compara el tamaño del DataFrame nuevo contra
+    las filas que ya existen para esa temporada. Si el nuevo trae sospechosamente
+    menos (por defecto, menos de la mitad, y solo si ya había >= 10 filas),
+    rechaza la escritura en vez de arriesgarse a borrar datos reales por un
+    fallo silencioso aguas arriba (extracción/preprocesado que produjo un
+    DataFrame vacío o truncado). Pasa allow_shrink=True para casos legítimos
+    (ej. reimportar una migración desde cero).
+
+    Devuelve True si escribió, False si rechazó la escritura o falló.
     """
     df = df.copy()
     df["temporada"] = temporada
     try:
         with get_connection() as conn:
+            existing_rows = 0
+            if table_exists(conn, table):
+                cur = conn.execute(
+                    f"SELECT COUNT(*) FROM {table} WHERE temporada = ?", (temporada,)
+                )
+                existing_rows = cur.fetchone()[0]
+
+            if (
+                not allow_shrink
+                and existing_rows >= _SHRINK_GUARD_MIN_ROWS
+                and len(df) < existing_rows * _SHRINK_GUARD_MIN_KEEP_RATIO
+            ):
+                logger.error(
+                    f"Escritura rechazada: tabla={table} temporada={temporada} tiene "
+                    f"{existing_rows} filas y el DataFrame nuevo solo trae {len(df)} "
+                    f"(< {_SHRINK_GUARD_MIN_KEEP_RATIO:.0%}). Probable fallo silencioso "
+                    f"aguas arriba; usa allow_shrink=True si es intencional."
+                )
+                return False
+
             if table_exists(conn, table):
                 conn.execute(f"DELETE FROM {table} WHERE temporada = ?", (temporada,))
             df.to_sql(table, conn, if_exists="append", index=False)
@@ -81,5 +119,7 @@ def write_table(df: pd.DataFrame, table: str, temporada: str) -> None:
             )
             conn.commit()
         logger.info(f"Guardado en BD: tabla={table} temporada={temporada} filas={len(df)}")
+        return True
     except Exception as e:
         logger.error(f"Error al guardar tabla {table} (temporada={temporada}): {e}")
+        return False

@@ -10,16 +10,10 @@ import os
 import sys
 from pathlib import Path
 
-# ── Ajuste de rutas ──────────────────────────────────────────────────────────
-CURRENT_FILE = Path(__file__).resolve()
-ROOT_DIR = CURRENT_FILE.parent.parent
-SRC_DIR = ROOT_DIR / "src"
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+from src.utils.bootstrap import setup_project_root
 
-for p in (ROOT_DIR, SRC_DIR):
-    if str(p) not in sys.path:
-        sys.path.insert(0, str(p))
-
-os.chdir(ROOT_DIR)
+ROOT_DIR = setup_project_root(__file__)
 
 from src.utils.photo_utils import remove_background_image
 

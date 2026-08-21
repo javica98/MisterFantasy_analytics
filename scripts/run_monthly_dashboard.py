@@ -1,32 +1,14 @@
-import sys
-import pandas as pd
-import logging
-
-from pathlib import Path
-import os, sys
-
-# --- 🔧 Ajuste de ruta raíz del proyecto ---
-import sys
 import os
+import sys
+import logging
 from pathlib import Path
 
-# --- 🔧 Ajuste del entorno de ejecución ---
-# Detectar raíz del proyecto automáticamente
-CURRENT_FILE = Path(__file__).resolve()
-ROOT_DIR = CURRENT_FILE.parent.parent  # sube desde /scripts hasta la raíz
-SRC_DIR = ROOT_DIR / "src"
 
-# Asegurar que la raíz y src están en el sys.path
-for p in (ROOT_DIR, SRC_DIR):
-    if str(p) not in sys.path:
-        sys.path.insert(0, str(p))
+# --- Ajuste del entorno de ejecución ---
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+from src.utils.bootstrap import setup_project_root
 
-# Cambiar el directorio de trabajo a la raíz del proyecto
-os.chdir(ROOT_DIR)
-
-print("📂 Directorio raíz:", ROOT_DIR)
-print("📁 SRC añadido:", SRC_DIR)
-print("📁 sys.path[0]:", sys.path[0])
+ROOT_DIR = setup_project_root(__file__)
 
 from src.visualization.monthly_dashboard import monthly_dashboard
 from src.visualization.create_pdfs import create_report
@@ -34,8 +16,7 @@ from src.visualization.create_pdfs import create_report
 
 # --- Cargar configuración ---
 from src.utils.config_loader import load_config
-from src.utils.data_utils import normalize_date_column
-from src.utils.file_utils import safe_read_html, safe_read_csv, safe_save_csv
+from src.utils.file_utils import safe_read_csv
 
 
 cfg = load_config()
@@ -87,8 +68,8 @@ csv_clasificaciones = safe_read_csv(CSV_CLASIFICACIONES)
 csv_jugadores = safe_read_csv(CSV_NOTIFICACIONES_JUGADOR)
 csv_clausulas = safe_read_csv(CSV_NOTIFICACIONES_CLAUSULA_ACUERDO)
 
-if (csv_notificaciones_clean is None) or (csv_notificaciones_clean is None):
-    logger.warning("⏭️ Saltando sección de notificaciones y clasificaciones (no hay CSV disponible).")
+if csv_notificaciones_clean.empty or csv_clasificaciones.empty:
+    logger.warning("⏭️ Saltando sección de notificaciones y clasificaciones (sin datos disponibles).")
 else:
     figures = monthly_dashboard(csv_jornadas,csv_clasificaciones,csv_notificaciones_clean,csv_jugadores,csv_clausulas)
     logger.info("✅ Figuras creadas")

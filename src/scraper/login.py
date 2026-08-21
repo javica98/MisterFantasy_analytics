@@ -58,10 +58,60 @@ def safe_click(locator, description="", timeout=5000):
         logger.warning("Error al clickar %s: %s", description, e)
         return False
 
-def login():
+# ID de una red publicitaria de terceros (no de mister.mundodeportivo.com),
+# así que es frágil y puede cambiar sin aviso. Centralizado aquí en vez de
+# repetido en cada sitio donde se navega, para que actualizarlo cuando
+# cambie sea un cambio de una sola línea (hallazgo DATA-04).
+AD_POPUP_SELECTOR = "#ssmInterClose21614"
+
+
+def cerrar_popup_publicidad(page, intentos: int = 1, espera_ms: int = 1000) -> bool:
+    """Intenta cerrar el popup publicitario si está visible. No es crítico
+    que falle (el popup puede no aparecer), por eso nunca lanza excepción."""
+    for intento in range(intentos):
+        try:
+            ad_close = page.locator(AD_POPUP_SELECTOR)
+            if ad_close.is_visible():
+                ad_close.click()
+                logger.info("🧹 Pop-up publicitario cerrado ✅")
+                return True
+        except Exception:
+            pass
+        if intento < intentos - 1:
+            page.wait_for_timeout(espera_ms)
+    return False
+
+
+def login(max_retries: int = 3, backoff_seconds: int = 30) -> dict:
     """
-    Realiza login y guarda los HTMLs necesarios en data/raw.
-    Devuelve un dict con las rutas guardadas.
+    Realiza login y guarda los HTMLs necesarios en data/raw, con reintentos.
+
+    El cron que ejecuta esto corre una vez al día — sin reintentos, un
+    fallo de red transitorio significa perder ese día entero de datos sin
+    forma de recuperarlo después (hallazgo DATA-04). Reintenta con backoff
+    antes de abandonar y relanzar la excepción original.
+    """
+    last_exc = None
+    for intento in range(1, max_retries + 1):
+        try:
+            return _login_once()
+        except Exception as exc:
+            last_exc = exc
+            if intento < max_retries:
+                espera = backoff_seconds * intento
+                logger.warning(
+                    "Intento %d/%d de login falló (%s); reintentando en %ds...",
+                    intento, max_retries, exc, espera,
+                )
+                time.sleep(espera)
+            else:
+                logger.error("Login falló tras %d intentos.", max_retries)
+    raise last_exc
+
+
+def _login_once() -> dict:
+    """
+    Un único intento de login. Devuelve un dict con las rutas guardadas.
     Lanza excepción si el login falla críticamente.
     """
     cfg = load_config(validate_env=False)
@@ -131,21 +181,8 @@ def login():
                     raise RuntimeError("No se pudo enviar el formulario de login.")
 
             logger.info("⏳ Esperando posible publicidad (hasta 60s)...")
-            # Intentar cerrar pop-ups si aparecen
-            try:
-                page.wait_for_timeout(2000)
-                for _ in range(6):  # pequeños intentos para cerrar popups
-                    try:
-                        ad_close = page.locator("#ssmInterClose21614")
-                        if ad_close.is_visible():
-                            ad_close.click()
-                            logger.info("🧹 Pop-up publicitario cerrado ✅")
-                            break
-                    except Exception:
-                        pass
-                    page.wait_for_timeout(1000)
-            except Exception:
-                logger.debug("No apareció publicidad o no pudo cerrarse (no crítico).")
+            page.wait_for_timeout(2000)
+            cerrar_popup_publicidad(page, intentos=6, espera_ms=1000)
 
             # Esperar contenido principal
             try:
@@ -175,14 +212,7 @@ def login():
                 except PlaywrightTimeoutError:
                     logger.warning("Timeout al cargar %s, intentando continuar.", url)
 
-                # intentar cerrar pop-up local
-                try:
-                    ad_close = page.locator("#ssmInterClose21614")
-                    if ad_close.is_visible():
-                        ad_close.click()
-                        logger.info("🧹 Pop-up publicitario cerrado ✅")
-                except Exception:
-                    pass
+                cerrar_popup_publicidad(page)
 
                 scroll_infinite(page, scroll_pause=scroll_pause, max_scrolls=max_scrolls)
                 saved_paths[ruta_name] = guardar_html(page.content(), archivo)
@@ -197,14 +227,7 @@ def login():
             except PlaywrightTimeoutError:
                 logger.warning("Timeout al cargar %s, intentando continuar.", url_sb)
 
-            # Intentar cerrar pop-ups
-            try:
-                ad_close = page.locator("#ssmInterClose21614")
-                if ad_close.is_visible():
-                    ad_close.click()
-                    logger.info("🧹 Pop-up publicitario cerrado ✅")
-            except Exception:
-                pass
+            cerrar_popup_publicidad(page)
 
             # Intentar click en 'Bajadas' (si existe)
             try:

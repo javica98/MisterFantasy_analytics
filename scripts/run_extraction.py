@@ -6,15 +6,10 @@ from pathlib import Path
 import pandas as pd
 
 # ── Ajuste de rutas ──────────────────────────────────────────────────────────
-CURRENT_FILE = Path(__file__).resolve()
-ROOT_DIR = CURRENT_FILE.parent.parent
-SRC_DIR = ROOT_DIR / "src"
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+from src.utils.bootstrap import setup_project_root
 
-for p in (ROOT_DIR, SRC_DIR):
-    if str(p) not in sys.path:
-        sys.path.insert(0, str(p))
-
-os.chdir(ROOT_DIR)
+ROOT_DIR = setup_project_root(__file__)
 
 from src.data.merge_notifications import merge_feed_cards_until_match
 from src.data.merge_clasification import merge_clasifications
@@ -90,10 +85,17 @@ def validate_html(path: str, name: str) -> bool:
         return False
     return True
 
+# Secciones saltadas por HTML no disponible/incompleto. Si al final del
+# proceso queda alguna, el script termina con código != 0 para que CI
+# marque el job como fallido y dispare el aviso — antes el script siempre
+# terminaba con éxito aunque se hubieran saltado secciones enteras.
+skipped_sections = []
+
 # ── 1. Notificaciones ─────────────────────────────────────────────────────────
 logger.info("Extrayendo notificaciones...")
 if not validate_html(HTML_AUX, "notificaciones"):
     logger.warning("⏭️ Saltando notificaciones.")
+    skipped_sections.append("notificaciones")
 else:
     new_html = safe_read_html(HTML_AUX)
     new_notificaciones = extraer_notificaciones(new_html)
@@ -107,6 +109,7 @@ else:
 logger.info("Extrayendo clasificaciones...")
 if not validate_html(HTML_CLAS_AUX, "clasificaciones"):
     logger.warning("⏭️ Saltando clasificaciones.")
+    skipped_sections.append("clasificaciones")
 else:
     new_html_clas = safe_read_html(HTML_CLAS_AUX)
     new_clasificaciones = extraer_clasificaciones(new_html_clas)
@@ -122,6 +125,7 @@ else:
 logger.info("Extrayendo mercado...")
 if not validate_html(HTML_MERCADO_AUX, "mercado"):
     logger.warning("⏭️ Saltando mercado.")
+    skipped_sections.append("mercado")
 else:
     html_mercado = safe_read_html(HTML_MERCADO_AUX)
     new_csv_mercado = extraer_mercado(html_mercado)
@@ -141,6 +145,7 @@ else:
 logger.info("Extrayendo jornadas...")
 if not validate_html(HTML_JORNADAS_AUX, "jornadas"):
     logger.warning("⏭️ Saltando jornadas.")
+    skipped_sections.append("jornadas")
 else:
     html_jornadas = safe_read_html(HTML_JORNADAS_AUX)
     new_csv_jornadas = extraer_jornadas(html_jornadas)
@@ -160,6 +165,7 @@ else:
 logger.info("Extrayendo subidas y bajadas...")
 if not validate_html(HTML_SUBIDASBAJADAS, "subidas_bajadas"):
     logger.warning("⏭️ Saltando subidas/bajadas.")
+    skipped_sections.append("subidas_bajadas")
 else:
     html_subidas_bajadas = safe_read_html(HTML_SUBIDASBAJADAS)
     new_csv_subidas_bajadas = extraer_subidas_bajadas(html_subidas_bajadas)
@@ -179,6 +185,7 @@ else:
 logger.info("Extrayendo gameweek...")
 if not validate_html(HTML_GAMEWEEK, "gameweek"):
     logger.warning("⏭️ Saltando gameweek.")
+    skipped_sections.append("gameweek")
 else:
     new_html_gameweek = safe_read_html(HTML_GAMEWEEK)
     new_gameweek = extraer_gameweek(new_html_gameweek)
@@ -193,6 +200,7 @@ else:
 logger.info("Extrayendo quiniela...")
 if not validate_html(HTML_QUINIELA, "quiniela"):
     logger.warning("⏭️ Saltando quinielas.")
+    skipped_sections.append("quiniela")
 else:
     new_html_quin = safe_read_html(HTML_QUINIELA)
     new_quinielas = extraer_quinielas(new_html_quin)
@@ -201,5 +209,12 @@ else:
     new_csv_quinielas = merge_quinielas(csv_quinielas, new_quinielas)
     safe_save_csv(new_csv_quinielas, CSV_QUINIELA)
     logger.info("✅ Quinielas guardadas.")
+
+if skipped_sections:
+    logger.error(
+        "🛑 Proceso de extracción completado con %d sección(es) saltada(s): %s",
+        len(skipped_sections), ", ".join(skipped_sections),
+    )
+    sys.exit(1)
 
 logger.info("🏁 Proceso de extracción completado sin errores.")

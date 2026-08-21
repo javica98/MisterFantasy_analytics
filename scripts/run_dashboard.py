@@ -3,25 +3,18 @@ import os
 import sys
 from pathlib import Path
 
-import pandas as pd
 
 # ── Ajuste de entorno ─────────────────────────────────────────────────────────
-CURRENT_FILE = Path(__file__).resolve()
-ROOT_DIR = CURRENT_FILE.parent.parent
-SRC_DIR = ROOT_DIR / "src"
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+from src.utils.bootstrap import setup_project_root
 
-for p in (ROOT_DIR, SRC_DIR):
-    if str(p) not in sys.path:
-        sys.path.insert(0, str(p))
-
-os.chdir(ROOT_DIR)
+ROOT_DIR = setup_project_root(__file__)
 
 from src.visualization.dashboard_por_manager import dashboard_por_manager
 
 # --- Cargar configuración ---
 from src.utils.config_loader import load_config
-from src.utils.data_utils import normalize_date_column
-from src.utils.file_utils import safe_read_html, safe_read_csv, safe_save_csv
+from src.utils.file_utils import safe_read_csv
 
 
 cfg = load_config()

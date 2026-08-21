@@ -67,7 +67,24 @@ Usa `sqlite3` (stdlib) + `pandas.to_sql`/`read_sql_query`, sin dependencias nuev
 Utilidades para redimensionar y convertir imágenes (usadas en `generate_pdf.py`).
 
 ### `bootstrap.py`
-Inicialización del entorno: configura logging, carga config, añade `src/` al `sys.path`.
+`setup_project_root(script_file)` — añade la raíz del proyecto y `src/` al
+`sys.path` y hace `chdir` a la raíz. Es el punto de entrada mínimo que usan
+todos los scripts de `scripts/*.py` antes de poder hacer `from src...`:
+
+```python
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+from src.utils.bootstrap import setup_project_root
+
+ROOT_DIR = setup_project_root(__file__)
+```
+
+El primer `sys.path.insert` es inevitable (Python no puede importar
+`src.utils.bootstrap` sin que la raíz ya esté en el path), pero es la única
+línea de boilerplate que le queda a cada script — antes cada uno repetía a
+mano 5-6 líneas casi idénticas para calcular `ROOT_DIR`/`SRC_DIR` y hacer
+`sys.path.insert`/`os.chdir`.
 
 ### `text_cleaning.py`
 Limpieza de strings: normalización de tildes, mayúsculas, caracteres especiales.

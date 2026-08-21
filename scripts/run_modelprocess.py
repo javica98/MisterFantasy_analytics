@@ -1,41 +1,22 @@
-import sys
-import pandas as pd
-import logging
-import numpy as np
-
-from pathlib import Path
-import os, sys
-
-# --- 🔧 Ajuste de ruta raíz del proyecto ---
-import sys
 import os
+import sys
+import logging
 from pathlib import Path
 
-# --- 🔧 Ajuste del entorno de ejecución ---
-# Detectar raíz del proyecto automáticamente
-CURRENT_FILE = Path(__file__).resolve()
-ROOT_DIR = CURRENT_FILE.parent.parent  # sube desde /scripts hasta la raíz
-SRC_DIR = ROOT_DIR / "src"
+import numpy as np
+import pandas as pd
 
-# Asegurar que la raíz y src están en el sys.path
-for p in (ROOT_DIR, SRC_DIR):
-    if str(p) not in sys.path:
-        sys.path.insert(0, str(p))
+# --- Ajuste del entorno de ejecución ---
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+from src.utils.bootstrap import setup_project_root
 
-# Cambiar el directorio de trabajo a la raíz del proyecto
-os.chdir(ROOT_DIR)
-
-print("📂 Directorio raíz:", ROOT_DIR)
-print("📁 SRC añadido:", SRC_DIR)
-print("📁 sys.path[0]:", sys.path[0])
+ROOT_DIR = setup_project_root(__file__)
 
 from src.data.process_modeling import procesar_model_data
 
 # --- Cargar configuración ---
 from src.utils.config_loader import load_config
-from src.utils.data_utils import normalize_date_column
-from src.utils.file_utils import safe_read_html, safe_read_csv, safe_save_csv
-
+from src.utils.file_utils import safe_read_csv, safe_save_csv
 
 cfg = load_config()
 
@@ -53,6 +34,8 @@ logging.basicConfig(
     ]
 )
 logger = logging.getLogger(__name__)
+
+logger.debug("Directorio raíz: %s", ROOT_DIR)
 
 # --- Asegurar directorios base ---
 os.makedirs(cfg["data"]["processed_dir"], exist_ok=True)
@@ -80,34 +63,33 @@ csv_mercado = safe_read_csv(CSV_MERCADO)
 csv_subidasBajadas = safe_read_csv(CSV_SUBIDASBAJADAS)
 csv_jornada = safe_read_csv(CSV_JORNADA)
 
-if (csv_notificaciones_clean is None) or (csv_mercado is None):
-    logger.warning("⏭️ Saltando sección de notificaciones y clasificaciones (no hay CSV disponible).")
+if csv_notificaciones_clean.empty or csv_mercado.empty:
+    logger.warning("⏭️ Saltando sección de notificaciones y clasificaciones (sin datos disponibles).")
 else:
-    newData = procesar_model_data(csv_mercado,csv_subidasBajadas,csv_jornada,csv_notificaciones_clean)
-    safe_save_csv(newData,CSV_DATA_MODEL)
+    newData = procesar_model_data(csv_mercado, csv_subidasBajadas, csv_jornada, csv_notificaciones_clean)
+    safe_save_csv(newData, CSV_DATA_MODEL)
     logger.info("✅ Model data creado")
 
 
 # Carga tu base de datos
-df =  safe_read_csv(CSV_DATA_MODEL)
+df = safe_read_csv(CSV_DATA_MODEL)
 
 # =========================
 # PASO 1: DIMENSIONES Y TIPOS
 # =========================
-print("Dimensiones del dataset:", df.shape)
-print("\nTipos de datos:")
-print(df.dtypes)
+logger.info("Dimensiones del dataset: %s", df.shape)
+logger.info("Tipos de datos:\n%s", df.dtypes)
 
 # =========================
 # PASO 2: DUPLICADOS
 # =========================
 duplicados_exactos = df.duplicated().sum()
-print(f"\nDuplicados exactos encontrados: {duplicados_exactos}")
+logger.info("Duplicados exactos encontrados: %d", duplicados_exactos)
 
 # Duplicados lógicos (ajusta columnas clave según tu dataset)
 keys_logicas = ['date', 'jugador']
 duplicados_logicos = df.duplicated(subset=keys_logicas).sum()
-print(f"Duplicados lógicos por keys {keys_logicas}: {duplicados_logicos}")
+logger.info("Duplicados lógicos por keys %s: %d", keys_logicas, duplicados_logicos)
 
 # =========================
 # PASO 3: NULOS
@@ -115,26 +97,23 @@ print(f"Duplicados lógicos por keys {keys_logicas}: {duplicados_logicos}")
 nulos = df.isnull().sum()
 pct_nulos = (nulos / len(df)) * 100
 nulos_df = pd.DataFrame({'nulos': nulos, 'pct_nulos': pct_nulos})
-print("\nValores nulos por columna:")
-print(nulos_df)
+logger.info("Valores nulos por columna:\n%s", nulos_df)
 
 # =========================
 # PASO 4: ESTADÍSTICAS BÁSICAS
 # =========================
-print("\nEstadísticas numéricas:")
-print(df.describe())
+logger.info("Estadísticas numéricas:\n%s", df.describe())
 
 # Variables categóricas
 cat_cols = df.select_dtypes(include=['object', 'category']).columns
 for col in cat_cols:
-    print(f"\nColumn: {col}")
-    print(df[col].value_counts())
+    logger.info("Column: %s\n%s", col, df[col].value_counts())
 
 # =========================
 # PASO 5: CONSISTENCIA DE CLAVES
 # =========================
 for key in ['date', 'jugador']:
-    print(f"\nUnique {key}: {df[key].nunique()} | Total rows: {len(df)}")
+    logger.info("Unique %s: %d | Total rows: %d", key, df[key].nunique(), len(df))
 
 # =========================
 # PASO 6: OUTLIERS SIMPLES
@@ -149,8 +128,7 @@ for col in num_cols:
     upper = Q3 + 1.5*IQR
     outliers = df[(df[col] < lower) | (df[col] > upper)]
     outliers_summary[col] = len(outliers)
-print("\nOutliers detectados por columna:")
-print(outliers_summary)
+logger.info("Outliers detectados por columna:\n%s", outliers_summary)
 
 # =========================
 # PASO 7: RESUMEN DE AUDITORÍA
@@ -164,7 +142,6 @@ audit_df = pd.DataFrame({
     'duplicados_logicos': df.duplicated(subset=keys_logicas).sum(),
 })
 
-print("\nResumen de auditoría:")
-print(audit_df)
+logger.info("Resumen de auditoría:\n%s", audit_df)
 
-safe_save_csv(audit_df,CSV_AUDIT)
+safe_save_csv(audit_df, CSV_AUDIT)

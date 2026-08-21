@@ -33,7 +33,13 @@ jobs:
           playwright install --with-deps
 
       # 4️⃣ Ejecutar scraper
+      #    continue-on-error: si run_extraction.py salta alguna sección
+      #    crítica, termina con código != 0, pero dejamos que el job siga
+      #    para no perder el commit de las secciones que sí tuvieron éxito.
+      #    El paso 7️⃣ vuelve a fallar el job explícitamente al final.
       - name: Run scraper
+        id: extract
+        continue-on-error: true
         env:
           MISTER_USERNAME: ${{ secrets.MISTER_USERNAME }}
           MISTER_PASSWORD: ${{ secrets.MISTER_PASSWORD }}
@@ -64,7 +70,16 @@ jobs:
             echo "No changes to commit."
           fi
 
-      # 7️⃣ Si algo del job anterior falló, abrir/actualizar un issue de aviso
+      # 7️⃣ Si el scraper saltó alguna sección crítica, fallar el job ahora
+      #    (después de comitear lo que sí se extrajo) para que se abra el
+      #    aviso del paso siguiente.
+      - name: Fail job if the scraper skipped sections
+        if: steps.extract.outcome == 'failure'
+        run: |
+          echo "::error::run_extraction.py saltó una o más secciones — revisa los logs del paso 'Run scraper'."
+          exit 1
+
+      # 8️⃣ Si algo del job anterior falló, abrir/actualizar un issue de aviso
       - name: Notify failure via GitHub issue
         if: failure()
         uses: actions/github-script@v7
