@@ -1,0 +1,10 @@
+# Sirve la web app estática de Sotano League (web/ + assets/) con nginx.
+# La app usa rutas absolutas (/web/..., /assets/web/...) por lo que el
+# document root debe ser la raíz del proyecto, no web/ directamente.
+FROM nginx:alpine
+
+COPY web /usr/share/nginx/html/web
+COPY assets /usr/share/nginx/html/assets
+COPY docker/nginx.web.conf /etc/nginx/conf.d/default.conf
+
+EXPOSE 80

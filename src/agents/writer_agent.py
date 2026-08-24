@@ -25,6 +25,7 @@ from src.AI_newspaper.generate_article import generate_articles
 from src.AI_newspaper.SchemeValidator import FinalJSON
 from src.memory.memory_store import format_memory_context, retrieve_relevant_memories
 from src.utils.config_loader import load_config
+from src.utils.llm_logger import log_llm_call
 
 logger = logging.getLogger(__name__)
 
@@ -134,6 +135,13 @@ def validate_cards(cards_json: str) -> str:
     except ValidationError as e:
         errors = [f"{err['loc']}: {err['msg']}" for err in e.errors()]
         logger.warning(f"[Tool 2/2] Validación fallida: {errors}")
+        log_llm_call(
+            component="writer_agent.validate_cards",
+            provider="pydantic",
+            model="FinalJSON",
+            success=False,
+            validation_errors=errors,
+        )
         return json.dumps({"valid": False, "errors": errors})
 
 

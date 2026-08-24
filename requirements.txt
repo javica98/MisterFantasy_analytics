@@ -40,3 +40,6 @@ litellm==1.85.0
 python-dotenv==1.2.2
 PyYAML==6.0.3
 pydantic==2.13.3
+
+# ── LLMOps (observabilidad de llamadas LLM en PostgreSQL de AI Center) ────────
+psycopg2-binary==2.9.10

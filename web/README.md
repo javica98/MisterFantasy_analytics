@@ -31,6 +31,29 @@ web/
 
 ---
 
+## Despliegue en AI Center
+
+La web se sirve 24/7 como contenedor Docker (`misterfantasy-web`, nginx) dentro
+del `docker-compose.yml` global de AI Center, en `ai-center-network`.
+
+```bash
+# Desde C:\AI_CENTER
+docker compose build misterfantasy-web
+docker compose up -d misterfantasy-web
+```
+
+- `Dockerfile.web` (raíz del proyecto) copia `web/` y `assets/` — el resto del
+  repo (datos, credenciales, scripts) queda fuera de la imagen (`.dockerignore`).
+- `docker/nginx.web.conf` sirve `web/index.html` en `/` porque la app usa rutas
+  absolutas (`/web/...`, `/assets/web/...`).
+- Puerto configurable con `MISTERFANTASY_WEB_PORT` en `C:\AI_CENTER\.env`
+  (por defecto `8090`). Acceso: `http://localhost:8090/` o vía Tailscale
+  `http://100.120.149.53:8090/`.
+- Para exponerla con subdominio propio, añadir un Proxy Host en Nginx Proxy
+  Manager (`http://100.120.149.53:81`) apuntando a `misterfantasy-web:80`.
+- Al regenerar `app-data.json` (`python scripts/regenerate_app_data.py`), hay
+  que reconstruir la imagen para que el contenedor sirva los datos nuevos.
+
 ## Actualizar los datos
 
 Los datos se regeneran con:

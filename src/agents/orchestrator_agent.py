@@ -16,6 +16,7 @@ import json
 import logging
 import os
 import shutil
+import time
 from concurrent.futures import ThreadPoolExecutor
 from json import JSONDecodeError
 from pathlib import Path
@@ -26,6 +27,9 @@ from strands.models.litellm import LiteLLMModel
 from src.agents.image_agent import run_image_pipeline
 from src.agents.writer_agent import run_writer_agent
 from src.utils.config_loader import load_config
+from src.utils.llm_logger import log_llm_call
+
+_GROQ_MODEL_NAME = "groq/llama-3.3-70b-versatile"
 
 logger = logging.getLogger(__name__)
 
@@ -152,8 +156,11 @@ def run_orchestrator(
         tools=[run_writer_tool],
     )
 
-    response = agent(
-        f"""Genera el texto del periodico de la Sotano League ejecutando esta tool:
+    start = time.perf_counter()
+    agent_error = None
+    try:
+        response = agent(
+            f"""Genera el texto del periodico de la Sotano League ejecutando esta tool:
 
 1. run_writer con prompt_ref="current_prompt"
 
@@ -161,15 +168,23 @@ IMPORTANTE:
 - El prompt completo ya esta capturado internamente en run_writer.
 - Para generar el texto, llama a run_writer usando exactamente prompt_ref="current_prompt".
 - El prompt completo tiene {len(prompt)} caracteres; no lo copies en tus argumentos."""
-    )
+        )
+    except Exception as e:
+        response = None
+        agent_error = str(e)
+    latency_ms = int((time.perf_counter() - start) * 1000)
 
-    response_str = str(response)
+    response_str = str(response) if response is not None else ""
 
     # El cache del tool run_writer es la fuente más fiable: se rellena
     # directamente cuando el WriterAgent tiene éxito, sin depender de que
     # Groq reproduzca el JSON literalmente en su respuesta final de texto.
     if writer_cache.get("cards"):
         logger.info("[Orchestrator] Cards recuperadas del cache del tool (sin segundo llamado a Gemini)")
+        log_llm_call(
+            component="orchestrator_agent.run_orchestrator", provider="groq", model=_GROQ_MODEL_NAME,
+            success=True, latency_ms=latency_ms, metadata={"source": "tool_cache"},
+        )
         return writer_cache["cards"]
 
     # Fallback: Groq a veces incluye el JSON de las tools en su respuesta
@@ -177,6 +192,10 @@ IMPORTANTE:
     cards_payload = _extract_cards_payload(response_str)
     if cards_payload:
         logger.info("[Orchestrator] Pipeline completo - %s cards (extraídas de la respuesta)", len(cards_payload["cards"]))
+        log_llm_call(
+            component="orchestrator_agent.run_orchestrator", provider="groq", model=_GROQ_MODEL_NAME,
+            success=True, latency_ms=latency_ms, metadata={"source": "response_extraction"},
+        )
         return cards_payload
 
     # Último recurso: run_writer nunca llegó a ejecutarse, reintentamos directo.
@@ -184,6 +203,10 @@ IMPORTANTE:
     # independientemente de este fallback, así que aquí solo hace falta
     # reintentar el texto.
     logger.warning("[Orchestrator] No se pudieron extraer las cards, intentando fallback directo...")
+    log_llm_call(
+        component="orchestrator_agent.run_orchestrator", provider="groq", model=_GROQ_MODEL_NAME,
+        success=False, latency_ms=latency_ms, error=agent_error or "no cards extraídas de la respuesta de Groq",
+    )
     cards = run_writer_agent(prompt)
     if cards:
         return cards

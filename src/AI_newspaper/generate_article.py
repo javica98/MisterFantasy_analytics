@@ -4,8 +4,25 @@ from google import genai
 from google.genai import errors as genai_errors
 from google.genai import types
 from src.utils.config_loader import load_config
+from src.utils.llm_logger import log_llm_call
 
 logger = logging.getLogger(__name__)
+
+_MODEL_NAME = "gemini-2.5-flash"
+
+# Precios Gemini 2.5 Flash (USD por 1M tokens, texto) — ajustar si cambian.
+_PRICE_INPUT_PER_1M = 0.30
+_PRICE_OUTPUT_PER_1M = 2.50
+
+
+def _estimate_cost(prompt_tokens: int | None, completion_tokens: int | None) -> float | None:
+    if prompt_tokens is None or completion_tokens is None:
+        return None
+    return round(
+        prompt_tokens / 1_000_000 * _PRICE_INPUT_PER_1M
+        + completion_tokens / 1_000_000 * _PRICE_OUTPUT_PER_1M,
+        6,
+    )
 
 # generate_content() se llama directamente vía el cliente google-genai, sin
 # pasar por Strands (que sí reintenta automáticamente las llamadas hechas a
@@ -52,9 +69,10 @@ response_schema = {
 }
 def generate_articles(prompt: str, temperature: float = 0.7) -> dict:
     for attempt in range(1, _MAX_ATTEMPTS + 1):
+        start = time.perf_counter()
         try:
             response = client.models.generate_content(
-                model="gemini-2.5-flash",
+                model=_MODEL_NAME,
                 contents=[prompt],
                 config=types.GenerateContentConfig(
                     system_instruction="""
@@ -76,10 +94,34 @@ def generate_articles(prompt: str, temperature: float = 0.7) -> dict:
                     response_schema=response_schema
                 )
             )
+            latency_ms = int((time.perf_counter() - start) * 1000)
+
+            usage = getattr(response, "usage_metadata", None)
+            prompt_tokens = getattr(usage, "prompt_token_count", None) if usage else None
+            completion_tokens = getattr(usage, "candidates_token_count", None) if usage else None
+            total_tokens = getattr(usage, "total_token_count", None) if usage else None
+
+            log_llm_call(
+                component="writer_agent.generate_articles",
+                provider="gemini",
+                model=_MODEL_NAME,
+                success=True,
+                latency_ms=latency_ms,
+                attempt=attempt,
+                prompt_tokens=prompt_tokens,
+                completion_tokens=completion_tokens,
+                total_tokens=total_tokens,
+                estimated_cost_usd=_estimate_cost(prompt_tokens, completion_tokens),
+            )
 
             return response.parsed  # 🔥 CLAVE
 
         except genai_errors.APIError as e:
+            latency_ms = int((time.perf_counter() - start) * 1000)
+            log_llm_call(
+                component="writer_agent.generate_articles", provider="gemini", model=_MODEL_NAME,
+                success=False, latency_ms=latency_ms, attempt=attempt, error=str(e),
+            )
             if e.code in _RETRYABLE_STATUS_CODES and attempt < _MAX_ATTEMPTS:
                 delay = _BASE_DELAY_SECONDS * (2 ** (attempt - 1))
                 logger.warning(
@@ -92,6 +134,11 @@ def generate_articles(prompt: str, temperature: float = 0.7) -> dict:
             return {}
 
         except Exception as e:
+            latency_ms = int((time.perf_counter() - start) * 1000)
+            log_llm_call(
+                component="writer_agent.generate_articles", provider="gemini", model=_MODEL_NAME,
+                success=False, latency_ms=latency_ms, attempt=attempt, error=str(e),
+            )
             logger.error(f"❌ Error generando JSON: {e}")
             return {}
 
