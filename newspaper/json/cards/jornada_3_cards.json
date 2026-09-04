@@ -1,0 +1,158 @@
+{
+  "cards": [
+    {
+      "tipo": "clasificacion",
+      "jugador": null,
+      "manager": null,
+      "puntos": null,
+      "dinero": null,
+      "equipo": null,
+      "titulo": "¡LA CIMA ARDE EN SOTANO LEAGUE!",
+      "subtitulo": "¡Jotabetrbb resiste, pero Maldinillo acecha!",
+      "texto": [
+        "¡La SOTANO LEAGUE está que echa chispas! Jotabetrbb se aferra al liderato con uñas y dientes.",
+        "Pero ¡cuidado! Maldinillo 💥 le pisa los talones, a un suspiro de asaltar la cumbre.",
+        "Chamacónicos da el golpe de la jornada, mientras el bicampeón Dani se desinfla en la tabla general."
+      ]
+    },
+    {
+      "tipo": "rumor",
+      "jugador": null,
+      "manager": null,
+      "puntos": null,
+      "dinero": null,
+      "equipo": null,
+      "titulo": "¡ESCÁNDALO EN LOS BARES!",
+      "subtitulo": "¡¿CENA SECRETA?!",
+      "texto": [
+        "Se rumorea que De la Guettir FC y MuchaSalsa fueron vistos compartiendo mesa en un restaurante de lujo. ¡¿Se gesta una alianza o una traición?!"
+      ]
+    },
+    {
+      "tipo": "Fichaje destacado",
+      "jugador": "Mikel Oyarzabal",
+      "manager": "Los marinero",
+      "puntos": null,
+      "dinero": 17.3531,
+      "equipo": "Real Sociedad",
+      "titulo": "¡GOLPE EN LA MESA!",
+      "subtitulo": "¡Los marinero no se rinde!",
+      "texto": [
+        "¡Los marinero rompe la banca con Oyarzabal! 17.35 millones para el crack de la Real Sociedad.",
+        "El manager, tercero en la general, busca escalar posiciones a base de talonario y fichajes de estrella."
+      ]
+    },
+    {
+      "tipo": "Fichaje destacado",
+      "jugador": "Marc Cucurella",
+      "manager": "Los marinero",
+      "puntos": null,
+      "dinero": 13.27,
+      "equipo": "Real Madrid",
+      "titulo": "¡OTRO FICHAJAZO!",
+      "subtitulo": "¡Los marinero sigue arrasando el mercado!",
+      "texto": [
+        "¡No hay quien pare a Los marinero! Marc Cucurella, del Real Madrid, se une a sus filas por 13.27 millones.",
+        "El manager demuestra su ambición, ¡quiere la liga a toda costa y no escatima en gastos!"
+      ]
+    },
+    {
+      "tipo": "Fichaje destacado",
+      "jugador": "Alex Baena",
+      "manager": "De la Guettir FC",
+      "puntos": null,
+      "dinero": 12.221225,
+      "equipo": "Atlético de Madrid",
+      "titulo": "¡LA GUETTIR DESPIERTA!",
+      "subtitulo": "¡Baena llega para revolucionar al equipo!",
+      "texto": [
+        "De la Guettir FC se refuerza con Alex Baena del Atlético de Madrid por 12.22 millones.",
+        "El manager, en media tabla, busca un revulsivo para escalar posiciones."
+      ]
+    },
+    {
+      "tipo": "Venta récord",
+      "jugador": "Iñaki Williams",
+      "manager": "Maldinillo 💥",
+      "puntos": null,
+      "dinero": 7.21448,
+      "equipo": "Athletic Club",
+      "titulo": "¡MALDINILLO HACE CAJA!",
+      "subtitulo": "¡¿Estrategia o desesperación?!",
+      "texto": [
+        "Maldinillo 💥 vende a Iñaki Williams por 7.21 millones. ¡Un movimiento inesperado del segundo clasificado!",
+        "¿Prepara un fichaje bomba o está saneando sus cuentas para el tramo final? ¡El misterio está servido!"
+      ]
+    },
+    {
+      "tipo": "MVP de la jornada",
+      "jugador": "A. Baena",
+      "manager": "De la Guettir FC",
+      "puntos": 18.0,
+      "dinero": null,
+      "equipo": "Atlético de Madrid",
+      "titulo": "¡BAENA, EL HÉROE DE LA JORNADA!",
+      "subtitulo": "¡De la Guettir FC encuentra a su salvador!",
+      "texto": [
+        "¡Alex Baena explota con 18 puntos para De la Guettir FC! ¡Una actuación estelar que lo catapulta al estrellato!",
+        "El manager respira aliviado gracias a su nueva estrella, ¡los frutos de su inversión ya se ven!"
+      ]
+    },
+    {
+      "tipo": "MVP de la jornada",
+      "jugador": "Á. Berenguer",
+      "manager": "Maldinillo 💥",
+      "puntos": 12.0,
+      "dinero": null,
+      "equipo": "Athletic Club",
+      "titulo": "¡BERENGUER RESCATA A MALDINILLO!",
+      "subtitulo": "¡Puntos de oro para el aspirante al título!",
+      "texto": [
+        "¡Álex Berenguer brilla con 12 puntos decisivos para Maldinillo 💥!",
+        "El segundo clasificado se mantiene en la lucha gracias a sus jugadores clave, ¡la presión no le afecta!"
+      ]
+    },
+    {
+      "tipo": "MVP de la jornada",
+      "jugador": "M. Sierra",
+      "manager": "Chamacónicos",
+      "puntos": 11.0,
+      "dinero": null,
+      "equipo": "Sevilla FC",
+      "titulo": "¡SIERRA, EL REY DE LA JORNADA!",
+      "subtitulo": "¡Chamacónicos arrasa con un MVP!",
+      "texto": [
+        "¡Miguel Sierra se corona con 11 puntos para Chamacónicos! ¡Una actuación soberbia que lo sitúa en la cima!",
+        "El manager celebra un MVP fundamental, ¡demostrando que su liderato en la jornada no fue casualidad!"
+      ]
+    },
+    {
+      "tipo": "Peor actuación de la jornada",
+      "jugador": "A. Altimira",
+      "manager": "De la Guettir FC",
+      "puntos": -4.0,
+      "dinero": null,
+      "equipo": "6",
+      "titulo": "¡HORROR EN EL CAMPO!",
+      "subtitulo": "¡Altimira hunde a De la Guettir FC!",
+      "texto": [
+        "¡A. Altimira protagoniza la peor actuación con -4 puntos! ¡Un desastre absoluto para De la Guettir FC!",
+        "El manager sufre un duro golpe, ¡esta jornada es para olvidar rápidamente!"
+      ]
+    },
+    {
+      "tipo": "Gol en propia",
+      "jugador": "A. Herrero",
+      "manager": "Los marinero",
+      "puntos": 4.0,
+      "dinero": null,
+      "equipo": "13",
+      "titulo": "¡AUTOGOL INSÓLITO!",
+      "subtitulo": "¡Herrero, el protagonista inesperado!",
+      "texto": [
+        "¡A. Herrero, de Los marinero, marca un gol en propia puerta! ¡Una jugada desafortunada que da 4 puntos!",
+        "El manager se lamenta de la acción, ¡pero los puntos cuentan y son cruciales!"
+      ]
+    }
+  ]
+}

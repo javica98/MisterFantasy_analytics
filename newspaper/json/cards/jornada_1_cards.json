@@ -1,0 +1,158 @@
+{
+  "cards": [
+    {
+      "tipo": "clasificacion",
+      "jugador": null,
+      "manager": null,
+      "puntos": null,
+      "dinero": null,
+      "equipo": null,
+      "titulo": "¡La SOTANO LEAGUE arde!",
+      "subtitulo": "¡Nadie cede, la batalla es total!",
+      "texto": [
+        "La tensión se palpa en cada jornada.",
+        "¡Los managers se juegan el todo por el todo!",
+        "¡El trono está en juego, y la sangre correrá!"
+      ]
+    },
+    {
+      "tipo": "rumor",
+      "jugador": null,
+      "manager": null,
+      "puntos": null,
+      "dinero": null,
+      "equipo": null,
+      "titulo": "¡BOMBAZO EN LA OFICINA!",
+      "subtitulo": "¡Chismorreo en el vestuario!",
+      "texto": [
+        "Se rumorea que Dani, el bicampeón, ha empezado a llevar calcetines de la suerte a cada reunión, ¡dicen que ya no sabe qué inventar para seguir ganando!"
+      ]
+    },
+    {
+      "tipo": "Fichaje destacado",
+      "jugador": "Lamine Yamal",
+      "manager": "Libre",
+      "puntos": null,
+      "dinero": 25.282049,
+      "equipo": "FC Barcelona",
+      "titulo": "¡El 'Libre' se desata!",
+      "subtitulo": "¡Lamine Yamal, fichaje de locura!",
+      "texto": [
+        "¡25 millones por el crack del Barça!",
+        "El manager 'Libre', ¡en la cola, pero con cartera llena!"
+      ]
+    },
+    {
+      "tipo": "Fichaje destacado",
+      "jugador": "Yan Diomande",
+      "manager": "Los marinero",
+      "puntos": null,
+      "dinero": 20.672566,
+      "equipo": "Real Madrid",
+      "titulo": "¡'Los Marinero' asaltan el mercado!",
+      "subtitulo": "¡Diomande, a precio de oro!",
+      "texto": [
+        "¡20 millones por el talento blanco!",
+        "¡Un golpe de timón desesperado desde el fondo de la tabla!"
+      ]
+    },
+    {
+      "tipo": "Fichaje destacado",
+      "jugador": "Georges Mikautadze",
+      "manager": "Dani",
+      "puntos": null,
+      "dinero": 15.58948,
+      "equipo": "Villarreal CF",
+      "titulo": "¡Dani se refuerza!",
+      "subtitulo": "¡El bicampeón no se relaja!",
+      "texto": [
+        "¡Mikautadze llega por casi 16 millones!",
+        "¡Dani quiere su triplete, y no escatima en gastos!"
+      ]
+    },
+    {
+      "tipo": "Venta récord",
+      "jugador": "Leandro Cabrera",
+      "manager": "Dani",
+      "puntos": null,
+      "dinero": 9.1476,
+      "equipo": "RCD Espanyol",
+      "titulo": "¡Dani, un genio en los negocios!",
+      "subtitulo": "¡Venta millonaria por Cabrera!",
+      "texto": [
+        "¡Casi 9.15 millones de euros al bolsillo!",
+        "¡El bicampeón demuestra que sabe vender como nadie!"
+      ]
+    },
+    {
+      "tipo": "MVP de la jornada",
+      "jugador": "T. Dolan",
+      "manager": "Los marinero",
+      "puntos": 10.0,
+      "dinero": null,
+      "equipo": "RCD Espanyol",
+      "titulo": "¡Dolan, el héroe inesperado!",
+      "subtitulo": "¡'Los Marinero' respiran gracias a él!",
+      "texto": [
+        "¡10 puntos vitales para el manager hundido!",
+        "¡Un rayo de esperanza para el colista de la tabla!"
+      ]
+    },
+    {
+      "tipo": "MVP de la jornada",
+      "jugador": "A. Martín",
+      "manager": "Los marinero",
+      "puntos": 8.0,
+      "dinero": null,
+      "equipo": "1490",
+      "titulo": "¡Martín se suma a la fiesta!",
+      "subtitulo": "¡'Los Marinero' encuentran la chispa!",
+      "texto": [
+        "¡Otro MVP para el manager en apuros!",
+        "¡8 puntos que saben a gloria en el fondo de la liga!"
+      ]
+    },
+    {
+      "tipo": "MVP de la jornada",
+      "jugador": "Á. Valles",
+      "manager": "Maldinillo 💥",
+      "puntos": 8.0,
+      "dinero": null,
+      "equipo": "Real Betis Balompié",
+      "titulo": "¡Valles, el muro de Maldinillo!",
+      "subtitulo": "¡Puntos clave para el estratega!",
+      "texto": [
+        "¡8 puntos magistrales del portero bético!",
+        "¡Maldinillo celebra en silencio, la liga es suya!"
+      ]
+    },
+    {
+      "tipo": "Peor actuación de la jornada",
+      "jugador": "K. Femenía",
+      "manager": "Jotabetrbb",
+      "puntos": -8.0,
+      "dinero": null,
+      "equipo": "Getafe CF",
+      "titulo": "¡Femenía, el desastre de Jotabetrbb!",
+      "subtitulo": "¡Actuación para el olvido!",
+      "texto": [
+        "¡-8 puntos que hunden a su manager!",
+        "¡Un golpe demoledor para las aspiraciones de Jotabetrbb!"
+      ]
+    },
+    {
+      "tipo": "Expulsión",
+      "jugador": "K. Femenía",
+      "manager": "Jotabetrbb",
+      "puntos": -8.0,
+      "dinero": null,
+      "equipo": "Getafe CF",
+      "titulo": "¡ROJA DIRECTA! ¡Femenía, a la calle!",
+      "subtitulo": "¡El jugador de Jotabetrbb condena la jornada!",
+      "texto": [
+        "¡Expulsión que dinamita cualquier esperanza!",
+        "¡Jotabetrbb lamenta la catástrofe en el campo!"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,172 @@
+{
+  "cards": [
+    {
+      "tipo": "clasificacion",
+      "jugador": null,
+      "manager": null,
+      "puntos": null,
+      "dinero": null,
+      "equipo": null,
+      "titulo": "¡SOTANO LEAGUE ARDE!",
+      "subtitulo": "¡Los Marinero Escapan, Dani Presiona!",
+      "texto": [
+        "Los Marinero se afianzan en la cima con 57 puntos, ¡una ventaja de vértigo que nadie esperaba!",
+        "Dani, el bicampeón, no afloja y se mantiene segundo con 43, ¡su sombra es alargada!",
+        "Maldinillo 💥 escala posiciones y ya es quinto, ¡la remontada del año está en marcha!"
+      ]
+    },
+    {
+      "tipo": "rumor",
+      "jugador": null,
+      "manager": null,
+      "puntos": null,
+      "dinero": null,
+      "equipo": null,
+      "titulo": "¡BOMBAZO EN LA OFICINA!",
+      "subtitulo": "¿Un nuevo fichaje para el amor?",
+      "texto": [
+        "Fuentes cercanas a la liga aseguran que un manager está más preocupado por su crush de la oficina que por el mercado de fichajes."
+      ]
+    },
+    {
+      "tipo": "Fichaje destacado",
+      "jugador": "Isco",
+      "manager": "Maldinillo 💥",
+      "puntos": null,
+      "dinero": 17.6498,
+      "equipo": "Real Betis Balompié",
+      "titulo": "¡GOLPE MAESTRO DE MALDINILLO!",
+      "subtitulo": "¡Isco es Suyo por 17.65 Millones!",
+      "texto": [
+        "Maldinillo 💥, en quinto lugar, se lanza a por Isco con una inversión brutal de 17.65 millones.",
+        "¡Este fichaje es una declaración de intenciones para asaltar el podio!"
+      ]
+    },
+    {
+      "tipo": "Fichaje destacado",
+      "jugador": "Frenkie De Jong",
+      "manager": "Dani",
+      "puntos": null,
+      "dinero": 16.70839,
+      "equipo": "FC Barcelona",
+      "titulo": "¡DANI NO SE RELAJA!",
+      "subtitulo": "¡Frenkie De Jong por 16.71 Millones!",
+      "texto": [
+        "El bicampeón Dani, segundo en la tabla, refuerza su mediocampo con Frenkie De Jong.",
+        "¡Una inversión de 16.71 millones que grita 'quiero el tricampeonato'!"
+      ]
+    },
+    {
+      "tipo": "Fichaje destacado",
+      "jugador": "Pablo Barrios",
+      "manager": "Dani",
+      "puntos": null,
+      "dinero": 14.94083,
+      "equipo": "Atlético de Madrid",
+      "titulo": "¡DOBLE RACHA DE DANI!",
+      "subtitulo": "¡Pablo Barrios se une por 14.94 Millones!",
+      "texto": [
+        "Dani sigue moviendo fichas; Pablo Barrios aterriza en su equipo por 14.94 millones.",
+        "¡El actual subcampeón no deja nada al azar en su asalto al liderato!"
+      ]
+    },
+    {
+      "tipo": "Venta récord",
+      "jugador": "Pablo Fornals",
+      "manager": "Dani",
+      "puntos": null,
+      "dinero": 15.74085,
+      "equipo": "Real Betis Balompié",
+      "titulo": "¡MOVIMIENTO ESTRATÉGICO!",
+      "subtitulo": "¡Dani Vende a Fornals por 15.74 Millones!",
+      "texto": [
+        "Dani, el temible segundo clasificado, se desprende de Pablo Fornals por una cifra astronómica.",
+        "¡15.74 millones que le dan un respiro económico para sus próximos bombazos!"
+      ]
+    },
+    {
+      "tipo": "MVP de la jornada",
+      "jugador": "J. de Frutos",
+      "manager": "Los marinero",
+      "puntos": 14.0,
+      "dinero": null,
+      "equipo": "Rayo Vallecano",
+      "titulo": "¡DE FRUTOS, EL REY DE LA JORNADA!",
+      "subtitulo": "¡Los Marinero Celebran 14 Puntos!",
+      "texto": [
+        "J. de Frutos desató la locura con 14 puntos, ¡llevando a Los Marinero a la cima!",
+        "¡El líder general tiene un as bajo la manga y no piensa ceder!"
+      ]
+    },
+    {
+      "tipo": "MVP de la jornada",
+      "jugador": "Á. García",
+      "manager": "Maldinillo 💥",
+      "puntos": 10.0,
+      "dinero": null,
+      "equipo": "Rayo Vallecano",
+      "titulo": "¡MALDINILLO EN ALZA!",
+      "subtitulo": "¡Á. García le da 10 Puntos Clave!",
+      "texto": [
+        "Á. García brilla con 10 puntos, impulsando a Maldinillo 💥 en su escalada hacia la gloria.",
+        "¡El quinto clasificado tiene jugadores que marcan la diferencia!"
+      ]
+    },
+    {
+      "tipo": "MVP de la jornada",
+      "jugador": "Raphinha",
+      "manager": "MuchaSalsa",
+      "puntos": 10.0,
+      "dinero": null,
+      "equipo": "FC Barcelona",
+      "titulo": "¡RAPHINHA DESLUMBRA!",
+      "subtitulo": "¡MuchaSalsa Suma 10 Puntos Cruciales!",
+      "texto": [
+        "Raphinha se convierte en el héroe con 10 puntos para MuchaSalsa.",
+        "¡El tercer clasificado demuestra que tiene dinamita en sus filas!"
+      ]
+    },
+    {
+      "tipo": "Peor actuación de la jornada",
+      "jugador": "V. Muriqi",
+      "manager": "Chamacónicos",
+      "puntos": -7.0,
+      "dinero": null,
+      "equipo": "RCD Mallorca",
+      "titulo": "¡DESASTRE TOTAL!",
+      "subtitulo": "¡Muriqi HUNDE a Chamacónicos con -7 Puntos!",
+      "texto": [
+        "V. Muriqi protagoniza el fiasco de la jornada con unos dolorosos -7 puntos.",
+        "¡Chamacónicos sufre un golpe bajo que les deja al borde del abismo!"
+      ]
+    },
+    {
+      "tipo": "Expulsión",
+      "jugador": "V. Muriqi",
+      "manager": "Chamacónicos",
+      "puntos": -7.0,
+      "dinero": null,
+      "equipo": "RCD Mallorca",
+      "titulo": "¡ROJA DIRECTA Y ESCÁNDALO!",
+      "subtitulo": "¡Muriqi Deja a Chamacónicos con Diez!",
+      "texto": [
+        "La expulsión de V. Muriqi fue el colmo, ¡condicionando por completo la jornada de Chamacónicos!",
+        "¡Una tarjeta roja que será recordada como el peor momento del equipo!"
+      ]
+    },
+    {
+      "tipo": "Héroe bajo palos",
+      "jugador": "L. Júnior",
+      "manager": "MuchaSalsa",
+      "puntos": 6.0,
+      "dinero": null,
+      "equipo": "Villarreal CF",
+      "titulo": "¡MILAGRO DE L. JÚNIOR!",
+      "subtitulo": "¡Penalti Parado y Puntos Salvos para MuchaSalsa!",
+      "texto": [
+        "L. Júnior se viste de héroe al parar un penalti decisivo, ¡salvando a MuchaSalsa de la catástrofe!",
+        "¡Una intervención que vale oro y mantiene al tercer clasificado en la lucha!"
+      ]
+    }
+  ]
+}

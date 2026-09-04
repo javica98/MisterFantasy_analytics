@@ -1,0 +1,102 @@
+{
+  "cards": [
+    {
+      "tipo": "clasificacion",
+      "jugador": null,
+      "manager": null,
+      "puntos": null,
+      "dinero": null,
+      "equipo": null,
+      "titulo": "¡La SOTANO LEAGUE Arde en la Cima!",
+      "subtitulo": "¡Pura Tensión en Cada Jornada!",
+      "texto": [
+        "¡La tabla general es un campo de batalla! Los Marinero apenas respiran con Dani, el bicampeón, pisándoles los talones, ¡solo 3 puntos los separan del abismo!",
+        "¡Maldinillo emerge de las sombras con una jornada espectacular! El quinto clasificado general se dispara al segundo puesto, ¡una amenaza real para los titanes!",
+        "¡El 'Libre' se desangra en el fondo! Con solo 75 puntos, la cola de la tabla es un pozo sin fondo, ¡necesita un milagro o el descenso es inminente!"
+      ]
+    },
+    {
+      "tipo": "rumor",
+      "jugador": null,
+      "manager": null,
+      "puntos": null,
+      "dinero": null,
+      "equipo": null,
+      "titulo": "¡BOMBAZO: ¡Un Manager Fue Pillado!",
+      "subtitulo": "¡El Escándalo Sacude la Liga!",
+      "texto": [
+        "¡Se rumorea que un manager fue visto intentando comprar la camiseta sudada de Mbappé en el mercado negro para 'inspirar' a sus jugadores!"
+      ]
+    },
+    {
+      "tipo": "MVP de la jornada",
+      "jugador": "É. Militão",
+      "manager": "Los marinero",
+      "puntos": 15.0,
+      "dinero": null,
+      "equipo": "Real Madrid",
+      "titulo": "¡MILITÃO DESATA EL CAOS!",
+      "subtitulo": "¡Los Marinero se Afianzan con un Central de Oro!",
+      "texto": [
+        "¡É. Militão, el muro del Real Madrid, explota con 15 puntos, llevando a Los Marinero a la gloria de la jornada!",
+        "¡El líder general no da tregua! ¡Con Militão en sus filas, la SOTANO LEAGUE tiembla ante su imparable dominio!"
+      ]
+    },
+    {
+      "tipo": "MVP de la jornada",
+      "jugador": "E. Eyong",
+      "manager": "Los marinero",
+      "puntos": 12.0,
+      "dinero": null,
+      "equipo": "Levante UD",
+      "titulo": "¡EYONG, EL AZOTE INESPERADO!",
+      "subtitulo": "¡Los Marinero Siguen Sumando y Aterrorizando a la Liga!",
+      "texto": [
+        "¡E. Eyong, la sorpresa del Levante UD, irrumpe con 12 puntos clave, consolidando el reinado de Los Marinero!",
+        "¡El bicampeón tiembla! ¡El líder demuestra que su plantilla es una máquina de hacer puntos, imparable!"
+      ]
+    },
+    {
+      "tipo": "MVP de la jornada",
+      "jugador": "L. Román",
+      "manager": "Los marinero",
+      "puntos": 12.0,
+      "dinero": null,
+      "equipo": "RCD Mallorca",
+      "titulo": "¡ROMÁN, EL MAGO DEL MALLORCA!",
+      "subtitulo": "¡Otro Golpe de Autoridad de Los Marinero!",
+      "texto": [
+        "¡L. Román, el talento del RCD Mallorca, se luce con 12 puntos vitales, un golpe más en la mesa de Los Marinero!",
+        "¡Tres MVPs para el mismo manager! ¡El dominio es absoluto, la SOTANO LEAGUE no tiene piedad!"
+      ]
+    },
+    {
+      "tipo": "Peor actuación de la jornada",
+      "jugador": "A. Witsel",
+      "manager": "Chamacónicos",
+      "puntos": -5.0,
+      "dinero": null,
+      "equipo": "Girona FC",
+      "titulo": "¡DESASTRE WITSEL: ¡CATASTRÓFICO!",
+      "subtitulo": "¡Chamacónicos se Hunde con una Actuación para el Olvido!",
+      "texto": [
+        "¡A. Witsel, el 'defensa' del Girona FC, firma un ridículo -5 puntos, arrastrando a Chamacónicos al infierno!",
+        "¡La vergüenza de la jornada! ¡El manager cae en picado, su equipo necesita un exorcismo o el abismo es su destino!"
+      ]
+    },
+    {
+      "tipo": "Héroe bajo palos",
+      "jugador": "L. Román",
+      "manager": "Los marinero",
+      "puntos": 12.0,
+      "dinero": null,
+      "equipo": "RCD Mallorca",
+      "titulo": "¡ROMÁN, EL SALVADOR INESPERADO!",
+      "subtitulo": "¡Los Marinero Tienen un Nuevo Héroe Bajo los Tres Palos!",
+      "texto": [
+        "¡L. Román, el portero del RCD Mallorca, se erige en leyenda al detener un penalti decisivo, ¡la SOTANO LEAGUE se rinde a sus pies!",
+        "¡Los Marinero celebran! ¡Este es el tipo de gestas que forjan campeones, y el líder no para de acumular proezas!"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "cards": [
+    {
+      "tipo": "clasificacion",
+      "jugador": null,
+      "manager": null,
+      "puntos": null,
+      "dinero": null,
+      "equipo": null,
+      "titulo": "¡Dani Cuelga de un Hilo!",
+      "subtitulo": "¡La SOTANO LEAGUE al ROJO VIVO!",
+      "texto": [
+        "¡Dani apenas respira en la cima con 251 puntos, Los Marinero le pisa los talones a un solo punto de distancia!",
+        "De la Guettir FC, el ciclón de la jornada con 51 puntos, escala posiciones y amenaza a los grandes, mientras Maldinillo 💥 demuestra su garra y sube como la espuma.",
+        "¡Jotabetrbb sorprende con una jornada espectacular, pero Libre se aferra al farolillo rojo sin visos de salvación!"
+      ]
+    },
+    {
+      "tipo": "rumor",
+      "jugador": null,
+      "manager": null,
+      "puntos": null,
+      "dinero": null,
+      "equipo": null,
+      "titulo": "¡BOMBAZO EN EL MERCADO!",
+      "subtitulo": "¡Un Fichaje que Nadie Esperaba!",
+      "texto": [
+        "¡Se rumorea que el manager Juanba ha estado negociando en secreto con el repartidor de pizzas para asegurar una ración extra en cada entrega!"
+      ]
+    },
+    {
+      "tipo": "MVP de la jornada",
+      "jugador": "V. Júnior",
+      "manager": "Jotabetrbb",
+      "puntos": 13.0,
+      "dinero": null,
+      "equipo": "Real Madrid",
+      "titulo": "¡V. JÚNIOR DESATA LA LOCURA!",
+      "subtitulo": "¡Jotabetrbb Vuelve a Soñar!",
+      "texto": [
+        "¡El astro del Real Madrid, V. Júnior, explota con 13 PUNTOS DE ORO para Jotabetrbb, haciendo temblar a la liga entera!",
+        "¡El manager de la quinta posición se eleva al segundo puesto de la jornada, demostrando que su ambición no tiene límites!"
+      ]
+    },
+    {
+      "tipo": "MVP de la jornada",
+      "jugador": "V. Muñoz",
+      "manager": "De la Guettir FC",
+      "puntos": 12.0,
+      "dinero": null,
+      "equipo": "CA Osasuna",
+      "titulo": "¡MUÑOZ, EL HÉROE SILENCIOSO!",
+      "subtitulo": "¡De la Guettir FC, la SENSACIÓN de la Jornada!",
+      "texto": [
+        "¡V. Muñoz, el guerrero del CA Osasuna, rompe la banca con 12 puntos decisivos para De la Guettir FC, catapultándolos a la cima de la jornada!",
+        "¡El manager de la tercera posición general se consolida como la revelación más explosiva de la SOTANO LEAGUE!"
+      ]
+    },
+    {
+      "tipo": "MVP de la jornada",
+      "jugador": "Á. García",
+      "manager": "Maldinillo 💥",
+      "puntos": 11.0,
+      "dinero": null,
+      "equipo": "Rayo Vallecano",
+      "titulo": "¡GARCÍA, EL RAYO DE ESPERANZA!",
+      "subtitulo": "¡Maldinillo 💥, a la Carga con Furia!",
+      "texto": [
+        "¡Á. García, la estrella del Rayo Vallecano, ilumina a Maldinillo 💥 con 11 puntos vitales que lo impulsan en la tabla!",
+        "¡El manager de la sexta posición general escala puestos en la jornada, demostrando que su resurgir es una realidad y que no se rinde jamás!"
+      ]
+    },
+    {
+      "tipo": "Peor actuación de la jornada",
+      "jugador": "A. Gorosabel",
+      "manager": "Maldinillo 💥",
+      "puntos": 0.0,
+      "dinero": null,
+      "equipo": "Athletic Club",
+      "titulo": "¡LA SOMBRA DE GOROSABEL!",
+      "subtitulo": "¡Maldinillo 💥, Un Tropiezo Inesperado!",
+      "texto": [
+        "¡A. Gorosabel, el defensa del Athletic Club, protagoniza la peor pesadilla con 0 puntos, un golpe duro para Maldinillo 💥!",
+        "¡Pero el espíritu de lucha del manager es inquebrantable, y este traspié solo avivará la llama de su ambición para la próxima jornada!"
+      ]
+    }
+  ]
+}
