@@ -1,0 +1,102 @@
+{
+  "cards": [
+    {
+      "tipo": "clasificacion",
+      "jugador": null,
+      "manager": null,
+      "puntos": null,
+      "dinero": null,
+      "equipo": null,
+      "titulo": "¡Dani Imparable, Pero la SOTANO LEAGUE Respira Fuego!",
+      "subtitulo": "¡El Bicampeón Mantiene el Trono, Pero la Lucha por la Gloria es Salvaje!",
+      "texto": [
+        "Dani sigue líder con 309 puntos, ¡una muralla inexpugnable que desafía a la liga!",
+        "Los Marinero y Chamacónicos acechan, ¡la distancia se acorta y la presión es máxima para el bicampeón!",
+        "¡Maldinillo \\n se escala posiciones y se postula como la gran amenaza silenciosa!"
+      ]
+    },
+    {
+      "tipo": "rumor",
+      "jugador": null,
+      "manager": null,
+      "puntos": null,
+      "dinero": null,
+      "equipo": null,
+      "titulo": "¡BOMBAZO EN LA SOTANO LEAGUE!",
+      "subtitulo": "¡Se Filtra un Escándalo en el Vestuario!",
+      "texto": [
+        "¡Fuentes cercanas revelan que un manager ha sido pillado comiendo pizza fría con piña a las 3 de la mañana!"
+      ]
+    },
+    {
+      "tipo": "MVP de la jornada",
+      "jugador": "J. Álvarez",
+      "manager": "Chamacónicos",
+      "puntos": 16.0,
+      "dinero": null,
+      "equipo": "Atlético de Madrid",
+      "titulo": "¡ÁLVAREZ DESATA LA FURIA COLCHONERA!",
+      "subtitulo": "¡Chamacónicos Ruge con 16 Puntos de Oro!",
+      "texto": [
+        "¡J. Álvarez, el gladiador del Atlético, explota con 16 puntos decisivos!",
+        "¡Chamacónicos se dispara a la segunda posición de la jornada, ¡amenazando la cima general!"
+      ]
+    },
+    {
+      "tipo": "MVP de la jornada",
+      "jugador": "J. Koundé",
+      "manager": "Chamacónicos",
+      "puntos": 13.0,
+      "dinero": null,
+      "equipo": "FC Barcelona",
+      "titulo": "¡KOUNDÉ, EL MURO CULÉ QUE DA PUNTOS!",
+      "subtitulo": "¡Chamacónicos Dobla su Apuesta por la Gloria!",
+      "texto": [
+        "¡J. Koundé, el titán del Barça, suma 13 puntos vitales para su manager!",
+        "¡Chamacónicos reafirma su asalto al podio, ¡la SOTANO LEAGUE tiembla!"
+      ]
+    },
+    {
+      "tipo": "MVP de la jornada",
+      "jugador": "T. Asano",
+      "manager": "Libre",
+      "puntos": 11.0,
+      "dinero": null,
+      "equipo": "RCD Mallorca",
+      "titulo": "¡ASANO, EL SAMURÁI QUE DESPIERTA A LIBRE!",
+      "subtitulo": "¡El Manager Olvidado Desafía la Jornada!",
+      "texto": [
+        "¡T. Asano, la sorpresa del Mallorca, entrega 11 puntos que reviven a Libre!",
+        "¡El manager de la cola general se cuela en el Top 3 de la jornada, ¡un golpe sobre la mesa inesperado!"
+      ]
+    },
+    {
+      "tipo": "Peor actuación de la jornada",
+      "jugador": "D. Carvajal",
+      "manager": "Maldinillo 💥",
+      "puntos": 0.0,
+      "dinero": null,
+      "equipo": "Real Madrid",
+      "titulo": "¡CARVAJAL, LA DECEPCIÓN MERENGUE!",
+      "subtitulo": "¡Maldinillo \\n Sufre un Golpe Inesperado!",
+      "texto": [
+        "¡D. Carvajal, la estrella del Real Madrid, se hunde con 0 puntos catastróficos!",
+        "¡Maldinillo \\n, a pesar de este traspié, mantiene la fe en su ascenso imparable!"
+      ]
+    },
+    {
+      "tipo": "Héroe bajo palos",
+      "jugador": "I. Radu",
+      "manager": "Juanba",
+      "puntos": 9.0,
+      "dinero": null,
+      "equipo": "RC Celta de Vigo",
+      "titulo": "¡RADU, EL GUARDIÁN CELESTE QUE SALVA A JUANBA!",
+      "subtitulo": "¡Un Penalti Parado que Resucita la Esperanza!",
+      "texto": [
+        "¡I. Radu, el muro del Celta, detiene un penalti crucial y suma 9 puntos de oro!",
+        "¡Juanba celebra la heroica actuación de su portero, ¡un soplo de aire fresco en su lucha!"
+      ]
+    }
+  ]
+}

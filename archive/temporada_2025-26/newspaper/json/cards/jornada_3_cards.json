@@ -1,0 +1,88 @@
+{
+  "cards": [
+    {
+      "tipo": "clasificacion",
+      "jugador": null,
+      "manager": null,
+      "puntos": null,
+      "dinero": null,
+      "equipo": null,
+      "titulo": "¡LA SOTANO LEAGUE ARDE!",
+      "subtitulo": "¡Dani se aferra al liderato, pero la presión es brutal!",
+      "texto": [
+        "¡Dani, el bicampeón, lidera con 127 puntos, pero Los Marinero le pisan los talones a solo 5 puntos de distancia!",
+        "¡Maldinillo 💥 se mantiene en la lucha, demostrando que su momento llegará, mientras Libre se hunde en el abismo de la tabla!",
+        "¡En la jornada, Dani volvió a mandar con 49 puntos, pero la batalla por el trono está más viva que nunca!"
+      ]
+    },
+    {
+      "tipo": "rumor",
+      "jugador": null,
+      "manager": null,
+      "puntos": null,
+      "dinero": null,
+      "equipo": null,
+      "titulo": "¡ESCÁNDALO EN EL SÓTANO!",
+      "subtitulo": "¡Un manager pillado en un acto bochornoso!",
+      "texto": [
+        "¡Fuentes cercanas al vestuario confirman que un conocido manager fue visto anoche intentando sobornar al árbitro con una pizza caducada y un billete de 5 euros roto!"
+      ]
+    },
+    {
+      "tipo": "MVP de la jornada",
+      "jugador": "A. Paredes",
+      "manager": "Dani",
+      "puntos": 13.0,
+      "dinero": null,
+      "equipo": "Athletic Club",
+      "titulo": "¡PAREDES, EL MURO DE DANI!",
+      "subtitulo": "¡13 PUNTOS QUE CIMENTAN EL LIDERATO!",
+      "texto": [
+        "¡A. Paredes, del Athletic Club, se erige como el baluarte de Dani con 13 puntos cruciales en la jornada!",
+        "¡El líder de la SOTANO LEAGUE sigue imparable, consolidando su posición con actuaciones estelares de sus estrellas!"
+      ]
+    },
+    {
+      "tipo": "MVP de la jornada",
+      "jugador": "A. Danjuma",
+      "manager": "De la Guettir FC",
+      "puntos": 11.0,
+      "dinero": null,
+      "equipo": "Valencia CF",
+      "titulo": "¡DANJUMA EXPLOTA PARA DE LA GUETTIR FC!",
+      "subtitulo": "¡11 PUNTOS QUE REVIVEN LA ESPERANZA!",
+      "texto": [
+        "¡A. Danjuma, el delantero del Valencia CF, irrumpe con 11 puntos vitales para De la Guettir FC!",
+        "¡El manager escala posiciones, demostrando que aún tiene mucho que decir en esta liga de infarto!"
+      ]
+    },
+    {
+      "tipo": "MVP de la jornada",
+      "jugador": "A. Güler",
+      "manager": "Dani",
+      "puntos": 10.0,
+      "dinero": null,
+      "equipo": "Real Madrid",
+      "titulo": "¡GÜLER, LA JOYA DE DANI!",
+      "subtitulo": "¡10 PUNTOS QUE LO CONFIRMAN TODO!",
+      "texto": [
+        "¡A. Güler, la perla del Real Madrid, suma 10 puntos a la cuenta de Dani, el indiscutible líder!",
+        "¡El bicampeón sigue acumulando talento y victorias, dejando claro quién manda en la SOTANO LEAGUE!"
+      ]
+    },
+    {
+      "tipo": "Peor actuación de la jornada",
+      "jugador": "G. García",
+      "manager": "Jotabetrbb",
+      "puntos": 0.0,
+      "dinero": null,
+      "equipo": "Real Madrid",
+      "titulo": "¡DESASTRE EN EL JOTABETRBB!",
+      "subtitulo": "¡G. GARCÍA: EL CERO MÁS DOLOROSO!",
+      "texto": [
+        "¡G. García, del Real Madrid, protagoniza la peor actuación de la jornada con unos humillantes 0 puntos para Jotabetrbb!",
+        "¡El manager se estanca en la tabla, y su equipo necesita una reacción URGENTE para no caer al abismo!"
+      ]
+    }
+  ]
+}

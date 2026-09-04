@@ -2,6 +2,7 @@ const state = {
   data: null,
   view: "home",
   selectedManager: null,
+  selectedSeason: null,
   selectedIssue: 0,
   standingsTab: "league",
   usingFallback: false,
@@ -25,6 +26,9 @@ const fallbackData = {
   },
   managers: [],
   news: [],
+  seasons: [],
+  activeSeason: null,
+  managersBySeason: {},
 };
 
 init();
@@ -33,6 +37,7 @@ async function init() {
   injectWatermark();
   state.data = await loadData();
   state.selectedManager = state.data.managers[0]?.name ?? null;
+  state.selectedSeason = state.data.activeSeason || state.data.seasons?.[0] || null;
   bindEvents();
   render();
 }
@@ -280,15 +285,50 @@ function renderHome() {
 }
 
 function renderStats() {
-  const managers = state.data.managers || [];
-  const selected = state.data.managers.find(manager => manager.name === state.selectedManager) || managers[0] || state.data.managers[0];
+  const seasons = state.data.seasons || [];
+  if (!state.selectedSeason || !seasons.includes(state.selectedSeason)) {
+    state.selectedSeason = state.data.activeSeason || seasons[0] || null;
+  }
+  const managers = (state.data.managersBySeason || {})[state.selectedSeason] || state.data.managers || [];
+  const selected = managers.find(manager => manager.name === state.selectedManager) || managers[0];
   if (!selected) {
     app.innerHTML = `<div class="card pad"><h2>No hay datos de managers todavía</h2></div>`;
     return;
   }
   state.selectedManager = selected.name;
 
+  const form = selected.seasonForm || selected.form || [];
+  const lastPoints = form.length ? form[form.length - 1] : null;
+  const prevPoints = form.length > 1 ? form[form.length - 2] : null;
+  let formDeltaBadge = "";
+  if (lastPoints !== null && prevPoints) {
+    const deltaPct = Math.round(((lastPoints - prevPoints) / prevPoints) * 100);
+    const sign = deltaPct >= 0 ? "+" : "";
+    formDeltaBadge = `<span class="delta-badge ${deltaPct >= 0 ? "positive" : "negative"}">${sign}${deltaPct}%</span>`;
+  }
+  const marketTotal = (selected.market?.mercado ?? 0) + (selected.market?.clausulas ?? 0) + (selected.market?.acuerdos ?? 0);
+  const TOTAL_JORNADAS = 38;
+  const recentForm = form.slice(0, TOTAL_JORNADAS);
+  for (let i = recentForm.length; i < TOTAL_JORNADAS; i++) recentForm.push(null);
+  const maxFormValue = Math.max(1, ...recentForm.filter(value => value !== null));
+
   app.innerHTML = `
+    <div class="stats-fade">
+    <div class="manager-picker" role="tablist" aria-label="Seleccionar manager">
+      ${managers.map(manager => `
+        <button
+          class="manager-picker-item ${manager.name === selected.name ? "active" : ""}"
+          data-manager="${escapeAttr(manager.name)}"
+          role="tab"
+          aria-selected="${manager.name === selected.name}"
+          title="${escapeAttr(manager.name)}"
+        >
+          <span class="avatar-ring">${managerAvatar(manager.name, 52)}</span>
+          <span class="picker-name">${escapeHtml(manager.name)}</span>
+        </button>
+      `).join("")}
+    </div>
+
     <div class="toolbar">
       <div style="display:flex;align-items:center;gap:16px">
         ${managerAvatar(selected.name, 72)}
@@ -297,11 +337,13 @@ function renderStats() {
           <h2 style="margin:4px 0 0">${escapeHtml(selected.name)}</h2>
         </div>
       </div>
-      <select class="select" id="manager-select">
-        ${state.data.managers.map(manager => `
-          <option value="${escapeAttr(manager.name)}" ${manager.name === selected.name ? "selected" : ""}>${escapeHtml(manager.name)}</option>
-        `).join("")}
-      </select>
+      ${seasons.length > 1 ? `
+        <select class="select" id="season-select" style="min-width:120px" aria-label="Temporada">
+          ${seasons.map(season => `
+            <option value="${escapeAttr(season)}" ${season === state.selectedSeason ? "selected" : ""}>${escapeHtml(season)}</option>
+          `).join("")}
+        </select>
+      ` : ""}
     </div>
 
     <div class="grid" style="grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px">
@@ -390,22 +432,42 @@ function renderStats() {
 
     <div class="grid stats-grid" style="margin-top:16px">
       <section class="card pad span-7">
-        <div class="card-header" style="padding:0 0 16px;border-bottom:0">
-          <h3>Rendimiento histórico</h3>
-          <span class="muted">Últimas 8 jornadas</span>
+        <div class="chart-stat-header">
+          <div>
+            <p class="label" style="margin:0">Rendimiento histórico</p>
+            <div class="chart-stat-value">
+              <div class="value" style="margin:0">${lastPoints ?? "—"}</div>
+              ${formDeltaBadge}
+            </div>
+          </div>
+          <span class="period-chip">${form.length}/${TOTAL_JORNADAS} jornadas</span>
         </div>
         <div class="chart">
-          ${selected.form.slice(-8).map(value => `
-            <div style="display:flex;flex-direction:column;align-items:center;flex:1;gap:4px">
-              <span style="font-family:var(--mono);font-size:11px;color:var(--muted)">${value}</span>
-              <span class="chart-bar" style="height:${Math.max(12, value * 2.6)}px;width:100%" title="${value} pts"></span>
+          ${recentForm.map((value, index) => value === null ? `
+            <div class="chart-col">
+              <div class="chart-track" title="Jornada ${index + 1}: sin jugar"></div>
+            </div>
+          ` : `
+            <div class="chart-col">
+              <div class="chart-track">
+                <span class="chart-bar" style="height:${Math.max(6, Math.round((value / maxFormValue) * 100))}%" title="Jornada ${index + 1}: ${value} pts"></span>
+              </div>
             </div>
           `).join("")}
         </div>
       </section>
 
       <section class="card pad span-5">
-        <h3>Mercado</h3>
+        <div class="chart-stat-header">
+          <div>
+            <p class="label" style="margin:0">Mercado</p>
+            <div class="chart-stat-value">
+              <div class="value" style="margin:0">${marketTotal}</div>
+              <span class="muted" style="font-size:12px">compras totales</span>
+            </div>
+          </div>
+          <span class="period-chip">Temporada</span>
+        </div>
         <div class="bars" style="margin-top:18px">
           ${absoluteBarRow("Mercado libre", selected.market?.mercado ?? 0)}
           ${absoluteBarRow("Cláusulas", selected.market?.clausulas ?? 0)}
@@ -414,37 +476,81 @@ function renderStats() {
       </section>
 
     </div>
+    </div>
   `;
 
-  document.querySelector("#manager-select").addEventListener("change", (event) => {
-    state.selectedManager = event.target.value;
+  document.querySelectorAll(".manager-picker-item").forEach(button => {
+    button.addEventListener("click", () => {
+      state.selectedManager = button.dataset.manager;
+      renderStats();
+    });
+  });
+
+  document.querySelector("#season-select")?.addEventListener("change", (event) => {
+    state.selectedSeason = event.target.value;
+    state.selectedManager = null; // se resuelve al primer manager disponible de la nueva temporada
     renderStats();
   });
 }
 
 function renderNews() {
-  const issues = state.data.news || [];
-  const selected = issues[state.selectedIssue] || issues[0] || state.data.news[0];
+  const seasons = state.data.seasons || [];
+  if (!state.selectedSeason || !seasons.includes(state.selectedSeason)) {
+    state.selectedSeason = state.data.activeSeason || seasons[0] || null;
+  }
+  const issues = (state.data.newsBySeason || {})[state.selectedSeason] || state.data.news || [];
+  const selected = issues[state.selectedIssue] || issues[0];
+
+  const seasonSelectHtml = seasons.length > 1 ? `
+    <select class="select" id="news-season-select" style="min-width:120px" aria-label="Temporada">
+      ${seasons.map(season => `
+        <option value="${escapeAttr(season)}" ${season === state.selectedSeason ? "selected" : ""}>${escapeHtml(season)}</option>
+      `).join("")}
+    </select>
+  ` : "";
+
   if (!selected) {
-    app.innerHTML = `<div class="card pad"><h2>No hay noticias generadas todavía</h2><p class="muted">Cuando exista news_cards.json aparecerán aquí.</p></div>`;
+    app.innerHTML = `
+      <div class="toolbar">
+        <h2 style="margin:0">Noticias</h2>
+        ${seasonSelectHtml}
+      </div>
+      <div class="card pad"><h2>No hay noticias generadas todavía para ${escapeHtml(state.selectedSeason ?? "esta temporada")}</h2><p class="muted">Cuando exista news_cards.json aparecerán aquí.</p></div>
+    `;
+    document.querySelector("#news-season-select")?.addEventListener("change", (event) => {
+      state.selectedSeason = event.target.value;
+      state.selectedIssue = 0;
+      renderNews();
+    });
     return;
   }
 
   app.innerHTML = `
-    <div class="news-layout">
-      <aside class="card pad">
-        <p class="label">Timeline</p>
-        <h2>Jornadas</h2>
-        <div class="timeline" role="tablist" aria-label="Ediciones del periódico">
+    <div class="grid" style="gap:16px">
+      <div class="card pad">
+        <div class="toolbar" style="margin-bottom:0">
+          <div>
+            <p class="label">Timeline</p>
+            <h2 style="margin:2px 0 0">Jornadas</h2>
+          </div>
+          ${seasonSelectHtml}
+        </div>
+        <div class="jornada-carousel" role="tablist" aria-label="Ediciones del periódico">
           ${issues.map((issue, index) => `
-            <button class="issue-button ${issue.date === selected.date ? "active" : ""}" data-issue="${index}" role="tab" aria-selected="${issue.date === selected.date}">
-              <span class="chip">${escapeHtml(issue.date)}</span>
-              <strong>${escapeHtml(issue.title)}</strong>
-              <span class="muted">${escapeHtml(issue.subtitle)}</span>
+            <button
+              class="jornada-card ${issue.date === selected.date ? "active" : ""}"
+              data-issue="${index}"
+              role="tab"
+              aria-selected="${issue.date === selected.date}"
+              title="${escapeAttr(issue.title)}"
+              style="background-image:url('/newspaper/photos/Portada_Jornada.jpg')"
+            >
+              <span class="jornada-dot"></span>
+              <span class="jornada-label">${escapeHtml(issue.date)}</span>
             </button>
           `).join("")}
         </div>
-      </aside>
+      </div>
 
       <section>
         <article class="card hero-card">
@@ -469,11 +575,23 @@ function renderNews() {
     </div>
   `;
 
-  document.querySelectorAll(".issue-button").forEach(button => {
+  document.querySelectorAll(".jornada-card").forEach(button => {
     button.addEventListener("click", () => {
       state.selectedIssue = Number(button.dataset.issue);
       renderNews();
     });
+  });
+
+  document.querySelector("#news-season-select")?.addEventListener("change", (event) => {
+    state.selectedSeason = event.target.value;
+    state.selectedIssue = 0;
+    renderNews();
+  });
+
+  document.querySelector(".jornada-card.active")?.scrollIntoView({
+    inline: "center",
+    block: "nearest",
+    behavior: "smooth",
   });
 }
 

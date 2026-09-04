@@ -1,0 +1,2272 @@
+{
+  "jornada": 6,
+  "fecha_inicio": "2025-11-29 00:00:00",
+  "fecha_fin": "2025-11-29",
+  "transfers": [],
+  "gameweek": [
+    {
+      "fecha": "2025-11-29",
+      "jornada": 6,
+      "equipo_local": "RC Celta de Vigo",
+      "resultado_local": 1,
+      "equipo_visitante": "Real Betis Balompié",
+      "resultado_visitante": 1,
+      "equipo_jugador": "RC Celta de Vigo",
+      "manager": "Juanba",
+      "clasificacion_manager_general": {
+        "puntos": 141,
+        "posicion": 8
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 13,
+        "posicion": 9
+      },
+      "jugador": "I. Moriba",
+      "posicion": "Mediocentro",
+      "puntos": 3,
+      "suplente": 0,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2025-11-29",
+      "jornada": 6,
+      "equipo_local": "RC Celta de Vigo",
+      "resultado_local": 1,
+      "equipo_visitante": "Real Betis Balompié",
+      "resultado_visitante": 1,
+      "equipo_jugador": "RC Celta de Vigo",
+      "manager": "Juanba",
+      "clasificacion_manager_general": {
+        "puntos": 141,
+        "posicion": 8
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 13,
+        "posicion": 9
+      },
+      "jugador": "B. Zaragoza",
+      "posicion": "Mediocentro",
+      "puntos": 2,
+      "suplente": 1,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2025-11-29",
+      "jornada": 6,
+      "equipo_local": "RC Celta de Vigo",
+      "resultado_local": 1,
+      "equipo_visitante": "Real Betis Balompié",
+      "resultado_visitante": 1,
+      "equipo_jugador": "RC Celta de Vigo",
+      "manager": "Juanba",
+      "clasificacion_manager_general": {
+        "puntos": 141,
+        "posicion": 8
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 13,
+        "posicion": 9
+      },
+      "jugador": "I. Radu",
+      "posicion": "Portero",
+      "puntos": 2,
+      "suplente": 0,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2025-11-29",
+      "jornada": 6,
+      "equipo_local": "RC Celta de Vigo",
+      "resultado_local": 1,
+      "equipo_visitante": "Real Betis Balompié",
+      "resultado_visitante": 1,
+      "equipo_jugador": "Real Betis Balompié",
+      "manager": "Chamacónicos",
+      "clasificacion_manager_general": {
+        "puntos": 188,
+        "posicion": 4
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 23,
+        "posicion": 6
+      },
+      "jugador": "R. Riquelme",
+      "posicion": "Mediocentro",
+      "puntos": 2,
+      "suplente": 0,
+      "cambio": 1,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2025-11-29",
+      "jornada": 6,
+      "equipo_local": "RC Celta de Vigo",
+      "resultado_local": 1,
+      "equipo_visitante": "Real Betis Balompié",
+      "resultado_visitante": 1,
+      "equipo_jugador": "Real Betis Balompié",
+      "manager": "Los marinero",
+      "clasificacion_manager_general": {
+        "puntos": 250,
+        "posicion": 2
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 24,
+        "posicion": 5
+      },
+      "jugador": "N. Souza",
+      "posicion": "Defensa",
+      "puntos": 5,
+      "suplente": 0,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2025-11-29",
+      "jornada": 6,
+      "equipo_local": "RC Celta de Vigo",
+      "resultado_local": 1,
+      "equipo_visitante": "Real Betis Balompié",
+      "resultado_visitante": 1,
+      "equipo_jugador": "Real Betis Balompié",
+      "manager": "MuchaSalsa",
+      "clasificacion_manager_general": {
+        "puntos": 163,
+        "posicion": 7
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 19,
+        "posicion": 8
+      },
+      "jugador": "A. Ruibal",
+      "posicion": "Defensa",
+      "puntos": 2,
+      "suplente": 0,
+      "cambio": 1,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2025-11-29",
+      "jornada": 6,
+      "equipo_local": "RC Celta de Vigo",
+      "resultado_local": 1,
+      "equipo_visitante": "Real Betis Balompié",
+      "resultado_visitante": 1,
+      "equipo_jugador": "Real Betis Balompié",
+      "manager": "MuchaSalsa",
+      "clasificacion_manager_general": {
+        "puntos": 163,
+        "posicion": 7
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 19,
+        "posicion": 8
+      },
+      "jugador": "S. Altimira",
+      "posicion": "Mediocentro",
+      "puntos": 5,
+      "suplente": 0,
+      "cambio": 1,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 1,
+      "roja": 0
+    },
+    {
+      "fecha": "2025-11-29",
+      "jornada": 6,
+      "equipo_local": "Athletic Club",
+      "resultado_local": 1,
+      "equipo_visitante": "Girona FC",
+      "resultado_visitante": 1,
+      "equipo_jugador": "Athletic Club",
+      "manager": "Dani",
+      "clasificacion_manager_general": {
+        "puntos": 251,
+        "posicion": 1
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 28,
+        "posicion": 3
+      },
+      "jugador": "A. Paredes",
+      "posicion": "Defensa",
+      "puntos": 4,
+      "suplente": 0,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2025-11-29",
+      "jornada": 6,
+      "equipo_local": "Athletic Club",
+      "resultado_local": 1,
+      "equipo_visitante": "Girona FC",
+      "resultado_visitante": 1,
+      "equipo_jugador": "Athletic Club",
+      "manager": "Libre",
+      "clasificacion_manager_general": {
+        "puntos": 94,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 19,
+        "posicion": 7
+      },
+      "jugador": "G. Guruzeta",
+      "posicion": "Delantero",
+      "puntos": 3,
+      "suplente": 0,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2025-11-29",
+      "jornada": 6,
+      "equipo_local": "Athletic Club",
+      "resultado_local": 1,
+      "equipo_visitante": "Girona FC",
+      "resultado_visitante": 1,
+      "equipo_jugador": "Athletic Club",
+      "manager": "Maldinillo 💥",
+      "clasificacion_manager_general": {
+        "puntos": 174,
+        "posicion": 6
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 27,
+        "posicion": 4
+      },
+      "jugador": "Y. Berchiche",
+      "posicion": "Defensa",
+      "puntos": 4,
+      "suplente": 1,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2025-11-29",
+      "jornada": 6,
+      "equipo_local": "Athletic Club",
+      "resultado_local": 1,
+      "equipo_visitante": "Girona FC",
+      "resultado_visitante": 1,
+      "equipo_jugador": "Athletic Club",
+      "manager": "Maldinillo 💥",
+      "clasificacion_manager_general": {
+        "puntos": 174,
+        "posicion": 6
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 27,
+        "posicion": 4
+      },
+      "jugador": "Á. Berenguer",
+      "posicion": "Mediocentro",
+      "puntos": 4,
+      "suplente": 1,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2025-11-29",
+      "jornada": 6,
+      "equipo_local": "Athletic Club",
+      "resultado_local": 1,
+      "equipo_visitante": "Girona FC",
+      "resultado_visitante": 1,
+      "equipo_jugador": "Athletic Club",
+      "manager": "Maldinillo 💥",
+      "clasificacion_manager_general": {
+        "puntos": 174,
+        "posicion": 6
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 27,
+        "posicion": 4
+      },
+      "jugador": "A. Gorosabel",
+      "posicion": "Defensa",
+      "puntos": 0,
+      "suplente": 0,
+      "cambio": 1,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2025-11-29",
+      "jornada": 6,
+      "equipo_local": "Athletic Club",
+      "resultado_local": 1,
+      "equipo_visitante": "Girona FC",
+      "resultado_visitante": 1,
+      "equipo_jugador": "Girona FC",
+      "manager": "De la Guettir FC",
+      "clasificacion_manager_general": {
+        "puntos": 205,
+        "posicion": 3
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 51,
+        "posicion": 1
+      },
+      "jugador": "C. Portu",
+      "posicion": "Mediocentro",
+      "puntos": 4,
+      "suplente": 1,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2025-11-29",
+      "jornada": 6,
+      "equipo_local": "Athletic Club",
+      "resultado_local": 1,
+      "equipo_visitante": "Girona FC",
+      "resultado_visitante": 1,
+      "equipo_jugador": "Girona FC",
+      "manager": "De la Guettir FC",
+      "clasificacion_manager_general": {
+        "puntos": 205,
+        "posicion": 3
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 51,
+        "posicion": 1
+      },
+      "jugador": "C. Stuani",
+      "posicion": "Delantero",
+      "puntos": 1,
+      "suplente": 1,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2025-11-29",
+      "jornada": 6,
+      "equipo_local": "Athletic Club",
+      "resultado_local": 1,
+      "equipo_visitante": "Girona FC",
+      "resultado_visitante": 1,
+      "equipo_jugador": "Girona FC",
+      "manager": "Jotabetrbb",
+      "clasificacion_manager_general": {
+        "puntos": 179,
+        "posicion": 5
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 33,
+        "posicion": 2
+      },
+      "jugador": "J. Solís",
+      "posicion": "Mediocentro",
+      "puntos": 4,
+      "suplente": 0,
+      "cambio": 1,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2025-11-29",
+      "jornada": 6,
+      "equipo_local": "RCD Espanyol",
+      "resultado_local": 2,
+      "equipo_visitante": "Valencia CF",
+      "resultado_visitante": 2,
+      "equipo_jugador": "RCD Espanyol",
+      "manager": "Dani",
+      "clasificacion_manager_general": {
+        "puntos": 251,
+        "posicion": 1
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 28,
+        "posicion": 3
+      },
+      "jugador": "T. Dolan",
+      "posicion": "Mediocentro",
+      "puntos": 3,
+      "suplente": 0,
+      "cambio": 1,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2025-11-29",
+      "jornada": 6,
+      "equipo_local": "RCD Espanyol",
+      "resultado_local": 2,
+      "equipo_visitante": "Valencia CF",
+      "resultado_visitante": 2,
+      "equipo_jugador": "RCD Espanyol",
+      "manager": "Libre",
+      "clasificacion_manager_general": {
+        "puntos": 94,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 19,
+        "posicion": 7
+      },
+      "jugador": "R. Fernández",
+      "posicion": "Delantero",
+      "puntos": 6,
+      "suplente": 1,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 1,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2025-11-29",
+      "jornada": 6,
+      "equipo_local": "RCD Espanyol",
+      "resultado_local": 2,
+      "equipo_visitante": "Valencia CF",
+      "resultado_visitante": 2,
+      "equipo_jugador": "RCD Espanyol",
+      "manager": "MuchaSalsa",
+      "clasificacion_manager_general": {
+        "puntos": 163,
+        "posicion": 7
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 19,
+        "posicion": 8
+      },
+      "jugador": "A. Roca",
+      "posicion": "Mediocentro",
+      "puntos": 1,
+      "suplente": 1,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2025-11-29",
+      "jornada": 6,
+      "equipo_local": "RCD Espanyol",
+      "resultado_local": 2,
+      "equipo_visitante": "Valencia CF",
+      "resultado_visitante": 2,
+      "equipo_jugador": "Valencia CF",
+      "manager": "Dani",
+      "clasificacion_manager_general": {
+        "puntos": 251,
+        "posicion": 1
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 28,
+        "posicion": 3
+      },
+      "jugador": "D. López",
+      "posicion": "Mediocentro",
+      "puntos": 2,
+      "suplente": 0,
+      "cambio": 1,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 1,
+      "roja": 0
+    },
+    {
+      "fecha": "2025-11-29",
+      "jornada": 6,
+      "equipo_local": "RCD Espanyol",
+      "resultado_local": 2,
+      "equipo_visitante": "Valencia CF",
+      "resultado_visitante": 2,
+      "equipo_jugador": "Valencia CF",
+      "manager": "De la Guettir FC",
+      "clasificacion_manager_general": {
+        "puntos": 205,
+        "posicion": 3
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 51,
+        "posicion": 1
+      },
+      "jugador": "A. Danjuma",
+      "posicion": "Delantero",
+      "puntos": 8,
+      "suplente": 0,
+      "cambio": 1,
+      "goles": 1,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2025-11-29",
+      "jornada": 6,
+      "equipo_local": "RCD Espanyol",
+      "resultado_local": 2,
+      "equipo_visitante": "Valencia CF",
+      "resultado_visitante": 2,
+      "equipo_jugador": "Valencia CF",
+      "manager": "MuchaSalsa",
+      "clasificacion_manager_general": {
+        "puntos": 163,
+        "posicion": 7
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 19,
+        "posicion": 8
+      },
+      "jugador": "J. Vázquez",
+      "posicion": "Defensa",
+      "puntos": 2,
+      "suplente": 1,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2025-11-29",
+      "jornada": 6,
+      "equipo_local": "Levante UD",
+      "resultado_local": 1,
+      "equipo_visitante": "Real Madrid",
+      "resultado_visitante": 4,
+      "equipo_jugador": "Levante UD",
+      "manager": "Juanba",
+      "clasificacion_manager_general": {
+        "puntos": 141,
+        "posicion": 8
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 13,
+        "posicion": 9
+      },
+      "jugador": "J. Luis Morales",
+      "posicion": "Delantero",
+      "puntos": 1,
+      "suplente": 1,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2025-11-29",
+      "jornada": 6,
+      "equipo_local": "Levante UD",
+      "resultado_local": 1,
+      "equipo_visitante": "Real Madrid",
+      "resultado_visitante": 4,
+      "equipo_jugador": "Levante UD",
+      "manager": "Libre",
+      "clasificacion_manager_general": {
+        "puntos": 94,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 19,
+        "posicion": 7
+      },
+      "jugador": "A. de la Fuente",
+      "posicion": "Defensa",
+      "puntos": 2,
+      "suplente": 0,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2025-11-29",
+      "jornada": 6,
+      "equipo_local": "Levante UD",
+      "resultado_local": 1,
+      "equipo_visitante": "Real Madrid",
+      "resultado_visitante": 4,
+      "equipo_jugador": "Levante UD",
+      "manager": "Los marinero",
+      "clasificacion_manager_general": {
+        "puntos": 250,
+        "posicion": 2
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 24,
+        "posicion": 5
+      },
+      "jugador": "E. Eyong",
+      "posicion": "Delantero",
+      "puntos": 9,
+      "suplente": 0,
+      "cambio": 1,
+      "goles": 1,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2025-11-29",
+      "jornada": 6,
+      "equipo_local": "Levante UD",
+      "resultado_local": 1,
+      "equipo_visitante": "Real Madrid",
+      "resultado_visitante": 4,
+      "equipo_jugador": "Real Madrid",
+      "manager": "Dani",
+      "clasificacion_manager_general": {
+        "puntos": 251,
+        "posicion": 1
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 28,
+        "posicion": 3
+      },
+      "jugador": "A. Güler",
+      "posicion": "Mediocentro",
+      "puntos": 6,
+      "suplente": 0,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 1,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2025-11-29",
+      "jornada": 6,
+      "equipo_local": "Levante UD",
+      "resultado_local": 1,
+      "equipo_visitante": "Real Madrid",
+      "resultado_visitante": 4,
+      "equipo_jugador": "Real Madrid",
+      "manager": "De la Guettir FC",
+      "clasificacion_manager_general": {
+        "puntos": 205,
+        "posicion": 3
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 51,
+        "posicion": 1
+      },
+      "jugador": "F. Valverde",
+      "posicion": "Mediocentro",
+      "puntos": 5,
+      "suplente": 0,
+      "cambio": 1,
+      "goles": 0,
+      "asistencias": 1,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2025-11-29",
+      "jornada": 6,
+      "equipo_local": "Levante UD",
+      "resultado_local": 1,
+      "equipo_visitante": "Real Madrid",
+      "resultado_visitante": 4,
+      "equipo_jugador": "Real Madrid",
+      "manager": "Jotabetrbb",
+      "clasificacion_manager_general": {
+        "puntos": 179,
+        "posicion": 5
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 33,
+        "posicion": 2
+      },
+      "jugador": "V. Júnior",
+      "posicion": "Delantero",
+      "puntos": 13,
+      "suplente": 0,
+      "cambio": 0,
+      "goles": 1,
+      "asistencias": 1,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2025-11-29",
+      "jornada": 6,
+      "equipo_local": "Levante UD",
+      "resultado_local": 1,
+      "equipo_visitante": "Real Madrid",
+      "resultado_visitante": 4,
+      "equipo_jugador": "Real Madrid",
+      "manager": "Jotabetrbb",
+      "clasificacion_manager_general": {
+        "puntos": 179,
+        "posicion": 5
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 33,
+        "posicion": 2
+      },
+      "jugador": "T. Courtois",
+      "posicion": "Portero",
+      "puntos": 3,
+      "suplente": 0,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2025-11-29",
+      "jornada": 6,
+      "equipo_local": "Levante UD",
+      "resultado_local": 1,
+      "equipo_visitante": "Real Madrid",
+      "resultado_visitante": 4,
+      "equipo_jugador": "Real Madrid",
+      "manager": "Juanba",
+      "clasificacion_manager_general": {
+        "puntos": 141,
+        "posicion": 8
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 13,
+        "posicion": 9
+      },
+      "jugador": "Rodrygo",
+      "posicion": "Delantero",
+      "puntos": 1,
+      "suplente": 1,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2025-11-29",
+      "jornada": 6,
+      "equipo_local": "Levante UD",
+      "resultado_local": 1,
+      "equipo_visitante": "Real Madrid",
+      "resultado_visitante": 4,
+      "equipo_jugador": "Real Madrid",
+      "manager": "Juanba",
+      "clasificacion_manager_general": {
+        "puntos": 141,
+        "posicion": 8
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 13,
+        "posicion": 9
+      },
+      "jugador": "D. Alaba",
+      "posicion": "Defensa",
+      "puntos": 1,
+      "suplente": 1,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2025-11-29",
+      "jornada": 6,
+      "equipo_local": "Sevilla FC",
+      "resultado_local": 1,
+      "equipo_visitante": "Villarreal CF",
+      "resultado_visitante": 2,
+      "equipo_jugador": "Sevilla FC",
+      "manager": "Los marinero",
+      "clasificacion_manager_general": {
+        "puntos": 250,
+        "posicion": 2
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 24,
+        "posicion": 5
+      },
+      "jugador": "C. Ejuke",
+      "posicion": "Mediocentro",
+      "puntos": 1,
+      "suplente": 0,
+      "cambio": 1,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2025-11-29",
+      "jornada": 6,
+      "equipo_local": "Sevilla FC",
+      "resultado_local": 1,
+      "equipo_visitante": "Villarreal CF",
+      "resultado_visitante": 2,
+      "equipo_jugador": "Sevilla FC",
+      "manager": "MuchaSalsa",
+      "clasificacion_manager_general": {
+        "puntos": 163,
+        "posicion": 7
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 19,
+        "posicion": 8
+      },
+      "jugador": "A. Adams",
+      "posicion": "Delantero",
+      "puntos": 1,
+      "suplente": 0,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2025-11-29",
+      "jornada": 6,
+      "equipo_local": "Sevilla FC",
+      "resultado_local": 1,
+      "equipo_visitante": "Villarreal CF",
+      "resultado_visitante": 2,
+      "equipo_jugador": "Villarreal CF",
+      "manager": "Chamacónicos",
+      "clasificacion_manager_general": {
+        "puntos": 188,
+        "posicion": 4
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 23,
+        "posicion": 6
+      },
+      "jugador": "R. Marín",
+      "posicion": "Defensa",
+      "puntos": 4,
+      "suplente": 0,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 1,
+      "roja": 0
+    },
+    {
+      "fecha": "2025-11-29",
+      "jornada": 6,
+      "equipo_local": "Sevilla FC",
+      "resultado_local": 1,
+      "equipo_visitante": "Villarreal CF",
+      "resultado_visitante": 2,
+      "equipo_jugador": "Villarreal CF",
+      "manager": "De la Guettir FC",
+      "clasificacion_manager_general": {
+        "puntos": 205,
+        "posicion": 3
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 51,
+        "posicion": 1
+      },
+      "jugador": "S. Cardona",
+      "posicion": "Defensa",
+      "puntos": 6,
+      "suplente": 0,
+      "cambio": 1,
+      "goles": 0,
+      "asistencias": 1,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2025-11-29",
+      "jornada": 6,
+      "equipo_local": "Getafe CF",
+      "resultado_local": 1,
+      "equipo_visitante": "Deportivo Alavés",
+      "resultado_visitante": 1,
+      "equipo_jugador": "Getafe CF",
+      "manager": "Chamacónicos",
+      "clasificacion_manager_general": {
+        "puntos": 188,
+        "posicion": 4
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 23,
+        "posicion": 6
+      },
+      "jugador": "M. Martín",
+      "posicion": "Mediocentro",
+      "puntos": 3,
+      "suplente": 0,
+      "cambio": 1,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2025-11-29",
+      "jornada": 6,
+      "equipo_local": "Getafe CF",
+      "resultado_local": 1,
+      "equipo_visitante": "Deportivo Alavés",
+      "resultado_visitante": 1,
+      "equipo_jugador": "Getafe CF",
+      "manager": "De la Guettir FC",
+      "clasificacion_manager_general": {
+        "puntos": 205,
+        "posicion": 3
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 51,
+        "posicion": 1
+      },
+      "jugador": "D. Soria",
+      "posicion": "Portero",
+      "puntos": 6,
+      "suplente": 0,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2025-11-29",
+      "jornada": 6,
+      "equipo_local": "Getafe CF",
+      "resultado_local": 1,
+      "equipo_visitante": "Deportivo Alavés",
+      "resultado_visitante": 1,
+      "equipo_jugador": "Getafe CF",
+      "manager": "Jotabetrbb",
+      "clasificacion_manager_general": {
+        "puntos": 179,
+        "posicion": 5
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 33,
+        "posicion": 2
+      },
+      "jugador": "J. Iglesias",
+      "posicion": "Defensa",
+      "puntos": 5,
+      "suplente": 0,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2025-11-29",
+      "jornada": 6,
+      "equipo_local": "Getafe CF",
+      "resultado_local": 1,
+      "equipo_visitante": "Deportivo Alavés",
+      "resultado_visitante": 1,
+      "equipo_jugador": "Getafe CF",
+      "manager": "Los marinero",
+      "clasificacion_manager_general": {
+        "puntos": 250,
+        "posicion": 2
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 24,
+        "posicion": 5
+      },
+      "jugador": "Davinchi",
+      "posicion": "Defensa",
+      "puntos": 4,
+      "suplente": 1,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 1,
+      "roja": 0
+    },
+    {
+      "fecha": "2025-11-29",
+      "jornada": 6,
+      "equipo_local": "Getafe CF",
+      "resultado_local": 1,
+      "equipo_visitante": "Deportivo Alavés",
+      "resultado_visitante": 1,
+      "equipo_jugador": "Deportivo Alavés",
+      "manager": "Libre",
+      "clasificacion_manager_general": {
+        "puntos": 94,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 19,
+        "posicion": 7
+      },
+      "jugador": "J. Otto",
+      "posicion": "Defensa",
+      "puntos": 4,
+      "suplente": 0,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2025-11-29",
+      "jornada": 6,
+      "equipo_local": "Getafe CF",
+      "resultado_local": 1,
+      "equipo_visitante": "Deportivo Alavés",
+      "resultado_visitante": 1,
+      "equipo_jugador": "Deportivo Alavés",
+      "manager": "Maldinillo 💥",
+      "clasificacion_manager_general": {
+        "puntos": 174,
+        "posicion": 6
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 27,
+        "posicion": 4
+      },
+      "jugador": "V. Parada",
+      "posicion": "Defensa",
+      "puntos": 1,
+      "suplente": 1,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2025-11-29",
+      "jornada": 6,
+      "equipo_local": "Atlético de Madrid",
+      "resultado_local": 3,
+      "equipo_visitante": "Rayo Vallecano",
+      "resultado_visitante": 2,
+      "equipo_jugador": "Atlético de Madrid",
+      "manager": "Juanba",
+      "clasificacion_manager_general": {
+        "puntos": 141,
+        "posicion": 8
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 13,
+        "posicion": 9
+      },
+      "jugador": "R. Le Normand",
+      "posicion": "Defensa",
+      "puntos": 3,
+      "suplente": 0,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 1,
+      "roja": 0
+    },
+    {
+      "fecha": "2025-11-29",
+      "jornada": 6,
+      "equipo_local": "Atlético de Madrid",
+      "resultado_local": 3,
+      "equipo_visitante": "Rayo Vallecano",
+      "resultado_visitante": 2,
+      "equipo_jugador": "Atlético de Madrid",
+      "manager": "Libre",
+      "clasificacion_manager_general": {
+        "puntos": 94,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 19,
+        "posicion": 7
+      },
+      "jugador": "M. Pubill",
+      "posicion": "Defensa",
+      "puntos": 3,
+      "suplente": 1,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2025-11-29",
+      "jornada": 6,
+      "equipo_local": "Atlético de Madrid",
+      "resultado_local": 3,
+      "equipo_visitante": "Rayo Vallecano",
+      "resultado_visitante": 2,
+      "equipo_jugador": "Rayo Vallecano",
+      "manager": "Chamacónicos",
+      "clasificacion_manager_general": {
+        "puntos": 188,
+        "posicion": 4
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 23,
+        "posicion": 6
+      },
+      "jugador": "P. Ciss",
+      "posicion": "Mediocentro",
+      "puntos": 2,
+      "suplente": 1,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 1,
+      "roja": 0
+    },
+    {
+      "fecha": "2025-11-29",
+      "jornada": 6,
+      "equipo_local": "Atlético de Madrid",
+      "resultado_local": 3,
+      "equipo_visitante": "Rayo Vallecano",
+      "resultado_visitante": 2,
+      "equipo_jugador": "Rayo Vallecano",
+      "manager": "Libre",
+      "clasificacion_manager_general": {
+        "puntos": 94,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 19,
+        "posicion": 7
+      },
+      "jugador": "U. López",
+      "posicion": "Mediocentro",
+      "puntos": 3,
+      "suplente": 0,
+      "cambio": 1,
+      "goles": 0,
+      "asistencias": 1,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2025-11-29",
+      "jornada": 6,
+      "equipo_local": "Atlético de Madrid",
+      "resultado_local": 3,
+      "equipo_visitante": "Rayo Vallecano",
+      "resultado_visitante": 2,
+      "equipo_jugador": "Rayo Vallecano",
+      "manager": "Maldinillo 💥",
+      "clasificacion_manager_general": {
+        "puntos": 174,
+        "posicion": 6
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 27,
+        "posicion": 4
+      },
+      "jugador": "Á. García",
+      "posicion": "Mediocentro",
+      "puntos": 11,
+      "suplente": 1,
+      "cambio": 0,
+      "goles": 1,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2025-11-29",
+      "jornada": 6,
+      "equipo_local": "Atlético de Madrid",
+      "resultado_local": 3,
+      "equipo_visitante": "Rayo Vallecano",
+      "resultado_visitante": 2,
+      "equipo_jugador": "Rayo Vallecano",
+      "manager": "MuchaSalsa",
+      "clasificacion_manager_general": {
+        "puntos": 163,
+        "posicion": 7
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 19,
+        "posicion": 8
+      },
+      "jugador": "G. Gumbau",
+      "posicion": "Mediocentro",
+      "puntos": 1,
+      "suplente": 1,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2025-11-29",
+      "jornada": 6,
+      "equipo_local": "Real Sociedad",
+      "resultado_local": 1,
+      "equipo_visitante": "RCD Mallorca",
+      "resultado_visitante": 0,
+      "equipo_jugador": "Real Sociedad",
+      "manager": "Chamacónicos",
+      "clasificacion_manager_general": {
+        "puntos": 188,
+        "posicion": 4
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 23,
+        "posicion": 6
+      },
+      "jugador": "B. Méndez",
+      "posicion": "Mediocentro",
+      "puntos": 3,
+      "suplente": 0,
+      "cambio": 1,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 1,
+      "roja": 0
+    },
+    {
+      "fecha": "2025-11-29",
+      "jornada": 6,
+      "equipo_local": "Real Sociedad",
+      "resultado_local": 1,
+      "equipo_visitante": "RCD Mallorca",
+      "resultado_visitante": 0,
+      "equipo_jugador": "Real Sociedad",
+      "manager": "Chamacónicos",
+      "clasificacion_manager_general": {
+        "puntos": 188,
+        "posicion": 4
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 23,
+        "posicion": 6
+      },
+      "jugador": "J. Aramburu",
+      "posicion": "Defensa",
+      "puntos": 3,
+      "suplente": 0,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2025-11-29",
+      "jornada": 6,
+      "equipo_local": "Real Sociedad",
+      "resultado_local": 1,
+      "equipo_visitante": "RCD Mallorca",
+      "resultado_visitante": 0,
+      "equipo_jugador": "Real Sociedad",
+      "manager": "Dani",
+      "clasificacion_manager_general": {
+        "puntos": 251,
+        "posicion": 1
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 28,
+        "posicion": 3
+      },
+      "jugador": "A. Muñoz",
+      "posicion": "Defensa",
+      "puntos": 3,
+      "suplente": 1,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2025-11-29",
+      "jornada": 6,
+      "equipo_local": "Real Sociedad",
+      "resultado_local": 1,
+      "equipo_visitante": "RCD Mallorca",
+      "resultado_visitante": 0,
+      "equipo_jugador": "Real Sociedad",
+      "manager": "Dani",
+      "clasificacion_manager_general": {
+        "puntos": 251,
+        "posicion": 1
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 28,
+        "posicion": 3
+      },
+      "jugador": "T. Kubo",
+      "posicion": "Mediocentro",
+      "puntos": 3,
+      "suplente": 0,
+      "cambio": 1,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2025-11-29",
+      "jornada": 6,
+      "equipo_local": "Real Sociedad",
+      "resultado_local": 1,
+      "equipo_visitante": "RCD Mallorca",
+      "resultado_visitante": 0,
+      "equipo_jugador": "Real Sociedad",
+      "manager": "Dani",
+      "clasificacion_manager_general": {
+        "puntos": 251,
+        "posicion": 1
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 28,
+        "posicion": 3
+      },
+      "jugador": "P. Marín",
+      "posicion": "Mediocentro",
+      "puntos": 3,
+      "suplente": 1,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2025-11-29",
+      "jornada": 6,
+      "equipo_local": "Real Sociedad",
+      "resultado_local": 1,
+      "equipo_visitante": "RCD Mallorca",
+      "resultado_visitante": 0,
+      "equipo_jugador": "Real Sociedad",
+      "manager": "Jotabetrbb",
+      "clasificacion_manager_general": {
+        "puntos": 179,
+        "posicion": 5
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 33,
+        "posicion": 2
+      },
+      "jugador": "D. Ćaleta-Car",
+      "posicion": "Defensa",
+      "puntos": 4,
+      "suplente": 0,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2025-11-29",
+      "jornada": 6,
+      "equipo_local": "Real Sociedad",
+      "resultado_local": 1,
+      "equipo_visitante": "RCD Mallorca",
+      "resultado_visitante": 0,
+      "equipo_jugador": "Real Sociedad",
+      "manager": "Maldinillo 💥",
+      "clasificacion_manager_general": {
+        "puntos": 174,
+        "posicion": 6
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 27,
+        "posicion": 4
+      },
+      "jugador": "G. Guedes",
+      "posicion": "Delantero",
+      "puntos": 1,
+      "suplente": 1,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2025-11-29",
+      "jornada": 6,
+      "equipo_local": "Real Sociedad",
+      "resultado_local": 1,
+      "equipo_visitante": "RCD Mallorca",
+      "resultado_visitante": 0,
+      "equipo_jugador": "RCD Mallorca",
+      "manager": "Chamacónicos",
+      "clasificacion_manager_general": {
+        "puntos": 188,
+        "posicion": 4
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 23,
+        "posicion": 6
+      },
+      "jugador": "M. Morey",
+      "posicion": "Defensa",
+      "puntos": 2,
+      "suplente": 1,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2025-11-29",
+      "jornada": 6,
+      "equipo_local": "Real Sociedad",
+      "resultado_local": 1,
+      "equipo_visitante": "RCD Mallorca",
+      "resultado_visitante": 0,
+      "equipo_jugador": "RCD Mallorca",
+      "manager": "De la Guettir FC",
+      "clasificacion_manager_general": {
+        "puntos": 205,
+        "posicion": 3
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 51,
+        "posicion": 1
+      },
+      "jugador": "P. Torre",
+      "posicion": "Mediocentro",
+      "puntos": 3,
+      "suplente": 0,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2025-11-29",
+      "jornada": 6,
+      "equipo_local": "Real Sociedad",
+      "resultado_local": 1,
+      "equipo_visitante": "RCD Mallorca",
+      "resultado_visitante": 0,
+      "equipo_jugador": "RCD Mallorca",
+      "manager": "Libre",
+      "clasificacion_manager_general": {
+        "puntos": 94,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 19,
+        "posicion": 7
+      },
+      "jugador": "D. López",
+      "posicion": "Defensa",
+      "puntos": 2,
+      "suplente": 0,
+      "cambio": 1,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2025-11-29",
+      "jornada": 6,
+      "equipo_local": "Real Sociedad",
+      "resultado_local": 1,
+      "equipo_visitante": "RCD Mallorca",
+      "resultado_visitante": 0,
+      "equipo_jugador": "RCD Mallorca",
+      "manager": "Los marinero",
+      "clasificacion_manager_general": {
+        "puntos": 250,
+        "posicion": 2
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 24,
+        "posicion": 5
+      },
+      "jugador": "L. Román",
+      "posicion": "Portero",
+      "puntos": 5,
+      "suplente": 0,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2025-11-29",
+      "jornada": 6,
+      "equipo_local": "Real Sociedad",
+      "resultado_local": 1,
+      "equipo_visitante": "RCD Mallorca",
+      "resultado_visitante": 0,
+      "equipo_jugador": "RCD Mallorca",
+      "manager": "Maldinillo 💥",
+      "clasificacion_manager_general": {
+        "puntos": 174,
+        "posicion": 6
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 27,
+        "posicion": 4
+      },
+      "jugador": "O. Mascarell",
+      "posicion": "Mediocentro",
+      "puntos": 2,
+      "suplente": 0,
+      "cambio": 1,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2025-11-29",
+      "jornada": 6,
+      "equipo_local": "CA Osasuna",
+      "resultado_local": 1,
+      "equipo_visitante": "Elche CF",
+      "resultado_visitante": 1,
+      "equipo_jugador": "CA Osasuna",
+      "manager": "De la Guettir FC",
+      "clasificacion_manager_general": {
+        "puntos": 205,
+        "posicion": 3
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 51,
+        "posicion": 1
+      },
+      "jugador": "V. Muñoz",
+      "posicion": "Delantero",
+      "puntos": 12,
+      "suplente": 0,
+      "cambio": 1,
+      "goles": 1,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2025-11-29",
+      "jornada": 6,
+      "equipo_local": "CA Osasuna",
+      "resultado_local": 1,
+      "equipo_visitante": "Elche CF",
+      "resultado_visitante": 1,
+      "equipo_jugador": "CA Osasuna",
+      "manager": "Jotabetrbb",
+      "clasificacion_manager_general": {
+        "puntos": 179,
+        "posicion": 5
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 33,
+        "posicion": 2
+      },
+      "jugador": "J. Moncayola",
+      "posicion": "Mediocentro",
+      "puntos": 4,
+      "suplente": 0,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 1,
+      "roja": 0
+    },
+    {
+      "fecha": "2025-11-29",
+      "jornada": 6,
+      "equipo_local": "CA Osasuna",
+      "resultado_local": 1,
+      "equipo_visitante": "Elche CF",
+      "resultado_visitante": 1,
+      "equipo_jugador": "CA Osasuna",
+      "manager": "Maldinillo 💥",
+      "clasificacion_manager_general": {
+        "puntos": 174,
+        "posicion": 6
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 27,
+        "posicion": 4
+      },
+      "jugador": "A. Budimir",
+      "posicion": "Delantero",
+      "puntos": 4,
+      "suplente": 0,
+      "cambio": 1,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2025-11-29",
+      "jornada": 6,
+      "equipo_local": "CA Osasuna",
+      "resultado_local": 1,
+      "equipo_visitante": "Elche CF",
+      "resultado_visitante": 1,
+      "equipo_jugador": "Elche CF",
+      "manager": "Dani",
+      "clasificacion_manager_general": {
+        "puntos": 251,
+        "posicion": 1
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 28,
+        "posicion": 3
+      },
+      "jugador": "A. Febas",
+      "posicion": "Mediocentro",
+      "puntos": 2,
+      "suplente": 0,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2025-11-29",
+      "jornada": 6,
+      "equipo_local": "CA Osasuna",
+      "resultado_local": 1,
+      "equipo_visitante": "Elche CF",
+      "resultado_visitante": 1,
+      "equipo_jugador": "Elche CF",
+      "manager": "Dani",
+      "clasificacion_manager_general": {
+        "puntos": 251,
+        "posicion": 1
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 28,
+        "posicion": 3
+      },
+      "jugador": "I. Peña",
+      "posicion": "Portero",
+      "puntos": 2,
+      "suplente": 0,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2025-11-29",
+      "jornada": 6,
+      "equipo_local": "CA Osasuna",
+      "resultado_local": 1,
+      "equipo_visitante": "Elche CF",
+      "resultado_visitante": 1,
+      "equipo_jugador": "Elche CF",
+      "manager": "De la Guettir FC",
+      "clasificacion_manager_general": {
+        "puntos": 205,
+        "posicion": 3
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 51,
+        "posicion": 1
+      },
+      "jugador": "L. Pétrot",
+      "posicion": "Defensa",
+      "puntos": 2,
+      "suplente": 0,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2025-11-29",
+      "jornada": 6,
+      "equipo_local": "CA Osasuna",
+      "resultado_local": 1,
+      "equipo_visitante": "Elche CF",
+      "resultado_visitante": 1,
+      "equipo_jugador": "Elche CF",
+      "manager": "MuchaSalsa",
+      "clasificacion_manager_general": {
+        "puntos": 163,
+        "posicion": 7
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 19,
+        "posicion": 8
+      },
+      "jugador": "Á. Núñez",
+      "posicion": "Defensa",
+      "puntos": 2,
+      "suplente": 0,
+      "cambio": 1,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2025-11-29",
+      "jornada": 6,
+      "equipo_local": "Real Oviedo",
+      "resultado_local": 1,
+      "equipo_visitante": "FC Barcelona",
+      "resultado_visitante": 3,
+      "equipo_jugador": "Real Oviedo",
+      "manager": "Chamacónicos",
+      "clasificacion_manager_general": {
+        "puntos": 188,
+        "posicion": 4
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 23,
+        "posicion": 6
+      },
+      "jugador": "S. Rondón",
+      "posicion": "Delantero",
+      "puntos": 4,
+      "suplente": 0,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2025-11-29",
+      "jornada": 6,
+      "equipo_local": "Real Oviedo",
+      "resultado_local": 1,
+      "equipo_visitante": "FC Barcelona",
+      "resultado_visitante": 3,
+      "equipo_jugador": "Real Oviedo",
+      "manager": "De la Guettir FC",
+      "clasificacion_manager_general": {
+        "puntos": 205,
+        "posicion": 3
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 51,
+        "posicion": 1
+      },
+      "jugador": "J. Brekalo",
+      "posicion": "Mediocentro",
+      "puntos": 4,
+      "suplente": 1,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2025-11-29",
+      "jornada": 6,
+      "equipo_local": "Real Oviedo",
+      "resultado_local": 1,
+      "equipo_visitante": "FC Barcelona",
+      "resultado_visitante": 3,
+      "equipo_jugador": "FC Barcelona",
+      "manager": "MuchaSalsa",
+      "clasificacion_manager_general": {
+        "puntos": 163,
+        "posicion": 7
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 19,
+        "posicion": 8
+      },
+      "jugador": "Raphinha",
+      "posicion": "Delantero",
+      "puntos": 5,
+      "suplente": 0,
+      "cambio": 1,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    }
+  ],
+  "clasificacion": {
+    "general": {
+      "Dani": {
+        "puntos": 251,
+        "posicion": 1
+      },
+      "Los marinero": {
+        "puntos": 250,
+        "posicion": 2
+      },
+      "De la Guettir FC": {
+        "puntos": 205,
+        "posicion": 3
+      },
+      "Chamacónicos": {
+        "puntos": 188,
+        "posicion": 4
+      },
+      "Jotabetrbb": {
+        "puntos": 179,
+        "posicion": 5
+      },
+      "Maldinillo 💥": {
+        "puntos": 174,
+        "posicion": 6
+      },
+      "MuchaSalsa": {
+        "puntos": 163,
+        "posicion": 7
+      },
+      "Juanba": {
+        "puntos": 141,
+        "posicion": 8
+      },
+      "Libre": {
+        "puntos": 94,
+        "posicion": 9
+      }
+    },
+    "jornada": {
+      "De la Guettir FC": {
+        "puntos": 51,
+        "posicion": 1
+      },
+      "Jotabetrbb": {
+        "puntos": 33,
+        "posicion": 2
+      },
+      "Dani": {
+        "puntos": 28,
+        "posicion": 3
+      },
+      "Maldinillo 💥": {
+        "puntos": 27,
+        "posicion": 4
+      },
+      "Los marinero": {
+        "puntos": 24,
+        "posicion": 5
+      },
+      "Chamacónicos": {
+        "puntos": 23,
+        "posicion": 6
+      },
+      "Libre": {
+        "puntos": 19,
+        "posicion": 7
+      },
+      "MuchaSalsa": {
+        "puntos": 19,
+        "posicion": 8
+      },
+      "Juanba": {
+        "puntos": 13,
+        "posicion": 9
+      }
+    }
+  },
+  "quinielas": {
+    "general": {
+      "De la Guettir FC": {
+        "puntos": 33,
+        "posicion": 1
+      },
+      "Dani": {
+        "puntos": 31,
+        "posicion": 2
+      },
+      "Maldinillo 💥": {
+        "puntos": 31,
+        "posicion": 3
+      },
+      "Juanba": {
+        "puntos": 30,
+        "posicion": 4
+      },
+      "Chamacónicos": {
+        "puntos": 27,
+        "posicion": 5
+      },
+      "Jotabetrbb": {
+        "puntos": 27,
+        "posicion": 6
+      },
+      "MuchaSalsa": {
+        "puntos": 24,
+        "posicion": 7
+      },
+      "Los marinero": {
+        "puntos": 22,
+        "posicion": 8
+      },
+      "Libre": {
+        "puntos": 10,
+        "posicion": 9
+      }
+    },
+    "jornada": {
+      "De la Guettir FC": {
+        "puntos": 8,
+        "posicion": 1
+      },
+      "Dani": {
+        "puntos": 7,
+        "posicion": 2
+      },
+      "Jotabetrbb": {
+        "puntos": 7,
+        "posicion": 3
+      },
+      "Juanba": {
+        "puntos": 6,
+        "posicion": 4
+      },
+      "Maldinillo 💥": {
+        "puntos": 6,
+        "posicion": 5
+      },
+      "MuchaSalsa": {
+        "puntos": 4,
+        "posicion": 6
+      },
+      "Chamacónicos": {
+        "puntos": 0,
+        "posicion": 7
+      },
+      "Libre": {
+        "puntos": 0,
+        "posicion": 8
+      },
+      "Los marinero": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    }
+  }
+}
