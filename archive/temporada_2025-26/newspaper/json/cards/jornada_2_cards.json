@@ -1,0 +1,102 @@
+{
+  "cards": [
+    {
+      "tipo": "clasificacion",
+      "jugador": null,
+      "manager": null,
+      "puntos": null,
+      "dinero": null,
+      "equipo": null,
+      "titulo": "¡LA SOTANO LEAGUE ARDE!",
+      "subtitulo": "¡Líderes Bajo Presión Extrema!",
+      "texto": [
+        "¡Los Marinero se aferran a la cima con 88 puntos, pero Dani, el bicampeón, pisa los talones con 78 puntos, ¡la distancia se reduce a diez!",
+        "¡Chamacónicos, la revelación de la jornada, arrasa con 60 puntos y se cuela en el podio general, ¡amenazando a los gigantes!",
+        "¡Maldinillo 💥, con 51 puntos, acecha desde la quinta posición, ¡listo para el zarpazo y escalar puestos en esta liga de infarto!"
+      ]
+    },
+    {
+      "tipo": "rumor",
+      "jugador": null,
+      "manager": null,
+      "puntos": null,
+      "dinero": null,
+      "equipo": null,
+      "titulo": "¡RUMORES EXPLOSIVOS!",
+      "subtitulo": "¡Un Manager en Apuros!",
+      "texto": [
+        "¡Se comenta en los pasillos que un manager, desesperado por puntos, intentó sobornar al árbitro con una cena de sushi, ¡la liga tiembla!"
+      ]
+    },
+    {
+      "tipo": "MVP de la jornada",
+      "jugador": "M. Morey",
+      "manager": "Chamacónicos",
+      "puntos": 14.0,
+      "dinero": null,
+      "equipo": "RCD Mallorca",
+      "titulo": "¡M. MOREY EXPLOTA!",
+      "subtitulo": "¡Chamacónicos Celebra 14 Puntos Cruciales!",
+      "texto": [
+        "¡M. Morey desató la locura con 14 puntos, catapultando a Chamacónicos a la cima de la jornada, ¡una actuación estelar!",
+        "¡El manager, ahora tercero en la general, demuestra que tiene la fórmula para el éxito y ¡no piensa frenar!"
+      ]
+    },
+    {
+      "tipo": "MVP de la jornada",
+      "jugador": "R. Marín",
+      "manager": "Chamacónicos",
+      "puntos": 13.0,
+      "dinero": null,
+      "equipo": "Villarreal CF",
+      "titulo": "¡R. MARÍN, EL HÉROE DE CHACAMÓNICOS!",
+      "subtitulo": "¡Otro Golpe Maestro del Manager en Racha!",
+      "texto": [
+        "¡R. Marín se erige como el segundo baluarte de Chamacónicos, sumando 13 puntos vitales que lo consolidan en la jornada, ¡un auténtico muro!",
+        "¡El líder de la jornada no para de sumar estrellas, confirmando su asalto al trono de la SOTANO LEAGUE, ¡nadie puede detenerlo!"
+      ]
+    },
+    {
+      "tipo": "MVP de la jornada",
+      "jugador": "A. Budimir",
+      "manager": "Maldinillo 💥",
+      "puntos": 11.0,
+      "dinero": null,
+      "equipo": "CA Osasuna",
+      "titulo": "¡BUDIMIR DESPIERTA A MALDINILLO!",
+      "subtitulo": "¡11 Puntos que Encienden la Llama!",
+      "texto": [
+        "¡A. Budimir irrumpe con 11 puntos, inyectando una dosis de adrenalina pura en las filas de Maldinillo 💥, ¡un resurgir esperado!",
+        "¡El manager, aunque en la sexta posición de la jornada, demuestra que su escuadra tiene el potencial para escalar y ¡dar la sorpresa!"
+      ]
+    },
+    {
+      "tipo": "Peor actuación de la jornada",
+      "jugador": "H. Rincón",
+      "manager": "Los marinero",
+      "puntos": -2.0,
+      "dinero": null,
+      "equipo": "Girona FC",
+      "titulo": "¡DESASTRE EN LA CIMA!",
+      "subtitulo": "¡H. Rincón HUNDE a Los Marinero!",
+      "texto": [
+        "¡Horror en el líder! H. Rincón firma una actuación para el olvido con -2 puntos, ¡un golpe bajo para Los Marinero!",
+        "¡El primer clasificado de la general ve cómo su estrella se apaga, poniendo en jaque su dominio en la SOTANO LEAGUE, ¡saltan las alarmas!"
+      ]
+    },
+    {
+      "tipo": "Gol en propia",
+      "jugador": "J. Iglesias",
+      "manager": "Jotabetrbb",
+      "puntos": 2.0,
+      "dinero": null,
+      "equipo": "Getafe CF",
+      "titulo": "¡AUTOGOL Y DRAMA!",
+      "subtitulo": "¡Jotabetrbb Sufre en sus Carnes!",
+      "texto": [
+        "¡Tragedia en el área! J. Iglesias protagoniza un autogol que deja helado a Jotabetrbb, sumando solo 2 puntos, ¡un error fatal!",
+        "¡El manager, pese a estar entre los tres primeros de la jornada, lamenta una jugada desafortunada que ¡podría costar caro!"
+      ]
+    }
+  ]
+}

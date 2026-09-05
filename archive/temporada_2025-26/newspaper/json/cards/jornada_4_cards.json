@@ -1,0 +1,102 @@
+{
+  "cards": [
+    {
+      "tipo": "clasificacion",
+      "jugador": null,
+      "manager": null,
+      "puntos": null,
+      "dinero": null,
+      "equipo": null,
+      "titulo": "¡DANI RESISTE EN LA CIMA!",
+      "subtitulo": "La SOTANO LEAGUE Arde: ¡Nadie está a Salvo!",
+      "texto": [
+        "¡Dani se aferra al liderato general con 179 puntos, pero la presión es máxima!",
+        "Los Marinero y Chamacónicos le pisan los talones, ¡la batalla por el trono está al rojo vivo!",
+        "¡Maldinillo 💥, a pesar de un tropiezo, mantiene viva la esperanza y promete remontada!"
+      ]
+    },
+    {
+      "tipo": "rumor",
+      "jugador": null,
+      "manager": null,
+      "puntos": null,
+      "dinero": null,
+      "equipo": null,
+      "titulo": "¡RUMOR BOMBA EN EL SOTANO!",
+      "subtitulo": "¡Misterio en los Vestuarios!",
+      "texto": [
+        "¡Se comenta que un manager fue visto en un karaoke, destrozando clásicos y la moral de los presentes!"
+      ]
+    },
+    {
+      "tipo": "MVP de la jornada",
+      "jugador": "Raphinha",
+      "manager": "MuchaSalsa",
+      "puntos": 16.0,
+      "dinero": null,
+      "equipo": "FC Barcelona",
+      "titulo": "¡RAPHINHA DESATA LA FIEBRE EN MUCHASALSA!",
+      "subtitulo": "¡16 Puntos que Sacuden la Tabla!",
+      "texto": [
+        "¡Raphinha, del FC Barcelona, explota con 16 puntos, elevando a MuchaSalsa a la gloria de la jornada!",
+        "¡El manager de la cuarta posición general demuestra que tiene pólvora para asaltar la cima!"
+      ]
+    },
+    {
+      "tipo": "MVP de la jornada",
+      "jugador": "V. Muriqi",
+      "manager": "Dani",
+      "puntos": 14.0,
+      "dinero": null,
+      "equipo": "RCD Mallorca",
+      "titulo": "¡MURIQI REAFIRMA LA TIRANÍA DE DANI!",
+      "subtitulo": "¡14 Puntos para el BICAMPEÓN!",
+      "texto": [
+        "¡V. Muriqi, el pirata del RCD Mallorca, suma 14 puntos vitales para el intocable Dani!",
+        "¡El líder general y de la jornada no da tregua y sigue acumulando talento para su imperio!"
+      ]
+    },
+    {
+      "tipo": "MVP de la jornada",
+      "jugador": "K. Mbappé",
+      "manager": "De la Guettir FC",
+      "puntos": 13.0,
+      "dinero": null,
+      "equipo": "Real Madrid",
+      "titulo": "¡MBAPPÉ, EL GALÁCTICO DE DE LA GUETTIR FC!",
+      "subtitulo": "¡13 Puntos de ORO Puro!",
+      "texto": [
+        "¡K. Mbappé, la superestrella del Real Madrid, ilumina a De la Guettir FC con 13 puntos de fantasía!",
+        "¡El manager de la quinta posición general se postula como la gran revelación de la SOTANO LEAGUE!"
+      ]
+    },
+    {
+      "tipo": "Peor actuación de la jornada",
+      "jugador": "P. Milla",
+      "manager": "Jotabetrbb",
+      "puntos": -2.0,
+      "dinero": null,
+      "equipo": "RCD Espanyol",
+      "titulo": "¡DESASTRE EN JOTABETRBB!",
+      "subtitulo": "¡P. MILLA: EL FRACASO MÁS SONADO!",
+      "texto": [
+        "¡P. Milla, del RCD Espanyol, protagoniza una actuación para el olvido con -2 puntos para Jotabetrbb!",
+        "¡El manager se hunde en la jornada, y su equipo necesita una reacción URGENTE para no caer al abismo!"
+      ]
+    },
+    {
+      "tipo": "Expulsión",
+      "jugador": "P. Milla",
+      "manager": "Jotabetrbb",
+      "puntos": -2.0,
+      "dinero": null,
+      "equipo": "RCD Espanyol",
+      "titulo": "¡TARJETA ROJA: P. MILLA HUNDE A JOTABETRBB!",
+      "subtitulo": "¡Decisión FATAL que Cuesta Puntos!",
+      "texto": [
+        "¡La expulsión de P. Milla fue el clavo en el ataúd de Jotabetrbb, restando -2 puntos cruciales!",
+        "¡Una jornada para olvidar para el manager, que ve cómo un error individual dinamita sus aspiraciones!"
+      ]
+    }
+  ]
+}

@@ -26,6 +26,7 @@ for p in (ROOT, SRC):
     if str(p) not in sys.path:
         sys.path.insert(0, str(p))
 
+from src.utils import db as db_utils
 from src.utils.config_loader import load_config
 from src.utils.file_utils import safe_read_csv
 from src.utils.team_map import map_team
@@ -208,8 +209,11 @@ def build_managers(
 
         market_spend = round(float(compras["ganancias"].abs().sum()), 2)
 
-        # form: puntos de las últimas N jornadas
+        # form: puntos de las últimas N jornadas (para el badge de variación)
         form = [int(pts_jornada.get(j, 0)) for j in form_jornadas]
+        # seasonForm: puntos de TODAS las jornadas jugadas esta temporada
+        # (para el gráfico de rendimiento histórico completo, no solo las últimas N)
+        season_form = [int(pts_jornada.get(j, 0)) for j in all_jornadas]
 
         managers.append({
             "name":             manager,
@@ -232,11 +236,41 @@ def build_managers(
                 "acuerdos":  len(acuerdos),
             },
             "form":       form,
+            "seasonForm": season_form,
             "comparison": {},
         })
 
     logger.info("Managers procesados: %d", len(managers))
     return managers
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Sección: managers por temporada (para el desplegable de año en Estadísticas)
+# ─────────────────────────────────────────────────────────────────────────────
+
+def list_available_seasons() -> list:
+    """Temporadas con datos reales en la BD (columna `temporada` de gameweek)."""
+    df = db_utils.read_table("gameweek")
+    if df.empty or "temporada" not in df.columns:
+        return [SEASON]
+    seasons = sorted(df["temporada"].unique().tolist())
+    return seasons or [SEASON]
+
+
+def build_managers_for_season(season: str) -> list:
+    """Igual que build_managers(), pero leyendo directo de la BD para una
+    temporada concreta (no necesariamente la activa)."""
+    df_gw   = db_utils.read_table("gameweek", temporada=season)
+    df_clas = db_utils.read_table("clasificaciones", temporada=season)
+    df_merc = db_utils.read_table("ganancias_clean", temporada=season)
+
+    if df_gw.empty or df_clas.empty:
+        logger.warning("Temporada %s sin datos suficientes para managers, se omite", season)
+        return []
+
+    df_transfers = df_merc[df_merc["type"] == "transfer"].copy() if not df_merc.empty else df_merc
+    standings = build_standings(df_clas)
+    return build_managers(df_gw, df_clas, df_transfers, standings)
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -440,6 +474,20 @@ def build_news(news_json_dir: Path) -> list:
     return news
 
 
+def build_news_for_season(season: str) -> list:
+    """Igual que build_news(), pero resolviendo la carpeta correcta: la
+    temporada activa vive en newspaper/json/, las archivadas en
+    archive/temporada_{season}/newspaper/json/."""
+    if season == SEASON:
+        json_dir = NEWS_JSON_DIR
+    else:
+        json_dir = ROOT / "archive" / f"temporada_{season}" / "newspaper" / "json"
+    if not json_dir.exists():
+        logger.warning("Sin carpeta de periódicos para temporada %s (%s)", season, json_dir)
+        return []
+    return build_news(json_dir)
+
+
 def _load_standings_snapshot(articles_file: Path) -> list:
     """
     Extrae clasificacion.general del articles/jornada_N_json.json de esa
@@ -493,12 +541,28 @@ def main():
     latest_card  = _get_latest_headline(news)
     league       = build_league(df_gw, df_clas, df_transfers, standings, pool_stand, [latest_card] if latest_card else [])
 
+    seasons = list_available_seasons()
+    managers_by_season = {}
+    news_by_season = {}
+    for season in seasons:
+        if season == SEASON:
+            managers_by_season[season] = managers  # ya calculado arriba, no repetir trabajo
+            news_by_season[season] = news
+        else:
+            managers_by_season[season] = build_managers_for_season(season)
+            news_by_season[season] = build_news_for_season(season)
+    logger.info("Temporadas disponibles: %s", seasons)
+
     app_data = {
-        "generatedAt": datetime.now().isoformat(timespec="seconds"),
-        "league":      league,
-        "managers":    managers,
-        "news":        news,
-        "playersMap":  players_map,
+        "generatedAt":      datetime.now().isoformat(timespec="seconds"),
+        "league":           league,
+        "managers":         managers,
+        "news":             news,
+        "playersMap":       players_map,
+        "seasons":          seasons,
+        "activeSeason":     SEASON,
+        "managersBySeason": managers_by_season,
+        "newsBySeason":     news_by_season,
     }
 
     OUTPUT_PATH.write_text(

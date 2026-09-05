@@ -1,0 +1,4901 @@
+{
+  "jornada": 1,
+  "fecha_inicio": "2026-08-16 00:00:00",
+  "fecha_fin": "2026-08-27",
+  "transfers": [
+    {
+      "fecha": "2026-08-27",
+      "subtype": "mercado",
+      "equipo": "Maldinillo 💥",
+      "ganancias": 2.01292,
+      "jugador": "Yangel Herrera",
+      "compra_venta": "venta",
+      "equipo_jugador": "Real Sociedad",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-27",
+      "subtype": "mercado",
+      "equipo": "Dani",
+      "ganancias": 5.9871,
+      "jugador": "Isi Palazón",
+      "compra_venta": "venta",
+      "equipo_jugador": "Rayo Vallecano",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-27",
+      "subtype": "clausula",
+      "equipo": "Maldinillo 💥",
+      "ganancias": 4.746,
+      "jugador": "Luka Sučić",
+      "compra_venta": "venta",
+      "equipo_jugador": "Real Sociedad",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-27",
+      "subtype": "clausula",
+      "equipo": "Dani",
+      "ganancias": -4.746,
+      "jugador": "Luka Sučić",
+      "compra_venta": "compra",
+      "equipo_jugador": "Real Sociedad",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-27",
+      "subtype": "mercado",
+      "equipo": "Los marinero",
+      "ganancias": 4.86783,
+      "jugador": "Brahim Díaz",
+      "compra_venta": "venta",
+      "equipo_jugador": "Real Madrid",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-27",
+      "subtype": "mercado",
+      "equipo": "Maldinillo 💥",
+      "ganancias": 7.21448,
+      "jugador": "Iñaki Williams",
+      "compra_venta": "venta",
+      "equipo_jugador": "Athletic Club",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-27",
+      "subtype": "mercado",
+      "equipo": "Chamacónicos",
+      "ganancias": -10.269,
+      "jugador": "Marc Pubill",
+      "compra_venta": "compra",
+      "equipo_jugador": "Atlético de Madrid",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-27",
+      "subtype": "mercado",
+      "equipo": "Chamacónicos",
+      "ganancias": -0.325001,
+      "jugador": "Jozhua Vertrouwd",
+      "compra_venta": "compra",
+      "equipo_jugador": "Rayo Vallecano",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-27",
+      "subtype": "mercado",
+      "equipo": "Dani",
+      "ganancias": -2.97777,
+      "jugador": "José Luis Gayà",
+      "compra_venta": "compra",
+      "equipo_jugador": "Valencia CF",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-27",
+      "subtype": "mercado",
+      "equipo": "Maldinillo 💥",
+      "ganancias": -8.92715,
+      "jugador": "Marc Bernal",
+      "compra_venta": "compra",
+      "equipo_jugador": "FC Barcelona",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-27",
+      "subtype": "Puja",
+      "equipo": "Chamacónicos",
+      "ganancias": 0.0,
+      "jugador": "Marc Bernal",
+      "compra_venta": "compra",
+      "equipo_jugador": "FC Barcelona",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-26",
+      "subtype": "mercado",
+      "equipo": "Chamacónicos",
+      "ganancias": -0.634,
+      "jugador": "Moi Gómez",
+      "compra_venta": "compra",
+      "equipo_jugador": "CA Osasuna",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-26",
+      "subtype": "mercado",
+      "equipo": "Dani",
+      "ganancias": -4.92556,
+      "jugador": "Héctor Bellerín",
+      "compra_venta": "compra",
+      "equipo_jugador": "Real Betis Balompié",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-26",
+      "subtype": "mercado",
+      "equipo": "Dani",
+      "ganancias": -1.02234,
+      "jugador": "Kiko Femenía",
+      "compra_venta": "compra",
+      "equipo_jugador": "Getafe CF",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-26",
+      "subtype": "acuerdo",
+      "equipo": "Dani",
+      "ganancias": 3.733201,
+      "jugador": "Manu Sánchez",
+      "compra_venta": "venta",
+      "equipo_jugador": "Levante UD",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-26",
+      "subtype": "acuerdo",
+      "equipo": "Libre",
+      "ganancias": -3.733201,
+      "jugador": "Manu Sánchez",
+      "compra_venta": "compra",
+      "equipo_jugador": "Levante UD",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-25",
+      "subtype": "mercado",
+      "equipo": "Chamacónicos",
+      "ganancias": -0.160001,
+      "jugador": "Valentín Gómez",
+      "compra_venta": "compra",
+      "equipo_jugador": "Real Betis Balompié",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-25",
+      "subtype": "mercado",
+      "equipo": "Maldinillo 💥",
+      "ganancias": -10.24501,
+      "jugador": "Gerard Martín",
+      "compra_venta": "compra",
+      "equipo_jugador": "FC Barcelona",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-25",
+      "subtype": "Puja",
+      "equipo": "Dani",
+      "ganancias": 0.0,
+      "jugador": "Gerard Martín",
+      "compra_venta": "compra",
+      "equipo_jugador": "FC Barcelona",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-25",
+      "subtype": "Puja",
+      "equipo": "Chamacónicos",
+      "ganancias": 0.0,
+      "jugador": "Gerard Martín",
+      "compra_venta": "compra",
+      "equipo_jugador": "FC Barcelona",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-25",
+      "subtype": "mercado",
+      "equipo": "Maldinillo 💥",
+      "ganancias": -0.27286,
+      "jugador": "Beñat Prados",
+      "compra_venta": "compra",
+      "equipo_jugador": "Athletic Club",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-25",
+      "subtype": "mercado",
+      "equipo": "De la Guettir FC",
+      "ganancias": 1.30272,
+      "jugador": "Kareem Tunde",
+      "compra_venta": "venta",
+      "equipo_jugador": "Levante UD",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-25",
+      "subtype": "mercado",
+      "equipo": "De la Guettir FC",
+      "ganancias": 0.23625,
+      "jugador": "Logan Costa",
+      "compra_venta": "venta",
+      "equipo_jugador": "Villarreal CF",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-25",
+      "subtype": "mercado",
+      "equipo": "De la Guettir FC",
+      "ganancias": 0.602,
+      "jugador": "Jofre Carreras",
+      "compra_venta": "venta",
+      "equipo_jugador": "RCD Espanyol",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-25",
+      "subtype": "mercado",
+      "equipo": "Chamacónicos",
+      "ganancias": 4.91104,
+      "jugador": "Justin De Haas",
+      "compra_venta": "venta",
+      "equipo_jugador": "Valencia CF",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-25",
+      "subtype": "mercado",
+      "equipo": "Los marinero",
+      "ganancias": 1.10355,
+      "jugador": "Jesse Bisiwu",
+      "compra_venta": "venta",
+      "equipo_jugador": "FC Barcelona",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-24",
+      "subtype": "mercado",
+      "equipo": "Maldinillo 💥",
+      "ganancias": 6.01303,
+      "jugador": "Alejandro Balde",
+      "compra_venta": "venta",
+      "equipo_jugador": "FC Barcelona",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-24",
+      "subtype": "mercado",
+      "equipo": "Maldinillo 💥",
+      "ganancias": 2.24064,
+      "jugador": "Beñat Turrientes",
+      "compra_venta": "venta",
+      "equipo_jugador": "Real Sociedad",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-24",
+      "subtype": "mercado",
+      "equipo": "Chamacónicos",
+      "ganancias": -1.381,
+      "jugador": "Xavi Espart",
+      "compra_venta": "compra",
+      "equipo_jugador": "FC Barcelona",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-24",
+      "subtype": "Puja",
+      "equipo": "Los marinero",
+      "ganancias": 0.0,
+      "jugador": "Xavi Espart",
+      "compra_venta": "compra",
+      "equipo_jugador": "FC Barcelona",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-24",
+      "subtype": "Puja",
+      "equipo": "De la Guettir FC",
+      "ganancias": 0.0,
+      "jugador": "Xavi Espart",
+      "compra_venta": "compra",
+      "equipo_jugador": "FC Barcelona",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-24",
+      "subtype": "Puja",
+      "equipo": "Libre",
+      "ganancias": 0.0,
+      "jugador": "Xavi Espart",
+      "compra_venta": "compra",
+      "equipo_jugador": "FC Barcelona",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-24",
+      "subtype": "mercado",
+      "equipo": "Chamacónicos",
+      "ganancias": -1.318,
+      "jugador": "Carlos Dotor",
+      "compra_venta": "compra",
+      "equipo_jugador": 13.0,
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-24",
+      "subtype": "Puja",
+      "equipo": "Libre",
+      "ganancias": 0.0,
+      "jugador": "Carlos Dotor",
+      "compra_venta": "compra",
+      "equipo_jugador": 13.0,
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-24",
+      "subtype": "mercado",
+      "equipo": "Dani",
+      "ganancias": -4.26796,
+      "jugador": "Mario Soriano",
+      "compra_venta": "compra",
+      "equipo_jugador": 6.0,
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-24",
+      "subtype": "Puja",
+      "equipo": "Maldinillo 💥",
+      "ganancias": 0.0,
+      "jugador": "Mario Soriano",
+      "compra_venta": "compra",
+      "equipo_jugador": 6.0,
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-24",
+      "subtype": "mercado",
+      "equipo": "Dani",
+      "ganancias": 2.87576,
+      "jugador": "Yassir Zabiri",
+      "compra_venta": "venta",
+      "equipo_jugador": 1490.0,
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-24",
+      "subtype": "mercado",
+      "equipo": "Maldinillo 💥",
+      "ganancias": 0.75087,
+      "jugador": "Martim Neto",
+      "compra_venta": "venta",
+      "equipo_jugador": "Elche CF",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-24",
+      "subtype": "mercado",
+      "equipo": "Los marinero",
+      "ganancias": 0.2184,
+      "jugador": "Carlos Benavídez",
+      "compra_venta": "venta",
+      "equipo_jugador": "Deportivo Alavés",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-23",
+      "subtype": "mercado",
+      "equipo": "MuchaSalsa",
+      "ganancias": -5.431,
+      "jugador": "Oso",
+      "compra_venta": "compra",
+      "equipo_jugador": "Sevilla FC",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-23",
+      "subtype": "Puja",
+      "equipo": "Chamacónicos",
+      "ganancias": 0.0,
+      "jugador": "Oso",
+      "compra_venta": "compra",
+      "equipo_jugador": "Sevilla FC",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-23",
+      "subtype": "mercado",
+      "equipo": "Dani",
+      "ganancias": 5.22622,
+      "jugador": "Yuri Berchiche",
+      "compra_venta": "venta",
+      "equipo_jugador": "Athletic Club",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-23",
+      "subtype": "mercado",
+      "equipo": "Jotabetrbb",
+      "ganancias": 1.26175,
+      "jugador": "Pol Lozano",
+      "compra_venta": "venta",
+      "equipo_jugador": "RCD Espanyol",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-22",
+      "subtype": "mercado",
+      "equipo": "Jotabetrbb",
+      "ganancias": -2.779,
+      "jugador": "Omar El Hilali",
+      "compra_venta": "compra",
+      "equipo_jugador": "RCD Espanyol",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-22",
+      "subtype": "Puja",
+      "equipo": "Dani",
+      "ganancias": 0.0,
+      "jugador": "Omar El Hilali",
+      "compra_venta": "compra",
+      "equipo_jugador": "RCD Espanyol",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-22",
+      "subtype": "Puja",
+      "equipo": "Maldinillo 💥",
+      "ganancias": 0.0,
+      "jugador": "Omar El Hilali",
+      "compra_venta": "compra",
+      "equipo_jugador": "RCD Espanyol",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-22",
+      "subtype": "Puja",
+      "equipo": "Libre",
+      "ganancias": 0.0,
+      "jugador": "Omar El Hilali",
+      "compra_venta": "compra",
+      "equipo_jugador": "RCD Espanyol",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-22",
+      "subtype": "mercado",
+      "equipo": "Maldinillo 💥",
+      "ganancias": -2.87478,
+      "jugador": "Luka Sučić",
+      "compra_venta": "compra",
+      "equipo_jugador": "Real Sociedad",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-22",
+      "subtype": "Puja",
+      "equipo": "Libre",
+      "ganancias": 0.0,
+      "jugador": "Luka Sučić",
+      "compra_venta": "compra",
+      "equipo_jugador": "Real Sociedad",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-22",
+      "subtype": "mercado",
+      "equipo": "Maldinillo 💥",
+      "ganancias": -2.20687,
+      "jugador": "Álex Berenguer",
+      "compra_venta": "compra",
+      "equipo_jugador": "Athletic Club",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-22",
+      "subtype": "Puja",
+      "equipo": "Chamacónicos",
+      "ganancias": 0.0,
+      "jugador": "Álex Berenguer",
+      "compra_venta": "compra",
+      "equipo_jugador": "Athletic Club",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-22",
+      "subtype": "Puja",
+      "equipo": "Jotabetrbb",
+      "ganancias": 0.0,
+      "jugador": "Álex Berenguer",
+      "compra_venta": "compra",
+      "equipo_jugador": "Athletic Club",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-22",
+      "subtype": "mercado",
+      "equipo": "Maldinillo 💥",
+      "ganancias": -1.92466,
+      "jugador": "Yangel Herrera",
+      "compra_venta": "compra",
+      "equipo_jugador": "Real Sociedad",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-22",
+      "subtype": "clausula",
+      "equipo": "Maldinillo 💥",
+      "ganancias": 1.0,
+      "jugador": "Íñigo Arguibide",
+      "compra_venta": "venta",
+      "equipo_jugador": "CA Osasuna",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-22",
+      "subtype": "clausula",
+      "equipo": "Jotabetrbb",
+      "ganancias": -1.0,
+      "jugador": "Íñigo Arguibide",
+      "compra_venta": "compra",
+      "equipo_jugador": "CA Osasuna",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-22",
+      "subtype": "mercado",
+      "equipo": "Jotabetrbb",
+      "ganancias": 1.1956,
+      "jugador": "Kiko Femenía",
+      "compra_venta": "venta",
+      "equipo_jugador": "Getafe CF",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-22",
+      "subtype": "mercado",
+      "equipo": "Jotabetrbb",
+      "ganancias": 0.76752,
+      "jugador": "Pedro Felipe",
+      "compra_venta": "venta",
+      "equipo_jugador": 1490.0,
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-22",
+      "subtype": "clausula",
+      "equipo": "Dani",
+      "ganancias": 1.914,
+      "jugador": "Miguel Sierra",
+      "compra_venta": "venta",
+      "equipo_jugador": "Sevilla FC",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-22",
+      "subtype": "clausula",
+      "equipo": "Chamacónicos",
+      "ganancias": -1.914,
+      "jugador": "Miguel Sierra",
+      "compra_venta": "compra",
+      "equipo_jugador": "Sevilla FC",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-21",
+      "subtype": "mercado",
+      "equipo": "De la Guettir FC",
+      "ganancias": 0.152,
+      "jugador": "Moussa Diarra",
+      "compra_venta": "venta",
+      "equipo_jugador": "Sin equipo",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-21",
+      "subtype": "mercado",
+      "equipo": "Los marinero",
+      "ganancias": -1.569,
+      "jugador": "Chidera Ejuke",
+      "compra_venta": "compra",
+      "equipo_jugador": "Sevilla FC",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-21",
+      "subtype": "Puja",
+      "equipo": "Maldinillo 💥",
+      "ganancias": 0.0,
+      "jugador": "Chidera Ejuke",
+      "compra_venta": "compra",
+      "equipo_jugador": "Sevilla FC",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-21",
+      "subtype": "mercado",
+      "equipo": "Maldinillo 💥",
+      "ganancias": -0.7801,
+      "jugador": "Martim Neto",
+      "compra_venta": "compra",
+      "equipo_jugador": "Elche CF",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-21",
+      "subtype": "mercado",
+      "equipo": "Dani",
+      "ganancias": 1.58598,
+      "jugador": "Buba Sangaré",
+      "compra_venta": "venta",
+      "equipo_jugador": "Elche CF",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-21",
+      "subtype": "mercado",
+      "equipo": "Libre",
+      "ganancias": 7.536,
+      "jugador": "Iván Romero",
+      "compra_venta": "venta",
+      "equipo_jugador": "Levante UD",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-21",
+      "subtype": "mercado",
+      "equipo": "Maldinillo 💥",
+      "ganancias": 7.08084,
+      "jugador": "Odysseas Vlachodimos",
+      "compra_venta": "venta",
+      "equipo_jugador": "Sevilla FC",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-21",
+      "subtype": "mercado",
+      "equipo": "MuchaSalsa",
+      "ganancias": -3.267,
+      "jugador": "Jon Guridi",
+      "compra_venta": "compra",
+      "equipo_jugador": "Sevilla FC",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-21",
+      "subtype": "Puja",
+      "equipo": "Maldinillo 💥",
+      "ganancias": 0.0,
+      "jugador": "Jon Guridi",
+      "compra_venta": "compra",
+      "equipo_jugador": "Sevilla FC",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-21",
+      "subtype": "Puja",
+      "equipo": "Chamacónicos",
+      "ganancias": 0.0,
+      "jugador": "Jon Guridi",
+      "compra_venta": "compra",
+      "equipo_jugador": "Sevilla FC",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-21",
+      "subtype": "Puja",
+      "equipo": "Libre",
+      "ganancias": 0.0,
+      "jugador": "Jon Guridi",
+      "compra_venta": "compra",
+      "equipo_jugador": "Sevilla FC",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-21",
+      "subtype": "mercado",
+      "equipo": "Chamacónicos",
+      "ganancias": -3.269,
+      "jugador": "Asier Villalibre",
+      "compra_venta": "compra",
+      "equipo_jugador": 1490.0,
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-21",
+      "subtype": "mercado",
+      "equipo": "Libre",
+      "ganancias": 0.17136,
+      "jugador": "Dimitri Foulquier",
+      "compra_venta": "venta",
+      "equipo_jugador": "Valencia CF",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-21",
+      "subtype": "mercado",
+      "equipo": "Chamacónicos",
+      "ganancias": 2.361,
+      "jugador": "David Mella",
+      "compra_venta": "venta",
+      "equipo_jugador": 6.0,
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-21",
+      "subtype": "mercado",
+      "equipo": "Maldinillo 💥",
+      "ganancias": 0.2121,
+      "jugador": "Diego Murillo",
+      "compra_venta": "venta",
+      "equipo_jugador": 13.0,
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-21",
+      "subtype": "mercado",
+      "equipo": "Maldinillo 💥",
+      "ganancias": 1.30046,
+      "jugador": "Juan Carlos Arana",
+      "compra_venta": "venta",
+      "equipo_jugador": 1490.0,
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-21",
+      "subtype": "mercado",
+      "equipo": "Dani",
+      "ganancias": -15.58948,
+      "jugador": "Georges Mikautadze",
+      "compra_venta": "compra",
+      "equipo_jugador": "Villarreal CF",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-21",
+      "subtype": "mercado",
+      "equipo": "Maldinillo 💥",
+      "ganancias": -6.8713,
+      "jugador": "Odysseas Vlachodimos",
+      "compra_venta": "compra",
+      "equipo_jugador": "Sevilla FC",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-21",
+      "subtype": "mercado",
+      "equipo": "Libre",
+      "ganancias": 0.21185,
+      "jugador": "Giorgi Guliashvili",
+      "compra_venta": "venta",
+      "equipo_jugador": 1490.0,
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-21",
+      "subtype": "mercado",
+      "equipo": "Libre",
+      "ganancias": 0.16684,
+      "jugador": "Fábio Cardoso",
+      "compra_venta": "venta",
+      "equipo_jugador": "Sevilla FC",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-21",
+      "subtype": "mercado",
+      "equipo": "Libre",
+      "ganancias": 0.17945,
+      "jugador": "Yago Santiago",
+      "compra_venta": "venta",
+      "equipo_jugador": "Elche CF",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-21",
+      "subtype": "mercado",
+      "equipo": "Libre",
+      "ganancias": 0.1881,
+      "jugador": "Diego López",
+      "compra_venta": "venta",
+      "equipo_jugador": "Valencia CF",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-21",
+      "subtype": "mercado",
+      "equipo": "Libre",
+      "ganancias": 0.35625,
+      "jugador": "Dani Cárdenas",
+      "compra_venta": "venta",
+      "equipo_jugador": "Rayo Vallecano",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-21",
+      "subtype": "mercado",
+      "equipo": "Los marinero",
+      "ganancias": 2.10326,
+      "jugador": "Dakonam Djené",
+      "compra_venta": "venta",
+      "equipo_jugador": "Getafe CF",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-21",
+      "subtype": "mercado",
+      "equipo": "Los marinero",
+      "ganancias": 2.178,
+      "jugador": "José Luis Gayà",
+      "compra_venta": "venta",
+      "equipo_jugador": "Valencia CF",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-21",
+      "subtype": "mercado",
+      "equipo": "Chamacónicos",
+      "ganancias": 0.1616,
+      "jugador": "José Ángel Jurado",
+      "compra_venta": "venta",
+      "equipo_jugador": 6.0,
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-21",
+      "subtype": "mercado",
+      "equipo": "Los marinero",
+      "ganancias": 1.1382,
+      "jugador": "Tani Oluwaseyi",
+      "compra_venta": "venta",
+      "equipo_jugador": "Villarreal CF",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-21",
+      "subtype": "mercado",
+      "equipo": "Libre",
+      "ganancias": -2.169,
+      "jugador": "Pau Navarro",
+      "compra_venta": "compra",
+      "equipo_jugador": "Villarreal CF",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-21",
+      "subtype": "mercado",
+      "equipo": "Dani",
+      "ganancias": -7.54376,
+      "jugador": "Álvaro García",
+      "compra_venta": "compra",
+      "equipo_jugador": "Rayo Vallecano",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-21",
+      "subtype": "Puja",
+      "equipo": "Chamacónicos",
+      "ganancias": 0.0,
+      "jugador": "Álvaro García",
+      "compra_venta": "compra",
+      "equipo_jugador": "Rayo Vallecano",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-21",
+      "subtype": "Puja",
+      "equipo": "Maldinillo 💥",
+      "ganancias": 0.0,
+      "jugador": "Álvaro García",
+      "compra_venta": "compra",
+      "equipo_jugador": "Rayo Vallecano",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-21",
+      "subtype": "Puja",
+      "equipo": "Libre",
+      "ganancias": 0.0,
+      "jugador": "Álvaro García",
+      "compra_venta": "compra",
+      "equipo_jugador": "Rayo Vallecano",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-21",
+      "subtype": "mercado",
+      "equipo": "Maldinillo 💥",
+      "ganancias": -15.01176,
+      "jugador": "Arda Güler",
+      "compra_venta": "compra",
+      "equipo_jugador": "Real Madrid",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-21",
+      "subtype": "Puja",
+      "equipo": "Chamacónicos",
+      "ganancias": 0.0,
+      "jugador": "Arda Güler",
+      "compra_venta": "compra",
+      "equipo_jugador": "Real Madrid",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-21",
+      "subtype": "mercado",
+      "equipo": "Maldinillo 💥",
+      "ganancias": -2.84608,
+      "jugador": "Juan Cruz",
+      "compra_venta": "compra",
+      "equipo_jugador": 13.0,
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-21",
+      "subtype": "Puja",
+      "equipo": "Dani",
+      "ganancias": 0.0,
+      "jugador": "Juan Cruz",
+      "compra_venta": "compra",
+      "equipo_jugador": 13.0,
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-21",
+      "subtype": "mercado",
+      "equipo": "Dani",
+      "ganancias": 0.5782,
+      "jugador": "Abiel Osorio",
+      "compra_venta": "venta",
+      "equipo_jugador": "Elche CF",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-21",
+      "subtype": "mercado",
+      "equipo": "Maldinillo 💥",
+      "ganancias": 6.18576,
+      "jugador": "Iñigo Ruiz De Galarreta",
+      "compra_venta": "venta",
+      "equipo_jugador": "Athletic Club",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-21",
+      "subtype": "mercado",
+      "equipo": "Maldinillo 💥",
+      "ganancias": 6.79291,
+      "jugador": "Lucas Boyé",
+      "compra_venta": "venta",
+      "equipo_jugador": "Deportivo Alavés",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-21",
+      "subtype": "mercado",
+      "equipo": "Dani",
+      "ganancias": 9.1476,
+      "jugador": "Leandro Cabrera",
+      "compra_venta": "venta",
+      "equipo_jugador": "RCD Espanyol",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-21",
+      "subtype": "mercado",
+      "equipo": "Chamacónicos",
+      "ganancias": -1.995,
+      "jugador": "Urko González",
+      "compra_venta": "compra",
+      "equipo_jugador": "RCD Espanyol",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-16",
+      "subtype": "mercado",
+      "equipo": "Los marinero",
+      "ganancias": 0.35638,
+      "jugador": "Adrià Pedrosa",
+      "compra_venta": "venta",
+      "equipo_jugador": "Sevilla FC",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-16",
+      "subtype": "mercado",
+      "equipo": "Los marinero",
+      "ganancias": 1.084,
+      "jugador": "Abdoulaye Faye",
+      "compra_venta": "venta",
+      "equipo_jugador": "RC Celta de Vigo",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-16",
+      "subtype": "clausula",
+      "equipo": "Jotabetrbb",
+      "ganancias": 1.0,
+      "jugador": "Sergio Martinez",
+      "compra_venta": "venta",
+      "equipo_jugador": 1490.0,
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-16",
+      "subtype": "clausula",
+      "equipo": "Los marinero",
+      "ganancias": -1.0,
+      "jugador": "Sergio Martinez",
+      "compra_venta": "compra",
+      "equipo_jugador": 1490.0,
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-16",
+      "subtype": "mercado",
+      "equipo": "Chamacónicos",
+      "ganancias": 0.1691,
+      "jugador": "Damián Cáceres",
+      "compra_venta": "venta",
+      "equipo_jugador": "Getafe CF",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-16",
+      "subtype": "mercado",
+      "equipo": "Chamacónicos",
+      "ganancias": 0.58275,
+      "jugador": "Saba Sazonov",
+      "compra_venta": "venta",
+      "equipo_jugador": "Getafe CF",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-16",
+      "subtype": "mercado",
+      "equipo": "Los marinero",
+      "ganancias": -2.37002,
+      "jugador": "José Luis Gayà",
+      "compra_venta": "compra",
+      "equipo_jugador": "Valencia CF",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-16",
+      "subtype": "Puja",
+      "equipo": "Chamacónicos",
+      "ganancias": 0.0,
+      "jugador": "José Luis Gayà",
+      "compra_venta": "compra",
+      "equipo_jugador": "Valencia CF",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-16",
+      "subtype": "mercado",
+      "equipo": "Los marinero",
+      "ganancias": -2.253,
+      "jugador": "Dakonam Djené",
+      "compra_venta": "compra",
+      "equipo_jugador": "Getafe CF",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-16",
+      "subtype": "Puja",
+      "equipo": "Libre",
+      "ganancias": 0.0,
+      "jugador": "Dakonam Djené",
+      "compra_venta": "compra",
+      "equipo_jugador": "Getafe CF",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-16",
+      "subtype": "mercado",
+      "equipo": "Dani",
+      "ganancias": 0.27248,
+      "jugador": "Álvaro Djaló",
+      "compra_venta": "venta",
+      "equipo_jugador": "Athletic Club",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-16",
+      "subtype": "mercado",
+      "equipo": "Dani",
+      "ganancias": 1.56624,
+      "jugador": "Jeremy Toljan",
+      "compra_venta": "venta",
+      "equipo_jugador": "Levante UD",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-16",
+      "subtype": "mercado",
+      "equipo": "Maldinillo 💥",
+      "ganancias": 1.04624,
+      "jugador": "Miguel Rodríguez",
+      "compra_venta": "venta",
+      "equipo_jugador": "Deportivo Alavés",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-16",
+      "subtype": "mercado",
+      "equipo": "MuchaSalsa",
+      "ganancias": -2.645,
+      "jugador": "Maguette Gueye",
+      "compra_venta": "compra",
+      "equipo_jugador": 1490.0,
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-16",
+      "subtype": "Puja",
+      "equipo": "Dani",
+      "ganancias": 0.0,
+      "jugador": "Maguette Gueye",
+      "compra_venta": "compra",
+      "equipo_jugador": 1490.0,
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-16",
+      "subtype": "Puja",
+      "equipo": "Chamacónicos",
+      "ganancias": 0.0,
+      "jugador": "Maguette Gueye",
+      "compra_venta": "compra",
+      "equipo_jugador": 1490.0,
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-16",
+      "subtype": "mercado",
+      "equipo": "MuchaSalsa",
+      "ganancias": -2.201,
+      "jugador": "Borja Mayoral",
+      "compra_venta": "compra",
+      "equipo_jugador": "Getafe CF",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-16",
+      "subtype": "Puja",
+      "equipo": "Maldinillo 💥",
+      "ganancias": 0.0,
+      "jugador": "Borja Mayoral",
+      "compra_venta": "compra",
+      "equipo_jugador": "Getafe CF",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-16",
+      "subtype": "mercado",
+      "equipo": "Chamacónicos",
+      "ganancias": -4.336,
+      "jugador": "Justin De Haas",
+      "compra_venta": "compra",
+      "equipo_jugador": "Valencia CF",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-16",
+      "subtype": "Puja",
+      "equipo": "Dani",
+      "ganancias": 0.0,
+      "jugador": "Justin De Haas",
+      "compra_venta": "compra",
+      "equipo_jugador": "Valencia CF",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-16",
+      "subtype": "mercado",
+      "equipo": "Dani",
+      "ganancias": -2.2065,
+      "jugador": "Lucas Noubi",
+      "compra_venta": "compra",
+      "equipo_jugador": 6.0,
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-16",
+      "subtype": "Puja",
+      "equipo": "Libre",
+      "ganancias": 0.0,
+      "jugador": "Lucas Noubi",
+      "compra_venta": "compra",
+      "equipo_jugador": 6.0,
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-16",
+      "subtype": "mercado",
+      "equipo": "Maldinillo 💥",
+      "ganancias": -6.34581,
+      "jugador": "Alejandro Balde",
+      "compra_venta": "compra",
+      "equipo_jugador": "FC Barcelona",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-16",
+      "subtype": "mercado",
+      "equipo": "MuchaSalsa",
+      "ganancias": 8.26404,
+      "jugador": "Christantus Uche",
+      "compra_venta": "venta",
+      "equipo_jugador": "Getafe CF",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-16",
+      "subtype": "acuerdo",
+      "equipo": "Los marinero",
+      "ganancias": 7.06024,
+      "jugador": "Iñaki Williams",
+      "compra_venta": "venta",
+      "equipo_jugador": "Athletic Club",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-16",
+      "subtype": "acuerdo",
+      "equipo": "Maldinillo 💥",
+      "ganancias": -7.06024,
+      "jugador": "Iñaki Williams",
+      "compra_venta": "compra",
+      "equipo_jugador": "Athletic Club",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-16",
+      "subtype": "clausula",
+      "equipo": "Maldinillo 💥",
+      "ganancias": 6.2055,
+      "jugador": "Sergio Canales",
+      "compra_venta": "venta",
+      "equipo_jugador": 1490.0,
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-16",
+      "subtype": "clausula",
+      "equipo": "Chamacónicos",
+      "ganancias": -6.2055,
+      "jugador": "Sergio Canales",
+      "compra_venta": "compra",
+      "equipo_jugador": 1490.0,
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-16",
+      "subtype": "clausula",
+      "equipo": "MuchaSalsa",
+      "ganancias": 2.508,
+      "jugador": "Ramón Terrats",
+      "compra_venta": "venta",
+      "equipo_jugador": "Getafe CF",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-16",
+      "subtype": "clausula",
+      "equipo": "Dani",
+      "ganancias": -2.508,
+      "jugador": "Ramón Terrats",
+      "compra_venta": "compra",
+      "equipo_jugador": "Getafe CF",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-16",
+      "subtype": "mercado",
+      "equipo": "Dani",
+      "ganancias": 0.20907,
+      "jugador": "Ángel Recio",
+      "compra_venta": "venta",
+      "equipo_jugador": 13.0,
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-16",
+      "subtype": "mercado",
+      "equipo": "Jotabetrbb",
+      "ganancias": 0.23616,
+      "jugador": "Cristian Rivero",
+      "compra_venta": "venta",
+      "equipo_jugador": "Valencia CF",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-16",
+      "subtype": "mercado",
+      "equipo": "Libre",
+      "ganancias": -25.282049,
+      "jugador": "Lamine Yamal",
+      "compra_venta": "compra",
+      "equipo_jugador": "FC Barcelona",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-16",
+      "subtype": "mercado",
+      "equipo": "MuchaSalsa",
+      "ganancias": -1.705,
+      "jugador": "Clemens Riedel",
+      "compra_venta": "compra",
+      "equipo_jugador": "RCD Espanyol",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-16",
+      "subtype": "Puja",
+      "equipo": "Chamacónicos",
+      "ganancias": 0.0,
+      "jugador": "Clemens Riedel",
+      "compra_venta": "compra",
+      "equipo_jugador": "RCD Espanyol",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-16",
+      "subtype": "mercado",
+      "equipo": "Los marinero",
+      "ganancias": -20.672566,
+      "jugador": "Yan Diomande",
+      "compra_venta": "compra",
+      "equipo_jugador": "Real Madrid",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-16",
+      "subtype": "Puja",
+      "equipo": "Chamacónicos",
+      "ganancias": 0.0,
+      "jugador": "Yan Diomande",
+      "compra_venta": "compra",
+      "equipo_jugador": "Real Madrid",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-16",
+      "subtype": "mercado",
+      "equipo": "Dani",
+      "ganancias": -1.72325,
+      "jugador": "Buba Sangaré",
+      "compra_venta": "compra",
+      "equipo_jugador": "Elche CF",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-16",
+      "subtype": "Puja",
+      "equipo": "MuchaSalsa",
+      "ganancias": 0.0,
+      "jugador": "Buba Sangaré",
+      "compra_venta": "compra",
+      "equipo_jugador": "Elche CF",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-16",
+      "subtype": "Puja",
+      "equipo": "Chamacónicos",
+      "ganancias": 0.0,
+      "jugador": "Buba Sangaré",
+      "compra_venta": "compra",
+      "equipo_jugador": "Elche CF",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-16",
+      "subtype": "Puja",
+      "equipo": "Maldinillo 💥",
+      "ganancias": 0.0,
+      "jugador": "Buba Sangaré",
+      "compra_venta": "compra",
+      "equipo_jugador": "Elche CF",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-16",
+      "subtype": "mercado",
+      "equipo": "Chamacónicos",
+      "ganancias": 7.8846,
+      "jugador": "Antonio Sivera",
+      "compra_venta": "venta",
+      "equipo_jugador": "Deportivo Alavés",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-16",
+      "subtype": "mercado",
+      "equipo": "Dani",
+      "ganancias": 0.16562,
+      "jugador": "Jairo Noriega",
+      "compra_venta": "venta",
+      "equipo_jugador": 6.0,
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-16",
+      "subtype": "mercado",
+      "equipo": "Dani",
+      "ganancias": 0.16896,
+      "jugador": "Iñaki Rupérez",
+      "compra_venta": "venta",
+      "equipo_jugador": "Real Sociedad",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-16",
+      "subtype": "clausula",
+      "equipo": "MuchaSalsa",
+      "ganancias": 1.9875,
+      "jugador": "Manu Sánchez",
+      "compra_venta": "venta",
+      "equipo_jugador": "Levante UD",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-16",
+      "subtype": "clausula",
+      "equipo": "Dani",
+      "ganancias": -1.9875,
+      "jugador": "Manu Sánchez",
+      "compra_venta": "compra",
+      "equipo_jugador": "Levante UD",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-16",
+      "subtype": "mercado",
+      "equipo": "Jotabetrbb",
+      "ganancias": 0.60255,
+      "jugador": "Maroan Sannadi",
+      "compra_venta": "venta",
+      "equipo_jugador": "Athletic Club",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-16",
+      "subtype": "mercado",
+      "equipo": "Jotabetrbb",
+      "ganancias": 1.14608,
+      "jugador": "Denis Suárez",
+      "compra_venta": "venta",
+      "equipo_jugador": "Deportivo Alavés",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-16",
+      "subtype": "mercado",
+      "equipo": "Jotabetrbb",
+      "ganancias": -11.816,
+      "jugador": "Ademola Lookman",
+      "compra_venta": "compra",
+      "equipo_jugador": "Atlético de Madrid",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-16",
+      "subtype": "Puja",
+      "equipo": "Los marinero",
+      "ganancias": 0.0,
+      "jugador": "Ademola Lookman",
+      "compra_venta": "compra",
+      "equipo_jugador": "Atlético de Madrid",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-16",
+      "subtype": "Puja",
+      "equipo": "Dani",
+      "ganancias": 0.0,
+      "jugador": "Ademola Lookman",
+      "compra_venta": "compra",
+      "equipo_jugador": "Atlético de Madrid",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-16",
+      "subtype": "Puja",
+      "equipo": "Chamacónicos",
+      "ganancias": 0.0,
+      "jugador": "Ademola Lookman",
+      "compra_venta": "compra",
+      "equipo_jugador": "Atlético de Madrid",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-16",
+      "subtype": "mercado",
+      "equipo": "Jotabetrbb",
+      "ganancias": -1.896,
+      "jugador": "Abel Bretones",
+      "compra_venta": "compra",
+      "equipo_jugador": "CA Osasuna",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-16",
+      "subtype": "Puja",
+      "equipo": "Chamacónicos",
+      "ganancias": 0.0,
+      "jugador": "Abel Bretones",
+      "compra_venta": "compra",
+      "equipo_jugador": "CA Osasuna",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-16",
+      "subtype": "Puja",
+      "equipo": "Maldinillo 💥",
+      "ganancias": 0.0,
+      "jugador": "Abel Bretones",
+      "compra_venta": "compra",
+      "equipo_jugador": "CA Osasuna",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-16",
+      "subtype": "Puja",
+      "equipo": "Dani",
+      "ganancias": 0.0,
+      "jugador": "Abel Bretones",
+      "compra_venta": "compra",
+      "equipo_jugador": "CA Osasuna",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-16",
+      "subtype": "mercado",
+      "equipo": "De la Guettir FC",
+      "ganancias": -3.343434,
+      "jugador": "Álex Calatrava",
+      "compra_venta": "compra",
+      "equipo_jugador": "RCD Espanyol",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-16",
+      "subtype": "Puja",
+      "equipo": "Dani",
+      "ganancias": 0.0,
+      "jugador": "Álex Calatrava",
+      "compra_venta": "compra",
+      "equipo_jugador": "RCD Espanyol",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-16",
+      "subtype": "Puja",
+      "equipo": "Los marinero",
+      "ganancias": 0.0,
+      "jugador": "Álex Calatrava",
+      "compra_venta": "compra",
+      "equipo_jugador": "RCD Espanyol",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-16",
+      "subtype": "mercado",
+      "equipo": "Maldinillo 💥",
+      "ganancias": -1.37773,
+      "jugador": "Einar Galilea",
+      "compra_venta": "compra",
+      "equipo_jugador": 13.0,
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-16",
+      "subtype": "Puja",
+      "equipo": "Chamacónicos",
+      "ganancias": 0.0,
+      "jugador": "Einar Galilea",
+      "compra_venta": "compra",
+      "equipo_jugador": 13.0,
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-16",
+      "subtype": "mercado",
+      "equipo": "Los marinero",
+      "ganancias": 1.11201,
+      "jugador": "Juan Musso",
+      "compra_venta": "venta",
+      "equipo_jugador": "Atlético de Madrid",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-16",
+      "subtype": "clausula",
+      "equipo": "De la Guettir FC",
+      "ganancias": 2.6475,
+      "jugador": "Endrick",
+      "compra_venta": "venta",
+      "equipo_jugador": "Real Madrid",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-16",
+      "subtype": "clausula",
+      "equipo": "Maldinillo 💥",
+      "ganancias": -2.6475,
+      "jugador": "Endrick",
+      "compra_venta": "compra",
+      "equipo_jugador": "Real Madrid",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-16",
+      "subtype": "mercado",
+      "equipo": "Dani",
+      "ganancias": 0.66538,
+      "jugador": "Pablo Marín",
+      "compra_venta": "venta",
+      "equipo_jugador": "Real Sociedad",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-16",
+      "subtype": "mercado",
+      "equipo": "Dani",
+      "ganancias": 0.42,
+      "jugador": "Alejandro Iturbe",
+      "compra_venta": "venta",
+      "equipo_jugador": "Elche CF",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-16",
+      "subtype": "mercado",
+      "equipo": "Dani",
+      "ganancias": 0.47824,
+      "jugador": "Thomas Lemar",
+      "compra_venta": "venta",
+      "equipo_jugador": "Atlético de Madrid",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-16",
+      "subtype": "clausula",
+      "equipo": "Juanba",
+      "ganancias": 1.7085,
+      "jugador": "Julen Agirrezabala",
+      "compra_venta": "venta",
+      "equipo_jugador": 1490.0,
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-16",
+      "subtype": "clausula",
+      "equipo": "Chamacónicos",
+      "ganancias": -1.7085,
+      "jugador": "Julen Agirrezabala",
+      "compra_venta": "compra",
+      "equipo_jugador": 1490.0,
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-16",
+      "subtype": "mercado",
+      "equipo": "Chamacónicos",
+      "ganancias": 0.323,
+      "jugador": "Thiago Pitarch",
+      "compra_venta": "venta",
+      "equipo_jugador": "Real Madrid",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-16",
+      "subtype": "mercado",
+      "equipo": "Chamacónicos",
+      "ganancias": 2.2224,
+      "jugador": "Kike García",
+      "compra_venta": "venta",
+      "equipo_jugador": "RCD Espanyol",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-16",
+      "subtype": "mercado",
+      "equipo": "Jotabetrbb",
+      "ganancias": 0.17576,
+      "jugador": "Aarón Ochoa",
+      "compra_venta": "venta",
+      "equipo_jugador": 13.0,
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-16",
+      "subtype": "mercado",
+      "equipo": "Jotabetrbb",
+      "ganancias": -11.88,
+      "jugador": "Karim Adeyemi",
+      "compra_venta": "compra",
+      "equipo_jugador": "FC Barcelona",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-16",
+      "subtype": "mercado",
+      "equipo": "Jotabetrbb",
+      "ganancias": -5.647,
+      "jugador": "Aimar Oroz",
+      "compra_venta": "compra",
+      "equipo_jugador": "CA Osasuna",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-16",
+      "subtype": "Puja",
+      "equipo": "Dani",
+      "ganancias": 0.0,
+      "jugador": "Aimar Oroz",
+      "compra_venta": "compra",
+      "equipo_jugador": "CA Osasuna",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-16",
+      "subtype": "mercado",
+      "equipo": "Jotabetrbb",
+      "ganancias": -1.9,
+      "jugador": "Nelson Deossa",
+      "compra_venta": "compra",
+      "equipo_jugador": "Real Betis Balompié",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-16",
+      "subtype": "Puja",
+      "equipo": "Los marinero",
+      "ganancias": 0.0,
+      "jugador": "Nelson Deossa",
+      "compra_venta": "compra",
+      "equipo_jugador": "Real Betis Balompié",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-16",
+      "subtype": "mercado",
+      "equipo": "Los marinero",
+      "ganancias": -1.189,
+      "jugador": "Aitor Paredes",
+      "compra_venta": "compra",
+      "equipo_jugador": "Athletic Club",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    {
+      "fecha": "2026-08-16",
+      "subtype": "mercado",
+      "equipo": "Dani",
+      "ganancias": -8.71772,
+      "jugador": "Leandro Cabrera",
+      "compra_venta": "compra",
+      "equipo_jugador": "RCD Espanyol",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    }
+  ],
+  "gameweek": [
+    {
+      "fecha": "2026-08-16",
+      "jornada": 1,
+      "equipo_local": "Deportivo Alavés",
+      "resultado_local": 3,
+      "equipo_visitante": "Getafe CF",
+      "resultado_visitante": 0,
+      "equipo_jugador": "Deportivo Alavés",
+      "manager": "Chamacónicos",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "jugador": "V. Koski",
+      "posicion": "Defensa",
+      "puntos": 3,
+      "suplente": 0,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-16",
+      "jornada": 1,
+      "equipo_local": "Deportivo Alavés",
+      "resultado_local": 3,
+      "equipo_visitante": "Getafe CF",
+      "resultado_visitante": 0,
+      "equipo_jugador": "Getafe CF",
+      "manager": "Dani",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "jugador": "R. Terrats",
+      "posicion": "Mediocentro",
+      "puntos": 3,
+      "suplente": 0,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-16",
+      "jornada": 1,
+      "equipo_local": "Deportivo Alavés",
+      "resultado_local": 3,
+      "equipo_visitante": "Getafe CF",
+      "resultado_visitante": 0,
+      "equipo_jugador": "Getafe CF",
+      "manager": "De la Guettir FC",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "jugador": "S. Boselli",
+      "posicion": "Defensa",
+      "puntos": 1,
+      "suplente": 1,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-16",
+      "jornada": 1,
+      "equipo_local": "Deportivo Alavés",
+      "resultado_local": 3,
+      "equipo_visitante": "Getafe CF",
+      "resultado_visitante": 0,
+      "equipo_jugador": "Getafe CF",
+      "manager": "Jotabetrbb",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "jugador": "K. Femenía",
+      "posicion": "Defensa",
+      "puntos": -8,
+      "suplente": 0,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 1
+    },
+    {
+      "fecha": "2026-08-16",
+      "jornada": 1,
+      "equipo_local": "Sevilla FC",
+      "resultado_local": 2,
+      "equipo_visitante": "Rayo Vallecano",
+      "resultado_visitante": 1,
+      "equipo_jugador": "Sevilla FC",
+      "manager": "Dani",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "jugador": "M. Sierra",
+      "posicion": "Mediocentro",
+      "puntos": 6,
+      "suplente": 0,
+      "cambio": 1,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-16",
+      "jornada": 1,
+      "equipo_local": "Sevilla FC",
+      "resultado_local": 2,
+      "equipo_visitante": "Rayo Vallecano",
+      "resultado_visitante": 1,
+      "equipo_jugador": "Sevilla FC",
+      "manager": "MuchaSalsa",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "jugador": "J. Iglesias",
+      "posicion": "Defensa",
+      "puntos": 4,
+      "suplente": 0,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-16",
+      "jornada": 1,
+      "equipo_local": "Sevilla FC",
+      "resultado_local": 2,
+      "equipo_visitante": "Rayo Vallecano",
+      "resultado_visitante": 1,
+      "equipo_jugador": "Rayo Vallecano",
+      "manager": "Dani",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "jugador": "I. Palazón",
+      "posicion": "Mediocentro",
+      "puntos": 6,
+      "suplente": 0,
+      "cambio": 1,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-16",
+      "jornada": 1,
+      "equipo_local": "Sevilla FC",
+      "resultado_local": 2,
+      "equipo_visitante": "Rayo Vallecano",
+      "resultado_visitante": 1,
+      "equipo_jugador": "Rayo Vallecano",
+      "manager": "Juanba",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "jugador": "R. Nteka",
+      "posicion": "Delantero",
+      "puntos": 3,
+      "suplente": 0,
+      "cambio": 1,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-16",
+      "jornada": 1,
+      "equipo_local": "Sevilla FC",
+      "resultado_local": 2,
+      "equipo_visitante": "Rayo Vallecano",
+      "resultado_visitante": 1,
+      "equipo_jugador": "Rayo Vallecano",
+      "manager": "Juanba",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "jugador": "P. Ciss",
+      "posicion": "Mediocentro",
+      "puntos": 3,
+      "suplente": 0,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-16",
+      "jornada": 1,
+      "equipo_local": "Sevilla FC",
+      "resultado_local": 2,
+      "equipo_visitante": "Rayo Vallecano",
+      "resultado_visitante": 1,
+      "equipo_jugador": "Rayo Vallecano",
+      "manager": "Los marinero",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "jugador": "U. López",
+      "posicion": "Mediocentro",
+      "puntos": 4,
+      "suplente": 0,
+      "cambio": 1,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 1,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-16",
+      "jornada": 1,
+      "equipo_local": 1490,
+      "resultado_local": 2,
+      "equipo_visitante": "Villarreal CF",
+      "resultado_visitante": 2,
+      "equipo_jugador": 1490,
+      "manager": "Chamacónicos",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "jugador": "S. Canales",
+      "posicion": "Mediocentro",
+      "puntos": 4,
+      "suplente": 0,
+      "cambio": 1,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-16",
+      "jornada": 1,
+      "equipo_local": 1490,
+      "resultado_local": 2,
+      "equipo_visitante": "Villarreal CF",
+      "resultado_visitante": 2,
+      "equipo_jugador": 1490,
+      "manager": "Chamacónicos",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "jugador": "J. Agirrezabala",
+      "posicion": "Portero",
+      "puntos": 4,
+      "suplente": 0,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-16",
+      "jornada": 1,
+      "equipo_local": 1490,
+      "resultado_local": 2,
+      "equipo_visitante": "Villarreal CF",
+      "resultado_visitante": 2,
+      "equipo_jugador": 1490,
+      "manager": "Chamacónicos",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "jugador": "J. Salinas",
+      "posicion": "Defensa",
+      "puntos": 4,
+      "suplente": 0,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-16",
+      "jornada": 1,
+      "equipo_local": 1490,
+      "resultado_local": 2,
+      "equipo_visitante": "Villarreal CF",
+      "resultado_visitante": 2,
+      "equipo_jugador": 1490,
+      "manager": "Dani",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "jugador": "Y. Zabiri",
+      "posicion": "Delantero",
+      "puntos": 2,
+      "suplente": 1,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-16",
+      "jornada": 1,
+      "equipo_local": 1490,
+      "resultado_local": 2,
+      "equipo_visitante": "Villarreal CF",
+      "resultado_visitante": 2,
+      "equipo_jugador": 1490,
+      "manager": "Juanba",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "jugador": "F. González",
+      "posicion": "Defensa",
+      "puntos": 2,
+      "suplente": 1,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-16",
+      "jornada": 1,
+      "equipo_local": 1490,
+      "resultado_local": 2,
+      "equipo_visitante": "Villarreal CF",
+      "resultado_visitante": 2,
+      "equipo_jugador": 1490,
+      "manager": "Los marinero",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "jugador": "I. Vicente",
+      "posicion": "Mediocentro",
+      "puntos": 4,
+      "suplente": 0,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-16",
+      "jornada": 1,
+      "equipo_local": 1490,
+      "resultado_local": 2,
+      "equipo_visitante": "Villarreal CF",
+      "resultado_visitante": 2,
+      "equipo_jugador": 1490,
+      "manager": "Los marinero",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "jugador": "A. Martín",
+      "posicion": "Delantero",
+      "puntos": 8,
+      "suplente": 0,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 1,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-16",
+      "jornada": 1,
+      "equipo_local": 1490,
+      "resultado_local": 2,
+      "equipo_visitante": "Villarreal CF",
+      "resultado_visitante": 2,
+      "equipo_jugador": 1490,
+      "manager": "MuchaSalsa",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "jugador": "M. Gueye",
+      "posicion": "Mediocentro",
+      "puntos": 2,
+      "suplente": 1,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-16",
+      "jornada": 1,
+      "equipo_local": 1490,
+      "resultado_local": 2,
+      "equipo_visitante": "Villarreal CF",
+      "resultado_visitante": 2,
+      "equipo_jugador": 1490,
+      "manager": "MuchaSalsa",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "jugador": "M. Hernando",
+      "posicion": "Defensa",
+      "puntos": 3,
+      "suplente": 1,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-16",
+      "jornada": 1,
+      "equipo_local": "RCD Espanyol",
+      "resultado_local": 3,
+      "equipo_visitante": "Levante UD",
+      "resultado_visitante": 0,
+      "equipo_jugador": "RCD Espanyol",
+      "manager": "Chamacónicos",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "jugador": "U. Núñez",
+      "posicion": "Defensa",
+      "puntos": 4,
+      "suplente": 0,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-16",
+      "jornada": 1,
+      "equipo_local": "RCD Espanyol",
+      "resultado_local": 3,
+      "equipo_visitante": "Levante UD",
+      "resultado_visitante": 0,
+      "equipo_jugador": "RCD Espanyol",
+      "manager": "De la Guettir FC",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "jugador": "Á. Calatrava",
+      "posicion": "Mediocentro",
+      "puntos": 5,
+      "suplente": 0,
+      "cambio": 1,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 1,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-16",
+      "jornada": 1,
+      "equipo_local": "RCD Espanyol",
+      "resultado_local": 3,
+      "equipo_visitante": "Levante UD",
+      "resultado_visitante": 0,
+      "equipo_jugador": "RCD Espanyol",
+      "manager": "Jotabetrbb",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "jugador": "P. Lozano",
+      "posicion": "Mediocentro",
+      "puntos": 3,
+      "suplente": 1,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-16",
+      "jornada": 1,
+      "equipo_local": "RCD Espanyol",
+      "resultado_local": 3,
+      "equipo_visitante": "Levante UD",
+      "resultado_visitante": 0,
+      "equipo_jugador": "RCD Espanyol",
+      "manager": "Los marinero",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "jugador": "T. Dolan",
+      "posicion": "Mediocentro",
+      "puntos": 10,
+      "suplente": 0,
+      "cambio": 1,
+      "goles": 1,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-16",
+      "jornada": 1,
+      "equipo_local": "RCD Espanyol",
+      "resultado_local": 3,
+      "equipo_visitante": "Levante UD",
+      "resultado_visitante": 0,
+      "equipo_jugador": "RCD Espanyol",
+      "manager": "MuchaSalsa",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "jugador": "C. Riedel",
+      "posicion": "Defensa",
+      "puntos": 2,
+      "suplente": 0,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-16",
+      "jornada": 1,
+      "equipo_local": "RCD Espanyol",
+      "resultado_local": 3,
+      "equipo_visitante": "Levante UD",
+      "resultado_visitante": 0,
+      "equipo_jugador": "Levante UD",
+      "manager": "Chamacónicos",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "jugador": "P. Cortés",
+      "posicion": "Mediocentro",
+      "puntos": 1,
+      "suplente": 0,
+      "cambio": 1,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-16",
+      "jornada": 1,
+      "equipo_local": "RCD Espanyol",
+      "resultado_local": 3,
+      "equipo_visitante": "Levante UD",
+      "resultado_visitante": 0,
+      "equipo_jugador": "Levante UD",
+      "manager": "Dani",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "jugador": "M. Sánchez",
+      "posicion": "Defensa",
+      "puntos": 2,
+      "suplente": 0,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-16",
+      "jornada": 1,
+      "equipo_local": "RCD Espanyol",
+      "resultado_local": 3,
+      "equipo_visitante": "Levante UD",
+      "resultado_visitante": 0,
+      "equipo_jugador": "Levante UD",
+      "manager": "De la Guettir FC",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "jugador": "K. Tunde",
+      "posicion": "Delantero",
+      "puntos": 1,
+      "suplente": 1,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-16",
+      "jornada": 1,
+      "equipo_local": "RCD Espanyol",
+      "resultado_local": 3,
+      "equipo_visitante": "Levante UD",
+      "resultado_visitante": 0,
+      "equipo_jugador": "Levante UD",
+      "manager": "Jotabetrbb",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "jugador": "E. Eyong",
+      "posicion": "Delantero",
+      "puntos": 0,
+      "suplente": 1,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-16",
+      "jornada": 1,
+      "equipo_local": "RCD Espanyol",
+      "resultado_local": 3,
+      "equipo_visitante": "Levante UD",
+      "resultado_visitante": 0,
+      "equipo_jugador": "Levante UD",
+      "manager": "Libre",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "jugador": "V. García",
+      "posicion": "Mediocentro",
+      "puntos": 2,
+      "suplente": 0,
+      "cambio": 1,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-16",
+      "jornada": 1,
+      "equipo_local": "RCD Espanyol",
+      "resultado_local": 3,
+      "equipo_visitante": "Levante UD",
+      "resultado_visitante": 0,
+      "equipo_jugador": "Levante UD",
+      "manager": "Libre",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "jugador": "C. Álvarez",
+      "posicion": "Mediocentro",
+      "puntos": 1,
+      "suplente": 0,
+      "cambio": 1,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-26",
+      "jornada": 1,
+      "equipo_local": 6,
+      "resultado_local": 1,
+      "equipo_visitante": "Elche CF",
+      "resultado_visitante": 1,
+      "equipo_jugador": 6,
+      "manager": "Chamacónicos",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "jugador": "D. Mella",
+      "posicion": "Mediocentro",
+      "puntos": 2,
+      "suplente": 1,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-26",
+      "jornada": 1,
+      "equipo_local": 6,
+      "resultado_local": 1,
+      "equipo_visitante": "Elche CF",
+      "resultado_visitante": 1,
+      "equipo_jugador": 6,
+      "manager": "Dani",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "jugador": "L. Noubi",
+      "posicion": "Defensa",
+      "puntos": 2,
+      "suplente": 0,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-26",
+      "jornada": 1,
+      "equipo_local": 6,
+      "resultado_local": 1,
+      "equipo_visitante": "Elche CF",
+      "resultado_visitante": 1,
+      "equipo_jugador": 6,
+      "manager": "De la Guettir FC",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "jugador": "A. Altimira",
+      "posicion": "Defensa",
+      "puntos": 3,
+      "suplente": 0,
+      "cambio": 1,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-26",
+      "jornada": 1,
+      "equipo_local": 6,
+      "resultado_local": 1,
+      "equipo_visitante": "Elche CF",
+      "resultado_visitante": 1,
+      "equipo_jugador": 6,
+      "manager": "Libre",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "jugador": "J. Asp Jensen",
+      "posicion": "Mediocentro",
+      "puntos": 2,
+      "suplente": 0,
+      "cambio": 1,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-26",
+      "jornada": 1,
+      "equipo_local": 6,
+      "resultado_local": 1,
+      "equipo_visitante": "Elche CF",
+      "resultado_visitante": 1,
+      "equipo_jugador": "Elche CF",
+      "manager": "Dani",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "jugador": "B. Sangaré",
+      "posicion": "Defensa",
+      "puntos": 2,
+      "suplente": 0,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-26",
+      "jornada": 1,
+      "equipo_local": 6,
+      "resultado_local": 1,
+      "equipo_visitante": "Elche CF",
+      "resultado_visitante": 1,
+      "equipo_jugador": "Elche CF",
+      "manager": "Los marinero",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "jugador": "V. Chust",
+      "posicion": "Defensa",
+      "puntos": 4,
+      "suplente": 0,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-26",
+      "jornada": 1,
+      "equipo_local": 6,
+      "resultado_local": 1,
+      "equipo_visitante": "Elche CF",
+      "resultado_visitante": 1,
+      "equipo_jugador": "Elche CF",
+      "manager": "Maldinillo 💥",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "jugador": "L. Cepeda",
+      "posicion": "Delantero",
+      "puntos": 3,
+      "suplente": 1,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-26",
+      "jornada": 1,
+      "equipo_local": "Atlético de Madrid",
+      "resultado_local": 2,
+      "equipo_visitante": 13,
+      "resultado_visitante": 0,
+      "equipo_jugador": "Atlético de Madrid",
+      "manager": "De la Guettir FC",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "jugador": "Koke",
+      "posicion": "Mediocentro",
+      "puntos": 4,
+      "suplente": 0,
+      "cambio": 1,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-26",
+      "jornada": 1,
+      "equipo_local": "Atlético de Madrid",
+      "resultado_local": 2,
+      "equipo_visitante": 13,
+      "resultado_visitante": 0,
+      "equipo_jugador": "Atlético de Madrid",
+      "manager": "Jotabetrbb",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "jugador": "A. Lookman",
+      "posicion": "Delantero",
+      "puntos": 2,
+      "suplente": 0,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-26",
+      "jornada": 1,
+      "equipo_local": "Atlético de Madrid",
+      "resultado_local": 2,
+      "equipo_visitante": 13,
+      "resultado_visitante": 0,
+      "equipo_jugador": 13,
+      "manager": "De la Guettir FC",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "jugador": "D. Larrubia",
+      "posicion": "Mediocentro",
+      "puntos": 4,
+      "suplente": 0,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-26",
+      "jornada": 1,
+      "equipo_local": "Atlético de Madrid",
+      "resultado_local": 2,
+      "equipo_visitante": 13,
+      "resultado_visitante": 0,
+      "equipo_jugador": 13,
+      "manager": "Jotabetrbb",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "jugador": "C. Puga",
+      "posicion": "Defensa",
+      "puntos": 4,
+      "suplente": 0,
+      "cambio": 1,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 1,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-26",
+      "jornada": 1,
+      "equipo_local": "Atlético de Madrid",
+      "resultado_local": 2,
+      "equipo_visitante": 13,
+      "resultado_visitante": 0,
+      "equipo_jugador": 13,
+      "manager": "Los marinero",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "jugador": "A. Herrero",
+      "posicion": "Portero",
+      "puntos": 7,
+      "suplente": 0,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-26",
+      "jornada": 1,
+      "equipo_local": "Atlético de Madrid",
+      "resultado_local": 2,
+      "equipo_visitante": 13,
+      "resultado_visitante": 0,
+      "equipo_jugador": 13,
+      "manager": "Maldinillo 💥",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "jugador": "E. Galilea",
+      "posicion": "Defensa",
+      "puntos": 4,
+      "suplente": 0,
+      "cambio": 1,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-26",
+      "jornada": 1,
+      "equipo_local": "Atlético de Madrid",
+      "resultado_local": 2,
+      "equipo_visitante": 13,
+      "resultado_visitante": 0,
+      "equipo_jugador": 13,
+      "manager": "MuchaSalsa",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "jugador": "R. Rodriguez",
+      "posicion": "Mediocentro",
+      "puntos": 2,
+      "suplente": 1,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-26",
+      "jornada": 1,
+      "equipo_local": "Valencia CF",
+      "resultado_local": 0,
+      "equipo_visitante": "Real Betis Balompié",
+      "resultado_visitante": 1,
+      "equipo_jugador": "Valencia CF",
+      "manager": "Dani",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "jugador": "S. Dimitrievski",
+      "posicion": "Portero",
+      "puntos": 2,
+      "suplente": 0,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-26",
+      "jornada": 1,
+      "equipo_local": "Valencia CF",
+      "resultado_local": 0,
+      "equipo_visitante": "Real Betis Balompié",
+      "resultado_visitante": 1,
+      "equipo_jugador": "Valencia CF",
+      "manager": "De la Guettir FC",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "jugador": "A. Danjuma",
+      "posicion": "Delantero",
+      "puntos": 0,
+      "suplente": 0,
+      "cambio": 1,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-26",
+      "jornada": 1,
+      "equipo_local": "Valencia CF",
+      "resultado_local": 0,
+      "equipo_visitante": "Real Betis Balompié",
+      "resultado_visitante": 1,
+      "equipo_jugador": "Valencia CF",
+      "manager": "Juanba",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "jugador": "J. Guerra",
+      "posicion": "Mediocentro",
+      "puntos": 3,
+      "suplente": 0,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-26",
+      "jornada": 1,
+      "equipo_local": "Valencia CF",
+      "resultado_local": 0,
+      "equipo_visitante": "Real Betis Balompié",
+      "resultado_visitante": 1,
+      "equipo_jugador": "Valencia CF",
+      "manager": "Juanba",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "jugador": "C. Tárrega",
+      "posicion": "Defensa",
+      "puntos": 5,
+      "suplente": 0,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-26",
+      "jornada": 1,
+      "equipo_local": "Valencia CF",
+      "resultado_local": 0,
+      "equipo_visitante": "Real Betis Balompié",
+      "resultado_visitante": 1,
+      "equipo_jugador": "Valencia CF",
+      "manager": "Libre",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "jugador": "U. Sadiq",
+      "posicion": "Delantero",
+      "puntos": -1,
+      "suplente": 1,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-26",
+      "jornada": 1,
+      "equipo_local": "Valencia CF",
+      "resultado_local": 0,
+      "equipo_visitante": "Real Betis Balompié",
+      "resultado_visitante": 1,
+      "equipo_jugador": "Real Betis Balompié",
+      "manager": "De la Guettir FC",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "jugador": "F. Bernal",
+      "posicion": "Mediocentro",
+      "puntos": 3,
+      "suplente": 0,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-26",
+      "jornada": 1,
+      "equipo_local": "Valencia CF",
+      "resultado_local": 0,
+      "equipo_visitante": "Real Betis Balompié",
+      "resultado_visitante": 1,
+      "equipo_jugador": "Real Betis Balompié",
+      "manager": "Jotabetrbb",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "jugador": "N. Deossa",
+      "posicion": "Mediocentro",
+      "puntos": 4,
+      "suplente": 0,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-26",
+      "jornada": 1,
+      "equipo_local": "Valencia CF",
+      "resultado_local": 0,
+      "equipo_visitante": "Real Betis Balompié",
+      "resultado_visitante": 1,
+      "equipo_jugador": "Real Betis Balompié",
+      "manager": "Maldinillo 💥",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "jugador": "Á. Valles",
+      "posicion": "Portero",
+      "puntos": 8,
+      "suplente": 0,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-27",
+      "jornada": 1,
+      "equipo_local": "Real Madrid",
+      "resultado_local": 4,
+      "equipo_visitante": "Real Sociedad",
+      "resultado_visitante": 1,
+      "equipo_jugador": "Real Madrid",
+      "manager": "Los marinero",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "jugador": "B. Díaz",
+      "posicion": "Mediocentro",
+      "puntos": 2,
+      "suplente": 1,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-27",
+      "jornada": 1,
+      "equipo_local": "Real Madrid",
+      "resultado_local": 4,
+      "equipo_visitante": "Real Sociedad",
+      "resultado_visitante": 1,
+      "equipo_jugador": "Real Madrid",
+      "manager": "Los marinero",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "jugador": "Y. Diomande",
+      "posicion": "Delantero",
+      "puntos": 2,
+      "suplente": 1,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-27",
+      "jornada": 1,
+      "equipo_local": "Real Madrid",
+      "resultado_local": 4,
+      "equipo_visitante": "Real Sociedad",
+      "resultado_visitante": 1,
+      "equipo_jugador": "Real Sociedad",
+      "manager": "Jotabetrbb",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "jugador": "I. Zubeldia",
+      "posicion": "Defensa",
+      "puntos": 1,
+      "suplente": 1,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-27",
+      "jornada": 1,
+      "equipo_local": "Real Madrid",
+      "resultado_local": 4,
+      "equipo_visitante": "Real Sociedad",
+      "resultado_visitante": 1,
+      "equipo_jugador": "Real Sociedad",
+      "manager": "Maldinillo 💥",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "jugador": "B. Turrientes",
+      "posicion": "Mediocentro",
+      "puntos": 3,
+      "suplente": 0,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-27",
+      "jornada": 1,
+      "equipo_local": "Real Madrid",
+      "resultado_local": 4,
+      "equipo_visitante": "Real Sociedad",
+      "resultado_visitante": 1,
+      "equipo_jugador": "Real Sociedad",
+      "manager": "MuchaSalsa",
+      "clasificacion_manager_general": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 0,
+        "posicion": 9
+      },
+      "jugador": "A. Remiro",
+      "posicion": "Portero",
+      "puntos": 6,
+      "suplente": 0,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    }
+  ],
+  "clasificacion": {
+    "general": {},
+    "jornada": {}
+  },
+  "quinielas": {
+    "general": {
+      "Jotabetrbb": {
+        "puntos": 6,
+        "posicion": 1
+      },
+      "Chamacónicos": {
+        "puntos": 5,
+        "posicion": 2
+      },
+      "Dani": {
+        "puntos": 4,
+        "posicion": 3
+      },
+      "De la Guettir FC": {
+        "puntos": 4,
+        "posicion": 4
+      },
+      "Los marinero": {
+        "puntos": 4,
+        "posicion": 5
+      },
+      "MuchaSalsa": {
+        "puntos": 3,
+        "posicion": 6
+      },
+      "Juanba": {
+        "puntos": 0,
+        "posicion": 7
+      },
+      "Libre": {
+        "puntos": 0,
+        "posicion": 8
+      },
+      "Maldinillo 💥": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    "jornada": {
+      "Jotabetrbb": {
+        "puntos": 6,
+        "posicion": 1
+      },
+      "Chamacónicos": {
+        "puntos": 5,
+        "posicion": 2
+      },
+      "Dani": {
+        "puntos": 4,
+        "posicion": 3
+      },
+      "De la Guettir FC": {
+        "puntos": 4,
+        "posicion": 4
+      },
+      "Los marinero": {
+        "puntos": 4,
+        "posicion": 5
+      },
+      "MuchaSalsa": {
+        "puntos": 3,
+        "posicion": 6
+      },
+      "Juanba": {
+        "puntos": 0,
+        "posicion": 7
+      },
+      "Libre": {
+        "puntos": 0,
+        "posicion": 8
+      },
+      "Maldinillo 💥": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    }
+  }
+}

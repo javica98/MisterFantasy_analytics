@@ -1,0 +1,2489 @@
+{
+  "jornada": 2,
+  "fecha_inicio": "2026-08-21 00:00:00",
+  "fecha_fin": "2026-08-25",
+  "transfers": [],
+  "gameweek": [
+    {
+      "fecha": "2026-08-21",
+      "jornada": 2,
+      "equipo_local": "Rayo Vallecano",
+      "resultado_local": 1,
+      "equipo_visitante": "Deportivo Alavés",
+      "resultado_visitante": 1,
+      "equipo_jugador": "Rayo Vallecano",
+      "manager": "Dani",
+      "clasificacion_manager_general": {
+        "puntos": 31,
+        "posicion": 3
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 31,
+        "posicion": 3
+      },
+      "jugador": "Á. García",
+      "posicion": "Mediocentro",
+      "puntos": 2,
+      "suplente": 1,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-21",
+      "jornada": 2,
+      "equipo_local": "Rayo Vallecano",
+      "resultado_local": 1,
+      "equipo_visitante": "Deportivo Alavés",
+      "resultado_visitante": 1,
+      "equipo_jugador": "Rayo Vallecano",
+      "manager": "Dani",
+      "clasificacion_manager_general": {
+        "puntos": 31,
+        "posicion": 3
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 31,
+        "posicion": 3
+      },
+      "jugador": "I. Palazón",
+      "posicion": "Mediocentro",
+      "puntos": 1,
+      "suplente": 0,
+      "cambio": 1,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-21",
+      "jornada": 2,
+      "equipo_local": "Rayo Vallecano",
+      "resultado_local": 1,
+      "equipo_visitante": "Deportivo Alavés",
+      "resultado_visitante": 1,
+      "equipo_jugador": "Rayo Vallecano",
+      "manager": "Juanba",
+      "clasificacion_manager_general": {
+        "puntos": 12,
+        "posicion": 8
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 12,
+        "posicion": 8
+      },
+      "jugador": "R. Nteka",
+      "posicion": "Delantero",
+      "puntos": 2,
+      "suplente": 1,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-21",
+      "jornada": 2,
+      "equipo_local": "Rayo Vallecano",
+      "resultado_local": 1,
+      "equipo_visitante": "Deportivo Alavés",
+      "resultado_visitante": 1,
+      "equipo_jugador": "Rayo Vallecano",
+      "manager": "Juanba",
+      "clasificacion_manager_general": {
+        "puntos": 12,
+        "posicion": 8
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 12,
+        "posicion": 8
+      },
+      "jugador": "P. Ciss",
+      "posicion": "Mediocentro",
+      "puntos": 3,
+      "suplente": 0,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-21",
+      "jornada": 2,
+      "equipo_local": "Rayo Vallecano",
+      "resultado_local": 1,
+      "equipo_visitante": "Deportivo Alavés",
+      "resultado_visitante": 1,
+      "equipo_jugador": "Rayo Vallecano",
+      "manager": "Los marinero",
+      "clasificacion_manager_general": {
+        "puntos": 38,
+        "posicion": 1
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 38,
+        "posicion": 1
+      },
+      "jugador": "U. López",
+      "posicion": "Mediocentro",
+      "puntos": 5,
+      "suplente": 0,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-21",
+      "jornada": 2,
+      "equipo_local": "Rayo Vallecano",
+      "resultado_local": 1,
+      "equipo_visitante": "Deportivo Alavés",
+      "resultado_visitante": 1,
+      "equipo_jugador": "Deportivo Alavés",
+      "manager": "Chamacónicos",
+      "clasificacion_manager_general": {
+        "puntos": 20,
+        "posicion": 7
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 20,
+        "posicion": 7
+      },
+      "jugador": "V. Koski",
+      "posicion": "Defensa",
+      "puntos": 2,
+      "suplente": 0,
+      "cambio": 1,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-22",
+      "jornada": 2,
+      "equipo_local": "Real Betis Balompié",
+      "resultado_local": 1,
+      "equipo_visitante": "Real Sociedad",
+      "resultado_visitante": 0,
+      "equipo_jugador": "Real Betis Balompié",
+      "manager": "De la Guettir FC",
+      "clasificacion_manager_general": {
+        "puntos": 29,
+        "posicion": 5
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 29,
+        "posicion": 5
+      },
+      "jugador": "F. Bernal",
+      "posicion": "Mediocentro",
+      "puntos": 5,
+      "suplente": 0,
+      "cambio": 1,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-22",
+      "jornada": 2,
+      "equipo_local": "Real Betis Balompié",
+      "resultado_local": 1,
+      "equipo_visitante": "Real Sociedad",
+      "resultado_visitante": 0,
+      "equipo_jugador": "Real Betis Balompié",
+      "manager": "Jotabetrbb",
+      "clasificacion_manager_general": {
+        "puntos": 34,
+        "posicion": 2
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 34,
+        "posicion": 2
+      },
+      "jugador": "N. Deossa",
+      "posicion": "Mediocentro",
+      "puntos": 1,
+      "suplente": 1,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-22",
+      "jornada": 2,
+      "equipo_local": "Real Betis Balompié",
+      "resultado_local": 1,
+      "equipo_visitante": "Real Sociedad",
+      "resultado_visitante": 0,
+      "equipo_jugador": "Real Betis Balompié",
+      "manager": "Los marinero",
+      "clasificacion_manager_general": {
+        "puntos": 38,
+        "posicion": 1
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 38,
+        "posicion": 1
+      },
+      "jugador": "N. Souza",
+      "posicion": "Defensa",
+      "puntos": 5,
+      "suplente": 0,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 1,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-22",
+      "jornada": 2,
+      "equipo_local": "Real Betis Balompié",
+      "resultado_local": 1,
+      "equipo_visitante": "Real Sociedad",
+      "resultado_visitante": 0,
+      "equipo_jugador": "Real Betis Balompié",
+      "manager": "Maldinillo 💥",
+      "clasificacion_manager_general": {
+        "puntos": 31,
+        "posicion": 4
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 31,
+        "posicion": 4
+      },
+      "jugador": "Á. Valles",
+      "posicion": "Portero",
+      "puntos": 6,
+      "suplente": 0,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-22",
+      "jornada": 2,
+      "equipo_local": "Real Betis Balompié",
+      "resultado_local": 1,
+      "equipo_visitante": "Real Sociedad",
+      "resultado_visitante": 0,
+      "equipo_jugador": "Real Sociedad",
+      "manager": "Jotabetrbb",
+      "clasificacion_manager_general": {
+        "puntos": 34,
+        "posicion": 2
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 34,
+        "posicion": 2
+      },
+      "jugador": "I. Zubeldia",
+      "posicion": "Defensa",
+      "puntos": 2,
+      "suplente": 0,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 1,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-22",
+      "jornada": 2,
+      "equipo_local": "Real Betis Balompié",
+      "resultado_local": 1,
+      "equipo_visitante": "Real Sociedad",
+      "resultado_visitante": 0,
+      "equipo_jugador": "Real Sociedad",
+      "manager": "Maldinillo 💥",
+      "clasificacion_manager_general": {
+        "puntos": 31,
+        "posicion": 4
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 31,
+        "posicion": 4
+      },
+      "jugador": "A. Muñoz",
+      "posicion": "Defensa",
+      "puntos": 2,
+      "suplente": 1,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-22",
+      "jornada": 2,
+      "equipo_local": "Real Betis Balompié",
+      "resultado_local": 1,
+      "equipo_visitante": "Real Sociedad",
+      "resultado_visitante": 0,
+      "equipo_jugador": "Real Sociedad",
+      "manager": "Maldinillo 💥",
+      "clasificacion_manager_general": {
+        "puntos": 31,
+        "posicion": 4
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 31,
+        "posicion": 4
+      },
+      "jugador": "B. Turrientes",
+      "posicion": "Mediocentro",
+      "puntos": 2,
+      "suplente": 1,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-22",
+      "jornada": 2,
+      "equipo_local": "Real Betis Balompié",
+      "resultado_local": 1,
+      "equipo_visitante": "Real Sociedad",
+      "resultado_visitante": 0,
+      "equipo_jugador": "Real Sociedad",
+      "manager": "MuchaSalsa",
+      "clasificacion_manager_general": {
+        "puntos": 26,
+        "posicion": 6
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 26,
+        "posicion": 6
+      },
+      "jugador": "A. Remiro",
+      "posicion": "Portero",
+      "puntos": 5,
+      "suplente": 0,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-23",
+      "jornada": 2,
+      "equipo_local": "Athletic Club",
+      "resultado_local": 1,
+      "equipo_visitante": "Sevilla FC",
+      "resultado_visitante": 3,
+      "equipo_jugador": "Athletic Club",
+      "manager": "Dani",
+      "clasificacion_manager_general": {
+        "puntos": 31,
+        "posicion": 3
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 31,
+        "posicion": 3
+      },
+      "jugador": "Y. Berchiche",
+      "posicion": "Defensa",
+      "puntos": -9,
+      "suplente": 0,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 1
+    },
+    {
+      "fecha": "2026-08-23",
+      "jornada": 2,
+      "equipo_local": "Athletic Club",
+      "resultado_local": 1,
+      "equipo_visitante": "Sevilla FC",
+      "resultado_visitante": 3,
+      "equipo_jugador": "Athletic Club",
+      "manager": "Los marinero",
+      "clasificacion_manager_general": {
+        "puntos": 38,
+        "posicion": 1
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 38,
+        "posicion": 1
+      },
+      "jugador": "A. Paredes",
+      "posicion": "Defensa",
+      "puntos": 9,
+      "suplente": 0,
+      "cambio": 1,
+      "goles": 1,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-23",
+      "jornada": 2,
+      "equipo_local": "Athletic Club",
+      "resultado_local": 1,
+      "equipo_visitante": "Sevilla FC",
+      "resultado_visitante": 3,
+      "equipo_jugador": "Athletic Club",
+      "manager": "Maldinillo 💥",
+      "clasificacion_manager_general": {
+        "puntos": 31,
+        "posicion": 4
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 31,
+        "posicion": 4
+      },
+      "jugador": "I. Williams",
+      "posicion": "Delantero",
+      "puntos": 0,
+      "suplente": 0,
+      "cambio": 1,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-23",
+      "jornada": 2,
+      "equipo_local": "Athletic Club",
+      "resultado_local": 1,
+      "equipo_visitante": "Sevilla FC",
+      "resultado_visitante": 3,
+      "equipo_jugador": "Sevilla FC",
+      "manager": "Dani",
+      "clasificacion_manager_general": {
+        "puntos": 31,
+        "posicion": 3
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 31,
+        "posicion": 3
+      },
+      "jugador": "M. Sierra",
+      "posicion": "Mediocentro",
+      "puntos": 6,
+      "suplente": 0,
+      "cambio": 1,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 1,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-23",
+      "jornada": 2,
+      "equipo_local": "Athletic Club",
+      "resultado_local": 1,
+      "equipo_visitante": "Sevilla FC",
+      "resultado_visitante": 3,
+      "equipo_jugador": "Sevilla FC",
+      "manager": "Jotabetrbb",
+      "clasificacion_manager_general": {
+        "puntos": 34,
+        "posicion": 2
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 34,
+        "posicion": 2
+      },
+      "jugador": "P. Fernández",
+      "posicion": "Mediocentro",
+      "puntos": 4,
+      "suplente": 0,
+      "cambio": 1,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 1,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-23",
+      "jornada": 2,
+      "equipo_local": "Athletic Club",
+      "resultado_local": 1,
+      "equipo_visitante": "Sevilla FC",
+      "resultado_visitante": 3,
+      "equipo_jugador": "Sevilla FC",
+      "manager": "MuchaSalsa",
+      "clasificacion_manager_general": {
+        "puntos": 26,
+        "posicion": 6
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 26,
+        "posicion": 6
+      },
+      "jugador": "J. Guridi",
+      "posicion": "Mediocentro",
+      "puntos": 2,
+      "suplente": 0,
+      "cambio": 1,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 1,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-23",
+      "jornada": 2,
+      "equipo_local": "Athletic Club",
+      "resultado_local": 1,
+      "equipo_visitante": "Sevilla FC",
+      "resultado_visitante": 3,
+      "equipo_jugador": "Sevilla FC",
+      "manager": "MuchaSalsa",
+      "clasificacion_manager_general": {
+        "puntos": 26,
+        "posicion": 6
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 26,
+        "posicion": 6
+      },
+      "jugador": "J. Iglesias",
+      "posicion": "Defensa",
+      "puntos": 6,
+      "suplente": 0,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-23",
+      "jornada": 2,
+      "equipo_local": "Valencia CF",
+      "resultado_local": 0,
+      "equipo_visitante": "RC Celta de Vigo",
+      "resultado_visitante": 0,
+      "equipo_jugador": "Valencia CF",
+      "manager": "Chamacónicos",
+      "clasificacion_manager_general": {
+        "puntos": 20,
+        "posicion": 7
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 20,
+        "posicion": 7
+      },
+      "jugador": "J. De Haas",
+      "posicion": "Defensa",
+      "puntos": 1,
+      "suplente": 0,
+      "cambio": 1,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 1,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-23",
+      "jornada": 2,
+      "equipo_local": "Valencia CF",
+      "resultado_local": 0,
+      "equipo_visitante": "RC Celta de Vigo",
+      "resultado_visitante": 0,
+      "equipo_jugador": "Valencia CF",
+      "manager": "Dani",
+      "clasificacion_manager_general": {
+        "puntos": 31,
+        "posicion": 3
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 31,
+        "posicion": 3
+      },
+      "jugador": "S. Dimitrievski",
+      "posicion": "Portero",
+      "puntos": 5,
+      "suplente": 0,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 1,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-23",
+      "jornada": 2,
+      "equipo_local": "Valencia CF",
+      "resultado_local": 0,
+      "equipo_visitante": "RC Celta de Vigo",
+      "resultado_visitante": 0,
+      "equipo_jugador": "Valencia CF",
+      "manager": "De la Guettir FC",
+      "clasificacion_manager_general": {
+        "puntos": 29,
+        "posicion": 5
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 29,
+        "posicion": 5
+      },
+      "jugador": "A. Danjuma",
+      "posicion": "Delantero",
+      "puntos": 2,
+      "suplente": 0,
+      "cambio": 1,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-23",
+      "jornada": 2,
+      "equipo_local": "Valencia CF",
+      "resultado_local": 0,
+      "equipo_visitante": "RC Celta de Vigo",
+      "resultado_visitante": 0,
+      "equipo_jugador": "Valencia CF",
+      "manager": "Juanba",
+      "clasificacion_manager_general": {
+        "puntos": 12,
+        "posicion": 8
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 12,
+        "posicion": 8
+      },
+      "jugador": "J. Guerra",
+      "posicion": "Mediocentro",
+      "puntos": 5,
+      "suplente": 0,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-23",
+      "jornada": 2,
+      "equipo_local": "Valencia CF",
+      "resultado_local": 0,
+      "equipo_visitante": "RC Celta de Vigo",
+      "resultado_visitante": 0,
+      "equipo_jugador": "Valencia CF",
+      "manager": "Juanba",
+      "clasificacion_manager_general": {
+        "puntos": 12,
+        "posicion": 8
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 12,
+        "posicion": 8
+      },
+      "jugador": "C. Tárrega",
+      "posicion": "Defensa",
+      "puntos": 5,
+      "suplente": 0,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-23",
+      "jornada": 2,
+      "equipo_local": "Valencia CF",
+      "resultado_local": 0,
+      "equipo_visitante": "RC Celta de Vigo",
+      "resultado_visitante": 0,
+      "equipo_jugador": "Valencia CF",
+      "manager": "Libre",
+      "clasificacion_manager_general": {
+        "puntos": 1,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 1,
+        "posicion": 9
+      },
+      "jugador": "U. Sadiq",
+      "posicion": "Delantero",
+      "puntos": 2,
+      "suplente": 1,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-23",
+      "jornada": 2,
+      "equipo_local": "Valencia CF",
+      "resultado_local": 0,
+      "equipo_visitante": "RC Celta de Vigo",
+      "resultado_visitante": 0,
+      "equipo_jugador": "RC Celta de Vigo",
+      "manager": "Chamacónicos",
+      "clasificacion_manager_general": {
+        "puntos": 20,
+        "posicion": 7
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 20,
+        "posicion": 7
+      },
+      "jugador": "I. Aspas",
+      "posicion": "Delantero",
+      "puntos": 2,
+      "suplente": 1,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-23",
+      "jornada": 2,
+      "equipo_local": "Valencia CF",
+      "resultado_local": 0,
+      "equipo_visitante": "RC Celta de Vigo",
+      "resultado_visitante": 0,
+      "equipo_jugador": "RC Celta de Vigo",
+      "manager": "Jotabetrbb",
+      "clasificacion_manager_general": {
+        "puntos": 34,
+        "posicion": 2
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 34,
+        "posicion": 2
+      },
+      "jugador": "I. Radu",
+      "posicion": "Portero",
+      "puntos": 3,
+      "suplente": 0,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 1,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-23",
+      "jornada": 2,
+      "equipo_local": "RCD Espanyol",
+      "resultado_local": 1,
+      "equipo_visitante": "Real Madrid",
+      "resultado_visitante": 2,
+      "equipo_jugador": "RCD Espanyol",
+      "manager": "Chamacónicos",
+      "clasificacion_manager_general": {
+        "puntos": 20,
+        "posicion": 7
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 20,
+        "posicion": 7
+      },
+      "jugador": "U. Núñez",
+      "posicion": "Defensa",
+      "puntos": 2,
+      "suplente": 0,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-23",
+      "jornada": 2,
+      "equipo_local": "RCD Espanyol",
+      "resultado_local": 1,
+      "equipo_visitante": "Real Madrid",
+      "resultado_visitante": 2,
+      "equipo_jugador": "RCD Espanyol",
+      "manager": "Chamacónicos",
+      "clasificacion_manager_general": {
+        "puntos": 20,
+        "posicion": 7
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 20,
+        "posicion": 7
+      },
+      "jugador": "U. González",
+      "posicion": "Mediocentro",
+      "puntos": 2,
+      "suplente": 0,
+      "cambio": 1,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-23",
+      "jornada": 2,
+      "equipo_local": "RCD Espanyol",
+      "resultado_local": 1,
+      "equipo_visitante": "Real Madrid",
+      "resultado_visitante": 2,
+      "equipo_jugador": "RCD Espanyol",
+      "manager": "De la Guettir FC",
+      "clasificacion_manager_general": {
+        "puntos": 29,
+        "posicion": 5
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 29,
+        "posicion": 5
+      },
+      "jugador": "Á. Calatrava",
+      "posicion": "Mediocentro",
+      "puntos": 10,
+      "suplente": 0,
+      "cambio": 1,
+      "goles": 1,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 1,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-23",
+      "jornada": 2,
+      "equipo_local": "RCD Espanyol",
+      "resultado_local": 1,
+      "equipo_visitante": "Real Madrid",
+      "resultado_visitante": 2,
+      "equipo_jugador": "RCD Espanyol",
+      "manager": "Jotabetrbb",
+      "clasificacion_manager_general": {
+        "puntos": 34,
+        "posicion": 2
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 34,
+        "posicion": 2
+      },
+      "jugador": "P. Lozano",
+      "posicion": "Mediocentro",
+      "puntos": 2,
+      "suplente": 1,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 1,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-23",
+      "jornada": 2,
+      "equipo_local": "RCD Espanyol",
+      "resultado_local": 1,
+      "equipo_visitante": "Real Madrid",
+      "resultado_visitante": 2,
+      "equipo_jugador": "RCD Espanyol",
+      "manager": "Los marinero",
+      "clasificacion_manager_general": {
+        "puntos": 38,
+        "posicion": 1
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 38,
+        "posicion": 1
+      },
+      "jugador": "T. Dolan",
+      "posicion": "Mediocentro",
+      "puntos": 2,
+      "suplente": 0,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-23",
+      "jornada": 2,
+      "equipo_local": "RCD Espanyol",
+      "resultado_local": 1,
+      "equipo_visitante": "Real Madrid",
+      "resultado_visitante": 2,
+      "equipo_jugador": "RCD Espanyol",
+      "manager": "MuchaSalsa",
+      "clasificacion_manager_general": {
+        "puntos": 26,
+        "posicion": 6
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 26,
+        "posicion": 6
+      },
+      "jugador": "C. Riedel",
+      "posicion": "Defensa",
+      "puntos": 4,
+      "suplente": 0,
+      "cambio": 1,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 1,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-23",
+      "jornada": 2,
+      "equipo_local": "RCD Espanyol",
+      "resultado_local": 1,
+      "equipo_visitante": "Real Madrid",
+      "resultado_visitante": 2,
+      "equipo_jugador": "Real Madrid",
+      "manager": "Los marinero",
+      "clasificacion_manager_general": {
+        "puntos": 38,
+        "posicion": 1
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 38,
+        "posicion": 1
+      },
+      "jugador": "Y. Diomande",
+      "posicion": "Delantero",
+      "puntos": 2,
+      "suplente": 1,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-23",
+      "jornada": 2,
+      "equipo_local": "RCD Espanyol",
+      "resultado_local": 1,
+      "equipo_visitante": "Real Madrid",
+      "resultado_visitante": 2,
+      "equipo_jugador": "Real Madrid",
+      "manager": "Maldinillo 💥",
+      "clasificacion_manager_general": {
+        "puntos": 31,
+        "posicion": 4
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 31,
+        "posicion": 4
+      },
+      "jugador": "A. Güler",
+      "posicion": "Mediocentro",
+      "puntos": 7,
+      "suplente": 0,
+      "cambio": 1,
+      "goles": 0,
+      "asistencias": 1,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-24",
+      "jornada": 2,
+      "equipo_local": "Atlético de Madrid",
+      "resultado_local": 2,
+      "equipo_visitante": "Villarreal CF",
+      "resultado_visitante": 2,
+      "equipo_jugador": "Atlético de Madrid",
+      "manager": "De la Guettir FC",
+      "clasificacion_manager_general": {
+        "puntos": 29,
+        "posicion": 5
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 29,
+        "posicion": 5
+      },
+      "jugador": "Koke",
+      "posicion": "Mediocentro",
+      "puntos": 6,
+      "suplente": 0,
+      "cambio": 1,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-24",
+      "jornada": 2,
+      "equipo_local": "Atlético de Madrid",
+      "resultado_local": 2,
+      "equipo_visitante": "Villarreal CF",
+      "resultado_visitante": 2,
+      "equipo_jugador": "Atlético de Madrid",
+      "manager": "Jotabetrbb",
+      "clasificacion_manager_general": {
+        "puntos": 34,
+        "posicion": 2
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 34,
+        "posicion": 2
+      },
+      "jugador": "A. Lookman",
+      "posicion": "Delantero",
+      "puntos": 2,
+      "suplente": 0,
+      "cambio": 1,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-24",
+      "jornada": 2,
+      "equipo_local": "Atlético de Madrid",
+      "resultado_local": 2,
+      "equipo_visitante": "Villarreal CF",
+      "resultado_visitante": 2,
+      "equipo_jugador": "Villarreal CF",
+      "manager": "Dani",
+      "clasificacion_manager_general": {
+        "puntos": 31,
+        "posicion": 3
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 31,
+        "posicion": 3
+      },
+      "jugador": "G. Mikautadze",
+      "posicion": "Delantero",
+      "puntos": 10,
+      "suplente": 0,
+      "cambio": 1,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 1,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-24",
+      "jornada": 2,
+      "equipo_local": "Getafe CF",
+      "resultado_local": 1,
+      "equipo_visitante": 1490,
+      "resultado_visitante": 0,
+      "equipo_jugador": "Getafe CF",
+      "manager": "Dani",
+      "clasificacion_manager_general": {
+        "puntos": 31,
+        "posicion": 3
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 31,
+        "posicion": 3
+      },
+      "jugador": "R. Terrats",
+      "posicion": "Mediocentro",
+      "puntos": 6,
+      "suplente": 0,
+      "cambio": 1,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-24",
+      "jornada": 2,
+      "equipo_local": "Getafe CF",
+      "resultado_local": 1,
+      "equipo_visitante": 1490,
+      "resultado_visitante": 0,
+      "equipo_jugador": "Getafe CF",
+      "manager": "De la Guettir FC",
+      "clasificacion_manager_general": {
+        "puntos": 29,
+        "posicion": 5
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 29,
+        "posicion": 5
+      },
+      "jugador": "S. Boselli",
+      "posicion": "Defensa",
+      "puntos": 1,
+      "suplente": 1,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-24",
+      "jornada": 2,
+      "equipo_local": "Getafe CF",
+      "resultado_local": 1,
+      "equipo_visitante": 1490,
+      "resultado_visitante": 0,
+      "equipo_jugador": "Getafe CF",
+      "manager": "MuchaSalsa",
+      "clasificacion_manager_general": {
+        "puntos": 26,
+        "posicion": 6
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 26,
+        "posicion": 6
+      },
+      "jugador": "B. Mayoral",
+      "posicion": "Delantero",
+      "puntos": 0,
+      "suplente": 1,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-24",
+      "jornada": 2,
+      "equipo_local": "Getafe CF",
+      "resultado_local": 1,
+      "equipo_visitante": 1490,
+      "resultado_visitante": 0,
+      "equipo_jugador": 1490,
+      "manager": "Chamacónicos",
+      "clasificacion_manager_general": {
+        "puntos": 20,
+        "posicion": 7
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 20,
+        "posicion": 7
+      },
+      "jugador": "S. Canales",
+      "posicion": "Mediocentro",
+      "puntos": 3,
+      "suplente": 0,
+      "cambio": 1,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-24",
+      "jornada": 2,
+      "equipo_local": "Getafe CF",
+      "resultado_local": 1,
+      "equipo_visitante": 1490,
+      "resultado_visitante": 0,
+      "equipo_jugador": 1490,
+      "manager": "Chamacónicos",
+      "clasificacion_manager_general": {
+        "puntos": 20,
+        "posicion": 7
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 20,
+        "posicion": 7
+      },
+      "jugador": "A. Villalibre",
+      "posicion": "Delantero",
+      "puntos": 2,
+      "suplente": 0,
+      "cambio": 1,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-24",
+      "jornada": 2,
+      "equipo_local": "Getafe CF",
+      "resultado_local": 1,
+      "equipo_visitante": 1490,
+      "resultado_visitante": 0,
+      "equipo_jugador": 1490,
+      "manager": "Chamacónicos",
+      "clasificacion_manager_general": {
+        "puntos": 20,
+        "posicion": 7
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 20,
+        "posicion": 7
+      },
+      "jugador": "J. Agirrezabala",
+      "posicion": "Portero",
+      "puntos": 3,
+      "suplente": 0,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-24",
+      "jornada": 2,
+      "equipo_local": "Getafe CF",
+      "resultado_local": 1,
+      "equipo_visitante": 1490,
+      "resultado_visitante": 0,
+      "equipo_jugador": 1490,
+      "manager": "Chamacónicos",
+      "clasificacion_manager_general": {
+        "puntos": 20,
+        "posicion": 7
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 20,
+        "posicion": 7
+      },
+      "jugador": "J. Salinas",
+      "posicion": "Defensa",
+      "puntos": 3,
+      "suplente": 0,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 1,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-24",
+      "jornada": 2,
+      "equipo_local": "Getafe CF",
+      "resultado_local": 1,
+      "equipo_visitante": 1490,
+      "resultado_visitante": 0,
+      "equipo_jugador": 1490,
+      "manager": "Dani",
+      "clasificacion_manager_general": {
+        "puntos": 31,
+        "posicion": 3
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 31,
+        "posicion": 3
+      },
+      "jugador": "Y. Zabiri",
+      "posicion": "Delantero",
+      "puntos": 2,
+      "suplente": 1,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-24",
+      "jornada": 2,
+      "equipo_local": "Getafe CF",
+      "resultado_local": 1,
+      "equipo_visitante": 1490,
+      "resultado_visitante": 0,
+      "equipo_jugador": 1490,
+      "manager": "Juanba",
+      "clasificacion_manager_general": {
+        "puntos": 12,
+        "posicion": 8
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 12,
+        "posicion": 8
+      },
+      "jugador": "F. González",
+      "posicion": "Defensa",
+      "puntos": 1,
+      "suplente": 1,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-24",
+      "jornada": 2,
+      "equipo_local": "Getafe CF",
+      "resultado_local": 1,
+      "equipo_visitante": 1490,
+      "resultado_visitante": 0,
+      "equipo_jugador": 1490,
+      "manager": "Los marinero",
+      "clasificacion_manager_general": {
+        "puntos": 38,
+        "posicion": 1
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 38,
+        "posicion": 1
+      },
+      "jugador": "I. Vicente",
+      "posicion": "Mediocentro",
+      "puntos": 5,
+      "suplente": 0,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-24",
+      "jornada": 2,
+      "equipo_local": "Getafe CF",
+      "resultado_local": 1,
+      "equipo_visitante": 1490,
+      "resultado_visitante": 0,
+      "equipo_jugador": 1490,
+      "manager": "Los marinero",
+      "clasificacion_manager_general": {
+        "puntos": 38,
+        "posicion": 1
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 38,
+        "posicion": 1
+      },
+      "jugador": "A. Martín",
+      "posicion": "Delantero",
+      "puntos": 1,
+      "suplente": 0,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 1,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-24",
+      "jornada": 2,
+      "equipo_local": "Getafe CF",
+      "resultado_local": 1,
+      "equipo_visitante": 1490,
+      "resultado_visitante": 0,
+      "equipo_jugador": 1490,
+      "manager": "Los marinero",
+      "clasificacion_manager_general": {
+        "puntos": 38,
+        "posicion": 1
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 38,
+        "posicion": 1
+      },
+      "jugador": "S. Martinez",
+      "posicion": "Mediocentro",
+      "puntos": 4,
+      "suplente": 0,
+      "cambio": 1,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-24",
+      "jornada": 2,
+      "equipo_local": "Getafe CF",
+      "resultado_local": 1,
+      "equipo_visitante": 1490,
+      "resultado_visitante": 0,
+      "equipo_jugador": 1490,
+      "manager": "MuchaSalsa",
+      "clasificacion_manager_general": {
+        "puntos": 26,
+        "posicion": 6
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 26,
+        "posicion": 6
+      },
+      "jugador": "M. Gueye",
+      "posicion": "Mediocentro",
+      "puntos": 2,
+      "suplente": 1,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-24",
+      "jornada": 2,
+      "equipo_local": "Getafe CF",
+      "resultado_local": 1,
+      "equipo_visitante": 1490,
+      "resultado_visitante": 0,
+      "equipo_jugador": 1490,
+      "manager": "MuchaSalsa",
+      "clasificacion_manager_general": {
+        "puntos": 26,
+        "posicion": 6
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 26,
+        "posicion": 6
+      },
+      "jugador": "M. Hernando",
+      "posicion": "Defensa",
+      "puntos": 2,
+      "suplente": 0,
+      "cambio": 1,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 1,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-24",
+      "jornada": 2,
+      "equipo_local": "Elche CF",
+      "resultado_local": 0,
+      "equipo_visitante": "FC Barcelona",
+      "resultado_visitante": 5,
+      "equipo_jugador": "Elche CF",
+      "manager": "Los marinero",
+      "clasificacion_manager_general": {
+        "puntos": 38,
+        "posicion": 1
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 38,
+        "posicion": 1
+      },
+      "jugador": "V. Chust",
+      "posicion": "Defensa",
+      "puntos": 0,
+      "suplente": 0,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-24",
+      "jornada": 2,
+      "equipo_local": "Elche CF",
+      "resultado_local": 0,
+      "equipo_visitante": "FC Barcelona",
+      "resultado_visitante": 5,
+      "equipo_jugador": "Elche CF",
+      "manager": "Maldinillo 💥",
+      "clasificacion_manager_general": {
+        "puntos": 31,
+        "posicion": 4
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 31,
+        "posicion": 4
+      },
+      "jugador": "L. Cepeda",
+      "posicion": "Delantero",
+      "puntos": 3,
+      "suplente": 1,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-24",
+      "jornada": 2,
+      "equipo_local": "Elche CF",
+      "resultado_local": 0,
+      "equipo_visitante": "FC Barcelona",
+      "resultado_visitante": 5,
+      "equipo_jugador": "FC Barcelona",
+      "manager": "Jotabetrbb",
+      "clasificacion_manager_general": {
+        "puntos": 34,
+        "posicion": 2
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 34,
+        "posicion": 2
+      },
+      "jugador": "K. Adeyemi",
+      "posicion": "Delantero",
+      "puntos": 11,
+      "suplente": 0,
+      "cambio": 1,
+      "goles": 1,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-24",
+      "jornada": 2,
+      "equipo_local": "Elche CF",
+      "resultado_local": 0,
+      "equipo_visitante": "FC Barcelona",
+      "resultado_visitante": 5,
+      "equipo_jugador": "FC Barcelona",
+      "manager": "Libre",
+      "clasificacion_manager_general": {
+        "puntos": 1,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 1,
+        "posicion": 9
+      },
+      "jugador": "L. Yamal",
+      "posicion": "Delantero",
+      "puntos": 3,
+      "suplente": 0,
+      "cambio": 1,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-25",
+      "jornada": 2,
+      "equipo_local": "CA Osasuna",
+      "resultado_local": 0,
+      "equipo_visitante": "Levante UD",
+      "resultado_visitante": 0,
+      "equipo_jugador": "CA Osasuna",
+      "manager": "Dani",
+      "clasificacion_manager_general": {
+        "puntos": 31,
+        "posicion": 3
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 31,
+        "posicion": 3
+      },
+      "jugador": "I. Muñoz",
+      "posicion": "Mediocentro",
+      "puntos": 4,
+      "suplente": 0,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-25",
+      "jornada": 2,
+      "equipo_local": "CA Osasuna",
+      "resultado_local": 0,
+      "equipo_visitante": "Levante UD",
+      "resultado_visitante": 0,
+      "equipo_jugador": "CA Osasuna",
+      "manager": "Jotabetrbb",
+      "clasificacion_manager_general": {
+        "puntos": 34,
+        "posicion": 2
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 34,
+        "posicion": 2
+      },
+      "jugador": "A. Oroz",
+      "posicion": "Mediocentro",
+      "puntos": 3,
+      "suplente": 0,
+      "cambio": 1,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-25",
+      "jornada": 2,
+      "equipo_local": "CA Osasuna",
+      "resultado_local": 0,
+      "equipo_visitante": "Levante UD",
+      "resultado_visitante": 0,
+      "equipo_jugador": "CA Osasuna",
+      "manager": "Jotabetrbb",
+      "clasificacion_manager_general": {
+        "puntos": 34,
+        "posicion": 2
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 34,
+        "posicion": 2
+      },
+      "jugador": "A. Bretones",
+      "posicion": "Defensa",
+      "puntos": 3,
+      "suplente": 0,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-25",
+      "jornada": 2,
+      "equipo_local": "CA Osasuna",
+      "resultado_local": 0,
+      "equipo_visitante": "Levante UD",
+      "resultado_visitante": 0,
+      "equipo_jugador": "CA Osasuna",
+      "manager": "Maldinillo 💥",
+      "clasificacion_manager_general": {
+        "puntos": 31,
+        "posicion": 4
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 31,
+        "posicion": 4
+      },
+      "jugador": "Í. Arguibide",
+      "posicion": "Defensa",
+      "puntos": 3,
+      "suplente": 0,
+      "cambio": 1,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-25",
+      "jornada": 2,
+      "equipo_local": "CA Osasuna",
+      "resultado_local": 0,
+      "equipo_visitante": "Levante UD",
+      "resultado_visitante": 0,
+      "equipo_jugador": "CA Osasuna",
+      "manager": "MuchaSalsa",
+      "clasificacion_manager_general": {
+        "puntos": 26,
+        "posicion": 6
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 26,
+        "posicion": 6
+      },
+      "jugador": "A. Catena",
+      "posicion": "Defensa",
+      "puntos": 3,
+      "suplente": 0,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-25",
+      "jornada": 2,
+      "equipo_local": "CA Osasuna",
+      "resultado_local": 0,
+      "equipo_visitante": "Levante UD",
+      "resultado_visitante": 0,
+      "equipo_jugador": "Levante UD",
+      "manager": "Dani",
+      "clasificacion_manager_general": {
+        "puntos": 31,
+        "posicion": 3
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 31,
+        "posicion": 3
+      },
+      "jugador": "M. Sánchez",
+      "posicion": "Defensa",
+      "puntos": 3,
+      "suplente": 0,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-25",
+      "jornada": 2,
+      "equipo_local": "CA Osasuna",
+      "resultado_local": 0,
+      "equipo_visitante": "Levante UD",
+      "resultado_visitante": 0,
+      "equipo_jugador": "Levante UD",
+      "manager": "Jotabetrbb",
+      "clasificacion_manager_general": {
+        "puntos": 34,
+        "posicion": 2
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 34,
+        "posicion": 2
+      },
+      "jugador": "E. Eyong",
+      "posicion": "Delantero",
+      "puntos": 0,
+      "suplente": 1,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-25",
+      "jornada": 2,
+      "equipo_local": "CA Osasuna",
+      "resultado_local": 0,
+      "equipo_visitante": "Levante UD",
+      "resultado_visitante": 0,
+      "equipo_jugador": "Levante UD",
+      "manager": "Libre",
+      "clasificacion_manager_general": {
+        "puntos": 1,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 1,
+        "posicion": 9
+      },
+      "jugador": "V. García",
+      "posicion": "Mediocentro",
+      "puntos": 2,
+      "suplente": 1,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-25",
+      "jornada": 2,
+      "equipo_local": 13,
+      "resultado_local": 1,
+      "equipo_visitante": 6,
+      "resultado_visitante": 1,
+      "equipo_jugador": 13,
+      "manager": "De la Guettir FC",
+      "clasificacion_manager_general": {
+        "puntos": 29,
+        "posicion": 5
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 29,
+        "posicion": 5
+      },
+      "jugador": "D. Larrubia",
+      "posicion": "Mediocentro",
+      "puntos": 3,
+      "suplente": 1,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 1,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-25",
+      "jornada": 2,
+      "equipo_local": 13,
+      "resultado_local": 1,
+      "equipo_visitante": 6,
+      "resultado_visitante": 1,
+      "equipo_jugador": 13,
+      "manager": "Jotabetrbb",
+      "clasificacion_manager_general": {
+        "puntos": 34,
+        "posicion": 2
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 34,
+        "posicion": 2
+      },
+      "jugador": "C. Puga",
+      "posicion": "Defensa",
+      "puntos": 3,
+      "suplente": 0,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-25",
+      "jornada": 2,
+      "equipo_local": 13,
+      "resultado_local": 1,
+      "equipo_visitante": 6,
+      "resultado_visitante": 1,
+      "equipo_jugador": 13,
+      "manager": "Los marinero",
+      "clasificacion_manager_general": {
+        "puntos": 38,
+        "posicion": 1
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 38,
+        "posicion": 1
+      },
+      "jugador": "A. Herrero",
+      "posicion": "Portero",
+      "puntos": 5,
+      "suplente": 0,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-25",
+      "jornada": 2,
+      "equipo_local": 13,
+      "resultado_local": 1,
+      "equipo_visitante": 6,
+      "resultado_visitante": 1,
+      "equipo_jugador": 13,
+      "manager": "Maldinillo 💥",
+      "clasificacion_manager_general": {
+        "puntos": 31,
+        "posicion": 4
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 31,
+        "posicion": 4
+      },
+      "jugador": "E. Galilea",
+      "posicion": "Defensa",
+      "puntos": 4,
+      "suplente": 0,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-25",
+      "jornada": 2,
+      "equipo_local": 13,
+      "resultado_local": 1,
+      "equipo_visitante": 6,
+      "resultado_visitante": 1,
+      "equipo_jugador": 13,
+      "manager": "Maldinillo 💥",
+      "clasificacion_manager_general": {
+        "puntos": 31,
+        "posicion": 4
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 31,
+        "posicion": 4
+      },
+      "jugador": "J. Cruz",
+      "posicion": "Mediocentro",
+      "puntos": 4,
+      "suplente": 0,
+      "cambio": 1,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-25",
+      "jornada": 2,
+      "equipo_local": 13,
+      "resultado_local": 1,
+      "equipo_visitante": 6,
+      "resultado_visitante": 1,
+      "equipo_jugador": 13,
+      "manager": "MuchaSalsa",
+      "clasificacion_manager_general": {
+        "puntos": 26,
+        "posicion": 6
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 26,
+        "posicion": 6
+      },
+      "jugador": "R. Rodriguez",
+      "posicion": "Mediocentro",
+      "puntos": 2,
+      "suplente": 1,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-25",
+      "jornada": 2,
+      "equipo_local": 13,
+      "resultado_local": 1,
+      "equipo_visitante": 6,
+      "resultado_visitante": 1,
+      "equipo_jugador": 6,
+      "manager": "Dani",
+      "clasificacion_manager_general": {
+        "puntos": 31,
+        "posicion": 3
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 31,
+        "posicion": 3
+      },
+      "jugador": "L. Noubi",
+      "posicion": "Defensa",
+      "puntos": 1,
+      "suplente": 0,
+      "cambio": 0,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-25",
+      "jornada": 2,
+      "equipo_local": 13,
+      "resultado_local": 1,
+      "equipo_visitante": 6,
+      "resultado_visitante": 1,
+      "equipo_jugador": 6,
+      "manager": "De la Guettir FC",
+      "clasificacion_manager_general": {
+        "puntos": 29,
+        "posicion": 5
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 29,
+        "posicion": 5
+      },
+      "jugador": "A. Altimira",
+      "posicion": "Defensa",
+      "puntos": 2,
+      "suplente": 0,
+      "cambio": 1,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    },
+    {
+      "fecha": "2026-08-25",
+      "jornada": 2,
+      "equipo_local": 13,
+      "resultado_local": 1,
+      "equipo_visitante": 6,
+      "resultado_visitante": 1,
+      "equipo_jugador": 6,
+      "manager": "Libre",
+      "clasificacion_manager_general": {
+        "puntos": 1,
+        "posicion": 9
+      },
+      "clasificacion_manager_jornada": {
+        "puntos": 1,
+        "posicion": 9
+      },
+      "jugador": "J. Asp Jensen",
+      "posicion": "Mediocentro",
+      "puntos": 2,
+      "suplente": 0,
+      "cambio": 1,
+      "goles": 0,
+      "asistencias": 0,
+      "gol_propia": 0,
+      "penalti_marcado": 0,
+      "penalti_fallado": 0,
+      "penalti_parado": 0,
+      "amarilla": 0,
+      "roja": 0
+    }
+  ],
+  "clasificacion": {
+    "general": {
+      "Los marinero": {
+        "puntos": 38,
+        "posicion": 1
+      },
+      "Jotabetrbb": {
+        "puntos": 34,
+        "posicion": 2
+      },
+      "Dani": {
+        "puntos": 31,
+        "posicion": 3
+      },
+      "Maldinillo 💥": {
+        "puntos": 31,
+        "posicion": 4
+      },
+      "De la Guettir FC": {
+        "puntos": 29,
+        "posicion": 5
+      },
+      "MuchaSalsa": {
+        "puntos": 26,
+        "posicion": 6
+      },
+      "Chamacónicos": {
+        "puntos": 20,
+        "posicion": 7
+      },
+      "Juanba": {
+        "puntos": 12,
+        "posicion": 8
+      },
+      "Libre": {
+        "puntos": 1,
+        "posicion": 9
+      }
+    },
+    "jornada": {
+      "Los marinero": {
+        "puntos": 38,
+        "posicion": 1
+      },
+      "Jotabetrbb": {
+        "puntos": 34,
+        "posicion": 2
+      },
+      "Dani": {
+        "puntos": 31,
+        "posicion": 3
+      },
+      "Maldinillo 💥": {
+        "puntos": 31,
+        "posicion": 4
+      },
+      "De la Guettir FC": {
+        "puntos": 29,
+        "posicion": 5
+      },
+      "MuchaSalsa": {
+        "puntos": 26,
+        "posicion": 6
+      },
+      "Chamacónicos": {
+        "puntos": 20,
+        "posicion": 7
+      },
+      "Juanba": {
+        "puntos": 12,
+        "posicion": 8
+      },
+      "Libre": {
+        "puntos": 1,
+        "posicion": 9
+      }
+    }
+  },
+  "quinielas": {
+    "general": {
+      "Chamacónicos": {
+        "puntos": 10,
+        "posicion": 1
+      },
+      "De la Guettir FC": {
+        "puntos": 10,
+        "posicion": 2
+      },
+      "Dani": {
+        "puntos": 9,
+        "posicion": 3
+      },
+      "Los marinero": {
+        "puntos": 9,
+        "posicion": 4
+      },
+      "Jotabetrbb": {
+        "puntos": 6,
+        "posicion": 5
+      },
+      "MuchaSalsa": {
+        "puntos": 4,
+        "posicion": 6
+      },
+      "Maldinillo 💥": {
+        "puntos": 3,
+        "posicion": 7
+      },
+      "Juanba": {
+        "puntos": 0,
+        "posicion": 8
+      },
+      "Libre": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    },
+    "jornada": {
+      "De la Guettir FC": {
+        "puntos": 6,
+        "posicion": 1
+      },
+      "Chamacónicos": {
+        "puntos": 5,
+        "posicion": 2
+      },
+      "Dani": {
+        "puntos": 5,
+        "posicion": 3
+      },
+      "Los marinero": {
+        "puntos": 5,
+        "posicion": 4
+      },
+      "Maldinillo 💥": {
+        "puntos": 3,
+        "posicion": 5
+      },
+      "MuchaSalsa": {
+        "puntos": 1,
+        "posicion": 6
+      },
+      "Jotabetrbb": {
+        "puntos": 0,
+        "posicion": 7
+      },
+      "Juanba": {
+        "puntos": 0,
+        "posicion": 8
+      },
+      "Libre": {
+        "puntos": 0,
+        "posicion": 9
+      }
+    }
+  }
+}

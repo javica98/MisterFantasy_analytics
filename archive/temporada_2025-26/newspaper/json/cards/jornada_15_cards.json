@@ -1,0 +1,116 @@
+{
+  "cards": [
+    {
+      "tipo": "clasificacion",
+      "jugador": null,
+      "manager": null,
+      "puntos": null,
+      "dinero": null,
+      "equipo": null,
+      "titulo": "¡Dani se tambalea en la cima!",
+      "subtitulo": "La SOTANO LEAGUE arde: ¡Nadie está a salvo!",
+      "texto": [
+        "¡Dani sigue líder con 662 puntos, pero la presión es insoportable! ¡Los Marinero y Maldinillo 💥 le pisan los talones, prometiendo un final de infarto!",
+        "¡Jotabetrbb se corona como el rey de la jornada con 56 puntos, demostrando que en esta liga, cualquiera puede dar el golpe!",
+        "Mientras, Chamacónicos se hunde en el abismo de la jornada y Libre sigue anclado en el último puesto general. ¡Drama en cada rincón!"
+      ]
+    },
+    {
+      "tipo": "rumor",
+      "jugador": null,
+      "manager": null,
+      "puntos": null,
+      "dinero": null,
+      "equipo": null,
+      "titulo": "¡BOMBAZO EN LA SOTANO LEAGUE!",
+      "subtitulo": "¡Un manager prepara su fuga al Caribe!",
+      "texto": [
+        "¡Se rumorea que un conocido manager, harto de los clausulazos, planea abandonar el país y montar un chiringuito en una playa paradisíaca! ¡¿Quién será el afortunado?!"
+      ]
+    },
+    {
+      "tipo": "MVP de la jornada",
+      "jugador": "F. Torres",
+      "manager": "Jotabetrbb",
+      "puntos": 21.0,
+      "dinero": null,
+      "equipo": "FC Barcelona",
+      "titulo": "¡F. TORRES, EL GOLPE MAESTRO DE JOTABETRBB!",
+      "subtitulo": "¡21 PUNTOS QUE SACUDEN LA LIGA!",
+      "texto": [
+        "¡F. Torres explota con 21 puntos, catapultando a Jotabetrbb a la cima de la jornada! ¡El manager de la quinta posición general ruge con fuerza!",
+        "¡Este jugador del FC Barcelona es la nueva joya de la SOTANO LEAGUE, demostrando que la inversión ha valido cada céntimo!"
+      ]
+    },
+    {
+      "tipo": "MVP de la jornada",
+      "jugador": "T. Buchanan",
+      "manager": "Juanba",
+      "puntos": 12.0,
+      "dinero": null,
+      "equipo": "Villarreal CF",
+      "titulo": "¡BUCHANAN SALVA A JUANBA!",
+      "subtitulo": "¡12 PUNTOS DE ORO PARA EL MANAGER EN APUROS!",
+      "texto": [
+        "¡T. Buchanan emerge como el héroe inesperado, sumando 12 puntos vitales para Juanba! ¡Una actuación estelar que alivia la presión en la sexta posición de la jornada!",
+        "¡El jugador del Villarreal CF demuestra que incluso desde el octavo puesto general, se puede soñar con la gloria!"
+      ]
+    },
+    {
+      "tipo": "MVP de la jornada",
+      "jugador": "G. Valera",
+      "manager": "De la Guettir FC",
+      "puntos": 12.0,
+      "dinero": null,
+      "equipo": "Elche CF",
+      "titulo": "¡G. VALERA: EL RAYO DE DE LA GUETTIR FC!",
+      "subtitulo": "¡12 PUNTOS QUE HACEN TEMBLAR LA TABLA!",
+      "texto": [
+        "¡G. Valera desata la furia con 12 puntos clave, impulsando a De la Guettir FC hacia adelante! ¡El manager escala posiciones en la jornada, dejando a todos boquiabiertos!",
+        "¡Desde el Elche CF, este jugador se convierte en la esperanza de un equipo que busca asaltar los puestos de honor!"
+      ]
+    },
+    {
+      "tipo": "Peor actuación de la jornada",
+      "jugador": "L. Milla",
+      "manager": "MuchaSalsa",
+      "puntos": -7.0,
+      "dinero": null,
+      "equipo": "Getafe CF",
+      "titulo": "¡DESASTRE DE MILLA PARA MUCHASALSA!",
+      "subtitulo": "¡-7 PUNTOS QUE HUNDEN AL EQUIPO!",
+      "texto": [
+        "¡L. Milla protagoniza el fiasco de la jornada con un demoledor -7! ¡MuchaSalsa se desploma en la tabla, cayendo al octavo puesto de la jornada!",
+        "¡El Getafe CF se convierte en el escenario de una actuación para el olvido, dejando al manager en la cuerda floja!"
+      ]
+    },
+    {
+      "tipo": "Expulsión",
+      "jugador": "S. Cazorla",
+      "manager": "Chamacónicos",
+      "puntos": -4.0,
+      "dinero": null,
+      "equipo": "Real Oviedo",
+      "titulo": "¡ROJA DIRECTA PARA CAZORLA!",
+      "subtitulo": "¡CHAMACÓNICOS SE HUNDE EN LA JORNADA!",
+      "texto": [
+        "¡S. Cazorla ve la tarjeta roja, dejando a Chamacónicos con un -4 y en la última posición de la jornada! ¡Un drama que nadie vio venir!",
+        "¡La expulsión del jugador del Real Oviedo es un golpe devastador para el cuarto clasificado general, que ve cómo se esfuman sus esperanzas!"
+      ]
+    },
+    {
+      "tipo": "Gol en propia",
+      "jugador": "C. Tárrega",
+      "manager": "Libre",
+      "puntos": -1.0,
+      "dinero": null,
+      "equipo": "Valencia CF",
+      "titulo": "¡AUTOGOL DE TÁRREGA: LA MALDICIÓN DE LIBRE!",
+      "subtitulo": "¡UN PUNTO MENOS QUE DUELE EN EL ALMA!",
+      "texto": [
+        "¡C. Tárrega se marca en propia puerta, restando un punto crucial a Libre! ¡La mala fortuna persigue al colista general, que no levanta cabeza!",
+        "¡El jugador del Valencia CF protagoniza una acción desafortunada, condenando al manager a seguir en la parte baja de la clasificación de la jornada!"
+      ]
+    }
+  ]
+}

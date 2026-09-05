@@ -1,0 +1,102 @@
+{
+  "cards": [
+    {
+      "tipo": "clasificacion",
+      "jugador": null,
+      "manager": null,
+      "puntos": null,
+      "dinero": null,
+      "equipo": null,
+      "titulo": "¡La SOTANO LEAGUE arde!",
+      "subtitulo": "¡Liderato en juego, nadie se rinde!",
+      "texto": [
+        "¡Los Marinero toman la cima con una ventaja pírrica!",
+        "¡Jotabetrbb les pisa los talones, la tensión es máxima!",
+        "¡Maldinillo y Dani, empatados en la batalla por el podio, la liga es pura pólvora!"
+      ]
+    },
+    {
+      "tipo": "rumor",
+      "jugador": null,
+      "manager": null,
+      "puntos": null,
+      "dinero": null,
+      "equipo": null,
+      "titulo": "¡Escándalo en la SOTANO LEAGUE!",
+      "subtitulo": "¡Un secreto inconfesable!",
+      "texto": [
+        "¡Se rumorea que un manager de la liga es adicto a los documentales de ovnis y no duerme por las noches!"
+      ]
+    },
+    {
+      "tipo": "MVP de la jornada",
+      "jugador": "K. Adeyemi",
+      "manager": "Jotabetrbb",
+      "puntos": 11.0,
+      "dinero": null,
+      "equipo": "FC Barcelona",
+      "titulo": "¡Adeyemi, el mago de Jotabetrbb!",
+      "subtitulo": "¡Un golpe de genio en la jornada!",
+      "texto": [
+        "K. Adeyemi explota con 11 puntos estratosféricos, ¡un vendaval imparable!",
+        "¡Jotabetrbb se aferra a la segunda plaza, el sueño de la liga sigue vivo!"
+      ]
+    },
+    {
+      "tipo": "MVP de la jornada",
+      "jugador": "Á. Calatrava",
+      "manager": "De la Guettir FC",
+      "puntos": 10.0,
+      "dinero": null,
+      "equipo": "RCD Espanyol",
+      "titulo": "¡Calatrava, el héroe inesperado!",
+      "subtitulo": "¡De la Guettir FC se aferra a la vida!",
+      "texto": [
+        "Á. Calatrava irrumpe con 10 puntos cruciales, ¡un salvavidas para su equipo!",
+        "¡De la Guettir FC mantiene viva la llama, la quinta posición es suya!"
+      ]
+    },
+    {
+      "tipo": "MVP de la jornada",
+      "jugador": "G. Mikautadze",
+      "manager": "Dani",
+      "puntos": 10.0,
+      "dinero": null,
+      "equipo": "Villarreal CF",
+      "titulo": "¡Mikautadze, el rayo de Dani!",
+      "subtitulo": "¡El bicampeón no se rinde!",
+      "texto": [
+        "G. Mikautadze ilumina la jornada con 10 puntos clave, ¡pura magia en el campo!",
+        "¡Dani sigue en la pugna por el liderato, su tercer campeonato está en juego!"
+      ]
+    },
+    {
+      "tipo": "Peor actuación de la jornada",
+      "jugador": "Y. Berchiche",
+      "manager": "Dani",
+      "puntos": -9.0,
+      "dinero": null,
+      "equipo": "Athletic Club",
+      "titulo": "¡Berchiche, el fiasco de la jornada!",
+      "subtitulo": "¡Dani, en la cuerda floja!",
+      "texto": [
+        "Y. Berchiche firma una actuación lamentable con -9 puntos, ¡un desastre total!",
+        "¡Dani sufre un golpe brutal, la estabilidad del bicampeón se tambalea!"
+      ]
+    },
+    {
+      "tipo": "Expulsión",
+      "jugador": "Y. Berchiche",
+      "manager": "Dani",
+      "puntos": -9.0,
+      "dinero": null,
+      "equipo": "Athletic Club",
+      "titulo": "¡Roja directa! ¡Berchiche, el villano!",
+      "subtitulo": "¡Dani, hundido por la polémica!",
+      "texto": [
+        "Y. Berchiche ve la roja, ¡un mazazo que condiciona toda la jornada para Dani!",
+        "¡La expulsión sentencia al bicampeón, el Athletic Club le condena al sufrimiento!"
+      ]
+    }
+  ]
+}
