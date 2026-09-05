@@ -1,0 +1,88 @@
+{
+  "cards": [
+    {
+      "tipo": "clasificacion",
+      "jugador": null,
+      "manager": null,
+      "puntos": null,
+      "dinero": null,
+      "equipo": null,
+      "titulo": "¡DANI SE MANTIENE, PERO MALDINILLO 💥 ATACA!",
+      "subtitulo": "¡La SOTANO LEAGUE arde en llamas!",
+      "texto": [
+        "Dani sigue en la cima con 444 puntos, ¡un líder inquebrantable!",
+        "¡Maldinillo 💥 desata la furia y se lleva la jornada con 53 puntos, escalando posiciones!",
+        "Los Marinero y Chamacónicos acechan, mientras Libre se hunde en el abismo."
+      ]
+    },
+    {
+      "tipo": "rumor",
+      "jugador": null,
+      "manager": null,
+      "puntos": null,
+      "dinero": null,
+      "equipo": null,
+      "titulo": "¡RUMOR BOMBA EN LA LIGA!",
+      "subtitulo": "¡Un manager, pillado en un acto insólito!",
+      "texto": [
+        "Se dice que un manager, obsesionado con Maldinillo 💥, fue visto anoche intentando copiar sus estrategias de mercado en un bar, ¡con un boli y una servilleta!"
+      ]
+    },
+    {
+      "tipo": "MVP de la jornada",
+      "jugador": "M. Oyarzabal",
+      "manager": "Libre",
+      "puntos": 16.0,
+      "dinero": null,
+      "equipo": "Real Sociedad",
+      "titulo": "¡OYARZABAL RESCATA A LIBRE!",
+      "subtitulo": "¡Un rayo de esperanza para el colista!",
+      "texto": [
+        "¡M. Oyarzabal estalla con 16 puntos, sacudiendo la tabla!",
+        "Libre, el colista general, se cuela en el Top 4 de la jornada, ¡un milagro inesperado!"
+      ]
+    },
+    {
+      "tipo": "MVP de la jornada",
+      "jugador": "C. Romero",
+      "manager": "Maldinillo 💥",
+      "puntos": 14.0,
+      "dinero": null,
+      "equipo": "RCD Espanyol",
+      "titulo": "¡ROMERO DESATA LA FURIA DE MALDINILLO 💥!",
+      "subtitulo": "¡El Espanyol alimenta al campeón de la jornada!",
+      "texto": [
+        "¡C. Romero regala 14 puntos vitales, impulsando a Maldinillo 💥!",
+        "¡El manager que domina la jornada demuestra su imparable ascenso!"
+      ]
+    },
+    {
+      "tipo": "MVP de la jornada",
+      "jugador": "P. Maffeo",
+      "manager": "Maldinillo 💥",
+      "puntos": 14.0,
+      "dinero": null,
+      "equipo": "RCD Mallorca",
+      "titulo": "¡MAFFEO, EL MURO DE MALDINILLO 💥!",
+      "subtitulo": "¡Doble golpe de autoridad del manager estrella!",
+      "texto": [
+        "¡P. Maffeo suma 14 puntos cruciales, consolidando a Maldinillo 💥!",
+        "¡El líder de la jornada no da tregua, su dominio es absoluto!"
+      ]
+    },
+    {
+      "tipo": "Peor actuación de la jornada",
+      "jugador": "A. Sánchez",
+      "manager": "Maldinillo 💥",
+      "puntos": 1.0,
+      "dinero": null,
+      "equipo": "Sevilla FC",
+      "titulo": "¡DESASTRE EN SEVILLA!",
+      "subtitulo": "¡Un borrón en la jornada estelar de Maldinillo 💥!",
+      "texto": [
+        "¡A. Sánchez se hunde con solo 1 punto, un tropiezo inesperado!",
+        "Aunque Maldinillo 💥 triunfa en la jornada, este fallo no pasa desapercibido."
+      ]
+    }
+  ]
+}
