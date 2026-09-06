@@ -1,0 +1,102 @@
+{
+  "cards": [
+    {
+      "tipo": "clasificacion",
+      "jugador": null,
+      "manager": null,
+      "puntos": null,
+      "dinero": null,
+      "equipo": null,
+      "titulo": "¡Dani se tambalea en la cima!",
+      "subtitulo": "¡Maldinillo, el huracán que lo cambia todo!",
+      "texto": [
+        "Dani, el bicampeón, ve su trono amenazado por una legión de aspirantes hambrientos.",
+        "Los Marinero acechan, pero la verdadera tormenta viene de Maldinillo 💥, ¡a solo 9 puntos del segundo puesto!",
+        "Mientras tanto, Libre se hunde en el abismo, ¡el farolillo rojo no encuentra consuelo!"
+      ]
+    },
+    {
+      "tipo": "rumor",
+      "jugador": null,
+      "manager": null,
+      "puntos": null,
+      "dinero": null,
+      "equipo": null,
+      "titulo": "¡ESCÁNDALO EN LA SOTANO LEAGUE!",
+      "subtitulo": "¡Un manager pillado en un sitio inesperado!",
+      "texto": [
+        "Fuentes cercanas aseguran que un conocido manager fue visto comprando figuritas de coleccionista en una tienda de cómics, ¡su estrategia de fichajes podría ser un engaño!"
+      ]
+    },
+    {
+      "tipo": "MVP de la jornada",
+      "jugador": "F. Torres",
+      "manager": "Jotabetrbb",
+      "puntos": 16.0,
+      "dinero": null,
+      "equipo": "FC Barcelona",
+      "titulo": "¡TORRES EXPLOTA EN JOTABETRBB!",
+      "subtitulo": "¡16 Puntos que Sacuden la Jornada!",
+      "texto": [
+        "F. Torres, la joya del FC Barcelona, desata un vendaval de puntos para Jotabetrbb.",
+        "¡El manager de la sexta posición general se cuela en el podio de la jornada con una actuación estelar!"
+      ]
+    },
+    {
+      "tipo": "MVP de la jornada",
+      "jugador": "F. López",
+      "manager": "Maldinillo 💥",
+      "puntos": 13.0,
+      "dinero": null,
+      "equipo": "FC Barcelona",
+      "titulo": "¡LÓPEZ, EL HÉROE DE MALDINILLO!",
+      "subtitulo": "¡13 Puntos de Oro para el Líder de la Jornada!",
+      "texto": [
+        "F. López, el mago del FC Barcelona, impulsa a Maldinillo 💥 a la cima de la jornada.",
+        "¡El tercer clasificado general ruge con fuerza, demostrando por qué es el mejor de esta semana!"
+      ]
+    },
+    {
+      "tipo": "MVP de la jornada",
+      "jugador": "A. Febas",
+      "manager": "Maldinillo 💥",
+      "puntos": 12.0,
+      "dinero": null,
+      "equipo": "Elche CF",
+      "titulo": "¡FEBAS, EL MOTOR DE MALDINILLO!",
+      "subtitulo": "¡12 Puntos Clave para la Ascensión!",
+      "texto": [
+        "A. Febas, el incansable del Elche CF, suma 12 puntos vitales para Maldinillo 💥.",
+        "¡El manager de la tercera posición general consolida su poderío, ¡nadie puede detenerlo!"
+      ]
+    },
+    {
+      "tipo": "Peor actuación de la jornada",
+      "jugador": "J. Álvarez",
+      "manager": "Chamacónicos",
+      "puntos": -1.0,
+      "dinero": null,
+      "equipo": "Atlético de Madrid",
+      "titulo": "¡DESASTRE EN CHAMACÓNICOS!",
+      "subtitulo": "¡J. Álvarez, la Pesadilla de la Jornada!",
+      "texto": [
+        "J. Álvarez, del Atlético de Madrid, protagoniza la peor actuación con un desolador -1.",
+        "¡Chamacónicos se desploma, cayendo al octavo puesto de la jornada en una debacle total!"
+      ]
+    },
+    {
+      "tipo": "Héroe bajo palos",
+      "jugador": "A. Escandell",
+      "manager": "Dani",
+      "puntos": 10.0,
+      "dinero": null,
+      "equipo": "Real Oviedo",
+      "titulo": "¡ESCANDALOSO ESCANDELL SALVA A DANI!",
+      "subtitulo": "¡Penalti Parado: Un Héroe Bajo Palos!",
+      "texto": [
+        "A. Escandell, el muro del Real Oviedo, detiene un penalti decisivo para Dani.",
+        "¡El líder general se aferra a su posición gracias a una parada milagrosa que vale oro!"
+      ]
+    }
+  ]
+}
