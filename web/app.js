@@ -222,7 +222,7 @@ function renderHome() {
     <h2 style="margin:4px 0 0;font-size:20px">Movimientos del mes</h2>
   </div>
 
-  <div class="grid" style="grid-template-columns:1fr 1fr;gap:16px">
+  <div class="grid grid-2" style="gap:16px">
 
     <!-- Top 3 clausulazos -->
     <section class="card">
@@ -230,12 +230,12 @@ function renderHome() {
         <h3>⚡ Top 3 clausulazos más caros</h3>
       </div>
       <div class="table">
-        <div class="table-row table-head" style="grid-template-columns:1fr 1fr 1fr 80px">
+        <div class="table-row compact table-head" style="grid-template-columns:minmax(0,1.6fr) minmax(0,1fr) minmax(0,1fr) 80px">
           <span>Jugador</span><span>De</span><span>A</span><span>€</span>
         </div>
         ${(league.topClauses ?? []).length ? (league.topClauses).map(row => `
-          <div class="table-row" style="grid-template-columns:1fr 1fr 1fr 80px">
-            <div style="display:flex;align-items:center;gap:8px">
+          <div class="table-row compact" style="grid-template-columns:minmax(0,1.6fr) minmax(0,1fr) minmax(0,1fr) 80px">
+            <div style="display:flex;align-items:center;gap:8px;min-width:0">
               ${playerAvatar(row.player ?? "", 38)}
               <strong>${escapeHtml(row.player ?? "—")}</strong>
             </div>
@@ -255,12 +255,12 @@ function renderHome() {
         <h3>💸 Top 3 fichajes de mercado</h3>
       </div>
       <div class="table">
-        <div class="table-row table-head" style="grid-template-columns:1fr 1fr 80px">
+        <div class="table-row compact table-head" style="grid-template-columns:minmax(0,1fr) minmax(0,1fr) 80px">
           <span>Jugador</span><span>Manager</span><span>€</span>
         </div>
         ${(league.topTransfers ?? []).length ? (league.topTransfers).map(row => `
-          <div class="table-row" style="grid-template-columns:1fr 1fr 80px">
-            <div style="display:flex;align-items:center;gap:8px">
+          <div class="table-row compact" style="grid-template-columns:minmax(0,1fr) minmax(0,1fr) 80px">
+            <div style="display:flex;align-items:center;gap:8px;min-width:0">
               ${playerAvatar(row.player ?? "", 38)}
               <strong>${escapeHtml(row.player ?? "—")}</strong>
             </div>
@@ -346,7 +346,7 @@ function renderStats() {
       ` : ""}
     </div>
 
-    <div class="grid" style="grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px">
+    <div class="grid grid-2" style="gap:16px;margin-bottom:16px">
 
       <!-- Card rendimiento -->
       <article class="card pad metric">

@@ -26,8 +26,12 @@ class TestMapTeam:
         assert map_team(15.0) == "Real Madrid"
         assert map_team(3.0) == "FC Barcelona"
 
-    def test_id_desconocido_devuelve_el_mismo(self):
-        assert map_team(9999) == 9999
+    def test_id_desconocido_devuelve_equipo_desconocido(self):
+        # Un ID que no esta en TEAM_MAP casi siempre es un fallo de
+        # extraccion (ver hallazgo del testeo visual: un jugador con
+        # equipoLiga=1490), no un equipo nuevo — mostrar el numero crudo
+        # en la web solo confunde, mejor un mensaje claro.
+        assert map_team(9999) == "Equipo desconocido"
 
     def test_todos_los_ids_del_mapa_resuelven(self):
         for team_id, name in TEAM_MAP.items():

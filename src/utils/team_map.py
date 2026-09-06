@@ -3,6 +3,10 @@ Mapas de IDs de equipo y posición usados en Mister Fantasy.
 Centralizados aquí para evitar duplicación entre módulos.
 """
 
+import logging
+
+logger = logging.getLogger(__name__)
+
 TEAM_MAP: dict[int, str] = {
     15: "Real Madrid",
     3: "FC Barcelona",
@@ -46,7 +50,11 @@ def map_team(team_id) -> str | int | float:
 
     Returns:
         Nombre del equipo si está en ``TEAM_MAP``; ``"Sin equipo"`` si el ID
-        es ``None``, ``NaN`` o ``0``; el ID original si no se reconoce.
+        es ``None``, ``NaN`` o ``0``; ``"Equipo desconocido"`` si no se
+        reconoce (con un warning en el log — un ID que no aparece en
+        TEAM_MAP casi siempre es un fallo de extracción aguas arriba, no
+        un equipo nuevo, y mostrar el número crudo en la web solo confunde
+        sin ayudar a depurarlo).
 
     Examples:
         >>> map_team(15)
@@ -58,7 +66,7 @@ def map_team(team_id) -> str | int | float:
         >>> map_team(0)
         'Sin equipo'
         >>> map_team(9999)
-        9999
+        'Equipo desconocido'
     """
     import math
     if team_id is None:
@@ -70,7 +78,10 @@ def map_team(team_id) -> str | int | float:
             return "Sin equipo"
     except (TypeError, ValueError):
         pass
-    return TEAM_MAP.get(team_id, team_id)
+    if team_id in TEAM_MAP:
+        return TEAM_MAP[team_id]
+    logger.warning("map_team: ID de equipo no reconocido: %r", team_id)
+    return "Equipo desconocido"
 
 
 def map_position(position_id) -> str | int | None:

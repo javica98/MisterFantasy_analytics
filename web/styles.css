@@ -334,6 +334,18 @@ h3 {
 
 .table { display: grid; }
 
+/* Recorta con puntos suspensivos en vez de desbordar cuando la columna se
+   encoge (nombres largos en las tablas de 3-4 columnas del Home: Top
+   clausulazos/fichajes). No se aplica a la tabla de clasificacion
+   -Rango/Manager/Puntos-, que tiene una columna ancha y deja que el
+   nombre haga wrap en dos lineas en vez de truncarse. */
+.table-row.compact span,
+.table-row.compact strong {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .table-row {
   display: grid;
   grid-template-columns: 60px minmax(160px, 1fr) 100px;
@@ -413,6 +425,10 @@ h3 {
 
 .metric-grid {
   grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.grid-2 {
+  grid-template-columns: 1fr 1fr;
 }
 
 .stats-grid {
@@ -920,6 +936,7 @@ h3 {
   .home-grid,
   .metric-grid,
   .news-grid,
+  .grid-2,
   .player-duo {
     grid-template-columns: 1fr;
   }
