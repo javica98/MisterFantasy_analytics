@@ -1,14 +1,4 @@
-"""Local NumPy embedding index for newspaper memories.
-
-Modelo de embeddings: EmbeddingGemma de Google (ADR-006), ejecutado en local
-via sentence-transformers — mismo patrón offline/gratuito del ADR-004
-original, solo que con pesos de Google en vez de un modelo de la comunidad.
-Requiere aceptar la licencia Gemma en Hugging Face y un HF_TOKEN para la
-primera descarga (se cachea en disco después). Si la descarga falla,
-retrieve_relevant_memories() cae automáticamente a búsqueda por palabras
-clave (ver src/memory/memory_store.py), así que un token ausente o inválido
-degrada el RAG en vez de romper el pipeline.
-"""
+"""Local NumPy embedding index for newspaper memories."""
 
 from __future__ import annotations
 
@@ -24,7 +14,7 @@ from src.memory.memory_store import DEFAULT_MEMORY_PATH, read_memories
 
 DEFAULT_EMBEDDINGS_PATH = Path("newspaper/memory/embeddings.npy")
 DEFAULT_INDEX_PATH = Path("newspaper/memory/embedding_index.json")
-DEFAULT_EMBEDDING_MODEL = "google/embeddinggemma-300m"
+DEFAULT_EMBEDDING_MODEL = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
 
 
 def rebuild_embedding_index(

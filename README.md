@@ -26,7 +26,7 @@ graph TD
 
     D -->|run_newspaper.py| P[Portadas en paralelo: CLIP + Bing, con cache]
     P --> G[newspaper/photos/*.jpg]
-    D -->|run_newspaper.py| E{OrchestratorAgent Gemini}
+    D -->|run_newspaper.py| E{OrchestratorAgent Groq}
     E -->|WriterAgent Gemini 2.5 Flash| F[newspaper/json/*.json]
     F & G -->|generate_pdf.py| H[newspaper/new/*.png]
 
@@ -90,7 +90,7 @@ cp config/.env.example config/.env
 # Editar config/.env con tus API keys
 ```
 
-Variables necesarias: `GEMINI_API_KEY` (opcional: `HF_TOKEN` para la primera descarga del modelo de embeddings del RAG)
+Variables necesarias: `GROQ_API_KEY`, `GEMINI_API_KEY`
 
 ### 3. Ejecutar el pipeline completo
 
@@ -141,18 +141,16 @@ Ver [`docs/tests.md`](docs/tests.md) para el detalle de cada fichero de test y l
 | Scraping | Playwright |
 | Datos | pandas, numpy |
 | Agentes LLM | Strands Agent Framework |
-| Orchestrator LLM | Google Gemini 2.5 Flash-Lite |
+| Orchestrator LLM | Groq — Llama 3.3 70B |
 | Writer LLM | Google Gemini 2.5 Flash |
 | Clasificación de fotos | CLIP (clip-ViT-B-32) |
 | Búsqueda de fotos | Bing Image Search |
-| RAG embeddings | Google EmbeddingGemma (`embeddinggemma-300m`), local vía sentence-transformers |
+| RAG embeddings | sentence-transformers (paraphrase-multilingual-MiniLM-L12-v2) |
 | Validación de esquemas | Pydantic v2 |
 | Visualización | matplotlib, reportlab |
 | Web App | HTML/CSS/JS estático |
 | Tests | pytest |
 | Linter | ruff |
-
-Todos los LLMs y el RAG usan tecnología de Google (ADR-006) ejecutada donde ya corría el pipeline (GitHub Actions / mini PC), sin migrar infraestructura a Google Cloud. CLIP y Bing quedan fuera de este cambio: no son LLMs ni parte del RAG.
 
 ---
 

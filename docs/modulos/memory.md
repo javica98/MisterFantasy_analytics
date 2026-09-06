@@ -2,7 +2,7 @@
 
 Proporciona memoria a largo plazo al periódico IA. Almacena eventos relevantes de ediciones pasadas y los recupera por similitud semántica para enriquecer el contexto del LLM.
 
-Ver [ADR-004](../adr/004-rag-memoria-periodico.md) para la decisión de arquitectura y [ADR-006](../adr/006-google-stack-llms-rag.md) para el modelo de embeddings.
+Ver [ADR-004](../adr/004-rag-memoria-periodico.md) para la decisión de arquitectura.
 
 ---
 
@@ -26,7 +26,7 @@ Gestiona el índice de vectores NumPy para búsqueda por similitud coseno.
 - `rebuild_embedding_index(...)` — reconstruye el índice desde `memories.jsonl`. Incremental: reutiliza vectores ya calculados para IDs conocidos.
 - `search_similar(query, top_k, ...)` — devuelve las K memorias más similares a la query (similitud coseno).
 
-**Modelo:** `google/embeddinggemma-300m` (ADR-006 — EmbeddingGemma de Google, local/offline, soporta español de forma nativa). Requiere `HF_TOKEN` en `config/.env` para la primera descarga (licencia Gemma en Hugging Face); si no está disponible, cae a búsqueda por palabras clave.
+**Modelo:** `paraphrase-multilingual-MiniLM-L12-v2` (soporta español de forma nativa)
 
 ### `memory_store.py`
 CRUD básico sobre `memories.jsonl`.

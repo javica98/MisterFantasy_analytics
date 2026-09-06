@@ -1,7 +1,7 @@
 # ADR-004: Sistema RAG local para memoria histórica del periódico
 
 **Fecha:** 2026-06  
-**Estado:** Aceptado (modelo de embeddings actualizado por [ADR-006](006-google-stack-llms-rag.md): `paraphrase-multilingual-MiniLM-L12-v2` → `google/embeddinggemma-300m`, mismo diseño local/offline/gratuito)
+**Estado:** Aceptado
 
 ---
 

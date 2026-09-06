@@ -63,7 +63,6 @@ nav:
     - ADR-003 · Pydantic v2 schema: adr/003-pydantic-v2-schema-validacion.md
     - ADR-004 · RAG local: adr/004-rag-memoria-periodico.md
     - ADR-005 · SQLite por temporada: adr/005-sqlite-temporada-activa.md
-    - ADR-006 · Stack Google (LLMs + RAG): adr/006-google-stack-llms-rag.md
 
 markdown_extensions:
   - admonition

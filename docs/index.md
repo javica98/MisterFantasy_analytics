@@ -34,7 +34,7 @@ graph TD
 
     D -->|run_newspaper.py| P[Portadas en paralelo · CLIP + Bing, con cache]
     P --> G[newspaper/photos/*.jpg]
-    D -->|run_newspaper.py| E{🤖 OrchestratorAgent · Gemini}
+    D -->|run_newspaper.py| E{🤖 OrchestratorAgent · Groq}
     E -->|WriterAgent · Gemini 2.5 Flash| F[newspaper/json/*.json]
     F & G -->|generate_pdf.py| H[newspaper/new/*.png]
 
@@ -74,11 +74,11 @@ python scripts/regenerate_app_data.py
 |---|---|
 | Scraping | Playwright |
 | Datos | pandas · numpy |
-| Orchestrator LLM | Google Gemini 2.5 Flash-Lite |
+| Orchestrator LLM | Groq — Llama 3.3 70B |
 | Writer LLM | Google Gemini 2.5 Flash |
 | Framework agentes | Strands |
 | Clasificación de fotos | CLIP (clip-ViT-B-32) |
-| RAG embeddings | Google EmbeddingGemma (`embeddinggemma-300m`), local |
+| RAG embeddings | sentence-transformers |
 | Validación esquemas | Pydantic v2 |
 | Visualización | matplotlib · reportlab |
 | Web App | HTML/CSS/JS estático |

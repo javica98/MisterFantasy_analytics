@@ -15,41 +15,37 @@ run_newspaper.py
       │         └─► run_image_pipeline()   (sin LLM: Bing + CLIP)
       │
       ▼
-OrchestratorAgent  (Gemini 2.5 Flash-Lite)
+OrchestratorAgent  (Groq — Llama 3.3 70B)
       │
       └──tool──► WriterAgent   (Gemini 2.5 Flash)
                       │
                       └─► genera JSON del periódico
 ```
 
-Las dos fotos de portada ya no son un tool call que el orquestador deba
-decidir invocar: se buscan en paralelo con Python plano (`_fetch_portada_image`,
+Las dos fotos de portada ya no son un tool call que Groq deba decidir
+invocar: se buscan en paralelo con Python plano (`_fetch_portada_image`,
 sin pasar por Gemini) antes de llamar al agente de texto, y se cachean por
 jugador+equipo para no repetir la búsqueda en Bing si el mismo MVP/fichaje
-vuelve a salir en portada otro día. El `OrchestratorAgent` ahora coordina
-únicamente al `WriterAgent`.
-
-> **ADR-006:** todos los LLMs del proyecto usan Gemini (Google), con dos
-> tiers según el rol — Flash-Lite para coordinar (rápido/barato), Flash
-> para escribir (calidad narrativa) — sustituyendo a Groq como orquestador.
+vuelve a salir en portada otro día. El `OrchestratorAgent` (Groq) ahora
+coordina únicamente al `WriterAgent`.
 
 ---
 
 ## Ficheros
 
 ### `orchestrator_agent.py`
-Coordina el texto (vía Gemini 2.5 Flash-Lite) y dispara la búsqueda de fotos en paralelo.
+Coordina el texto (vía Groq) y dispara la búsqueda de fotos en paralelo.
 
 **Función principal:** `run_orchestrator(prompt, portada_fichajes, portada_jornada, path_fichajes, path_jornada)`
 
 - `_fetch_portada_image()` busca cada foto con `run_image_pipeline` (sin
   LLM), lanzadas en paralelo con `ThreadPoolExecutor`, reutilizando una
   copia cacheada si el mismo jugador+equipo ya salió en portada antes
-- Crea el modelo con `strands.models.gemini.GeminiModel` (tier Flash-Lite)
+- Crea el modelo Groq con `LiteLLMModel`
 - Expone solo `run_writer` como tool de Strands
-- Si el orquestador no reproduce el JSON de cards en su respuesta, hace
-  fallback directo a `run_writer_agent(prompt)` (las fotos ya están listas
-  de antes, no se repite esa parte)
+- Si Groq no reproduce el JSON de cards en su respuesta, hace fallback
+  directo a `run_writer_agent(prompt)` (las fotos ya están listas de antes,
+  no se repite esa parte)
 - Devuelve el JSON final validado por Pydantic
 
 ### `writer_agent.py`
@@ -123,10 +119,8 @@ cards = run_orchestrator(
 ## Variables de entorno requeridas
 
 ```
-GEMINI_API_KEY  → para OrchestratorAgent, WriterAgent e ImageAgent
-HF_TOKEN        → opcional, solo para la primera descarga del modelo de
-                   embeddings del RAG (google/embeddinggemma-300m, ver
-                   src/memory/README.md)
+GROQ_API_KEY    → para OrchestratorAgent
+GEMINI_API_KEY  → para WriterAgent
 ```
 
 Ver `config/.env`

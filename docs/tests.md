@@ -218,7 +218,7 @@ Pipeline de punta a punta, organizado en 4 tramos.
 | Tramo | Tests | Descripción |
 |-------|-------|-------------|
 | Tramo 1 | 5 | Datos reales de la temporada activa, vía `safe_read_csv` (sin mocks) |
-| Tramo 2 | 8 | Pipeline IA con Gemini mockeado (incluye los reintentos de `run_writer_agent`) |
+| Tramo 2 | 8 | Pipeline IA con Groq/Gemini mockeados (incluye los reintentos de `run_writer_agent`) |
 | Tramo 3 | 8 | Sistema RAG con modelo de embeddings falso |
 | Tramo 4 | 2 | Pipeline completo encadenado + idempotencia |
 

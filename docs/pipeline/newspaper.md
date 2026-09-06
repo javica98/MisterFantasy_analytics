@@ -17,7 +17,7 @@ graph TD
         Cache -->|no| Pipe
     end
 
-    subgraph Orchestrator["🎯 OrchestratorAgent · Gemini 2.5 Flash-Lite"]
+    subgraph Orchestrator["🎯 OrchestratorAgent · Groq Llama 3.3 70B"]
         T1["tool: run_writer"]
     end
 
@@ -30,7 +30,7 @@ graph TD
     T1 --> Writer
 ```
 
-Las fotos de portada ya no son un tool call que el orquestador deba decidir invocar
+Las fotos de portada ya no son un tool call que Groq deba decidir invocar
 — se buscan en paralelo antes de arrancar el `OrchestratorAgent`, con
 `run_image_pipeline()` (la misma cadena search→evaluate→download pero sin
 LLM), y se cachean por jugador+equipo para no repetir la búsqueda en Bing

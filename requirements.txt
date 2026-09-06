@@ -30,11 +30,11 @@ sentence-transformers==5.5.0
 sentencepiece==0.2.2
 
 # ── AI agents ─────────────────────────────────────────────────────────────────
-# Solo Gemini (ADR-006): OrchestratorAgent, WriterAgent e ImageAgent usan
-# strands.models.gemini, sin necesitar litellm ni un cliente de Groq aparte.
 strands-agents==1.38.0
 strands-agents-tools==0.5.2
 google-genai==1.75.0
+groq==1.2.0
+litellm==1.85.0
 
 # ── Config & utils ────────────────────────────────────────────────────────────
 python-dotenv==1.2.2
