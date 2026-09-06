@@ -1,0 +1,88 @@
+{
+  "cards": [
+    {
+      "tipo": "clasificacion",
+      "jugador": null,
+      "manager": null,
+      "puntos": null,
+      "dinero": null,
+      "equipo": null,
+      "titulo": "¡DANI INSACIABLE, EL REY ABSOLUTO DE LA SOTANO LEAGUE!",
+      "subtitulo": "¡Maldinillo 💥 DESPIERTA Y AMENAZA AL TRONO!",
+      "texto": [
+        "Dani se consolida en la cima con 409 puntos, ¡una máquina imparable que no perdona!",
+        "Maldinillo 💥, el fénix de la jornada, escala a la quinta posición general y se proclama segundo en la jornada, ¡su resurgir es real!",
+        "¡La lucha por el podio arde! Los Marinero y De la Guettir FC no bajan los brazos, mientras Libre se hunde en el abismo de la tabla."
+      ]
+    },
+    {
+      "tipo": "rumor",
+      "jugador": null,
+      "manager": null,
+      "puntos": null,
+      "dinero": null,
+      "equipo": null,
+      "titulo": "¡ESCÁNDALO EN EL VESTUARIO!",
+      "subtitulo": "¡UN MANAGER AL BORDE DE LA LOCURA!",
+      "texto": [
+        "Se rumorea que un manager de la liga ha sido visto hablando solo con su once inicial, ¡culpándolos de sus derrotas y prometiéndoles 'más banquillo'!"
+      ]
+    },
+    {
+      "tipo": "MVP de la jornada",
+      "jugador": "Pedri",
+      "manager": "Maldinillo 💥",
+      "puntos": 12.0,
+      "dinero": null,
+      "equipo": "FC Barcelona",
+      "titulo": "¡PEDRI, EL MAGO QUE DESPIERTA A MALDINILLO 💥!",
+      "subtitulo": "¡12 PUNTOS DE ORO PARA EL RESURGIR!",
+      "texto": [
+        "Pedri, la joya del FC Barcelona, irrumpe con 12 puntos estelares, ¡catapultando a Maldinillo 💥 a la segunda posición de la jornada!",
+        "¡El manager de la quinta posición general demuestra que su ambición no tiene límites y que va a por todas!"
+      ]
+    },
+    {
+      "tipo": "MVP de la jornada",
+      "jugador": "R. Vargas",
+      "manager": "Jotabetrbb",
+      "puntos": 11.0,
+      "dinero": null,
+      "equipo": "Sevilla FC",
+      "titulo": "¡VARGAS, EL HÉROE SILENCIOSO DE JOTABETRBB!",
+      "subtitulo": "¡11 PUNTOS QUE REANIMAN LA ESPERANZA!",
+      "texto": [
+        "R. Vargas, el gladiador del Sevilla FC, entrega 11 puntos cruciales para Jotabetrbb, ¡un soplo de aire fresco en la jornada!",
+        "El manager, en la sexta posición general, se aferra a la quinta plaza de la jornada, ¡luchando con uñas y dientes!"
+      ]
+    },
+    {
+      "tipo": "MVP de la jornada",
+      "jugador": "T. Buchanan",
+      "manager": "Juanba",
+      "puntos": 11.0,
+      "dinero": null,
+      "equipo": "Villarreal CF",
+      "titulo": "¡BUCHANAN, LA SORPRESA QUE ELEVA A JUANBA!",
+      "subtitulo": "¡11 PUNTOS QUE SACUDEN LA TABLA!",
+      "texto": [
+        "T. Buchanan, el inesperado crack del Villarreal CF, explota con 11 puntos, ¡impulsando a Juanba al tercer puesto de la jornada!",
+        "El manager, en la séptima posición general, da un golpe sobre la mesa, ¡demostrando que aún tiene mucho que decir!"
+      ]
+    },
+    {
+      "tipo": "Peor actuación de la jornada",
+      "jugador": "C. Azpilicueta",
+      "manager": "Jotabetrbb",
+      "puntos": 0.0,
+      "dinero": null,
+      "equipo": "Sevilla FC",
+      "titulo": "¡AZPILICUETA, EL 'CRACK' QUE SE DESINFLA!",
+      "subtitulo": "¡JOTABETRBB SUFRE UN CERO INESPERADO!",
+      "texto": [
+        "C. Azpilicueta, el veterano del Sevilla FC, protagoniza la peor actuación con un desolador 0, ¡un varapalo para Jotabetrbb!",
+        "El manager de la sexta posición general ve cómo su jornada se tambalea, ¡la presión es máxima!"
+      ]
+    }
+  ]
+}

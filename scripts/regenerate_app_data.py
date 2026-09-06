@@ -425,7 +425,13 @@ def build_news(news_json_dir: Path) -> list:
     articles_dir = news_json_dir / "articles"
     cards_dir = news_json_dir / "cards"
 
-    json_files = sorted(articles_dir.glob("jornada_*_json.json"), reverse=True)
+    # Orden numerico por jornada, no alfabetico -> "jornada_9" ordenaba
+    # despues de "jornada_38" al comparar como texto ("9" > "3").
+    json_files = sorted(
+        articles_dir.glob("jornada_*_json.json"),
+        key=lambda f: int(f.stem.split("_")[1]),
+        reverse=True,
+    )
 
     for jf in json_files:
         jornada_stem = jf.stem.replace("_json", "")  # jornada_18

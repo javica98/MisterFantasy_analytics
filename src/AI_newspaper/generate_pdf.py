@@ -57,6 +57,11 @@ def create_clasification_card_horizontal(clasificacion_json,PATH_UTILS,width,hei
     )
 
     n = len(equipos)
+    if n == 0:
+        # Jornada sin clasificacion acumulada todavia (ej. la primera de la
+        # temporada, si la tabla de clasificaciones no tiene snapshot para
+        # ella) -> tarjeta vacia en vez de reventar por division entre cero.
+        return Image.new("RGBA", (width, height), (0, 0, 0, 100))
     col_w = width // n
 
     # --- 2. Crear canvas ---

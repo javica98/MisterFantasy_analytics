@@ -11,6 +11,10 @@ config/.env
 data/
 archive/
 newspaper/
+# Excepcion: el carrusel de jornadas de la web usa esta portada como fondo
+# (ver Dockerfile.web) — el resto de newspaper/ (paginas, memoria RAG) no
+# hace falta para servir la web y no se copia a la imagen.
+!newspaper/photos/Portada_Jornada.jpg
 dashboards/reports/
 docs/
 eda/

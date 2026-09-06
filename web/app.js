@@ -498,7 +498,14 @@ function renderNews() {
   if (!state.selectedSeason || !seasons.includes(state.selectedSeason)) {
     state.selectedSeason = state.data.activeSeason || seasons[0] || null;
   }
-  const issues = (state.data.newsBySeason || {})[state.selectedSeason] || state.data.news || [];
+  const issuesSource = (state.data.newsBySeason || {})[state.selectedSeason] || state.data.news || [];
+  // Timeline en orden ascendente por numero de jornada (J1 -> J38), no el
+  // orden "mas reciente primero" que usa el backend para otras cosas.
+  const issues = [...issuesSource].sort((a, b) => {
+    const na = parseInt(String(a.date).match(/\d+/)?.[0] ?? 0, 10);
+    const nb = parseInt(String(b.date).match(/\d+/)?.[0] ?? 0, 10);
+    return na - nb;
+  });
   const selected = issues[state.selectedIssue] || issues[0];
 
   const seasonSelectHtml = seasons.length > 1 ? `
@@ -543,8 +550,13 @@ function renderNews() {
               role="tab"
               aria-selected="${issue.date === selected.date}"
               title="${escapeAttr(issue.title)}"
-              style="background-image:url('/newspaper/photos/Portada_Jornada.jpg')"
             >
+              <img
+                class="jornada-cover"
+                src="${jornadaPortadaUrl(state.selectedSeason, issue.date)}"
+                alt=""
+                onerror="this.onerror=null; this.src='/newspaper/photos/Portada_Jornada.jpg';"
+              >
               <span class="jornada-dot"></span>
               <span class="jornada-label">${escapeHtml(issue.date)}</span>
             </button>
@@ -723,6 +735,21 @@ function playerAvatar(name, size = 36) {
   }
   // Fallback: iniciales
   return `<span style="display:inline-flex;align-items:center;justify-content:center;width:${size}px;height:${size}px;border-radius:50%;background:#1e1e1e;border:1px solid #2a2a2a;font-family:var(--mono);font-size:${Math.round(size*0.35)}px;font-weight:700;color:#888;flex-shrink:0;">${initials(name)}</span>`;
+}
+
+function jornadaPortadaUrl(season, dateLabel) {
+  const match = String(dateLabel).match(/\d+/);
+  if (!match) return "/newspaper/photos/Portada_Jornada.jpg";
+  // activeSeason en los datos es un campo heredado que no siempre refleja
+  // cual es la temporada realmente en curso (puede quedar desactualizado
+  // sin regenerar el resto de app-data.json). "seasons" sí es fiable: viene
+  // ordenado ascendente, así que la última es la temporada en curso — esa
+  // es la única que escribe en newspaper/new/ en vivo, el resto vive en
+  // archive/temporada_{season}/newspaper/new/.
+  const seasons = state.data.seasons || [];
+  const isLiveSeason = season === seasons[seasons.length - 1];
+  const base = isLiveSeason ? "/newspaper/new" : `/archive/temporada_${season}/newspaper/new`;
+  return `${base}/jornada_${match[0]}_jornada_news.png`;
 }
 
 function managerAvatar(name, size = 60) {

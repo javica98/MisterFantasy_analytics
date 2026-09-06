@@ -1,0 +1,88 @@
+{
+  "cards": [
+    {
+      "tipo": "clasificacion",
+      "jugador": null,
+      "manager": null,
+      "puntos": null,
+      "dinero": null,
+      "equipo": null,
+      "titulo": "¡DANI RESISTE AL FRENTE, PERO MALDINILLO RUGE!",
+      "subtitulo": "¡La SOTANO LEAGUE al ROJO VIVO! ¡El bicampeón tiembla!",
+      "texto": [
+        "Dani se aferra al liderato con uñas y dientes, pero la presión de sus perseguidores es insoportable.",
+        "¡Maldinillo 💥 desata la furia! ¡Jornada espectacular que lo catapulta hacia la cima!",
+        "Libre sigue hundiéndose en el pozo, sin atisbos de salvación en esta liga de titanes."
+      ]
+    },
+    {
+      "tipo": "rumor",
+      "jugador": null,
+      "manager": null,
+      "puntos": null,
+      "dinero": null,
+      "equipo": null,
+      "titulo": "¡BOMBAZO EN LA SOTANO LEAGUE!",
+      "subtitulo": "¡Un manager, pillado in fraganti!",
+      "texto": [
+        "Fuentes cercanas a la liga aseguran que uno de nuestros managers estrella ha sido visto intentando amaestrar palomas mensajeras para enviar sus ofertas de fichajes."
+      ]
+    },
+    {
+      "tipo": "MVP de la jornada",
+      "jugador": "R. Lewandowski",
+      "manager": "Maldinillo 💥",
+      "puntos": 20.0,
+      "dinero": null,
+      "equipo": "FC Barcelona",
+      "titulo": "¡LEWANDOWSKI DESATA LA LOCURA!",
+      "subtitulo": "¡Maldinillo 💥 se dispara con un MVP de ÉLITE!",
+      "texto": [
+        "¡20 puntos de oro puro! ¡Lewandowski catapulta a Maldinillo 💥 a la cima de la jornada!",
+        "El 'killer' polaco demuestra por qué es una joya, ¡poniendo a su manager en la órbita del título!"
+      ]
+    },
+    {
+      "tipo": "MVP de la jornada",
+      "jugador": "S. Carreira",
+      "manager": "Chamacónicos",
+      "puntos": 13.0,
+      "dinero": null,
+      "equipo": "RC Celta de Vigo",
+      "titulo": "¡CARREIRA, EL HÉROE SILENCIOSO!",
+      "subtitulo": "¡Chamacónicos escala posiciones con un golpe de autoridad!",
+      "texto": [
+        "¡13 puntos cruciales! S. Carreira emerge como el baluarte de Chamacónicos en una jornada de infarto.",
+        "El Celta se convierte en el aliado perfecto para un manager que no deja de soñar con la gloria."
+      ]
+    },
+    {
+      "tipo": "MVP de la jornada",
+      "jugador": "C. Hernández",
+      "manager": "Dani",
+      "puntos": 11.0,
+      "dinero": null,
+      "equipo": "Real Betis Balompié",
+      "titulo": "¡DANI SE MANTIENE A FLOTE!",
+      "subtitulo": "¡C. Hernández evita el naufragio del bicampeón!",
+      "texto": [
+        "¡11 puntos que saben a gloria! C. Hernández rescata a Dani en una jornada de máxima tensión.",
+        "El líder aprieta los dientes y demuestra que, incluso en la adversidad, sus estrellas responden."
+      ]
+    },
+    {
+      "tipo": "Peor actuación de la jornada",
+      "jugador": "A. Silva",
+      "manager": "Juanba",
+      "puntos": 0.0,
+      "dinero": null,
+      "equipo": "Elche CF",
+      "titulo": "¡FRACASO ABSOLUTO EN ELCHE!",
+      "subtitulo": "¡A. Silva hunde a Juanba en el abismo de la jornada!",
+      "texto": [
+        "¡CERO puntos! A. Silva protagoniza el fiasco de la jornada, dejando a Juanba en la cola.",
+        "Elche se convierte en el escenario de una debacle que castiga sin piedad al manager."
+      ]
+    }
+  ]
+}

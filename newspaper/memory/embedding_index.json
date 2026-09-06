@@ -1,0 +1,4833 @@
+{
+  "model_name": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+  "memory_path": "newspaper\\memory\\memories.jsonl",
+  "embeddings_path": "newspaper\\memory\\embeddings.npy",
+  "count": 536,
+  "dimension": 384,
+  "items": [
+    {
+      "row": 0,
+      "id": "6d474aa5ae653067",
+      "fecha": "2025-11-16",
+      "category": "venta",
+      "manager": "Maldinillo 💥",
+      "player": "Aymeric Laporte",
+      "importance": 4
+    },
+    {
+      "row": 1,
+      "id": "9603321cbb7c6ed2",
+      "fecha": "2025-11-16",
+      "category": "fichaje",
+      "manager": "Dani",
+      "player": "Borja Mayoral",
+      "importance": 3
+    },
+    {
+      "row": 2,
+      "id": "ceba7aebced66f2d",
+      "fecha": "2025-11-16",
+      "category": "fichaje",
+      "manager": "Libre",
+      "player": "Borja Mayoral",
+      "importance": 3
+    },
+    {
+      "row": 3,
+      "id": "0d3ef8434c042ce5",
+      "fecha": "2025-11-17",
+      "category": "fichaje",
+      "manager": "Dani",
+      "player": "Sofyan Amrabat",
+      "importance": 3
+    },
+    {
+      "row": 4,
+      "id": "1536208a994b89f6",
+      "fecha": "2025-11-17",
+      "category": "venta",
+      "manager": "Chamacónicos",
+      "player": "Moi Gómez",
+      "importance": 3
+    },
+    {
+      "row": 5,
+      "id": "684b05784bcf87b3",
+      "fecha": "2025-11-17",
+      "category": "venta",
+      "manager": "Maldinillo 💥",
+      "player": "Adrián Liso",
+      "importance": 3
+    },
+    {
+      "row": 6,
+      "id": "ab4a61669c59ef38",
+      "fecha": "2025-11-17",
+      "category": "fichaje",
+      "manager": "Los marinero",
+      "player": "Sofyan Amrabat",
+      "importance": 3
+    },
+    {
+      "row": 7,
+      "id": "e66cee1f4f54a9d0",
+      "fecha": "2025-11-17",
+      "category": "fichaje",
+      "manager": "Chamacónicos",
+      "player": "Sofyan Amrabat",
+      "importance": 3
+    },
+    {
+      "row": 8,
+      "id": "082d19437e4f36ef",
+      "fecha": "2025-11-18",
+      "category": "fichaje",
+      "manager": "Jotabetrbb",
+      "player": "André Almeida",
+      "importance": 3
+    },
+    {
+      "row": 9,
+      "id": "08f548251cdcde08",
+      "fecha": "2025-11-18",
+      "category": "fichaje",
+      "manager": "Dani",
+      "player": "Borja Iglesias",
+      "importance": 4
+    },
+    {
+      "row": 10,
+      "id": "7135518ba473bb79",
+      "fecha": "2025-11-18",
+      "category": "venta",
+      "manager": "Dani",
+      "player": "Ronald Araújo",
+      "importance": 4
+    },
+    {
+      "row": 11,
+      "id": "78398731139438a1",
+      "fecha": "2025-11-18",
+      "category": "fichaje",
+      "manager": "Libre",
+      "player": "André Almeida",
+      "importance": 3
+    },
+    {
+      "row": 12,
+      "id": "ccb4a775ef819016",
+      "fecha": "2025-11-18",
+      "category": "venta",
+      "manager": "Los marinero",
+      "player": "Alejandro Balde",
+      "importance": 4
+    },
+    {
+      "row": 13,
+      "id": "f2cb0ff9f7abc419",
+      "fecha": "2025-11-18",
+      "category": "fichaje",
+      "manager": "Libre",
+      "player": "Borja Iglesias",
+      "importance": 3
+    },
+    {
+      "row": 14,
+      "id": "0c522c0eec9f1923",
+      "fecha": "2025-11-19",
+      "category": "fichaje",
+      "manager": "Dani",
+      "player": "Isco",
+      "importance": 3
+    },
+    {
+      "row": 15,
+      "id": "171c6246ddbf895f",
+      "fecha": "2025-11-19",
+      "category": "fichaje",
+      "manager": "Chamacónicos",
+      "player": "Isco",
+      "importance": 3
+    },
+    {
+      "row": 16,
+      "id": "17c9d01455a762ad",
+      "fecha": "2025-11-19",
+      "category": "fichaje",
+      "manager": "MuchaSalsa",
+      "player": "Isco",
+      "importance": 3
+    },
+    {
+      "row": 17,
+      "id": "1935db22e35cc971",
+      "fecha": "2025-11-19",
+      "category": "venta",
+      "manager": "MuchaSalsa",
+      "player": "Akor Adams",
+      "importance": 5
+    },
+    {
+      "row": 18,
+      "id": "29a00231bef0b02d",
+      "fecha": "2025-11-19",
+      "category": "fichaje",
+      "manager": "Jotabetrbb",
+      "player": "José Luis Gayà",
+      "importance": 3
+    },
+    {
+      "row": 19,
+      "id": "4349a6161a85b05a",
+      "fecha": "2025-11-19",
+      "category": "fichaje",
+      "manager": "Dani",
+      "player": "José Luis Gayà",
+      "importance": 3
+    },
+    {
+      "row": 20,
+      "id": "4eba36e1981d037b",
+      "fecha": "2025-11-19",
+      "category": "fichaje",
+      "manager": "Chamacónicos",
+      "player": "José Luis Gayà",
+      "importance": 3
+    },
+    {
+      "row": 21,
+      "id": "5df31b227906775d",
+      "fecha": "2025-11-19",
+      "category": "fichaje",
+      "manager": "Chamacónicos",
+      "player": "Marash Kumbulla",
+      "importance": 3
+    },
+    {
+      "row": 22,
+      "id": "92653d84d0317837",
+      "fecha": "2025-11-19",
+      "category": "fichaje",
+      "manager": "Maldinillo 💥",
+      "player": "Isco",
+      "importance": 4
+    },
+    {
+      "row": 23,
+      "id": "9466a3768bb6ee5e",
+      "fecha": "2025-11-19",
+      "category": "venta",
+      "manager": "Maldinillo 💥",
+      "player": "Thiago Almada",
+      "importance": 3
+    },
+    {
+      "row": 24,
+      "id": "9680ce28f7202835",
+      "fecha": "2025-11-19",
+      "category": "venta",
+      "manager": "Libre",
+      "player": "Jon Moncayola",
+      "importance": 3
+    },
+    {
+      "row": 25,
+      "id": "9d77a79f2243d088",
+      "fecha": "2025-11-19",
+      "category": "fichaje",
+      "manager": "Libre",
+      "player": "Mauro Arambarri",
+      "importance": 3
+    },
+    {
+      "row": 26,
+      "id": "a169130e0e8228ca",
+      "fecha": "2025-11-19",
+      "category": "clausulazo",
+      "manager": "Chamacónicos",
+      "player": "Akor Adams",
+      "importance": 5
+    },
+    {
+      "row": 27,
+      "id": "b9ed53881edea0fb",
+      "fecha": "2025-11-19",
+      "category": "venta",
+      "manager": "Libre",
+      "player": "Juan Iglesias",
+      "importance": 3
+    },
+    {
+      "row": 28,
+      "id": "dede6e2e5f41e5fd",
+      "fecha": "2025-11-19",
+      "category": "fichaje",
+      "manager": "Libre",
+      "player": "Isco",
+      "importance": 3
+    },
+    {
+      "row": 29,
+      "id": "f136b3818f975b80",
+      "fecha": "2025-11-19",
+      "category": "venta",
+      "manager": "Dani",
+      "player": "Marc Bartra",
+      "importance": 4
+    },
+    {
+      "row": 30,
+      "id": "080cc7630e2d768b",
+      "fecha": "2025-11-20",
+      "category": "venta",
+      "manager": "Chamacónicos",
+      "player": "Javier López",
+      "importance": 5
+    },
+    {
+      "row": 31,
+      "id": "19924364aa07cba3",
+      "fecha": "2025-11-20",
+      "category": "clausulazo",
+      "manager": "Los marinero",
+      "player": "Matteo Ruggeri",
+      "importance": 5
+    },
+    {
+      "row": 32,
+      "id": "268f58a48d4c47d7",
+      "fecha": "2025-11-20",
+      "category": "venta",
+      "manager": "De la Guettir FC",
+      "player": "Nacho Vidal",
+      "importance": 3
+    },
+    {
+      "row": 33,
+      "id": "5adbeac97f0c375a",
+      "fecha": "2025-11-20",
+      "category": "venta",
+      "manager": "Chamacónicos",
+      "player": "Viktor Tsygankov",
+      "importance": 3
+    },
+    {
+      "row": 34,
+      "id": "82b50589abf36a01",
+      "fecha": "2025-11-20",
+      "category": "venta",
+      "manager": "Jotabetrbb",
+      "player": "Matteo Ruggeri",
+      "importance": 5
+    },
+    {
+      "row": 35,
+      "id": "d04b2a34e911f5c0",
+      "fecha": "2025-11-20",
+      "category": "venta",
+      "manager": "Maldinillo 💥",
+      "player": "Mario Martín",
+      "importance": 3
+    },
+    {
+      "row": 36,
+      "id": "d221ed3c1595d008",
+      "fecha": "2025-11-20",
+      "category": "clausulazo",
+      "manager": "Jotabetrbb",
+      "player": "Javier López",
+      "importance": 5
+    },
+    {
+      "row": 37,
+      "id": "03a63f0e47769004",
+      "fecha": "2025-11-21",
+      "category": "fichaje",
+      "manager": "Maldinillo 💥",
+      "player": "Moussa Diarra",
+      "importance": 3
+    },
+    {
+      "row": 38,
+      "id": "03df10615bbd366d",
+      "fecha": "2025-11-21",
+      "category": "venta",
+      "manager": "Dani",
+      "player": "Vedat Muriqi",
+      "importance": 4
+    },
+    {
+      "row": 39,
+      "id": "1d7d31d25c9aee15",
+      "fecha": "2025-11-21",
+      "category": "venta",
+      "manager": "Maldinillo 💥",
+      "player": "Rafa Mir",
+      "importance": 3
+    },
+    {
+      "row": 40,
+      "id": "263a1da087bbf161",
+      "fecha": "2025-11-21",
+      "category": "fichaje",
+      "manager": "MuchaSalsa",
+      "player": "Gerard Moreno",
+      "importance": 3
+    },
+    {
+      "row": 41,
+      "id": "2ecd5c58de4f90a4",
+      "fecha": "2025-11-21",
+      "category": "fichaje",
+      "manager": "Dani",
+      "player": "Gerard Moreno",
+      "importance": 3
+    },
+    {
+      "row": 42,
+      "id": "69ab67d62d7c5a79",
+      "fecha": "2025-11-21",
+      "category": "venta",
+      "manager": "Chamacónicos",
+      "player": "Íñigo Lekue",
+      "importance": 3
+    },
+    {
+      "row": 43,
+      "id": "ad1ad81295f23535",
+      "fecha": "2025-11-21",
+      "category": "fichaje",
+      "manager": "Libre",
+      "player": "Gerard Moreno",
+      "importance": 3
+    },
+    {
+      "row": 44,
+      "id": "d2ba2218db0ecf03",
+      "fecha": "2025-11-21",
+      "category": "venta",
+      "manager": "Dani",
+      "player": "Borja Mayoral",
+      "importance": 4
+    },
+    {
+      "row": 45,
+      "id": "d2d865c293ad813a",
+      "fecha": "2025-11-21",
+      "category": "fichaje",
+      "manager": "Dani",
+      "player": "Pablo Barrios",
+      "importance": 4
+    },
+    {
+      "row": 46,
+      "id": "d420b8f3e7bf06f2",
+      "fecha": "2025-11-21",
+      "category": "fichaje",
+      "manager": "Maldinillo 💥",
+      "player": "Gerard Moreno",
+      "importance": 3
+    },
+    {
+      "row": 47,
+      "id": "da044e625650e147",
+      "fecha": "2025-11-21",
+      "category": "fichaje",
+      "manager": "Jotabetrbb",
+      "player": "Gerard Moreno",
+      "importance": 3
+    },
+    {
+      "row": 48,
+      "id": "19d026d8a4b0f52e",
+      "fecha": "2025-11-22",
+      "category": "venta",
+      "manager": "Dani",
+      "player": "Dávid Hancko",
+      "importance": 3
+    },
+    {
+      "row": 49,
+      "id": "23adb7bd15ce311a",
+      "fecha": "2025-11-22",
+      "category": "fichaje",
+      "manager": "Dani",
+      "player": "Trent Alexander-Arnold",
+      "importance": 3
+    },
+    {
+      "row": 50,
+      "id": "25968f08ccc4c37a",
+      "fecha": "2025-11-22",
+      "category": "venta",
+      "manager": "Dani",
+      "player": "Pepelu",
+      "importance": 3
+    },
+    {
+      "row": 51,
+      "id": "38758a13e2a2e071",
+      "fecha": "2025-11-22",
+      "category": "fichaje",
+      "manager": "Los marinero",
+      "player": "Valentín Gómez",
+      "importance": 3
+    },
+    {
+      "row": 52,
+      "id": "4026408a27915d2f",
+      "fecha": "2025-11-22",
+      "category": "venta",
+      "manager": "Libre",
+      "player": "Antonio Blanco",
+      "importance": 3
+    },
+    {
+      "row": 53,
+      "id": "e2e137d3825be606",
+      "fecha": "2025-11-22",
+      "category": "venta",
+      "manager": "Dani",
+      "player": "Clemens Riedel",
+      "importance": 3
+    },
+    {
+      "row": 54,
+      "id": "41cb40674131fed1",
+      "fecha": "2025-11-23",
+      "category": "fichaje",
+      "manager": "Jotabetrbb",
+      "player": "David Costas",
+      "importance": 3
+    },
+    {
+      "row": 55,
+      "id": "1a6ad6af2db80dcc",
+      "fecha": "2025-11-24",
+      "category": "fichaje",
+      "manager": "Maldinillo 💥",
+      "player": "Adrián de la Fuente",
+      "importance": 3
+    },
+    {
+      "row": 56,
+      "id": "3c4d26af575c3c32",
+      "fecha": "2025-11-24",
+      "category": "venta",
+      "manager": "Maldinillo 💥",
+      "player": "Moussa Diarra",
+      "importance": 3
+    },
+    {
+      "row": 57,
+      "id": "b16ccfeca6ddea04",
+      "fecha": "2025-11-24",
+      "category": "fichaje",
+      "manager": "Maldinillo 💥",
+      "player": "Frenkie De Jong",
+      "importance": 3
+    },
+    {
+      "row": 58,
+      "id": "c1d2d448c4a2ab26",
+      "fecha": "2025-11-24",
+      "category": "fichaje",
+      "manager": "Dani",
+      "player": "Frenkie De Jong",
+      "importance": 4
+    },
+    {
+      "row": 59,
+      "id": "d255b6b43ff8805f",
+      "fecha": "2025-11-24",
+      "category": "fichaje",
+      "manager": "Jotabetrbb",
+      "player": "Diego López",
+      "importance": 3
+    },
+    {
+      "row": 60,
+      "id": "d7fc16f1e38f12e2",
+      "fecha": "2025-11-24",
+      "category": "fichaje",
+      "manager": "Maldinillo 💥",
+      "player": "Arnau Martínez",
+      "importance": 3
+    },
+    {
+      "row": 61,
+      "id": "e44a248cdcea8748",
+      "fecha": "2025-11-24",
+      "category": "fichaje",
+      "manager": "Los marinero",
+      "player": "Diego López",
+      "importance": 3
+    },
+    {
+      "row": 62,
+      "id": "2038797a9953497e",
+      "fecha": "2025-11-25",
+      "category": "venta",
+      "manager": "Maldinillo 💥",
+      "player": "Juan Foyth",
+      "importance": 4
+    },
+    {
+      "row": 63,
+      "id": "76b43c8efaa49a75",
+      "fecha": "2025-11-25",
+      "category": "fichaje",
+      "manager": "Libre",
+      "player": "Pau Cubarsi",
+      "importance": 3
+    },
+    {
+      "row": 64,
+      "id": "96be029d979d6d42",
+      "fecha": "2025-11-25",
+      "category": "fichaje",
+      "manager": "Libre",
+      "player": "Kike Barja",
+      "importance": 3
+    },
+    {
+      "row": 65,
+      "id": "9bb966a920d01bd9",
+      "fecha": "2025-11-25",
+      "category": "fichaje",
+      "manager": "Libre",
+      "player": "Abu Kamara",
+      "importance": 3
+    },
+    {
+      "row": 66,
+      "id": "9daadc4c27469a51",
+      "fecha": "2025-11-25",
+      "category": "fichaje",
+      "manager": "Maldinillo 💥",
+      "player": "Pau Cubarsi",
+      "importance": 4
+    },
+    {
+      "row": 67,
+      "id": "b1e373577043f8b6",
+      "fecha": "2025-11-25",
+      "category": "venta",
+      "manager": "Maldinillo 💥",
+      "player": "Pablo Maffeo",
+      "importance": 3
+    },
+    {
+      "row": 68,
+      "id": "c4c54057a8509410",
+      "fecha": "2025-11-25",
+      "category": "fichaje",
+      "manager": "Libre",
+      "player": "Giacomo Raspadori",
+      "importance": 3
+    },
+    {
+      "row": 69,
+      "id": "e15d8fd6c68006ef",
+      "fecha": "2025-11-25",
+      "category": "fichaje",
+      "manager": "Los marinero",
+      "player": "Roberto Fernández",
+      "importance": 3
+    },
+    {
+      "row": 70,
+      "id": "05414d7087015c52",
+      "fecha": "2025-11-26",
+      "category": "venta",
+      "manager": "Chamacónicos",
+      "player": "Héctor Bellerín",
+      "importance": 3
+    },
+    {
+      "row": 71,
+      "id": "06bcd8f8a0f9ab16",
+      "fecha": "2025-11-26",
+      "category": "venta",
+      "manager": "Los marinero",
+      "player": "Etta Eyong",
+      "importance": 4
+    },
+    {
+      "row": 72,
+      "id": "df94b6a117b0e4d0",
+      "fecha": "2025-11-26",
+      "category": "venta",
+      "manager": "Maldinillo 💥",
+      "player": "Adrián de la Fuente",
+      "importance": 3
+    },
+    {
+      "row": 73,
+      "id": "f1d4f38527a854c9",
+      "fecha": "2025-11-26",
+      "category": "fichaje",
+      "manager": "Maldinillo 💥",
+      "player": "Antonio Rüdiger",
+      "importance": 3
+    },
+    {
+      "row": 74,
+      "id": "ffc8eabe0968bb35",
+      "fecha": "2025-11-26",
+      "category": "venta",
+      "manager": "Dani",
+      "player": "Pablo Fornals",
+      "importance": 4
+    },
+    {
+      "row": 75,
+      "id": "67f3c69654c774b3",
+      "fecha": "2025-11-27",
+      "category": "venta",
+      "manager": "Juanba",
+      "player": "Gonçalo Guedes",
+      "importance": 5
+    },
+    {
+      "row": 76,
+      "id": "77cb15e25c373bc8",
+      "fecha": "2025-11-27",
+      "category": "venta",
+      "manager": "Los marinero",
+      "player": "Óscar Trejo",
+      "importance": 3
+    },
+    {
+      "row": 77,
+      "id": "800f51af4f5a4db8",
+      "fecha": "2025-11-27",
+      "category": "venta",
+      "manager": "Los marinero",
+      "player": "Pablo García",
+      "importance": 3
+    },
+    {
+      "row": 78,
+      "id": "afa3cd8921203ac8",
+      "fecha": "2025-11-27",
+      "category": "venta",
+      "manager": "Los marinero",
+      "player": "Yvan Neyou",
+      "importance": 3
+    },
+    {
+      "row": 79,
+      "id": "c6ed06297bd8cde8",
+      "fecha": "2025-11-27",
+      "category": "venta",
+      "manager": "Los marinero",
+      "player": "Nemanja Gudelj",
+      "importance": 3
+    },
+    {
+      "row": 80,
+      "id": "d38d5219a625fa89",
+      "fecha": "2025-11-27",
+      "category": "clausulazo",
+      "manager": "Los marinero",
+      "player": "Gonçalo Guedes",
+      "importance": 5
+    },
+    {
+      "row": 81,
+      "id": "e5cab6323484a70a",
+      "fecha": "2025-11-27",
+      "category": "venta",
+      "manager": "Los marinero",
+      "player": "Luka Sučić",
+      "importance": 3
+    },
+    {
+      "row": 82,
+      "id": "193a8ae2e189e32b",
+      "fecha": "2025-11-28",
+      "category": "fichaje",
+      "manager": "Chamacónicos",
+      "player": "Luiz Felipe",
+      "importance": 3
+    },
+    {
+      "row": 83,
+      "id": "2d4c64d9a3ec2e09",
+      "fecha": "2025-11-28",
+      "category": "venta",
+      "manager": "Jotabetrbb",
+      "player": "Tanguy Nianzou",
+      "importance": 3
+    },
+    {
+      "row": 84,
+      "id": "393d6181fae81d63",
+      "fecha": "2025-11-28",
+      "category": "venta",
+      "manager": "Jotabetrbb",
+      "player": "Javi López",
+      "importance": 3
+    },
+    {
+      "row": 85,
+      "id": "497dd9e1c3aeda37",
+      "fecha": "2025-11-28",
+      "category": "venta",
+      "manager": "Jotabetrbb",
+      "player": "Horațiu Moldovan",
+      "importance": 3
+    },
+    {
+      "row": 86,
+      "id": "56c23632ff1f234e",
+      "fecha": "2025-11-28",
+      "category": "fichaje",
+      "manager": "Libre",
+      "player": "Lucas Bergström",
+      "importance": 3
+    },
+    {
+      "row": 87,
+      "id": "5a2c9e452e8f3f6d",
+      "fecha": "2025-11-28",
+      "category": "fichaje",
+      "manager": "Maldinillo 💥",
+      "player": "Lucas Bergström",
+      "importance": 3
+    },
+    {
+      "row": 88,
+      "id": "61edca41bbaac961",
+      "fecha": "2025-11-28",
+      "category": "fichaje",
+      "manager": "Dani",
+      "player": "Luiz Felipe",
+      "importance": 3
+    },
+    {
+      "row": 89,
+      "id": "8e9332378c271d5d",
+      "fecha": "2025-11-28",
+      "category": "fichaje",
+      "manager": "Libre",
+      "player": "Aurélien Tchouaméni",
+      "importance": 4
+    },
+    {
+      "row": 90,
+      "id": "bc45b9b7e225c538",
+      "fecha": "2025-11-28",
+      "category": "venta",
+      "manager": "Jotabetrbb",
+      "player": "Rubén Vargas",
+      "importance": 4
+    },
+    {
+      "row": 91,
+      "id": "c3a4df41d3c585ef",
+      "fecha": "2025-11-28",
+      "category": "fichaje",
+      "manager": "Maldinillo 💥",
+      "player": "Luiz Felipe",
+      "importance": 3
+    },
+    {
+      "row": 92,
+      "id": "d3fffa10975b9656",
+      "fecha": "2025-11-28",
+      "category": "venta",
+      "manager": "Jotabetrbb",
+      "player": "Abdel Abqar",
+      "importance": 3
+    },
+    {
+      "row": 93,
+      "id": "f50cb9afb23d9124",
+      "fecha": "2025-11-28",
+      "category": "fichaje",
+      "manager": "Chamacónicos",
+      "player": "Jon Moncayola",
+      "importance": 3
+    },
+    {
+      "row": 94,
+      "id": "f92f08161739c88d",
+      "fecha": "2025-11-28",
+      "category": "fichaje",
+      "manager": "Maldinillo 💥",
+      "player": "Kike García",
+      "importance": 3
+    },
+    {
+      "row": 95,
+      "id": "0210cb61a621e6ae",
+      "fecha": "2025-11-29",
+      "category": "mvp",
+      "manager": "Juanba",
+      "player": "T. Buchanan",
+      "importance": 4
+    },
+    {
+      "row": 96,
+      "id": "02c1e37cd4c2cf77",
+      "fecha": "2025-11-29",
+      "category": "mvp",
+      "manager": "Los marinero",
+      "player": "É. Militão",
+      "importance": 4
+    },
+    {
+      "row": 97,
+      "id": "043f7bf10b11ffff",
+      "fecha": "2025-11-29",
+      "category": "fichaje_destacado",
+      "manager": "Dani",
+      "player": "Pablo Barrios",
+      "importance": 5
+    },
+    {
+      "row": 98,
+      "id": "052e2effdf004100",
+      "fecha": "2025-11-29",
+      "category": "clasificacion",
+      "manager": null,
+      "player": null,
+      "importance": 5
+    },
+    {
+      "row": 99,
+      "id": "064cb844cb696912",
+      "fecha": "2025-11-29",
+      "category": "gol_en_propia",
+      "manager": "Jotabetrbb",
+      "player": "J. Iglesias",
+      "importance": 3
+    },
+    {
+      "row": 100,
+      "id": "0a2f97876cc2b667",
+      "fecha": "2025-11-29",
+      "category": "rumor",
+      "manager": null,
+      "player": null,
+      "importance": 3
+    },
+    {
+      "row": 101,
+      "id": "0cce390dff4bfcf7",
+      "fecha": "2025-11-29",
+      "category": "mvp",
+      "manager": "Jotabetrbb",
+      "player": "V. Júnior",
+      "importance": 4
+    },
+    {
+      "row": 102,
+      "id": "0d40b1ac18377367",
+      "fecha": "2025-11-29",
+      "category": "peor_actuacion_de_la_jornada",
+      "manager": "Jotabetrbb",
+      "player": "C. Azpilicueta",
+      "importance": 3
+    },
+    {
+      "row": 103,
+      "id": "0d63c3c685564ab8",
+      "fecha": "2025-11-29",
+      "category": "mvp_de_la_jornada",
+      "manager": "Juanba",
+      "player": "T. Buchanan",
+      "importance": 5
+    },
+    {
+      "row": 104,
+      "id": "0fdb801f791a96d1",
+      "fecha": "2025-11-29",
+      "category": "clasificacion",
+      "manager": null,
+      "player": null,
+      "importance": 5
+    },
+    {
+      "row": 105,
+      "id": "12aeab0120dddba1",
+      "fecha": "2025-11-29",
+      "category": "mvp",
+      "manager": "Dani",
+      "player": "A. Güler",
+      "importance": 4
+    },
+    {
+      "row": 106,
+      "id": "140e7830e2671b93",
+      "fecha": "2025-11-29",
+      "category": "mvp_de_la_jornada",
+      "manager": "Chamacónicos",
+      "player": "M. Morey",
+      "importance": 5
+    },
+    {
+      "row": 107,
+      "id": "1522ab3fd233336d",
+      "fecha": "2025-11-29",
+      "category": "fichaje",
+      "manager": "Jotabetrbb",
+      "player": "José Giménez",
+      "importance": 3
+    },
+    {
+      "row": 108,
+      "id": "165319503ec64520",
+      "fecha": "2025-11-29",
+      "category": "mvp",
+      "manager": "MuchaSalsa",
+      "player": "Raphinha",
+      "importance": 4
+    },
+    {
+      "row": 109,
+      "id": "174297b270afaf81",
+      "fecha": "2025-11-29",
+      "category": "mvp_de_la_jornada",
+      "manager": "De la Guettir FC",
+      "player": "K. Mbappé",
+      "importance": 5
+    },
+    {
+      "row": 110,
+      "id": "17cb192fb690876a",
+      "fecha": "2025-11-29",
+      "category": "clasificacion",
+      "manager": null,
+      "player": null,
+      "importance": 5
+    },
+    {
+      "row": 111,
+      "id": "187b34e3aed25214",
+      "fecha": "2025-11-29",
+      "category": "mvp_de_la_jornada",
+      "manager": "Maldinillo 💥",
+      "player": "R. Lewandowski",
+      "importance": 5
+    },
+    {
+      "row": 112,
+      "id": "18f4151d17946c00",
+      "fecha": "2025-11-29",
+      "category": "mvp",
+      "manager": "Maldinillo 💥",
+      "player": "P. Maffeo",
+      "importance": 4
+    },
+    {
+      "row": 113,
+      "id": "195da696761d5210",
+      "fecha": "2025-11-29",
+      "category": "mvp_de_la_jornada",
+      "manager": "Maldinillo 💥",
+      "player": "F. López",
+      "importance": 5
+    },
+    {
+      "row": 114,
+      "id": "1afbdcb3a5513706",
+      "fecha": "2025-11-29",
+      "category": "mvp_de_la_jornada",
+      "manager": "Los marinero",
+      "player": "É. Militão",
+      "importance": 5
+    },
+    {
+      "row": 115,
+      "id": "1b183885f93e7bdb",
+      "fecha": "2025-11-29",
+      "category": "mvp",
+      "manager": "De la Guettir FC",
+      "player": "A. Danjuma",
+      "importance": 4
+    },
+    {
+      "row": 116,
+      "id": "1b854179cb295703",
+      "fecha": "2025-11-29",
+      "category": "mvp_de_la_jornada",
+      "manager": "Libre",
+      "player": "T. Asano",
+      "importance": 5
+    },
+    {
+      "row": 117,
+      "id": "1c4c7f2d6aa56dff",
+      "fecha": "2025-11-29",
+      "category": "mvp",
+      "manager": "Jotabetrbb",
+      "player": "V. Júnior",
+      "importance": 4
+    },
+    {
+      "row": 118,
+      "id": "1d233496f5e9dfef",
+      "fecha": "2025-11-29",
+      "category": "mvp_de_la_jornada",
+      "manager": "Jotabetrbb",
+      "player": "F. Torres",
+      "importance": 5
+    },
+    {
+      "row": 119,
+      "id": "1e013e3d736ed4b6",
+      "fecha": "2025-11-29",
+      "category": "venta",
+      "manager": "Dani",
+      "player": "José Luis Gayà",
+      "importance": 3
+    },
+    {
+      "row": 120,
+      "id": "1e72a3f51a26833e",
+      "fecha": "2025-11-29",
+      "category": "mvp_de_la_jornada",
+      "manager": "Chamacónicos",
+      "player": "A. Ounahi",
+      "importance": 5
+    },
+    {
+      "row": 121,
+      "id": "1f0e218a70ae0d56",
+      "fecha": "2025-11-29",
+      "category": "mvp",
+      "manager": "Maldinillo 💥",
+      "player": "A. Gorosabel",
+      "importance": 4
+    },
+    {
+      "row": 122,
+      "id": "1fb5c3fe254c8832",
+      "fecha": "2025-11-29",
+      "category": "mvp_de_la_jornada",
+      "manager": "Jotabetrbb",
+      "player": "J. Ángel Carmona",
+      "importance": 5
+    },
+    {
+      "row": 123,
+      "id": "213b94091d68b6b2",
+      "fecha": "2025-11-29",
+      "category": "gol_propia",
+      "manager": "Libre",
+      "player": "C. Tárrega",
+      "importance": 3
+    },
+    {
+      "row": 124,
+      "id": "22c96492eeef98d2",
+      "fecha": "2025-11-29",
+      "category": "mvp_de_la_jornada",
+      "manager": "Maldinillo 💥",
+      "player": "Á. García",
+      "importance": 5
+    },
+    {
+      "row": 125,
+      "id": "23713d2b0fb829b4",
+      "fecha": "2025-11-29",
+      "category": "mvp_de_la_jornada",
+      "manager": "Chamacónicos",
+      "player": "R. Marín",
+      "importance": 5
+    },
+    {
+      "row": 126,
+      "id": "23af4a364bb1330c",
+      "fecha": "2025-11-29",
+      "category": "mvp",
+      "manager": "De la Guettir FC",
+      "player": "V. Muñoz",
+      "importance": 4
+    },
+    {
+      "row": 127,
+      "id": "25a569b758c3a4d7",
+      "fecha": "2025-11-29",
+      "category": "mvp",
+      "manager": "Chamacónicos",
+      "player": "M. Morey",
+      "importance": 4
+    },
+    {
+      "row": 128,
+      "id": "2620902483a86a62",
+      "fecha": "2025-11-29",
+      "category": "penalti_fallado",
+      "manager": "Chamacónicos",
+      "player": "J. Álvarez",
+      "importance": 3
+    },
+    {
+      "row": 129,
+      "id": "26c76aa3a2275e21",
+      "fecha": "2025-11-29",
+      "category": "peor_actuacion",
+      "manager": "Chamacónicos",
+      "player": "A. Witsel",
+      "importance": 4
+    },
+    {
+      "row": 130,
+      "id": "2b276657439779e7",
+      "fecha": "2025-11-29",
+      "category": "mvp_de_la_jornada",
+      "manager": "Jotabetrbb",
+      "player": "R. Vargas",
+      "importance": 5
+    },
+    {
+      "row": 131,
+      "id": "2bfe953647b479fa",
+      "fecha": "2025-11-29",
+      "category": "heroe_bajo_palos",
+      "manager": "MuchaSalsa",
+      "player": "L. Júnior",
+      "importance": 3
+    },
+    {
+      "row": 132,
+      "id": "2d2ee842450c2b5c",
+      "fecha": "2025-11-29",
+      "category": "mvp_de_la_jornada",
+      "manager": "De la Guettir FC",
+      "player": "V. Muñoz",
+      "importance": 5
+    },
+    {
+      "row": 133,
+      "id": "306bdc896f4b6833",
+      "fecha": "2025-11-29",
+      "category": "expulsion",
+      "manager": "Chamacónicos",
+      "player": "S. Cazorla",
+      "importance": 3
+    },
+    {
+      "row": 134,
+      "id": "30bcafd63f945baf",
+      "fecha": "2025-11-29",
+      "category": "mvp_de_la_jornada",
+      "manager": "Chamacónicos",
+      "player": "J. Álvarez",
+      "importance": 5
+    },
+    {
+      "row": 135,
+      "id": "312ae54c9e351aea",
+      "fecha": "2025-11-29",
+      "category": "mvp",
+      "manager": "Maldinillo 💥",
+      "player": "A. Budimir",
+      "importance": 4
+    },
+    {
+      "row": 136,
+      "id": "340d22ab4f320996",
+      "fecha": "2025-11-29",
+      "category": "penalti_fallado",
+      "manager": "De la Guettir FC",
+      "player": "K. Mbappé",
+      "importance": 3
+    },
+    {
+      "row": 137,
+      "id": "342b7ac502e7234d",
+      "fecha": "2025-11-29",
+      "category": "penalti_parado",
+      "manager": "Juanba",
+      "player": "I. Radu",
+      "importance": 3
+    },
+    {
+      "row": 138,
+      "id": "353b09c885c1baeb",
+      "fecha": "2025-11-29",
+      "category": "rumor",
+      "manager": null,
+      "player": null,
+      "importance": 3
+    },
+    {
+      "row": 139,
+      "id": "3679d2423329151b",
+      "fecha": "2025-11-29",
+      "category": "mvp",
+      "manager": "Maldinillo 💥",
+      "player": "A. Sánchez",
+      "importance": 4
+    },
+    {
+      "row": 140,
+      "id": "36e5597d67566a89",
+      "fecha": "2025-11-29",
+      "category": "gol_en_propia",
+      "manager": "Libre",
+      "player": "C. Tárrega",
+      "importance": 3
+    },
+    {
+      "row": 141,
+      "id": "37a09d0a8e12f7af",
+      "fecha": "2025-11-29",
+      "category": "mvp",
+      "manager": "Los marinero",
+      "player": "J. de Frutos",
+      "importance": 4
+    },
+    {
+      "row": 142,
+      "id": "39cb96c260808ea2",
+      "fecha": "2025-11-29",
+      "category": "mvp",
+      "manager": "De la Guettir FC",
+      "player": "G. Valera",
+      "importance": 4
+    },
+    {
+      "row": 143,
+      "id": "3bda5280c44adb32",
+      "fecha": "2025-11-29",
+      "category": "heroe_bajo_palos",
+      "manager": "Los marinero",
+      "player": "L. Román",
+      "importance": 3
+    },
+    {
+      "row": 144,
+      "id": "3f791a60aa2ffb75",
+      "fecha": "2025-11-29",
+      "category": "mvp",
+      "manager": "Libre",
+      "player": "M. Oyarzabal",
+      "importance": 4
+    },
+    {
+      "row": 145,
+      "id": "3fe87cd98d054e37",
+      "fecha": "2025-11-29",
+      "category": "mvp",
+      "manager": "Jotabetrbb",
+      "player": "J. Ángel Carmona",
+      "importance": 4
+    },
+    {
+      "row": 146,
+      "id": "4173a2c7aa12c5e9",
+      "fecha": "2025-11-29",
+      "category": "expulsion",
+      "manager": "Dani",
+      "player": "D. Affengruber",
+      "importance": 3
+    },
+    {
+      "row": 147,
+      "id": "41cefb87c44d922f",
+      "fecha": "2025-11-29",
+      "category": "gol_propia",
+      "manager": "Jotabetrbb",
+      "player": "J. Iglesias",
+      "importance": 3
+    },
+    {
+      "row": 148,
+      "id": "44d5c1539eebd38f",
+      "fecha": "2025-11-29",
+      "category": "peor_actuacion_de_la_jornada",
+      "manager": "Jotabetrbb",
+      "player": "P. Milla",
+      "importance": 3
+    },
+    {
+      "row": 149,
+      "id": "459a71c99baa44d0",
+      "fecha": "2025-11-29",
+      "category": "mvp_de_la_jornada",
+      "manager": "Juanba",
+      "player": "T. Buchanan",
+      "importance": 5
+    },
+    {
+      "row": 150,
+      "id": "45f1ad8ae73ec7ed",
+      "fecha": "2025-11-29",
+      "category": "fichaje",
+      "manager": "Chamacónicos",
+      "player": "José Giménez",
+      "importance": 3
+    },
+    {
+      "row": 151,
+      "id": "46642a92b384da97",
+      "fecha": "2025-11-29",
+      "category": "mvp_de_la_jornada",
+      "manager": "Dani",
+      "player": "A. Bretones",
+      "importance": 5
+    },
+    {
+      "row": 152,
+      "id": "46e2b0ebb54feca1",
+      "fecha": "2025-11-29",
+      "category": "rumor",
+      "manager": null,
+      "player": null,
+      "importance": 3
+    },
+    {
+      "row": 153,
+      "id": "487e3e5ad7f9bdc8",
+      "fecha": "2025-11-29",
+      "category": "mvp_de_la_jornada",
+      "manager": "Dani",
+      "player": "A. Güler",
+      "importance": 5
+    },
+    {
+      "row": 154,
+      "id": "4a9b74eba9ed1d17",
+      "fecha": "2025-11-29",
+      "category": "peor_actuacion_de_la_jornada",
+      "manager": "Jotabetrbb",
+      "player": "G. García",
+      "importance": 3
+    },
+    {
+      "row": 155,
+      "id": "4a9cb256687951e4",
+      "fecha": "2025-11-29",
+      "category": "clasificacion",
+      "manager": null,
+      "player": null,
+      "importance": 5
+    },
+    {
+      "row": 156,
+      "id": "4b56ae6274734b6e",
+      "fecha": "2025-11-29",
+      "category": "peor_actuacion_de_la_jornada",
+      "manager": "Dani",
+      "player": "D. Affengruber",
+      "importance": 3
+    },
+    {
+      "row": 157,
+      "id": "4c6d0b0ec4023cd1",
+      "fecha": "2025-11-29",
+      "category": "venta_record",
+      "manager": "Dani",
+      "player": "Pablo Fornals",
+      "importance": 3
+    },
+    {
+      "row": 158,
+      "id": "4ca357437b688c1e",
+      "fecha": "2025-11-29",
+      "category": "mvp",
+      "manager": "Jotabetrbb",
+      "player": "G. García",
+      "importance": 4
+    },
+    {
+      "row": 159,
+      "id": "4d36121c69afae77",
+      "fecha": "2025-11-29",
+      "category": "penalti_fallado",
+      "manager": "Chamacónicos",
+      "player": "S. Rondón",
+      "importance": 3
+    },
+    {
+      "row": 160,
+      "id": "4e230b14431647f2",
+      "fecha": "2025-11-29",
+      "category": "mvp_de_la_jornada",
+      "manager": "Chamacónicos",
+      "player": "J. Koundé",
+      "importance": 5
+    },
+    {
+      "row": 161,
+      "id": "4e6b69973bf262f4",
+      "fecha": "2025-11-29",
+      "category": "clasificacion",
+      "manager": null,
+      "player": null,
+      "importance": 5
+    },
+    {
+      "row": 162,
+      "id": "54834b6737f65684",
+      "fecha": "2025-11-29",
+      "category": "rumor",
+      "manager": null,
+      "player": null,
+      "importance": 3
+    },
+    {
+      "row": 163,
+      "id": "54d6c28d4acb7ef4",
+      "fecha": "2025-11-29",
+      "category": "mvp_de_la_jornada",
+      "manager": "MuchaSalsa",
+      "player": "Raphinha",
+      "importance": 5
+    },
+    {
+      "row": 164,
+      "id": "60e4b25679122225",
+      "fecha": "2025-11-29",
+      "category": "mvp",
+      "manager": "Chamacónicos",
+      "player": "N. Mendy",
+      "importance": 4
+    },
+    {
+      "row": 165,
+      "id": "63a6f96274a36d4f",
+      "fecha": "2025-11-29",
+      "category": "mvp_de_la_jornada",
+      "manager": "Chamacónicos",
+      "player": "N. Mendy",
+      "importance": 5
+    },
+    {
+      "row": 166,
+      "id": "651366c8001d4a27",
+      "fecha": "2025-11-29",
+      "category": "mvp",
+      "manager": "Jotabetrbb",
+      "player": "D. López",
+      "importance": 4
+    },
+    {
+      "row": 167,
+      "id": "65c15f6a2b5f2808",
+      "fecha": "2025-11-29",
+      "category": "clasificacion",
+      "manager": null,
+      "player": null,
+      "importance": 5
+    },
+    {
+      "row": 168,
+      "id": "65f5522c353b099a",
+      "fecha": "2025-11-29",
+      "category": "mvp_de_la_jornada",
+      "manager": "Jotabetrbb",
+      "player": "V. Júnior",
+      "importance": 5
+    },
+    {
+      "row": 169,
+      "id": "677e24ac6834a052",
+      "fecha": "2025-11-29",
+      "category": "mvp",
+      "manager": "Maldinillo 💥",
+      "player": "A. Febas",
+      "importance": 4
+    },
+    {
+      "row": 170,
+      "id": "67a4428554fd1c46",
+      "fecha": "2025-11-29",
+      "category": "mvp",
+      "manager": "Chamacónicos",
+      "player": "S. Carreira",
+      "importance": 4
+    },
+    {
+      "row": 171,
+      "id": "6a48813022322c11",
+      "fecha": "2025-11-29",
+      "category": "penalti_parado",
+      "manager": "Dani",
+      "player": "A. Escandell",
+      "importance": 3
+    },
+    {
+      "row": 172,
+      "id": "6c9db234532e01fe",
+      "fecha": "2025-11-29",
+      "category": "peor_actuacion_de_la_jornada",
+      "manager": "Chamacónicos",
+      "player": "A. Witsel",
+      "importance": 3
+    },
+    {
+      "row": 173,
+      "id": "6cc3b629f1236df4",
+      "fecha": "2025-11-29",
+      "category": "clasificacion",
+      "manager": null,
+      "player": null,
+      "importance": 5
+    },
+    {
+      "row": 174,
+      "id": "6f488e0b2da4b186",
+      "fecha": "2025-11-29",
+      "category": "mvp",
+      "manager": "Jotabetrbb",
+      "player": "R. Vargas",
+      "importance": 4
+    },
+    {
+      "row": 175,
+      "id": "700454ad956c756f",
+      "fecha": "2025-11-29",
+      "category": "expulsion",
+      "manager": "Jotabetrbb",
+      "player": "P. Milla",
+      "importance": 3
+    },
+    {
+      "row": 176,
+      "id": "70fe870ce7bc0d0c",
+      "fecha": "2025-11-29",
+      "category": "penalti_fallado",
+      "manager": "Los marinero",
+      "player": "E. Eyong",
+      "importance": 3
+    },
+    {
+      "row": 177,
+      "id": "72919c56339972ec",
+      "fecha": "2025-11-29",
+      "category": "mvp_de_la_jornada",
+      "manager": "De la Guettir FC",
+      "player": "A. Danjuma",
+      "importance": 5
+    },
+    {
+      "row": 178,
+      "id": "73ed77137a44ebec",
+      "fecha": "2025-11-29",
+      "category": "mvp",
+      "manager": "MuchaSalsa",
+      "player": "Raphinha",
+      "importance": 4
+    },
+    {
+      "row": 179,
+      "id": "7613610016b4579b",
+      "fecha": "2025-11-29",
+      "category": "peor_actuacion_de_la_jornada",
+      "manager": "MuchaSalsa",
+      "player": "L. Milla",
+      "importance": 3
+    },
+    {
+      "row": 180,
+      "id": "78cd8959bd9a2662",
+      "fecha": "2025-11-29",
+      "category": "mvp",
+      "manager": "Dani",
+      "player": "A. Bretones",
+      "importance": 4
+    },
+    {
+      "row": 181,
+      "id": "7b79075b349b4971",
+      "fecha": "2025-11-29",
+      "category": "heroe_bajo_palos",
+      "manager": "Dani",
+      "player": "A. Escandell",
+      "importance": 3
+    },
+    {
+      "row": 182,
+      "id": "7cf32c0fe03105fe",
+      "fecha": "2025-11-29",
+      "category": "mvp",
+      "manager": "Dani",
+      "player": "C. Hernández",
+      "importance": 4
+    },
+    {
+      "row": 183,
+      "id": "7d802a99bfe8db9a",
+      "fecha": "2025-11-29",
+      "category": "mvp_de_la_jornada",
+      "manager": "Libre",
+      "player": "M. Oyarzabal",
+      "importance": 5
+    },
+    {
+      "row": 184,
+      "id": "7f17099acde8e65a",
+      "fecha": "2025-11-29",
+      "category": "mvp_de_la_jornada",
+      "manager": "MuchaSalsa",
+      "player": "Raphinha",
+      "importance": 5
+    },
+    {
+      "row": 185,
+      "id": "8036c6dabe1aef35",
+      "fecha": "2025-11-29",
+      "category": "mvp_de_la_jornada",
+      "manager": "Los marinero",
+      "player": "E. Eyong",
+      "importance": 5
+    },
+    {
+      "row": 186,
+      "id": "8060c67a3b3715d2",
+      "fecha": "2025-11-29",
+      "category": "mvp",
+      "manager": "Jotabetrbb",
+      "player": "F. Torres",
+      "importance": 4
+    },
+    {
+      "row": 187,
+      "id": "81e553dbab95e7c6",
+      "fecha": "2025-11-29",
+      "category": "mvp_de_la_jornada",
+      "manager": "Maldinillo 💥",
+      "player": "A. Febas",
+      "importance": 5
+    },
+    {
+      "row": 188,
+      "id": "83f1edebcc6c5cdf",
+      "fecha": "2025-11-29",
+      "category": "fichaje",
+      "manager": "Dani",
+      "player": "José Giménez",
+      "importance": 3
+    },
+    {
+      "row": 189,
+      "id": "8673a8a4d1db5388",
+      "fecha": "2025-11-29",
+      "category": "expulsion",
+      "manager": "Maldinillo 💥",
+      "player": "F. Viñas",
+      "importance": 3
+    },
+    {
+      "row": 190,
+      "id": "88fcd9177f0e3d60",
+      "fecha": "2025-11-29",
+      "category": "peor_actuacion",
+      "manager": "Chamacónicos",
+      "player": "J. Álvarez",
+      "importance": 4
+    },
+    {
+      "row": 191,
+      "id": "8cadfd9c0aabc7e9",
+      "fecha": "2025-11-29",
+      "category": "expulsion",
+      "manager": "Jotabetrbb",
+      "player": "A. Bretones",
+      "importance": 3
+    },
+    {
+      "row": 192,
+      "id": "8f0e9f2aef0866e0",
+      "fecha": "2025-11-29",
+      "category": "rumor",
+      "manager": null,
+      "player": null,
+      "importance": 3
+    },
+    {
+      "row": 193,
+      "id": "8f113384722eefb7",
+      "fecha": "2025-11-29",
+      "category": "fichaje_destacado",
+      "manager": "Dani",
+      "player": "Frenkie De Jong",
+      "importance": 5
+    },
+    {
+      "row": 194,
+      "id": "924ba782d23875c0",
+      "fecha": "2025-11-29",
+      "category": "clasificacion",
+      "manager": null,
+      "player": null,
+      "importance": 5
+    },
+    {
+      "row": 195,
+      "id": "94fd12e4ac6324c8",
+      "fecha": "2025-11-29",
+      "category": "mvp",
+      "manager": "Maldinillo 💥",
+      "player": "D. Carvajal",
+      "importance": 4
+    },
+    {
+      "row": 196,
+      "id": "9552b79d7fc6ca62",
+      "fecha": "2025-11-29",
+      "category": "mvp_de_la_jornada",
+      "manager": "Los marinero",
+      "player": "L. Román",
+      "importance": 5
+    },
+    {
+      "row": 197,
+      "id": "96a16a462bdd8355",
+      "fecha": "2025-11-29",
+      "category": "mvp_de_la_jornada",
+      "manager": "Maldinillo 💥",
+      "player": "Pedri",
+      "importance": 5
+    },
+    {
+      "row": 198,
+      "id": "97161155418aa9f6",
+      "fecha": "2025-11-29",
+      "category": "mvp",
+      "manager": "Dani",
+      "player": "A. Paredes",
+      "importance": 4
+    },
+    {
+      "row": 199,
+      "id": "97608a2fcfcbaf41",
+      "fecha": "2025-11-29",
+      "category": "mvp_de_la_jornada",
+      "manager": "Jotabetrbb",
+      "player": "F. Torres",
+      "importance": 5
+    },
+    {
+      "row": 200,
+      "id": "99b28f32172e9c68",
+      "fecha": "2025-11-29",
+      "category": "mvp",
+      "manager": "Maldinillo 💥",
+      "player": "R. Lewandowski",
+      "importance": 4
+    },
+    {
+      "row": 201,
+      "id": "9aa05172318d788a",
+      "fecha": "2025-11-29",
+      "category": "mvp_de_la_jornada",
+      "manager": "Maldinillo 💥",
+      "player": "P. Maffeo",
+      "importance": 5
+    },
+    {
+      "row": 202,
+      "id": "9b73019803fde70a",
+      "fecha": "2025-11-29",
+      "category": "penalti_fallado",
+      "manager": "Jotabetrbb",
+      "player": "V. Júnior",
+      "importance": 3
+    },
+    {
+      "row": 203,
+      "id": "9c405d452d3c8d45",
+      "fecha": "2025-11-29",
+      "category": "peor_actuacion",
+      "manager": "Jotabetrbb",
+      "player": "T. Nianzou",
+      "importance": 4
+    },
+    {
+      "row": 204,
+      "id": "9c46b2e25f9bcacf",
+      "fecha": "2025-11-29",
+      "category": "peor_actuacion_de_la_jornada",
+      "manager": "Juanba",
+      "player": "A. Silva",
+      "importance": 3
+    },
+    {
+      "row": 205,
+      "id": "9c59f88541392f95",
+      "fecha": "2025-11-29",
+      "category": "mvp",
+      "manager": "Chamacónicos",
+      "player": "J. Álvarez",
+      "importance": 4
+    },
+    {
+      "row": 206,
+      "id": "9d815e182bd242ec",
+      "fecha": "2025-11-29",
+      "category": "mvp_de_la_jornada",
+      "manager": "Jotabetrbb",
+      "player": "D. López",
+      "importance": 5
+    },
+    {
+      "row": 207,
+      "id": "9e6a30064efb1951",
+      "fecha": "2025-11-29",
+      "category": "mvp",
+      "manager": "Maldinillo 💥",
+      "player": "Á. García",
+      "importance": 4
+    },
+    {
+      "row": 208,
+      "id": "9ef95a285f352c7e",
+      "fecha": "2025-11-29",
+      "category": "mvp",
+      "manager": "Juanba",
+      "player": "G. Guedes",
+      "importance": 4
+    },
+    {
+      "row": 209,
+      "id": "9fcf67cdedcf1343",
+      "fecha": "2025-11-29",
+      "category": "mvp_de_la_jornada",
+      "manager": "Dani",
+      "player": "C. Hernández",
+      "importance": 5
+    },
+    {
+      "row": 210,
+      "id": "a0be5686f4a26f1c",
+      "fecha": "2025-11-29",
+      "category": "clasificacion",
+      "manager": null,
+      "player": null,
+      "importance": 5
+    },
+    {
+      "row": 211,
+      "id": "a0fad674b9fafdc3",
+      "fecha": "2025-11-29",
+      "category": "mvp",
+      "manager": "Chamacónicos",
+      "player": "R. Marín",
+      "importance": 4
+    },
+    {
+      "row": 212,
+      "id": "a34f5de92d34956f",
+      "fecha": "2025-11-29",
+      "category": "peor_actuacion_de_la_jornada",
+      "manager": "Maldinillo 💥",
+      "player": "D. Carvajal",
+      "importance": 3
+    },
+    {
+      "row": 213,
+      "id": "a5148159ed08e871",
+      "fecha": "2025-11-29",
+      "category": "mvp",
+      "manager": "Libre",
+      "player": "J. Gorrotxategi",
+      "importance": 4
+    },
+    {
+      "row": 214,
+      "id": "a7be10c1834a0dbb",
+      "fecha": "2025-11-29",
+      "category": "expulsion",
+      "manager": "MuchaSalsa",
+      "player": "L. Milla",
+      "importance": 3
+    },
+    {
+      "row": 215,
+      "id": "ab48a23ff2a131da",
+      "fecha": "2025-11-29",
+      "category": "mvp",
+      "manager": "Maldinillo 💥",
+      "player": "Á. García",
+      "importance": 4
+    },
+    {
+      "row": 216,
+      "id": "ab981b9b7dbaae6e",
+      "fecha": "2025-11-29",
+      "category": "peor_actuacion_de_la_jornada",
+      "manager": "Chamacónicos",
+      "player": "V. Muriqi",
+      "importance": 3
+    },
+    {
+      "row": 217,
+      "id": "ac79b5dc213ebc9d",
+      "fecha": "2025-11-29",
+      "category": "rumor",
+      "manager": null,
+      "player": null,
+      "importance": 3
+    },
+    {
+      "row": 218,
+      "id": "ac7b9c9aa8591de7",
+      "fecha": "2025-11-29",
+      "category": "peor_actuacion_de_la_jornada",
+      "manager": "Chamacónicos",
+      "player": "J. Álvarez",
+      "importance": 3
+    },
+    {
+      "row": 219,
+      "id": "af1aeb231a0c2df6",
+      "fecha": "2025-11-29",
+      "category": "mvp",
+      "manager": "De la Guettir FC",
+      "player": "K. Mbappé",
+      "importance": 4
+    },
+    {
+      "row": 220,
+      "id": "b4ab240e9acc78e6",
+      "fecha": "2025-11-29",
+      "category": "rumor",
+      "manager": null,
+      "player": null,
+      "importance": 3
+    },
+    {
+      "row": 221,
+      "id": "b652394a95ec66c6",
+      "fecha": "2025-11-29",
+      "category": "mvp",
+      "manager": "Maldinillo 💥",
+      "player": "C. Romero",
+      "importance": 4
+    },
+    {
+      "row": 222,
+      "id": "b7fd884045709adb",
+      "fecha": "2025-11-29",
+      "category": "heroe_bajo_palos",
+      "manager": "Juanba",
+      "player": "I. Radu",
+      "importance": 3
+    },
+    {
+      "row": 223,
+      "id": "b8be40e6ee10b912",
+      "fecha": "2025-11-29",
+      "category": "penalti_parado",
+      "manager": "Los marinero",
+      "player": "L. Román",
+      "importance": 3
+    },
+    {
+      "row": 224,
+      "id": "b8cc38cdad11a036",
+      "fecha": "2025-11-29",
+      "category": "mvp",
+      "manager": "Libre",
+      "player": "T. Asano",
+      "importance": 4
+    },
+    {
+      "row": 225,
+      "id": "bbf75aa4fda782e7",
+      "fecha": "2025-11-29",
+      "category": "expulsion",
+      "manager": "Chamacónicos",
+      "player": "V. Muriqi",
+      "importance": 3
+    },
+    {
+      "row": 226,
+      "id": "bd1e17bd375006a7",
+      "fecha": "2025-11-29",
+      "category": "clasificacion",
+      "manager": null,
+      "player": null,
+      "importance": 5
+    },
+    {
+      "row": 227,
+      "id": "bf9ba729b4843a2f",
+      "fecha": "2025-11-29",
+      "category": "clasificacion",
+      "manager": null,
+      "player": null,
+      "importance": 5
+    },
+    {
+      "row": 228,
+      "id": "bfe7dcc4a8b499fa",
+      "fecha": "2025-11-29",
+      "category": "penalti_fallado",
+      "manager": "Dani",
+      "player": "R. Mir",
+      "importance": 3
+    },
+    {
+      "row": 229,
+      "id": "c085468ea9608d59",
+      "fecha": "2025-11-29",
+      "category": "mvp",
+      "manager": "Jotabetrbb",
+      "player": "C. Azpilicueta",
+      "importance": 4
+    },
+    {
+      "row": 230,
+      "id": "c0a761e1dc1a6d6b",
+      "fecha": "2025-11-29",
+      "category": "mvp_de_la_jornada",
+      "manager": "Maldinillo 💥",
+      "player": "Á. García",
+      "importance": 5
+    },
+    {
+      "row": 231,
+      "id": "c0b51ea232076f26",
+      "fecha": "2025-11-29",
+      "category": "mvp",
+      "manager": "Chamacónicos",
+      "player": "J. Koundé",
+      "importance": 4
+    },
+    {
+      "row": 232,
+      "id": "c39b0b09180ef1b2",
+      "fecha": "2025-11-29",
+      "category": "mvp_de_la_jornada",
+      "manager": "Maldinillo 💥",
+      "player": "C. Romero",
+      "importance": 5
+    },
+    {
+      "row": 233,
+      "id": "c427193d04e5c1b5",
+      "fecha": "2025-11-29",
+      "category": "peor_actuacion",
+      "manager": "Los marinero",
+      "player": "H. Rincón",
+      "importance": 4
+    },
+    {
+      "row": 234,
+      "id": "c42ac59584150b55",
+      "fecha": "2025-11-29",
+      "category": "mvp",
+      "manager": "De la Guettir FC",
+      "player": "K. Mbappé",
+      "importance": 4
+    },
+    {
+      "row": 235,
+      "id": "c4852c51d74a3220",
+      "fecha": "2025-11-29",
+      "category": "mvp",
+      "manager": "Chamacónicos",
+      "player": "A. Ounahi",
+      "importance": 4
+    },
+    {
+      "row": 236,
+      "id": "c7aae408463ed962",
+      "fecha": "2025-11-29",
+      "category": "mvp",
+      "manager": "Juanba",
+      "player": "T. Buchanan",
+      "importance": 4
+    },
+    {
+      "row": 237,
+      "id": "c7e7402c106d2e3f",
+      "fecha": "2025-11-29",
+      "category": "expulsion",
+      "manager": "Chamacónicos",
+      "player": "S. Cazorla",
+      "importance": 3
+    },
+    {
+      "row": 238,
+      "id": "c8cdf0da6e8ef9c3",
+      "fecha": "2025-11-29",
+      "category": "mvp_de_la_jornada",
+      "manager": "Libre",
+      "player": "J. Gorrotxategi",
+      "importance": 5
+    },
+    {
+      "row": 239,
+      "id": "cb9842ed2d86fa5d",
+      "fecha": "2025-11-29",
+      "category": "peor_actuacion_de_la_jornada",
+      "manager": "Maldinillo 💥",
+      "player": "A. Sánchez",
+      "importance": 3
+    },
+    {
+      "row": 240,
+      "id": "cc976b67e2b21dff",
+      "fecha": "2025-11-29",
+      "category": "fichaje",
+      "manager": "Dani",
+      "player": "Santi Comesaña",
+      "importance": 3
+    },
+    {
+      "row": 241,
+      "id": "cd5447c121c75d68",
+      "fecha": "2025-11-29",
+      "category": "mvp_de_la_jornada",
+      "manager": "Los marinero",
+      "player": "J. de Frutos",
+      "importance": 5
+    },
+    {
+      "row": 242,
+      "id": "cea5b77e54dc43b0",
+      "fecha": "2025-11-29",
+      "category": "mvp_de_la_jornada",
+      "manager": "Dani",
+      "player": "A. Paredes",
+      "importance": 5
+    },
+    {
+      "row": 243,
+      "id": "d05b0d09e4e2a671",
+      "fecha": "2025-11-29",
+      "category": "peor_actuacion_de_la_jornada",
+      "manager": "Maldinillo 💥",
+      "player": "A. Gorosabel",
+      "importance": 3
+    },
+    {
+      "row": 244,
+      "id": "d1d4d1a1250708e6",
+      "fecha": "2025-11-29",
+      "category": "expulsion",
+      "manager": "Jotabetrbb",
+      "player": "P. Milla",
+      "importance": 3
+    },
+    {
+      "row": 245,
+      "id": "d279c0abecf36fab",
+      "fecha": "2025-11-29",
+      "category": "mvp_de_la_jornada",
+      "manager": "De la Guettir FC",
+      "player": "K. Mbappé",
+      "importance": 5
+    },
+    {
+      "row": 246,
+      "id": "d3876d82f9fd3d74",
+      "fecha": "2025-11-29",
+      "category": "penalti_parado",
+      "manager": "Dani",
+      "player": "A. Escandell",
+      "importance": 3
+    },
+    {
+      "row": 247,
+      "id": "d6f9d6ae1bc66000",
+      "fecha": "2025-11-29",
+      "category": "rumor",
+      "manager": null,
+      "player": null,
+      "importance": 3
+    },
+    {
+      "row": 248,
+      "id": "d753fafb56910aae",
+      "fecha": "2025-11-29",
+      "category": "mvp_de_la_jornada",
+      "manager": "Chamacónicos",
+      "player": "S. Carreira",
+      "importance": 5
+    },
+    {
+      "row": 249,
+      "id": "db7062028c5d0baa",
+      "fecha": "2025-11-29",
+      "category": "mvp",
+      "manager": "Jotabetrbb",
+      "player": "F. Torres",
+      "importance": 4
+    },
+    {
+      "row": 250,
+      "id": "df32d757a8ab4d38",
+      "fecha": "2025-11-29",
+      "category": "clasificacion",
+      "manager": null,
+      "player": null,
+      "importance": 5
+    },
+    {
+      "row": 251,
+      "id": "e034a724d37ecf3a",
+      "fecha": "2025-11-29",
+      "category": "penalti_fallado",
+      "manager": "De la Guettir FC",
+      "player": "A. Danjuma",
+      "importance": 3
+    },
+    {
+      "row": 252,
+      "id": "e077252249736b30",
+      "fecha": "2025-11-29",
+      "category": "fichaje_destacado",
+      "manager": "Maldinillo 💥",
+      "player": "Isco",
+      "importance": 5
+    },
+    {
+      "row": 253,
+      "id": "e2e18131e5d8c758",
+      "fecha": "2025-11-29",
+      "category": "mvp",
+      "manager": "Maldinillo 💥",
+      "player": "Pedri",
+      "importance": 4
+    },
+    {
+      "row": 254,
+      "id": "e4fce00f75174a0f",
+      "fecha": "2025-11-29",
+      "category": "rumor",
+      "manager": null,
+      "player": null,
+      "importance": 3
+    },
+    {
+      "row": 255,
+      "id": "e6bb37fb48ceaf29",
+      "fecha": "2025-11-29",
+      "category": "mvp_de_la_jornada",
+      "manager": "Juanba",
+      "player": "G. Guedes",
+      "importance": 5
+    },
+    {
+      "row": 256,
+      "id": "e6c56dd567291cc8",
+      "fecha": "2025-11-29",
+      "category": "expulsion",
+      "manager": "Chamacónicos",
+      "player": "V. Muriqi",
+      "importance": 3
+    },
+    {
+      "row": 257,
+      "id": "e91d5a3f32cc4ac0",
+      "fecha": "2025-11-29",
+      "category": "rumor",
+      "manager": null,
+      "player": null,
+      "importance": 3
+    },
+    {
+      "row": 258,
+      "id": "eaa3e7eb09935307",
+      "fecha": "2025-11-29",
+      "category": "clasificacion",
+      "manager": null,
+      "player": null,
+      "importance": 5
+    },
+    {
+      "row": 259,
+      "id": "ee450c193d954a63",
+      "fecha": "2025-11-29",
+      "category": "penalti_parado",
+      "manager": "MuchaSalsa",
+      "player": "L. Júnior",
+      "importance": 3
+    },
+    {
+      "row": 260,
+      "id": "efb12bd1cd67abfe",
+      "fecha": "2025-11-29",
+      "category": "mvp",
+      "manager": "Dani",
+      "player": "A. Güler",
+      "importance": 4
+    },
+    {
+      "row": 261,
+      "id": "efd9a9c3e4831049",
+      "fecha": "2025-11-29",
+      "category": "mvp",
+      "manager": "Maldinillo 💥",
+      "player": "F. López",
+      "importance": 4
+    },
+    {
+      "row": 262,
+      "id": "f1324ab6147a3c1d",
+      "fecha": "2025-11-29",
+      "category": "peor_actuacion_de_la_jornada",
+      "manager": "Dani",
+      "player": "A. Güler",
+      "importance": 3
+    },
+    {
+      "row": 263,
+      "id": "f3315abf191c3a9c",
+      "fecha": "2025-11-29",
+      "category": "mvp",
+      "manager": "Dani",
+      "player": "V. Muriqi",
+      "importance": 4
+    },
+    {
+      "row": 264,
+      "id": "f3a11c06640b4c25",
+      "fecha": "2025-11-29",
+      "category": "mvp_de_la_jornada",
+      "manager": "De la Guettir FC",
+      "player": "G. Valera",
+      "importance": 5
+    },
+    {
+      "row": 265,
+      "id": "f3deeea5f817ee19",
+      "fecha": "2025-11-29",
+      "category": "mvp_de_la_jornada",
+      "manager": "Maldinillo 💥",
+      "player": "A. Budimir",
+      "importance": 5
+    },
+    {
+      "row": 266,
+      "id": "f44a52278301a456",
+      "fecha": "2025-11-29",
+      "category": "mvp",
+      "manager": "Los marinero",
+      "player": "E. Eyong",
+      "importance": 4
+    },
+    {
+      "row": 267,
+      "id": "f6eb7c890b4cbb52",
+      "fecha": "2025-11-29",
+      "category": "peor_actuacion_de_la_jornada",
+      "manager": "Jotabetrbb",
+      "player": "T. Nianzou",
+      "importance": 3
+    },
+    {
+      "row": 268,
+      "id": "f7853a1dfa7af9c2",
+      "fecha": "2025-11-29",
+      "category": "clasificacion",
+      "manager": null,
+      "player": null,
+      "importance": 5
+    },
+    {
+      "row": 269,
+      "id": "f9056e35456e12d9",
+      "fecha": "2025-11-29",
+      "category": "mvp",
+      "manager": "Juanba",
+      "player": "A. Silva",
+      "importance": 4
+    },
+    {
+      "row": 270,
+      "id": "fb2be5d104935da7",
+      "fecha": "2025-11-29",
+      "category": "rumor",
+      "manager": null,
+      "player": null,
+      "importance": 3
+    },
+    {
+      "row": 271,
+      "id": "fc5045743322d177",
+      "fecha": "2025-11-29",
+      "category": "rumor",
+      "manager": null,
+      "player": null,
+      "importance": 3
+    },
+    {
+      "row": 272,
+      "id": "fce9f01123ce5754",
+      "fecha": "2025-11-29",
+      "category": "expulsion",
+      "manager": "Dani",
+      "player": "D. Affengruber",
+      "importance": 3
+    },
+    {
+      "row": 273,
+      "id": "fdc3d06a2346115f",
+      "fecha": "2025-11-29",
+      "category": "peor_actuacion_de_la_jornada",
+      "manager": "Los marinero",
+      "player": "H. Rincón",
+      "importance": 3
+    },
+    {
+      "row": 274,
+      "id": "fe244358b5fdcbea",
+      "fecha": "2025-11-29",
+      "category": "mvp_de_la_jornada",
+      "manager": "Dani",
+      "player": "V. Muriqi",
+      "importance": 5
+    },
+    {
+      "row": 275,
+      "id": "ffccc9721265cf83",
+      "fecha": "2025-11-29",
+      "category": "mvp_de_la_jornada",
+      "manager": "Jotabetrbb",
+      "player": "V. Júnior",
+      "importance": 5
+    },
+    {
+      "row": 276,
+      "id": "069b7a26db3eb56f",
+      "fecha": "2026-08-16",
+      "category": "fichaje",
+      "manager": "Los marinero",
+      "player": "Álex Calatrava",
+      "importance": 3
+    },
+    {
+      "row": 277,
+      "id": "0be98d5ce23d75b7",
+      "fecha": "2026-08-16",
+      "category": "fichaje",
+      "manager": "Chamacónicos",
+      "player": "Abel Bretones",
+      "importance": 3
+    },
+    {
+      "row": 278,
+      "id": "100bbec3062f9fbe",
+      "fecha": "2026-08-16",
+      "category": "expulsion",
+      "manager": "Jotabetrbb",
+      "player": "K. Femenía",
+      "importance": 3
+    },
+    {
+      "row": 279,
+      "id": "12bb2b7daa06e398",
+      "fecha": "2026-08-16",
+      "category": "fichaje",
+      "manager": "Chamacónicos",
+      "player": "Yan Diomande",
+      "importance": 3
+    },
+    {
+      "row": 280,
+      "id": "191902a5a17435bf",
+      "fecha": "2026-08-16",
+      "category": "fichaje",
+      "manager": "Dani",
+      "player": "Álex Calatrava",
+      "importance": 3
+    },
+    {
+      "row": 281,
+      "id": "1b7953794acc4796",
+      "fecha": "2026-08-16",
+      "category": "fichaje",
+      "manager": "Los marinero",
+      "player": "Ademola Lookman",
+      "importance": 3
+    },
+    {
+      "row": 282,
+      "id": "1bfb715d40d67b66",
+      "fecha": "2026-08-16",
+      "category": "venta",
+      "manager": "Juanba",
+      "player": "Julen Agirrezabala",
+      "importance": 5
+    },
+    {
+      "row": 283,
+      "id": "200b148b5ff0fc0f",
+      "fecha": "2026-08-16",
+      "category": "clausulazo",
+      "manager": "Chamacónicos",
+      "player": "Sergio Canales",
+      "importance": 5
+    },
+    {
+      "row": 284,
+      "id": "2066c33320a02eb0",
+      "fecha": "2026-08-16",
+      "category": "fichaje",
+      "manager": "Jotabetrbb",
+      "player": "Nelson Deossa",
+      "importance": 3
+    },
+    {
+      "row": 285,
+      "id": "216f283ec9ad8493",
+      "fecha": "2026-08-16",
+      "category": "venta",
+      "manager": "Chamacónicos",
+      "player": "Kike García",
+      "importance": 3
+    },
+    {
+      "row": 286,
+      "id": "225ea1227cb95fed",
+      "fecha": "2026-08-16",
+      "category": "fichaje",
+      "manager": "Chamacónicos",
+      "player": "Buba Sangaré",
+      "importance": 3
+    },
+    {
+      "row": 287,
+      "id": "22fb6538202d4a9e",
+      "fecha": "2026-08-16",
+      "category": "fichaje",
+      "manager": "Dani",
+      "player": "Justin De Haas",
+      "importance": 3
+    },
+    {
+      "row": 288,
+      "id": "24aa0bec968b7df5",
+      "fecha": "2026-08-16",
+      "category": "fichaje",
+      "manager": "Maldinillo 💥",
+      "player": "Borja Mayoral",
+      "importance": 3
+    },
+    {
+      "row": 289,
+      "id": "27c5b51fe491b69f",
+      "fecha": "2026-08-16",
+      "category": "fichaje",
+      "manager": "Jotabetrbb",
+      "player": "Aimar Oroz",
+      "importance": 3
+    },
+    {
+      "row": 290,
+      "id": "2a1cb1b4e9aca620",
+      "fecha": "2026-08-16",
+      "category": "fichaje",
+      "manager": "Los marinero",
+      "player": "Dakonam Djené",
+      "importance": 3
+    },
+    {
+      "row": 291,
+      "id": "2b7d15ed08541eb7",
+      "fecha": "2026-08-16",
+      "category": "fichaje",
+      "manager": "Dani",
+      "player": "Buba Sangaré",
+      "importance": 3
+    },
+    {
+      "row": 292,
+      "id": "2b8569f0d849a0fd",
+      "fecha": "2026-08-16",
+      "category": "fichaje",
+      "manager": "Chamacónicos",
+      "player": "Ademola Lookman",
+      "importance": 3
+    },
+    {
+      "row": 293,
+      "id": "3c76a954fddf303d",
+      "fecha": "2026-08-16",
+      "category": "fichaje",
+      "manager": "De la Guettir FC",
+      "player": "Álex Calatrava",
+      "importance": 3
+    },
+    {
+      "row": 294,
+      "id": "3c905e6884ceba17",
+      "fecha": "2026-08-16",
+      "category": "fichaje",
+      "manager": "MuchaSalsa",
+      "player": "Borja Mayoral",
+      "importance": 3
+    },
+    {
+      "row": 295,
+      "id": "3d1f03be5a5a75bf",
+      "fecha": "2026-08-16",
+      "category": "venta",
+      "manager": "Jotabetrbb",
+      "player": "Denis Suárez",
+      "importance": 3
+    },
+    {
+      "row": 296,
+      "id": "3ee02738bf6afd30",
+      "fecha": "2026-08-16",
+      "category": "fichaje",
+      "manager": "MuchaSalsa",
+      "player": "Clemens Riedel",
+      "importance": 3
+    },
+    {
+      "row": 297,
+      "id": "3f581138e8ef57ca",
+      "fecha": "2026-08-16",
+      "category": "venta",
+      "manager": "Los marinero",
+      "player": "Iñaki Williams",
+      "importance": 3
+    },
+    {
+      "row": 298,
+      "id": "42d4745f5307c8fa",
+      "fecha": "2026-08-16",
+      "category": "venta",
+      "manager": "Maldinillo 💥",
+      "player": "Miguel Rodríguez",
+      "importance": 3
+    },
+    {
+      "row": 299,
+      "id": "43497961f3e7c384",
+      "fecha": "2026-08-16",
+      "category": "fichaje",
+      "manager": "Jotabetrbb",
+      "player": "Karim Adeyemi",
+      "importance": 4
+    },
+    {
+      "row": 300,
+      "id": "44c65d42dd0d4b9d",
+      "fecha": "2026-08-16",
+      "category": "venta",
+      "manager": "Dani",
+      "player": "Thomas Lemar",
+      "importance": 3
+    },
+    {
+      "row": 301,
+      "id": "4d51427dba3b017d",
+      "fecha": "2026-08-16",
+      "category": "mvp",
+      "manager": "Los marinero",
+      "player": "A. Martín",
+      "importance": 4
+    },
+    {
+      "row": 302,
+      "id": "517645a695369ccf",
+      "fecha": "2026-08-16",
+      "category": "venta",
+      "manager": "Los marinero",
+      "player": "Adrià Pedrosa",
+      "importance": 3
+    },
+    {
+      "row": 303,
+      "id": "54170c5815ec62be",
+      "fecha": "2026-08-16",
+      "category": "fichaje",
+      "manager": "Maldinillo 💥",
+      "player": "Buba Sangaré",
+      "importance": 3
+    },
+    {
+      "row": 304,
+      "id": "55d1d7122ffaf7c7",
+      "fecha": "2026-08-16",
+      "category": "venta",
+      "manager": "Dani",
+      "player": "Jairo Noriega",
+      "importance": 3
+    },
+    {
+      "row": 305,
+      "id": "58aba2df1391f513",
+      "fecha": "2026-08-16",
+      "category": "fichaje",
+      "manager": "Chamacónicos",
+      "player": "Justin De Haas",
+      "importance": 3
+    },
+    {
+      "row": 306,
+      "id": "58e2c952f5cb020a",
+      "fecha": "2026-08-16",
+      "category": "venta",
+      "manager": "Dani",
+      "player": "Iñaki Rupérez",
+      "importance": 3
+    },
+    {
+      "row": 307,
+      "id": "592facf477b2bc9f",
+      "fecha": "2026-08-16",
+      "category": "fichaje",
+      "manager": "Los marinero",
+      "player": "Aitor Paredes",
+      "importance": 3
+    },
+    {
+      "row": 308,
+      "id": "5e0166000f50b8ff",
+      "fecha": "2026-08-16",
+      "category": "fichaje",
+      "manager": "Dani",
+      "player": "Leandro Cabrera",
+      "importance": 3
+    },
+    {
+      "row": 309,
+      "id": "62a88e184679bec0",
+      "fecha": "2026-08-16",
+      "category": "fichaje",
+      "manager": "Los marinero",
+      "player": "José Luis Gayà",
+      "importance": 3
+    },
+    {
+      "row": 310,
+      "id": "6a028a7cf0604c11",
+      "fecha": "2026-08-16",
+      "category": "fichaje",
+      "manager": "Dani",
+      "player": "Ademola Lookman",
+      "importance": 3
+    },
+    {
+      "row": 311,
+      "id": "6c16ac4b897b68cd",
+      "fecha": "2026-08-16",
+      "category": "venta",
+      "manager": "Los marinero",
+      "player": "Juan Musso",
+      "importance": 3
+    },
+    {
+      "row": 312,
+      "id": "7231358138abe969",
+      "fecha": "2026-08-16",
+      "category": "fichaje",
+      "manager": "Maldinillo 💥",
+      "player": "Alejandro Balde",
+      "importance": 3
+    },
+    {
+      "row": 313,
+      "id": "733237deb59b5575",
+      "fecha": "2026-08-16",
+      "category": "fichaje",
+      "manager": "Maldinillo 💥",
+      "player": "Abel Bretones",
+      "importance": 3
+    },
+    {
+      "row": 314,
+      "id": "73e7fd5c4f1d7a92",
+      "fecha": "2026-08-16",
+      "category": "venta",
+      "manager": "Chamacónicos",
+      "player": "Thiago Pitarch",
+      "importance": 3
+    },
+    {
+      "row": 315,
+      "id": "74b826455b7046bd",
+      "fecha": "2026-08-16",
+      "category": "fichaje",
+      "manager": "Dani",
+      "player": "Aimar Oroz",
+      "importance": 3
+    },
+    {
+      "row": 316,
+      "id": "787e4a743912f416",
+      "fecha": "2026-08-16",
+      "category": "clausulazo",
+      "manager": "Dani",
+      "player": "Manu Sánchez",
+      "importance": 5
+    },
+    {
+      "row": 317,
+      "id": "798e71c5f759f0b3",
+      "fecha": "2026-08-16",
+      "category": "fichaje",
+      "manager": "Jotabetrbb",
+      "player": "Ademola Lookman",
+      "importance": 4
+    },
+    {
+      "row": 318,
+      "id": "7a972257e72aa098",
+      "fecha": "2026-08-16",
+      "category": "fichaje",
+      "manager": "Chamacónicos",
+      "player": "Maguette Gueye",
+      "importance": 3
+    },
+    {
+      "row": 319,
+      "id": "7f575e4782c71ee1",
+      "fecha": "2026-08-16",
+      "category": "venta",
+      "manager": "Dani",
+      "player": "Álvaro Djaló",
+      "importance": 3
+    },
+    {
+      "row": 320,
+      "id": "81d79ede6466131d",
+      "fecha": "2026-08-16",
+      "category": "fichaje",
+      "manager": "Libre",
+      "player": "Lamine Yamal",
+      "importance": 5
+    },
+    {
+      "row": 321,
+      "id": "898b773c54e9ca26",
+      "fecha": "2026-08-16",
+      "category": "venta",
+      "manager": "Chamacónicos",
+      "player": "Damián Cáceres",
+      "importance": 3
+    },
+    {
+      "row": 322,
+      "id": "8e25e2a7cf01eb0f",
+      "fecha": "2026-08-16",
+      "category": "venta",
+      "manager": "Jotabetrbb",
+      "player": "Maroan Sannadi",
+      "importance": 3
+    },
+    {
+      "row": 323,
+      "id": "8e8580edf239d9d6",
+      "fecha": "2026-08-16",
+      "category": "clausulazo",
+      "manager": "Maldinillo 💥",
+      "player": "Endrick",
+      "importance": 5
+    },
+    {
+      "row": 324,
+      "id": "9371998b30c5f9dd",
+      "fecha": "2026-08-16",
+      "category": "venta",
+      "manager": "Chamacónicos",
+      "player": "Saba Sazonov",
+      "importance": 3
+    },
+    {
+      "row": 325,
+      "id": "94a30b266432b7ea",
+      "fecha": "2026-08-16",
+      "category": "fichaje",
+      "manager": "Libre",
+      "player": "Lucas Noubi",
+      "importance": 3
+    },
+    {
+      "row": 326,
+      "id": "9f83437d0661f4a3",
+      "fecha": "2026-08-16",
+      "category": "fichaje",
+      "manager": "Maldinillo 💥",
+      "player": "Iñaki Williams",
+      "importance": 3
+    },
+    {
+      "row": 327,
+      "id": "a1021a1294e9ce56",
+      "fecha": "2026-08-16",
+      "category": "venta",
+      "manager": "Maldinillo 💥",
+      "player": "Sergio Canales",
+      "importance": 5
+    },
+    {
+      "row": 328,
+      "id": "a167362e58594256",
+      "fecha": "2026-08-16",
+      "category": "fichaje",
+      "manager": "Chamacónicos",
+      "player": "Einar Galilea",
+      "importance": 3
+    },
+    {
+      "row": 329,
+      "id": "a23b962fd13a4567",
+      "fecha": "2026-08-16",
+      "category": "venta",
+      "manager": "De la Guettir FC",
+      "player": "Endrick",
+      "importance": 5
+    },
+    {
+      "row": 330,
+      "id": "a5e951bfd954ffac",
+      "fecha": "2026-08-16",
+      "category": "fichaje",
+      "manager": "Los marinero",
+      "player": "Yan Diomande",
+      "importance": 5
+    },
+    {
+      "row": 331,
+      "id": "a96ae40a21962c49",
+      "fecha": "2026-08-16",
+      "category": "fichaje",
+      "manager": "MuchaSalsa",
+      "player": "Buba Sangaré",
+      "importance": 3
+    },
+    {
+      "row": 332,
+      "id": "a9b3b0e1abb7153f",
+      "fecha": "2026-08-16",
+      "category": "fichaje",
+      "manager": "Chamacónicos",
+      "player": "José Luis Gayà",
+      "importance": 3
+    },
+    {
+      "row": 333,
+      "id": "aa6106aa4b86324a",
+      "fecha": "2026-08-16",
+      "category": "venta",
+      "manager": "Jotabetrbb",
+      "player": "Sergio Martinez",
+      "importance": 5
+    },
+    {
+      "row": 334,
+      "id": "aa872ba0ab87e36b",
+      "fecha": "2026-08-16",
+      "category": "fichaje",
+      "manager": "Libre",
+      "player": "Dakonam Djené",
+      "importance": 3
+    },
+    {
+      "row": 335,
+      "id": "b05f13a495e506be",
+      "fecha": "2026-08-16",
+      "category": "fichaje",
+      "manager": "Dani",
+      "player": "Maguette Gueye",
+      "importance": 3
+    },
+    {
+      "row": 336,
+      "id": "b1cb88bca7ce1e2f",
+      "fecha": "2026-08-16",
+      "category": "fichaje",
+      "manager": "Los marinero",
+      "player": "Nelson Deossa",
+      "importance": 3
+    },
+    {
+      "row": 337,
+      "id": "b92015d2bd7c9deb",
+      "fecha": "2026-08-16",
+      "category": "fichaje",
+      "manager": "Dani",
+      "player": "Abel Bretones",
+      "importance": 3
+    },
+    {
+      "row": 338,
+      "id": "bc1f3d08ff555202",
+      "fecha": "2026-08-16",
+      "category": "clausulazo",
+      "manager": "Los marinero",
+      "player": "Sergio Martinez",
+      "importance": 5
+    },
+    {
+      "row": 339,
+      "id": "bd192b39159d9ec0",
+      "fecha": "2026-08-16",
+      "category": "venta",
+      "manager": "MuchaSalsa",
+      "player": "Christantus Uche",
+      "importance": 3
+    },
+    {
+      "row": 340,
+      "id": "bf1825cf02d2d39e",
+      "fecha": "2026-08-16",
+      "category": "clausulazo",
+      "manager": "Dani",
+      "player": "Ramón Terrats",
+      "importance": 5
+    },
+    {
+      "row": 341,
+      "id": "c06e085bc065fb18",
+      "fecha": "2026-08-16",
+      "category": "venta",
+      "manager": "Jotabetrbb",
+      "player": "Aarón Ochoa",
+      "importance": 3
+    },
+    {
+      "row": 342,
+      "id": "c19773757adaccc7",
+      "fecha": "2026-08-16",
+      "category": "venta",
+      "manager": "Jotabetrbb",
+      "player": "Cristian Rivero",
+      "importance": 3
+    },
+    {
+      "row": 343,
+      "id": "c2269f1a431d38ee",
+      "fecha": "2026-08-16",
+      "category": "venta",
+      "manager": "Dani",
+      "player": "Ángel Recio",
+      "importance": 3
+    },
+    {
+      "row": 344,
+      "id": "c3ce6c057b399f7f",
+      "fecha": "2026-08-16",
+      "category": "venta",
+      "manager": "Chamacónicos",
+      "player": "Antonio Sivera",
+      "importance": 3
+    },
+    {
+      "row": 345,
+      "id": "c7133d6c47bf17fd",
+      "fecha": "2026-08-16",
+      "category": "venta",
+      "manager": "Dani",
+      "player": "Jeremy Toljan",
+      "importance": 3
+    },
+    {
+      "row": 346,
+      "id": "d2c04fd8ef5dc1fa",
+      "fecha": "2026-08-16",
+      "category": "venta",
+      "manager": "Los marinero",
+      "player": "Abdoulaye Faye",
+      "importance": 3
+    },
+    {
+      "row": 347,
+      "id": "dcb06d08ea7331e4",
+      "fecha": "2026-08-16",
+      "category": "venta",
+      "manager": "Dani",
+      "player": "Pablo Marín",
+      "importance": 3
+    },
+    {
+      "row": 348,
+      "id": "decab413797cc7cf",
+      "fecha": "2026-08-16",
+      "category": "venta",
+      "manager": "MuchaSalsa",
+      "player": "Ramón Terrats",
+      "importance": 5
+    },
+    {
+      "row": 349,
+      "id": "e0f1689d527587d3",
+      "fecha": "2026-08-16",
+      "category": "mvp",
+      "manager": "Los marinero",
+      "player": "T. Dolan",
+      "importance": 4
+    },
+    {
+      "row": 350,
+      "id": "e175c8ec23d950b0",
+      "fecha": "2026-08-16",
+      "category": "venta",
+      "manager": "Dani",
+      "player": "Alejandro Iturbe",
+      "importance": 3
+    },
+    {
+      "row": 351,
+      "id": "ecfac97072233b54",
+      "fecha": "2026-08-16",
+      "category": "fichaje",
+      "manager": "Maldinillo 💥",
+      "player": "Einar Galilea",
+      "importance": 3
+    },
+    {
+      "row": 352,
+      "id": "edb9fd65604aa5c8",
+      "fecha": "2026-08-16",
+      "category": "fichaje",
+      "manager": "Jotabetrbb",
+      "player": "Abel Bretones",
+      "importance": 3
+    },
+    {
+      "row": 353,
+      "id": "f6e4aafe6bf51092",
+      "fecha": "2026-08-16",
+      "category": "fichaje",
+      "manager": "Chamacónicos",
+      "player": "Clemens Riedel",
+      "importance": 3
+    },
+    {
+      "row": 354,
+      "id": "f71160bfcd158259",
+      "fecha": "2026-08-16",
+      "category": "clausulazo",
+      "manager": "Chamacónicos",
+      "player": "Julen Agirrezabala",
+      "importance": 5
+    },
+    {
+      "row": 355,
+      "id": "fb019e6466cc2d13",
+      "fecha": "2026-08-16",
+      "category": "venta",
+      "manager": "MuchaSalsa",
+      "player": "Manu Sánchez",
+      "importance": 5
+    },
+    {
+      "row": 356,
+      "id": "fba812eabd7b4458",
+      "fecha": "2026-08-16",
+      "category": "fichaje",
+      "manager": "Dani",
+      "player": "Lucas Noubi",
+      "importance": 3
+    },
+    {
+      "row": 357,
+      "id": "fc0ab6aa953d9c58",
+      "fecha": "2026-08-16",
+      "category": "fichaje",
+      "manager": "MuchaSalsa",
+      "player": "Maguette Gueye",
+      "importance": 3
+    },
+    {
+      "row": 358,
+      "id": "068dce8c3655223f",
+      "fecha": "2026-08-21",
+      "category": "venta",
+      "manager": "Chamacónicos",
+      "player": "David Mella",
+      "importance": 3
+    },
+    {
+      "row": 359,
+      "id": "0e604d8980a223ca",
+      "fecha": "2026-08-21",
+      "category": "fichaje",
+      "manager": "Maldinillo 💥",
+      "player": "Álvaro García",
+      "importance": 3
+    },
+    {
+      "row": 360,
+      "id": "0e614871e210f100",
+      "fecha": "2026-08-21",
+      "category": "venta",
+      "manager": "Chamacónicos",
+      "player": "José Ángel Jurado",
+      "importance": 3
+    },
+    {
+      "row": 361,
+      "id": "0ec3662ff3238071",
+      "fecha": "2026-08-21",
+      "category": "venta",
+      "manager": "Maldinillo 💥",
+      "player": "Odysseas Vlachodimos",
+      "importance": 3
+    },
+    {
+      "row": 362,
+      "id": "0ed6d4a6688f6c7e",
+      "fecha": "2026-08-21",
+      "category": "fichaje",
+      "manager": "Libre",
+      "player": "Pau Navarro",
+      "importance": 3
+    },
+    {
+      "row": 363,
+      "id": "1160296220505e44",
+      "fecha": "2026-08-21",
+      "category": "venta",
+      "manager": "Los marinero",
+      "player": "José Luis Gayà",
+      "importance": 3
+    },
+    {
+      "row": 364,
+      "id": "16c180debb3789ab",
+      "fecha": "2026-08-21",
+      "category": "venta",
+      "manager": "Libre",
+      "player": "Fábio Cardoso",
+      "importance": 3
+    },
+    {
+      "row": 365,
+      "id": "21f2b83dd29ab133",
+      "fecha": "2026-08-21",
+      "category": "fichaje",
+      "manager": "Dani",
+      "player": "Álvaro García",
+      "importance": 3
+    },
+    {
+      "row": 366,
+      "id": "2e35d297a114a805",
+      "fecha": "2026-08-21",
+      "category": "fichaje",
+      "manager": "Los marinero",
+      "player": "Chidera Ejuke",
+      "importance": 3
+    },
+    {
+      "row": 367,
+      "id": "2f21f1dd6849b3dc",
+      "fecha": "2026-08-21",
+      "category": "venta",
+      "manager": "De la Guettir FC",
+      "player": "Moussa Diarra",
+      "importance": 3
+    },
+    {
+      "row": 368,
+      "id": "2f831e06c0e44e1e",
+      "fecha": "2026-08-21",
+      "category": "fichaje",
+      "manager": "Dani",
+      "player": "Juan Cruz",
+      "importance": 3
+    },
+    {
+      "row": 369,
+      "id": "32a5c878317dd1b8",
+      "fecha": "2026-08-21",
+      "category": "venta",
+      "manager": "Libre",
+      "player": "Giorgi Guliashvili",
+      "importance": 3
+    },
+    {
+      "row": 370,
+      "id": "4a1826868c8a62bf",
+      "fecha": "2026-08-21",
+      "category": "venta",
+      "manager": "Maldinillo 💥",
+      "player": "Diego Murillo",
+      "importance": 3
+    },
+    {
+      "row": 371,
+      "id": "4e3fa44ec74448c0",
+      "fecha": "2026-08-21",
+      "category": "fichaje",
+      "manager": "Maldinillo 💥",
+      "player": "Jon Guridi",
+      "importance": 3
+    },
+    {
+      "row": 372,
+      "id": "5165b974439ab7df",
+      "fecha": "2026-08-21",
+      "category": "venta",
+      "manager": "Maldinillo 💥",
+      "player": "Iñigo Ruiz De Galarreta",
+      "importance": 3
+    },
+    {
+      "row": 373,
+      "id": "5567755f710ba13e",
+      "fecha": "2026-08-21",
+      "category": "venta",
+      "manager": "Libre",
+      "player": "Diego López",
+      "importance": 3
+    },
+    {
+      "row": 374,
+      "id": "6783ee84e107595b",
+      "fecha": "2026-08-21",
+      "category": "fichaje",
+      "manager": "Maldinillo 💥",
+      "player": "Odysseas Vlachodimos",
+      "importance": 3
+    },
+    {
+      "row": 375,
+      "id": "6a0737b2fbc4989e",
+      "fecha": "2026-08-21",
+      "category": "venta",
+      "manager": "Libre",
+      "player": "Iván Romero",
+      "importance": 3
+    },
+    {
+      "row": 376,
+      "id": "6f9bca28ccb71a58",
+      "fecha": "2026-08-21",
+      "category": "venta",
+      "manager": "Libre",
+      "player": "Yago Santiago",
+      "importance": 3
+    },
+    {
+      "row": 377,
+      "id": "7492aabc496b69e1",
+      "fecha": "2026-08-21",
+      "category": "fichaje",
+      "manager": "Libre",
+      "player": "Álvaro García",
+      "importance": 3
+    },
+    {
+      "row": 378,
+      "id": "822a192fb3a70c93",
+      "fecha": "2026-08-21",
+      "category": "venta",
+      "manager": "Maldinillo 💥",
+      "player": "Juan Carlos Arana",
+      "importance": 3
+    },
+    {
+      "row": 379,
+      "id": "8307826e9f2c9762",
+      "fecha": "2026-08-21",
+      "category": "venta",
+      "manager": "Dani",
+      "player": "Abiel Osorio",
+      "importance": 3
+    },
+    {
+      "row": 380,
+      "id": "9330463c5f45107e",
+      "fecha": "2026-08-21",
+      "category": "fichaje",
+      "manager": "Maldinillo 💥",
+      "player": "Arda Güler",
+      "importance": 4
+    },
+    {
+      "row": 381,
+      "id": "96f7b12398df5d64",
+      "fecha": "2026-08-21",
+      "category": "fichaje",
+      "manager": "Chamacónicos",
+      "player": "Jon Guridi",
+      "importance": 3
+    },
+    {
+      "row": 382,
+      "id": "97bcebc9145c45f5",
+      "fecha": "2026-08-21",
+      "category": "fichaje",
+      "manager": "Chamacónicos",
+      "player": "Arda Güler",
+      "importance": 3
+    },
+    {
+      "row": 383,
+      "id": "a0ac30705281af4d",
+      "fecha": "2026-08-21",
+      "category": "fichaje",
+      "manager": "Chamacónicos",
+      "player": "Asier Villalibre",
+      "importance": 3
+    },
+    {
+      "row": 384,
+      "id": "a224db49c223c43d",
+      "fecha": "2026-08-21",
+      "category": "fichaje",
+      "manager": "Chamacónicos",
+      "player": "Urko González",
+      "importance": 3
+    },
+    {
+      "row": 385,
+      "id": "a277dd70f243d3b7",
+      "fecha": "2026-08-21",
+      "category": "fichaje",
+      "manager": "Dani",
+      "player": "Georges Mikautadze",
+      "importance": 4
+    },
+    {
+      "row": 386,
+      "id": "b470f9d0be7d4400",
+      "fecha": "2026-08-21",
+      "category": "venta",
+      "manager": "Los marinero",
+      "player": "Tani Oluwaseyi",
+      "importance": 3
+    },
+    {
+      "row": 387,
+      "id": "b76fbe4e4ea16b00",
+      "fecha": "2026-08-21",
+      "category": "fichaje",
+      "manager": "Libre",
+      "player": "Jon Guridi",
+      "importance": 3
+    },
+    {
+      "row": 388,
+      "id": "b881b138073ecf18",
+      "fecha": "2026-08-21",
+      "category": "fichaje",
+      "manager": "Maldinillo 💥",
+      "player": "Chidera Ejuke",
+      "importance": 3
+    },
+    {
+      "row": 389,
+      "id": "bab8088aac8c981b",
+      "fecha": "2026-08-21",
+      "category": "venta",
+      "manager": "Dani",
+      "player": "Buba Sangaré",
+      "importance": 3
+    },
+    {
+      "row": 390,
+      "id": "bf8891a1fcca1610",
+      "fecha": "2026-08-21",
+      "category": "venta",
+      "manager": "Libre",
+      "player": "Dimitri Foulquier",
+      "importance": 3
+    },
+    {
+      "row": 391,
+      "id": "cbed548934310549",
+      "fecha": "2026-08-21",
+      "category": "venta",
+      "manager": "Los marinero",
+      "player": "Dakonam Djené",
+      "importance": 3
+    },
+    {
+      "row": 392,
+      "id": "cc40b179c336614d",
+      "fecha": "2026-08-21",
+      "category": "fichaje",
+      "manager": "Chamacónicos",
+      "player": "Álvaro García",
+      "importance": 3
+    },
+    {
+      "row": 393,
+      "id": "d3d1e89d71a5eac2",
+      "fecha": "2026-08-21",
+      "category": "venta",
+      "manager": "Dani",
+      "player": "Leandro Cabrera",
+      "importance": 3
+    },
+    {
+      "row": 394,
+      "id": "dba0a4dc97e272c5",
+      "fecha": "2026-08-21",
+      "category": "venta",
+      "manager": "Libre",
+      "player": "Dani Cárdenas",
+      "importance": 3
+    },
+    {
+      "row": 395,
+      "id": "ebcf262080fac6ba",
+      "fecha": "2026-08-21",
+      "category": "venta",
+      "manager": "Maldinillo 💥",
+      "player": "Lucas Boyé",
+      "importance": 3
+    },
+    {
+      "row": 396,
+      "id": "f0eb0735bb6b6c1b",
+      "fecha": "2026-08-21",
+      "category": "fichaje",
+      "manager": "MuchaSalsa",
+      "player": "Jon Guridi",
+      "importance": 3
+    },
+    {
+      "row": 397,
+      "id": "f5d4207b47c0dfb7",
+      "fecha": "2026-08-21",
+      "category": "fichaje",
+      "manager": "Maldinillo 💥",
+      "player": "Martim Neto",
+      "importance": 3
+    },
+    {
+      "row": 398,
+      "id": "fe9b1f3c8a8bbf28",
+      "fecha": "2026-08-21",
+      "category": "fichaje",
+      "manager": "Maldinillo 💥",
+      "player": "Juan Cruz",
+      "importance": 3
+    },
+    {
+      "row": 399,
+      "id": "1154c5da0f7ca7a3",
+      "fecha": "2026-08-22",
+      "category": "venta",
+      "manager": "Jotabetrbb",
+      "player": "Kiko Femenía",
+      "importance": 3
+    },
+    {
+      "row": 400,
+      "id": "30b1499509db1b65",
+      "fecha": "2026-08-22",
+      "category": "venta",
+      "manager": "Maldinillo 💥",
+      "player": "Íñigo Arguibide",
+      "importance": 5
+    },
+    {
+      "row": 401,
+      "id": "363468e582d29b4d",
+      "fecha": "2026-08-22",
+      "category": "clausulazo",
+      "manager": "Jotabetrbb",
+      "player": "Íñigo Arguibide",
+      "importance": 5
+    },
+    {
+      "row": 402,
+      "id": "487f20cf52247ef4",
+      "fecha": "2026-08-22",
+      "category": "fichaje",
+      "manager": "Chamacónicos",
+      "player": "Álex Berenguer",
+      "importance": 3
+    },
+    {
+      "row": 403,
+      "id": "6b996bddc6d2c4b5",
+      "fecha": "2026-08-22",
+      "category": "fichaje",
+      "manager": "Maldinillo 💥",
+      "player": "Álex Berenguer",
+      "importance": 3
+    },
+    {
+      "row": 404,
+      "id": "74a82668f49c64e3",
+      "fecha": "2026-08-22",
+      "category": "venta",
+      "manager": "Jotabetrbb",
+      "player": "Pedro Felipe",
+      "importance": 3
+    },
+    {
+      "row": 405,
+      "id": "7f2d2958e663ffbd",
+      "fecha": "2026-08-22",
+      "category": "fichaje",
+      "manager": "Maldinillo 💥",
+      "player": "Yangel Herrera",
+      "importance": 3
+    },
+    {
+      "row": 406,
+      "id": "819da9dad444a42c",
+      "fecha": "2026-08-22",
+      "category": "clausulazo",
+      "manager": "Chamacónicos",
+      "player": "Miguel Sierra",
+      "importance": 5
+    },
+    {
+      "row": 407,
+      "id": "908329331f5d51c5",
+      "fecha": "2026-08-22",
+      "category": "venta",
+      "manager": "Dani",
+      "player": "Miguel Sierra",
+      "importance": 5
+    },
+    {
+      "row": 408,
+      "id": "9a80eb3575f9eb89",
+      "fecha": "2026-08-22",
+      "category": "fichaje",
+      "manager": "Maldinillo 💥",
+      "player": "Omar El Hilali",
+      "importance": 3
+    },
+    {
+      "row": 409,
+      "id": "9e1a64307e1efd72",
+      "fecha": "2026-08-22",
+      "category": "fichaje",
+      "manager": "Jotabetrbb",
+      "player": "Álex Berenguer",
+      "importance": 3
+    },
+    {
+      "row": 410,
+      "id": "a1499676745b431a",
+      "fecha": "2026-08-22",
+      "category": "fichaje",
+      "manager": "Libre",
+      "player": "Omar El Hilali",
+      "importance": 3
+    },
+    {
+      "row": 411,
+      "id": "abb31105db53826e",
+      "fecha": "2026-08-22",
+      "category": "fichaje",
+      "manager": "Libre",
+      "player": "Luka Sučić",
+      "importance": 3
+    },
+    {
+      "row": 412,
+      "id": "bca1d5e077f924a3",
+      "fecha": "2026-08-22",
+      "category": "fichaje",
+      "manager": "Dani",
+      "player": "Omar El Hilali",
+      "importance": 3
+    },
+    {
+      "row": 413,
+      "id": "e35ae7e7f28686da",
+      "fecha": "2026-08-22",
+      "category": "fichaje",
+      "manager": "Maldinillo 💥",
+      "player": "Luka Sučić",
+      "importance": 3
+    },
+    {
+      "row": 414,
+      "id": "f7bae19ec28c2713",
+      "fecha": "2026-08-22",
+      "category": "fichaje",
+      "manager": "Jotabetrbb",
+      "player": "Omar El Hilali",
+      "importance": 3
+    },
+    {
+      "row": 415,
+      "id": "089e069f93d84f9a",
+      "fecha": "2026-08-23",
+      "category": "expulsion",
+      "manager": "Dani",
+      "player": "Y. Berchiche",
+      "importance": 3
+    },
+    {
+      "row": 416,
+      "id": "1289f889f330aed4",
+      "fecha": "2026-08-23",
+      "category": "venta",
+      "manager": "Jotabetrbb",
+      "player": "Pol Lozano",
+      "importance": 3
+    },
+    {
+      "row": 417,
+      "id": "2a9eaf3a802fbac5",
+      "fecha": "2026-08-23",
+      "category": "fichaje",
+      "manager": "MuchaSalsa",
+      "player": "Oso",
+      "importance": 3
+    },
+    {
+      "row": 418,
+      "id": "2ce4b83b135cbab1",
+      "fecha": "2026-08-23",
+      "category": "venta",
+      "manager": "Dani",
+      "player": "Yuri Berchiche",
+      "importance": 3
+    },
+    {
+      "row": 419,
+      "id": "75312771f21a0bdb",
+      "fecha": "2026-08-23",
+      "category": "mvp",
+      "manager": "De la Guettir FC",
+      "player": "Á. Calatrava",
+      "importance": 4
+    },
+    {
+      "row": 420,
+      "id": "ec56c854aa57fda3",
+      "fecha": "2026-08-23",
+      "category": "fichaje",
+      "manager": "Chamacónicos",
+      "player": "Oso",
+      "importance": 3
+    },
+    {
+      "row": 421,
+      "id": "0d03181ebded1bd0",
+      "fecha": "2026-08-24",
+      "category": "fichaje",
+      "manager": "Chamacónicos",
+      "player": "Carlos Dotor",
+      "importance": 3
+    },
+    {
+      "row": 422,
+      "id": "0db9eb6bf54f3edc",
+      "fecha": "2026-08-24",
+      "category": "mvp",
+      "manager": "Jotabetrbb",
+      "player": "K. Adeyemi",
+      "importance": 4
+    },
+    {
+      "row": 423,
+      "id": "15b07528df81cbba",
+      "fecha": "2026-08-24",
+      "category": "penalti_fallado",
+      "manager": "Los marinero",
+      "player": "A. Martín",
+      "importance": 3
+    },
+    {
+      "row": 424,
+      "id": "41f69e7a86ad6d81",
+      "fecha": "2026-08-24",
+      "category": "fichaje",
+      "manager": "Libre",
+      "player": "Carlos Dotor",
+      "importance": 3
+    },
+    {
+      "row": 425,
+      "id": "4c7fcfe015435421",
+      "fecha": "2026-08-24",
+      "category": "venta",
+      "manager": "Maldinillo 💥",
+      "player": "Beñat Turrientes",
+      "importance": 3
+    },
+    {
+      "row": 426,
+      "id": "58a95df63fe66ae9",
+      "fecha": "2026-08-24",
+      "category": "venta",
+      "manager": "Maldinillo 💥",
+      "player": "Alejandro Balde",
+      "importance": 3
+    },
+    {
+      "row": 427,
+      "id": "6057feb2f5fa3ec5",
+      "fecha": "2026-08-24",
+      "category": "fichaje",
+      "manager": "Libre",
+      "player": "Xavi Espart",
+      "importance": 3
+    },
+    {
+      "row": 428,
+      "id": "652017fd2036a567",
+      "fecha": "2026-08-24",
+      "category": "venta",
+      "manager": "Dani",
+      "player": "Yassir Zabiri",
+      "importance": 3
+    },
+    {
+      "row": 429,
+      "id": "667c39140608c4d1",
+      "fecha": "2026-08-24",
+      "category": "venta",
+      "manager": "Maldinillo 💥",
+      "player": "Martim Neto",
+      "importance": 3
+    },
+    {
+      "row": 430,
+      "id": "764b08e55681dddc",
+      "fecha": "2026-08-24",
+      "category": "fichaje",
+      "manager": "De la Guettir FC",
+      "player": "Xavi Espart",
+      "importance": 3
+    },
+    {
+      "row": 431,
+      "id": "a98c74298685cb2c",
+      "fecha": "2026-08-24",
+      "category": "fichaje",
+      "manager": "Chamacónicos",
+      "player": "Xavi Espart",
+      "importance": 3
+    },
+    {
+      "row": 432,
+      "id": "ba0344ef2b41c660",
+      "fecha": "2026-08-24",
+      "category": "fichaje",
+      "manager": "Maldinillo 💥",
+      "player": "Mario Soriano",
+      "importance": 3
+    },
+    {
+      "row": 433,
+      "id": "cdb50effa9cc1dd2",
+      "fecha": "2026-08-24",
+      "category": "fichaje",
+      "manager": "Los marinero",
+      "player": "Xavi Espart",
+      "importance": 3
+    },
+    {
+      "row": 434,
+      "id": "cfc3ef4c3a240042",
+      "fecha": "2026-08-24",
+      "category": "fichaje",
+      "manager": "Dani",
+      "player": "Mario Soriano",
+      "importance": 3
+    },
+    {
+      "row": 435,
+      "id": "f6f5730305540ef9",
+      "fecha": "2026-08-24",
+      "category": "mvp",
+      "manager": "Dani",
+      "player": "G. Mikautadze",
+      "importance": 4
+    },
+    {
+      "row": 436,
+      "id": "ffcd03c2909e6282",
+      "fecha": "2026-08-24",
+      "category": "venta",
+      "manager": "Los marinero",
+      "player": "Carlos Benavídez",
+      "importance": 3
+    },
+    {
+      "row": 437,
+      "id": "003d4bc82fe289fe",
+      "fecha": "2026-08-25",
+      "category": "fichaje",
+      "manager": "Chamacónicos",
+      "player": "Valentín Gómez",
+      "importance": 3
+    },
+    {
+      "row": 438,
+      "id": "0d4021ccc319d5c5",
+      "fecha": "2026-08-25",
+      "category": "venta",
+      "manager": "Chamacónicos",
+      "player": "Justin De Haas",
+      "importance": 3
+    },
+    {
+      "row": 439,
+      "id": "15c89a1595e47cde",
+      "fecha": "2026-08-25",
+      "category": "clasificacion",
+      "manager": null,
+      "player": null,
+      "importance": 5
+    },
+    {
+      "row": 440,
+      "id": "3557aa35e5df3f92",
+      "fecha": "2026-08-25",
+      "category": "venta",
+      "manager": "De la Guettir FC",
+      "player": "Jofre Carreras",
+      "importance": 3
+    },
+    {
+      "row": 441,
+      "id": "3972e1e68cd3f71d",
+      "fecha": "2026-08-25",
+      "category": "fichaje",
+      "manager": "Maldinillo 💥",
+      "player": "Beñat Prados",
+      "importance": 3
+    },
+    {
+      "row": 442,
+      "id": "4377da3d7fcded9b",
+      "fecha": "2026-08-25",
+      "category": "expulsion",
+      "manager": "Dani",
+      "player": "Y. Berchiche",
+      "importance": 3
+    },
+    {
+      "row": 443,
+      "id": "6a2bf32cf1b3a70c",
+      "fecha": "2026-08-25",
+      "category": "clasificacion",
+      "manager": null,
+      "player": null,
+      "importance": 5
+    },
+    {
+      "row": 444,
+      "id": "9a51ed44c02449ce",
+      "fecha": "2026-08-25",
+      "category": "venta",
+      "manager": "De la Guettir FC",
+      "player": "Kareem Tunde",
+      "importance": 3
+    },
+    {
+      "row": 445,
+      "id": "9a721312638d9b60",
+      "fecha": "2026-08-25",
+      "category": "mvp_de_la_jornada",
+      "manager": "De la Guettir FC",
+      "player": "Á. Calatrava",
+      "importance": 5
+    },
+    {
+      "row": 446,
+      "id": "9f9c90adddc7333f",
+      "fecha": "2026-08-25",
+      "category": "mvp_de_la_jornada",
+      "manager": "Dani",
+      "player": "G. Mikautadze",
+      "importance": 5
+    },
+    {
+      "row": 447,
+      "id": "af8f709c2fa12b92",
+      "fecha": "2026-08-25",
+      "category": "fichaje",
+      "manager": "Dani",
+      "player": "Gerard Martín",
+      "importance": 3
+    },
+    {
+      "row": 448,
+      "id": "c25a94a79b577944",
+      "fecha": "2026-08-25",
+      "category": "rumor",
+      "manager": null,
+      "player": null,
+      "importance": 3
+    },
+    {
+      "row": 449,
+      "id": "c8b180296c12ac27",
+      "fecha": "2026-08-25",
+      "category": "mvp_de_la_jornada",
+      "manager": "Jotabetrbb",
+      "player": "K. Adeyemi",
+      "importance": 5
+    },
+    {
+      "row": 450,
+      "id": "d0dd7e76a911a3e5",
+      "fecha": "2026-08-25",
+      "category": "venta",
+      "manager": "De la Guettir FC",
+      "player": "Logan Costa",
+      "importance": 3
+    },
+    {
+      "row": 451,
+      "id": "d36c196f679f3dea",
+      "fecha": "2026-08-25",
+      "category": "fichaje",
+      "manager": "Chamacónicos",
+      "player": "Gerard Martín",
+      "importance": 3
+    },
+    {
+      "row": 452,
+      "id": "d58b9f070cc97f52",
+      "fecha": "2026-08-25",
+      "category": "peor_actuacion_de_la_jornada",
+      "manager": "Dani",
+      "player": "Y. Berchiche",
+      "importance": 3
+    },
+    {
+      "row": 453,
+      "id": "df1c85b288ffd3ce",
+      "fecha": "2026-08-25",
+      "category": "fichaje",
+      "manager": "Maldinillo 💥",
+      "player": "Gerard Martín",
+      "importance": 4
+    },
+    {
+      "row": 454,
+      "id": "f76b1178039cb83a",
+      "fecha": "2026-08-25",
+      "category": "venta",
+      "manager": "Los marinero",
+      "player": "Jesse Bisiwu",
+      "importance": 3
+    },
+    {
+      "row": 455,
+      "id": "0166be897d5e9708",
+      "fecha": "2026-08-26",
+      "category": "fichaje",
+      "manager": "Dani",
+      "player": "Héctor Bellerín",
+      "importance": 3
+    },
+    {
+      "row": 456,
+      "id": "066160406ed1eae2",
+      "fecha": "2026-08-26",
+      "category": "venta",
+      "manager": "Dani",
+      "player": "Manu Sánchez",
+      "importance": 3
+    },
+    {
+      "row": 457,
+      "id": "482988c1ad57af46",
+      "fecha": "2026-08-26",
+      "category": "fichaje",
+      "manager": "Chamacónicos",
+      "player": "Moi Gómez",
+      "importance": 3
+    },
+    {
+      "row": 458,
+      "id": "aaea5835f81e3271",
+      "fecha": "2026-08-26",
+      "category": "fichaje",
+      "manager": "Libre",
+      "player": "Manu Sánchez",
+      "importance": 3
+    },
+    {
+      "row": 459,
+      "id": "c506c401ce7a5886",
+      "fecha": "2026-08-26",
+      "category": "mvp",
+      "manager": "Maldinillo 💥",
+      "player": "Á. Valles",
+      "importance": 4
+    },
+    {
+      "row": 460,
+      "id": "f536880c430f67e6",
+      "fecha": "2026-08-26",
+      "category": "fichaje",
+      "manager": "Dani",
+      "player": "Kiko Femenía",
+      "importance": 3
+    },
+    {
+      "row": 461,
+      "id": "00ce8ae6a1d347b3",
+      "fecha": "2026-08-27",
+      "category": "expulsion",
+      "manager": "Jotabetrbb",
+      "player": "K. Femenía",
+      "importance": 3
+    },
+    {
+      "row": 462,
+      "id": "03c1505b2c4f9f61",
+      "fecha": "2026-08-27",
+      "category": "venta_record",
+      "manager": "Dani",
+      "player": "Leandro Cabrera",
+      "importance": 3
+    },
+    {
+      "row": 463,
+      "id": "06567598fbb95adb",
+      "fecha": "2026-08-27",
+      "category": "fichaje",
+      "manager": "Chamacónicos",
+      "player": "Jozhua Vertrouwd",
+      "importance": 3
+    },
+    {
+      "row": 464,
+      "id": "0d291e0cda45127a",
+      "fecha": "2026-08-27",
+      "category": "venta",
+      "manager": "Maldinillo 💥",
+      "player": "Yangel Herrera",
+      "importance": 3
+    },
+    {
+      "row": 465,
+      "id": "2153cacc4fcdf628",
+      "fecha": "2026-08-27",
+      "category": "fichaje_destacado",
+      "manager": "Los marinero",
+      "player": "Yan Diomande",
+      "importance": 5
+    },
+    {
+      "row": 466,
+      "id": "32d599080fe1403b",
+      "fecha": "2026-08-27",
+      "category": "peor_actuacion_de_la_jornada",
+      "manager": "Jotabetrbb",
+      "player": "K. Femenía",
+      "importance": 3
+    },
+    {
+      "row": 467,
+      "id": "3604713dec0cfff3",
+      "fecha": "2026-08-27",
+      "category": "mvp_de_la_jornada",
+      "manager": "Los marinero",
+      "player": "T. Dolan",
+      "importance": 5
+    },
+    {
+      "row": 468,
+      "id": "3c67bf0977eaedc4",
+      "fecha": "2026-08-27",
+      "category": "venta",
+      "manager": "Maldinillo 💥",
+      "player": "Iñaki Williams",
+      "importance": 3
+    },
+    {
+      "row": 469,
+      "id": "429b7ee540daa99f",
+      "fecha": "2026-08-27",
+      "category": "venta",
+      "manager": "Los marinero",
+      "player": "Brahim Díaz",
+      "importance": 3
+    },
+    {
+      "row": 470,
+      "id": "7044de4bee435480",
+      "fecha": "2026-08-27",
+      "category": "fichaje",
+      "manager": "Maldinillo 💥",
+      "player": "Marc Bernal",
+      "importance": 3
+    },
+    {
+      "row": 471,
+      "id": "81877b8fe6ff8880",
+      "fecha": "2026-08-27",
+      "category": "mvp_de_la_jornada",
+      "manager": "Maldinillo 💥",
+      "player": "Á. Valles",
+      "importance": 5
+    },
+    {
+      "row": 472,
+      "id": "8aeac206a1574508",
+      "fecha": "2026-08-27",
+      "category": "fichaje",
+      "manager": "Dani",
+      "player": "José Luis Gayà",
+      "importance": 3
+    },
+    {
+      "row": 473,
+      "id": "8d5d798489efe9b0",
+      "fecha": "2026-08-27",
+      "category": "rumor",
+      "manager": null,
+      "player": null,
+      "importance": 3
+    },
+    {
+      "row": 474,
+      "id": "a181854a2342d870",
+      "fecha": "2026-08-27",
+      "category": "clausulazo",
+      "manager": "Dani",
+      "player": "Luka Sučić",
+      "importance": 5
+    },
+    {
+      "row": 475,
+      "id": "a6563d8d5ff3f958",
+      "fecha": "2026-08-27",
+      "category": "venta",
+      "manager": "Dani",
+      "player": "Isi Palazón",
+      "importance": 3
+    },
+    {
+      "row": 476,
+      "id": "b1514463370a2122",
+      "fecha": "2026-08-27",
+      "category": "clasificacion",
+      "manager": null,
+      "player": null,
+      "importance": 5
+    },
+    {
+      "row": 477,
+      "id": "c5b67b7ffb600db8",
+      "fecha": "2026-08-27",
+      "category": "fichaje",
+      "manager": "Chamacónicos",
+      "player": "Marc Bernal",
+      "importance": 3
+    },
+    {
+      "row": 478,
+      "id": "c6a812d98997519e",
+      "fecha": "2026-08-27",
+      "category": "fichaje_destacado",
+      "manager": "Libre",
+      "player": "Lamine Yamal",
+      "importance": 5
+    },
+    {
+      "row": 479,
+      "id": "d1d5cdb48dc17f6a",
+      "fecha": "2026-08-27",
+      "category": "fichaje_destacado",
+      "manager": "Dani",
+      "player": "Georges Mikautadze",
+      "importance": 5
+    },
+    {
+      "row": 480,
+      "id": "ecd852e588ab0a26",
+      "fecha": "2026-08-27",
+      "category": "fichaje",
+      "manager": "Chamacónicos",
+      "player": "Marc Pubill",
+      "importance": 4
+    },
+    {
+      "row": 481,
+      "id": "eea0ff25f670ea28",
+      "fecha": "2026-08-27",
+      "category": "venta",
+      "manager": "Maldinillo 💥",
+      "player": "Luka Sučić",
+      "importance": 5
+    },
+    {
+      "row": 482,
+      "id": "f28b69cdce801079",
+      "fecha": "2026-08-27",
+      "category": "mvp_de_la_jornada",
+      "manager": "Los marinero",
+      "player": "A. Martín",
+      "importance": 5
+    },
+    {
+      "row": 483,
+      "id": "0f699cc351f56f9d",
+      "fecha": "2026-08-28",
+      "category": "fichaje",
+      "manager": "De la Guettir FC",
+      "player": "Jorge Domínguez",
+      "importance": 3
+    },
+    {
+      "row": 484,
+      "id": "12d7fdcb21aba3ff",
+      "fecha": "2026-08-28",
+      "category": "fichaje",
+      "manager": "Dani",
+      "player": "Andrés García",
+      "importance": 3
+    },
+    {
+      "row": 485,
+      "id": "203565de683028a3",
+      "fecha": "2026-08-28",
+      "category": "fichaje",
+      "manager": "MuchaSalsa",
+      "player": "Nathan Saliba",
+      "importance": 3
+    },
+    {
+      "row": 486,
+      "id": "411427dd81cb4244",
+      "fecha": "2026-08-28",
+      "category": "fichaje",
+      "manager": "Libre",
+      "player": "Andrés García",
+      "importance": 3
+    },
+    {
+      "row": 487,
+      "id": "479b2d3886a16e2c",
+      "fecha": "2026-08-28",
+      "category": "fichaje",
+      "manager": "De la Guettir FC",
+      "player": "Alex Baena",
+      "importance": 4
+    },
+    {
+      "row": 488,
+      "id": "70f72d64b6a7d52b",
+      "fecha": "2026-08-28",
+      "category": "fichaje",
+      "manager": "Libre",
+      "player": "Jorge Domínguez",
+      "importance": 3
+    },
+    {
+      "row": 489,
+      "id": "716d4ff58ebbca02",
+      "fecha": "2026-08-28",
+      "category": "fichaje",
+      "manager": "Maldinillo 💥",
+      "player": "Alex Baena",
+      "importance": 3
+    },
+    {
+      "row": 490,
+      "id": "897942fe3fe4940a",
+      "fecha": "2026-08-28",
+      "category": "fichaje",
+      "manager": "De la Guettir FC",
+      "player": "Andrés García",
+      "importance": 3
+    },
+    {
+      "row": 491,
+      "id": "fc769ecabc036d4a",
+      "fecha": "2026-08-28",
+      "category": "fichaje",
+      "manager": "Los marinero",
+      "player": "Andrés García",
+      "importance": 3
+    },
+    {
+      "row": 492,
+      "id": "22db225b4bb922be",
+      "fecha": "2026-08-29",
+      "category": "fichaje",
+      "manager": "Maldinillo 💥",
+      "player": "Gonzalo Villar",
+      "importance": 3
+    },
+    {
+      "row": 493,
+      "id": "5df2861f26865e43",
+      "fecha": "2026-08-29",
+      "category": "fichaje",
+      "manager": "MuchaSalsa",
+      "player": "Nahuel Tenaglia",
+      "importance": 3
+    },
+    {
+      "row": 494,
+      "id": "691711f015bff00a",
+      "fecha": "2026-08-29",
+      "category": "fichaje",
+      "manager": "Dani",
+      "player": "Nahuel Tenaglia",
+      "importance": 3
+    },
+    {
+      "row": 495,
+      "id": "71fb5f4fffa1c755",
+      "fecha": "2026-08-29",
+      "category": "venta",
+      "manager": "MuchaSalsa",
+      "player": "Oso",
+      "importance": 3
+    },
+    {
+      "row": 496,
+      "id": "8801c874360bf6de",
+      "fecha": "2026-08-29",
+      "category": "fichaje",
+      "manager": "Los marinero",
+      "player": "Nahuel Tenaglia",
+      "importance": 3
+    },
+    {
+      "row": 497,
+      "id": "9a316f026e2807dd",
+      "fecha": "2026-08-29",
+      "category": "fichaje",
+      "manager": "De la Guettir FC",
+      "player": "Mikel Rodriguez",
+      "importance": 3
+    },
+    {
+      "row": 498,
+      "id": "a72e810831714f06",
+      "fecha": "2026-08-29",
+      "category": "venta",
+      "manager": "Jotabetrbb",
+      "player": "Etta Eyong",
+      "importance": 3
+    },
+    {
+      "row": 499,
+      "id": "d6682b5e8961ec4c",
+      "fecha": "2026-08-29",
+      "category": "fichaje",
+      "manager": "Dani",
+      "player": "Gonzalo Villar",
+      "importance": 3
+    },
+    {
+      "row": 500,
+      "id": "ee83db20dfaf4875",
+      "fecha": "2026-08-29",
+      "category": "fichaje",
+      "manager": "Jotabetrbb",
+      "player": "Gonzalo Villar",
+      "importance": 3
+    },
+    {
+      "row": 501,
+      "id": "fd921d6a4f7919ec",
+      "fecha": "2026-08-29",
+      "category": "fichaje",
+      "manager": "Maldinillo 💥",
+      "player": "Nahuel Tenaglia",
+      "importance": 3
+    },
+    {
+      "row": 502,
+      "id": "1f7e098e9bf35287",
+      "fecha": "2026-08-30",
+      "category": "fichaje",
+      "manager": "Chamacónicos",
+      "player": "Álvaro Carreras",
+      "importance": 3
+    },
+    {
+      "row": 503,
+      "id": "23c030d88f9bbca6",
+      "fecha": "2026-08-30",
+      "category": "fichaje",
+      "manager": "Maldinillo 💥",
+      "player": "Marc Cucurella",
+      "importance": 3
+    },
+    {
+      "row": 504,
+      "id": "4b3f27d6ad18c8e7",
+      "fecha": "2026-08-30",
+      "category": "fichaje",
+      "manager": "Jotabetrbb",
+      "player": "Andrés Castrín",
+      "importance": 3
+    },
+    {
+      "row": 505,
+      "id": "799584c745e20185",
+      "fecha": "2026-08-30",
+      "category": "venta",
+      "manager": "Los marinero",
+      "player": "Andrés Martín",
+      "importance": 3
+    },
+    {
+      "row": 506,
+      "id": "7ca1564bd5d8d645",
+      "fecha": "2026-08-30",
+      "category": "fichaje",
+      "manager": "Dani",
+      "player": "Andrés Castrín",
+      "importance": 3
+    },
+    {
+      "row": 507,
+      "id": "87ae9011ff46725d",
+      "fecha": "2026-08-30",
+      "category": "mvp",
+      "manager": "Chamacónicos",
+      "player": "M. Sierra",
+      "importance": 4
+    },
+    {
+      "row": 508,
+      "id": "882384c60511c1fc",
+      "fecha": "2026-08-30",
+      "category": "venta",
+      "manager": "Maldinillo 💥",
+      "player": "Luiz Júnior",
+      "importance": 3
+    },
+    {
+      "row": 509,
+      "id": "9a1977842e5d905b",
+      "fecha": "2026-08-30",
+      "category": "fichaje",
+      "manager": "Los marinero",
+      "player": "Marc Cucurella",
+      "importance": 4
+    },
+    {
+      "row": 510,
+      "id": "cfc40e5f0065977c",
+      "fecha": "2026-08-30",
+      "category": "venta",
+      "manager": "De la Guettir FC",
+      "player": "Mikel Jauregizar",
+      "importance": 3
+    },
+    {
+      "row": 511,
+      "id": "d1abe559af2a833a",
+      "fecha": "2026-08-30",
+      "category": "mvp",
+      "manager": "De la Guettir FC",
+      "player": "A. Baena",
+      "importance": 4
+    },
+    {
+      "row": 512,
+      "id": "d982d956900fe34f",
+      "fecha": "2026-08-30",
+      "category": "fichaje",
+      "manager": "Chamacónicos",
+      "player": "Andrés Castrín",
+      "importance": 3
+    },
+    {
+      "row": 513,
+      "id": "e137c2bb22106d9b",
+      "fecha": "2026-08-30",
+      "category": "venta",
+      "manager": "Chamacónicos",
+      "player": "Miguel Sierra",
+      "importance": 5
+    },
+    {
+      "row": 514,
+      "id": "eadeb703c1289d00",
+      "fecha": "2026-08-30",
+      "category": "clausulazo",
+      "manager": "Jotabetrbb",
+      "player": "Miguel Sierra",
+      "importance": 5
+    },
+    {
+      "row": 515,
+      "id": "0c59ad772a670b93",
+      "fecha": "2026-08-31",
+      "category": "mvp_de_la_jornada",
+      "manager": "Maldinillo 💥",
+      "player": "Á. Berenguer",
+      "importance": 5
+    },
+    {
+      "row": 516,
+      "id": "0ee7a2bc6d0b8d87",
+      "fecha": "2026-08-31",
+      "category": "fichaje_destacado",
+      "manager": "Los marinero",
+      "player": "Marc Cucurella",
+      "importance": 5
+    },
+    {
+      "row": 517,
+      "id": "258bd28f756ec666",
+      "fecha": "2026-08-31",
+      "category": "gol_propia",
+      "manager": "Los marinero",
+      "player": "A. Herrero",
+      "importance": 3
+    },
+    {
+      "row": 518,
+      "id": "26bb3f4a21d27b2a",
+      "fecha": "2026-08-31",
+      "category": "peor_actuacion_de_la_jornada",
+      "manager": "De la Guettir FC",
+      "player": "A. Altimira",
+      "importance": 3
+    },
+    {
+      "row": 519,
+      "id": "2a6a2fb233e90e92",
+      "fecha": "2026-08-31",
+      "category": "venta_record",
+      "manager": "Maldinillo 💥",
+      "player": "Iñaki Williams",
+      "importance": 3
+    },
+    {
+      "row": 520,
+      "id": "5df964537c0a611d",
+      "fecha": "2026-08-31",
+      "category": "clasificacion",
+      "manager": null,
+      "player": null,
+      "importance": 5
+    },
+    {
+      "row": 521,
+      "id": "61301cf4e2bc828b",
+      "fecha": "2026-08-31",
+      "category": "fichaje",
+      "manager": "Maldinillo 💥",
+      "player": "Dani Lorenzo",
+      "importance": 3
+    },
+    {
+      "row": 522,
+      "id": "7117631eed3c5860",
+      "fecha": "2026-08-31",
+      "category": "venta",
+      "manager": "De la Guettir FC",
+      "player": "Carlos Macia",
+      "importance": 3
+    },
+    {
+      "row": 523,
+      "id": "78365c7a28fa16f2",
+      "fecha": "2026-08-31",
+      "category": "rumor",
+      "manager": null,
+      "player": null,
+      "importance": 3
+    },
+    {
+      "row": 524,
+      "id": "7b385da0e5d29255",
+      "fecha": "2026-08-31",
+      "category": "gol_propia",
+      "manager": "Juanba",
+      "player": "C. Tárrega",
+      "importance": 3
+    },
+    {
+      "row": 525,
+      "id": "7e1a49fb3fb8f096",
+      "fecha": "2026-08-31",
+      "category": "fichaje_destacado",
+      "manager": "Los marinero",
+      "player": "Mikel Oyarzabal",
+      "importance": 5
+    },
+    {
+      "row": 526,
+      "id": "8040ae7e525daddc",
+      "fecha": "2026-08-31",
+      "category": "fichaje",
+      "manager": "Los marinero",
+      "player": "Mikel Oyarzabal",
+      "importance": 4
+    },
+    {
+      "row": 527,
+      "id": "813f7fe8dd0fc01d",
+      "fecha": "2026-08-31",
+      "category": "fichaje_destacado",
+      "manager": "De la Guettir FC",
+      "player": "Alex Baena",
+      "importance": 5
+    },
+    {
+      "row": 528,
+      "id": "a0d1f63b32a0073c",
+      "fecha": "2026-08-31",
+      "category": "fichaje",
+      "manager": "Dani",
+      "player": "Jan Oblak",
+      "importance": 3
+    },
+    {
+      "row": 529,
+      "id": "a630a23701f67e1b",
+      "fecha": "2026-08-31",
+      "category": "mvp_de_la_jornada",
+      "manager": "De la Guettir FC",
+      "player": "A. Baena",
+      "importance": 5
+    },
+    {
+      "row": 530,
+      "id": "b70242861e2eeb5c",
+      "fecha": "2026-08-31",
+      "category": "mvp_de_la_jornada",
+      "manager": "Chamacónicos",
+      "player": "M. Sierra",
+      "importance": 5
+    },
+    {
+      "row": 531,
+      "id": "c8ffde9a7826a83b",
+      "fecha": "2026-08-31",
+      "category": "fichaje",
+      "manager": "De la Guettir FC",
+      "player": "Ezequiel Ponce",
+      "importance": 3
+    },
+    {
+      "row": 532,
+      "id": "cda9193debe61dcb",
+      "fecha": "2026-08-31",
+      "category": "mvp",
+      "manager": "Maldinillo 💥",
+      "player": "Á. Berenguer",
+      "importance": 4
+    },
+    {
+      "row": 533,
+      "id": "d1088eba5f8c5c8b",
+      "fecha": "2026-08-31",
+      "category": "clasificacion",
+      "manager": null,
+      "player": null,
+      "importance": 5
+    },
+    {
+      "row": 534,
+      "id": "e86a91940f4983ed",
+      "fecha": "2026-08-31",
+      "category": "gol_en_propia",
+      "manager": "Los marinero",
+      "player": "A. Herrero",
+      "importance": 3
+    },
+    {
+      "row": 535,
+      "id": "ec3265f12c4eb29b",
+      "fecha": "2026-08-31",
+      "category": "peor_actuacion",
+      "manager": "De la Guettir FC",
+      "player": "A. Altimira",
+      "importance": 4
+    }
+  ]
+}

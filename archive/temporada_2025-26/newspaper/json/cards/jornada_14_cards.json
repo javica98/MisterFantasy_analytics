@@ -1,0 +1,88 @@
+{
+  "cards": [
+    {
+      "tipo": "clasificacion",
+      "jugador": null,
+      "manager": null,
+      "puntos": null,
+      "dinero": null,
+      "equipo": null,
+      "titulo": "¡DANI TIEMBLA! ¡MALDINILLO 💥 PISA FUERTE!",
+      "subtitulo": "La SOTANO LEAGUE arde en una batalla sin cuartel",
+      "texto": [
+        "Dani se aferra al liderato con 618 puntos, pero la presión es insoportable, ¡su trono se tambalea!",
+        "¡Maldinillo 💥, el fénix imparable, ya es tercero general y tercero en la jornada, ¡su resurgir es una realidad innegable!",
+        "Chamacónicos se alza como el rey de la jornada, mientras Libre se ahoga en el pozo, ¡la liga no perdona a nadie!"
+      ]
+    },
+    {
+      "tipo": "rumor",
+      "jugador": null,
+      "manager": null,
+      "puntos": null,
+      "dinero": null,
+      "equipo": null,
+      "titulo": "¡RUMOR BOMBA!",
+      "subtitulo": "¡¿Qué se esconde en el sótano?!",
+      "texto": [
+        "Fuentes cercanas confirman que un manager fue visto comprando acciones de una empresa de papel higiénico, ¿estará preparando el 'papelón' de la temporada o limpiando sus finanzas?"
+      ]
+    },
+    {
+      "tipo": "MVP de la jornada",
+      "jugador": "A. Ounahi",
+      "manager": "Chamacónicos",
+      "puntos": 13.0,
+      "dinero": null,
+      "equipo": "Girona FC",
+      "titulo": "¡OUNAHI DESATA LA LOCURA!",
+      "subtitulo": "¡Chamacónicos, en ÉXTASIS con 13 Puntos de Oro!",
+      "texto": [
+        "A. Ounahi, la joya del Girona FC, explota con 13 puntos espectaculares para Chamacónicos.",
+        "¡El manager se corona rey de la jornada y amenaza el podio general con una furia incontrolable!"
+      ]
+    },
+    {
+      "tipo": "MVP de la jornada",
+      "jugador": "N. Mendy",
+      "manager": "Chamacónicos",
+      "puntos": 13.0,
+      "dinero": null,
+      "equipo": "Rayo Vallecano",
+      "titulo": "¡MENDY, EL RAYO DE CHAMACÓNICOS!",
+      "subtitulo": "¡13 Puntos que Valen un Tesoro!",
+      "texto": [
+        "N. Mendy, del Rayo Vallecano, dispara 13 puntos espectaculares para Chamacónicos.",
+        "¡Doble golpe de gracia para un manager que ya saborea la gloria y aspira a lo más alto!"
+      ]
+    },
+    {
+      "tipo": "MVP de la jornada",
+      "jugador": "D. López",
+      "manager": "Jotabetrbb",
+      "puntos": 12.0,
+      "dinero": null,
+      "equipo": "Valencia CF",
+      "titulo": "¡D. LÓPEZ, EL HÉROE SILENCIOSO!",
+      "subtitulo": "¡Jotabetrbb Respira Gracias a sus 12 Puntos!",
+      "texto": [
+        "D. López, del Valencia CF, entrega 12 puntos vitales a Jotabetrbb.",
+        "¡El manager escala posiciones y demuestra que aún tiene mucho que decir en esta liga de titanes!"
+      ]
+    },
+    {
+      "tipo": "Peor actuación de la jornada",
+      "jugador": "A. Güler",
+      "manager": "Dani",
+      "puntos": 0.0,
+      "dinero": null,
+      "equipo": "Real Madrid",
+      "titulo": "¡GÜLER, EL FRACASO DEL BICAMPEÓN!",
+      "subtitulo": "¡Dani Cae en Picada con CERO Puntos!",
+      "texto": [
+        "A. Güler, la promesa del Real Madrid, se desinfla con 0 puntos catastróficos para Dani.",
+        "¡El líder de la liga sufre un varapalo que podría costarle muy caro en la lucha por el título!"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "cards": [
+    {
+      "tipo": "clasificacion",
+      "jugador": null,
+      "manager": null,
+      "puntos": null,
+      "dinero": null,
+      "equipo": null,
+      "titulo": "¡DANI RESISTE, PERO LA SOTANO LEAGUE ARDE!",
+      "subtitulo": "¡Jotabetrbb y Maldinillo 💥, los VERDUGOS de la jornada!",
+      "texto": [
+        "Dani se aferra a la cima con 349 puntos, pero la presión de Los Marinero, a solo 33 puntos, es asfixiante.",
+        "¡Jotabetrbb, el ciclón de la jornada con 48 puntos, amenaza a los gigantes mientras Maldinillo 💥, con 45 puntos, escala posiciones como un rayo, demostrando que su ambición no tiene límites!",
+        "Mientras la élite se desangra, Libre se hunde sin remedio en el fondo de la tabla, con su futuro cada vez más oscuro."
+      ]
+    },
+    {
+      "tipo": "rumor",
+      "jugador": null,
+      "manager": null,
+      "puntos": null,
+      "dinero": null,
+      "equipo": null,
+      "titulo": "¡BOMBAZO EN LA SOTANO LEAGUE!",
+      "subtitulo": "¡Un manager al descubierto!",
+      "texto": [
+        "Fuentes cercanas a la liga aseguran que uno de nuestros managers estrella ha sido visto comprando 'packs de inicio' de cromos, ¿será que su plantilla necesita un milagro?"
+      ]
+    },
+    {
+      "tipo": "MVP de la jornada",
+      "jugador": "V. Júnior",
+      "manager": "Jotabetrbb",
+      "puntos": 17.0,
+      "dinero": null,
+      "equipo": "Real Madrid",
+      "titulo": "¡V. JÚNIOR EXPLOTA! ¡17 PUNTOS DE ESCÁNDALO!",
+      "subtitulo": "¡Jotabetrbb, el rey de la jornada, se dispara en la tabla!",
+      "texto": [
+        "¡V. Júnior, la estrella del Real Madrid, ha desatado una tormenta de puntos, catapultando a Jotabetrbb a la cima de la jornada!",
+        "¡Con 17 puntos estratosféricos, este jugador demuestra por qué es la clave para la imparable escalada del manager, que ya acecha el Top 4!"
+      ]
+    },
+    {
+      "tipo": "MVP de la jornada",
+      "jugador": "J. Ángel Carmona",
+      "manager": "Jotabetrbb",
+      "puntos": 14.0,
+      "dinero": null,
+      "equipo": "Sevilla FC",
+      "titulo": "¡J. ÁNGEL CARMONA, EL HÉROE SILENCIOSO!",
+      "subtitulo": "¡Otro golpe de Jotabetrbb en la jornada!",
+      "texto": [
+        "¡El Sevilla FC se convierte en el trampolín de Jotabetrbb gracias a los 14 puntos vitales de J. Ángel Carmona!",
+        "¡Este manager, imparable en la jornada, sigue sumando estrellas que lo consolidan como el gran rival a batir!"
+      ]
+    },
+    {
+      "tipo": "MVP de la jornada",
+      "jugador": "A. Bretones",
+      "manager": "Dani",
+      "puntos": 13.0,
+      "dinero": null,
+      "equipo": "CA Osasuna",
+      "titulo": "¡BRETONES SALVA A DANI DE LA CATÁSTROFE!",
+      "subtitulo": "¡13 puntos para un líder que empieza a tambalearse!",
+      "texto": [
+        "¡A. Bretones, el muro del CA Osasuna, emerge como el salvador de Dani con 13 puntos cruciales en una jornada irregular!",
+        "¡Aunque líder, el bicampeón muestra fisuras, y solo sus estrellas evitan un descalabro mayor!"
+      ]
+    },
+    {
+      "tipo": "Peor actuación de la jornada",
+      "jugador": "D. Affengruber",
+      "manager": "Dani",
+      "puntos": -5.0,
+      "dinero": null,
+      "equipo": "Elche CF",
+      "titulo": "¡DESASTRE TOTAL! ¡AFFENGRUBER HUNDE A DANI!",
+      "subtitulo": "¡-5 puntos que hacen temblar al líder!",
+      "texto": [
+        "¡D. Affengruber, el 'fichaje' del Elche CF, protagoniza la peor actuación de la jornada con unos espeluznantes -5 puntos!",
+        "¡El líder Dani, que ya muestra signos de debilidad, sufre un golpe brutal que podría costarle muy caro en su lucha por el tricampeonato!"
+      ]
+    },
+    {
+      "tipo": "Expulsión",
+      "jugador": "D. Affengruber",
+      "manager": "Dani",
+      "puntos": -5.0,
+      "dinero": null,
+      "equipo": "Elche CF",
+      "titulo": "¡ROJA DIRECTA! ¡AFFENGRUBER, EL VILLANO DE LA JORNADA!",
+      "subtitulo": "¡La expulsión que sentencia a Dani!",
+      "texto": [
+        "¡La tarjeta roja de D. Affengruber del Elche CF no solo le costó -5 puntos, sino que dinamitó por completo la jornada de Dani!",
+        "¡Esta expulsión infame pone en jaque al líder, que ve cómo sus cimientos se resquebrajan bajo la presión de la SOTANO LEAGUE!"
+      ]
+    }
+  ]
+}

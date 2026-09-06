@@ -28,20 +28,23 @@ data/export/
 .claude/
 .cache/
 
-# Imágenes generadas (pesan demasiado para git)
-newspaper/new/
+# Portadas compartidas: se sobreescriben en cada ejecucion, no hay nada
+# historico que perder al ignorarlas (a diferencia de newspaper/new/, que
+# SI se persiste — ver mas abajo, son las paginas ya compuestas del
+# periodico de cada jornada, y no queremos volver a perderlas).
 newspaper/photos/Portada_Fichajes.jpg
 newspaper/photos/Portada_Jornada.jpg
 
+# Cache de fotos de jugadores descargadas (IA-07): puramente reproducible
+# volviendo a buscar en la web, a diferencia de las paginas del periodico.
+newspaper/photos/cache/
+
 # Artefactos generados — reproducibles, no subir
 newspaper/json/prompts/
-newspaper/memory/
 site/
 
 # Temporadas archivadas: mismas reglas que las carpetas de trabajo
-archive/*/newspaper/new/
 archive/*/newspaper/json/prompts/
-archive/*/newspaper/memory/
 
 # Assets originales en alta resolución (pesan ~10MB, no necesarios para ejecutar)
 assets/*.png

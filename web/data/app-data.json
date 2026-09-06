@@ -6716,710 +6716,6 @@
   "newsBySeason": {
     "2025-26": [
       {
-        "date": "J7",
-        "title": "¡Dani Imparable, Pero la SOTANO LEAGUE Respira Fuego!",
-        "subtitle": "¡El Bicampeón Mantiene el Trono, Pero la Lucha por la Gloria es Salvaje!",
-        "summary": "Dani sigue líder con 309 puntos, ¡una muralla inexpugnable que desafía a la liga! Los Marinero y Chamacónicos acechan, ¡la distancia se acorta y la presión es máxima para el bicampeón! ¡Maldinillo \\n se escala posiciones y se postula como la gran amenaza silenciosa!",
-        "cards": [
-          {
-            "type": "clasificacion",
-            "title": "¡Dani Imparable, Pero la SOTANO LEAGUE Respira Fuego!",
-            "subtitle": "¡El Bicampeón Mantiene el Trono, Pero la Lucha por la Gloria es Salvaje!",
-            "text": [
-              "Dani sigue líder con 309 puntos, ¡una muralla inexpugnable que desafía a la liga!",
-              "Los Marinero y Chamacónicos acechan, ¡la distancia se acorta y la presión es máxima para el bicampeón!",
-              "¡Maldinillo \\n se escala posiciones y se postula como la gran amenaza silenciosa!"
-            ],
-            "jugador": null,
-            "manager": null,
-            "puntos": null,
-            "dinero": null
-          },
-          {
-            "type": "rumor",
-            "title": "¡BOMBAZO EN LA SOTANO LEAGUE!",
-            "subtitle": "¡Se Filtra un Escándalo en el Vestuario!",
-            "text": [
-              "¡Fuentes cercanas revelan que un manager ha sido pillado comiendo pizza fría con piña a las 3 de la mañana!"
-            ],
-            "jugador": null,
-            "manager": null,
-            "puntos": null,
-            "dinero": null
-          },
-          {
-            "type": "MVP de la jornada",
-            "title": "¡ÁLVAREZ DESATA LA FURIA COLCHONERA!",
-            "subtitle": "¡Chamacónicos Ruge con 16 Puntos de Oro!",
-            "text": [
-              "¡J. Álvarez, el gladiador del Atlético, explota con 16 puntos decisivos!",
-              "¡Chamacónicos se dispara a la segunda posición de la jornada, ¡amenazando la cima general!"
-            ],
-            "jugador": "J. Álvarez",
-            "manager": "Chamacónicos",
-            "puntos": 16.0,
-            "dinero": null
-          },
-          {
-            "type": "MVP de la jornada",
-            "title": "¡KOUNDÉ, EL MURO CULÉ QUE DA PUNTOS!",
-            "subtitle": "¡Chamacónicos Dobla su Apuesta por la Gloria!",
-            "text": [
-              "¡J. Koundé, el titán del Barça, suma 13 puntos vitales para su manager!",
-              "¡Chamacónicos reafirma su asalto al podio, ¡la SOTANO LEAGUE tiembla!"
-            ],
-            "jugador": "J. Koundé",
-            "manager": "Chamacónicos",
-            "puntos": 13.0,
-            "dinero": null
-          },
-          {
-            "type": "MVP de la jornada",
-            "title": "¡ASANO, EL SAMURÁI QUE DESPIERTA A LIBRE!",
-            "subtitle": "¡El Manager Olvidado Desafía la Jornada!",
-            "text": [
-              "¡T. Asano, la sorpresa del Mallorca, entrega 11 puntos que reviven a Libre!",
-              "¡El manager de la cola general se cuela en el Top 3 de la jornada, ¡un golpe sobre la mesa inesperado!"
-            ],
-            "jugador": "T. Asano",
-            "manager": "Libre",
-            "puntos": 11.0,
-            "dinero": null
-          },
-          {
-            "type": "Peor actuación de la jornada",
-            "title": "¡CARVAJAL, LA DECEPCIÓN MERENGUE!",
-            "subtitle": "¡Maldinillo \\n Sufre un Golpe Inesperado!",
-            "text": [
-              "¡D. Carvajal, la estrella del Real Madrid, se hunde con 0 puntos catastróficos!",
-              "¡Maldinillo \\n, a pesar de este traspié, mantiene la fe en su ascenso imparable!"
-            ],
-            "jugador": "D. Carvajal",
-            "manager": "Maldinillo 💥",
-            "puntos": 0.0,
-            "dinero": null
-          },
-          {
-            "type": "Héroe bajo palos",
-            "title": "¡RADU, EL GUARDIÁN CELESTE QUE SALVA A JUANBA!",
-            "subtitle": "¡Un Penalti Parado que Resucita la Esperanza!",
-            "text": [
-              "¡I. Radu, el muro del Celta, detiene un penalti crucial y suma 9 puntos de oro!",
-              "¡Juanba celebra la heroica actuación de su portero, ¡un soplo de aire fresco en su lucha!"
-            ],
-            "jugador": "I. Radu",
-            "manager": "Juanba",
-            "puntos": 9.0,
-            "dinero": null
-          }
-        ],
-        "standingsAtIssue": [
-          {
-            "rank": 1,
-            "manager": "Dani",
-            "points": 309
-          },
-          {
-            "rank": 2,
-            "manager": "Los marinero",
-            "points": 278
-          },
-          {
-            "rank": 3,
-            "manager": "Chamacónicos",
-            "points": 245
-          },
-          {
-            "rank": 4,
-            "manager": "De la Guettir FC",
-            "points": 240
-          },
-          {
-            "rank": 5,
-            "manager": "Maldinillo 💥",
-            "points": 214
-          },
-          {
-            "rank": 6,
-            "manager": "Jotabetrbb",
-            "points": 213
-          },
-          {
-            "rank": 7,
-            "manager": "MuchaSalsa",
-            "points": 199
-          },
-          {
-            "rank": 8,
-            "manager": "Juanba",
-            "points": 178
-          },
-          {
-            "rank": 9,
-            "manager": "Libre",
-            "points": 134
-          }
-        ]
-      },
-      {
-        "date": "J6",
-        "title": "¡Dani Cuelga de un Hilo!",
-        "subtitle": "¡La SOTANO LEAGUE al ROJO VIVO!",
-        "summary": "¡Dani apenas respira en la cima con 251 puntos, Los Marinero le pisa los talones a un solo punto de distancia! De la Guettir FC, el ciclón de la jornada con 51 puntos, escala posiciones y amenaza a los grandes, mientras Maldinillo 💥 demuestra su garra y sube como la espuma. ¡Jotabetrbb sorprende con una jornada espectacular, pero Libre se aferra al farolillo rojo sin visos de salvación!",
-        "cards": [
-          {
-            "type": "clasificacion",
-            "title": "¡Dani Cuelga de un Hilo!",
-            "subtitle": "¡La SOTANO LEAGUE al ROJO VIVO!",
-            "text": [
-              "¡Dani apenas respira en la cima con 251 puntos, Los Marinero le pisa los talones a un solo punto de distancia!",
-              "De la Guettir FC, el ciclón de la jornada con 51 puntos, escala posiciones y amenaza a los grandes, mientras Maldinillo 💥 demuestra su garra y sube como la espuma.",
-              "¡Jotabetrbb sorprende con una jornada espectacular, pero Libre se aferra al farolillo rojo sin visos de salvación!"
-            ],
-            "jugador": null,
-            "manager": null,
-            "puntos": null,
-            "dinero": null
-          },
-          {
-            "type": "rumor",
-            "title": "¡BOMBAZO EN EL MERCADO!",
-            "subtitle": "¡Un Fichaje que Nadie Esperaba!",
-            "text": [
-              "¡Se rumorea que el manager Juanba ha estado negociando en secreto con el repartidor de pizzas para asegurar una ración extra en cada entrega!"
-            ],
-            "jugador": null,
-            "manager": null,
-            "puntos": null,
-            "dinero": null
-          },
-          {
-            "type": "MVP de la jornada",
-            "title": "¡V. JÚNIOR DESATA LA LOCURA!",
-            "subtitle": "¡Jotabetrbb Vuelve a Soñar!",
-            "text": [
-              "¡El astro del Real Madrid, V. Júnior, explota con 13 PUNTOS DE ORO para Jotabetrbb, haciendo temblar a la liga entera!",
-              "¡El manager de la quinta posición se eleva al segundo puesto de la jornada, demostrando que su ambición no tiene límites!"
-            ],
-            "jugador": "V. Júnior",
-            "manager": "Jotabetrbb",
-            "puntos": 13.0,
-            "dinero": null
-          },
-          {
-            "type": "MVP de la jornada",
-            "title": "¡MUÑOZ, EL HÉROE SILENCIOSO!",
-            "subtitle": "¡De la Guettir FC, la SENSACIÓN de la Jornada!",
-            "text": [
-              "¡V. Muñoz, el guerrero del CA Osasuna, rompe la banca con 12 puntos decisivos para De la Guettir FC, catapultándolos a la cima de la jornada!",
-              "¡El manager de la tercera posición general se consolida como la revelación más explosiva de la SOTANO LEAGUE!"
-            ],
-            "jugador": "V. Muñoz",
-            "manager": "De la Guettir FC",
-            "puntos": 12.0,
-            "dinero": null
-          },
-          {
-            "type": "MVP de la jornada",
-            "title": "¡GARCÍA, EL RAYO DE ESPERANZA!",
-            "subtitle": "¡Maldinillo 💥, a la Carga con Furia!",
-            "text": [
-              "¡Á. García, la estrella del Rayo Vallecano, ilumina a Maldinillo 💥 con 11 puntos vitales que lo impulsan en la tabla!",
-              "¡El manager de la sexta posición general escala puestos en la jornada, demostrando que su resurgir es una realidad y que no se rinde jamás!"
-            ],
-            "jugador": "Á. García",
-            "manager": "Maldinillo 💥",
-            "puntos": 11.0,
-            "dinero": null
-          },
-          {
-            "type": "Peor actuación de la jornada",
-            "title": "¡LA SOMBRA DE GOROSABEL!",
-            "subtitle": "¡Maldinillo 💥, Un Tropiezo Inesperado!",
-            "text": [
-              "¡A. Gorosabel, el defensa del Athletic Club, protagoniza la peor pesadilla con 0 puntos, un golpe duro para Maldinillo 💥!",
-              "¡Pero el espíritu de lucha del manager es inquebrantable, y este traspié solo avivará la llama de su ambición para la próxima jornada!"
-            ],
-            "jugador": "A. Gorosabel",
-            "manager": "Maldinillo 💥",
-            "puntos": 0.0,
-            "dinero": null
-          }
-        ],
-        "standingsAtIssue": [
-          {
-            "rank": 1,
-            "manager": "Dani",
-            "points": 251
-          },
-          {
-            "rank": 2,
-            "manager": "Los marinero",
-            "points": 250
-          },
-          {
-            "rank": 3,
-            "manager": "De la Guettir FC",
-            "points": 205
-          },
-          {
-            "rank": 4,
-            "manager": "Chamacónicos",
-            "points": 188
-          },
-          {
-            "rank": 5,
-            "manager": "Jotabetrbb",
-            "points": 179
-          },
-          {
-            "rank": 6,
-            "manager": "Maldinillo 💥",
-            "points": 174
-          },
-          {
-            "rank": 7,
-            "manager": "MuchaSalsa",
-            "points": 163
-          },
-          {
-            "rank": 8,
-            "manager": "Juanba",
-            "points": 141
-          },
-          {
-            "rank": 9,
-            "manager": "Libre",
-            "points": 94
-          }
-        ]
-      },
-      {
-        "date": "J5",
-        "title": "¡La SOTANO LEAGUE Arde en la Cima!",
-        "subtitle": "¡Pura Tensión en Cada Jornada!",
-        "summary": "¡La tabla general es un campo de batalla! Los Marinero apenas respiran con Dani, el bicampeón, pisándoles los talones, ¡solo 3 puntos los separan del abismo! ¡Maldinillo emerge de las sombras con una jornada espectacular! El quinto clasificado general se dispara al segundo puesto, ¡una amenaza real para los titanes! ¡El 'Libre' se desangra en el fondo! Con solo 75 puntos, la cola de la tabla es un pozo sin fondo, ¡necesita un milagro o el descenso es inminente!",
-        "cards": [
-          {
-            "type": "clasificacion",
-            "title": "¡La SOTANO LEAGUE Arde en la Cima!",
-            "subtitle": "¡Pura Tensión en Cada Jornada!",
-            "text": [
-              "¡La tabla general es un campo de batalla! Los Marinero apenas respiran con Dani, el bicampeón, pisándoles los talones, ¡solo 3 puntos los separan del abismo!",
-              "¡Maldinillo emerge de las sombras con una jornada espectacular! El quinto clasificado general se dispara al segundo puesto, ¡una amenaza real para los titanes!",
-              "¡El 'Libre' se desangra en el fondo! Con solo 75 puntos, la cola de la tabla es un pozo sin fondo, ¡necesita un milagro o el descenso es inminente!"
-            ],
-            "jugador": null,
-            "manager": null,
-            "puntos": null,
-            "dinero": null
-          },
-          {
-            "type": "rumor",
-            "title": "¡BOMBAZO: ¡Un Manager Fue Pillado!",
-            "subtitle": "¡El Escándalo Sacude la Liga!",
-            "text": [
-              "¡Se rumorea que un manager fue visto intentando comprar la camiseta sudada de Mbappé en el mercado negro para 'inspirar' a sus jugadores!"
-            ],
-            "jugador": null,
-            "manager": null,
-            "puntos": null,
-            "dinero": null
-          },
-          {
-            "type": "MVP de la jornada",
-            "title": "¡MILITÃO DESATA EL CAOS!",
-            "subtitle": "¡Los Marinero se Afianzan con un Central de Oro!",
-            "text": [
-              "¡É. Militão, el muro del Real Madrid, explota con 15 puntos, llevando a Los Marinero a la gloria de la jornada!",
-              "¡El líder general no da tregua! ¡Con Militão en sus filas, la SOTANO LEAGUE tiembla ante su imparable dominio!"
-            ],
-            "jugador": "É. Militão",
-            "manager": "Los marinero",
-            "puntos": 15.0,
-            "dinero": null
-          },
-          {
-            "type": "MVP de la jornada",
-            "title": "¡EYONG, EL AZOTE INESPERADO!",
-            "subtitle": "¡Los Marinero Siguen Sumando y Aterrorizando a la Liga!",
-            "text": [
-              "¡E. Eyong, la sorpresa del Levante UD, irrumpe con 12 puntos clave, consolidando el reinado de Los Marinero!",
-              "¡El bicampeón tiembla! ¡El líder demuestra que su plantilla es una máquina de hacer puntos, imparable!"
-            ],
-            "jugador": "E. Eyong",
-            "manager": "Los marinero",
-            "puntos": 12.0,
-            "dinero": null
-          },
-          {
-            "type": "MVP de la jornada",
-            "title": "¡ROMÁN, EL MAGO DEL MALLORCA!",
-            "subtitle": "¡Otro Golpe de Autoridad de Los Marinero!",
-            "text": [
-              "¡L. Román, el talento del RCD Mallorca, se luce con 12 puntos vitales, un golpe más en la mesa de Los Marinero!",
-              "¡Tres MVPs para el mismo manager! ¡El dominio es absoluto, la SOTANO LEAGUE no tiene piedad!"
-            ],
-            "jugador": "L. Román",
-            "manager": "Los marinero",
-            "puntos": 12.0,
-            "dinero": null
-          },
-          {
-            "type": "Peor actuación de la jornada",
-            "title": "¡DESASTRE WITSEL: ¡CATASTRÓFICO!",
-            "subtitle": "¡Chamacónicos se Hunde con una Actuación para el Olvido!",
-            "text": [
-              "¡A. Witsel, el 'defensa' del Girona FC, firma un ridículo -5 puntos, arrastrando a Chamacónicos al infierno!",
-              "¡La vergüenza de la jornada! ¡El manager cae en picado, su equipo necesita un exorcismo o el abismo es su destino!"
-            ],
-            "jugador": "A. Witsel",
-            "manager": "Chamacónicos",
-            "puntos": -5.0,
-            "dinero": null
-          },
-          {
-            "type": "Héroe bajo palos",
-            "title": "¡ROMÁN, EL SALVADOR INESPERADO!",
-            "subtitle": "¡Los Marinero Tienen un Nuevo Héroe Bajo los Tres Palos!",
-            "text": [
-              "¡L. Román, el portero del RCD Mallorca, se erige en leyenda al detener un penalti decisivo, ¡la SOTANO LEAGUE se rinde a sus pies!",
-              "¡Los Marinero celebran! ¡Este es el tipo de gestas que forjan campeones, y el líder no para de acumular proezas!"
-            ],
-            "jugador": "L. Román",
-            "manager": "Los marinero",
-            "puntos": 12.0,
-            "dinero": null
-          }
-        ],
-        "standingsAtIssue": [
-          {
-            "rank": 1,
-            "manager": "Los marinero",
-            "points": 226
-          },
-          {
-            "rank": 2,
-            "manager": "Dani",
-            "points": 223
-          },
-          {
-            "rank": 3,
-            "manager": "Chamacónicos",
-            "points": 165
-          },
-          {
-            "rank": 4,
-            "manager": "De la Guettir FC",
-            "points": 154
-          },
-          {
-            "rank": 5,
-            "manager": "Maldinillo 💥",
-            "points": 147
-          },
-          {
-            "rank": 6,
-            "manager": "Jotabetrbb",
-            "points": 146
-          },
-          {
-            "rank": 7,
-            "manager": "MuchaSalsa",
-            "points": 144
-          },
-          {
-            "rank": 8,
-            "manager": "Juanba",
-            "points": 128
-          },
-          {
-            "rank": 9,
-            "manager": "Libre",
-            "points": 75
-          }
-        ]
-      },
-      {
-        "date": "J4",
-        "title": "¡DANI RESISTE EN LA CIMA!",
-        "subtitle": "La SOTANO LEAGUE Arde: ¡Nadie está a Salvo!",
-        "summary": "¡Dani se aferra al liderato general con 179 puntos, pero la presión es máxima! Los Marinero y Chamacónicos le pisan los talones, ¡la batalla por el trono está al rojo vivo! ¡Maldinillo 💥, a pesar de un tropiezo, mantiene viva la esperanza y promete remontada!",
-        "cards": [
-          {
-            "type": "clasificacion",
-            "title": "¡DANI RESISTE EN LA CIMA!",
-            "subtitle": "La SOTANO LEAGUE Arde: ¡Nadie está a Salvo!",
-            "text": [
-              "¡Dani se aferra al liderato general con 179 puntos, pero la presión es máxima!",
-              "Los Marinero y Chamacónicos le pisan los talones, ¡la batalla por el trono está al rojo vivo!",
-              "¡Maldinillo 💥, a pesar de un tropiezo, mantiene viva la esperanza y promete remontada!"
-            ],
-            "jugador": null,
-            "manager": null,
-            "puntos": null,
-            "dinero": null
-          },
-          {
-            "type": "rumor",
-            "title": "¡RUMOR BOMBA EN EL SOTANO!",
-            "subtitle": "¡Misterio en los Vestuarios!",
-            "text": [
-              "¡Se comenta que un manager fue visto en un karaoke, destrozando clásicos y la moral de los presentes!"
-            ],
-            "jugador": null,
-            "manager": null,
-            "puntos": null,
-            "dinero": null
-          },
-          {
-            "type": "MVP de la jornada",
-            "title": "¡RAPHINHA DESATA LA FIEBRE EN MUCHASALSA!",
-            "subtitle": "¡16 Puntos que Sacuden la Tabla!",
-            "text": [
-              "¡Raphinha, del FC Barcelona, explota con 16 puntos, elevando a MuchaSalsa a la gloria de la jornada!",
-              "¡El manager de la cuarta posición general demuestra que tiene pólvora para asaltar la cima!"
-            ],
-            "jugador": "Raphinha",
-            "manager": "MuchaSalsa",
-            "puntos": 16.0,
-            "dinero": null
-          },
-          {
-            "type": "MVP de la jornada",
-            "title": "¡MURIQI REAFIRMA LA TIRANÍA DE DANI!",
-            "subtitle": "¡14 Puntos para el BICAMPEÓN!",
-            "text": [
-              "¡V. Muriqi, el pirata del RCD Mallorca, suma 14 puntos vitales para el intocable Dani!",
-              "¡El líder general y de la jornada no da tregua y sigue acumulando talento para su imperio!"
-            ],
-            "jugador": "V. Muriqi",
-            "manager": "Dani",
-            "puntos": 14.0,
-            "dinero": null
-          },
-          {
-            "type": "MVP de la jornada",
-            "title": "¡MBAPPÉ, EL GALÁCTICO DE DE LA GUETTIR FC!",
-            "subtitle": "¡13 Puntos de ORO Puro!",
-            "text": [
-              "¡K. Mbappé, la superestrella del Real Madrid, ilumina a De la Guettir FC con 13 puntos de fantasía!",
-              "¡El manager de la quinta posición general se postula como la gran revelación de la SOTANO LEAGUE!"
-            ],
-            "jugador": "K. Mbappé",
-            "manager": "De la Guettir FC",
-            "puntos": 13.0,
-            "dinero": null
-          },
-          {
-            "type": "Peor actuación de la jornada",
-            "title": "¡DESASTRE EN JOTABETRBB!",
-            "subtitle": "¡P. MILLA: EL FRACASO MÁS SONADO!",
-            "text": [
-              "¡P. Milla, del RCD Espanyol, protagoniza una actuación para el olvido con -2 puntos para Jotabetrbb!",
-              "¡El manager se hunde en la jornada, y su equipo necesita una reacción URGENTE para no caer al abismo!"
-            ],
-            "jugador": "P. Milla",
-            "manager": "Jotabetrbb",
-            "puntos": -2.0,
-            "dinero": null
-          },
-          {
-            "type": "Expulsión",
-            "title": "¡TARJETA ROJA: P. MILLA HUNDE A JOTABETRBB!",
-            "subtitle": "¡Decisión FATAL que Cuesta Puntos!",
-            "text": [
-              "¡La expulsión de P. Milla fue el clavo en el ataúd de Jotabetrbb, restando -2 puntos cruciales!",
-              "¡Una jornada para olvidar para el manager, que ve cómo un error individual dinamita sus aspiraciones!"
-            ],
-            "jugador": "P. Milla",
-            "manager": "Jotabetrbb",
-            "puntos": -2.0,
-            "dinero": null
-          }
-        ],
-        "standingsAtIssue": [
-          {
-            "rank": 1,
-            "manager": "Dani",
-            "points": 179
-          },
-          {
-            "rank": 2,
-            "manager": "Los marinero",
-            "points": 160
-          },
-          {
-            "rank": 3,
-            "manager": "Chamacónicos",
-            "points": 140
-          },
-          {
-            "rank": 4,
-            "manager": "MuchaSalsa",
-            "points": 122
-          },
-          {
-            "rank": 5,
-            "manager": "De la Guettir FC",
-            "points": 115
-          },
-          {
-            "rank": 6,
-            "manager": "Jotabetrbb",
-            "points": 109
-          },
-          {
-            "rank": 7,
-            "manager": "Juanba",
-            "points": 105
-          },
-          {
-            "rank": 8,
-            "manager": "Maldinillo 💥",
-            "points": 100
-          },
-          {
-            "rank": 9,
-            "manager": "Libre",
-            "points": 63
-          }
-        ]
-      },
-      {
-        "date": "J3",
-        "title": "¡LA SOTANO LEAGUE ARDE!",
-        "subtitle": "¡Dani se aferra al liderato, pero la presión es brutal!",
-        "summary": "¡Dani, el bicampeón, lidera con 127 puntos, pero Los Marinero le pisan los talones a solo 5 puntos de distancia! ¡Maldinillo 💥 se mantiene en la lucha, demostrando que su momento llegará, mientras Libre se hunde en el abismo de la tabla! ¡En la jornada, Dani volvió a mandar con 49 puntos, pero la batalla por el trono está más viva que nunca!",
-        "cards": [
-          {
-            "type": "clasificacion",
-            "title": "¡LA SOTANO LEAGUE ARDE!",
-            "subtitle": "¡Dani se aferra al liderato, pero la presión es brutal!",
-            "text": [
-              "¡Dani, el bicampeón, lidera con 127 puntos, pero Los Marinero le pisan los talones a solo 5 puntos de distancia!",
-              "¡Maldinillo 💥 se mantiene en la lucha, demostrando que su momento llegará, mientras Libre se hunde en el abismo de la tabla!",
-              "¡En la jornada, Dani volvió a mandar con 49 puntos, pero la batalla por el trono está más viva que nunca!"
-            ],
-            "jugador": null,
-            "manager": null,
-            "puntos": null,
-            "dinero": null
-          },
-          {
-            "type": "rumor",
-            "title": "¡ESCÁNDALO EN EL SÓTANO!",
-            "subtitle": "¡Un manager pillado en un acto bochornoso!",
-            "text": [
-              "¡Fuentes cercanas al vestuario confirman que un conocido manager fue visto anoche intentando sobornar al árbitro con una pizza caducada y un billete de 5 euros roto!"
-            ],
-            "jugador": null,
-            "manager": null,
-            "puntos": null,
-            "dinero": null
-          },
-          {
-            "type": "MVP de la jornada",
-            "title": "¡PAREDES, EL MURO DE DANI!",
-            "subtitle": "¡13 PUNTOS QUE CIMENTAN EL LIDERATO!",
-            "text": [
-              "¡A. Paredes, del Athletic Club, se erige como el baluarte de Dani con 13 puntos cruciales en la jornada!",
-              "¡El líder de la SOTANO LEAGUE sigue imparable, consolidando su posición con actuaciones estelares de sus estrellas!"
-            ],
-            "jugador": "A. Paredes",
-            "manager": "Dani",
-            "puntos": 13.0,
-            "dinero": null
-          },
-          {
-            "type": "MVP de la jornada",
-            "title": "¡DANJUMA EXPLOTA PARA DE LA GUETTIR FC!",
-            "subtitle": "¡11 PUNTOS QUE REVIVEN LA ESPERANZA!",
-            "text": [
-              "¡A. Danjuma, el delantero del Valencia CF, irrumpe con 11 puntos vitales para De la Guettir FC!",
-              "¡El manager escala posiciones, demostrando que aún tiene mucho que decir en esta liga de infarto!"
-            ],
-            "jugador": "A. Danjuma",
-            "manager": "De la Guettir FC",
-            "puntos": 11.0,
-            "dinero": null
-          },
-          {
-            "type": "MVP de la jornada",
-            "title": "¡GÜLER, LA JOYA DE DANI!",
-            "subtitle": "¡10 PUNTOS QUE LO CONFIRMAN TODO!",
-            "text": [
-              "¡A. Güler, la perla del Real Madrid, suma 10 puntos a la cuenta de Dani, el indiscutible líder!",
-              "¡El bicampeón sigue acumulando talento y victorias, dejando claro quién manda en la SOTANO LEAGUE!"
-            ],
-            "jugador": "A. Güler",
-            "manager": "Dani",
-            "puntos": 10.0,
-            "dinero": null
-          },
-          {
-            "type": "Peor actuación de la jornada",
-            "title": "¡DESASTRE EN EL JOTABETRBB!",
-            "subtitle": "¡G. GARCÍA: EL CERO MÁS DOLOROSO!",
-            "text": [
-              "¡G. García, del Real Madrid, protagoniza la peor actuación de la jornada con unos humillantes 0 puntos para Jotabetrbb!",
-              "¡El manager se estanca en la tabla, y su equipo necesita una reacción URGENTE para no caer al abismo!"
-            ],
-            "jugador": "G. García",
-            "manager": "Jotabetrbb",
-            "puntos": 0.0,
-            "dinero": null
-          }
-        ],
-        "standingsAtIssue": [
-          {
-            "rank": 1,
-            "manager": "Dani",
-            "points": 127
-          },
-          {
-            "rank": 2,
-            "manager": "Los marinero",
-            "points": 122
-          },
-          {
-            "rank": 3,
-            "manager": "Chamacónicos",
-            "points": 102
-          },
-          {
-            "rank": 4,
-            "manager": "MuchaSalsa",
-            "points": 89
-          },
-          {
-            "rank": 5,
-            "manager": "De la Guettir FC",
-            "points": 74
-          },
-          {
-            "rank": 6,
-            "manager": "Jotabetrbb",
-            "points": 74
-          },
-          {
-            "rank": 7,
-            "manager": "Maldinillo 💥",
-            "points": 74
-          },
-          {
-            "rank": 8,
-            "manager": "Juanba",
-            "points": 73
-          },
-          {
-            "rank": 9,
-            "manager": "Libre",
-            "points": 44
-          }
-        ]
-      },
-      {
         "date": "J38",
         "title": "¡DANI CAMPEÓN DEL SÓTANO LEAGUE! 11 PUNTOS LO DECIDEN TODO",
         "subtitle": "Dani y Maldinillo empatan en la última jornada. El título es del líder",
@@ -8857,152 +8153,6 @@
             "rank": 9,
             "manager": "Juanba",
             "points": 741
-          }
-        ]
-      },
-      {
-        "date": "J2",
-        "title": "¡LA SOTANO LEAGUE ARDE!",
-        "subtitle": "¡Líderes Bajo Presión Extrema!",
-        "summary": "¡Los Marinero se aferran a la cima con 88 puntos, pero Dani, el bicampeón, pisa los talones con 78 puntos, ¡la distancia se reduce a diez! ¡Chamacónicos, la revelación de la jornada, arrasa con 60 puntos y se cuela en el podio general, ¡amenazando a los gigantes! ¡Maldinillo 💥, con 51 puntos, acecha desde la quinta posición, ¡listo para el zarpazo y escalar puestos en esta liga de infarto!",
-        "cards": [
-          {
-            "type": "clasificacion",
-            "title": "¡LA SOTANO LEAGUE ARDE!",
-            "subtitle": "¡Líderes Bajo Presión Extrema!",
-            "text": [
-              "¡Los Marinero se aferran a la cima con 88 puntos, pero Dani, el bicampeón, pisa los talones con 78 puntos, ¡la distancia se reduce a diez!",
-              "¡Chamacónicos, la revelación de la jornada, arrasa con 60 puntos y se cuela en el podio general, ¡amenazando a los gigantes!",
-              "¡Maldinillo 💥, con 51 puntos, acecha desde la quinta posición, ¡listo para el zarpazo y escalar puestos en esta liga de infarto!"
-            ],
-            "jugador": null,
-            "manager": null,
-            "puntos": null,
-            "dinero": null
-          },
-          {
-            "type": "rumor",
-            "title": "¡RUMORES EXPLOSIVOS!",
-            "subtitle": "¡Un Manager en Apuros!",
-            "text": [
-              "¡Se comenta en los pasillos que un manager, desesperado por puntos, intentó sobornar al árbitro con una cena de sushi, ¡la liga tiembla!"
-            ],
-            "jugador": null,
-            "manager": null,
-            "puntos": null,
-            "dinero": null
-          },
-          {
-            "type": "MVP de la jornada",
-            "title": "¡M. MOREY EXPLOTA!",
-            "subtitle": "¡Chamacónicos Celebra 14 Puntos Cruciales!",
-            "text": [
-              "¡M. Morey desató la locura con 14 puntos, catapultando a Chamacónicos a la cima de la jornada, ¡una actuación estelar!",
-              "¡El manager, ahora tercero en la general, demuestra que tiene la fórmula para el éxito y ¡no piensa frenar!"
-            ],
-            "jugador": "M. Morey",
-            "manager": "Chamacónicos",
-            "puntos": 14.0,
-            "dinero": null
-          },
-          {
-            "type": "MVP de la jornada",
-            "title": "¡R. MARÍN, EL HÉROE DE CHACAMÓNICOS!",
-            "subtitle": "¡Otro Golpe Maestro del Manager en Racha!",
-            "text": [
-              "¡R. Marín se erige como el segundo baluarte de Chamacónicos, sumando 13 puntos vitales que lo consolidan en la jornada, ¡un auténtico muro!",
-              "¡El líder de la jornada no para de sumar estrellas, confirmando su asalto al trono de la SOTANO LEAGUE, ¡nadie puede detenerlo!"
-            ],
-            "jugador": "R. Marín",
-            "manager": "Chamacónicos",
-            "puntos": 13.0,
-            "dinero": null
-          },
-          {
-            "type": "MVP de la jornada",
-            "title": "¡BUDIMIR DESPIERTA A MALDINILLO!",
-            "subtitle": "¡11 Puntos que Encienden la Llama!",
-            "text": [
-              "¡A. Budimir irrumpe con 11 puntos, inyectando una dosis de adrenalina pura en las filas de Maldinillo 💥, ¡un resurgir esperado!",
-              "¡El manager, aunque en la sexta posición de la jornada, demuestra que su escuadra tiene el potencial para escalar y ¡dar la sorpresa!"
-            ],
-            "jugador": "A. Budimir",
-            "manager": "Maldinillo 💥",
-            "puntos": 11.0,
-            "dinero": null
-          },
-          {
-            "type": "Peor actuación de la jornada",
-            "title": "¡DESASTRE EN LA CIMA!",
-            "subtitle": "¡H. Rincón HUNDE a Los Marinero!",
-            "text": [
-              "¡Horror en el líder! H. Rincón firma una actuación para el olvido con -2 puntos, ¡un golpe bajo para Los Marinero!",
-              "¡El primer clasificado de la general ve cómo su estrella se apaga, poniendo en jaque su dominio en la SOTANO LEAGUE, ¡saltan las alarmas!"
-            ],
-            "jugador": "H. Rincón",
-            "manager": "Los marinero",
-            "puntos": -2.0,
-            "dinero": null
-          },
-          {
-            "type": "Gol en propia",
-            "title": "¡AUTOGOL Y DRAMA!",
-            "subtitle": "¡Jotabetrbb Sufre en sus Carnes!",
-            "text": [
-              "¡Tragedia en el área! J. Iglesias protagoniza un autogol que deja helado a Jotabetrbb, sumando solo 2 puntos, ¡un error fatal!",
-              "¡El manager, pese a estar entre los tres primeros de la jornada, lamenta una jugada desafortunada que ¡podría costar caro!"
-            ],
-            "jugador": "J. Iglesias",
-            "manager": "Jotabetrbb",
-            "puntos": 2.0,
-            "dinero": null
-          }
-        ],
-        "standingsAtIssue": [
-          {
-            "rank": 1,
-            "manager": "Los marinero",
-            "points": 88
-          },
-          {
-            "rank": 2,
-            "manager": "Dani",
-            "points": 78
-          },
-          {
-            "rank": 3,
-            "manager": "Chamacónicos",
-            "points": 77
-          },
-          {
-            "rank": 4,
-            "manager": "MuchaSalsa",
-            "points": 66
-          },
-          {
-            "rank": 5,
-            "manager": "Maldinillo 💥",
-            "points": 51
-          },
-          {
-            "rank": 6,
-            "manager": "Jotabetrbb",
-            "points": 45
-          },
-          {
-            "rank": 7,
-            "manager": "De la Guettir FC",
-            "points": 43
-          },
-          {
-            "rank": 8,
-            "manager": "Juanba",
-            "points": 42
-          },
-          {
-            "rank": 9,
-            "manager": "Libre",
-            "points": 35
           }
         ]
       },
@@ -10818,217 +9968,6 @@
         ]
       },
       {
-        "date": "J1",
-        "title": "¡SOTANO LEAGUE ARDE!",
-        "subtitle": "¡Los Marinero Escapan, Dani Presiona!",
-        "summary": "Los Marinero se afianzan en la cima con 57 puntos, ¡una ventaja de vértigo que nadie esperaba! Dani, el bicampeón, no afloja y se mantiene segundo con 43, ¡su sombra es alargada! Maldinillo 💥 escala posiciones y ya es quinto, ¡la remontada del año está en marcha!",
-        "cards": [
-          {
-            "type": "clasificacion",
-            "title": "¡SOTANO LEAGUE ARDE!",
-            "subtitle": "¡Los Marinero Escapan, Dani Presiona!",
-            "text": [
-              "Los Marinero se afianzan en la cima con 57 puntos, ¡una ventaja de vértigo que nadie esperaba!",
-              "Dani, el bicampeón, no afloja y se mantiene segundo con 43, ¡su sombra es alargada!",
-              "Maldinillo 💥 escala posiciones y ya es quinto, ¡la remontada del año está en marcha!"
-            ],
-            "jugador": null,
-            "manager": null,
-            "puntos": null,
-            "dinero": null
-          },
-          {
-            "type": "rumor",
-            "title": "¡BOMBAZO EN LA OFICINA!",
-            "subtitle": "¿Un nuevo fichaje para el amor?",
-            "text": [
-              "Fuentes cercanas a la liga aseguran que un manager está más preocupado por su crush de la oficina que por el mercado de fichajes."
-            ],
-            "jugador": null,
-            "manager": null,
-            "puntos": null,
-            "dinero": null
-          },
-          {
-            "type": "Fichaje destacado",
-            "title": "¡GOLPE MAESTRO DE MALDINILLO!",
-            "subtitle": "¡Isco es Suyo por 17.65 Millones!",
-            "text": [
-              "Maldinillo 💥, en quinto lugar, se lanza a por Isco con una inversión brutal de 17.65 millones.",
-              "¡Este fichaje es una declaración de intenciones para asaltar el podio!"
-            ],
-            "jugador": "Isco",
-            "manager": "Maldinillo 💥",
-            "puntos": null,
-            "dinero": 17.6498
-          },
-          {
-            "type": "Fichaje destacado",
-            "title": "¡DANI NO SE RELAJA!",
-            "subtitle": "¡Frenkie De Jong por 16.71 Millones!",
-            "text": [
-              "El bicampeón Dani, segundo en la tabla, refuerza su mediocampo con Frenkie De Jong.",
-              "¡Una inversión de 16.71 millones que grita 'quiero el tricampeonato'!"
-            ],
-            "jugador": "Frenkie De Jong",
-            "manager": "Dani",
-            "puntos": null,
-            "dinero": 16.70839
-          },
-          {
-            "type": "Fichaje destacado",
-            "title": "¡DOBLE RACHA DE DANI!",
-            "subtitle": "¡Pablo Barrios se une por 14.94 Millones!",
-            "text": [
-              "Dani sigue moviendo fichas; Pablo Barrios aterriza en su equipo por 14.94 millones.",
-              "¡El actual subcampeón no deja nada al azar en su asalto al liderato!"
-            ],
-            "jugador": "Pablo Barrios",
-            "manager": "Dani",
-            "puntos": null,
-            "dinero": 14.94083
-          },
-          {
-            "type": "Venta récord",
-            "title": "¡MOVIMIENTO ESTRATÉGICO!",
-            "subtitle": "¡Dani Vende a Fornals por 15.74 Millones!",
-            "text": [
-              "Dani, el temible segundo clasificado, se desprende de Pablo Fornals por una cifra astronómica.",
-              "¡15.74 millones que le dan un respiro económico para sus próximos bombazos!"
-            ],
-            "jugador": "Pablo Fornals",
-            "manager": "Dani",
-            "puntos": null,
-            "dinero": 15.74085
-          },
-          {
-            "type": "MVP de la jornada",
-            "title": "¡DE FRUTOS, EL REY DE LA JORNADA!",
-            "subtitle": "¡Los Marinero Celebran 14 Puntos!",
-            "text": [
-              "J. de Frutos desató la locura con 14 puntos, ¡llevando a Los Marinero a la cima!",
-              "¡El líder general tiene un as bajo la manga y no piensa ceder!"
-            ],
-            "jugador": "J. de Frutos",
-            "manager": "Los marinero",
-            "puntos": 14.0,
-            "dinero": null
-          },
-          {
-            "type": "MVP de la jornada",
-            "title": "¡MALDINILLO EN ALZA!",
-            "subtitle": "¡Á. García le da 10 Puntos Clave!",
-            "text": [
-              "Á. García brilla con 10 puntos, impulsando a Maldinillo 💥 en su escalada hacia la gloria.",
-              "¡El quinto clasificado tiene jugadores que marcan la diferencia!"
-            ],
-            "jugador": "Á. García",
-            "manager": "Maldinillo 💥",
-            "puntos": 10.0,
-            "dinero": null
-          },
-          {
-            "type": "MVP de la jornada",
-            "title": "¡RAPHINHA DESLUMBRA!",
-            "subtitle": "¡MuchaSalsa Suma 10 Puntos Cruciales!",
-            "text": [
-              "Raphinha se convierte en el héroe con 10 puntos para MuchaSalsa.",
-              "¡El tercer clasificado demuestra que tiene dinamita en sus filas!"
-            ],
-            "jugador": "Raphinha",
-            "manager": "MuchaSalsa",
-            "puntos": 10.0,
-            "dinero": null
-          },
-          {
-            "type": "Peor actuación de la jornada",
-            "title": "¡DESASTRE TOTAL!",
-            "subtitle": "¡Muriqi HUNDE a Chamacónicos con -7 Puntos!",
-            "text": [
-              "V. Muriqi protagoniza el fiasco de la jornada con unos dolorosos -7 puntos.",
-              "¡Chamacónicos sufre un golpe bajo que les deja al borde del abismo!"
-            ],
-            "jugador": "V. Muriqi",
-            "manager": "Chamacónicos",
-            "puntos": -7.0,
-            "dinero": null
-          },
-          {
-            "type": "Expulsión",
-            "title": "¡ROJA DIRECTA Y ESCÁNDALO!",
-            "subtitle": "¡Muriqi Deja a Chamacónicos con Diez!",
-            "text": [
-              "La expulsión de V. Muriqi fue el colmo, ¡condicionando por completo la jornada de Chamacónicos!",
-              "¡Una tarjeta roja que será recordada como el peor momento del equipo!"
-            ],
-            "jugador": "V. Muriqi",
-            "manager": "Chamacónicos",
-            "puntos": -7.0,
-            "dinero": null
-          },
-          {
-            "type": "Héroe bajo palos",
-            "title": "¡MILAGRO DE L. JÚNIOR!",
-            "subtitle": "¡Penalti Parado y Puntos Salvos para MuchaSalsa!",
-            "text": [
-              "L. Júnior se viste de héroe al parar un penalti decisivo, ¡salvando a MuchaSalsa de la catástrofe!",
-              "¡Una intervención que vale oro y mantiene al tercer clasificado en la lucha!"
-            ],
-            "jugador": "L. Júnior",
-            "manager": "MuchaSalsa",
-            "puntos": 6.0,
-            "dinero": null
-          }
-        ],
-        "standingsAtIssue": [
-          {
-            "rank": 1,
-            "manager": "Los marinero",
-            "points": 57
-          },
-          {
-            "rank": 2,
-            "manager": "Dani",
-            "points": 43
-          },
-          {
-            "rank": 3,
-            "manager": "MuchaSalsa",
-            "points": 36
-          },
-          {
-            "rank": 4,
-            "manager": "De la Guettir FC",
-            "points": 25
-          },
-          {
-            "rank": 5,
-            "manager": "Maldinillo 💥",
-            "points": 22
-          },
-          {
-            "rank": 6,
-            "manager": "Chamacónicos",
-            "points": 17
-          },
-          {
-            "rank": 7,
-            "manager": "Libre",
-            "points": 17
-          },
-          {
-            "rank": 8,
-            "manager": "Juanba",
-            "points": 16
-          },
-          {
-            "rank": 9,
-            "manager": "Jotabetrbb",
-            "points": 12
-          }
-        ]
-      },
-      {
         "date": "J19",
         "title": "¡DANI Y DE LA GUETTIR EMPATAN EN LA JORNADA!",
         "subtitle": "Maldinillo aprieta desde el segundo puesto",
@@ -11898,6 +10837,2024 @@
             "rank": 9,
             "manager": "Libre",
             "points": 393
+          }
+        ]
+      },
+      {
+        "date": "J14",
+        "title": "¡DANI TIEMBLA! ¡MALDINILLO 💥 PISA FUERTE!",
+        "subtitle": "La SOTANO LEAGUE arde en una batalla sin cuartel",
+        "summary": "Dani se aferra al liderato con 618 puntos, pero la presión es insoportable, ¡su trono se tambalea! ¡Maldinillo 💥, el fénix imparable, ya es tercero general y tercero en la jornada, ¡su resurgir es una realidad innegable! Chamacónicos se alza como el rey de la jornada, mientras Libre se ahoga en el pozo, ¡la liga no perdona a nadie!",
+        "cards": [
+          {
+            "type": "clasificacion",
+            "title": "¡DANI TIEMBLA! ¡MALDINILLO 💥 PISA FUERTE!",
+            "subtitle": "La SOTANO LEAGUE arde en una batalla sin cuartel",
+            "text": [
+              "Dani se aferra al liderato con 618 puntos, pero la presión es insoportable, ¡su trono se tambalea!",
+              "¡Maldinillo 💥, el fénix imparable, ya es tercero general y tercero en la jornada, ¡su resurgir es una realidad innegable!",
+              "Chamacónicos se alza como el rey de la jornada, mientras Libre se ahoga en el pozo, ¡la liga no perdona a nadie!"
+            ],
+            "jugador": null,
+            "manager": null,
+            "puntos": null,
+            "dinero": null
+          },
+          {
+            "type": "rumor",
+            "title": "¡RUMOR BOMBA!",
+            "subtitle": "¡¿Qué se esconde en el sótano?!",
+            "text": [
+              "Fuentes cercanas confirman que un manager fue visto comprando acciones de una empresa de papel higiénico, ¿estará preparando el 'papelón' de la temporada o limpiando sus finanzas?"
+            ],
+            "jugador": null,
+            "manager": null,
+            "puntos": null,
+            "dinero": null
+          },
+          {
+            "type": "MVP de la jornada",
+            "title": "¡OUNAHI DESATA LA LOCURA!",
+            "subtitle": "¡Chamacónicos, en ÉXTASIS con 13 Puntos de Oro!",
+            "text": [
+              "A. Ounahi, la joya del Girona FC, explota con 13 puntos espectaculares para Chamacónicos.",
+              "¡El manager se corona rey de la jornada y amenaza el podio general con una furia incontrolable!"
+            ],
+            "jugador": "A. Ounahi",
+            "manager": "Chamacónicos",
+            "puntos": 13.0,
+            "dinero": null
+          },
+          {
+            "type": "MVP de la jornada",
+            "title": "¡MENDY, EL RAYO DE CHAMACÓNICOS!",
+            "subtitle": "¡13 Puntos que Valen un Tesoro!",
+            "text": [
+              "N. Mendy, del Rayo Vallecano, dispara 13 puntos espectaculares para Chamacónicos.",
+              "¡Doble golpe de gracia para un manager que ya saborea la gloria y aspira a lo más alto!"
+            ],
+            "jugador": "N. Mendy",
+            "manager": "Chamacónicos",
+            "puntos": 13.0,
+            "dinero": null
+          },
+          {
+            "type": "MVP de la jornada",
+            "title": "¡D. LÓPEZ, EL HÉROE SILENCIOSO!",
+            "subtitle": "¡Jotabetrbb Respira Gracias a sus 12 Puntos!",
+            "text": [
+              "D. López, del Valencia CF, entrega 12 puntos vitales a Jotabetrbb.",
+              "¡El manager escala posiciones y demuestra que aún tiene mucho que decir en esta liga de titanes!"
+            ],
+            "jugador": "D. López",
+            "manager": "Jotabetrbb",
+            "puntos": 12.0,
+            "dinero": null
+          },
+          {
+            "type": "Peor actuación de la jornada",
+            "title": "¡GÜLER, EL FRACASO DEL BICAMPEÓN!",
+            "subtitle": "¡Dani Cae en Picada con CERO Puntos!",
+            "text": [
+              "A. Güler, la promesa del Real Madrid, se desinfla con 0 puntos catastróficos para Dani.",
+              "¡El líder de la liga sufre un varapalo que podría costarle muy caro en la lucha por el título!"
+            ],
+            "jugador": "A. Güler",
+            "manager": "Dani",
+            "puntos": 0.0,
+            "dinero": null
+          }
+        ],
+        "standingsAtIssue": [
+          {
+            "rank": 1,
+            "manager": "Dani",
+            "points": 618
+          },
+          {
+            "rank": 2,
+            "manager": "Los marinero",
+            "points": 556
+          },
+          {
+            "rank": 3,
+            "manager": "Maldinillo 💥",
+            "points": 553
+          },
+          {
+            "rank": 4,
+            "manager": "Chamacónicos",
+            "points": 548
+          },
+          {
+            "rank": 5,
+            "manager": "De la Guettir FC",
+            "points": 510
+          },
+          {
+            "rank": 6,
+            "manager": "Jotabetrbb",
+            "points": 499
+          },
+          {
+            "rank": 7,
+            "manager": "MuchaSalsa",
+            "points": 453
+          },
+          {
+            "rank": 8,
+            "manager": "Juanba",
+            "points": 400
+          },
+          {
+            "rank": 9,
+            "manager": "Libre",
+            "points": 372
+          }
+        ]
+      },
+      {
+        "date": "J13",
+        "title": "¡Dani se tambalea en la cima!",
+        "subtitle": "¡Maldinillo, el huracán que lo cambia todo!",
+        "summary": "Dani, el bicampeón, ve su trono amenazado por una legión de aspirantes hambrientos. Los Marinero acechan, pero la verdadera tormenta viene de Maldinillo 💥, ¡a solo 9 puntos del segundo puesto! Mientras tanto, Libre se hunde en el abismo, ¡el farolillo rojo no encuentra consuelo!",
+        "cards": [
+          {
+            "type": "clasificacion",
+            "title": "¡Dani se tambalea en la cima!",
+            "subtitle": "¡Maldinillo, el huracán que lo cambia todo!",
+            "text": [
+              "Dani, el bicampeón, ve su trono amenazado por una legión de aspirantes hambrientos.",
+              "Los Marinero acechan, pero la verdadera tormenta viene de Maldinillo 💥, ¡a solo 9 puntos del segundo puesto!",
+              "Mientras tanto, Libre se hunde en el abismo, ¡el farolillo rojo no encuentra consuelo!"
+            ],
+            "jugador": null,
+            "manager": null,
+            "puntos": null,
+            "dinero": null
+          },
+          {
+            "type": "rumor",
+            "title": "¡ESCÁNDALO EN LA SOTANO LEAGUE!",
+            "subtitle": "¡Un manager pillado en un sitio inesperado!",
+            "text": [
+              "Fuentes cercanas aseguran que un conocido manager fue visto comprando figuritas de coleccionista en una tienda de cómics, ¡su estrategia de fichajes podría ser un engaño!"
+            ],
+            "jugador": null,
+            "manager": null,
+            "puntos": null,
+            "dinero": null
+          },
+          {
+            "type": "MVP de la jornada",
+            "title": "¡TORRES EXPLOTA EN JOTABETRBB!",
+            "subtitle": "¡16 Puntos que Sacuden la Jornada!",
+            "text": [
+              "F. Torres, la joya del FC Barcelona, desata un vendaval de puntos para Jotabetrbb.",
+              "¡El manager de la sexta posición general se cuela en el podio de la jornada con una actuación estelar!"
+            ],
+            "jugador": "F. Torres",
+            "manager": "Jotabetrbb",
+            "puntos": 16.0,
+            "dinero": null
+          },
+          {
+            "type": "MVP de la jornada",
+            "title": "¡LÓPEZ, EL HÉROE DE MALDINILLO!",
+            "subtitle": "¡13 Puntos de Oro para el Líder de la Jornada!",
+            "text": [
+              "F. López, el mago del FC Barcelona, impulsa a Maldinillo 💥 a la cima de la jornada.",
+              "¡El tercer clasificado general ruge con fuerza, demostrando por qué es el mejor de esta semana!"
+            ],
+            "jugador": "F. López",
+            "manager": "Maldinillo 💥",
+            "puntos": 13.0,
+            "dinero": null
+          },
+          {
+            "type": "MVP de la jornada",
+            "title": "¡FEBAS, EL MOTOR DE MALDINILLO!",
+            "subtitle": "¡12 Puntos Clave para la Ascensión!",
+            "text": [
+              "A. Febas, el incansable del Elche CF, suma 12 puntos vitales para Maldinillo 💥.",
+              "¡El manager de la tercera posición general consolida su poderío, ¡nadie puede detenerlo!"
+            ],
+            "jugador": "A. Febas",
+            "manager": "Maldinillo 💥",
+            "puntos": 12.0,
+            "dinero": null
+          },
+          {
+            "type": "Peor actuación de la jornada",
+            "title": "¡DESASTRE EN CHAMACÓNICOS!",
+            "subtitle": "¡J. Álvarez, la Pesadilla de la Jornada!",
+            "text": [
+              "J. Álvarez, del Atlético de Madrid, protagoniza la peor actuación con un desolador -1.",
+              "¡Chamacónicos se desploma, cayendo al octavo puesto de la jornada en una debacle total!"
+            ],
+            "jugador": "J. Álvarez",
+            "manager": "Chamacónicos",
+            "puntos": -1.0,
+            "dinero": null
+          },
+          {
+            "type": "Héroe bajo palos",
+            "title": "¡ESCANDALOSO ESCANDELL SALVA A DANI!",
+            "subtitle": "¡Penalti Parado: Un Héroe Bajo Palos!",
+            "text": [
+              "A. Escandell, el muro del Real Oviedo, detiene un penalti decisivo para Dani.",
+              "¡El líder general se aferra a su posición gracias a una parada milagrosa que vale oro!"
+            ],
+            "jugador": "A. Escandell",
+            "manager": "Dani",
+            "puntos": 10.0,
+            "dinero": null
+          }
+        ],
+        "standingsAtIssue": [
+          {
+            "rank": 1,
+            "manager": "Dani",
+            "points": 587
+          },
+          {
+            "rank": 2,
+            "manager": "Los marinero",
+            "points": 514
+          },
+          {
+            "rank": 3,
+            "manager": "Maldinillo 💥",
+            "points": 505
+          },
+          {
+            "rank": 4,
+            "manager": "Chamacónicos",
+            "points": 487
+          },
+          {
+            "rank": 5,
+            "manager": "De la Guettir FC",
+            "points": 476
+          },
+          {
+            "rank": 6,
+            "manager": "Jotabetrbb",
+            "points": 453
+          },
+          {
+            "rank": 7,
+            "manager": "MuchaSalsa",
+            "points": 403
+          },
+          {
+            "rank": 8,
+            "manager": "Juanba",
+            "points": 381
+          },
+          {
+            "rank": 9,
+            "manager": "Libre",
+            "points": 372
+          }
+        ]
+      },
+      {
+        "date": "J12",
+        "title": "¡DANI RESISTE AL FRENTE, PERO MALDINILLO RUGE!",
+        "subtitle": "¡La SOTANO LEAGUE al ROJO VIVO! ¡El bicampeón tiembla!",
+        "summary": "Dani se aferra al liderato con uñas y dientes, pero la presión de sus perseguidores es insoportable. ¡Maldinillo 💥 desata la furia! ¡Jornada espectacular que lo catapulta hacia la cima! Libre sigue hundiéndose en el pozo, sin atisbos de salvación en esta liga de titanes.",
+        "cards": [
+          {
+            "type": "clasificacion",
+            "title": "¡DANI RESISTE AL FRENTE, PERO MALDINILLO RUGE!",
+            "subtitle": "¡La SOTANO LEAGUE al ROJO VIVO! ¡El bicampeón tiembla!",
+            "text": [
+              "Dani se aferra al liderato con uñas y dientes, pero la presión de sus perseguidores es insoportable.",
+              "¡Maldinillo 💥 desata la furia! ¡Jornada espectacular que lo catapulta hacia la cima!",
+              "Libre sigue hundiéndose en el pozo, sin atisbos de salvación en esta liga de titanes."
+            ],
+            "jugador": null,
+            "manager": null,
+            "puntos": null,
+            "dinero": null
+          },
+          {
+            "type": "rumor",
+            "title": "¡BOMBAZO EN LA SOTANO LEAGUE!",
+            "subtitle": "¡Un manager, pillado in fraganti!",
+            "text": [
+              "Fuentes cercanas a la liga aseguran que uno de nuestros managers estrella ha sido visto intentando amaestrar palomas mensajeras para enviar sus ofertas de fichajes."
+            ],
+            "jugador": null,
+            "manager": null,
+            "puntos": null,
+            "dinero": null
+          },
+          {
+            "type": "MVP de la jornada",
+            "title": "¡LEWANDOWSKI DESATA LA LOCURA!",
+            "subtitle": "¡Maldinillo 💥 se dispara con un MVP de ÉLITE!",
+            "text": [
+              "¡20 puntos de oro puro! ¡Lewandowski catapulta a Maldinillo 💥 a la cima de la jornada!",
+              "El 'killer' polaco demuestra por qué es una joya, ¡poniendo a su manager en la órbita del título!"
+            ],
+            "jugador": "R. Lewandowski",
+            "manager": "Maldinillo 💥",
+            "puntos": 20.0,
+            "dinero": null
+          },
+          {
+            "type": "MVP de la jornada",
+            "title": "¡CARREIRA, EL HÉROE SILENCIOSO!",
+            "subtitle": "¡Chamacónicos escala posiciones con un golpe de autoridad!",
+            "text": [
+              "¡13 puntos cruciales! S. Carreira emerge como el baluarte de Chamacónicos en una jornada de infarto.",
+              "El Celta se convierte en el aliado perfecto para un manager que no deja de soñar con la gloria."
+            ],
+            "jugador": "S. Carreira",
+            "manager": "Chamacónicos",
+            "puntos": 13.0,
+            "dinero": null
+          },
+          {
+            "type": "MVP de la jornada",
+            "title": "¡DANI SE MANTIENE A FLOTE!",
+            "subtitle": "¡C. Hernández evita el naufragio del bicampeón!",
+            "text": [
+              "¡11 puntos que saben a gloria! C. Hernández rescata a Dani en una jornada de máxima tensión.",
+              "El líder aprieta los dientes y demuestra que, incluso en la adversidad, sus estrellas responden."
+            ],
+            "jugador": "C. Hernández",
+            "manager": "Dani",
+            "puntos": 11.0,
+            "dinero": null
+          },
+          {
+            "type": "Peor actuación de la jornada",
+            "title": "¡FRACASO ABSOLUTO EN ELCHE!",
+            "subtitle": "¡A. Silva hunde a Juanba en el abismo de la jornada!",
+            "text": [
+              "¡CERO puntos! A. Silva protagoniza el fiasco de la jornada, dejando a Juanba en la cola.",
+              "Elche se convierte en el escenario de una debacle que castiga sin piedad al manager."
+            ],
+            "jugador": "A. Silva",
+            "manager": "Juanba",
+            "puntos": 0.0,
+            "dinero": null
+          }
+        ],
+        "standingsAtIssue": [
+          {
+            "rank": 1,
+            "manager": "Dani",
+            "points": 539
+          },
+          {
+            "rank": 2,
+            "manager": "Los marinero",
+            "points": 471
+          },
+          {
+            "rank": 3,
+            "manager": "Chamacónicos",
+            "points": 457
+          },
+          {
+            "rank": 4,
+            "manager": "Maldinillo 💥",
+            "points": 446
+          },
+          {
+            "rank": 5,
+            "manager": "De la Guettir FC",
+            "points": 418
+          },
+          {
+            "rank": 6,
+            "manager": "Jotabetrbb",
+            "points": 403
+          },
+          {
+            "rank": 7,
+            "manager": "MuchaSalsa",
+            "points": 368
+          },
+          {
+            "rank": 8,
+            "manager": "Juanba",
+            "points": 351
+          },
+          {
+            "rank": 9,
+            "manager": "Libre",
+            "points": 339
+          }
+        ]
+      },
+      {
+        "date": "J11",
+        "title": "¡DANI IMPARABLE, PERO LA LIGA ARDE!",
+        "subtitle": "¡LIBRE RESURGE DE LAS CENIZAS Y MALDINILLO 💥 SE DESINFLA!",
+        "summary": "¡Dani se aferra a la cima con 484 puntos, un muro inquebrantable que busca su tercer campeonato consecutivo! ¡Pero la SOTANO LEAGUE es un polvorín! Los Marinero y Chamacónicos acechan, mientras Maldinillo 💥, la esperanza, cae al noveno puesto de la jornada, un golpe bajo a sus aspiraciones. ¡La sorpresa salta en la jornada con Libre, el colista general, alzándose con 54 puntos y demostrando que en esta liga, cualquiera puede ser héroe o villano!",
+        "cards": [
+          {
+            "type": "clasificacion",
+            "title": "¡DANI IMPARABLE, PERO LA LIGA ARDE!",
+            "subtitle": "¡LIBRE RESURGE DE LAS CENIZAS Y MALDINILLO 💥 SE DESINFLA!",
+            "text": [
+              "¡Dani se aferra a la cima con 484 puntos, un muro inquebrantable que busca su tercer campeonato consecutivo!",
+              "¡Pero la SOTANO LEAGUE es un polvorín! Los Marinero y Chamacónicos acechan, mientras Maldinillo 💥, la esperanza, cae al noveno puesto de la jornada, un golpe bajo a sus aspiraciones.",
+              "¡La sorpresa salta en la jornada con Libre, el colista general, alzándose con 54 puntos y demostrando que en esta liga, cualquiera puede ser héroe o villano!"
+            ],
+            "jugador": null,
+            "manager": null,
+            "puntos": null,
+            "dinero": null
+          },
+          {
+            "type": "rumor",
+            "title": "¡BOMBAZO EN EL VESTUARIO!",
+            "subtitle": "¡Una filtración sacude la SOTANO LEAGUE!",
+            "text": [
+              "¡Se rumorea que un manager de la liga ha sido pillado intentando sobornar al árbitro con una tortilla de patatas, ¡sin cebolla!"
+            ],
+            "jugador": null,
+            "manager": null,
+            "puntos": null,
+            "dinero": null
+          },
+          {
+            "type": "MVP de la jornada",
+            "title": "¡MBAPPÉ EXPLOTA, DE LA GUETTIR FC CELEBRA!",
+            "subtitle": "¡16 PUNTOS DE ORO PURO REVOLUCIONAN LA TABLA!",
+            "text": [
+              "¡K. Mbappé, el galáctico del Real Madrid, desata el caos con 16 puntos espectaculares para De la Guettir FC!",
+              "¡El manager de la cuarta posición general ruge con fuerza, ¡su estrella lo catapulta a la élite de la jornada!"
+            ],
+            "jugador": "K. Mbappé",
+            "manager": "De la Guettir FC",
+            "puntos": 16.0,
+            "dinero": null
+          },
+          {
+            "type": "MVP de la jornada",
+            "title": "¡EL FÉNIX LIBRE RESURGE!",
+            "subtitle": "¡J. GORROTXATEGI, EL HÉROE INESPERADO CON 12 PUNTOS!",
+            "text": [
+              "¡J. Gorrotxategi, la joya de la Real Sociedad, enciende la mecha con 12 puntos para el manager Libre!",
+              "¡El colista de la general se proclama rey de la jornada, ¡una venganza épica que nadie vio venir!"
+            ],
+            "jugador": "J. Gorrotxategi",
+            "manager": "Libre",
+            "puntos": 12.0,
+            "dinero": null
+          },
+          {
+            "type": "MVP de la jornada",
+            "title": "¡GUEDES DESPIERTA A JUANBA!",
+            "subtitle": "¡10 PUNTOS CLAVE PARA ESCALAR POSICIONES!",
+            "text": [
+              "¡G. Guedes, el talentoso jugador de la Real Sociedad, entrega 10 puntos vitales a Juanba!",
+              "¡El manager de la séptima posición general se afianza en el podio de la jornada, ¡demostrando que la fe mueve montañas!"
+            ],
+            "jugador": "G. Guedes",
+            "manager": "Juanba",
+            "puntos": 10.0,
+            "dinero": null
+          },
+          {
+            "type": "Peor actuación de la jornada",
+            "title": "¡DESASTRE EN EL JOTABETRBB!",
+            "subtitle": "¡T. NIANZOU FIRMA UN FRACASO SONORO CON -1 PUNTO!",
+            "text": [
+              "¡T. Nianzou, el central del Sevilla FC, protagoniza la debacle con un humillante -1 punto para Jotabetrbb!",
+              "¡El manager de la sexta posición general se estanca, ¡su equipo se hunde en el abismo y necesita una reacción URGENTE!"
+            ],
+            "jugador": "T. Nianzou",
+            "manager": "Jotabetrbb",
+            "puntos": -1.0,
+            "dinero": null
+          }
+        ],
+        "standingsAtIssue": [
+          {
+            "rank": 1,
+            "manager": "Dani",
+            "points": 484
+          },
+          {
+            "rank": 2,
+            "manager": "Los marinero",
+            "points": 426
+          },
+          {
+            "rank": 3,
+            "manager": "Chamacónicos",
+            "points": 408
+          },
+          {
+            "rank": 4,
+            "manager": "De la Guettir FC",
+            "points": 391
+          },
+          {
+            "rank": 5,
+            "manager": "Maldinillo 💥",
+            "points": 390
+          },
+          {
+            "rank": 6,
+            "manager": "Jotabetrbb",
+            "points": 358
+          },
+          {
+            "rank": 7,
+            "manager": "Juanba",
+            "points": 326
+          },
+          {
+            "rank": 8,
+            "manager": "MuchaSalsa",
+            "points": 326
+          },
+          {
+            "rank": 9,
+            "manager": "Libre",
+            "points": 295
+          }
+        ]
+      },
+      {
+        "date": "J10",
+        "title": "¡DANI SE MANTIENE, PERO MALDINILLO 💥 ATACA!",
+        "subtitle": "¡La SOTANO LEAGUE arde en llamas!",
+        "summary": "Dani sigue en la cima con 444 puntos, ¡un líder inquebrantable! ¡Maldinillo 💥 desata la furia y se lleva la jornada con 53 puntos, escalando posiciones! Los Marinero y Chamacónicos acechan, mientras Libre se hunde en el abismo.",
+        "cards": [
+          {
+            "type": "clasificacion",
+            "title": "¡DANI SE MANTIENE, PERO MALDINILLO 💥 ATACA!",
+            "subtitle": "¡La SOTANO LEAGUE arde en llamas!",
+            "text": [
+              "Dani sigue en la cima con 444 puntos, ¡un líder inquebrantable!",
+              "¡Maldinillo 💥 desata la furia y se lleva la jornada con 53 puntos, escalando posiciones!",
+              "Los Marinero y Chamacónicos acechan, mientras Libre se hunde en el abismo."
+            ],
+            "jugador": null,
+            "manager": null,
+            "puntos": null,
+            "dinero": null
+          },
+          {
+            "type": "rumor",
+            "title": "¡RUMOR BOMBA EN LA LIGA!",
+            "subtitle": "¡Un manager, pillado en un acto insólito!",
+            "text": [
+              "Se dice que un manager, obsesionado con Maldinillo 💥, fue visto anoche intentando copiar sus estrategias de mercado en un bar, ¡con un boli y una servilleta!"
+            ],
+            "jugador": null,
+            "manager": null,
+            "puntos": null,
+            "dinero": null
+          },
+          {
+            "type": "MVP de la jornada",
+            "title": "¡OYARZABAL RESCATA A LIBRE!",
+            "subtitle": "¡Un rayo de esperanza para el colista!",
+            "text": [
+              "¡M. Oyarzabal estalla con 16 puntos, sacudiendo la tabla!",
+              "Libre, el colista general, se cuela en el Top 4 de la jornada, ¡un milagro inesperado!"
+            ],
+            "jugador": "M. Oyarzabal",
+            "manager": "Libre",
+            "puntos": 16.0,
+            "dinero": null
+          },
+          {
+            "type": "MVP de la jornada",
+            "title": "¡ROMERO DESATA LA FURIA DE MALDINILLO 💥!",
+            "subtitle": "¡El Espanyol alimenta al campeón de la jornada!",
+            "text": [
+              "¡C. Romero regala 14 puntos vitales, impulsando a Maldinillo 💥!",
+              "¡El manager que domina la jornada demuestra su imparable ascenso!"
+            ],
+            "jugador": "C. Romero",
+            "manager": "Maldinillo 💥",
+            "puntos": 14.0,
+            "dinero": null
+          },
+          {
+            "type": "MVP de la jornada",
+            "title": "¡MAFFEO, EL MURO DE MALDINILLO 💥!",
+            "subtitle": "¡Doble golpe de autoridad del manager estrella!",
+            "text": [
+              "¡P. Maffeo suma 14 puntos cruciales, consolidando a Maldinillo 💥!",
+              "¡El líder de la jornada no da tregua, su dominio es absoluto!"
+            ],
+            "jugador": "P. Maffeo",
+            "manager": "Maldinillo 💥",
+            "puntos": 14.0,
+            "dinero": null
+          },
+          {
+            "type": "Peor actuación de la jornada",
+            "title": "¡DESASTRE EN SEVILLA!",
+            "subtitle": "¡Un borrón en la jornada estelar de Maldinillo 💥!",
+            "text": [
+              "¡A. Sánchez se hunde con solo 1 punto, un tropiezo inesperado!",
+              "Aunque Maldinillo 💥 triunfa en la jornada, este fallo no pasa desapercibido."
+            ],
+            "jugador": "A. Sánchez",
+            "manager": "Maldinillo 💥",
+            "puntos": 1.0,
+            "dinero": null
+          }
+        ],
+        "standingsAtIssue": [
+          {
+            "rank": 1,
+            "manager": "Dani",
+            "points": 444
+          },
+          {
+            "rank": 2,
+            "manager": "Los marinero",
+            "points": 392
+          },
+          {
+            "rank": 3,
+            "manager": "Chamacónicos",
+            "points": 362
+          },
+          {
+            "rank": 4,
+            "manager": "Maldinillo 💥",
+            "points": 361
+          },
+          {
+            "rank": 5,
+            "manager": "De la Guettir FC",
+            "points": 355
+          },
+          {
+            "rank": 6,
+            "manager": "Jotabetrbb",
+            "points": 319
+          },
+          {
+            "rank": 7,
+            "manager": "MuchaSalsa",
+            "points": 290
+          },
+          {
+            "rank": 8,
+            "manager": "Juanba",
+            "points": 284
+          },
+          {
+            "rank": 9,
+            "manager": "Libre",
+            "points": 241
+          }
+        ]
+      },
+      {
+        "date": "J9",
+        "title": "¡DANI INSACIABLE, EL REY ABSOLUTO DE LA SOTANO LEAGUE!",
+        "subtitle": "¡Maldinillo 💥 DESPIERTA Y AMENAZA AL TRONO!",
+        "summary": "Dani se consolida en la cima con 409 puntos, ¡una máquina imparable que no perdona! Maldinillo 💥, el fénix de la jornada, escala a la quinta posición general y se proclama segundo en la jornada, ¡su resurgir es real! ¡La lucha por el podio arde! Los Marinero y De la Guettir FC no bajan los brazos, mientras Libre se hunde en el abismo de la tabla.",
+        "cards": [
+          {
+            "type": "clasificacion",
+            "title": "¡DANI INSACIABLE, EL REY ABSOLUTO DE LA SOTANO LEAGUE!",
+            "subtitle": "¡Maldinillo 💥 DESPIERTA Y AMENAZA AL TRONO!",
+            "text": [
+              "Dani se consolida en la cima con 409 puntos, ¡una máquina imparable que no perdona!",
+              "Maldinillo 💥, el fénix de la jornada, escala a la quinta posición general y se proclama segundo en la jornada, ¡su resurgir es real!",
+              "¡La lucha por el podio arde! Los Marinero y De la Guettir FC no bajan los brazos, mientras Libre se hunde en el abismo de la tabla."
+            ],
+            "jugador": null,
+            "manager": null,
+            "puntos": null,
+            "dinero": null
+          },
+          {
+            "type": "rumor",
+            "title": "¡ESCÁNDALO EN EL VESTUARIO!",
+            "subtitle": "¡UN MANAGER AL BORDE DE LA LOCURA!",
+            "text": [
+              "Se rumorea que un manager de la liga ha sido visto hablando solo con su once inicial, ¡culpándolos de sus derrotas y prometiéndoles 'más banquillo'!"
+            ],
+            "jugador": null,
+            "manager": null,
+            "puntos": null,
+            "dinero": null
+          },
+          {
+            "type": "MVP de la jornada",
+            "title": "¡PEDRI, EL MAGO QUE DESPIERTA A MALDINILLO 💥!",
+            "subtitle": "¡12 PUNTOS DE ORO PARA EL RESURGIR!",
+            "text": [
+              "Pedri, la joya del FC Barcelona, irrumpe con 12 puntos estelares, ¡catapultando a Maldinillo 💥 a la segunda posición de la jornada!",
+              "¡El manager de la quinta posición general demuestra que su ambición no tiene límites y que va a por todas!"
+            ],
+            "jugador": "Pedri",
+            "manager": "Maldinillo 💥",
+            "puntos": 12.0,
+            "dinero": null
+          },
+          {
+            "type": "MVP de la jornada",
+            "title": "¡VARGAS, EL HÉROE SILENCIOSO DE JOTABETRBB!",
+            "subtitle": "¡11 PUNTOS QUE REANIMAN LA ESPERANZA!",
+            "text": [
+              "R. Vargas, el gladiador del Sevilla FC, entrega 11 puntos cruciales para Jotabetrbb, ¡un soplo de aire fresco en la jornada!",
+              "El manager, en la sexta posición general, se aferra a la quinta plaza de la jornada, ¡luchando con uñas y dientes!"
+            ],
+            "jugador": "R. Vargas",
+            "manager": "Jotabetrbb",
+            "puntos": 11.0,
+            "dinero": null
+          },
+          {
+            "type": "MVP de la jornada",
+            "title": "¡BUCHANAN, LA SORPRESA QUE ELEVA A JUANBA!",
+            "subtitle": "¡11 PUNTOS QUE SACUDEN LA TABLA!",
+            "text": [
+              "T. Buchanan, el inesperado crack del Villarreal CF, explota con 11 puntos, ¡impulsando a Juanba al tercer puesto de la jornada!",
+              "El manager, en la séptima posición general, da un golpe sobre la mesa, ¡demostrando que aún tiene mucho que decir!"
+            ],
+            "jugador": "T. Buchanan",
+            "manager": "Juanba",
+            "puntos": 11.0,
+            "dinero": null
+          },
+          {
+            "type": "Peor actuación de la jornada",
+            "title": "¡AZPILICUETA, EL 'CRACK' QUE SE DESINFLA!",
+            "subtitle": "¡JOTABETRBB SUFRE UN CERO INESPERADO!",
+            "text": [
+              "C. Azpilicueta, el veterano del Sevilla FC, protagoniza la peor actuación con un desolador 0, ¡un varapalo para Jotabetrbb!",
+              "El manager de la sexta posición general ve cómo su jornada se tambalea, ¡la presión es máxima!"
+            ],
+            "jugador": "C. Azpilicueta",
+            "manager": "Jotabetrbb",
+            "puntos": 0.0,
+            "dinero": null
+          }
+        ],
+        "standingsAtIssue": [
+          {
+            "rank": 1,
+            "manager": "Dani",
+            "points": 409
+          },
+          {
+            "rank": 2,
+            "manager": "Los marinero",
+            "points": 346
+          },
+          {
+            "rank": 3,
+            "manager": "De la Guettir FC",
+            "points": 318
+          },
+          {
+            "rank": 4,
+            "manager": "Chamacónicos",
+            "points": 317
+          },
+          {
+            "rank": 5,
+            "manager": "Maldinillo 💥",
+            "points": 308
+          },
+          {
+            "rank": 6,
+            "manager": "Jotabetrbb",
+            "points": 297
+          },
+          {
+            "rank": 7,
+            "manager": "Juanba",
+            "points": 258
+          },
+          {
+            "rank": 8,
+            "manager": "MuchaSalsa",
+            "points": 254
+          },
+          {
+            "rank": 9,
+            "manager": "Libre",
+            "points": 199
+          }
+        ]
+      },
+      {
+        "date": "J8",
+        "title": "¡DANI RESISTE, PERO LA SOTANO LEAGUE ARDE!",
+        "subtitle": "¡Jotabetrbb y Maldinillo 💥, los VERDUGOS de la jornada!",
+        "summary": "Dani se aferra a la cima con 349 puntos, pero la presión de Los Marinero, a solo 33 puntos, es asfixiante. ¡Jotabetrbb, el ciclón de la jornada con 48 puntos, amenaza a los gigantes mientras Maldinillo 💥, con 45 puntos, escala posiciones como un rayo, demostrando que su ambición no tiene límites! Mientras la élite se desangra, Libre se hunde sin remedio en el fondo de la tabla, con su futuro cada vez más oscuro.",
+        "cards": [
+          {
+            "type": "clasificacion",
+            "title": "¡DANI RESISTE, PERO LA SOTANO LEAGUE ARDE!",
+            "subtitle": "¡Jotabetrbb y Maldinillo 💥, los VERDUGOS de la jornada!",
+            "text": [
+              "Dani se aferra a la cima con 349 puntos, pero la presión de Los Marinero, a solo 33 puntos, es asfixiante.",
+              "¡Jotabetrbb, el ciclón de la jornada con 48 puntos, amenaza a los gigantes mientras Maldinillo 💥, con 45 puntos, escala posiciones como un rayo, demostrando que su ambición no tiene límites!",
+              "Mientras la élite se desangra, Libre se hunde sin remedio en el fondo de la tabla, con su futuro cada vez más oscuro."
+            ],
+            "jugador": null,
+            "manager": null,
+            "puntos": null,
+            "dinero": null
+          },
+          {
+            "type": "rumor",
+            "title": "¡BOMBAZO EN LA SOTANO LEAGUE!",
+            "subtitle": "¡Un manager al descubierto!",
+            "text": [
+              "Fuentes cercanas a la liga aseguran que uno de nuestros managers estrella ha sido visto comprando 'packs de inicio' de cromos, ¿será que su plantilla necesita un milagro?"
+            ],
+            "jugador": null,
+            "manager": null,
+            "puntos": null,
+            "dinero": null
+          },
+          {
+            "type": "MVP de la jornada",
+            "title": "¡V. JÚNIOR EXPLOTA! ¡17 PUNTOS DE ESCÁNDALO!",
+            "subtitle": "¡Jotabetrbb, el rey de la jornada, se dispara en la tabla!",
+            "text": [
+              "¡V. Júnior, la estrella del Real Madrid, ha desatado una tormenta de puntos, catapultando a Jotabetrbb a la cima de la jornada!",
+              "¡Con 17 puntos estratosféricos, este jugador demuestra por qué es la clave para la imparable escalada del manager, que ya acecha el Top 4!"
+            ],
+            "jugador": "V. Júnior",
+            "manager": "Jotabetrbb",
+            "puntos": 17.0,
+            "dinero": null
+          },
+          {
+            "type": "MVP de la jornada",
+            "title": "¡J. ÁNGEL CARMONA, EL HÉROE SILENCIOSO!",
+            "subtitle": "¡Otro golpe de Jotabetrbb en la jornada!",
+            "text": [
+              "¡El Sevilla FC se convierte en el trampolín de Jotabetrbb gracias a los 14 puntos vitales de J. Ángel Carmona!",
+              "¡Este manager, imparable en la jornada, sigue sumando estrellas que lo consolidan como el gran rival a batir!"
+            ],
+            "jugador": "J. Ángel Carmona",
+            "manager": "Jotabetrbb",
+            "puntos": 14.0,
+            "dinero": null
+          },
+          {
+            "type": "MVP de la jornada",
+            "title": "¡BRETONES SALVA A DANI DE LA CATÁSTROFE!",
+            "subtitle": "¡13 puntos para un líder que empieza a tambalearse!",
+            "text": [
+              "¡A. Bretones, el muro del CA Osasuna, emerge como el salvador de Dani con 13 puntos cruciales en una jornada irregular!",
+              "¡Aunque líder, el bicampeón muestra fisuras, y solo sus estrellas evitan un descalabro mayor!"
+            ],
+            "jugador": "A. Bretones",
+            "manager": "Dani",
+            "puntos": 13.0,
+            "dinero": null
+          },
+          {
+            "type": "Peor actuación de la jornada",
+            "title": "¡DESASTRE TOTAL! ¡AFFENGRUBER HUNDE A DANI!",
+            "subtitle": "¡-5 puntos que hacen temblar al líder!",
+            "text": [
+              "¡D. Affengruber, el 'fichaje' del Elche CF, protagoniza la peor actuación de la jornada con unos espeluznantes -5 puntos!",
+              "¡El líder Dani, que ya muestra signos de debilidad, sufre un golpe brutal que podría costarle muy caro en su lucha por el tricampeonato!"
+            ],
+            "jugador": "D. Affengruber",
+            "manager": "Dani",
+            "puntos": -5.0,
+            "dinero": null
+          },
+          {
+            "type": "Expulsión",
+            "title": "¡ROJA DIRECTA! ¡AFFENGRUBER, EL VILLANO DE LA JORNADA!",
+            "subtitle": "¡La expulsión que sentencia a Dani!",
+            "text": [
+              "¡La tarjeta roja de D. Affengruber del Elche CF no solo le costó -5 puntos, sino que dinamitó por completo la jornada de Dani!",
+              "¡Esta expulsión infame pone en jaque al líder, que ve cómo sus cimientos se resquebrajan bajo la presión de la SOTANO LEAGUE!"
+            ],
+            "jugador": "D. Affengruber",
+            "manager": "Dani",
+            "puntos": -5.0,
+            "dinero": null
+          }
+        ],
+        "standingsAtIssue": [
+          {
+            "rank": 1,
+            "manager": "Dani",
+            "points": 349
+          },
+          {
+            "rank": 2,
+            "manager": "Los marinero",
+            "points": 316
+          },
+          {
+            "rank": 3,
+            "manager": "Chamacónicos",
+            "points": 282
+          },
+          {
+            "rank": 4,
+            "manager": "De la Guettir FC",
+            "points": 276
+          },
+          {
+            "rank": 5,
+            "manager": "Jotabetrbb",
+            "points": 261
+          },
+          {
+            "rank": 6,
+            "manager": "Maldinillo 💥",
+            "points": 259
+          },
+          {
+            "rank": 7,
+            "manager": "MuchaSalsa",
+            "points": 228
+          },
+          {
+            "rank": 8,
+            "manager": "Juanba",
+            "points": 214
+          },
+          {
+            "rank": 9,
+            "manager": "Libre",
+            "points": 167
+          }
+        ]
+      },
+      {
+        "date": "J7",
+        "title": "¡Dani Imparable, Pero la SOTANO LEAGUE Respira Fuego!",
+        "subtitle": "¡El Bicampeón Mantiene el Trono, Pero la Lucha por la Gloria es Salvaje!",
+        "summary": "Dani sigue líder con 309 puntos, ¡una muralla inexpugnable que desafía a la liga! Los Marinero y Chamacónicos acechan, ¡la distancia se acorta y la presión es máxima para el bicampeón! ¡Maldinillo \\n se escala posiciones y se postula como la gran amenaza silenciosa!",
+        "cards": [
+          {
+            "type": "clasificacion",
+            "title": "¡Dani Imparable, Pero la SOTANO LEAGUE Respira Fuego!",
+            "subtitle": "¡El Bicampeón Mantiene el Trono, Pero la Lucha por la Gloria es Salvaje!",
+            "text": [
+              "Dani sigue líder con 309 puntos, ¡una muralla inexpugnable que desafía a la liga!",
+              "Los Marinero y Chamacónicos acechan, ¡la distancia se acorta y la presión es máxima para el bicampeón!",
+              "¡Maldinillo \\n se escala posiciones y se postula como la gran amenaza silenciosa!"
+            ],
+            "jugador": null,
+            "manager": null,
+            "puntos": null,
+            "dinero": null
+          },
+          {
+            "type": "rumor",
+            "title": "¡BOMBAZO EN LA SOTANO LEAGUE!",
+            "subtitle": "¡Se Filtra un Escándalo en el Vestuario!",
+            "text": [
+              "¡Fuentes cercanas revelan que un manager ha sido pillado comiendo pizza fría con piña a las 3 de la mañana!"
+            ],
+            "jugador": null,
+            "manager": null,
+            "puntos": null,
+            "dinero": null
+          },
+          {
+            "type": "MVP de la jornada",
+            "title": "¡ÁLVAREZ DESATA LA FURIA COLCHONERA!",
+            "subtitle": "¡Chamacónicos Ruge con 16 Puntos de Oro!",
+            "text": [
+              "¡J. Álvarez, el gladiador del Atlético, explota con 16 puntos decisivos!",
+              "¡Chamacónicos se dispara a la segunda posición de la jornada, ¡amenazando la cima general!"
+            ],
+            "jugador": "J. Álvarez",
+            "manager": "Chamacónicos",
+            "puntos": 16.0,
+            "dinero": null
+          },
+          {
+            "type": "MVP de la jornada",
+            "title": "¡KOUNDÉ, EL MURO CULÉ QUE DA PUNTOS!",
+            "subtitle": "¡Chamacónicos Dobla su Apuesta por la Gloria!",
+            "text": [
+              "¡J. Koundé, el titán del Barça, suma 13 puntos vitales para su manager!",
+              "¡Chamacónicos reafirma su asalto al podio, ¡la SOTANO LEAGUE tiembla!"
+            ],
+            "jugador": "J. Koundé",
+            "manager": "Chamacónicos",
+            "puntos": 13.0,
+            "dinero": null
+          },
+          {
+            "type": "MVP de la jornada",
+            "title": "¡ASANO, EL SAMURÁI QUE DESPIERTA A LIBRE!",
+            "subtitle": "¡El Manager Olvidado Desafía la Jornada!",
+            "text": [
+              "¡T. Asano, la sorpresa del Mallorca, entrega 11 puntos que reviven a Libre!",
+              "¡El manager de la cola general se cuela en el Top 3 de la jornada, ¡un golpe sobre la mesa inesperado!"
+            ],
+            "jugador": "T. Asano",
+            "manager": "Libre",
+            "puntos": 11.0,
+            "dinero": null
+          },
+          {
+            "type": "Peor actuación de la jornada",
+            "title": "¡CARVAJAL, LA DECEPCIÓN MERENGUE!",
+            "subtitle": "¡Maldinillo \\n Sufre un Golpe Inesperado!",
+            "text": [
+              "¡D. Carvajal, la estrella del Real Madrid, se hunde con 0 puntos catastróficos!",
+              "¡Maldinillo \\n, a pesar de este traspié, mantiene la fe en su ascenso imparable!"
+            ],
+            "jugador": "D. Carvajal",
+            "manager": "Maldinillo 💥",
+            "puntos": 0.0,
+            "dinero": null
+          },
+          {
+            "type": "Héroe bajo palos",
+            "title": "¡RADU, EL GUARDIÁN CELESTE QUE SALVA A JUANBA!",
+            "subtitle": "¡Un Penalti Parado que Resucita la Esperanza!",
+            "text": [
+              "¡I. Radu, el muro del Celta, detiene un penalti crucial y suma 9 puntos de oro!",
+              "¡Juanba celebra la heroica actuación de su portero, ¡un soplo de aire fresco en su lucha!"
+            ],
+            "jugador": "I. Radu",
+            "manager": "Juanba",
+            "puntos": 9.0,
+            "dinero": null
+          }
+        ],
+        "standingsAtIssue": [
+          {
+            "rank": 1,
+            "manager": "Dani",
+            "points": 309
+          },
+          {
+            "rank": 2,
+            "manager": "Los marinero",
+            "points": 278
+          },
+          {
+            "rank": 3,
+            "manager": "Chamacónicos",
+            "points": 245
+          },
+          {
+            "rank": 4,
+            "manager": "De la Guettir FC",
+            "points": 240
+          },
+          {
+            "rank": 5,
+            "manager": "Maldinillo 💥",
+            "points": 214
+          },
+          {
+            "rank": 6,
+            "manager": "Jotabetrbb",
+            "points": 213
+          },
+          {
+            "rank": 7,
+            "manager": "MuchaSalsa",
+            "points": 199
+          },
+          {
+            "rank": 8,
+            "manager": "Juanba",
+            "points": 178
+          },
+          {
+            "rank": 9,
+            "manager": "Libre",
+            "points": 134
+          }
+        ]
+      },
+      {
+        "date": "J6",
+        "title": "¡Dani Cuelga de un Hilo!",
+        "subtitle": "¡La SOTANO LEAGUE al ROJO VIVO!",
+        "summary": "¡Dani apenas respira en la cima con 251 puntos, Los Marinero le pisa los talones a un solo punto de distancia! De la Guettir FC, el ciclón de la jornada con 51 puntos, escala posiciones y amenaza a los grandes, mientras Maldinillo 💥 demuestra su garra y sube como la espuma. ¡Jotabetrbb sorprende con una jornada espectacular, pero Libre se aferra al farolillo rojo sin visos de salvación!",
+        "cards": [
+          {
+            "type": "clasificacion",
+            "title": "¡Dani Cuelga de un Hilo!",
+            "subtitle": "¡La SOTANO LEAGUE al ROJO VIVO!",
+            "text": [
+              "¡Dani apenas respira en la cima con 251 puntos, Los Marinero le pisa los talones a un solo punto de distancia!",
+              "De la Guettir FC, el ciclón de la jornada con 51 puntos, escala posiciones y amenaza a los grandes, mientras Maldinillo 💥 demuestra su garra y sube como la espuma.",
+              "¡Jotabetrbb sorprende con una jornada espectacular, pero Libre se aferra al farolillo rojo sin visos de salvación!"
+            ],
+            "jugador": null,
+            "manager": null,
+            "puntos": null,
+            "dinero": null
+          },
+          {
+            "type": "rumor",
+            "title": "¡BOMBAZO EN EL MERCADO!",
+            "subtitle": "¡Un Fichaje que Nadie Esperaba!",
+            "text": [
+              "¡Se rumorea que el manager Juanba ha estado negociando en secreto con el repartidor de pizzas para asegurar una ración extra en cada entrega!"
+            ],
+            "jugador": null,
+            "manager": null,
+            "puntos": null,
+            "dinero": null
+          },
+          {
+            "type": "MVP de la jornada",
+            "title": "¡V. JÚNIOR DESATA LA LOCURA!",
+            "subtitle": "¡Jotabetrbb Vuelve a Soñar!",
+            "text": [
+              "¡El astro del Real Madrid, V. Júnior, explota con 13 PUNTOS DE ORO para Jotabetrbb, haciendo temblar a la liga entera!",
+              "¡El manager de la quinta posición se eleva al segundo puesto de la jornada, demostrando que su ambición no tiene límites!"
+            ],
+            "jugador": "V. Júnior",
+            "manager": "Jotabetrbb",
+            "puntos": 13.0,
+            "dinero": null
+          },
+          {
+            "type": "MVP de la jornada",
+            "title": "¡MUÑOZ, EL HÉROE SILENCIOSO!",
+            "subtitle": "¡De la Guettir FC, la SENSACIÓN de la Jornada!",
+            "text": [
+              "¡V. Muñoz, el guerrero del CA Osasuna, rompe la banca con 12 puntos decisivos para De la Guettir FC, catapultándolos a la cima de la jornada!",
+              "¡El manager de la tercera posición general se consolida como la revelación más explosiva de la SOTANO LEAGUE!"
+            ],
+            "jugador": "V. Muñoz",
+            "manager": "De la Guettir FC",
+            "puntos": 12.0,
+            "dinero": null
+          },
+          {
+            "type": "MVP de la jornada",
+            "title": "¡GARCÍA, EL RAYO DE ESPERANZA!",
+            "subtitle": "¡Maldinillo 💥, a la Carga con Furia!",
+            "text": [
+              "¡Á. García, la estrella del Rayo Vallecano, ilumina a Maldinillo 💥 con 11 puntos vitales que lo impulsan en la tabla!",
+              "¡El manager de la sexta posición general escala puestos en la jornada, demostrando que su resurgir es una realidad y que no se rinde jamás!"
+            ],
+            "jugador": "Á. García",
+            "manager": "Maldinillo 💥",
+            "puntos": 11.0,
+            "dinero": null
+          },
+          {
+            "type": "Peor actuación de la jornada",
+            "title": "¡LA SOMBRA DE GOROSABEL!",
+            "subtitle": "¡Maldinillo 💥, Un Tropiezo Inesperado!",
+            "text": [
+              "¡A. Gorosabel, el defensa del Athletic Club, protagoniza la peor pesadilla con 0 puntos, un golpe duro para Maldinillo 💥!",
+              "¡Pero el espíritu de lucha del manager es inquebrantable, y este traspié solo avivará la llama de su ambición para la próxima jornada!"
+            ],
+            "jugador": "A. Gorosabel",
+            "manager": "Maldinillo 💥",
+            "puntos": 0.0,
+            "dinero": null
+          }
+        ],
+        "standingsAtIssue": [
+          {
+            "rank": 1,
+            "manager": "Dani",
+            "points": 251
+          },
+          {
+            "rank": 2,
+            "manager": "Los marinero",
+            "points": 250
+          },
+          {
+            "rank": 3,
+            "manager": "De la Guettir FC",
+            "points": 205
+          },
+          {
+            "rank": 4,
+            "manager": "Chamacónicos",
+            "points": 188
+          },
+          {
+            "rank": 5,
+            "manager": "Jotabetrbb",
+            "points": 179
+          },
+          {
+            "rank": 6,
+            "manager": "Maldinillo 💥",
+            "points": 174
+          },
+          {
+            "rank": 7,
+            "manager": "MuchaSalsa",
+            "points": 163
+          },
+          {
+            "rank": 8,
+            "manager": "Juanba",
+            "points": 141
+          },
+          {
+            "rank": 9,
+            "manager": "Libre",
+            "points": 94
+          }
+        ]
+      },
+      {
+        "date": "J5",
+        "title": "¡La SOTANO LEAGUE Arde en la Cima!",
+        "subtitle": "¡Pura Tensión en Cada Jornada!",
+        "summary": "¡La tabla general es un campo de batalla! Los Marinero apenas respiran con Dani, el bicampeón, pisándoles los talones, ¡solo 3 puntos los separan del abismo! ¡Maldinillo emerge de las sombras con una jornada espectacular! El quinto clasificado general se dispara al segundo puesto, ¡una amenaza real para los titanes! ¡El 'Libre' se desangra en el fondo! Con solo 75 puntos, la cola de la tabla es un pozo sin fondo, ¡necesita un milagro o el descenso es inminente!",
+        "cards": [
+          {
+            "type": "clasificacion",
+            "title": "¡La SOTANO LEAGUE Arde en la Cima!",
+            "subtitle": "¡Pura Tensión en Cada Jornada!",
+            "text": [
+              "¡La tabla general es un campo de batalla! Los Marinero apenas respiran con Dani, el bicampeón, pisándoles los talones, ¡solo 3 puntos los separan del abismo!",
+              "¡Maldinillo emerge de las sombras con una jornada espectacular! El quinto clasificado general se dispara al segundo puesto, ¡una amenaza real para los titanes!",
+              "¡El 'Libre' se desangra en el fondo! Con solo 75 puntos, la cola de la tabla es un pozo sin fondo, ¡necesita un milagro o el descenso es inminente!"
+            ],
+            "jugador": null,
+            "manager": null,
+            "puntos": null,
+            "dinero": null
+          },
+          {
+            "type": "rumor",
+            "title": "¡BOMBAZO: ¡Un Manager Fue Pillado!",
+            "subtitle": "¡El Escándalo Sacude la Liga!",
+            "text": [
+              "¡Se rumorea que un manager fue visto intentando comprar la camiseta sudada de Mbappé en el mercado negro para 'inspirar' a sus jugadores!"
+            ],
+            "jugador": null,
+            "manager": null,
+            "puntos": null,
+            "dinero": null
+          },
+          {
+            "type": "MVP de la jornada",
+            "title": "¡MILITÃO DESATA EL CAOS!",
+            "subtitle": "¡Los Marinero se Afianzan con un Central de Oro!",
+            "text": [
+              "¡É. Militão, el muro del Real Madrid, explota con 15 puntos, llevando a Los Marinero a la gloria de la jornada!",
+              "¡El líder general no da tregua! ¡Con Militão en sus filas, la SOTANO LEAGUE tiembla ante su imparable dominio!"
+            ],
+            "jugador": "É. Militão",
+            "manager": "Los marinero",
+            "puntos": 15.0,
+            "dinero": null
+          },
+          {
+            "type": "MVP de la jornada",
+            "title": "¡EYONG, EL AZOTE INESPERADO!",
+            "subtitle": "¡Los Marinero Siguen Sumando y Aterrorizando a la Liga!",
+            "text": [
+              "¡E. Eyong, la sorpresa del Levante UD, irrumpe con 12 puntos clave, consolidando el reinado de Los Marinero!",
+              "¡El bicampeón tiembla! ¡El líder demuestra que su plantilla es una máquina de hacer puntos, imparable!"
+            ],
+            "jugador": "E. Eyong",
+            "manager": "Los marinero",
+            "puntos": 12.0,
+            "dinero": null
+          },
+          {
+            "type": "MVP de la jornada",
+            "title": "¡ROMÁN, EL MAGO DEL MALLORCA!",
+            "subtitle": "¡Otro Golpe de Autoridad de Los Marinero!",
+            "text": [
+              "¡L. Román, el talento del RCD Mallorca, se luce con 12 puntos vitales, un golpe más en la mesa de Los Marinero!",
+              "¡Tres MVPs para el mismo manager! ¡El dominio es absoluto, la SOTANO LEAGUE no tiene piedad!"
+            ],
+            "jugador": "L. Román",
+            "manager": "Los marinero",
+            "puntos": 12.0,
+            "dinero": null
+          },
+          {
+            "type": "Peor actuación de la jornada",
+            "title": "¡DESASTRE WITSEL: ¡CATASTRÓFICO!",
+            "subtitle": "¡Chamacónicos se Hunde con una Actuación para el Olvido!",
+            "text": [
+              "¡A. Witsel, el 'defensa' del Girona FC, firma un ridículo -5 puntos, arrastrando a Chamacónicos al infierno!",
+              "¡La vergüenza de la jornada! ¡El manager cae en picado, su equipo necesita un exorcismo o el abismo es su destino!"
+            ],
+            "jugador": "A. Witsel",
+            "manager": "Chamacónicos",
+            "puntos": -5.0,
+            "dinero": null
+          },
+          {
+            "type": "Héroe bajo palos",
+            "title": "¡ROMÁN, EL SALVADOR INESPERADO!",
+            "subtitle": "¡Los Marinero Tienen un Nuevo Héroe Bajo los Tres Palos!",
+            "text": [
+              "¡L. Román, el portero del RCD Mallorca, se erige en leyenda al detener un penalti decisivo, ¡la SOTANO LEAGUE se rinde a sus pies!",
+              "¡Los Marinero celebran! ¡Este es el tipo de gestas que forjan campeones, y el líder no para de acumular proezas!"
+            ],
+            "jugador": "L. Román",
+            "manager": "Los marinero",
+            "puntos": 12.0,
+            "dinero": null
+          }
+        ],
+        "standingsAtIssue": [
+          {
+            "rank": 1,
+            "manager": "Los marinero",
+            "points": 226
+          },
+          {
+            "rank": 2,
+            "manager": "Dani",
+            "points": 223
+          },
+          {
+            "rank": 3,
+            "manager": "Chamacónicos",
+            "points": 165
+          },
+          {
+            "rank": 4,
+            "manager": "De la Guettir FC",
+            "points": 154
+          },
+          {
+            "rank": 5,
+            "manager": "Maldinillo 💥",
+            "points": 147
+          },
+          {
+            "rank": 6,
+            "manager": "Jotabetrbb",
+            "points": 146
+          },
+          {
+            "rank": 7,
+            "manager": "MuchaSalsa",
+            "points": 144
+          },
+          {
+            "rank": 8,
+            "manager": "Juanba",
+            "points": 128
+          },
+          {
+            "rank": 9,
+            "manager": "Libre",
+            "points": 75
+          }
+        ]
+      },
+      {
+        "date": "J4",
+        "title": "¡DANI RESISTE EN LA CIMA!",
+        "subtitle": "La SOTANO LEAGUE Arde: ¡Nadie está a Salvo!",
+        "summary": "¡Dani se aferra al liderato general con 179 puntos, pero la presión es máxima! Los Marinero y Chamacónicos le pisan los talones, ¡la batalla por el trono está al rojo vivo! ¡Maldinillo 💥, a pesar de un tropiezo, mantiene viva la esperanza y promete remontada!",
+        "cards": [
+          {
+            "type": "clasificacion",
+            "title": "¡DANI RESISTE EN LA CIMA!",
+            "subtitle": "La SOTANO LEAGUE Arde: ¡Nadie está a Salvo!",
+            "text": [
+              "¡Dani se aferra al liderato general con 179 puntos, pero la presión es máxima!",
+              "Los Marinero y Chamacónicos le pisan los talones, ¡la batalla por el trono está al rojo vivo!",
+              "¡Maldinillo 💥, a pesar de un tropiezo, mantiene viva la esperanza y promete remontada!"
+            ],
+            "jugador": null,
+            "manager": null,
+            "puntos": null,
+            "dinero": null
+          },
+          {
+            "type": "rumor",
+            "title": "¡RUMOR BOMBA EN EL SOTANO!",
+            "subtitle": "¡Misterio en los Vestuarios!",
+            "text": [
+              "¡Se comenta que un manager fue visto en un karaoke, destrozando clásicos y la moral de los presentes!"
+            ],
+            "jugador": null,
+            "manager": null,
+            "puntos": null,
+            "dinero": null
+          },
+          {
+            "type": "MVP de la jornada",
+            "title": "¡RAPHINHA DESATA LA FIEBRE EN MUCHASALSA!",
+            "subtitle": "¡16 Puntos que Sacuden la Tabla!",
+            "text": [
+              "¡Raphinha, del FC Barcelona, explota con 16 puntos, elevando a MuchaSalsa a la gloria de la jornada!",
+              "¡El manager de la cuarta posición general demuestra que tiene pólvora para asaltar la cima!"
+            ],
+            "jugador": "Raphinha",
+            "manager": "MuchaSalsa",
+            "puntos": 16.0,
+            "dinero": null
+          },
+          {
+            "type": "MVP de la jornada",
+            "title": "¡MURIQI REAFIRMA LA TIRANÍA DE DANI!",
+            "subtitle": "¡14 Puntos para el BICAMPEÓN!",
+            "text": [
+              "¡V. Muriqi, el pirata del RCD Mallorca, suma 14 puntos vitales para el intocable Dani!",
+              "¡El líder general y de la jornada no da tregua y sigue acumulando talento para su imperio!"
+            ],
+            "jugador": "V. Muriqi",
+            "manager": "Dani",
+            "puntos": 14.0,
+            "dinero": null
+          },
+          {
+            "type": "MVP de la jornada",
+            "title": "¡MBAPPÉ, EL GALÁCTICO DE DE LA GUETTIR FC!",
+            "subtitle": "¡13 Puntos de ORO Puro!",
+            "text": [
+              "¡K. Mbappé, la superestrella del Real Madrid, ilumina a De la Guettir FC con 13 puntos de fantasía!",
+              "¡El manager de la quinta posición general se postula como la gran revelación de la SOTANO LEAGUE!"
+            ],
+            "jugador": "K. Mbappé",
+            "manager": "De la Guettir FC",
+            "puntos": 13.0,
+            "dinero": null
+          },
+          {
+            "type": "Peor actuación de la jornada",
+            "title": "¡DESASTRE EN JOTABETRBB!",
+            "subtitle": "¡P. MILLA: EL FRACASO MÁS SONADO!",
+            "text": [
+              "¡P. Milla, del RCD Espanyol, protagoniza una actuación para el olvido con -2 puntos para Jotabetrbb!",
+              "¡El manager se hunde en la jornada, y su equipo necesita una reacción URGENTE para no caer al abismo!"
+            ],
+            "jugador": "P. Milla",
+            "manager": "Jotabetrbb",
+            "puntos": -2.0,
+            "dinero": null
+          },
+          {
+            "type": "Expulsión",
+            "title": "¡TARJETA ROJA: P. MILLA HUNDE A JOTABETRBB!",
+            "subtitle": "¡Decisión FATAL que Cuesta Puntos!",
+            "text": [
+              "¡La expulsión de P. Milla fue el clavo en el ataúd de Jotabetrbb, restando -2 puntos cruciales!",
+              "¡Una jornada para olvidar para el manager, que ve cómo un error individual dinamita sus aspiraciones!"
+            ],
+            "jugador": "P. Milla",
+            "manager": "Jotabetrbb",
+            "puntos": -2.0,
+            "dinero": null
+          }
+        ],
+        "standingsAtIssue": [
+          {
+            "rank": 1,
+            "manager": "Dani",
+            "points": 179
+          },
+          {
+            "rank": 2,
+            "manager": "Los marinero",
+            "points": 160
+          },
+          {
+            "rank": 3,
+            "manager": "Chamacónicos",
+            "points": 140
+          },
+          {
+            "rank": 4,
+            "manager": "MuchaSalsa",
+            "points": 122
+          },
+          {
+            "rank": 5,
+            "manager": "De la Guettir FC",
+            "points": 115
+          },
+          {
+            "rank": 6,
+            "manager": "Jotabetrbb",
+            "points": 109
+          },
+          {
+            "rank": 7,
+            "manager": "Juanba",
+            "points": 105
+          },
+          {
+            "rank": 8,
+            "manager": "Maldinillo 💥",
+            "points": 100
+          },
+          {
+            "rank": 9,
+            "manager": "Libre",
+            "points": 63
+          }
+        ]
+      },
+      {
+        "date": "J3",
+        "title": "¡LA SOTANO LEAGUE ARDE!",
+        "subtitle": "¡Dani se aferra al liderato, pero la presión es brutal!",
+        "summary": "¡Dani, el bicampeón, lidera con 127 puntos, pero Los Marinero le pisan los talones a solo 5 puntos de distancia! ¡Maldinillo 💥 se mantiene en la lucha, demostrando que su momento llegará, mientras Libre se hunde en el abismo de la tabla! ¡En la jornada, Dani volvió a mandar con 49 puntos, pero la batalla por el trono está más viva que nunca!",
+        "cards": [
+          {
+            "type": "clasificacion",
+            "title": "¡LA SOTANO LEAGUE ARDE!",
+            "subtitle": "¡Dani se aferra al liderato, pero la presión es brutal!",
+            "text": [
+              "¡Dani, el bicampeón, lidera con 127 puntos, pero Los Marinero le pisan los talones a solo 5 puntos de distancia!",
+              "¡Maldinillo 💥 se mantiene en la lucha, demostrando que su momento llegará, mientras Libre se hunde en el abismo de la tabla!",
+              "¡En la jornada, Dani volvió a mandar con 49 puntos, pero la batalla por el trono está más viva que nunca!"
+            ],
+            "jugador": null,
+            "manager": null,
+            "puntos": null,
+            "dinero": null
+          },
+          {
+            "type": "rumor",
+            "title": "¡ESCÁNDALO EN EL SÓTANO!",
+            "subtitle": "¡Un manager pillado en un acto bochornoso!",
+            "text": [
+              "¡Fuentes cercanas al vestuario confirman que un conocido manager fue visto anoche intentando sobornar al árbitro con una pizza caducada y un billete de 5 euros roto!"
+            ],
+            "jugador": null,
+            "manager": null,
+            "puntos": null,
+            "dinero": null
+          },
+          {
+            "type": "MVP de la jornada",
+            "title": "¡PAREDES, EL MURO DE DANI!",
+            "subtitle": "¡13 PUNTOS QUE CIMENTAN EL LIDERATO!",
+            "text": [
+              "¡A. Paredes, del Athletic Club, se erige como el baluarte de Dani con 13 puntos cruciales en la jornada!",
+              "¡El líder de la SOTANO LEAGUE sigue imparable, consolidando su posición con actuaciones estelares de sus estrellas!"
+            ],
+            "jugador": "A. Paredes",
+            "manager": "Dani",
+            "puntos": 13.0,
+            "dinero": null
+          },
+          {
+            "type": "MVP de la jornada",
+            "title": "¡DANJUMA EXPLOTA PARA DE LA GUETTIR FC!",
+            "subtitle": "¡11 PUNTOS QUE REVIVEN LA ESPERANZA!",
+            "text": [
+              "¡A. Danjuma, el delantero del Valencia CF, irrumpe con 11 puntos vitales para De la Guettir FC!",
+              "¡El manager escala posiciones, demostrando que aún tiene mucho que decir en esta liga de infarto!"
+            ],
+            "jugador": "A. Danjuma",
+            "manager": "De la Guettir FC",
+            "puntos": 11.0,
+            "dinero": null
+          },
+          {
+            "type": "MVP de la jornada",
+            "title": "¡GÜLER, LA JOYA DE DANI!",
+            "subtitle": "¡10 PUNTOS QUE LO CONFIRMAN TODO!",
+            "text": [
+              "¡A. Güler, la perla del Real Madrid, suma 10 puntos a la cuenta de Dani, el indiscutible líder!",
+              "¡El bicampeón sigue acumulando talento y victorias, dejando claro quién manda en la SOTANO LEAGUE!"
+            ],
+            "jugador": "A. Güler",
+            "manager": "Dani",
+            "puntos": 10.0,
+            "dinero": null
+          },
+          {
+            "type": "Peor actuación de la jornada",
+            "title": "¡DESASTRE EN EL JOTABETRBB!",
+            "subtitle": "¡G. GARCÍA: EL CERO MÁS DOLOROSO!",
+            "text": [
+              "¡G. García, del Real Madrid, protagoniza la peor actuación de la jornada con unos humillantes 0 puntos para Jotabetrbb!",
+              "¡El manager se estanca en la tabla, y su equipo necesita una reacción URGENTE para no caer al abismo!"
+            ],
+            "jugador": "G. García",
+            "manager": "Jotabetrbb",
+            "puntos": 0.0,
+            "dinero": null
+          }
+        ],
+        "standingsAtIssue": [
+          {
+            "rank": 1,
+            "manager": "Dani",
+            "points": 127
+          },
+          {
+            "rank": 2,
+            "manager": "Los marinero",
+            "points": 122
+          },
+          {
+            "rank": 3,
+            "manager": "Chamacónicos",
+            "points": 102
+          },
+          {
+            "rank": 4,
+            "manager": "MuchaSalsa",
+            "points": 89
+          },
+          {
+            "rank": 5,
+            "manager": "De la Guettir FC",
+            "points": 74
+          },
+          {
+            "rank": 6,
+            "manager": "Jotabetrbb",
+            "points": 74
+          },
+          {
+            "rank": 7,
+            "manager": "Maldinillo 💥",
+            "points": 74
+          },
+          {
+            "rank": 8,
+            "manager": "Juanba",
+            "points": 73
+          },
+          {
+            "rank": 9,
+            "manager": "Libre",
+            "points": 44
+          }
+        ]
+      },
+      {
+        "date": "J2",
+        "title": "¡LA SOTANO LEAGUE ARDE!",
+        "subtitle": "¡Líderes Bajo Presión Extrema!",
+        "summary": "¡Los Marinero se aferran a la cima con 88 puntos, pero Dani, el bicampeón, pisa los talones con 78 puntos, ¡la distancia se reduce a diez! ¡Chamacónicos, la revelación de la jornada, arrasa con 60 puntos y se cuela en el podio general, ¡amenazando a los gigantes! ¡Maldinillo 💥, con 51 puntos, acecha desde la quinta posición, ¡listo para el zarpazo y escalar puestos en esta liga de infarto!",
+        "cards": [
+          {
+            "type": "clasificacion",
+            "title": "¡LA SOTANO LEAGUE ARDE!",
+            "subtitle": "¡Líderes Bajo Presión Extrema!",
+            "text": [
+              "¡Los Marinero se aferran a la cima con 88 puntos, pero Dani, el bicampeón, pisa los talones con 78 puntos, ¡la distancia se reduce a diez!",
+              "¡Chamacónicos, la revelación de la jornada, arrasa con 60 puntos y se cuela en el podio general, ¡amenazando a los gigantes!",
+              "¡Maldinillo 💥, con 51 puntos, acecha desde la quinta posición, ¡listo para el zarpazo y escalar puestos en esta liga de infarto!"
+            ],
+            "jugador": null,
+            "manager": null,
+            "puntos": null,
+            "dinero": null
+          },
+          {
+            "type": "rumor",
+            "title": "¡RUMORES EXPLOSIVOS!",
+            "subtitle": "¡Un Manager en Apuros!",
+            "text": [
+              "¡Se comenta en los pasillos que un manager, desesperado por puntos, intentó sobornar al árbitro con una cena de sushi, ¡la liga tiembla!"
+            ],
+            "jugador": null,
+            "manager": null,
+            "puntos": null,
+            "dinero": null
+          },
+          {
+            "type": "MVP de la jornada",
+            "title": "¡M. MOREY EXPLOTA!",
+            "subtitle": "¡Chamacónicos Celebra 14 Puntos Cruciales!",
+            "text": [
+              "¡M. Morey desató la locura con 14 puntos, catapultando a Chamacónicos a la cima de la jornada, ¡una actuación estelar!",
+              "¡El manager, ahora tercero en la general, demuestra que tiene la fórmula para el éxito y ¡no piensa frenar!"
+            ],
+            "jugador": "M. Morey",
+            "manager": "Chamacónicos",
+            "puntos": 14.0,
+            "dinero": null
+          },
+          {
+            "type": "MVP de la jornada",
+            "title": "¡R. MARÍN, EL HÉROE DE CHACAMÓNICOS!",
+            "subtitle": "¡Otro Golpe Maestro del Manager en Racha!",
+            "text": [
+              "¡R. Marín se erige como el segundo baluarte de Chamacónicos, sumando 13 puntos vitales que lo consolidan en la jornada, ¡un auténtico muro!",
+              "¡El líder de la jornada no para de sumar estrellas, confirmando su asalto al trono de la SOTANO LEAGUE, ¡nadie puede detenerlo!"
+            ],
+            "jugador": "R. Marín",
+            "manager": "Chamacónicos",
+            "puntos": 13.0,
+            "dinero": null
+          },
+          {
+            "type": "MVP de la jornada",
+            "title": "¡BUDIMIR DESPIERTA A MALDINILLO!",
+            "subtitle": "¡11 Puntos que Encienden la Llama!",
+            "text": [
+              "¡A. Budimir irrumpe con 11 puntos, inyectando una dosis de adrenalina pura en las filas de Maldinillo 💥, ¡un resurgir esperado!",
+              "¡El manager, aunque en la sexta posición de la jornada, demuestra que su escuadra tiene el potencial para escalar y ¡dar la sorpresa!"
+            ],
+            "jugador": "A. Budimir",
+            "manager": "Maldinillo 💥",
+            "puntos": 11.0,
+            "dinero": null
+          },
+          {
+            "type": "Peor actuación de la jornada",
+            "title": "¡DESASTRE EN LA CIMA!",
+            "subtitle": "¡H. Rincón HUNDE a Los Marinero!",
+            "text": [
+              "¡Horror en el líder! H. Rincón firma una actuación para el olvido con -2 puntos, ¡un golpe bajo para Los Marinero!",
+              "¡El primer clasificado de la general ve cómo su estrella se apaga, poniendo en jaque su dominio en la SOTANO LEAGUE, ¡saltan las alarmas!"
+            ],
+            "jugador": "H. Rincón",
+            "manager": "Los marinero",
+            "puntos": -2.0,
+            "dinero": null
+          },
+          {
+            "type": "Gol en propia",
+            "title": "¡AUTOGOL Y DRAMA!",
+            "subtitle": "¡Jotabetrbb Sufre en sus Carnes!",
+            "text": [
+              "¡Tragedia en el área! J. Iglesias protagoniza un autogol que deja helado a Jotabetrbb, sumando solo 2 puntos, ¡un error fatal!",
+              "¡El manager, pese a estar entre los tres primeros de la jornada, lamenta una jugada desafortunada que ¡podría costar caro!"
+            ],
+            "jugador": "J. Iglesias",
+            "manager": "Jotabetrbb",
+            "puntos": 2.0,
+            "dinero": null
+          }
+        ],
+        "standingsAtIssue": [
+          {
+            "rank": 1,
+            "manager": "Los marinero",
+            "points": 88
+          },
+          {
+            "rank": 2,
+            "manager": "Dani",
+            "points": 78
+          },
+          {
+            "rank": 3,
+            "manager": "Chamacónicos",
+            "points": 77
+          },
+          {
+            "rank": 4,
+            "manager": "MuchaSalsa",
+            "points": 66
+          },
+          {
+            "rank": 5,
+            "manager": "Maldinillo 💥",
+            "points": 51
+          },
+          {
+            "rank": 6,
+            "manager": "Jotabetrbb",
+            "points": 45
+          },
+          {
+            "rank": 7,
+            "manager": "De la Guettir FC",
+            "points": 43
+          },
+          {
+            "rank": 8,
+            "manager": "Juanba",
+            "points": 42
+          },
+          {
+            "rank": 9,
+            "manager": "Libre",
+            "points": 35
+          }
+        ]
+      },
+      {
+        "date": "J1",
+        "title": "¡SOTANO LEAGUE ARDE!",
+        "subtitle": "¡Los Marinero Escapan, Dani Presiona!",
+        "summary": "Los Marinero se afianzan en la cima con 57 puntos, ¡una ventaja de vértigo que nadie esperaba! Dani, el bicampeón, no afloja y se mantiene segundo con 43, ¡su sombra es alargada! Maldinillo 💥 escala posiciones y ya es quinto, ¡la remontada del año está en marcha!",
+        "cards": [
+          {
+            "type": "clasificacion",
+            "title": "¡SOTANO LEAGUE ARDE!",
+            "subtitle": "¡Los Marinero Escapan, Dani Presiona!",
+            "text": [
+              "Los Marinero se afianzan en la cima con 57 puntos, ¡una ventaja de vértigo que nadie esperaba!",
+              "Dani, el bicampeón, no afloja y se mantiene segundo con 43, ¡su sombra es alargada!",
+              "Maldinillo 💥 escala posiciones y ya es quinto, ¡la remontada del año está en marcha!"
+            ],
+            "jugador": null,
+            "manager": null,
+            "puntos": null,
+            "dinero": null
+          },
+          {
+            "type": "rumor",
+            "title": "¡BOMBAZO EN LA OFICINA!",
+            "subtitle": "¿Un nuevo fichaje para el amor?",
+            "text": [
+              "Fuentes cercanas a la liga aseguran que un manager está más preocupado por su crush de la oficina que por el mercado de fichajes."
+            ],
+            "jugador": null,
+            "manager": null,
+            "puntos": null,
+            "dinero": null
+          },
+          {
+            "type": "Fichaje destacado",
+            "title": "¡GOLPE MAESTRO DE MALDINILLO!",
+            "subtitle": "¡Isco es Suyo por 17.65 Millones!",
+            "text": [
+              "Maldinillo 💥, en quinto lugar, se lanza a por Isco con una inversión brutal de 17.65 millones.",
+              "¡Este fichaje es una declaración de intenciones para asaltar el podio!"
+            ],
+            "jugador": "Isco",
+            "manager": "Maldinillo 💥",
+            "puntos": null,
+            "dinero": 17.6498
+          },
+          {
+            "type": "Fichaje destacado",
+            "title": "¡DANI NO SE RELAJA!",
+            "subtitle": "¡Frenkie De Jong por 16.71 Millones!",
+            "text": [
+              "El bicampeón Dani, segundo en la tabla, refuerza su mediocampo con Frenkie De Jong.",
+              "¡Una inversión de 16.71 millones que grita 'quiero el tricampeonato'!"
+            ],
+            "jugador": "Frenkie De Jong",
+            "manager": "Dani",
+            "puntos": null,
+            "dinero": 16.70839
+          },
+          {
+            "type": "Fichaje destacado",
+            "title": "¡DOBLE RACHA DE DANI!",
+            "subtitle": "¡Pablo Barrios se une por 14.94 Millones!",
+            "text": [
+              "Dani sigue moviendo fichas; Pablo Barrios aterriza en su equipo por 14.94 millones.",
+              "¡El actual subcampeón no deja nada al azar en su asalto al liderato!"
+            ],
+            "jugador": "Pablo Barrios",
+            "manager": "Dani",
+            "puntos": null,
+            "dinero": 14.94083
+          },
+          {
+            "type": "Venta récord",
+            "title": "¡MOVIMIENTO ESTRATÉGICO!",
+            "subtitle": "¡Dani Vende a Fornals por 15.74 Millones!",
+            "text": [
+              "Dani, el temible segundo clasificado, se desprende de Pablo Fornals por una cifra astronómica.",
+              "¡15.74 millones que le dan un respiro económico para sus próximos bombazos!"
+            ],
+            "jugador": "Pablo Fornals",
+            "manager": "Dani",
+            "puntos": null,
+            "dinero": 15.74085
+          },
+          {
+            "type": "MVP de la jornada",
+            "title": "¡DE FRUTOS, EL REY DE LA JORNADA!",
+            "subtitle": "¡Los Marinero Celebran 14 Puntos!",
+            "text": [
+              "J. de Frutos desató la locura con 14 puntos, ¡llevando a Los Marinero a la cima!",
+              "¡El líder general tiene un as bajo la manga y no piensa ceder!"
+            ],
+            "jugador": "J. de Frutos",
+            "manager": "Los marinero",
+            "puntos": 14.0,
+            "dinero": null
+          },
+          {
+            "type": "MVP de la jornada",
+            "title": "¡MALDINILLO EN ALZA!",
+            "subtitle": "¡Á. García le da 10 Puntos Clave!",
+            "text": [
+              "Á. García brilla con 10 puntos, impulsando a Maldinillo 💥 en su escalada hacia la gloria.",
+              "¡El quinto clasificado tiene jugadores que marcan la diferencia!"
+            ],
+            "jugador": "Á. García",
+            "manager": "Maldinillo 💥",
+            "puntos": 10.0,
+            "dinero": null
+          },
+          {
+            "type": "MVP de la jornada",
+            "title": "¡RAPHINHA DESLUMBRA!",
+            "subtitle": "¡MuchaSalsa Suma 10 Puntos Cruciales!",
+            "text": [
+              "Raphinha se convierte en el héroe con 10 puntos para MuchaSalsa.",
+              "¡El tercer clasificado demuestra que tiene dinamita en sus filas!"
+            ],
+            "jugador": "Raphinha",
+            "manager": "MuchaSalsa",
+            "puntos": 10.0,
+            "dinero": null
+          },
+          {
+            "type": "Peor actuación de la jornada",
+            "title": "¡DESASTRE TOTAL!",
+            "subtitle": "¡Muriqi HUNDE a Chamacónicos con -7 Puntos!",
+            "text": [
+              "V. Muriqi protagoniza el fiasco de la jornada con unos dolorosos -7 puntos.",
+              "¡Chamacónicos sufre un golpe bajo que les deja al borde del abismo!"
+            ],
+            "jugador": "V. Muriqi",
+            "manager": "Chamacónicos",
+            "puntos": -7.0,
+            "dinero": null
+          },
+          {
+            "type": "Expulsión",
+            "title": "¡ROJA DIRECTA Y ESCÁNDALO!",
+            "subtitle": "¡Muriqi Deja a Chamacónicos con Diez!",
+            "text": [
+              "La expulsión de V. Muriqi fue el colmo, ¡condicionando por completo la jornada de Chamacónicos!",
+              "¡Una tarjeta roja que será recordada como el peor momento del equipo!"
+            ],
+            "jugador": "V. Muriqi",
+            "manager": "Chamacónicos",
+            "puntos": -7.0,
+            "dinero": null
+          },
+          {
+            "type": "Héroe bajo palos",
+            "title": "¡MILAGRO DE L. JÚNIOR!",
+            "subtitle": "¡Penalti Parado y Puntos Salvos para MuchaSalsa!",
+            "text": [
+              "L. Júnior se viste de héroe al parar un penalti decisivo, ¡salvando a MuchaSalsa de la catástrofe!",
+              "¡Una intervención que vale oro y mantiene al tercer clasificado en la lucha!"
+            ],
+            "jugador": "L. Júnior",
+            "manager": "MuchaSalsa",
+            "puntos": 6.0,
+            "dinero": null
+          }
+        ],
+        "standingsAtIssue": [
+          {
+            "rank": 1,
+            "manager": "Los marinero",
+            "points": 57
+          },
+          {
+            "rank": 2,
+            "manager": "Dani",
+            "points": 43
+          },
+          {
+            "rank": 3,
+            "manager": "MuchaSalsa",
+            "points": 36
+          },
+          {
+            "rank": 4,
+            "manager": "De la Guettir FC",
+            "points": 25
+          },
+          {
+            "rank": 5,
+            "manager": "Maldinillo 💥",
+            "points": 22
+          },
+          {
+            "rank": 6,
+            "manager": "Chamacónicos",
+            "points": 17
+          },
+          {
+            "rank": 7,
+            "manager": "Libre",
+            "points": 17
+          },
+          {
+            "rank": 8,
+            "manager": "Juanba",
+            "points": 16
+          },
+          {
+            "rank": 9,
+            "manager": "Jotabetrbb",
+            "points": 12
           }
         ]
       }

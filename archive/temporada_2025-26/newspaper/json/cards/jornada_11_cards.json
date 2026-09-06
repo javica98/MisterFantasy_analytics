@@ -1,0 +1,88 @@
+{
+  "cards": [
+    {
+      "tipo": "clasificacion",
+      "jugador": null,
+      "manager": null,
+      "puntos": null,
+      "dinero": null,
+      "equipo": null,
+      "titulo": "¡DANI IMPARABLE, PERO LA LIGA ARDE!",
+      "subtitulo": "¡LIBRE RESURGE DE LAS CENIZAS Y MALDINILLO 💥 SE DESINFLA!",
+      "texto": [
+        "¡Dani se aferra a la cima con 484 puntos, un muro inquebrantable que busca su tercer campeonato consecutivo!",
+        "¡Pero la SOTANO LEAGUE es un polvorín! Los Marinero y Chamacónicos acechan, mientras Maldinillo 💥, la esperanza, cae al noveno puesto de la jornada, un golpe bajo a sus aspiraciones.",
+        "¡La sorpresa salta en la jornada con Libre, el colista general, alzándose con 54 puntos y demostrando que en esta liga, cualquiera puede ser héroe o villano!"
+      ]
+    },
+    {
+      "tipo": "rumor",
+      "jugador": null,
+      "manager": null,
+      "puntos": null,
+      "dinero": null,
+      "equipo": null,
+      "titulo": "¡BOMBAZO EN EL VESTUARIO!",
+      "subtitulo": "¡Una filtración sacude la SOTANO LEAGUE!",
+      "texto": [
+        "¡Se rumorea que un manager de la liga ha sido pillado intentando sobornar al árbitro con una tortilla de patatas, ¡sin cebolla!"
+      ]
+    },
+    {
+      "tipo": "MVP de la jornada",
+      "jugador": "K. Mbappé",
+      "manager": "De la Guettir FC",
+      "puntos": 16.0,
+      "dinero": null,
+      "equipo": "Real Madrid",
+      "titulo": "¡MBAPPÉ EXPLOTA, DE LA GUETTIR FC CELEBRA!",
+      "subtitulo": "¡16 PUNTOS DE ORO PURO REVOLUCIONAN LA TABLA!",
+      "texto": [
+        "¡K. Mbappé, el galáctico del Real Madrid, desata el caos con 16 puntos espectaculares para De la Guettir FC!",
+        "¡El manager de la cuarta posición general ruge con fuerza, ¡su estrella lo catapulta a la élite de la jornada!"
+      ]
+    },
+    {
+      "tipo": "MVP de la jornada",
+      "jugador": "J. Gorrotxategi",
+      "manager": "Libre",
+      "puntos": 12.0,
+      "dinero": null,
+      "equipo": "Real Sociedad",
+      "titulo": "¡EL FÉNIX LIBRE RESURGE!",
+      "subtitulo": "¡J. GORROTXATEGI, EL HÉROE INESPERADO CON 12 PUNTOS!",
+      "texto": [
+        "¡J. Gorrotxategi, la joya de la Real Sociedad, enciende la mecha con 12 puntos para el manager Libre!",
+        "¡El colista de la general se proclama rey de la jornada, ¡una venganza épica que nadie vio venir!"
+      ]
+    },
+    {
+      "tipo": "MVP de la jornada",
+      "jugador": "G. Guedes",
+      "manager": "Juanba",
+      "puntos": 10.0,
+      "dinero": null,
+      "equipo": "Real Sociedad",
+      "titulo": "¡GUEDES DESPIERTA A JUANBA!",
+      "subtitulo": "¡10 PUNTOS CLAVE PARA ESCALAR POSICIONES!",
+      "texto": [
+        "¡G. Guedes, el talentoso jugador de la Real Sociedad, entrega 10 puntos vitales a Juanba!",
+        "¡El manager de la séptima posición general se afianza en el podio de la jornada, ¡demostrando que la fe mueve montañas!"
+      ]
+    },
+    {
+      "tipo": "Peor actuación de la jornada",
+      "jugador": "T. Nianzou",
+      "manager": "Jotabetrbb",
+      "puntos": -1.0,
+      "dinero": null,
+      "equipo": "Sevilla FC",
+      "titulo": "¡DESASTRE EN EL JOTABETRBB!",
+      "subtitulo": "¡T. NIANZOU FIRMA UN FRACASO SONORO CON -1 PUNTO!",
+      "texto": [
+        "¡T. Nianzou, el central del Sevilla FC, protagoniza la debacle con un humillante -1 punto para Jotabetrbb!",
+        "¡El manager de la sexta posición general se estanca, ¡su equipo se hunde en el abismo y necesita una reacción URGENTE!"
+      ]
+    }
+  ]
+}
