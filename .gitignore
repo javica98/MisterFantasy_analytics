@@ -35,6 +35,10 @@ data/export/
 newspaper/photos/Portada_Fichajes.jpg
 newspaper/photos/Portada_Jornada.jpg
 
+# Cache de fotos de jugadores descargadas (IA-07): puramente reproducible
+# volviendo a buscar en la web, a diferencia de las paginas del periodico.
+newspaper/photos/cache/
+
 # Artefactos generados — reproducibles, no subir
 newspaper/json/prompts/
 site/
