@@ -28,6 +28,7 @@ from src.utils.bootstrap import setup_project_root
 ROOT_DIR = setup_project_root(__file__)
 
 from src.AI_newspaper.generate_json import generate_json_for_jornada
+from src.AI_newspaper.generate_pdf import create_pdf
 from src.AI_newspaper.generate_prompt import build_final_prompt, generate_prompts
 from src.agents.orchestrator_agent import run_orchestrator
 from src.memory.embedding_store import build_memory_query, rebuild_embedding_index
@@ -40,7 +41,7 @@ from src.memory.memory_store import (
 )
 from src.utils import db as db_utils
 from src.utils.config_loader import load_config
-from src.utils.file_utils import safe_save_json
+from src.utils.file_utils import safe_read_json, safe_save_json, safe_save_png
 
 logging.basicConfig(
     level=logging.INFO,
@@ -51,6 +52,8 @@ logger = logging.getLogger(__name__)
 
 cfg = load_config()
 NEWS_UTILS = cfg["paths"]["images"]["news_utils"]
+IMAGES_TEAMS_DIR = cfg["paths"]["images"]["teams_dir"]
+DEFAULT_TEAM_IMAGE = cfg["paths"]["images"]["default_team"]
 
 # (temporada, jornadas a rellenar en orden, carpeta base de newspaper/json)
 PLAN = [
@@ -77,6 +80,43 @@ def _load_season_frames(season: str):
     df_gw = df_gw.copy()
     df_gw["Date"] = pd.to_datetime(df_gw["Date"], errors="coerce")
     return df_gw, df_clas, df_quin, df_clean
+
+
+def _render_one_page(tipo: str, cards: dict, clasificacion_o_quiniela: dict, path: Path) -> bool:
+    """Renderiza y guarda una sola pagina (Fichajes o Jornada). Devuelve
+    False sin lanzar si esta jornada no tiene las cards que esa pagina
+    necesita (ej. ninguna transferencia -> no hay pagina de Fichajes) —
+    eso es un hueco de contenido real, no un fallo que deba tirar abajo la
+    otra pagina."""
+    if path.exists():
+        return True
+    try:
+        pagina = create_pdf(tipo, cards, clasificacion_o_quiniela, NEWS_UTILS, IMAGES_TEAMS_DIR, DEFAULT_TEAM_IMAGE)
+    except Exception as e:
+        logger.warning("  no se pudo renderizar la pagina '%s': %s", tipo, e)
+        return False
+    safe_save_png(pagina, str(path))
+    return True
+
+
+def render_and_save_pages(new_dir: Path, fecha_stamp: str, events: dict, cards: dict) -> bool:
+    """Renderiza las dos paginas del periodico (Fichajes/Jornada, el mismo
+    composite que arma create_pdf()) y las persiste como PNG, igual que hace
+    run_newspaper.py en produccion. Sin esto, el backfill solo dejaba el
+    JSON de texto y las paginas visuales de esas jornadas se perdian para
+    siempre (no hay forma de reconstruirlas mas tarde sin repetir toda la
+    generacion). Cada pagina se intenta por separado: que falte la de
+    Fichajes (jornada sin ninguna transferencia) no debe impedir guardar la
+    de Jornada, que casi siempre si tiene todo lo necesario."""
+    new_dir.mkdir(parents=True, exist_ok=True)
+    ok_fichajes = _render_one_page(
+        "Fichajes", cards, events.get("quinielas", {}), new_dir / f"{fecha_stamp}_fichajes_news.png"
+    )
+    ok_jornada = _render_one_page(
+        "Jornada", cards, events.get("clasificacion", {}), new_dir / f"{fecha_stamp}_jornada_news.png"
+    )
+    logger.info("  paginas: fichajes=%s jornada=%s", "OK" if ok_fichajes else "sin datos", "OK" if ok_jornada else "sin datos")
+    return ok_fichajes and ok_jornada
 
 
 def backfill_jornada(
@@ -130,6 +170,9 @@ def backfill_jornada(
     safe_save_json(events, str(articles_dir / f"jornada_{jornada}_json.json"))
     safe_save_json(texto_generado, str(cards_dir / f"jornada_{jornada}_cards.json"))
 
+    new_dir = json_dir.parent / "new"
+    render_and_save_pages(new_dir, f"jornada_{jornada}", events, texto_generado)
+
     memories = build_memories(events, texto_generado, temporada=season)
     changed = upsert_memories(memories, DEFAULT_MEMORY_PATH)
     logger.info("  memoria: %d recuerdos (%d nuevos/actualizados)", len(memories), changed)
@@ -168,7 +211,13 @@ def main():
             articles_path = json_dir / "articles" / f"jornada_{jornada}_json.json"
             cards_path = json_dir / "cards" / f"jornada_{jornada}_cards.json"
             if articles_path.exists() and cards_path.exists():
-                logger.info("  ya generado en un intento anterior, se omite (cache): %s", cards_path)
+                logger.info("  ya generado en un intento anterior (cache): %s", cards_path)
+                # No hace falta volver a llamar a Gemini, pero si el intento
+                # anterior es de antes de que este script guardara las
+                # paginas PNG, las rellenamos ahora sin gastar cuota.
+                events_cached = safe_read_json(str(articles_path))
+                cards_cached = safe_read_json(str(cards_path))
+                render_and_save_pages(json_dir.parent / "new", f"jornada_{jornada}", events_cached, cards_cached)
                 results.append((season, jornada, "OK (cache)"))
                 continue
 
