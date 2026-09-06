@@ -5,6 +5,12 @@ FROM nginx:alpine
 
 COPY web /usr/share/nginx/html/web
 COPY assets /usr/share/nginx/html/assets
+# El carrusel de jornadas de Noticias usa esta portada como fondo
+# (web/app.js referencia /newspaper/photos/Portada_Jornada.jpg) — se copia
+# solo este archivo, no toda newspaper/ (que ya pesa >100MB con las
+# paginas y la memoria del periodico, datos internos del pipeline de IA
+# que no hacen falta para servir la web).
+COPY newspaper/photos/Portada_Jornada.jpg /usr/share/nginx/html/newspaper/photos/Portada_Jornada.jpg
 COPY docker/nginx.web.conf /etc/nginx/conf.d/default.conf
 
 EXPOSE 80
