@@ -75,8 +75,8 @@ class TestLoadConfig:
     def test_env_vars_cargadas_desde_config(self):
         result = load_config(validate_env=False)
         env = result["env"]
-        # Deben existir como claves aunque estén vacías
-        assert "GEMINI_API_KEY" in env or "GROQ_API_KEY" in env
+        # Debe existir como clave aunque esté vacía
+        assert "GEMINI_API_KEY" in env
 
     def test_validate_env_true_con_vars_presentes(self):
         """No debe lanzar si todas las vars de entorno están."""

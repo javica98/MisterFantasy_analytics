@@ -1,7 +1,7 @@
 """
-LLMOps — observabilidad de llamadas a LLMs (Gemini, Groq).
+LLMOps — observabilidad de llamadas a LLMs (Gemini).
 
-Cada llamada relevante (WriterAgent/Gemini, OrchestratorAgent/Groq,
+Cada llamada relevante (WriterAgent/Gemini, OrchestratorAgent/Gemini,
 validación Pydantic de las cards) se registra en la tabla `llm_calls` de
 PostgreSQL — la misma instancia compartida de AI Center (event_log,
 agent_actions, system_logs viven ahí).

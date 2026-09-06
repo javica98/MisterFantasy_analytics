@@ -2,14 +2,15 @@
 OrchestratorAgent - Coordina el WriterAgent (texto) y dispara en paralelo la
 búsqueda de las fotos de portada.
 
-Usa Groq (Llama 3.3 70B) como modelo barato para coordinar el texto.
-Reserva Gemini para el WriterAgent, donde la calidad del texto importa.
+Usa Gemini 2.5 Flash-Lite (ADR-006) como tier barato/rápido para coordinar
+el texto. Reserva Gemini 2.5 Flash para el WriterAgent, donde la calidad del
+texto importa — mismo proveedor, dos tiers según el rol.
 
 Las dos fotos de portada (fichajes/jornada) ya no se piden como tool calls
-que Groq deba secuenciar: se buscan con run_image_pipeline (sin LLM) en
-paralelo con ThreadPoolExecutor antes de invocar al agente de texto, y se
-cachean por jugador+equipo para no repetir la búsqueda en Bing si el mismo
-jugador vuelve a salir en portada otro día (hallazgo IA-07).
+que el orquestador deba secuenciar: se buscan con run_image_pipeline (sin
+LLM) en paralelo con ThreadPoolExecutor antes de invocar al agente de texto,
+y se cachean por jugador+equipo para no repetir la búsqueda en Bing si el
+mismo jugador vuelve a salir en portada otro día (hallazgo IA-07).
 """
 
 import json
@@ -22,30 +23,30 @@ from json import JSONDecodeError
 from pathlib import Path
 
 from strands import Agent, tool
-from strands.models.litellm import LiteLLMModel
+from strands.models.gemini import GeminiModel
 
 from src.agents.image_agent import run_image_pipeline
 from src.agents.writer_agent import run_writer_agent
 from src.utils.config_loader import load_config
 from src.utils.llm_logger import log_llm_call
 
-_GROQ_MODEL_NAME = "groq/llama-3.3-70b-versatile"
+_ORCHESTRATOR_MODEL_NAME = "gemini-2.5-flash-lite"
 
 logger = logging.getLogger(__name__)
 
 _cfg = load_config()
-_GROQ_API_KEY = _cfg["env"].get("GROQ_API_KEY")
+_GEMINI_API_KEY = _cfg["env"].get("GEMINI_API_KEY")
 
-if not _GROQ_API_KEY:
-    raise ValueError("GROQ_API_KEY no encontrado en variables de entorno.")
+if not _GEMINI_API_KEY:
+    raise ValueError("GEMINI_API_KEY no encontrado en variables de entorno.")
 
 
-def create_groq_model() -> LiteLLMModel:
-    """Groq Llama 3.3 70B: suficiente para coordinacion de tools."""
-    os.environ["GROQ_API_KEY"] = _GROQ_API_KEY
-    return LiteLLMModel(
-        model_id="groq/llama-3.3-70b-versatile",
-        params={"temperature": 0.1, "max_tokens": 1024},
+def create_orchestrator_model() -> GeminiModel:
+    """Gemini 2.5 Flash-Lite: tier barato/rápido, suficiente para coordinacion de tools."""
+    return GeminiModel(
+        model_id=_ORCHESTRATOR_MODEL_NAME,
+        client_args={"api_key": _GEMINI_API_KEY},
+        params={"temperature": 0.1},
     )
 
 
@@ -54,7 +55,8 @@ def _make_run_writer_tool(prompt: str) -> tuple:
     Devuelve (tool, cache) donde cache es un dict compartido.
     Cuando run_writer ejecuta con éxito, guarda las cards en cache['cards'].
     Esto permite que run_orchestrator recupere el resultado sin un segundo
-    llamado a Gemini aunque Groq no reproduzca el JSON en su respuesta final.
+    llamado a Gemini aunque el orquestador no reproduzca el JSON en su
+    respuesta final.
     """
     cache: dict = {}
 
@@ -98,7 +100,7 @@ def _fetch_portada_image(jugador: str, equipo: str, save_path: str, cache_dir: P
     Usa run_image_pipeline (sin LLM) en vez de run_image_agent: es la misma
     cadena search -> evaluate -> download, pero invocada directamente en
     Python, lo que permite llamarla en paralelo para las dos portadas sin
-    depender de que Groq orqueste correctamente dos tool calls a Gemini.
+    depender de que el orquestador secuencie correctamente dos tool calls.
     """
     cache_path = cache_dir / f"{_cache_key(jugador, equipo)}.jpg"
     if cache_path.exists():
@@ -127,15 +129,16 @@ def run_orchestrator(
     path_fichajes: str,
     path_jornada: str,
 ) -> dict | None:
-    """Usa el OrchestratorAgent (Groq) para el texto; las dos fotos de
-    portada se buscan en paralelo con Python plano (ver _fetch_portada_image),
-    no como tool calls que Groq deba secuenciar (hallazgo IA-07)."""
+    """Usa el OrchestratorAgent (Gemini 2.5 Flash-Lite) para el texto; las
+    dos fotos de portada se buscan en paralelo con Python plano (ver
+    _fetch_portada_image), no como tool calls que el orquestador deba
+    secuenciar (hallazgo IA-07)."""
     jugador_fichajes = portada_fichajes.get("jugador", "")
     equipo_fichajes = portada_fichajes.get("equipo", "")
     jugador_jornada = portada_jornada.get("jugador", "")
     equipo_jornada = portada_jornada.get("equipo", "")
 
-    logger.info("[Orchestrator] Iniciando pipeline con Groq...")
+    logger.info("[Orchestrator] Iniciando pipeline con Gemini...")
     logger.info("[Orchestrator] Prompt: %s chars", len(prompt))
 
     cache_dir = Path(path_fichajes).resolve().parent / "cache"
@@ -151,7 +154,7 @@ def run_orchestrator(
 
     run_writer_tool, writer_cache = _make_run_writer_tool(prompt)
     agent = Agent(
-        model=create_groq_model(),
+        model=create_orchestrator_model(),
         system_prompt=ORCHESTRATOR_PROMPT,
         tools=[run_writer_tool],
     )
@@ -178,22 +181,22 @@ IMPORTANTE:
 
     # El cache del tool run_writer es la fuente más fiable: se rellena
     # directamente cuando el WriterAgent tiene éxito, sin depender de que
-    # Groq reproduzca el JSON literalmente en su respuesta final de texto.
+    # el orquestador reproduzca el JSON literalmente en su respuesta final.
     if writer_cache.get("cards"):
         logger.info("[Orchestrator] Cards recuperadas del cache del tool (sin segundo llamado a Gemini)")
         log_llm_call(
-            component="orchestrator_agent.run_orchestrator", provider="groq", model=_GROQ_MODEL_NAME,
+            component="orchestrator_agent.run_orchestrator", provider="gemini", model=_ORCHESTRATOR_MODEL_NAME,
             success=True, latency_ms=latency_ms, metadata={"source": "tool_cache"},
         )
         return writer_cache["cards"]
 
-    # Fallback: Groq a veces incluye el JSON de las tools en su respuesta
-    # de texto aunque el cache no se haya rellenado; lo intentamos extraer.
+    # Fallback: el orquestador a veces incluye el JSON de las tools en su
+    # respuesta de texto aunque el cache no se haya rellenado; lo intentamos extraer.
     cards_payload = _extract_cards_payload(response_str)
     if cards_payload:
         logger.info("[Orchestrator] Pipeline completo - %s cards (extraídas de la respuesta)", len(cards_payload["cards"]))
         log_llm_call(
-            component="orchestrator_agent.run_orchestrator", provider="groq", model=_GROQ_MODEL_NAME,
+            component="orchestrator_agent.run_orchestrator", provider="gemini", model=_ORCHESTRATOR_MODEL_NAME,
             success=True, latency_ms=latency_ms, metadata={"source": "response_extraction"},
         )
         return cards_payload
@@ -204,8 +207,8 @@ IMPORTANTE:
     # reintentar el texto.
     logger.warning("[Orchestrator] No se pudieron extraer las cards, intentando fallback directo...")
     log_llm_call(
-        component="orchestrator_agent.run_orchestrator", provider="groq", model=_GROQ_MODEL_NAME,
-        success=False, latency_ms=latency_ms, error=agent_error or "no cards extraídas de la respuesta de Groq",
+        component="orchestrator_agent.run_orchestrator", provider="gemini", model=_ORCHESTRATOR_MODEL_NAME,
+        success=False, latency_ms=latency_ms, error=agent_error or "no cards extraídas de la respuesta del orquestador",
     )
     cards = run_writer_agent(prompt)
     if cards:

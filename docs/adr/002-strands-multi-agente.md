@@ -1,7 +1,7 @@
 # ADR-002: Arquitectura multi-agente con Strands Framework
 
 **Fecha:** 2026-06  
-**Estado:** Aceptado
+**Estado:** Aceptado (elección de modelo por agente parcialmente superada por [ADR-006](006-google-stack-llms-rag.md): el `OrchestratorAgent` pasó de Groq a Gemini 2.5 Flash-Lite)
 
 ---
 

@@ -4,7 +4,7 @@ Tests de integración — pipeline completo de MisterFantasy Analytics.
 Cubren 4 tramos del pipeline, todos sin llamadas reales a APIs externas:
 
   Tramo 1 — Datos:     CSV → generate_json → generate_prompts → build_final_prompt
-  Tramo 2 — AI:        prompt → run_orchestrator (Groq+Gemini mockeados) → cards JSON
+  Tramo 2 — AI:        prompt → run_orchestrator (Gemini mockeado) → cards JSON
   Tramo 3 — Memoria:   events + cards → build_memories → upsert → rebuild_index
   Tramo 4 — Completo:  tramos 1+2+3 encadenados, con todos los externos mockeados
 """
@@ -188,13 +188,13 @@ class TestDataPipeline:
 
 
 # ─────────────────────────────────────────────
-# TRAMO 2 — Pipeline AI (Groq + Gemini mockeados)
+# TRAMO 2 — Pipeline AI (Gemini mockeado)
 # ─────────────────────────────────────────────
 
 class TestAIPipeline:
     """
     prompt → run_orchestrator → cards JSON validado.
-    Groq y Gemini completamente mockeados — sin coste de tokens.
+    Gemini completamente mockeado — sin coste de tokens.
     """
 
     SAMPLE_PROMPT = "Genera el periódico de la jornada 25 de la Sotano League."
@@ -210,7 +210,7 @@ class TestAIPipeline:
              patch("src.agents.orchestrator_agent.run_image_pipeline", return_value=True), \
              patch("src.agents.orchestrator_agent.Agent") as mock_agent_cls:
 
-            # Simular que Groq llama a run_writer y devuelve el JSON en su respuesta
+            # Simular que el orquestador llama a run_writer y devuelve el JSON en su respuesta
             mock_agent_instance = MagicMock()
             mock_agent_instance.return_value = MagicMock(
                 __str__=lambda self: json.dumps({"success": True, "cards": FAKE_CARDS})
@@ -229,10 +229,10 @@ class TestAIPipeline:
         assert "cards" in result
         assert len(result["cards"]) > 0
 
-    def test_orchestrator_usa_cache_cuando_groq_no_reproduce_json(self, tmp_path):
+    def test_orchestrator_usa_cache_cuando_no_reproduce_json(self, tmp_path):
         """
-        Si Groq no reproduce el JSON en su respuesta pero run_writer sí ejecutó,
-        el orquestador recupera las cards del caché del tool sin llamar a Gemini de nuevo.
+        Si el orquestador no reproduce el JSON en su respuesta pero run_writer
+        sí ejecutó, recupera las cards del caché del tool sin llamar a Gemini de nuevo.
         """
         from src.agents.orchestrator_agent import run_orchestrator
 
@@ -246,7 +246,7 @@ class TestAIPipeline:
              patch("src.agents.orchestrator_agent.run_image_pipeline", return_value=True), \
              patch("src.agents.orchestrator_agent.Agent") as mock_agent_cls:
 
-            # Simular que Groq responde en texto plano (sin JSON de cards)
+            # Simular que el orquestador responde en texto plano (sin JSON de cards)
             # pero el tool run_writer sí se ejecutó internamente
             def fake_agent_call(user_message):
                 # Simular que el Agent llama al tool internamente
@@ -270,7 +270,7 @@ class TestAIPipeline:
             "El orquestador no intentó recuperar las cards por ninguna vía"
 
     def test_orchestrator_devuelve_none_si_todo_falla(self, tmp_path):
-        """Si Gemini y Groq fallan, run_orchestrator devuelve None limpiamente."""
+        """Si el orquestador y el writer fallan, run_orchestrator devuelve None limpiamente."""
         from src.agents.orchestrator_agent import run_orchestrator
 
         with patch("src.agents.orchestrator_agent.run_writer_agent", return_value=None), \

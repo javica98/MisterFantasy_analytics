@@ -15,7 +15,7 @@ sequenceDiagram
     participant S as scripts/run_newspaper.py
     participant GJ as generate_json.py
     participant GP as generate_prompt.py
-    participant O as OrchestratorAgent (Groq)
+    participant O as OrchestratorAgent (Gemini)
     participant W as WriterAgent (Gemini)
     participant I as ImageAgent (CLIP)
     participant V as SchemeValidator

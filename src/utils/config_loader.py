@@ -9,7 +9,7 @@ logger = logging.getLogger(__name__)
 # Raíz del proyecto: tres niveles arriba de este archivo (src/utils/config_loader.py)
 _BASE_DIR = Path(__file__).resolve().parent.parent.parent
 
-REQUIRED_ENV_VARS = ["MISTER_USERNAME", "MISTER_PASSWORD", "GEMINI_API_KEY", "GROQ_API_KEY"]
+REQUIRED_ENV_VARS = ["MISTER_USERNAME", "MISTER_PASSWORD", "GEMINI_API_KEY"]
 
 
 def get_base_dir() -> Path:
@@ -47,7 +47,6 @@ def load_config(validate_env: bool = True) -> dict:
         "MISTER_PASSWORD": os.getenv("MISTER_PASSWORD"),
         "MISTER_BASE_URL": os.getenv("MISTER_BASE_URL", "https://mister.mundodeportivo.com"),
         "GEMINI_API_KEY": os.getenv("GEMINI_API_KEY"),
-        "GROQ_API_KEY": os.getenv("GROQ_API_KEY"),
     }
 
     if validate_env:

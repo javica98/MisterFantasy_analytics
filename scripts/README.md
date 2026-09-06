@@ -52,13 +52,13 @@ Limpia y normaliza los datos brutos. Aplica filtros, merges y calcula ganancias 
 Pipeline completo de generación de periódico IA para la última jornada disponible.
 
 1. Carga datos procesados (temporada activa)
-2. Lanza `OrchestratorAgent` (Groq) que coordina:
+2. Lanza `OrchestratorAgent` (Gemini 2.5 Flash-Lite) que coordina:
    - `WriterAgent` (Gemini 2.5 Flash) → genera el JSON del periódico
    - `ImageAgent` (Bing + CLIP) → descarga fotos de jugadores
 3. Genera imagen PNG de la portada
 4. Guarda resultados en `newspaper/json/` y `newspaper/new/`
 
-- **Requiere:** `GROQ_API_KEY` y `GEMINI_API_KEY` en `config/.env`
+- **Requiere:** `GEMINI_API_KEY` en `config/.env`
 - **Output:** `newspaper/json/articles/`, `newspaper/json/cards/`, `newspaper/new/FECHA_jornada_news.png`
 
 ---
@@ -156,6 +156,6 @@ python scripts/export_db_to_csv.py 2025-26 out/  # directorio de salida concreto
 Crear `config/.env` con:
 
 ```env
-GROQ_API_KEY=gsk_...
 GEMINI_API_KEY=AIza...
+HF_TOKEN=hf_...   # opcional — solo para la primera descarga del modelo de embeddings del RAG
 ```
