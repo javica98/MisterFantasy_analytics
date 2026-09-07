@@ -28,6 +28,14 @@ TEAM_MAP: dict[int, str] = {
     12: "Levante UD",
     408: "RCD Mallorca",
     1370: "Real Oviedo",
+    # Ascendidos a LaLiga en 2026-27 (sustituyen a los descendidos de
+    # 2025-26 en la clasificacion, pero se dejan tambien los antiguos
+    # arriba: la temporada archivada 2025-26 sigue necesitando resolver
+    # sus IDs). Confirmados manualmente via las URLs de escudo del sitio
+    # (mister.mundodeportivo.com/teams/{id}/...).
+    13: "Málaga CF",
+    6: "Deportivo de La Coruña",
+    1490: "Racing de Santander",
 }
 
 TEAM_POSICION: dict[int, str] = {

@@ -16,12 +16,15 @@ map_team(15)      # → "Real Madrid"
 map_team(15.0)    # → "Real Madrid"  (los CSVs dan floats)
 map_team(None)    # → "Sin equipo"
 map_team(0)       # → "Sin equipo"   (jugadores sin equipo en liga)
+map_team(9999)    # → "Equipo desconocido"  (ID no reconocido, con warning en el log)
 
 map_position(1)   # → "Portero"
 map_position(4)   # → "Delantero"
 ```
 
-**Equipos mapeados:** Real Madrid, FC Barcelona, Atlético de Madrid, Sevilla FC, Real Betis, Real Sociedad, Villarreal CF, Athletic Club, Valencia CF, CA Osasuna, RC Celta, Rayo Vallecano, Deportivo Alavés, RCD Espanyol, Getafe CF, Girona FC, RCD Mallorca, Real Oviedo, Elche CF, Levante UD
+**Equipos mapeados:** Real Madrid, FC Barcelona, Atlético de Madrid, Sevilla FC, Real Betis, Real Sociedad, Villarreal CF, Athletic Club, Valencia CF, CA Osasuna, RC Celta, Rayo Vallecano, Deportivo Alavés, RCD Espanyol, Getafe CF, Girona FC, RCD Mallorca, Real Oviedo, Elche CF, Levante UD (temporada 2025-26) + Málaga CF, Deportivo de La Coruña, Racing de Santander (ascendidos en 2026-27)
+
+Un ID que no está en `TEAM_MAP` no rompe nada: `map_team()` devuelve `"Equipo desconocido"` y loguea un warning con el ID, para poder detectar equipos nuevos (ascensos/descensos de temporada) sin que se cuele un número crudo en la web.
 
 ### `config_loader.py`
 Carga `config/config.yaml` y opcionalmente las variables de entorno de `config/.env`.
