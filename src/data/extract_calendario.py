@@ -164,3 +164,109 @@ def anotar_fecha_partido(df_gameweek: pd.DataFrame, partidos: pd.DataFrame) -> p
     out = df_gameweek.merge(fechas, on=["Jornada", "EquipoLocal", "EquipoVisitante"], how="left")
     out["Date"] = out["fecha"].fillna(out["Date"])
     return out.drop(columns="fecha")
+
+
+# ── Datos extra del mismo JSON de jornada ────────────────────────────────────
+
+STATS_COLUMNS = [
+    "id_partido", "id_gameweek", "jornada", "clave", "nombre",
+    "valor_local", "valor_visitante", "texto_local", "texto_visitante",
+]
+ONCE_IDEAL_COLUMNS = [
+    "id_gameweek", "jornada", "formacion", "puntos_total", "valor_total",
+    "orden", "id_jugador", "jugador", "posicion", "puntos", "valor", "id_equipo",
+]
+ALINEACIONES_COLUMNS = [
+    "id_gameweek", "jornada", "id_partido", "id_equipo", "orden",
+    "id_jugador", "jugador", "posicion", "confirmado",
+]
+
+
+def _jornada_de(data: dict):
+    status = data.get("gameweekStatus") or {}
+    return status.get("id"), status.get("gameweek")
+
+
+def parse_stats_partidos(payload: dict) -> pd.DataFrame:
+    """Estadísticas de cada partido jugado (games[].stats, una cadena JSON con
+    ~48 métricas tipo Sofascore: posesión, xG, tiros...). Formato largo: una
+    fila por partido y métrica."""
+    import json
+
+    data = _data(payload)
+    id_gw, jornada = _jornada_de(data)
+    filas = []
+    for g in data.get("games") or []:
+        stats = g.get("stats")
+        if not stats:
+            continue
+        try:
+            lista = json.loads(stats) if isinstance(stats, str) else stats
+        except ValueError:
+            logger.warning("Stats ilegibles en el partido %s", g.get("id"))
+            continue
+        vistas = set()
+        for s in lista:
+            clave = s.get("key")
+            if clave in vistas:  # por si Mister repite una métrica (p. ej. por periodo)
+                continue
+            vistas.add(clave)
+            filas.append({
+                "id_partido": int(g["id"]), "id_gameweek": id_gw, "jornada": jornada,
+                "clave": clave, "nombre": s.get("name"),
+                "valor_local": s.get("homeValue"), "valor_visitante": s.get("awayValue"),
+                "texto_local": s.get("home"), "texto_visitante": s.get("away"),
+            })
+    return pd.DataFrame(filas, columns=STATS_COLUMNS)
+
+
+def parse_once_ideal(payload: dict) -> pd.DataFrame:
+    """Mejor once de la jornada (best_lineup.selection)."""
+    data = _data(payload)
+    id_gw, jornada = _jornada_de(data)
+    sel = (data.get("best_lineup") or {}).get("selection") or {}
+    return pd.DataFrame([{
+        "id_gameweek": id_gw, "jornada": jornada,
+        "formacion": sel.get("formation"),
+        "puntos_total": sel.get("score"),
+        "valor_total": _millones_o_none(sel.get("marketValue")),
+        "orden": i,
+        "id_jugador": c.get("cardId"), "jugador": c.get("cardName"),
+        "posicion": c.get("position"), "puntos": c.get("score"),
+        "valor": _millones_o_none(c.get("marketValue")), "id_equipo": c.get("teamId"),
+    } for i, c in enumerate(sel.get("cards") or [], start=1)], columns=ONCE_IDEAL_COLUMNS)
+
+
+def parse_alineaciones(payload: dict) -> pd.DataFrame:
+    """Alineaciones probables (o confirmadas) de cada partido (preview)."""
+    data = _data(payload)
+    id_gw, jornada = _jornada_de(data)
+    preview = data.get("preview") or {}
+    filas = []
+    for id_partido, info in (preview.items() if isinstance(preview, dict) else []):
+        for id_equipo, jugadores in ((info or {}).get("players") or {}).items():
+            for i, j in enumerate(jugadores or [], start=1):
+                filas.append({
+                    "id_gameweek": id_gw, "jornada": jornada,
+                    "id_partido": int(id_partido), "id_equipo": int(id_equipo), "orden": i,
+                    "id_jugador": j.get("id"), "jugador": j.get("name"),
+                    "posicion": j.get("position"), "confirmado": j.get("confirmed"),
+                })
+    return pd.DataFrame(filas, columns=ALINEACIONES_COLUMNS)
+
+
+def _millones_o_none(v):
+    return v / 1_000_000 if isinstance(v, (int, float)) else None
+
+
+def upsert(df_viejo: pd.DataFrame, df_nuevo: pd.DataFrame, clave: list[str]) -> pd.DataFrame:
+    """Sustituye en df_viejo todas las filas cuyos valores de `clave` aparecen
+    en df_nuevo (p. ej. todas las stats de un partido re-scrapeado)."""
+    if df_nuevo is None or df_nuevo.empty:
+        return df_viejo.copy() if df_viejo is not None else pd.DataFrame()
+    if df_viejo is None or df_viejo.empty or any(c not in df_viejo.columns for c in clave):
+        return df_nuevo.copy()
+    nuevas = df_nuevo[clave].drop_duplicates()
+    marcado = df_viejo.merge(nuevas, on=clave, how="left", indicator=True)["_merge"]
+    viejo = df_viejo[(marcado == "left_only").to_numpy()].drop(columns="temporada", errors="ignore")
+    return pd.concat([viejo, df_nuevo], ignore_index=True)

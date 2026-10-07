@@ -1,5 +1,6 @@
 # src/scraper/login.py
 import json
+import re
 import time
 import logging
 from pathlib import Path
@@ -81,6 +82,61 @@ def cerrar_popup_publicidad(page, intentos: int = 1, espera_ms: int = 1000) -> b
         if intento < intentos - 1:
             page.wait_for_timeout(espera_ms)
     return False
+
+
+FEED_API = "/ajax/feed"
+FEED_CARDS_PER_PAGE = 20
+
+
+def _capturador_feed(destino: list):
+    """Handler de 'response' que guarda en `destino` cada página de /ajax/feed
+    como {"offset", "body", "request"} (la request se usa para repetirla)."""
+    def handler(resp):
+        try:
+            if FEED_API not in resp.url or resp.request.method != "POST":
+                return
+            post = resp.request.post_data or ""
+            m = re.search(r"offset=(\d+)", post)
+            destino.append({"offset": int(m.group(1)) if m else None, "body": resp.json(), "request": resp.request})
+        except Exception as e:
+            logger.debug("Respuesta de feed ignorada: %s", e)
+    return handler
+
+
+def guardar_feed_json(page, base_url: str, paginas: list, project_root=None) -> Path:
+    """
+    Guarda el feed completo en JSON (data/raw/feed.json) para extraer las
+    notificaciones sin depender del HTML.
+
+    Las primeras FEED_CARDS_PER_PAGE tarjetas vienen renderizadas en el HTML,
+    no por AJAX, así que la página offset=0 se pide aparte repitiendo una de
+    las peticiones capturadas (mismas cabeceras y cookies de la sesión).
+    """
+    if project_root is None:
+        project_root = Path(__file__).resolve().parents[2]
+    plantilla = next((p["request"] for p in paginas if p.get("request") is not None), None)
+    if plantilla is not None:
+        cabeceras = {k: v for k, v in plantilla.headers.items() if k.lower() not in ("content-length", "host", "cookie")}
+        cuerpo = re.sub(r"offset=\d+", "offset=0", plantilla.post_data or "")
+    else:
+        cabeceras = {"content-type": "application/x-www-form-urlencoded; charset=UTF-8",
+                     "x-requested-with": "XMLHttpRequest"}
+        cuerpo = f"end=false&loading=true&offset=0&cardsPerPage={FEED_CARDS_PER_PAGE}"
+
+    resp = page.request.post(f"{base_url}{FEED_API}", headers=cabeceras, data=cuerpo, timeout=30000)
+    primera = resp.json()
+    if not isinstance(primera.get("data"), list) or not primera["data"]:
+        raise RuntimeError(f"La página offset=0 del feed no trajo tarjetas (status {resp.status})")
+
+    salida = [{"offset": 0, "body": primera}] + [
+        {"offset": p["offset"], "body": p["body"]} for p in paginas if p.get("offset") is not None
+    ]
+    ruta = Path(project_root) / "data" / "raw" / "feed.json"
+    ruta.parent.mkdir(parents=True, exist_ok=True)
+    ruta.write_text(json.dumps(salida, ensure_ascii=False), encoding="utf-8")
+    logger.info("💾 Feed JSON guardado: %d páginas, %d tarjetas", len(salida),
+                sum(len(p["body"].get("data") or []) for p in salida))
+    return ruta
 
 
 GAMEWEEK_API = "/ajax/sw/gameweek"
@@ -280,9 +336,18 @@ def _login_once(seleccionar_jornadas=None) -> dict:
             except PlaywrightTimeoutError:
                 logger.warning("⚠️ No se detectó el contenido principal tras login. Continuando, puede que la página tenga estructura distinta.")
 
-            # Scrollear y guardar dashboard
+            # Scrollear y guardar dashboard (el feed). Mientras se hace scroll
+            # se capturan las páginas JSON de /ajax/feed (offset 20, 40...).
+            feed_pages = []
+            on_feed = _capturador_feed(feed_pages)
+            page.on("response", on_feed)
             scroll_infinite(page, scroll_pause=scroll_pause, max_scrolls=max_scrolls)
+            page.remove_listener("response", on_feed)
             saved_paths["dashboard"] = guardar_html(page.content(), "dashboard.html")
+            try:
+                saved_paths["feed_json"] = guardar_feed_json(page, base_url, feed_pages)
+            except Exception as e:
+                logger.warning("⚠️ No se pudo guardar el feed en JSON (%s); se usará el HTML.", e)
 
             # Otras secciones
             rutas = {

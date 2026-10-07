@@ -86,3 +86,16 @@ También genera un resumen en `$GITHUB_STEP_SUMMARY` para ver el estado de cada 
 2. **Fase 0.** Usa el código de la Fase 1, así que el backfill sale casi gratis.
 3. **Fase 2.**
 4. **Fase 3.**
+
+## Fase 4 — Más datos y menos dependencia del HTML (07/10/2026)
+
+| # | Mejora | Estado |
+|---|---|---|
+| 4.1 | `scraped_at` (UTC) en `mercado`, `subidasBajadas` y `jornadas`. El dedupe la ignora, así que repetir un run el mismo día no duplica filas | ✅ |
+| 4.2 | El feed (`ganancias`) sale del JSON de `/ajax/feed`: fecha real de cada tarjeta (`date` y `created` con hora), `aciertos` y `points` rellenos. Mismo orden e `idTransfer` que el HTML (verificado en vivo: 396/396 filas). Si al JSON le falta algún traspaso del HTML, se usa el HTML | ✅ |
+| 4.3 | `partidos_stats`: unas 48 métricas por partido (posesión, xG, tiros…) | ✅ |
+| 4.4 | `once_ideal`: mejor once de cada jornada | ✅ |
+| 4.5 | `alineaciones_probables`: 11 por equipo y partido, con el flag `confirmado` | ✅ |
+| 4.6 | Pasar `mercado` y `quiniela` a JSON | Pendiente. Hay que explorar sus endpoints |
+
+`write_table` añade solas las columnas nuevas (`ALTER TABLE`), así que ampliar el esquema no requiere migraciones.

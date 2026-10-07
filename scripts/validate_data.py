@@ -34,8 +34,13 @@ from src.utils.config_loader import load_config
 
 SNAPSHOT_TABLES = ["mercado", "subidasBajadas", "jornadas"]
 
-# Claves que identifican una fila; None = la fila completa.
+# Claves que identifican una fila; None = la fila completa (sin las columnas
+# de metadatos, que cambian en cada run aunque el dato sea el mismo).
+METADATOS = {"scraped_at", "created", "temporada"}
 DUP_KEYS = {
+    "partidos_stats": ["id_partido", "clave"],
+    "once_ideal": ["jornada", "orden"],
+    "alineaciones_probables": ["id_partido", "id_equipo", "orden"],
     "gameweek": ["Jornada", "EquipoLocal", "EquipoVisitante", "Manager", "NombreJugador"],
     "clasificaciones": ["jornada", "nombre"],
     "quiniela": ["jornada", "nombre"],
@@ -150,6 +155,7 @@ def check_duplicados(conn, temporada, inf: Informe):
         df = leer(conn, tabla, temporada)
         if df.empty:
             continue
+        clave = clave or [c for c in df.columns if c not in METADATOS]
         n = int(df.duplicated(subset=clave).sum())
         if n:
             con_dups.append(f"`{tabla}` ({n})")

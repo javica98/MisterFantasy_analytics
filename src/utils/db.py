@@ -69,6 +69,17 @@ _SHRINK_GUARD_MIN_ROWS = 10
 _SHRINK_GUARD_MIN_KEEP_RATIO = 0.5
 
 
+def _add_missing_columns(conn: sqlite3.Connection, table: str, df: pd.DataFrame) -> None:
+    """Añade a `table` las columnas de `df` que aún no tiene (ALTER TABLE),
+    para poder ampliar el esquema sin migraciones manuales. Las filas de
+    otras temporadas quedan con NULL en las columnas nuevas."""
+    existentes = {row[1] for row in conn.execute(f"PRAGMA table_info({table})")}
+    for col in df.columns:
+        if col not in existentes:
+            conn.execute(f'ALTER TABLE {table} ADD COLUMN "{col}"')
+            logger.info(f"Columna nueva en {table}: {col}")
+
+
 def write_table(df: pd.DataFrame, table: str, temporada: str, allow_shrink: bool = False) -> bool:
     """Sobreescribe las filas de una temporada en una tabla.
 
@@ -112,6 +123,7 @@ def write_table(df: pd.DataFrame, table: str, temporada: str, allow_shrink: bool
                 return False
 
             if table_exists(conn, table):
+                _add_missing_columns(conn, table, df)
                 conn.execute(f"DELETE FROM {table} WHERE temporada = ?", (temporada,))
             df.to_sql(table, conn, if_exists="append", index=False)
             conn.execute(

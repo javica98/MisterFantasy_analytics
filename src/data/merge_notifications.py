@@ -51,7 +51,7 @@ def merge_feed_cards_until_match(csv_notificaciones: pd.DataFrame, new_notificac
         all_columns = [
             "type","subtype","mensaje","jugador","de_equipo","a_equipo","precio",
             "posicionJugador","puntosJugador","equipoLiga","name","money","position",
-            "aciertos","points","jornada","date","idTransfer"
+            "aciertos","points","jornada","date","idTransfer","created"
         ]
 
         # Asegurar columnas
@@ -73,12 +73,14 @@ def merge_feed_cards_until_match(csv_notificaciones: pd.DataFrame, new_notificac
             new_part = new_notificaciones.iloc[:idx_new].copy()
             old_part = csv_notificaciones.iloc[idx_csv:].copy()
 
-            new_part["date"] = today
+            # El extractor JSON trae la fecha real de cada tarjeta; el HTML no
+            # (ya viene con la de hoy). Solo se rellena lo que falte.
+            new_part["date"] = new_part["date"].fillna(today)
             merged = pd.concat([new_part, old_part], ignore_index=True)
             logger.info(f"Merge realizado con corte en new_index={idx_new}, csv_index={idx_csv}")
         else:
             # No hay coincidencia → concatenar todo
-            new_notificaciones["date"] = today
+            new_notificaciones["date"] = new_notificaciones["date"].fillna(today)
             merged = pd.concat([new_notificaciones, csv_notificaciones], ignore_index=True)
             logger.warning("No hubo coincidencia, se añadieron todas las filas nuevas.")
 
