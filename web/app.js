@@ -237,6 +237,7 @@ function renderHome() {
       </div>
       <h2 id="front-title" class="headline">${escapeHtml(headline.title || "La liga calienta motores")}</h2>
       ${headline.subtitle ? `<p class="front-deck">${escapeHtml(headline.subtitle)}</p>` : ""}
+      ${latest && round && roundNumber(latest.date) < round ? `<p class="edition-lag">Última edición publicada · la liga ya va por la jornada ${round}</p>` : ""}
       ${latest ? `<button type="button" class="link-button" data-open-issue="${escapeHtml(latest.date)}">Leer el periódico ${icon("arrow", 16)}</button>` : ""}
     </div>
     <div class="round-bar">
@@ -372,7 +373,7 @@ function renderStandingsTable(rows, { unit = "pts", sotano = false, movement = f
             ${movement ? movementBadge(row) : ""}
             ${managerAvatar(row.manager, 40)}
             <span class="standing-name">${escapeHtml(row.manager)}${index >= sotanoFrom ? '<span class="visually-hidden"> (en el sótano)</span>' : ""}</span>
-            <span class="standing-gap">${index === 0 ? "Líder" : `−${gap}`}</span>
+            <span class="standing-gap">${index === 0 ? "Líder" : gap === 0 ? "Empate" : `−${gap}`}</span>
             <span class="standing-points">${escapeHtml(row.points ?? 0)}<small> ${escapeHtml(unit)}</small></span>
           </li>
         `;
@@ -384,8 +385,8 @@ function renderStandingsTable(rows, { unit = "pts", sotano = false, movement = f
 function movementBadge(row) {
   if (row.prevRank == null) return `<span class="move-badge"></span>`;
   const diff = row.prevRank - row.rank;
-  if (diff > 0) return `<span class="move-badge up" title="Sube ${diff} desde la actualización anterior">${icon("up", 14)}<span>${diff}</span><span class="visually-hidden"> puestos arriba</span></span>`;
-  if (diff < 0) return `<span class="move-badge down" title="Baja ${-diff} desde la actualización anterior">${icon("down", 14)}<span>${-diff}</span><span class="visually-hidden"> puestos abajo</span></span>`;
+  if (diff > 0) return `<span class="move-badge up" title="Sube ${diff} desde la actualización anterior">${icon("up", 14)}<span>${diff}</span><span class="visually-hidden"> ${diff === 1 ? "puesto" : "puestos"} arriba</span></span>`;
+  if (diff < 0) return `<span class="move-badge down" title="Baja ${-diff} desde la actualización anterior">${icon("down", 14)}<span>${-diff}</span><span class="visually-hidden"> ${diff === -1 ? "puesto" : "puestos"} abajo</span></span>`;
   return `<span class="move-badge same" title="Mismo puesto que en la actualización anterior">${icon("same", 14)}<span class="visually-hidden">sin cambios</span></span>`;
 }
 
@@ -446,6 +447,7 @@ function renderStats() {
         <h2 class="manager-name">${escapeHtml(selected.name)}</h2>
         <p class="manager-line">
           <span class="badge">${escapeHtml(selected.position ?? "—")}º</span>
+          ${managers.length >= 6 && selected.position > managers.length - SOTANO_SIZE ? `<span class="badge sotano-badge">${icon("stairs", 14)} En el sótano</span>` : ""}
           ${escapeHtml(selected.totalPoints ?? 0)} puntos · ${played.length} ${played.length === 1 ? "jornada" : "jornadas"} · Temporada ${escapeHtml(season ?? "")}
         </p>
       </div>
@@ -486,6 +488,7 @@ function renderStats() {
       <section class="market" aria-labelledby="market-title">
         <h2 id="market-title" class="section-title">Mercado</h2>
         <p class="market-total"><strong>${marketTotal}</strong> compras${selected.marketSpend ? ` · ${escapeHtml(formatMoney(selected.marketSpend))} gastados` : ""}</p>
+        <p class="bars-note">Barra llena = el máximo de la liga esta temporada (${marketMax})</p>
         <div class="bars">
           ${barRow("Mercado libre", market.mercado ?? 0, marketMax)}
           ${barRow("Cláusulas", market.clausulas ?? 0, marketMax)}
@@ -543,7 +546,8 @@ function renderFormChart(selected, managers, hostWidth) {
   const available = Math.max(260, (hostWidth || 600) - padding);
   const W = Math.round(Math.max(available, n * 26)), H = 220, top = 22, bottom = 26;
   const plotH = H - top - bottom;
-  const step = W / n;
+  const gutter = 8;
+  const step = (W - gutter * 2) / n;
   const barW = Math.min(28, step * 0.56);
   const y = v => top + plotH * (1 - (v - minValue) / (maxValue - minValue || 1));
   const zeroY = y(0);
@@ -553,7 +557,7 @@ function renderFormChart(selected, managers, hostWidth) {
   let bestDone = false, worstDone = false;
 
   const bars = form.map((v, i) => {
-    const cx = step * i + step / 2;
+    const cx = gutter + step * i + step / 2;
     const round = i + 1;
     const xLabel = (round === 1 || round % labelEvery === 0 || round === n)
       ? `<text class="axis" x="${cx}" y="${H - 6}" text-anchor="middle">J${round}</text>` : "";
@@ -567,7 +571,7 @@ function renderFormChart(selected, managers, hostWidth) {
     return `<rect class="bar ${v < 0 ? "neg" : ""}" x="${cx - barW / 2}" y="${y1}" width="${barW}" height="${h}" rx="3"><title>Jornada ${round}: ${v} pts</title></rect>${tag}${xLabel}`;
   }).join("");
 
-  const avgPoints = average.map((v, i) => v === null ? null : `${step * i + step / 2},${y(v).toFixed(1)}`).filter(Boolean).join(" ");
+  const avgPoints = average.map((v, i) => v === null ? null : `${gutter + step * i + step / 2},${y(v).toFixed(1)}`).filter(Boolean).join(" ");
   const summary = form.map((v, i) => `J${i + 1}: ${v ?? "sin datos"}`).join(", ");
 
   return `

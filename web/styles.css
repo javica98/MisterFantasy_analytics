@@ -441,6 +441,12 @@ img { max-width: 100%; }
 
 .front .headline { font-size: clamp(2rem, 3.6vw, 3.4rem); }
 
+.edition-lag {
+  color: var(--orange-ink);
+  font-size: 14px;
+  font-weight: 600;
+}
+
 .front-deck {
   max-width: 60ch;
   font-size: 19px;
@@ -902,6 +908,19 @@ img { max-width: 100%; }
 
 .bars { display: grid; gap: 14px; }
 
+.bars-note { margin: -8px 0 14px; color: var(--muted); font-size: 13px; }
+
+.sotano-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: var(--orange);
+  color: var(--ink);
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
 .bar-meta {
   display: flex;
   justify-content: space-between;
@@ -1072,6 +1091,8 @@ img { max-width: 100%; }
 .issue-standings summary {
   display: flex;
   align-items: center;
+  gap: 8px;
+  list-style: none;
   min-height: 48px;
   font-family: var(--num);
   font-size: 16px;
@@ -1086,6 +1107,20 @@ img { max-width: 100%; }
   background: var(--ink);
   color: #fff;
 }
+
+.issue-standings summary::-webkit-details-marker { display: none; }
+
+/* Triángulo propio: display:flex quitaba el marcador nativo */
+.issue-standings summary::before {
+  content: "";
+  width: 9px;
+  height: 12px;
+  background: var(--ink);
+  clip-path: polygon(0 0, 100% 50%, 0 100%);
+  transition: transform 160ms var(--ease-out);
+}
+
+.issue-standings[open] summary::before { transform: rotate(90deg); }
 
 .stories {
   padding-top: 28px;
@@ -1173,7 +1208,7 @@ img { max-width: 100%; }
   overflow: visible;
 }
 
-.lightbox::backdrop { background: rgba(17, 17, 17, 0.86); }
+.lightbox::backdrop { background: rgba(17, 17, 17, 0.94); }
 
 .lightbox[open] { animation: lightbox-in 260ms var(--ease-out); }
 
