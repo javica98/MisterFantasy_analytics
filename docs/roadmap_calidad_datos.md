@@ -35,7 +35,7 @@ Auditoría del 07/10/2026 sobre `data/mister.db`, el historial de git (una versi
 | 0.3 | Importar los días 17, 18 y 20/08 | CSVs del commit `af1cd55`, con dedupe contra la BD | Huecos de `mercado`, `subidasBajadas`, `jornadas` y `ganancias` cubiertos |
 | 0.4 | Documentar el 19/08 como día perdido | — | Que la validación no avise siempre por ese hueco |
 
-Script: `scripts/backfill_season.py` (idempotente, con `--dry-run` que muestra el diff antes de escribir).
+> **Estado:** 0.1 y 0.2 los hace solo el scraper de la Fase 1 en su primera ejecución. Para 0.3 está `scripts/backfill_from_git.py af1cd55 2026-08-17 2026-08-20 [--apply]`. Es idempotente; sin `--apply` solo muestra los cambios. Añade 69 filas de `mercado`, 1.479 de `subidasBajadas` y 6 de `jornadas`. En `ganancias` no faltaba ningún traspaso: los 35 de esos días tenían fecha 21/08 y se les pone la real. 0.4: el 19/08 está en `validation.dias_perdidos` de `config.yaml`.
 
 ## Fase 1 — Scraper robusto (el cambio de fondo)
 
@@ -55,6 +55,8 @@ Script: `scripts/backfill_season.py` (idempotente, con `--dry-run` que muestra e
 7. **Más adelante (opcional):** pedir `/ajax/sw/gameweek` directamente con `page.request.post` desde el contexto ya autenticado, sin clics. Primero hay que comprobar si el JSON incluye los jugadores de todos los managers o solo los tuyos; si es así, se podría quitar el parseo de HTML.
 
 ## Fase 2 — Validación automática en el workflow
+
+> **Estado:** implementada en `scripts/validate_data.py` y añadida al workflow diario como paso `Validate data`, después del commit. Usa una copia de la BD tomada antes de extraer para detectar tablas que pierden filas. Los aplazados salen como aviso, no como error.
 
 `scripts/validate_data.py` se ejecuta tras el preprocesado y antes del commit. Si encuentra un error, falla el job y salta el issue que ya existe.
 

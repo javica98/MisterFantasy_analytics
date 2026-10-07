@@ -56,6 +56,13 @@ scraper:
   max_scrolls: 60
   headless: true
 
+validation:
+  # Días sin datos que se sabe que no se pueden recuperar (no cuentan como hueco).
+  # 2026-08-19: ejecución cancelada, sin copia en git. Ver docs/roadmap_calidad_datos.md
+  dias_perdidos: ["2026-08-19"]
+  # Días máximos entre hoy y el último dato de las tablas diarias.
+  max_dias_sin_datos: 1
+
 logging:
   level: "INFO"
   file: "logs/app.log"

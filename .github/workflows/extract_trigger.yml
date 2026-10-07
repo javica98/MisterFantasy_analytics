@@ -2,7 +2,7 @@ name: Daily Data Extraction
 
 on:
   schedule:
-    - cron: '0 7 * * *'   # cada día a las 9:00 UTC
+    - cron: '0 7 * * *'   # 07:00 UTC (9:00 en Madrid en verano); GitHub suele lanzarlo con horas de retraso
   workflow_dispatch:
 
 jobs:
@@ -31,6 +31,11 @@ jobs:
         run: |
           pip install -r requirements.txt
           playwright install --with-deps
+
+      # Copia de la BD antes de extraer, para que la validación detecte
+      # tablas que pierden filas.
+      - name: Snapshot database
+        run: cp data/mister.db "$RUNNER_TEMP/mister_antes.db"
 
       # 4️⃣ Ejecutar scraper
       #    continue-on-error: si run_extraction.py salta alguna sección
@@ -79,11 +84,19 @@ jobs:
             echo "No changes to commit."
           fi
 
+      # Validación de datos (días, partidos, jornadas, duplicados, filas
+      # perdidas). Va después del commit para no perder lo extraído; si hay
+      # errores el job falla y se abre el issue de aviso. El resumen sale en
+      # la pestaña Summary del run.
+      - name: Validate data
+        if: always()
+        run: python scripts/validate_data.py --baseline "$RUNNER_TEMP/mister_antes.db"
+
       # 7️⃣ Si el scraper saltó alguna sección crítica, fallar el job ahora
       #    (después de comitear lo que sí se extrajo) para que se abra el
       #    aviso del paso siguiente.
       - name: Fail job if the scraper skipped sections
-        if: steps.extract.outcome == 'failure' || steps.webdata.outcome == 'failure'
+        if: always() && (steps.extract.outcome == 'failure' || steps.webdata.outcome == 'failure')
         run: |
           echo "::error::Fallo en 'Run scraper' o 'Regenerate web app data' — revisa los logs de esos pasos."
           exit 1
