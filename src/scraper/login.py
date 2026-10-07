@@ -1,4 +1,5 @@
 # src/scraper/login.py
+import json
 import time
 import logging
 from pathlib import Path
@@ -82,7 +83,95 @@ def cerrar_popup_publicidad(page, intentos: int = 1, espera_ms: int = 1000) -> b
     return False
 
 
-def login(max_retries: int = 3, backoff_seconds: int = 30) -> dict:
+GAMEWEEK_API = "/ajax/sw/gameweek"
+GAMEWEEK_BUTTON = ".gameweek-selector-inline button[data-id='{id}']"
+
+
+def _es_respuesta_gameweek(resp) -> bool:
+    return GAMEWEEK_API in resp.url and resp.request.method == "POST"
+
+
+def scrape_gameweeks(page, base_url: str, seleccionar_jornadas=None, project_root=None) -> dict:
+    """
+    Descarga el calendario y, para cada jornada elegida, su gameweek
+    (JSON + HTML) y su clasificación. Antes solo se guardaba la jornada que
+    la web mostraba por defecto, así que se perdían los partidos del último
+    día de cada jornada, los aplazados y las clasificaciones de jornadas que
+    nunca llegaron a estar seleccionadas.
+
+    `seleccionar_jornadas(payload_calendario) -> list[int]` decide qué
+    id_gameweek bajar. Si es None, se bajan las 'ongoing'.
+
+    Guarda en data/raw/:
+      gameweek_calendar.json                 respuesta por defecto del endpoint
+      gameweeks/gameweek_<id>.json|.html     cada jornada elegida
+      gameweeks/clasificacion_<id>.html      clasificación de esa jornada
+
+    Un fallo en una jornada se registra y se sigue con las demás.
+    """
+    if project_root is None:
+        project_root = Path(__file__).resolve().parents[2]
+    raw = Path(project_root) / "data" / "raw"
+    out = raw / "gameweeks"
+    out.mkdir(parents=True, exist_ok=True)
+    for viejo in out.glob("*"):
+        viejo.unlink()  # que no se reprocesen jornadas de otro día
+
+    saved = {}
+
+    # Carga completa (no solo cambio de hash) para que la SPA pida el JSON.
+    page.goto("about:blank")
+    with page.expect_response(_es_respuesta_gameweek, timeout=60000) as resp_info:
+        page.goto(f"{base_url}/feed#gameweek", wait_until="domcontentloaded", timeout=60000)
+    calendario = resp_info.value.json()
+    (raw / "gameweek_calendar.json").write_text(json.dumps(calendario, ensure_ascii=False), encoding="utf-8")
+    saved["gameweek_calendar"] = raw / "gameweek_calendar.json"
+    cerrar_popup_publicidad(page)
+
+    if seleccionar_jornadas is None:
+        ids = [g["id"] for g in calendario.get("data", {}).get("gameweeks", []) if g.get("status") == "ongoing"]
+    else:
+        ids = seleccionar_jornadas(calendario)
+    logger.info("📅 Jornadas a descargar (id_gameweek): %s", ids)
+
+    for gw_id in ids:
+        try:
+            boton = page.locator(GAMEWEEK_BUTTON.format(id=gw_id)).first
+            boton.wait_for(state="attached", timeout=15000)
+            if "selected" in (boton.get_attribute("class") or ""):
+                # Ya es la jornada mostrada: pulsarla no lanza petición.
+                payload = calendario
+            else:
+                boton.scroll_into_view_if_needed(timeout=5000)
+                with page.expect_response(_es_respuesta_gameweek, timeout=30000) as resp_info:
+                    boton.click(timeout=5000)
+                payload = resp_info.value.json()
+                page.locator(GAMEWEEK_BUTTON.format(id=gw_id) + ".selected").wait_for(timeout=15000)
+            page.wait_for_timeout(1500)  # render de la plantilla tras el JSON
+
+            (out / f"gameweek_{gw_id}.json").write_text(json.dumps(payload, ensure_ascii=False), encoding="utf-8")
+            (out / f"gameweek_{gw_id}.html").write_text(page.content(), encoding="utf-8")
+            saved[f"gameweek_{gw_id}"] = out / f"gameweek_{gw_id}.html"
+        except Exception as e:
+            logger.warning("⚠️ No se pudo descargar el gameweek %s: %s", gw_id, e)
+
+    for gw_id in ids:
+        try:
+            page.goto(f"{base_url}/standings?gw={gw_id}", wait_until="domcontentloaded", timeout=60000)
+            page.wait_for_selector("div.panel.panel-gameweek", timeout=30000)
+            cerrar_popup_publicidad(page)
+            (out / f"clasificacion_{gw_id}.html").write_text(page.content(), encoding="utf-8")
+            saved[f"clasificacion_{gw_id}"] = out / f"clasificacion_{gw_id}.html"
+        except Exception as e:
+            logger.warning("⚠️ No se pudo descargar la clasificación %s: %s", gw_id, e)
+
+    logger.info("✅ Jornadas descargadas: %d gameweeks, %d clasificaciones",
+                sum(k.startswith("gameweek_") and k != "gameweek_calendar" for k in saved),
+                sum(k.startswith("clasificacion_") for k in saved))
+    return saved
+
+
+def login(max_retries: int = 3, backoff_seconds: int = 30, seleccionar_jornadas=None) -> dict:
     """
     Realiza login y guarda los HTMLs necesarios en data/raw, con reintentos.
 
@@ -94,7 +183,7 @@ def login(max_retries: int = 3, backoff_seconds: int = 30) -> dict:
     last_exc = None
     for intento in range(1, max_retries + 1):
         try:
-            return _login_once()
+            return _login_once(seleccionar_jornadas)
         except Exception as exc:
             last_exc = exc
             if intento < max_retries:
@@ -109,7 +198,7 @@ def login(max_retries: int = 3, backoff_seconds: int = 30) -> dict:
     raise last_exc
 
 
-def _login_once() -> dict:
+def _login_once(seleccionar_jornadas=None) -> dict:
     """
     Un único intento de login. Devuelve un dict con las rutas guardadas.
     Lanza excepción si el login falla críticamente.
@@ -239,6 +328,14 @@ def _login_once() -> dict:
                 logger.debug("Error al pulsar Bajadas, continuando.")
 
             saved_paths["subidas_bajadas"] = guardar_html(page.content(), archivoSB)
+
+            # Jornadas activas (gameweek + clasificación). No es crítico: si
+            # falla, run_extraction cae al gameweek/clasificación por defecto.
+            try:
+                saved_paths.update(scrape_gameweeks(page, base_url, seleccionar_jornadas))
+            except Exception as e:
+                logger.warning("⚠️ Falló la descarga por jornadas (%s); se usará solo la vista por defecto.", e)
+
             logger.info("✅ Todos los HTML guardados correctamente.")
 
         except Exception as exc:

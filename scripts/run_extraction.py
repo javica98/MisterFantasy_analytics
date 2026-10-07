@@ -1,5 +1,6 @@
 import sys
 import os
+import json
 import logging
 from pathlib import Path
 
@@ -20,6 +21,9 @@ from src.data.extract_jornadas import extraer_jornadas
 from src.data.extract_subidas_bajadas import extraer_subidas_bajadas
 from src.data.extract_gameweek import extraer_gameweek
 from src.data.merge_gameweek import merge_gameweek
+from src.data.extract_calendario import (
+    anotar_fecha_partido, merge_partidos, parse_calendario, parse_partidos, seleccionar_jornadas,
+)
 from src.data.extract_quinielas import extraer_quinielas
 from src.data.merge_quinielas import merge_quinielas
 from src.scraper.login import login
@@ -55,6 +59,8 @@ HTML_JORNADAS_AUX = cfg["paths"]["html"]["jornadas"]
 HTML_SUBIDASBAJADAS = cfg["paths"]["html"]["subidas_bajadas"]
 HTML_GAMEWEEK     = cfg["paths"]["html"]["gameweek"]
 HTML_QUINIELA     = cfg["paths"]["html"]["quiniela"]
+JSON_GW_CALENDAR  = Path(cfg["paths"]["html"]["gameweek_calendar"])
+DIR_GAMEWEEKS     = Path(cfg["paths"]["html"]["gameweeks_dir"])
 
 CSV_NOTIFICACIONES  = cfg["paths"]["csv"]["notificaciones"]
 CSV_CLASIFICACIONES = cfg["paths"]["csv"]["clasificaciones"]
@@ -63,12 +69,33 @@ CSV_JORNADA         = cfg["paths"]["csv"]["jornada"]
 CSV_SUBIDASBAJADAS  = cfg["paths"]["csv"]["subidas_bajadas"]
 CSV_GAMEWEEK        = cfg["paths"]["csv"]["gameweek"]
 CSV_QUINIELA        = cfg["paths"]["csv"]["quiniela"]
+CSV_CALENDARIO      = cfg["paths"]["csv"]["calendario"]
+CSV_PARTIDOS        = cfg["paths"]["csv"]["partidos"]
+
+
+def _seleccionar_jornadas_a_descargar(payload_calendario: dict) -> list:
+    """Jornadas activas + las 'finished' que aún no tienen partidos y
+    clasificación en la BD (backfill automático la primera vez)."""
+    partidos = safe_read_csv(CSV_PARTIDOS)
+    clasif = safe_read_csv(CSV_CLASIFICACIONES)
+    con_partidos = set(partidos["jornada"].dropna().astype(int)) if "jornada" in partidos else set()
+    con_clasif = set(clasif["jornada"].dropna().astype(int)) if "jornada" in clasif else set()
+    return seleccionar_jornadas(parse_calendario(payload_calendario), con_partidos & con_clasif)
+
+
+def _leer_json(path: Path):
+    try:
+        return json.loads(path.read_text(encoding="utf-8"))
+    except Exception as e:
+        logger.warning("⚠️ No se pudo leer %s: %s", path, e)
+        return None
+
 
 # ── 0. Scraping ───────────────────────────────────────────────────────────────
 # login() lanza excepción si falla críticamente, deteniendo el pipeline.
 logger.info("Iniciando proceso de scraping con Playwright...")
 try:
-    saved_paths = login()
+    saved_paths = login(seleccionar_jornadas=_seleccionar_jornadas_a_descargar)
     logger.info("✅ Scraping completado. Archivos guardados: %s", list(saved_paths.keys()))
 except Exception as e:
     logger.error("❌ El scraping falló: %s", e)
@@ -111,9 +138,18 @@ if not validate_html(HTML_CLAS_AUX, "clasificaciones"):
     logger.warning("⏭️ Saltando clasificaciones.")
     skipped_sections.append("clasificaciones")
 else:
-    new_html_clas = safe_read_html(HTML_CLAS_AUX)
-    new_clasificaciones = extraer_clasificaciones(new_html_clas)
-    logger.info("✅ Nuevas clasificaciones extraídas.")
+    # Vista por defecto + una clasificación por cada jornada descargada
+    # (standings?gw=<id>). Si una jornada sale en ambas, manda la específica.
+    frames = [extraer_clasificaciones(safe_read_html(HTML_CLAS_AUX))]
+    for path in sorted(DIR_GAMEWEEKS.glob("clasificacion_*.html")):
+        frames.append(extraer_clasificaciones(path.read_text(encoding="utf-8")))
+    frames = [f for f in frames if not f.empty]
+    new_clasificaciones = (
+        pd.concat(frames, ignore_index=True).drop_duplicates(["jornada", "nombre"], keep="last")
+        if frames else pd.DataFrame()
+    )
+    logger.info("✅ Nuevas clasificaciones extraídas (jornadas %s).",
+                sorted(new_clasificaciones["jornada"].unique()) if not new_clasificaciones.empty else [])
     csv_clasificaciones = safe_read_csv(CSV_CLASIFICACIONES)
     new_csv_clasificacion = merge_clasifications(csv_clasificaciones, new_clasificaciones)
     safe_save_csv(new_csv_clasificacion, CSV_CLASIFICACIONES)
@@ -187,9 +223,49 @@ if not validate_html(HTML_GAMEWEEK, "gameweek"):
     logger.warning("⏭️ Saltando gameweek.")
     skipped_sections.append("gameweek")
 else:
-    new_html_gameweek = safe_read_html(HTML_GAMEWEEK)
-    new_gameweek = extraer_gameweek(new_html_gameweek)
-    logger.info("✅ Nuevas gameweeks extraídas.")
+    # Calendario completo de la temporada (estado y fechas de cada jornada).
+    payload_calendario = _leer_json(JSON_GW_CALENDAR) if JSON_GW_CALENDAR.exists() else None
+    calendario = parse_calendario(payload_calendario) if payload_calendario else pd.DataFrame()
+    if not calendario.empty:
+        safe_save_csv(calendario, CSV_CALENDARIO)
+        logger.info("✅ Calendario guardado (%d jornadas).", len(calendario))
+    else:
+        logger.warning("⚠️ Sin calendario de jornadas; se usará solo la vista por defecto.")
+
+    # Partidos + gameweek de cada jornada descargada. Los partidos de una
+    # jornada solo se guardan si su HTML también se extrajo, para que la
+    # jornada no se dé por "descargada" sin sus datos de jugadores.
+    frames_gw = [extraer_gameweek(safe_read_html(HTML_GAMEWEEK))]
+    nuevos_partidos = []
+    for path in sorted(DIR_GAMEWEEKS.glob("gameweek_*.html")):
+        df_gw = extraer_gameweek(path.read_text(encoding="utf-8"))
+        payload = _leer_json(path.with_suffix(".json"))
+        if payload is not None:
+            df_p = parse_partidos(payload)
+            if not df_gw.empty or not (df_p["estado"] == "played").any():
+                nuevos_partidos.append(df_p)
+            else:
+                logger.warning("⚠️ %s: hay partidos jugados pero 0 filas de jugadores; no se marca como descargada.",
+                               path.name)
+        if not df_gw.empty:
+            frames_gw.append(df_gw)
+    frames_gw = [f for f in frames_gw if not f.empty]
+    new_gameweek = (
+        pd.concat(frames_gw, ignore_index=True)
+        .drop_duplicates(["Jornada", "EquipoLocal", "EquipoVisitante", "Manager", "NombreJugador"], keep="last")
+        if frames_gw else pd.DataFrame()
+    )
+
+    partidos = safe_read_csv(CSV_PARTIDOS)
+    if nuevos_partidos:
+        partidos = merge_partidos(partidos, pd.concat(nuevos_partidos, ignore_index=True))
+        safe_save_csv(partidos, CSV_PARTIDOS)
+        logger.info("✅ Partidos guardados (%d en total).", len(partidos))
+
+    # Date = fecha real del partido (antes: día del scrape).
+    new_gameweek = anotar_fecha_partido(new_gameweek, partidos)
+    logger.info("✅ Nuevas gameweeks extraídas (%d filas, jornadas %s).", len(new_gameweek),
+                sorted(new_gameweek["Jornada"].unique()) if not new_gameweek.empty else [])
     csv_gameweek = safe_read_csv(CSV_GAMEWEEK)
     new_csv_gameweek = merge_gameweek(csv_gameweek, new_gameweek)
     safe_save_csv(new_csv_gameweek, CSV_GAMEWEEK)
