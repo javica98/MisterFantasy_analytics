@@ -29,10 +29,6 @@ TEAM_MAP: dict[int, str] = {
     222: "Girona FC",
     408: "RCD Mallorca",
     1370: "Real Oviedo",
-    # Ascendidos 2026-27 (identificados por su plantilla en gameweek)
-    6: "RC Deportivo",
-    13: "Málaga CF",
-    1490: "Racing de Santander",
 }
 
 # Nombres de equipos que no están en TEAM_MAP, sacados de la tabla `partidos`
