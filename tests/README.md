@@ -207,8 +207,8 @@ Cubre la CLI de `scripts/manage_memories.py`: `cmd_list` (incluye el filtro `--t
 
 ---
 
-### `test_regenerate_app_data.py` — 4 tests
-Cubre `build_news()` y `_load_standings_snapshot()` de `scripts/regenerate_app_data.py` — en particular el contrato de nombres de fichero con `run_newspaper.py`: antes `run_newspaper.py` nombraba las ediciones por fecha de ejecución y `build_news()` las buscaba por jornada, así que nunca coincidían y ningún artículo nuevo aparecía en la web. Un test reproduce explícitamente ese bug (nombrado por fecha → 0 resultados) para que no vuelva a colarse.
+### `test_regenerate_app_data.py` — 9 tests
+Cubre `build_news()`, `_load_standings_snapshot()`, `build_managers()` (`seasonForm` indexado por jornada, con `null` en las que faltan; equipo y posición traducidos a nombre), `build_league()` (`playerOfMonth.team` con nombre, no el ID) y las miniaturas de portada de `web/covers/` de `scripts/regenerate_app_data.py` — en particular el contrato de nombres de fichero con `run_newspaper.py`: antes `run_newspaper.py` nombraba las ediciones por fecha de ejecución y `build_news()` las buscaba por jornada, así que nunca coincidían y ningún artículo nuevo aparecía en la web. Un test reproduce explícitamente ese bug (nombrado por fecha → 0 resultados) para que no vuelva a colarse.
 
 ---
 
@@ -228,10 +228,8 @@ Pipeline de punta a punta, organizado en 4 tramos.
 
 ## Fallos conocidos (no relacionados con el código)
 
-`pytest tests/ -q` da **241 tests, 238 pasan, 3 fallan**:
+`pytest tests/ -q` da **246 tests, 245 pasan, 1 falla** (con el entorno completo; la temporada activa ya tiene `clasificaciones`/`quiniela` y `TEAM_MAP` incluye los ascendidos de 2026-27):
 
-- `test_integration_pipeline.py::TestDataPipeline::test_clasificacion_contiene_todos_los_managers` — la temporada activa (`2026-27`) todavía no tiene `clasificaciones`/`quiniela` generadas tan al principio de la temporada; el test espera 9 managers y hay 0. Para verificarlo con datos completos: `python scripts/export_db_to_csv.py 2025-26 data/processed` (o cambia `season.current` a `2025-26`) y vuelve a correr `pytest`.
-- `test_integration_pipeline.py::TestDataPipeline::test_equipo_jugador_siempre_es_string` — con datos reales de la temporada activa, `map_team()` no resuelve el ID de equipo `1490` (probablemente un club nuevo, ascenso/descenso, que falta en `TEAM_MAP` de `src/utils/team_map.py`) y devuelve el ID numérico sin convertir. No es un bug de este test ni de la migración — es `TEAM_MAP` desactualizado para la temporada nueva.
 - `test_image_agent.py::TestRunImageAgent::test_extrae_success_true_de_la_respuesta` — no relacionado con datos de temporada; falla desde antes de cualquiera de los cambios recientes, pendiente de investigar aparte.
 
 ---

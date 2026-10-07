@@ -18,6 +18,7 @@ from pathlib import Path
 
 import numpy as np
 import pandas as pd
+from PIL import Image
 
 # ── Entorno ───────────────────────────────────────────────────────────────────
 ROOT = Path(__file__).resolve().parent.parent
@@ -29,7 +30,7 @@ for p in (ROOT, SRC):
 from src.utils import db as db_utils
 from src.utils.config_loader import load_config
 from src.utils.file_utils import safe_read_csv
-from src.utils.team_map import map_team
+from src.utils.team_map import map_position, map_team
 
 
 class _NumpyEncoder(json.JSONEncoder):
@@ -58,10 +59,15 @@ CSV_GAMEWEEK      = cfg["paths"]["csv"]["gameweek"]
 CSV_CLASIFICACION = cfg["paths"]["csv"]["clasificaciones"]
 CSV_QUINIELAS     = cfg["paths"]["csv"]["quiniela"]
 CSV_MERCADO       = cfg["paths"]["csv"]["notificaciones_clean"]
-CSV_JUGADORES     = cfg["paths"]["csv"]["jugadores"]
 NEWS_JSON_DIR     = ROOT / "newspaper" / "json"
 OUTPUT_PATH       = ROOT / "web" / "data" / "app-data.json"
 OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
+# Miniaturas de portada para el carrusel de Noticias. Viven dentro de web/
+# para que entren en la imagen Docker (newspaper/ y archive/ se excluyen) y
+# pesan ~15 KB en vez del PNG de página completa (~1,2 MB).
+COVERS_DIR    = ROOT / "web" / "covers"
+COVER_DEFAULT_SRC = ROOT / "newspaper" / "photos" / "Portada_Jornada.jpg"
+COVER_WIDTH   = 240  # 2x del ancho CSS (96px) de .jornada-cover
 
 LEAGUE_NAME   = "Sotano League"
 SEASON        = cfg["season"]["current"]
@@ -80,6 +86,31 @@ def _load_csv(path: str, name: str) -> pd.DataFrame:
         logger.error("Sin datos para %s (%s)", name, path)
         sys.exit(1)
     logger.info("  %s: %d filas", name, len(df))
+    return df
+
+
+def _position_name(value) -> str:
+    """ID de posición (1-4, a veces como float/str desde la BD) -> nombre."""
+    try:
+        return str(map_position(int(float(value))))
+    except (TypeError, ValueError):
+        return _safe_str(value)
+
+
+def _load_players() -> pd.DataFrame:
+    """Jugadores (nombre -> foto) de todas las temporadas, quedándose con la
+    fila más reciente de cada nombre. La tabla `jugadores` solo se rellena
+    con run_players_db.py, que no corre en el workflow diario: al empezar
+    temporada nueva no tenía filas para ella y el script entero salía con
+    error (por eso app-data.json se quedó congelado en julio). Las fotos no
+    dependen de la temporada, así que vale con la última conocida."""
+    df = db_utils.read_table("jugadores")
+    if df.empty:
+        logger.warning("Sin datos de jugadores: la web mostrará iniciales en vez de fotos")
+        return df
+    if "temporada" in df.columns:
+        df = df.sort_values("temporada").drop_duplicates("nombre", keep="last")
+    logger.info("  jugadores: %d filas (todas las temporadas)", len(df))
     return df
 
 
@@ -187,7 +218,7 @@ def build_managers(
             best_historic = {
                 "name":     best_idx[0],
                 "team":     map_team(best_idx[1]),
-                "position": best_idx[2],
+                "position": _position_name(best_idx[2]),
                 "points":   int(pts_jugador[best_idx]),
             }
             # mejor esta temporada (mismo que historic, pero lo dejamos igual)
@@ -197,7 +228,7 @@ def build_managers(
             worst_player = {
                 "name":     worst_idx[0],
                 "team":     map_team(worst_idx[1]),
-                "position": worst_idx[2],
+                "position": _position_name(worst_idx[2]),
                 "points":   int(pts_jugador[worst_idx]),
             }
 
@@ -211,9 +242,15 @@ def build_managers(
 
         # form: puntos de las últimas N jornadas (para el badge de variación)
         form = [int(pts_jornada.get(j, 0)) for j in form_jornadas]
-        # seasonForm: puntos de TODAS las jornadas jugadas esta temporada
-        # (para el gráfico de rendimiento histórico completo, no solo las últimas N)
-        season_form = [int(pts_jornada.get(j, 0)) for j in all_jornadas]
+        # seasonForm: puntos de cada jornada 1..última, indexado por número de
+        # jornada (posición i = jornada i+1). Las jornadas que faltan en la BD
+        # van como null: antes se compactaban y, si faltaba una (p.ej. la J37
+        # de 2025-26), la web etiquetaba la J38 como "Jornada 37".
+        played = set(int(j) for j in all_jornadas)
+        season_form = [
+            int(pts_jornada.get(j, 0)) if j in played else None
+            for j in range(1, last_jornada + 1)
+        ]
 
         managers.append({
             "name":             manager,
@@ -310,7 +347,7 @@ def build_league(
         row = df_last.loc[idx]
         player_of_month = {
             "name":        row["NombreJugador"],
-            "team":        str(row["EquipoJugador"]),
+            "team":        map_team(row["EquipoJugador"]),
             "manager":     row["Manager"],
             "points":      int(row["Puntos"]),
             "description": f"{row['NombreJugador']} firmó {int(row['Puntos'])} puntos.",
@@ -398,6 +435,7 @@ def build_league(
         "name":                 LEAGUE_NAME,
         "season":               SEASON,
         "dateRange":            date_range,
+        "lastRound":            last_jornada,
         "standings":            standings,
         "poolStandings":        pool_standings,
         "managerOfMonth":       manager_of_month,
@@ -416,10 +454,45 @@ def build_league(
 # Sección: news (periódicos generados)
 # ─────────────────────────────────────────────────────────────────────────────
 
-def build_news(news_json_dir: Path) -> list:
+def _make_thumbnail(src: Path, dest: Path) -> bool:
+    """Genera `dest` (WebP, COVER_WIDTH de ancho) desde `src` si falta o si
+    `src` es más reciente. Devuelve True si `dest` existe al terminar."""
+    if not src.exists():
+        return dest.exists()
+    if dest.exists() and dest.stat().st_mtime >= src.stat().st_mtime:
+        return True
+    try:
+        dest.parent.mkdir(parents=True, exist_ok=True)
+        with Image.open(src) as im:
+            im = im.convert("RGB")
+            height = round(im.height * COVER_WIDTH / im.width)
+            im.resize((COVER_WIDTH, height), Image.LANCZOS).save(dest, "WEBP", quality=72, method=6)
+        return True
+    except Exception as e:
+        logger.warning("No se pudo generar miniatura %s: %s", dest.name, e)
+        return dest.exists()
+
+
+def build_default_cover() -> str | None:
+    """Miniatura genérica para jornadas sin portada propia."""
+    dest = COVERS_DIR / "default.webp"
+    return "/web/covers/default.webp" if _make_thumbnail(COVER_DEFAULT_SRC, dest) else None
+
+
+def _cover_for(covers_src_dir: Path | None, season: str, jornada_num: int) -> str | None:
+    if covers_src_dir is None:
+        return None
+    src = covers_src_dir / f"jornada_{jornada_num}_jornada_news.png"
+    dest = COVERS_DIR / season / f"jornada_{jornada_num}.webp"
+    return f"/web/covers/{season}/{dest.name}" if _make_thumbnail(src, dest) else None
+
+
+def build_news(news_json_dir: Path, covers_src_dir: Path | None = None, season: str = SEASON) -> list:
     """
     Lee todos los jornada_XX_cards.json desde cards/ y articles/
-    y construye la lista de noticias para la web app.
+    y construye la lista de noticias para la web app. Si se pasa
+    `covers_src_dir` (carpeta newspaper/new de la temporada), añade a cada
+    edición la URL de su miniatura de portada.
     """
     news = []
     articles_dir = news_json_dir / "articles"
@@ -467,6 +540,7 @@ def build_news(news_json_dir: Path) -> list:
 
             news.append({
                 "date":            jornada_label,
+                "cover":           _cover_for(covers_src_dir, season, int(jornada_stem.split("_")[1])),
                 "title":           portada.get("titulo", ""),
                 "subtitle":        portada.get("subtitulo", ""),
                 "summary":         " ".join(portada.get("texto", [])),
@@ -484,14 +558,12 @@ def build_news_for_season(season: str) -> list:
     """Igual que build_news(), pero resolviendo la carpeta correcta: la
     temporada activa vive en newspaper/json/, las archivadas en
     archive/temporada_{season}/newspaper/json/."""
-    if season == SEASON:
-        json_dir = NEWS_JSON_DIR
-    else:
-        json_dir = ROOT / "archive" / f"temporada_{season}" / "newspaper" / "json"
+    base = ROOT if season == SEASON else ROOT / "archive" / f"temporada_{season}"
+    json_dir = base / "newspaper" / "json"
     if not json_dir.exists():
         logger.warning("Sin carpeta de periódicos para temporada %s (%s)", season, json_dir)
         return []
-    return build_news(json_dir)
+    return build_news(json_dir, base / "newspaper" / "new", season)
 
 
 def _load_standings_snapshot(articles_file: Path) -> list:
@@ -532,7 +604,7 @@ def main():
     df_clas = _load_csv(CSV_CLASIFICACION, "clasificaciones")
     df_quin = _load_csv(CSV_QUINIELAS,     "quinielas")
     df_merc = _load_csv(CSV_MERCADO,       "mercado/notificaciones")
-    df_jug  = _load_csv(CSV_JUGADORES,     "jugadores")
+    df_jug  = _load_players()
 
     # Solo transfers
     df_transfers = df_merc[df_merc["type"] == "transfer"].copy()
@@ -543,7 +615,7 @@ def main():
     standings    = build_standings(df_clas)
     pool_stand   = build_pool_standings(df_quin)
     managers     = build_managers(df_gw, df_clas, df_transfers, standings)
-    news         = build_news(NEWS_JSON_DIR)
+    news         = build_news_for_season(SEASON)
     latest_card  = _get_latest_headline(news)
     league       = build_league(df_gw, df_clas, df_transfers, standings, pool_stand, [latest_card] if latest_card else [])
 
@@ -567,12 +639,15 @@ def main():
         "playersMap":       players_map,
         "seasons":          seasons,
         "activeSeason":     SEASON,
+        "defaultCover":     build_default_cover(),
         "managersBySeason": managers_by_season,
         "newsBySeason":     news_by_season,
     }
 
+    # Compacto (sin indent): la web lo descarga en cada visita y el indentado
+    # inflaba el archivo ~30% sin aportar nada.
     OUTPUT_PATH.write_text(
-        json.dumps(app_data, ensure_ascii=False, indent=2, cls=_NumpyEncoder),
+        json.dumps(app_data, ensure_ascii=False, separators=(",", ":"), cls=_NumpyEncoder),
         encoding="utf-8",
     )
     logger.info("app-data.json generado -> %s", OUTPUT_PATH)

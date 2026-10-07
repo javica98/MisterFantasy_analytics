@@ -1,21 +1,29 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sotano League Studio</title>
+    <title>Sotano League</title>
+    <meta name="description" content="Clasificación, estadísticas por manager y el periódico de cada jornada de la Sotano League, nuestra liga fantasy." />
+    <meta name="theme-color" content="#f5f4f0" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Sotano League" />
+    <meta property="og:description" content="Clasificación, estadísticas y el periódico de cada jornada de la liga fantasy." />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/web/favicon-32.png" />
+    <link rel="apple-touch-icon" href="/assets/web/apple-touch-icon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet" />
-    <link href="https://fonts.cdnfonts.com/css/coolvetica" rel="stylesheet" />
-    <link rel="stylesheet" href="/web/styles.css?v=13" />
+    <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet" />
+    <link rel="preload" href="/web/data/app-data.json" as="fetch" crossorigin />
+    <link rel="stylesheet" href="/web/styles.css?v=22" />
   </head>
   <body>
+    <a class="skip-link" href="#app">Saltar al contenido</a>
     <div class="app-shell">
       <aside class="sidebar">
         <div class="brand">
           <div class="brand-mark">
-            <img src="/assets/Default.png" alt="Sotano League" />
+            <img src="/assets/web/logo.webp" alt="" width="224" height="224" />
           </div>
           <div>
             <strong>Sotano League</strong>
@@ -23,17 +31,17 @@
           </div>
         </div>
 
-        <nav class="side-nav" aria-label="Principal" role="tablist">
-          <button class="nav-item active" data-view="home" role="tab" aria-selected="true">
-            <span class="icon">⌂</span>
+        <nav class="side-nav" aria-label="Principal">
+          <button type="button" class="nav-item active" data-view="home" aria-current="page">
+            <span class="icon" aria-hidden="true">⌂</span>
             <span>Home</span>
           </button>
-          <button class="nav-item" data-view="stats" role="tab" aria-selected="false">
-            <span class="icon">📊</span>
+          <button type="button" class="nav-item" data-view="stats">
+            <span class="icon" aria-hidden="true">📊</span>
             <span>Estadísticas</span>
           </button>
-          <button class="nav-item" data-view="news" role="tab" aria-selected="false">
-            <span class="icon">📰</span>
+          <button type="button" class="nav-item" data-view="news">
+            <span class="icon" aria-hidden="true">📰</span>
             <span>Noticias</span>
           </button>
         </nav>
@@ -42,19 +50,16 @@
 
       <main class="main">
         <header class="topbar">
-          <div>
-            <p class="eyebrow">Private Fantasy Analytics</p>
-            <h1 id="page-title">Dashboard</h1>
-          </div>
+          <h1 id="page-title">Dashboard</h1>
           <div class="topbar-actions">
-            <div class="live-pill"><span></span> Liga viva</div>
+            <div class="live-pill" id="freshness"><span aria-hidden="true"></span> <span class="freshness-text">Cargando…</span></div>
           </div>
         </header>
 
-        <section id="app" class="content" aria-live="polite"></section>
+        <section id="app" class="content" tabindex="-1"></section>
       </main>
     </div>
 
-    <script src="/web/app.js?v=17"></script>
+    <script src="/web/app.js?v=22"></script>
   </body>
 </html>

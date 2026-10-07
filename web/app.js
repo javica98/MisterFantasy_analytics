@@ -3,25 +3,30 @@ const state = {
   view: "home",
   selectedManager: null,
   selectedSeason: null,
-  selectedIssue: 0,
+  // Se guarda la jornada ("J7"), no su índice: el índice cambia al cambiar de
+  // temporada y antes hacía que Noticias abriera siempre en la J1.
+  selectedIssueDate: null,
   standingsTab: "league",
   usingFallback: false,
 };
 
+const VIEWS = { home: "Dashboard", stats: "Estadísticas", news: "Noticias" };
+const TOTAL_JORNADAS = 38;
+const STALE_AFTER_DAYS = 3;
+
 const app = document.querySelector("#app");
 const pageTitle = document.querySelector("#page-title");
 const navItems = document.querySelectorAll(".nav-item");
+const freshnessPill = document.querySelector("#freshness");
 
 const fallbackData = {
   league: {
     name: "Sotano League",
-    season: "Temporada 2026",
-    dateRange: "Última jornada",
+    season: "",
     standings: [],
     poolStandings: [],
     managerOfMonth: { name: "Sin datos", subtitle: "Pendiente", description: "Genera datos para alimentar el dashboard." },
     playerOfMonth: { name: "Sin datos", description: "Sin jugador destacado todavía." },
-    highlights: [],
     latestHeadline: {},
   },
   managers: [],
@@ -29,533 +34,587 @@ const fallbackData = {
   seasons: [],
   activeSeason: null,
   managersBySeason: {},
+  newsBySeason: {},
 };
 
+let playerIndex = null;
+
+installImageFallbacks();
 init();
 
 async function init() {
   injectWatermark();
   state.data = await loadData();
-  state.selectedManager = state.data.managers[0]?.name ?? null;
-  state.selectedSeason = state.data.activeSeason || state.data.seasons?.[0] || null;
+  playerIndex = buildPlayerIndex(state.data.playersMap || {});
+  state.selectedSeason = currentSeason();
+  state.view = VIEWS[location.hash.slice(1)] ? location.hash.slice(1) : "home";
   bindEvents();
+  renderFreshness();
   render();
 }
 
 function injectWatermark() {
-  const wm = document.createElement('div');
-  wm.className = 'watermark';
-  wm.setAttribute('aria-hidden', 'true');
-  wm.textContent = Array(80).fill('SOTANO LEAGUE').join('   ');
+  const wm = document.createElement("div");
+  wm.className = "watermark";
+  wm.setAttribute("aria-hidden", "true");
+  wm.textContent = Array(80).fill("SOTANO LEAGUE").join("   ");
   document.body.insertBefore(wm, document.body.firstChild);
 }
 
 async function loadData() {
   try {
-    const response = await fetch("/web/data/app-data.json", { cache: "no-store" });
+    // Sin cache: "no-store": nginx sirve app-data.json con Cache-Control:
+    // no-cache + ETag, así que el navegador revalida y solo lo vuelve a
+    // descargar si ha cambiado.
+    const response = await fetch("/web/data/app-data.json");
     if (!response.ok) throw new Error(`app-data.json respondió ${response.status}`);
     return await response.json();
   } catch (error) {
-    // Antes esto fallaba en silencio total: cualquier error (JSON corrupto,
-    // 500, CORS...) caía al mismo fallback sin dejar rastro de por qué
-    // (hallazgo WEB-09). Como mínimo lo dejamos en consola, y state.usingFallback
-    // hace que render() muestre un aviso discreto en vez de fingir que todo va bien.
     console.warn("No se pudieron cargar los datos de la liga, usando fallback:", error);
     state.usingFallback = true;
     return fallbackData;
   }
 }
 
+// La temporada en curso es la última de `seasons` (vienen en orden
+// ascendente); activeSeason es la que estaba en config.yaml al generar.
+function currentSeason() {
+  const seasons = state.data.seasons || [];
+  return seasons.includes(state.data.activeSeason)
+    ? state.data.activeSeason
+    : seasons[seasons.length - 1] || null;
+}
+
 function bindEvents() {
   navItems.forEach((item) => {
-    item.addEventListener("click", () => {
-      state.view = item.dataset.view;
-      render();
-    });
+    item.addEventListener("click", () => setView(item.dataset.view));
   });
+  window.addEventListener("hashchange", () => {
+    const view = location.hash.slice(1);
+    if (VIEWS[view] && view !== state.view) setView(view);
+  });
+}
 
+function setView(view) {
+  state.view = view;
+  if (location.hash.slice(1) !== view) history.replaceState(null, "", `#${view}`);
+  render();
+  window.scrollTo({ top: 0 });
+}
+
+// Las imágenes indican su respaldo con data-fallback en vez de onerror="..."
+// inline, para que la CSP pueda prohibir scripts inline.
+//   data-fallback="hide"  → ocultar la imagen
+//   data-fallback="next"  → ocultarla y mostrar el elemento siguiente
+//   data-fallback="/ruta" → cambiar a esa imagen (una sola vez)
+function installImageFallbacks() {
+  document.addEventListener("error", (event) => {
+    const img = event.target;
+    if (!(img instanceof HTMLImageElement) || !img.dataset.fallback) return;
+    const fallback = img.dataset.fallback;
+    delete img.dataset.fallback;
+    if (fallback === "hide") {
+      img.style.display = "none";
+    } else if (fallback === "next") {
+      img.style.display = "none";
+      if (img.nextElementSibling) img.nextElementSibling.style.display = "";
+    } else {
+      img.src = fallback;
+    }
+  }, true);
+}
+
+// Tras repintar con innerHTML el foco se perdía (quien navega con teclado
+// volvía al principio de la página). Devolvemos el foco al control que
+// tenga la misma clave data-focus.
+function rerender(renderFn, focusKey) {
+  renderFn();
+  if (!focusKey) return;
+  const target = app.querySelector(`[data-focus="${CSS.escape(focusKey)}"]`);
+  target?.focus({ preventScroll: true });
 }
 
 function render() {
   navItems.forEach((item) => {
     const active = item.dataset.view === state.view;
     item.classList.toggle("active", active);
-    item.setAttribute("aria-selected", String(active));
+    if (active) item.setAttribute("aria-current", "page");
+    else item.removeAttribute("aria-current");
   });
-  const titles = { home: "Dashboard", stats: "Estadísticas", news: "Noticias" };
-  pageTitle.textContent = titles[state.view];
+  pageTitle.textContent = VIEWS[state.view];
+  document.title = `${VIEWS[state.view]} · Sotano League`;
 
   if (state.view === "home") renderHome();
   if (state.view === "stats") renderStats();
   if (state.view === "news") renderNews();
-
-  renderFallbackBanner();
 }
 
-function renderFallbackBanner() {
-  document.querySelector(".fallback-banner")?.remove();
-  if (!state.usingFallback) return;
-
-  const banner = document.createElement("div");
-  banner.className = "fallback-banner";
-  banner.setAttribute("role", "status");
-  banner.textContent = "No se pudieron cargar los datos de la liga — mostrando datos de respaldo.";
-  banner.style.cssText = "margin-bottom:16px;padding:10px 14px;border-radius:8px;background:rgba(255,183,126,0.12);border:1px solid rgba(255,183,126,0.3);color:var(--muted);font-size:13px";
-  app.insertBefore(banner, app.firstChild);
+function renderFreshness() {
+  if (!freshnessPill) return;
+  const generated = state.data.generatedAt ? new Date(state.data.generatedAt) : null;
+  if (!generated || Number.isNaN(generated.getTime())) {
+    freshnessPill.hidden = true;
+    return;
+  }
+  const ageDays = (Date.now() - generated.getTime()) / 86_400_000;
+  const label = generated.toLocaleDateString("es-ES", { day: "numeric", month: "short" });
+  const stale = ageDays > STALE_AFTER_DAYS;
+  freshnessPill.classList.toggle("stale", stale);
+  freshnessPill.querySelector(".freshness-text").textContent = stale ? `Datos del ${label}` : `Actualizado ${label}`;
+  freshnessPill.title = `Datos generados el ${generated.toLocaleString("es-ES")}`;
 }
+
+function fallbackBanner() {
+  if (!state.usingFallback) return "";
+  return `<div class="fallback-banner" role="status">No se pudieron cargar los datos de la liga — mostrando datos de respaldo.</div>`;
+}
+
+function seasonSelect(id) {
+  const seasons = state.data.seasons || [];
+  if (seasons.length < 2) return "";
+  return `
+    <select class="select select-compact" id="${id}" aria-label="Temporada">
+      ${seasons.map(season => `
+        <option value="${escapeHtml(season)}" ${season === state.selectedSeason ? "selected" : ""}>Temporada ${escapeHtml(season)}</option>
+      `).join("")}
+    </select>
+  `;
+}
+
+// Título de sección con el contexto (temporada) debajo, como subtítulo.
+function sectionHeading(context, title) {
+  return `
+    <div class="section-heading">
+      <h2>${escapeHtml(title)}</h2>
+      <p class="muted small">${escapeHtml(context)}</p>
+    </div>
+  `;
+}
+
+// ── Home ─────────────────────────────────────────────────────────────────────
 
 function renderHome() {
   const { league } = state.data;
-  const standings = (state.standingsTab === "pool" ? league.poolStandings : league.standings) || [];
-  const tableTitle = state.standingsTab === "pool" ? "Clasificación de la porra" : "Clasificación de la liga";
-  const pointsLabel = state.standingsTab === "pool" ? "Aciertos" : "Puntos";
-  const headline = league.latestHeadline || {};
+  const isPool = state.standingsTab === "pool";
+  const standings = (isPool ? league.poolStandings : league.standings) || [];
+  const roundLabel = league.lastRound ? `J${league.lastRound}` : "Última jornada";
+  const seasonLabel = league.season ? `Temporada ${league.season}` : league.name;
+  const manager = league.managerOfMonth || {};
+  const player = league.playerOfMonth || {};
+  const headline = normalizeCard(league.latestHeadline);
+  // El periódico puede ir por detrás de la clasificación: indicamos de qué
+  // jornada es el titular para que no parezca de la última.
+  const latestIssue = ((state.data.newsBySeason || {})[currentSeason()] || state.data.news || [])
+    .reduce((max, issue) => Math.max(max, roundNumber(issue.date)), 0);
+  const topClauses = league.topClauses || [];
+  const topTransfers = league.topTransfers || [];
 
   app.innerHTML = `
+  ${fallbackBanner()}
   <div class="grid home-grid">
 
-    <!-- TABLA -->
     <section class="card standings-card">
       <div class="card-header">
         <div>
-          <p class="eyebrow">${league.name}</p>
-          <h2>${tableTitle}</h2>
+          <h2>${isPool ? "Clasificación de la porra" : "Clasificación de la liga"}</h2>
+          <p class="card-sub">${escapeHtml(seasonLabel)}${league.lastRound ? ` · tras la J${league.lastRound}` : ""}</p>
         </div>
 
-        <div class="segmented" role="tablist" aria-label="Tipo de clasificación">
-          <button class="${state.standingsTab === "league" ? "active" : ""}" data-standings-tab="league" role="tab" aria-selected="${state.standingsTab === "league"}">Liga</button>
-          <button class="${state.standingsTab === "pool" ? "active" : ""}" data-standings-tab="pool" role="tab" aria-selected="${state.standingsTab === "pool"}">Porra</button>
+        <div class="segmented" role="group" aria-label="Tipo de clasificación">
+          <button type="button" class="${!isPool ? "active" : ""}" data-standings-tab="league" data-focus="tab-league" aria-pressed="${!isPool}">Liga</button>
+          <button type="button" class="${isPool ? "active" : ""}" data-standings-tab="pool" data-focus="tab-pool" aria-pressed="${isPool}">Porra</button>
         </div>
       </div>
 
-      ${renderStandingsTable(standings, pointsLabel)}
+      ${renderStandingsTable(standings, isPool ? "Aciertos" : "Puntos")}
     </section>
 
-    <!-- COLUMNA DERECHA -->
     <div class="side-column">
 
-      <!-- Manager del mes -->
       <aside class="card pad spotlight">
-        <p class="label">Manager del mes</p>
+        <div class="label-row">
+          <p class="label">Manager de la jornada</p>
+          <span class="chip">${escapeHtml(roundLabel)}</span>
+        </div>
         <div class="spotlight-person">
           <div class="portrait">
-            ${managerAvatar(league.managerOfMonth.name, 90)}
+            ${managerAvatar(manager.name, 90)}
           </div>
           <div>
-            <h2>${escapeHtml(league.managerOfMonth.name)}</h2>
-            <p class="muted">${escapeHtml(league.managerOfMonth.subtitle || "Forma destacada")}</p>
+            <h2>${escapeHtml(manager.name || "—")}</h2>
+            <p class="muted">${escapeHtml(manager.subtitle || "Forma destacada")}</p>
           </div>
         </div>
-        <p>${escapeHtml(league.managerOfMonth.description || "")}</p>
+        <p>${escapeHtml(manager.description || "")}</p>
       </aside>
 
-      <!-- Jugador del mes -->
       <article class="card pad metric success">
-        <p class="label">Jugador del mes</p>
-        <div style="display:flex;align-items:center;gap:10px;margin-top:12px">
-          ${playerAvatar(league.playerOfMonth.name, 52)}
-          <div class="value" style="margin:0">${escapeHtml(league.playerOfMonth.name)}</div>
+        <div class="label-row">
+          <p class="label">Jugador de la jornada</p>
+          <span class="chip">${escapeHtml(roundLabel)}</span>
         </div>
-        <p class="muted" style="margin-top:6px">${escapeHtml(league.playerOfMonth.description || "")}</p>
+        <div class="person-row">
+          ${playerAvatar(player.name, 52)}
+          <div>
+            <div class="value">${escapeHtml(player.name || "—")}</div>
+            ${player.team || player.manager ? `<p class="muted small">${escapeHtml([player.team, player.manager].filter(Boolean).join(" · "))}</p>` : ""}
+          </div>
+        </div>
+        <p class="muted small">${escapeHtml(player.description || "")}</p>
       </article>
 
-      <!-- Drama de liga -->
       <section class="card hero-card">
-        <span class="chip">Drama de liga</span>
-        <h2>${escapeHtml(headline.titulo || "La liga calienta motores")}</h2>
-        <p>${escapeHtml([headline.subtitulo, ...(headline.texto || [])].filter(Boolean).join(" "))}</p>
+        <h2>${escapeHtml(headline.title || "La liga calienta motores")}</h2>
+        <p>${escapeHtml([headline.subtitle, ...headline.text].filter(Boolean).join(" "))}</p>
+        <span class="chip">Drama de liga${latestIssue ? ` · J${latestIssue}` : ""}</span>
       </section>
 
     </div>
 
   </div>
 
-  <!-- KPIs generales -->
-  <div style="margin-top:28px;margin-bottom:12px">
-    <p class="eyebrow">Sotano League</p>
-    <h2 style="margin:4px 0 0;font-size:20px">KPIs de la liga</h2>
-  </div>
+  ${sectionHeading(seasonLabel, "KPIs de la liga")}
 
   <div class="grid metric-grid">
-
-    <article class="card pad metric warning">
-      <p class="label">💸 Jugador más caro</p>
-      <div style="display:flex;align-items:center;gap:10px;margin-top:12px">
-        ${playerAvatar(league.mostExpensiveBuy?.player ?? "", 48)}
-        <div class="value" style="margin:0">${escapeHtml(league.mostExpensiveBuy?.player ?? "—")}</div>
-      </div>
-      <p class="muted" style="margin-top:6px">${escapeHtml(league.mostExpensiveBuy?.manager ?? "")}${league.mostExpensiveBuy?.amount ? " · " + league.mostExpensiveBuy.amount + " M" : ""}</p>
-    </article>
-
-    <article class="card pad metric warning">
-      <p class="label">⚡ Clausulazo más caro</p>
-      <div style="display:flex;align-items:center;gap:10px;margin-top:12px">
-        ${playerAvatar(league.mostExpensiveClause?.player ?? "", 48)}
-        <div class="value" style="margin:0">${escapeHtml(league.mostExpensiveClause?.player ?? "—")}</div>
-      </div>
-      <p class="muted" style="margin-top:6px">${escapeHtml(league.mostExpensiveClause?.manager ?? "")}${league.mostExpensiveClause?.amount ? " · " + league.mostExpensiveClause.amount + " M" : ""}</p>
-    </article>
-
-    <article class="card pad metric success">
-      <p class="label">🏹 Más clausulazos realizados</p>
-      <div style="display:flex;align-items:center;gap:10px;margin-top:12px">
-        ${managerAvatar(league.mostClausesGiven?.manager ?? "", 48)}
-        <div class="value" style="margin:0">${escapeHtml(league.mostClausesGiven?.manager ?? "—")}</div>
-      </div>
-      <p class="muted" style="margin-top:6px">${league.mostClausesGiven?.count ? league.mostClausesGiven.count + " clausulazos" : "Sin datos"}</p>
-    </article>
-
-    <article class="card pad metric">
-      <p class="label">🛡️ Más clausulazos recibidos</p>
-      <div style="display:flex;align-items:center;gap:10px;margin-top:12px">
-        ${managerAvatar(league.mostClausesReceived?.manager ?? "", 48)}
-        <div class="value" style="margin:0">${escapeHtml(league.mostClausesReceived?.manager ?? "—")}</div>
-      </div>
-      <p class="muted" style="margin-top:6px">${league.mostClausesReceived?.count ? league.mostClausesReceived.count + " recibidos" : "Sin datos"}</p>
-    </article>
-
+    ${kpiCard("💸 Fichaje más caro", playerAvatar(league.mostExpensiveBuy?.player, 48), league.mostExpensiveBuy?.player,
+      [league.mostExpensiveBuy?.manager, formatMoney(league.mostExpensiveBuy?.amount)].filter(Boolean).join(" · "), "warning")}
+    ${kpiCard("⚡ Clausulazo más caro", playerAvatar(league.mostExpensiveClause?.player, 48), league.mostExpensiveClause?.player,
+      [league.mostExpensiveClause?.manager, formatMoney(league.mostExpensiveClause?.amount)].filter(Boolean).join(" · "), "warning")}
+    ${kpiCard("🏹 Más clausulazos realizados", managerAvatar(league.mostClausesReceived?.manager, 48), league.mostClausesReceived?.manager,
+      league.mostClausesReceived?.count ? `${league.mostClausesReceived.count} clausulazos` : "Sin datos", "success")}
+    ${kpiCard("🛡️ Más clausulazos sufridos", managerAvatar(league.mostClausesGiven?.manager, 48), league.mostClausesGiven?.manager,
+      league.mostClausesGiven?.count ? `${league.mostClausesGiven.count} sufridos` : "Sin datos", "")}
   </div>
 
-  <!-- Top 3 del mes -->
-  <div style="margin-top:28px;margin-bottom:12px">
-    <p class="eyebrow">Sotano League · ${new Date().toLocaleString('es-ES', { month: 'long', year: 'numeric' })}</p>
-    <h2 style="margin:4px 0 0;font-size:20px">Movimientos del mes</h2>
-  </div>
+  ${sectionHeading(seasonLabel, "Movimientos de la temporada")}
 
-  <div class="grid" style="grid-template-columns:1fr 1fr;gap:16px">
+  <div class="grid two-col">
 
-    <!-- Top 3 clausulazos -->
     <section class="card">
       <div class="card-header">
-        <h3>⚡ Top 3 clausulazos más caros</h3>
+        <h3>⚡ Top ${topClauses.length || 5} clausulazos más caros</h3>
       </div>
       <div class="table">
-        <div class="table-row table-head" style="grid-template-columns:1fr 1fr 1fr 80px">
-          <span>Jugador</span><span>De</span><span>A</span><span>€</span>
+        <div class="table-row table-head cols-clauses">
+          <span>Jugador</span><span>De</span><span>A</span><span>Importe</span>
         </div>
-        ${(league.topClauses ?? []).length ? (league.topClauses).map(row => `
-          <div class="table-row" style="grid-template-columns:1fr 1fr 1fr 80px">
-            <div style="display:flex;align-items:center;gap:8px">
-              ${playerAvatar(row.player ?? "", 38)}
-              <strong>${escapeHtml(row.player ?? "—")}</strong>
+        ${topClauses.map(row => `
+          <div class="table-row cols-clauses">
+            <div class="team-cell">
+              ${playerAvatar(row.player, 32)}
+              <strong>${escapeHtml(row.player || "—")}</strong>
             </div>
-            <span class="muted">${escapeHtml(row.from ?? "—")}</span>
-            <span>${escapeHtml(row.to ?? "—")}</span>
-            <span class="data">${row.amount ? row.amount + "M" : "—"}</span>
+            <span class="muted">${escapeHtml(row.from || "—")}</span>
+            <span>${escapeHtml(row.to || "—")}</span>
+            <span class="data">${escapeHtml(formatMoney(row.amount) || "—")}</span>
           </div>
-        `).join("") : `
-          <div class="table-row"><span></span><span class="muted">Sin datos disponibles</span><span></span><span></span></div>
-        `}
+        `).join("") || emptyRow("Sin clausulazos esta temporada", "cols-clauses")}
       </div>
     </section>
 
-    <!-- Top 3 fichajes de mercado -->
     <section class="card">
       <div class="card-header">
-        <h3>💸 Top 3 fichajes de mercado</h3>
+        <h3>💸 Top ${topTransfers.length || 5} fichajes de mercado</h3>
       </div>
       <div class="table">
-        <div class="table-row table-head" style="grid-template-columns:1fr 1fr 80px">
-          <span>Jugador</span><span>Manager</span><span>€</span>
+        <div class="table-row table-head cols-transfers">
+          <span>Jugador</span><span>Manager</span><span>Importe</span>
         </div>
-        ${(league.topTransfers ?? []).length ? (league.topTransfers).map(row => `
-          <div class="table-row" style="grid-template-columns:1fr 1fr 80px">
-            <div style="display:flex;align-items:center;gap:8px">
-              ${playerAvatar(row.player ?? "", 38)}
-              <strong>${escapeHtml(row.player ?? "—")}</strong>
+        ${topTransfers.map(row => `
+          <div class="table-row cols-transfers">
+            <div class="team-cell">
+              ${playerAvatar(row.player, 38)}
+              <strong>${escapeHtml(row.player || "—")}</strong>
             </div>
-            <span class="muted">${escapeHtml(row.manager ?? "—")}</span>
-            <span class="data">${row.amount ? row.amount + "M" : "—"}</span>
+            <span class="muted">${escapeHtml(row.manager || "—")}</span>
+            <span class="data">${escapeHtml(formatMoney(row.amount) || "—")}</span>
           </div>
-        `).join("") : `
-          <div class="table-row"><span></span><span class="muted">Sin datos disponibles</span><span></span></div>
-        `}
+        `).join("") || emptyRow("Sin fichajes esta temporada", "cols-transfers")}
       </div>
     </section>
 
   </div>
 `;
 
-  document.querySelectorAll("[data-standings-tab]").forEach(button => {
+  app.querySelectorAll("[data-standings-tab]").forEach(button => {
     button.addEventListener("click", () => {
       state.standingsTab = button.dataset.standingsTab;
-      renderHome();
+      rerender(renderHome, button.dataset.focus);
     });
   });
 }
 
+function kpiCard(label, avatarHtml, value, meta, tone) {
+  return `
+    <article class="card pad metric ${tone}">
+      <p class="label">${escapeHtml(label)}</p>
+      <div class="person-row">
+        ${avatarHtml}
+        <div class="value">${escapeHtml(value || "—")}</div>
+      </div>
+      <p class="muted small">${escapeHtml(meta || "")}</p>
+    </article>
+  `;
+}
+
+// ── Estadísticas ─────────────────────────────────────────────────────────────
+
 function renderStats() {
   const seasons = state.data.seasons || [];
   if (!state.selectedSeason || !seasons.includes(state.selectedSeason)) {
-    state.selectedSeason = state.data.activeSeason || seasons[0] || null;
+    state.selectedSeason = currentSeason();
   }
   const managers = (state.data.managersBySeason || {})[state.selectedSeason] || state.data.managers || [];
-  const selected = managers.find(manager => manager.name === state.selectedManager) || managers[0];
+  const leader = managers.reduce((best, m) => (best && (best.position ?? 99) <= (m.position ?? 99) ? best : m), null);
+  const selected = managers.find(manager => manager.name === state.selectedManager) || leader;
   if (!selected) {
-    app.innerHTML = `<div class="card pad"><h2>No hay datos de managers todavía</h2></div>`;
+    app.innerHTML = `${fallbackBanner()}<div class="card pad"><h2>No hay datos de managers todavía</h2></div>`;
     return;
   }
   state.selectedManager = selected.name;
 
+  // seasonForm va indexado por jornada (posición i = jornada i+1) y trae
+  // null en las jornadas que faltan en la BD.
   const form = selected.seasonForm || selected.form || [];
-  const lastPoints = form.length ? form[form.length - 1] : null;
-  const prevPoints = form.length > 1 ? form[form.length - 2] : null;
+  const played = form.map((value, index) => ({ value, round: index + 1 })).filter(p => p.value !== null && p.value !== undefined);
+  const last = played[played.length - 1] || null;
+  const prev = played[played.length - 2] || null;
   let formDeltaBadge = "";
-  if (lastPoints !== null && prevPoints) {
-    const deltaPct = Math.round(((lastPoints - prevPoints) / prevPoints) * 100);
+  if (last && prev && prev.value > 0) {
+    const deltaPct = Math.round(((last.value - prev.value) / prev.value) * 100);
     const sign = deltaPct >= 0 ? "+" : "";
-    formDeltaBadge = `<span class="delta-badge ${deltaPct >= 0 ? "positive" : "negative"}">${sign}${deltaPct}%</span>`;
+    formDeltaBadge = `<span class="delta-badge ${deltaPct >= 0 ? "positive" : "negative"}" title="Variación respecto a la J${prev.round} (${prev.value} pts)">${sign}${deltaPct}% vs J${prev.round}</span>`;
   }
-  const marketTotal = (selected.market?.mercado ?? 0) + (selected.market?.clausulas ?? 0) + (selected.market?.acuerdos ?? 0);
-  const TOTAL_JORNADAS = 38;
-  const recentForm = form.slice(0, TOTAL_JORNADAS);
-  for (let i = recentForm.length; i < TOTAL_JORNADAS; i++) recentForm.push(null);
-  const maxFormValue = Math.max(1, ...recentForm.filter(value => value !== null));
+  const chartForm = form.slice(0, TOTAL_JORNADAS);
+  while (chartForm.length < TOTAL_JORNADAS) chartForm.push(undefined);
+  const maxFormValue = Math.max(1, ...played.map(p => p.value));
+
+  const market = selected.market || {};
+  const marketTotal = (market.mercado ?? 0) + (market.clausulas ?? 0) + (market.acuerdos ?? 0);
+  // Escala relativa al máximo de la temporada (antes era un 30 fijo y quien
+  // pasaba de 30 compras salía con la barra llena igual que quien tenía 30).
+  const marketMax = Math.max(1, ...managers.flatMap(m => [m.market?.mercado ?? 0, m.market?.clausulas ?? 0, m.market?.acuerdos ?? 0]));
 
   app.innerHTML = `
+    ${fallbackBanner()}
     <div class="stats-fade">
-    <div class="manager-picker" role="tablist" aria-label="Seleccionar manager">
+    <div class="manager-picker" role="group" aria-label="Seleccionar manager">
       ${managers.map(manager => `
         <button
+          type="button"
           class="manager-picker-item ${manager.name === selected.name ? "active" : ""}"
-          data-manager="${escapeAttr(manager.name)}"
-          role="tab"
-          aria-selected="${manager.name === selected.name}"
-          title="${escapeAttr(manager.name)}"
+          data-manager="${escapeHtml(manager.name)}"
+          data-focus="manager-${escapeHtml(manager.name)}"
+          aria-pressed="${manager.name === selected.name}"
+          title="${escapeHtml(manager.name)}"
         >
-          <span class="avatar-ring">${managerAvatar(manager.name, 52)}</span>
+          <span class="avatar-ring">${managerAvatar(manager.name, 52, true)}</span>
           <span class="picker-name">${escapeHtml(manager.name)}</span>
         </button>
       `).join("")}
     </div>
 
     <div class="toolbar">
-      <div style="display:flex;align-items:center;gap:16px">
+      <div class="person-row">
         ${managerAvatar(selected.name, 72)}
         <div>
-          <p class="eyebrow">Análisis por manager</p>
-          <h2 style="margin:4px 0 0">${escapeHtml(selected.name)}</h2>
+          <h2 class="flush">${escapeHtml(selected.name)}</h2>
+          <p class="muted small">${selected.position ? `#${escapeHtml(selected.position)} · ` : ""}${escapeHtml(selected.totalPoints ?? 0)} pts · Temporada ${escapeHtml(state.selectedSeason ?? "")}</p>
         </div>
       </div>
-      ${seasons.length > 1 ? `
-        <select class="select" id="season-select" style="min-width:120px" aria-label="Temporada">
-          ${seasons.map(season => `
-            <option value="${escapeAttr(season)}" ${season === state.selectedSeason ? "selected" : ""}>${escapeHtml(season)}</option>
-          `).join("")}
-        </select>
-      ` : ""}
+      ${seasonSelect("season-select")}
     </div>
 
-    <div class="grid" style="grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px">
+    <div class="grid two-col">
 
-      <!-- Card rendimiento -->
       <article class="card pad metric">
         <p class="label">Rendimiento de la temporada</p>
-        <div style="display:flex;gap:24px;margin-top:16px;flex-wrap:wrap">
-          <div>
-            <p class="muted" style="margin:0;font-size:13px">Posición</p>
-            <div class="value" style="color:var(--green)">#${escapeHtml(String(selected.position ?? "—"))}</div>
-          </div>
-          <div>
-            <p class="muted" style="margin:0;font-size:13px">Puntos totales</p>
-            <div class="value">${escapeHtml(String(selected.totalPoints ?? "—"))}</div>
-          </div>
-          <div>
-            <p class="muted" style="margin:0;font-size:13px">Media por jornada</p>
-            <div class="value">${escapeHtml(String(selected.average ?? "—"))}</div>
-          </div>
-          <div>
-            <p class="muted" style="margin:0;font-size:13px">Desviación típica</p>
-            <div class="value">${escapeHtml(String(selected.stdDev ?? "—"))}</div>
-          </div>
-          <div style="width:100%;height:1px;background:var(--border-soft);margin:4px 0"></div>
-          <div>
-            <p class="muted" style="margin:0;font-size:13px">⚽ Goles</p>
-            <div class="value" style="font-size:20px">${escapeHtml(String(selected.goals ?? "—"))}</div>
-          </div>
-          <div>
-            <p class="muted" style="margin:0;font-size:13px">🎯 Asistencias</p>
-            <div class="value" style="font-size:20px">${escapeHtml(String(selected.assists ?? "—"))}</div>
-          </div>
-          <div>
-            <p class="muted" style="margin:0;font-size:13px">🟥 Tarjetas rojas</p>
-            <div class="value" style="font-size:20px;color:var(--rose)">${escapeHtml(String(selected.redCards ?? "—"))}</div>
-          </div>
+        <div class="stat-list">
+          ${miniStat("Posición", `#${selected.position ?? "—"}`, "accent-green")}
+          ${miniStat("Puntos totales", selected.totalPoints)}
+          ${miniStat("Media por jornada", formatNumber(selected.average))}
+          ${miniStat("Desviación típica", formatNumber(selected.stdDev))}
+          <div class="stat-divider"></div>
+          ${miniStat("⚽ Goles", selected.goals, "small-value")}
+          ${miniStat("🎯 Asistencias", selected.assists, "small-value")}
+          ${miniStat("🟥 Tarjetas rojas", selected.redCards, "small-value accent-rose")}
         </div>
       </article>
 
-      <!-- Card jugadores clave -->
       <article class="card pad">
         <p class="label">Jugadores clave</p>
-        <div style="display:grid;gap:12px;margin-top:16px">
-
-          <div style="display:flex;justify-content:space-between;align-items:center;padding:10px 14px;border-radius:8px;background:rgba(78,222,163,0.08);border:1px solid rgba(78,222,163,0.18)">
-            <div style="display:flex;align-items:center;gap:10px">
-              ${playerAvatar(selected.bestPlayerHistoric?.name ?? "", 52)}
-              <div>
-                <p class="muted" style="margin:0;font-size:11px;text-transform:uppercase;letter-spacing:.06em">🏆 Mejor histórico</p>
-                <strong>${escapeHtml(selected.bestPlayerHistoric?.name ?? "—")}</strong>
-                <p class="muted" style="margin:2px 0 0;font-size:13px">${escapeHtml(selected.bestPlayerHistoric?.team ?? "")} · ${escapeHtml(selected.bestPlayerHistoric?.position ?? "")}</p>
-              </div>
-            </div>
-            <span style="color:var(--green);font-family:var(--mono);font-weight:700;font-size:18px">${selected.bestPlayerHistoric?.points ?? "—"} pts</span>
-          </div>
-
-          <div style="display:flex;justify-content:space-between;align-items:center;padding:10px 14px;border-radius:8px;background:rgba(255,183,126,0.08);border:1px solid rgba(255,183,126,0.18)">
-            <div style="display:flex;align-items:center;gap:10px">
-              ${playerAvatar(selected.bestPlayer?.name ?? "", 52)}
-              <div>
-                <p class="muted" style="margin:0;font-size:11px;text-transform:uppercase;letter-spacing:.06em">⭐ Mejor actual</p>
-                <strong>${escapeHtml(selected.bestPlayer?.name ?? "—")}</strong>
-                <p class="muted" style="margin:2px 0 0;font-size:13px">${escapeHtml(selected.bestPlayer?.team ?? "")} · ${escapeHtml(selected.bestPlayer?.position ?? "")}</p>
-              </div>
-            </div>
-            <span style="color:var(--primary);font-family:var(--mono);font-weight:700;font-size:18px">${selected.bestPlayer?.points ?? "—"} pts</span>
-          </div>
-
-          <div style="display:flex;justify-content:space-between;align-items:center;padding:10px 14px;border-radius:8px;background:rgba(255,77,117,0.08);border:1px solid rgba(255,77,117,0.18)">
-            <div style="display:flex;align-items:center;gap:10px">
-              ${playerAvatar(selected.worstPlayer?.name ?? "", 52)}
-              <div>
-                <p class="muted" style="margin:0;font-size:11px;text-transform:uppercase;letter-spacing:.06em">📉 Peor actual</p>
-                <strong>${escapeHtml(selected.worstPlayer?.name ?? "—")}</strong>
-                <p class="muted" style="margin:2px 0 0;font-size:13px">${escapeHtml(selected.worstPlayer?.team ?? "")} · ${escapeHtml(selected.worstPlayer?.position ?? "")}</p>
-              </div>
-            </div>
-            <span style="color:var(--rose);font-family:var(--mono);font-weight:700;font-size:18px">${selected.worstPlayer?.points ?? "—"} pts</span>
-          </div>
-
+        <div class="key-players">
+          ${keyPlayer("🏆 Mejor de la temporada", selected.bestPlayerHistoric, "good")}
+          ${keyPlayer("📉 Peor de la temporada", selected.worstPlayer, "bad")}
         </div>
       </article>
 
     </div>
 
-    <div class="grid stats-grid" style="margin-top:16px">
+    <div class="grid stats-grid">
       <section class="card pad span-7">
         <div class="chart-stat-header">
           <div>
-            <p class="label" style="margin:0">Rendimiento histórico</p>
+            <p class="label flush">${last ? `Puntos en la J${last.round}` : "Rendimiento por jornada"}</p>
             <div class="chart-stat-value">
-              <div class="value" style="margin:0">${lastPoints ?? "—"}</div>
+              <div class="value flush">${escapeHtml(last?.value ?? "—")}</div>
               ${formDeltaBadge}
             </div>
           </div>
-          <span class="period-chip">${form.length}/${TOTAL_JORNADAS} jornadas</span>
+          <span class="period-chip">${played.length}/${TOTAL_JORNADAS} jornadas</span>
         </div>
-        <div class="chart">
-          ${recentForm.map((value, index) => value === null ? `
-            <div class="chart-col">
-              <div class="chart-track" title="Jornada ${index + 1}: sin jugar"></div>
-            </div>
-          ` : `
-            <div class="chart-col">
-              <div class="chart-track">
-                <span class="chart-bar" style="height:${Math.max(6, Math.round((value / maxFormValue) * 100))}%" title="Jornada ${index + 1}: ${value} pts"></span>
-              </div>
-            </div>
-          `).join("")}
+        <div class="chart" role="img" aria-label="Puntos por jornada de ${escapeHtml(selected.name)}: ${escapeHtml(played.map(p => `J${p.round} ${p.value}`).join(", "))}">
+          ${chartForm.map((value, index) => {
+            const round = index + 1;
+            if (value === undefined) return `<div class="chart-col"><div class="chart-track" title="Jornada ${round}: sin jugar"></div></div>`;
+            if (value === null) return `<div class="chart-col"><div class="chart-track missing" title="Jornada ${round}: sin datos"></div></div>`;
+            return `
+              <div class="chart-col">
+                <div class="chart-track" title="Jornada ${round}: ${value} pts">
+                  <span class="chart-bar" style="height:${Math.max(6, Math.round((Math.max(0, value) / maxFormValue) * 100))}%"></span>
+                </div>
+              </div>`;
+          }).join("")}
         </div>
       </section>
 
       <section class="card pad span-5">
         <div class="chart-stat-header">
           <div>
-            <p class="label" style="margin:0">Mercado</p>
+            <p class="label flush">Mercado</p>
             <div class="chart-stat-value">
-              <div class="value" style="margin:0">${marketTotal}</div>
-              <span class="muted" style="font-size:12px">compras totales</span>
+              <div class="value flush">${marketTotal}</div>
+              <span class="muted small">compras totales</span>
             </div>
           </div>
           <span class="period-chip">Temporada</span>
         </div>
-        <div class="bars" style="margin-top:18px">
-          ${absoluteBarRow("Mercado libre", selected.market?.mercado ?? 0)}
-          ${absoluteBarRow("Cláusulas", selected.market?.clausulas ?? 0)}
-          ${absoluteBarRow("Acuerdos", selected.market?.acuerdos ?? 0)}
+        <div class="bars">
+          ${absoluteBarRow("Mercado libre", market.mercado ?? 0, marketMax)}
+          ${absoluteBarRow("Cláusulas", market.clausulas ?? 0, marketMax)}
+          ${absoluteBarRow("Acuerdos", market.acuerdos ?? 0, marketMax)}
         </div>
+        ${selected.marketSpend ? `<p class="muted small market-spend">Gasto total: <strong>${escapeHtml(formatMoney(selected.marketSpend))}</strong></p>` : ""}
       </section>
 
     </div>
     </div>
   `;
 
-  document.querySelectorAll(".manager-picker-item").forEach(button => {
+  app.querySelectorAll(".manager-picker-item").forEach(button => {
     button.addEventListener("click", () => {
       state.selectedManager = button.dataset.manager;
-      renderStats();
+      rerender(renderStats, button.dataset.focus);
     });
   });
 
-  document.querySelector("#season-select")?.addEventListener("change", (event) => {
+  app.querySelector("#season-select")?.addEventListener("change", (event) => {
     state.selectedSeason = event.target.value;
-    state.selectedManager = null; // se resuelve al primer manager disponible de la nueva temporada
-    renderStats();
+    rerender(renderStats, null);
+    app.querySelector("#season-select")?.focus({ preventScroll: true });
   });
 }
+
+function miniStat(label, value, extraClass = "") {
+  return `
+    <div class="mini-stat ${extraClass}">
+      <p class="muted">${escapeHtml(label)}</p>
+      <div class="value">${escapeHtml(value ?? "—")}</div>
+    </div>
+  `;
+}
+
+function keyPlayer(label, player, tone) {
+  const meta = [player?.team, player?.position].filter(Boolean).join(" · ");
+  return `
+    <div class="key-player ${tone}">
+      <div class="person-row">
+        ${playerAvatar(player?.name, 52)}
+        <div>
+          <p class="key-player-label">${escapeHtml(label)}</p>
+          <strong>${escapeHtml(player?.name || "—")}</strong>
+          ${meta ? `<p class="muted small">${escapeHtml(meta)}</p>` : ""}
+        </div>
+      </div>
+      <span class="key-player-points">${escapeHtml(player?.points ?? "—")} pts</span>
+    </div>
+  `;
+}
+
+function absoluteBarRow(label, value, max) {
+  const pct = Math.min(100, Math.round((value / max) * 100));
+  return `
+    <div class="bar-row">
+      <div class="bar-meta"><span>${escapeHtml(label)}</span><strong>${value} ${value === 1 ? "compra" : "compras"}</strong></div>
+      <div class="bar"><span style="width:${pct}%"></span></div>
+    </div>
+  `;
+}
+
+// ── Noticias ─────────────────────────────────────────────────────────────────
+
+const CARD_TYPE_LABELS = {
+  clasificacion: "Clasificación",
+  rumor: "Rumor",
+  fichaje: "Fichaje",
+  jornada: "Jornada",
+  noticia: "Noticia",
+};
 
 function renderNews() {
   const seasons = state.data.seasons || [];
   if (!state.selectedSeason || !seasons.includes(state.selectedSeason)) {
-    state.selectedSeason = state.data.activeSeason || seasons[0] || null;
+    state.selectedSeason = currentSeason();
   }
   const issuesSource = (state.data.newsBySeason || {})[state.selectedSeason] || state.data.news || [];
-  // Timeline en orden ascendente por numero de jornada (J1 -> J38), no el
-  // orden "mas reciente primero" que usa el backend para otras cosas.
-  const issues = [...issuesSource].sort((a, b) => {
-    const na = parseInt(String(a.date).match(/\d+/)?.[0] ?? 0, 10);
-    const nb = parseInt(String(b.date).match(/\d+/)?.[0] ?? 0, 10);
-    return na - nb;
-  });
-  const selected = issues[state.selectedIssue] || issues[0];
-
-  const seasonSelectHtml = seasons.length > 1 ? `
-    <select class="select" id="news-season-select" style="min-width:120px" aria-label="Temporada">
-      ${seasons.map(season => `
-        <option value="${escapeAttr(season)}" ${season === state.selectedSeason ? "selected" : ""}>${escapeHtml(season)}</option>
-      `).join("")}
-    </select>
-  ` : "";
+  // Timeline en orden ascendente (J1 → J38); por defecto se abre la última.
+  const issues = [...issuesSource].sort((a, b) => roundNumber(a.date) - roundNumber(b.date));
+  const selected = issues.find(issue => issue.date === state.selectedIssueDate) || issues[issues.length - 1];
 
   if (!selected) {
     app.innerHTML = `
+      ${fallbackBanner()}
       <div class="toolbar">
-        <h2 style="margin:0">Noticias</h2>
-        ${seasonSelectHtml}
+        <h2 class="flush">Noticias</h2>
+        ${seasonSelect("news-season-select")}
       </div>
-      <div class="card pad"><h2>No hay noticias generadas todavía para ${escapeHtml(state.selectedSeason ?? "esta temporada")}</h2><p class="muted">Cuando exista news_cards.json aparecerán aquí.</p></div>
+      <div class="card pad"><h2>No hay noticias generadas todavía para ${escapeHtml(state.selectedSeason ?? "esta temporada")}</h2><p class="muted">Aparecerán aquí cuando se genere el periódico de la jornada.</p></div>
     `;
-    document.querySelector("#news-season-select")?.addEventListener("change", (event) => {
-      state.selectedSeason = event.target.value;
-      state.selectedIssue = 0;
-      renderNews();
-    });
+    bindNewsSeasonSelect();
     return;
   }
+  state.selectedIssueDate = selected.date;
+  const defaultCover = state.data.defaultCover || "";
 
   app.innerHTML = `
-    <div class="grid" style="gap:16px">
+    ${fallbackBanner()}
+    <div class="grid">
       <div class="card pad">
-        <div class="toolbar" style="margin-bottom:0">
+        <div class="toolbar flush-bottom">
           <div>
-            <p class="label">Timeline</p>
-            <h2 style="margin:2px 0 0">Jornadas</h2>
+            <h2 class="flush">Jornadas</h2>
+            <p class="card-sub">${issues.length} ${issues.length === 1 ? "edición" : "ediciones"} del periódico</p>
           </div>
-          ${seasonSelectHtml}
+          ${seasonSelect("news-season-select")}
         </div>
-        <div class="jornada-carousel" role="tablist" aria-label="Ediciones del periódico">
-          ${issues.map((issue, index) => `
+        <div class="jornada-carousel" role="group" aria-label="Ediciones del periódico">
+          ${issues.map(issue => `
             <button
-              class="jornada-card ${issue.date === selected.date ? "active" : ""}"
-              data-issue="${index}"
-              role="tab"
-              aria-selected="${issue.date === selected.date}"
-              title="${escapeAttr(issue.title)}"
+              type="button"
+              class="jornada-card ${issue === selected ? "active" : ""}"
+              data-issue="${escapeHtml(issue.date)}"
+              data-focus="issue-${escapeHtml(issue.date)}"
+              aria-pressed="${issue === selected}"
+              aria-label="Jornada ${escapeHtml(roundNumber(issue.date))}: ${escapeHtml(issue.title)}"
+              title="${escapeHtml(issue.title)}"
             >
               <img
                 class="jornada-cover"
-                src="${jornadaPortadaUrl(state.selectedSeason, issue.date)}"
+                src="${escapeHtml(issue.cover || defaultCover)}"
+                ${defaultCover && issue.cover ? `data-fallback="${escapeHtml(defaultCover)}"` : `data-fallback="hide"`}
                 alt=""
-                onerror="this.onerror=null; this.src='/newspaper/photos/Portada_Jornada.jpg';"
+                width="96" height="128"
+                loading="lazy" decoding="async"
               >
               <span class="jornada-dot"></span>
               <span class="jornada-label">${escapeHtml(issue.date)}</span>
@@ -566,44 +625,57 @@ function renderNews() {
 
       <section>
         <article class="card hero-card">
-          <span class="chip">${escapeHtml(selected.date)}</span>
           <h2>${escapeHtml(selected.title)}</h2>
           <p>${escapeHtml(selected.summary || selected.subtitle)}</p>
+          <span class="chip">Jornada ${escapeHtml(roundNumber(selected.date))}</span>
         </article>
 
         ${renderStandingsAtIssue(selected)}
 
-        <div class="news-grid" style="margin-top:16px">
-          ${selected.cards.map(card => `
-            <article class="article-card">
-              <span class="chip">${escapeHtml(card.type || "noticia")}</span>
-              <h3>${escapeHtml(card.title || "Sin titular")}</h3>
-              <p><strong>${escapeHtml(card.subtitle || "")}</strong></p>
-              ${(card.text || []).map(text => `<p>${escapeHtml(text)}</p>`).join("")}
-            </article>
-          `).join("")}
+        <div class="news-grid">
+          ${(selected.cards || []).map(raw => {
+            const card = normalizeCard(raw);
+            return `
+              <article class="article-card">
+                <h3>${escapeHtml(card.title || "Sin titular")}</h3>
+                ${card.subtitle ? `<p><strong>${escapeHtml(card.subtitle)}</strong></p>` : ""}
+                ${card.text.map(text => `<p>${escapeHtml(text)}</p>`).join("")}
+                <span class="chip">${escapeHtml(cardTypeLabel(card.type))}</span>
+              </article>
+            `;
+          }).join("")}
         </div>
       </section>
     </div>
   `;
 
-  document.querySelectorAll(".jornada-card").forEach(button => {
+  app.querySelectorAll(".jornada-card").forEach(button => {
     button.addEventListener("click", () => {
-      state.selectedIssue = Number(button.dataset.issue);
-      renderNews();
+      state.selectedIssueDate = button.dataset.issue;
+      rerender(renderNews, button.dataset.focus);
     });
   });
+  bindNewsSeasonSelect();
 
-  document.querySelector("#news-season-select")?.addEventListener("change", (event) => {
+  // Centrar la portada activa moviendo solo el carrusel: scrollIntoView
+  // también desplazaba la página entera hasta el carrusel.
+  const carousel = app.querySelector(".jornada-carousel");
+  const active = app.querySelector(".jornada-card.active");
+  if (carousel && active) {
+    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    carousel.scrollTo({
+      left: active.offsetLeft - (carousel.clientWidth - active.offsetWidth) / 2,
+      behavior: reduceMotion ? "auto" : "smooth",
+    });
+  }
+}
+
+function bindNewsSeasonSelect() {
+  app.querySelector("#news-season-select")?.addEventListener("change", (event) => {
     state.selectedSeason = event.target.value;
-    state.selectedIssue = 0;
+    state.selectedIssueDate = null; // abre la última jornada de esa temporada
     renderNews();
-  });
-
-  document.querySelector(".jornada-card.active")?.scrollIntoView({
-    inline: "center",
-    block: "nearest",
-    behavior: "smooth",
+    app.querySelector("#news-season-select")?.focus({ preventScroll: true });
   });
 }
 
@@ -612,18 +684,15 @@ function renderStandingsAtIssue(issue) {
   if (!rows || !rows.length) return "";
 
   return `
-    <section class="card" style="margin-top:16px">
+    <section class="card spaced">
       <div class="card-header">
-        <h3>Clasificación en ${escapeHtml(issue.date)}</h3>
+        <h3>Clasificación en la ${escapeHtml(issue.date)}</h3>
       </div>
       ${renderStandingsTable(rows, "Puntos")}
     </section>
   `;
 }
 
-// Compartida por renderHome() y renderStandingsAtIssue() — antes cada una
-// reescribía la misma tabla Rango/Manager/Puntos casi idéntica por su lado
-// (hallazgo WEB-08).
 function renderStandingsTable(rows, pointsLabel = "Puntos", emptyText = "Sin clasificación disponible") {
   return `
     <div class="table">
@@ -632,65 +701,62 @@ function renderStandingsTable(rows, pointsLabel = "Puntos", emptyText = "Sin cla
       </div>
       ${(rows || []).map(row => `
         <div class="table-row">
-          <span class="rank">#${row.rank ?? "?"}</span>
+          <span class="rank">#${escapeHtml(row.rank ?? "?")}</span>
           <div class="team-cell">
-            ${managerAvatar(row.manager)}
+            ${managerAvatar(row.manager, 40)}
             <strong>${escapeHtml(row.manager)}</strong>
           </div>
-          <span class="data">${row.points ?? 0}</span>
+          <span class="data">${escapeHtml(row.points ?? 0)}</span>
         </div>
       `).join("") || emptyRow(emptyText)}
     </div>
   `;
 }
 
-function statCard(label, value, meta) {
-  return `
-    <article class="card pad metric">
-      <p class="label">${escapeHtml(label)}</p>
-      <div class="value">${escapeHtml(value)}</div>
-      <p class="muted">${escapeHtml(meta)}</p>
-    </article>
-  `;
+function emptyRow(text, colsClass = "") {
+  return `<div class="table-row ${colsClass}"><span class="muted empty-cell">${escapeHtml(text)}</span></div>`;
 }
 
-function barRow(label, value) {
-  return `
-    <div class="bar-row">
-      <div class="bar-meta"><span>${escapeHtml(label)}</span><strong>${value}%</strong></div>
-      <div class="bar"><span style="width:${value}%"></span></div>
-    </div>
-  `;
+// ── Helpers de datos ─────────────────────────────────────────────────────────
+
+// Las cards del periódico llegan en inglés (title/subtitle/text) desde
+// regenerate_app_data.py; se aceptan también las claves originales en
+// español del periódico por si algún JSON antiguo las trae. Antes la home
+// leía solo las españolas y "Drama de liga" salía siempre vacío.
+function normalizeCard(card) {
+  const c = card || {};
+  const text = c.text ?? c.texto ?? [];
+  return {
+    type: c.type ?? c.tipo ?? "",
+    title: c.title ?? c.titulo ?? "",
+    subtitle: c.subtitle ?? c.subtitulo ?? "",
+    text: Array.isArray(text) ? text : [text].filter(Boolean),
+  };
 }
 
-function absoluteBarRow(label, value) {
-  const max = 30; // máximo razonable de compras por tipo para escalar la barra
-  const pct = Math.min(100, Math.round((value / max) * 100));
-  return `
-    <div class="bar-row">
-      <div class="bar-meta"><span>${escapeHtml(label)}</span><strong>${value} compras</strong></div>
-      <div class="bar"><span style="width:${pct}%"></span></div>
-    </div>
-  `;
+function cardTypeLabel(type) {
+  if (!type) return "Noticia";
+  return CARD_TYPE_LABELS[type.toLowerCase()] || type;
 }
 
-function playerBox(label, player, tone) {
-  return `
-    <div class="player-card">
-      <span class="chip">${escapeHtml(label)}</span>
-      <h3>${escapeHtml(player.name)}</h3>
-      <p class="muted">${escapeHtml(player.team || "")} · ${escapeHtml(player.position || "")}</p>
-      <div class="value" style="color:${tone === "success" ? "var(--green)" : "var(--primary)"}">${player.points} pts</div>
-    </div>
-  `;
+function roundNumber(label) {
+  return parseInt(String(label).match(/\d+/)?.[0] ?? "0", 10);
 }
 
-function emptyRow(text) {
-  return `<div class="table-row"><span></span><strong>${escapeHtml(text)}</strong><span></span></div>`;
+function formatMoney(amount) {
+  if (amount === null || amount === undefined || amount === "" || Number.isNaN(Number(amount))) return "";
+  return `${Number(amount).toLocaleString("es-ES", { maximumFractionDigits: 1 })} M€`;
 }
+
+function formatNumber(value) {
+  if (value === null || value === undefined || Number.isNaN(Number(value))) return "—";
+  return Number(value).toLocaleString("es-ES", { maximumFractionDigits: 1 });
+}
+
+// ── Avatares ─────────────────────────────────────────────────────────────────
 
 function initials(name = "") {
-  return String(name)
+  return String(name ?? "")
     .replace(/[^\p{L}\p{N}\s]/gu, "")
     .split(/\s+/)
     .filter(Boolean)
@@ -700,89 +766,67 @@ function initials(name = "") {
     .toUpperCase() || "SL";
 }
 
+const normalizeName = s => String(s).toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/\./g, "").trim();
+
+// Índice de fotos construido una vez (antes cada avatar recorría y
+// normalizaba los ~560 nombres del mapa).
+function buildPlayerIndex(map) {
+  const exact = new Map();
+  const bySurname = new Map();
+  for (const [name, url] of Object.entries(map)) {
+    const norm = normalizeName(name);
+    exact.set(norm, url);
+    const parts = norm.split(/\s+/);
+    const surname = parts[parts.length - 1];
+    if (!bySurname.has(surname)) bySurname.set(surname, []);
+    bySurname.get(surname).push({ parts, url });
+  }
+  return { map, exact, bySurname };
+}
+
+// Busca la foto de un jugador. El apellido solo vale si no es ambiguo: antes
+// se quedaba con el primer "García" del mapa aunque hubiera varios, y dos
+// jugadores distintos acababan con la misma foto.
+function findPlayerPhoto(name) {
+  if (!name || !playerIndex) return null;
+  if (playerIndex.map[name]) return playerIndex.map[name];
+  const norm = normalizeName(name);
+  if (playerIndex.exact.has(norm)) return playerIndex.exact.get(norm);
+
+  const parts = norm.split(/\s+/);
+  const candidates = playerIndex.bySurname.get(parts[parts.length - 1]) || [];
+  if (candidates.length === 1) return candidates[0].url;
+  if (candidates.length > 1 && parts.length > 1) {
+    // Desempatar por la inicial del nombre: "Kylian Mbappé" ↔ "K. Mbappé".
+    const initial = parts[0][0];
+    const sameInitial = candidates.filter(c => c.parts.length > 1 && c.parts[0][0] === initial);
+    if (sameInitial.length === 1) return sameInitial[0].url;
+  }
+  return null;
+}
+
 function playerAvatar(name, size = 36) {
-  const map = state.data?.playersMap || {};
-
-  // 1. Búsqueda exacta
-  let url = map[name];
-
-  if (!url && name) {
-    // Normaliza texto: minúsculas y sin acentos para comparar
-    const norm = s => s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
-
-    const inputNorm = norm(name);
-    const mapKeys   = Object.keys(map);
-
-    // 2. Match por apellido(s): última palabra del nombre
-    //    Cubre "Kylian Mbappé" ↔ "K. Mbappé" (mismo apellido "mbappe")
-    const inputSurname = inputNorm.split(/\s+/).at(-1);
-    const byLastName   = mapKeys.find(k => norm(k).split(/\s+/).at(-1) === inputSurname);
-    if (byLastName) url = map[byLastName];
-
-    // 3. Match por apellido compuesto (últimas 2 palabras)
-    //    Cubre "De Bruyne" ↔ "K. De Bruyne"
-    if (!url) {
-      const inputSurname2 = inputNorm.split(/\s+/).slice(-2).join(' ');
-      const by2 = mapKeys.find(k => norm(k).endsWith(inputSurname2));
-      if (by2) url = map[by2];
-    }
-  }
-
-  if (url) {
-    return `<img src="${escapeAttr(url)}" alt="${escapeAttr(name)}"
-      onerror="this.style.display='none'"
-      style="width:${size}px;height:${size}px;border-radius:50%;object-fit:cover;border:1px solid rgba(255,255,255,0.12);flex-shrink:0;">`;
-  }
-  // Fallback: iniciales
-  return `<span style="display:inline-flex;align-items:center;justify-content:center;width:${size}px;height:${size}px;border-radius:50%;background:#1e1e1e;border:1px solid #2a2a2a;font-family:var(--mono);font-size:${Math.round(size*0.35)}px;font-weight:700;color:#888;flex-shrink:0;">${initials(name)}</span>`;
+  const url = findPlayerPhoto(name);
+  const fallback = (hidden) => `<span class="player-initials" style="${hidden ? "display:none;" : ""}width:${size}px;height:${size}px;font-size:${Math.round(size * 0.35)}px">${escapeHtml(initials(name))}</span>`;
+  if (!url) return fallback(false);
+  return `<img class="player-photo" src="${escapeHtml(url)}" alt="" width="${size}" height="${size}" loading="lazy" decoding="async" data-fallback="next" style="width:${size}px;height:${size}px">${fallback(true)}`;
 }
 
-function jornadaPortadaUrl(season, dateLabel) {
-  const match = String(dateLabel).match(/\d+/);
-  if (!match) return "/newspaper/photos/Portada_Jornada.jpg";
-  // activeSeason en los datos es un campo heredado que no siempre refleja
-  // cual es la temporada realmente en curso (puede quedar desactualizado
-  // sin regenerar el resto de app-data.json). "seasons" sí es fiable: viene
-  // ordenado ascendente, así que la última es la temporada en curso — esa
-  // es la única que escribe en newspaper/new/ en vivo, el resto vive en
-  // archive/temporada_{season}/newspaper/new/.
-  const seasons = state.data.seasons || [];
-  const isLiveSeason = season === seasons[seasons.length - 1];
-  const base = isLiveSeason ? "/newspaper/new" : `/archive/temporada_${season}/newspaper/new`;
-  return `${base}/jornada_${match[0]}_jornada_news.png`;
-}
-
-function managerAvatar(name, size = 60) {
-  const fileName = String(name)
+function managerAvatar(name, size = 60, decorative = false) {
+  const fileName = String(name ?? "")
     .toLowerCase()
     .replace(/[^a-z0-9áéíóúüñ\s]/gi, "")
     .trim()
     .replace(/\s+/g, "_");
 
-  const src = `/assets/web/${fileName}.png`;
-
-  return `
-    <img 
-      src="${src}" 
-      alt="${escapeAttr(name)}"
-      onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
-      style="width:${size}px;height:${size}px;border-radius:10px;object-fit:cover;border:1px solid rgba(255,255,255,0.08);image-rendering:auto;"
-    >
-    <span class="avatar" style="display:none;width:${size}px;height:${size}px">
-      ${initials(name)}
-    </span>
-  `;
+  return `<img class="manager-photo" src="/assets/web/${encodeURIComponent(fileName || "Default")}.png" alt="${decorative ? "" : escapeHtml(name ?? "")}" width="${size}" height="${size}" loading="lazy" decoding="async" data-fallback="next" style="width:${size}px;height:${size}px"><span class="avatar" style="display:none;width:${size}px;height:${size}px;flex-basis:${size}px">${escapeHtml(initials(name))}</span>`;
 }
 
 function escapeHtml(value = "") {
-  return String(value)
+  return String(value ?? "")
     .replaceAll("&", "&amp;")
     .replaceAll("<", "&lt;")
     .replaceAll(">", "&gt;")
     .replaceAll('"', "&quot;")
     .replaceAll("'", "&#039;");
-}
-
-function escapeAttr(value = "") {
-  return escapeHtml(value);
 }
