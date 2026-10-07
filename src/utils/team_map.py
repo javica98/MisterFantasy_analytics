@@ -24,6 +24,10 @@ TEAM_MAP: dict[int, str] = {
     12: "Levante UD",
     408: "RCD Mallorca",
     1370: "Real Oviedo",
+    # Ascendidos 2026-27 (identificados por su plantilla en gameweek)
+    6: "RC Deportivo",
+    13: "Málaga CF",
+    1490: "Racing de Santander",
 }
 
 TEAM_POSICION: dict[int, str] = {

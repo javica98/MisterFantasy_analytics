@@ -8,6 +8,13 @@ on:
       - "assets/**"
       - "Dockerfile.web"
       - "docker/nginx.web.conf"
+      - "docker/security-headers.inc"
+  # El commit diario de datos lleva [skip ci], que bloquea el trigger de
+  # push de arriba: redesplegamos al terminar la extracción para que la
+  # web sirva el app-data.json recién generado.
+  workflow_run:
+    workflows: ["Daily Data Extraction"]
+    types: [completed]
   workflow_dispatch:
 
 jobs:
@@ -15,6 +22,10 @@ jobs:
     runs-on: self-hosted
     steps:
       - uses: actions/checkout@v4
+        with:
+          # Fijamos main para desplegar siempre el último commit, incluido el
+          # de datos que la extracción acaba de pushear.
+          ref: main
 
       - name: Build image
         run: docker build -f Dockerfile.web -t ai_center-misterfantasy-web:latest .

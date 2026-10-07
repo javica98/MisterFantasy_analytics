@@ -49,8 +49,17 @@ jobs:
       - name: Run preprocessing
         run: python scripts/run_preprocess.py
 
+      # 5️⃣b Regenerar los datos de la web app. Antes solo se comiteaba la BD
+      #     y web/data/app-data.json se quedaba congelado hasta que alguien
+      #     lo regenerara a mano (la web llegó a ir 2,5 meses atrasada).
+      #     continue-on-error: si falla, que no impida comitear la BD.
+      - name: Regenerate web app data
+        id: webdata
+        continue-on-error: true
+        run: python scripts/regenerate_app_data.py
+
       # 6️⃣ Commit y push de la base de datos automáticamente usando PAT
-      - name: Commit and push database
+      - name: Commit and push database + web data
         env:
           PAT_TOKEN: ${{ secrets.PAT_TOKEN }}
         run: |
@@ -60,7 +69,7 @@ jobs:
           # Cambiar remote para usar PAT
           git remote set-url origin https://x-access-token:${PAT_TOKEN}@github.com/${{ github.repository }}.git
 
-          git add data/mister.db
+          git add data/mister.db web/data/app-data.json
 
           # Solo commit si hay cambios
           if ! git diff --cached --quiet; then
@@ -74,9 +83,9 @@ jobs:
       #    (después de comitear lo que sí se extrajo) para que se abra el
       #    aviso del paso siguiente.
       - name: Fail job if the scraper skipped sections
-        if: steps.extract.outcome == 'failure'
+        if: steps.extract.outcome == 'failure' || steps.webdata.outcome == 'failure'
         run: |
-          echo "::error::run_extraction.py saltó una o más secciones — revisa los logs del paso 'Run scraper'."
+          echo "::error::Fallo en 'Run scraper' o 'Regenerate web app data' — revisa los logs de esos pasos."
           exit 1
 
       # 8️⃣ Si algo del job anterior falló, abrir/actualizar un issue de aviso

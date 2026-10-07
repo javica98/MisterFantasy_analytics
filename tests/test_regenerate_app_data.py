@@ -8,7 +8,10 @@ artículo nuevo aparecía en la web.
 import json
 from pathlib import Path
 
+import pandas as pd
+from PIL import Image
 
+from scripts import regenerate_app_data as rad
 from scripts.regenerate_app_data import build_news, _load_standings_snapshot
 
 
@@ -71,3 +74,77 @@ class TestLoadStandingsSnapshot:
         assert len(snapshot) == 2
         assert snapshot[0]["manager"] == "Dani"
         assert snapshot[0]["rank"] == 1
+
+
+def _gameweek(rows):
+    """rows: (jornada, manager, puntos, equipo, posicion)"""
+    return pd.DataFrame([
+        {"Jornada": j, "Manager": m, "Puntos": p, "NombreJugador": f"Jugador {m}",
+         "EquipoJugador": eq, "Posicion": pos, "Goles": 0, "Asistencias": 0,
+         "Roja": 0, "Date": f"2026-08-{10 + j:02d}"}
+        for j, m, p, eq, pos in rows
+    ])
+
+
+_EMPTY_TRANSFERS = pd.DataFrame(columns=["equipo", "compra-venta", "subtype", "ganancias", "jugador", "fecha"])
+
+
+class TestSeasonForm:
+    def test_jornada_ausente_va_como_null_sin_desplazar_las_siguientes(self):
+        # Falta la J2 en la BD: antes seasonForm se compactaba a [10, 30] y la
+        # web etiquetaba la J3 como "Jornada 2".
+        df = _gameweek([(1, "Dani", 10, 15, 4), (3, "Dani", 30, 15, 4)])
+        standings = [{"rank": 1, "manager": "Dani", "points": 40}]
+
+        managers = rad.build_managers(df, None, _EMPTY_TRANSFERS, standings)
+
+        assert managers[0]["seasonForm"] == [10, None, 30]
+
+    def test_posicion_y_equipo_se_traducen_a_nombre(self):
+        df = _gameweek([(1, "Dani", 10, 1490, 4.0)])
+        standings = [{"rank": 1, "manager": "Dani", "points": 10}]
+
+        best = rad.build_managers(df, None, _EMPTY_TRANSFERS, standings)[0]["bestPlayer"]
+
+        assert best["team"] == "Racing de Santander"
+        assert best["position"] == "Delantero"
+
+
+class TestPlayerOfMonth:
+    def test_equipo_se_traduce_a_nombre_y_no_queda_el_id(self):
+        # Antes salía "team": "9" en la home.
+        df = _gameweek([(1, "Dani", 14, 9, 3)])
+        standings = [{"rank": 1, "manager": "Dani", "points": 14}]
+
+        league = rad.build_league(df, None, _EMPTY_TRANSFERS, standings, [], [])
+
+        assert league["playerOfMonth"]["team"] == "Getafe CF"
+        assert league["lastRound"] == 1
+
+
+class TestCoverThumbnails:
+    def test_genera_miniatura_webp_y_la_enlaza_en_la_edicion(self, tmp_path, monkeypatch):
+        monkeypatch.setattr(rad, "COVERS_DIR", tmp_path / "covers")
+        src_dir = tmp_path / "new"
+        src_dir.mkdir()
+        Image.new("RGB", (1080, 1350), "white").save(src_dir / "jornada_5_jornada_news.png")
+        cards = {"cards": [{"tipo": "clasificacion", "titulo": "T", "subtitulo": "S", "texto": ["x"]}]}
+        _write_json(tmp_path / "json" / "articles" / "jornada_5_json.json", {"clasificacion": {}})
+        _write_json(tmp_path / "json" / "cards" / "jornada_5_cards.json", cards)
+
+        news = build_news(tmp_path / "json", src_dir, "2026-27")
+
+        assert news[0]["cover"] == "/web/covers/2026-27/jornada_5.webp"
+        with Image.open(tmp_path / "covers" / "2026-27" / "jornada_5.webp") as thumb:
+            assert thumb.format == "WEBP"
+            assert thumb.size == (rad.COVER_WIDTH, 300)
+
+    def test_sin_portada_original_no_hay_cover(self, tmp_path, monkeypatch):
+        monkeypatch.setattr(rad, "COVERS_DIR", tmp_path / "covers")
+        cards = {"cards": [{"tipo": "clasificacion", "titulo": "T", "subtitulo": "S", "texto": ["x"]}]}
+        _write_json(tmp_path / "json" / "articles" / "jornada_2_json.json", {"clasificacion": {}})
+        _write_json(tmp_path / "json" / "cards" / "jornada_2_cards.json", cards)
+
+        news = build_news(tmp_path / "json", tmp_path / "new", "2026-27")
+
+        assert news[0]["cover"] is None

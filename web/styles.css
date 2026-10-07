@@ -16,7 +16,7 @@
   --blue: #1a4a7a;
   --lime: #a3e635;
   --radius: 8px;
-  --font: "Geist", system-ui, sans-serif;
+  --font: "Schibsted Grotesk", system-ui, sans-serif;
   --mono: "JetBrains Mono", ui-monospace, monospace;
 }
 
@@ -32,7 +32,7 @@
   height: 300%;
   z-index: 0;
   pointer-events: none;
-  font-family: 'Coolvetica', Impact, 'Arial Black', sans-serif;
+  font-family: Impact, 'Arial Black', sans-serif;
   font-weight: 900;
   font-size: 96px;
   color: rgba(0, 0, 0, 0.12);
@@ -232,9 +232,8 @@ h3 {
 .live-pill {
   display: inline-flex;
   align-items: center;
-  gap: 7px;
-  height: 32px;
-  padding: 0 12px;
+  gap: 8px;
+  padding: 8px 14px;
   border-radius: 999px;
   border: 1px solid var(--border);
   background: var(--surface);
@@ -243,7 +242,7 @@ h3 {
   font-weight: 600;
 }
 
-.live-pill span {
+.live-pill > span:first-child {
   width: 7px;
   height: 7px;
   border-radius: 50%;
@@ -251,7 +250,8 @@ h3 {
 }
 
 .content {
-  width: min(1280px, calc(100vw - 280px));
+  width: 100%;
+  max-width: 1280px;
   margin: 0 auto;
   padding: 32px 32px 56px;
 }
@@ -361,7 +361,7 @@ h3 {
 }
 
 .rank {
-  color: var(--muted);
+  color: var(--muted-2);
   font-family: var(--mono);
   font-size: 13px;
   font-weight: 700;
@@ -415,6 +415,12 @@ h3 {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
+/* Por debajo de ~1360px las 4 tarjetas no dejan sitio a nombres como
+   "Chamacónicos" y se partían a mitad de palabra: mejor 2x2. */
+@media (max-width: 1360px) {
+  .metric-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
 .stats-grid {
   grid-template-columns: repeat(12, 1fr);
 }
@@ -433,12 +439,9 @@ h3 {
   color: #ffffff;
 }
 
-.metric.warning {
-  border-left: 3px solid var(--text);
-}
-
-.metric.success {
-  border-left: 3px solid var(--green);
+/* Tono de la tarjeta en el valor, no en un borde lateral grueso */
+.metric.success .value {
+  color: #4ade80;
 }
 
 /* ── Hero card ───────────────────────────────────────────────────────────── */
@@ -512,10 +515,11 @@ h3 {
 }
 
 .hero-card .chip {
+  justify-self: start;
   border-color: rgba(255,255,255,0.2);
   background: rgba(255,255,255,0.1);
   color: rgba(255,255,255,0.7);
-  margin-bottom: 12px;
+  margin-top: 4px;
 }
 
 /* ── Manager picker ──────────────────────────────────────────────────────── */
@@ -557,7 +561,7 @@ h3 {
   border: 2px solid transparent;
   filter: grayscale(1) opacity(0.5);
   transform: scale(0.88) translateY(0);
-  transition: filter 260ms ease, transform 260ms cubic-bezier(.34, 1.56, .64, 1), border-color 260ms ease, box-shadow 260ms ease;
+  transition: filter 260ms ease, transform 260ms cubic-bezier(.22, 1, .36, 1), border-color 260ms ease, box-shadow 260ms ease;
 }
 
 .manager-picker-item .avatar-ring img,
@@ -583,7 +587,7 @@ h3 {
 
 .manager-picker-item .picker-name {
   max-width: 60px;
-  color: var(--muted-2);
+  color: var(--muted);
   font-size: 10px;
   font-weight: 600;
   text-align: center;
@@ -646,7 +650,7 @@ h3 {
 .bar-meta {
   display: flex;
   justify-content: space-between;
-  color: var(--muted);
+  color: var(--muted-2);
   font-size: 13px;
 }
 
@@ -783,6 +787,9 @@ h3 {
   padding: 0;
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 14px;
+  /* Fondo oscuro mientras carga la portada (o si falta): sin él quedaba el
+     gris por defecto del <button> y la etiqueta blanca no se leía. */
+  background: #1a1a1a;
   overflow: hidden;
   cursor: pointer;
   filter: grayscale(0.6) brightness(0.5);
@@ -849,6 +856,7 @@ h3 {
 }
 
 .news-grid {
+  margin-top: 16px;
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 12px;
@@ -861,8 +869,14 @@ h3 {
   background: var(--surface);
 }
 
+.article-card .chip {
+  color: var(--muted);
+  background: var(--surface-2);
+  border-color: var(--border);
+}
+
 .article-card h3 {
-  margin: 8px 0 6px;
+  margin: 0 0 6px;
   color: var(--text);
   font-size: 14px;
 }
@@ -891,8 +905,10 @@ h3 {
 /* ── Responsive ──────────────────────────────────────────────────────────── */
 
 @media (max-width: 980px) {
+  /* minmax(0, ...) y no 1fr: un 1fr no baja del min-content de su contenido
+     (p.ej. las tablas con scroll propio) y ensanchaba toda la página. */
   .app-shell {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
   }
 
   .sidebar {
@@ -920,12 +936,8 @@ h3 {
   .home-grid,
   .metric-grid,
   .news-grid,
-  .player-duo {
-    grid-template-columns: 1fr;
-  }
-
   .stats-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
   }
 
   .span-3, .span-4, .span-5,
@@ -934,6 +946,247 @@ h3 {
   }
 
   .table-row {
-    grid-template-columns: 44px minmax(140px, 1fr) 80px;
+    grid-template-columns: 44px minmax(0, 1fr) 72px;
+    gap: 10px;
+    padding: 0 14px;
   }
+
+  /* El logo de 224px se comía media pantalla en móvil */
+  .brand {
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+  }
+
+  .brand-mark {
+    width: 56px;
+    height: 56px;
+  }
+
+  .brand strong { font-size: 20px; }
+  .brand span { font-size: 14px; }
+
+  .toolbar {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 560px) {
+  .card.pad { padding: 18px; }
+  .card-header { flex-wrap: wrap; padding: 14px 16px; }
+  .nav-item { justify-content: center; padding: 0 6px; gap: 4px; font-size: 13px; }
+  .nav-item .icon { width: 20px; }
+  .metric .value { font-size: 22px; }
+  .jornada-carousel { gap: 12px; }
+}
+
+/* ── Accesibilidad ───────────────────────────────────────────────────────── */
+
+.skip-link {
+  position: absolute;
+  left: 12px;
+  top: -48px;
+  z-index: 100;
+  padding: 8px 14px;
+  border-radius: 6px;
+  background: var(--text);
+  color: #ffffff;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.skip-link:focus { top: 12px; }
+
+:focus-visible {
+  outline: 2px solid var(--blue);
+  outline-offset: 2px;
+}
+
+.card :focus-visible,
+.side-nav :focus-visible {
+  outline-color: var(--lime);
+}
+
+#app:focus { outline: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ── Utilidades y componentes (antes eran style="..." inline en app.js, que
+   ganaban a las media queries y rompían el layout en móvil) ──────────────── */
+
+.section-heading { margin: 28px 0 12px; }
+.section-heading h2 { margin: 0; font-size: 20px; }
+.section-heading .muted.small { margin-top: 2px; }
+
+.card-sub {
+  margin: 4px 0 0;
+  color: var(--muted-2);
+  font-size: 13px;
+}
+
+.two-col {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-bottom: 16px;
+}
+
+.person-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+  margin-top: 12px;
+}
+
+.toolbar .person-row { gap: 16px; margin-top: 0; }
+.person-row > div { min-width: 0; }
+.person-row .value { margin: 0 !important; overflow-wrap: break-word; }
+.metric-grid .person-row .value { font-size: 21px; line-height: 1.15; }
+
+.label-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.small { font-size: 13px; }
+.muted.small { margin: 6px 0 0; }
+.flush { margin: 0 !important; }
+.flush-bottom { margin-bottom: 0; }
+.spaced { margin-top: 16px; }
+
+.stat-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px 24px;
+  margin-top: 16px;
+}
+
+.mini-stat p { margin: 0; font-size: 13px; }
+.mini-stat .value { margin-top: 4px; }
+.mini-stat.small-value .value { font-size: 20px; }
+.mini-stat.accent-green .value { color: #4ade80; }
+.mini-stat.accent-rose .value { color: #ff7a8a; }
+
+.stat-divider {
+  width: 100%;
+  height: 1px;
+  background: #2a2a2a;
+}
+
+.key-players {
+  display: grid;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.key-player {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 14px;
+  border-radius: 8px;
+}
+
+.key-player .person-row { margin-top: 0; }
+.key-player .person-row > div { min-width: 0; }
+.key-player strong { overflow-wrap: anywhere; }
+.key-player.good { background: rgba(78, 222, 163, 0.08); border: 1px solid rgba(78, 222, 163, 0.18); }
+.key-player.bad { background: rgba(255, 77, 117, 0.08); border: 1px solid rgba(255, 77, 117, 0.18); }
+
+.key-player-label {
+  margin: 0;
+  color: var(--muted-2);
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.key-player-points {
+  flex-shrink: 0;
+  font-family: var(--mono);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.key-player.good .key-player-points { color: #4ade80; }
+.key-player.bad .key-player-points { color: #ff7a8a; }
+
+.table-row.cols-clauses { grid-template-columns: minmax(0, 2fr) minmax(0, 1fr) minmax(0, 1fr) 64px; gap: 10px; }
+.table-row.cols-transfers { grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr) 72px; gap: 12px; }
+
+/* Los nombres largos se recortan con "…" en vez de ensanchar la tabla */
+.cols-clauses > *, .cols-transfers > * { min-width: 0; }
+.cols-clauses span, .cols-transfers span,
+.team-cell strong {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.cols-clauses .data, .cols-transfers .data { text-align: right; }
+
+.empty-cell { grid-column: 1 / -1; }
+
+.player-photo {
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  flex-shrink: 0;
+}
+
+.player-initials {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: #1e1e1e;
+  border: 1px solid #2a2a2a;
+  color: #9a9a9a;
+  font-family: var(--mono);
+  font-weight: 700;
+}
+
+.manager-photo {
+  border-radius: 10px;
+  object-fit: cover;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  flex-shrink: 0;
+}
+
+.fallback-banner {
+  margin-bottom: 16px;
+  padding: 10px 14px;
+  border-radius: 8px;
+  background: rgba(255, 183, 126, 0.12);
+  border: 1px solid rgba(255, 183, 126, 0.3);
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.live-pill.stale { color: #8a5a00; }
+.live-pill.stale span:first-child { background: #d48a00; }
+
+.chart-track.missing {
+  background: transparent;
+  border: 1px dashed rgba(255, 255, 255, 0.18);
+}
+
+.select-compact { min-width: 150px; }
+
+.market-spend { margin-top: 18px !important; }
+.market-spend strong { color: #ffffff; }
+
+/* Va al final para ganar a la definición base de .two-col de arriba */
+@media (max-width: 980px) {
+  .two-col { grid-template-columns: minmax(0, 1fr); }
 }
