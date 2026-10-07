@@ -16,6 +16,8 @@ paths:
     gameweek: "data/raw/gameweek.html"
     quiniela: "data/raw/quiniela.html"
     players: "data/raw/players_raw.html"
+    gameweek_calendar: "data/raw/gameweek_calendar.json"
+    gameweeks_dir: "data/raw/gameweeks"
 
   csv:
     notificaciones: "data/processed/ganancias.csv"
@@ -30,6 +32,8 @@ paths:
     gameweek: "data/processed/gameweek.csv"
     quiniela: "data/processed/quiniela.csv"
     jugadores: "data/processed/jugadores.csv"
+    calendario: "data/processed/calendario.csv"
+    partidos: "data/processed/partidos.csv"
 
     test: "data/processed/test.csv"
   json:

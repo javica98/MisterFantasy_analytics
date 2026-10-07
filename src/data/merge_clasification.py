@@ -18,6 +18,14 @@ def merge_clasifications(df_viejo: pd.DataFrame, df_nuevo: pd.DataFrame) -> pd.D
         pd.DataFrame: DataFrame combinado y limpio.
     """
     try:
+        # Tabla vacía o recién creada (sin columnas): el resultado es lo nuevo.
+        # Antes caía en el ValueError de abajo y devolvía el viejo vacío,
+        # perdiendo la jornada recién extraída (así se perdió la J1 2026-27).
+        if df_nuevo is None or df_nuevo.empty:
+            return df_viejo.copy()
+        if df_viejo is None or df_viejo.empty:
+            return df_nuevo.copy()
+
         # Validación de columnas
         if 'jornada' not in df_nuevo.columns or 'jornada' not in df_viejo.columns:
             raise ValueError("Ambos DataFrames deben tener una columna 'jornada'")
