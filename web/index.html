@@ -2,64 +2,70 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <title>Sotano League</title>
-    <meta name="description" content="Clasificación, estadísticas por manager y el periódico de cada jornada de la Sotano League, nuestra liga fantasy." />
-    <meta name="theme-color" content="#f5f4f0" />
+    <meta name="description" content="Clasificación, managers y el periódico Bajando al Sótano de cada jornada de la Sotano League, nuestra liga fantasy." />
+    <meta name="theme-color" content="#111111" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Sotano League" />
-    <meta property="og:description" content="Clasificación, estadísticas y el periódico de cada jornada de la liga fantasy." />
+    <meta property="og:description" content="Clasificación, managers y el periódico de cada jornada de la liga fantasy." />
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/web/favicon-32.png" />
     <link rel="apple-touch-icon" href="/assets/web/apple-touch-icon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@500;600;700&family=Schibsted+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="preload" href="/web/data/app-data.json" as="fetch" crossorigin />
-    <link rel="stylesheet" href="/web/styles.css?v=22" />
+    <link rel="stylesheet" href="/web/styles.css?v=35" />
   </head>
   <body>
     <a class="skip-link" href="#app">Saltar al contenido</a>
     <div class="app-shell">
       <aside class="sidebar">
         <div class="brand">
-          <div class="brand-mark">
-            <img src="/assets/web/logo.webp" alt="" width="224" height="224" />
-          </div>
+          <img class="brand-logo" src="/assets/web/logo.webp" alt="" width="88" height="88" />
           <div>
-            <strong>Sotano League</strong>
-            <span>Fantasy Studio</span>
+            <strong class="brand-name">Sotano League</strong>
+            <span class="brand-tagline">Fútbol fantasy desde el sótano</span>
           </div>
         </div>
 
         <nav class="side-nav" aria-label="Principal">
           <button type="button" class="nav-item active" data-view="home" aria-current="page">
-            <span class="icon" aria-hidden="true">⌂</span>
-            <span>Home</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 11l8-6 8 6v8a1 1 0 0 1-1 1h-4v-6H9v6H5a1 1 0 0 1-1-1z"/></svg>
+            <span>Portada</span>
           </button>
           <button type="button" class="nav-item" data-view="stats">
-            <span class="icon" aria-hidden="true">📊</span>
-            <span>Estadísticas</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 20V11M12 20V4M19 20v-6"/></svg>
+            <span>Managers</span>
           </button>
           <button type="button" class="nav-item" data-view="news">
-            <span class="icon" aria-hidden="true">📰</span>
-            <span>Noticias</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 5h11v14H6a1 1 0 0 1-1-1z"/><path d="M16 9h3v9a1 1 0 0 1-1 1h-2"/><path d="M8 9h5M8 12h5M8 15h3"/></svg>
+            <span>Periódico</span>
           </button>
         </nav>
-
       </aside>
 
       <main class="main">
         <header class="topbar">
-          <h1 id="page-title">Dashboard</h1>
-          <div class="topbar-actions">
-            <div class="live-pill" id="freshness"><span aria-hidden="true"></span> <span class="freshness-text">Cargando…</span></div>
-          </div>
+          <img class="topbar-logo" src="/assets/web/logo.webp" alt="" width="36" height="36" />
+          <h1 id="page-title">Portada</h1>
+          <p class="freshness" id="freshness">Cargando…</p>
         </header>
 
         <section id="app" class="content" tabindex="-1"></section>
       </main>
     </div>
 
-    <script src="/web/app.js?v=22"></script>
+    <dialog class="lightbox" id="lightbox" aria-label="Portada ampliada">
+      <form method="dialog" class="lightbox-bar">
+        <button type="submit" class="lightbox-close" data-close>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+          Cerrar
+        </button>
+      </form>
+      <!-- La imagen la pone app.js al abrir el visor -->
+    </dialog>
+
+    <script src="/web/app.js?v=32"></script>
   </body>
 </html>

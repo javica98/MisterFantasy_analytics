@@ -25,9 +25,9 @@ web/
 ├── index.html      ← estructura HTML de la app
 ├── styles.css      ← estilos (variables CSS, layout, componentes)
 ├── app.js          ← lógica de la app (carga datos, renderiza vistas)
-├── covers/         ← miniaturas WebP de las portadas (las genera regenerate_app_data.py)
+├── covers/         ← portadas WebP (las genera regenerate_app_data.py)
 │   ├── default.webp
-│   └── {temporada}/jornada_N.webp
+│   └── {temporada}/jornada_N.webp, jornada_N-large.webp
 └── data/
     └── app-data.json   ← datos generados por regenerate_app_data.py
 ```
@@ -106,7 +106,7 @@ Este es el contrato de datos entre el pipeline Python y la web app.
   "dateRange": "2026-08-16 · 2026-09-20",
   "lastRound": 7,                         // última jornada con datos
   "standings": [                          // Clasificación general
-    { "rank": 1, "manager": "Dani", "points": 1450 }
+    { "rank": 1, "manager": "Dani", "points": 1450, "prevRank": 2 }  // prevRank: puesto en la captura anterior (flechas ▲▼)
   ],
   "poolStandings": [ ... ],               // Clasificación quinielas
   "managerOfMonth": {                     // Manager con más puntos en la ÚLTIMA JORNADA (la web lo titula así)
@@ -178,7 +178,8 @@ Array de periódicos generados, ordenado del más reciente al más antiguo:
 [
   {
     "date": "J17",
-    "cover": "/web/covers/2026-27/jornada_17.webp",  // null si no hay portada; la web usa defaultCover
+    "cover": "/web/covers/2026-27/jornada_17.webp",        // miniatura 240px; null si no hay portada (la web usa defaultCover)
+    "coverLarge": "/web/covers/2026-27/jornada_17-large.webp",  // 900px, para la portada protagonista y el visor
     "title": "¡La liga explota!",
     "subtitle": "Nada está decidido",
     "summary": "Frase resumen...",
