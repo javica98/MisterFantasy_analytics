@@ -21,7 +21,7 @@ map_position(1)   # → "Portero"
 map_position(4)   # → "Delantero"
 ```
 
-**Equipos mapeados:** Real Madrid, FC Barcelona, Atlético de Madrid, Sevilla FC, Real Betis, Real Sociedad, Villarreal CF, Athletic Club, Valencia CF, CA Osasuna, RC Celta, Rayo Vallecano, Deportivo Alavés, RCD Espanyol, Getafe CF, Girona FC, RCD Mallorca, Real Oviedo, Elche CF, Levante UD
+**Equipos mapeados:** Real Madrid, FC Barcelona, Atlético de Madrid, Sevilla FC, Real Betis, Real Sociedad, Villarreal CF, Athletic Club, Valencia CF, CA Osasuna, RC Celta, Rayo Vallecano, Deportivo Alavés, RCD Espanyol, Getafe CF, Elche CF, Levante UD, RC Deportivo, Málaga CF, Racing de Santander (más Girona FC, RCD Mallorca y Real Oviedo para datos históricos). Si un ID no está en el mapa, `map_team` usa el nombre de la tabla `partidos` (API de Mister), así que un ascendido nuevo no sale como número.
 
 ### `config_loader.py`
 Carga `config/config.yaml` y opcionalmente las variables de entorno de `config/.env`.

@@ -1,6 +1,7 @@
 """
 Fixtures compartidos para todos los tests de MisterFantasy Analytics.
 """
+import os
 import sys
 from pathlib import Path
 
@@ -11,6 +12,15 @@ import pytest
 ROOT = Path(__file__).resolve().parent.parent
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
+
+# Varios módulos (agentes del periódico, generate_article) validan las API
+# keys al importarse. Los tests nunca llaman a las APIs reales (todo está
+# mockeado), pero sin keys ni siquiera se pueden importar, y en CI no hay
+# secretos: por eso el job de tests llevaba semanas en rojo. Se ponen valores
+# ficticios antes de cualquier import. setdefault + que load_dotenv no pisa
+# variables existentes => ni en local se usan las keys reales en los tests.
+for _var in ("MISTER_USERNAME", "MISTER_PASSWORD", "GEMINI_API_KEY", "GROQ_API_KEY"):
+    os.environ.setdefault(_var, f"test-{_var.lower()}")
 
 
 # ─────────────────────────────────────────────

@@ -520,11 +520,10 @@ def run_image_agent(jugador: str, equipo: str, save_path: str) -> bool:
     response_str = str(response)
     match = re.search(r'\{"success":\s*(true|false)[^}]*\}', response_str)
     if match:
-        try:
-            result = json.loads(match.group(0))
-            return result.get("success", False)
-        except json.JSONDecodeError:
-            pass
+        # Se usa el valor capturado en vez de json.loads: si el JSON trae una
+        # ruta de Windows ("C:\Users\..."), sus barras son escapes inválidos y
+        # el parseo fallaba, perdiendo el success.
+        return match.group(1) == "true"
 
     return os.path.exists(save_path)
 

@@ -18,6 +18,7 @@ paths:
     players: "data/raw/players_raw.html"
     gameweek_calendar: "data/raw/gameweek_calendar.json"
     gameweeks_dir: "data/raw/gameweeks"
+    feed_json: "data/raw/feed.json"
 
   csv:
     notificaciones: "data/processed/ganancias.csv"
@@ -34,6 +35,9 @@ paths:
     jugadores: "data/processed/jugadores.csv"
     calendario: "data/processed/calendario.csv"
     partidos: "data/processed/partidos.csv"
+    partidos_stats: "data/processed/partidos_stats.csv"
+    once_ideal: "data/processed/once_ideal.csv"
+    alineaciones_probables: "data/processed/alineaciones_probables.csv"
 
     test: "data/processed/test.csv"
   json:
@@ -55,6 +59,13 @@ scraper:
   scroll_pause: 2
   max_scrolls: 60
   headless: true
+
+validation:
+  # Días sin datos que se sabe que no se pueden recuperar (no cuentan como hueco).
+  # 2026-08-19: ejecución cancelada, sin copia en git. Ver docs/roadmap_calidad_datos.md
+  dias_perdidos: ["2026-08-19"]
+  # Días máximos entre hoy y el último dato de las tablas diarias.
+  max_dias_sin_datos: 1
 
 logging:
   level: "INFO"

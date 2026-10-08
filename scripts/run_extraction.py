@@ -22,8 +22,10 @@ from src.data.extract_subidas_bajadas import extraer_subidas_bajadas
 from src.data.extract_gameweek import extraer_gameweek
 from src.data.merge_gameweek import merge_gameweek
 from src.data.extract_calendario import (
-    anotar_fecha_partido, merge_partidos, parse_calendario, parse_partidos, seleccionar_jornadas,
+    anotar_fecha_partido, merge_partidos, parse_alineaciones, parse_calendario, parse_once_ideal,
+    parse_partidos, parse_stats_partidos, seleccionar_jornadas, upsert,
 )
+from src.data.extract_feed_json import cards_de_respuestas, extraer_feed_json
 from src.data.extract_quinielas import extraer_quinielas
 from src.data.merge_quinielas import merge_quinielas
 from src.scraper.login import login
@@ -61,6 +63,7 @@ HTML_GAMEWEEK     = cfg["paths"]["html"]["gameweek"]
 HTML_QUINIELA     = cfg["paths"]["html"]["quiniela"]
 JSON_GW_CALENDAR  = Path(cfg["paths"]["html"]["gameweek_calendar"])
 DIR_GAMEWEEKS     = Path(cfg["paths"]["html"]["gameweeks_dir"])
+JSON_FEED         = Path(cfg["paths"]["html"]["feed_json"])
 
 CSV_NOTIFICACIONES  = cfg["paths"]["csv"]["notificaciones"]
 CSV_CLASIFICACIONES = cfg["paths"]["csv"]["clasificaciones"]
@@ -71,6 +74,24 @@ CSV_GAMEWEEK        = cfg["paths"]["csv"]["gameweek"]
 CSV_QUINIELA        = cfg["paths"]["csv"]["quiniela"]
 CSV_CALENDARIO      = cfg["paths"]["csv"]["calendario"]
 CSV_PARTIDOS        = cfg["paths"]["csv"]["partidos"]
+CSV_PARTIDOS_STATS  = cfg["paths"]["csv"]["partidos_stats"]
+CSV_ONCE_IDEAL      = cfg["paths"]["csv"]["once_ideal"]
+CSV_ALINEACIONES    = cfg["paths"]["csv"]["alineaciones_probables"]
+
+# Momento del scrape (UTC), común a todas las tablas de este run. El workflow
+# no corre siempre a la misma hora, así que la fecha sola no basta para
+# comparar snapshots diarios (mercado, subidas/bajadas...).
+SCRAPED_AT = pd.Timestamp.now(tz="UTC").strftime("%Y-%m-%d %H:%M:%S")
+# Columnas que no cuentan para decidir si una fila está repetida.
+_NO_CLAVE = {"scraped_at", "temporada"}
+
+
+def _sin_duplicados(viejo: pd.DataFrame, nuevo: pd.DataFrame, subset=None) -> pd.DataFrame:
+    """Concatena y quita duplicados ignorando scraped_at/temporada (que
+    cambian en cada run aunque el dato sea el mismo); conserva el primero."""
+    df = pd.concat([viejo, nuevo], ignore_index=True)
+    subset = subset or [c for c in df.columns if c not in _NO_CLAVE]
+    return df.drop_duplicates(subset=subset, keep="first").reset_index(drop=True)
 
 
 def _seleccionar_jornadas_a_descargar(payload_calendario: dict) -> list:
@@ -126,7 +147,23 @@ if not validate_html(HTML_AUX, "notificaciones"):
 else:
     new_html = safe_read_html(HTML_AUX)
     new_notificaciones = extraer_notificaciones(new_html)
-    logger.info("✅ Nuevas notificaciones extraídas.")
+    fuente = "HTML"
+
+    # Preferimos el JSON de /ajax/feed (fecha real de cada tarjeta, aciertos
+    # y puntos rellenos, sin depender del CSS). Red de seguridad: si al JSON
+    # le falta algún traspaso que sí sale en el HTML, se usa el HTML.
+    feed_json = _leer_json(JSON_FEED) if JSON_FEED.exists() else None
+    if feed_json:
+        notif_json = extraer_feed_json(cards_de_respuestas(feed_json))
+        principales = lambda df: set(df.loc[(df["type"] == "transfer") & (df["subtype"] != "Puja"), "idTransfer"])  # noqa: E731
+        faltan = principales(new_notificaciones) - principales(notif_json)
+        if notif_json.empty:
+            logger.warning("⚠️ Feed JSON vacío; se usa el HTML.")
+        elif faltan:
+            logger.warning("⚠️ Al feed JSON le faltan %d traspasos del HTML; se usa el HTML.", len(faltan))
+        else:
+            new_notificaciones, fuente = notif_json, "JSON"
+    logger.info("✅ Nuevas notificaciones extraídas (%s, %d filas).", fuente, len(new_notificaciones))
     csv_notificaciones = safe_read_csv(CSV_NOTIFICACIONES)
     new_csv_notificaciones = merge_feed_cards_until_match(csv_notificaciones, new_notificaciones)
     safe_save_csv(new_csv_notificaciones, CSV_NOTIFICACIONES)
@@ -156,8 +193,8 @@ else:
     logger.info("✅ Clasificaciones guardadas.")
 
 # ── 3. Mercado ────────────────────────────────────────────────────────────────
-# Deduplicamos por todas las columnas para evitar duplicados si el script
-# se ejecuta varias veces el mismo día.
+# Deduplicamos por todas las columnas (salvo scraped_at) para evitar
+# duplicados si el script se ejecuta varias veces el mismo día.
 logger.info("Extrayendo mercado...")
 if not validate_html(HTML_MERCADO_AUX, "mercado"):
     logger.warning("⏭️ Saltando mercado.")
@@ -169,11 +206,8 @@ else:
     csv_mercado = safe_read_csv(CSV_MERCADO)
     csv_mercado = normalize_date_column(csv_mercado, "date")
     new_csv_mercado = normalize_date_column(new_csv_mercado, "date")
-    merged_csv_mercado = (
-        pd.concat([csv_mercado, new_csv_mercado], ignore_index=True)
-        .drop_duplicates()
-        .reset_index(drop=True)
-    )
+    new_csv_mercado["scraped_at"] = SCRAPED_AT
+    merged_csv_mercado = _sin_duplicados(csv_mercado, new_csv_mercado)
     safe_save_csv(merged_csv_mercado, CSV_MERCADO)
     logger.info("✅ Mercado actualizado (%d filas).", len(merged_csv_mercado))
 
@@ -189,11 +223,8 @@ else:
     csv_jornadas = safe_read_csv(CSV_JORNADA)
     csv_jornadas = normalize_date_column(csv_jornadas, "date")
     new_csv_jornadas = normalize_date_column(new_csv_jornadas, "date")
-    merged_csv_jornadas = (
-        pd.concat([csv_jornadas, new_csv_jornadas], ignore_index=True)
-        .drop_duplicates(subset=["date", "jornada"])
-        .reset_index(drop=True)
-    )
+    new_csv_jornadas["scraped_at"] = SCRAPED_AT
+    merged_csv_jornadas = _sin_duplicados(csv_jornadas, new_csv_jornadas, subset=["date", "jornada"])
     safe_save_csv(merged_csv_jornadas, CSV_JORNADA)
     logger.info("✅ Jornadas actualizadas (%d filas).", len(merged_csv_jornadas))
 
@@ -209,11 +240,8 @@ else:
     csv_subidas_bajadas = safe_read_csv(CSV_SUBIDASBAJADAS)
     csv_subidas_bajadas = normalize_date_column(csv_subidas_bajadas, "date")
     new_csv_subidas_bajadas = normalize_date_column(new_csv_subidas_bajadas, "date")
-    merged_csv_subidas_bajadas = (
-        pd.concat([csv_subidas_bajadas, new_csv_subidas_bajadas], ignore_index=True)
-        .drop_duplicates()
-        .reset_index(drop=True)
-    )
+    new_csv_subidas_bajadas["scraped_at"] = SCRAPED_AT
+    merged_csv_subidas_bajadas = _sin_duplicados(csv_subidas_bajadas, new_csv_subidas_bajadas)
     safe_save_csv(merged_csv_subidas_bajadas, CSV_SUBIDASBAJADAS)
     logger.info("✅ Subidas/bajadas actualizadas (%d filas).", len(merged_csv_subidas_bajadas))
 
@@ -261,6 +289,32 @@ else:
         partidos = merge_partidos(partidos, pd.concat(nuevos_partidos, ignore_index=True))
         safe_save_csv(partidos, CSV_PARTIDOS)
         logger.info("✅ Partidos guardados (%d en total).", len(partidos))
+
+    # Estadísticas de partido, once ideal y alineaciones probables: salen
+    # del mismo JSON de cada jornada. El JSON por defecto (calendario) es el
+    # de la jornada que muestra la web — normalmente la próxima — y es el
+    # que trae las alineaciones probables que interesan.
+    payloads = [p for p in (_leer_json(f) for f in sorted(DIR_GAMEWEEKS.glob("gameweek_*.json"))) if p]
+    if payload_calendario:
+        payloads.append(payload_calendario)
+    for nombre, csv, parser, clave in (
+        ("Stats de partidos", CSV_PARTIDOS_STATS, parse_stats_partidos, ["id_partido"]),
+        ("Once ideal", CSV_ONCE_IDEAL, parse_once_ideal, ["jornada"]),
+        ("Alineaciones probables", CSV_ALINEACIONES, parse_alineaciones, ["id_partido"]),
+    ):
+        try:
+            frames_extra = [f for f in (parser(p) for p in payloads) if not f.empty]
+            if not frames_extra:
+                continue
+            nuevo = pd.concat(frames_extra, ignore_index=True).drop_duplicates()
+            nuevo["scraped_at"] = SCRAPED_AT
+            # Varias respuestas pueden traer la misma jornada: manda la última.
+            nuevo = nuevo.drop_duplicates(
+                [c for c in nuevo.columns if c != "scraped_at"], keep="last")
+            safe_save_csv(upsert(safe_read_csv(csv), nuevo, clave), csv)
+            logger.info("✅ %s guardado (%d filas nuevas/actualizadas).", nombre, len(nuevo))
+        except Exception as e:
+            logger.warning("⚠️ %s: no se pudo guardar (%s).", nombre, e)
 
     # Date = fecha real del partido (antes: día del scrape).
     new_gameweek = anotar_fecha_partido(new_gameweek, partidos)
