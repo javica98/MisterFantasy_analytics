@@ -68,6 +68,7 @@ OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
 COVERS_DIR    = ROOT / "web" / "covers"
 COVER_DEFAULT_SRC = ROOT / "newspaper" / "photos" / "Portada_Jornada.jpg"
 COVER_WIDTH   = 240  # 2x del ancho CSS (96px) de .jornada-cover
+COVER_LARGE_WIDTH = 900  # portada protagonista de Noticias/Home (y su zoom)
 
 LEAGUE_NAME   = "Sotano League"
 SEASON        = cfg["season"]["current"]
@@ -141,32 +142,38 @@ def build_players_map(df_jugadores: pd.DataFrame) -> dict:
 # Sección: clasificación general y quinielas
 # ─────────────────────────────────────────────────────────────────────────────
 
+def _ranked(totals: pd.Series) -> dict:
+    """{nombre: posición} ordenando por puntos descendente."""
+    order = totals.sort_values(ascending=False).index
+    return {name: i + 1 for i, name in enumerate(order)}
+
+
 def build_standings(df_clas: pd.DataFrame) -> list:
-    """Clasificación general acumulada."""
-    total = (
-        df_clas.groupby("nombre")["puntos"]
-        .sum()
-        .sort_values(ascending=False)
-        .reset_index()
-    )
+    """Clasificación acumulada. Cada fila lleva también la posición que tenía
+    en la actualización anterior (`prevRank`, para las flechas de
+    subida/bajada). Ojo: `clasificaciones` no tiene una fila por jornada (hay
+    huecos entre capturas), así que prevRank compara con la captura previa,
+    no necesariamente con la jornada anterior."""
+    total = df_clas.groupby("nombre")["puntos"].sum().sort_values(ascending=False)
+    prev_rank = {}
+    if "jornada" in df_clas.columns and df_clas["jornada"].nunique() > 1:
+        last = df_clas["jornada"].max()
+        before = df_clas[df_clas["jornada"] != last].groupby("nombre")["puntos"].sum()
+        prev_rank = _ranked(before.reindex(total.index, fill_value=0))
     return [
-        {"rank": i + 1, "manager": row["nombre"], "points": int(row["puntos"])}
-        for i, row in total.iterrows()
+        {
+            "rank": i + 1,
+            "manager": name,
+            "points": int(points),
+            "prevRank": prev_rank.get(name),
+        }
+        for i, (name, points) in enumerate(total.items())
     ]
 
 
 def build_pool_standings(df_quin: pd.DataFrame) -> list:
-    """Clasificación de quinielas acumulada."""
-    total = (
-        df_quin.groupby("nombre")["puntos"]
-        .sum()
-        .sort_values(ascending=False)
-        .reset_index()
-    )
-    return [
-        {"rank": i + 1, "manager": row["nombre"], "points": int(row["puntos"])}
-        for i, row in total.iterrows()
-    ]
+    """Clasificación de quinielas acumulada (mismo formato que build_standings)."""
+    return build_standings(df_quin)
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -454,8 +461,8 @@ def build_league(
 # Sección: news (periódicos generados)
 # ─────────────────────────────────────────────────────────────────────────────
 
-def _make_thumbnail(src: Path, dest: Path) -> bool:
-    """Genera `dest` (WebP, COVER_WIDTH de ancho) desde `src` si falta o si
+def _make_thumbnail(src: Path, dest: Path, width: int = COVER_WIDTH, quality: int = 72) -> bool:
+    """Genera `dest` (WebP de `width` px de ancho) desde `src` si falta o si
     `src` es más reciente. Devuelve True si `dest` existe al terminar."""
     if not src.exists():
         return dest.exists()
@@ -465,8 +472,8 @@ def _make_thumbnail(src: Path, dest: Path) -> bool:
         dest.parent.mkdir(parents=True, exist_ok=True)
         with Image.open(src) as im:
             im = im.convert("RGB")
-            height = round(im.height * COVER_WIDTH / im.width)
-            im.resize((COVER_WIDTH, height), Image.LANCZOS).save(dest, "WEBP", quality=72, method=6)
+            height = round(im.height * width / im.width)
+            im.resize((width, height), Image.LANCZOS).save(dest, "WEBP", quality=quality, method=6)
         return True
     except Exception as e:
         logger.warning("No se pudo generar miniatura %s: %s", dest.name, e)
@@ -479,12 +486,19 @@ def build_default_cover() -> str | None:
     return "/web/covers/default.webp" if _make_thumbnail(COVER_DEFAULT_SRC, dest) else None
 
 
-def _cover_for(covers_src_dir: Path | None, season: str, jornada_num: int) -> str | None:
+def _cover_for(covers_src_dir: Path | None, season: str, jornada_num: int) -> tuple[str | None, str | None]:
+    """(miniatura, portada grande) de una edición, o None si no hay PNG."""
     if covers_src_dir is None:
-        return None
+        return None, None
     src = covers_src_dir / f"jornada_{jornada_num}_jornada_news.png"
-    dest = COVERS_DIR / season / f"jornada_{jornada_num}.webp"
-    return f"/web/covers/{season}/{dest.name}" if _make_thumbnail(src, dest) else None
+    thumb = COVERS_DIR / season / f"jornada_{jornada_num}.webp"
+    large = COVERS_DIR / season / f"jornada_{jornada_num}-large.webp"
+    thumb_url = f"/web/covers/{season}/{thumb.name}" if _make_thumbnail(src, thumb) else None
+    large_url = (
+        f"/web/covers/{season}/{large.name}"
+        if _make_thumbnail(src, large, COVER_LARGE_WIDTH, 78) else None
+    )
+    return thumb_url, large_url
 
 
 def build_news(news_json_dir: Path, covers_src_dir: Path | None = None, season: str = SEASON) -> list:
@@ -538,9 +552,11 @@ def build_news(news_json_dir: Path, covers_src_dir: Path | None = None, season: 
                 for c in cards
             ]
 
+            cover, cover_large = _cover_for(covers_src_dir, season, int(jornada_stem.split("_")[1]))
             news.append({
                 "date":            jornada_label,
-                "cover":           _cover_for(covers_src_dir, season, int(jornada_stem.split("_")[1])),
+                "cover":           cover,
+                "coverLarge":      cover_large,
                 "title":           portada.get("titulo", ""),
                 "subtitle":        portada.get("subtitulo", ""),
                 "summary":         " ".join(portada.get("texto", [])),
