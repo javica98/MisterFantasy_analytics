@@ -17,6 +17,13 @@ on:
     types: [completed]
   workflow_dispatch:
 
+# Si el mini PC está apagado, los despliegues se quedan en cola (hasta 24 h).
+# Con esto solo queda pendiente el último: al volver el runner se despliega
+# una vez con el main más reciente en vez de N veces seguidas.
+concurrency:
+  group: deploy-web
+  cancel-in-progress: false  # no cortar un despliegue a medias; el pendiente nuevo sustituye al viejo
+
 jobs:
   deploy:
     runs-on: self-hosted
@@ -34,7 +41,10 @@ jobs:
         run: docker compose -f C:\AI_CENTER\docker-compose.yml up -d misterfantasy-web
 
       - name: Health check
-        shell: pwsh
+        # El mini PC solo tiene Windows PowerShell 5.1: con `pwsh` (PowerShell 7)
+        # el paso fallaba siempre ("pwsh: command not found") aunque el
+        # contenedor se hubiera desplegado bien.
+        shell: powershell
         run: |
           $ok = $false
           for ($i = 0; $i -lt 10; $i++) {
